@@ -6,8 +6,8 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 
 | Status | Count | Percentage | Description |
 | :--- | :---: | :---: | :--- |
-| **Completed** | 92 | 17.9% | Articles ported, cleaned, and merged to main |
-| **Pending Porting** | 333 | 64.9% | Relevant content articles remaining to be ported |
+| **Completed** | 104 | 20.3% | Articles ported, cleaned, and merged to main |
+| **Pending Porting** | 321 | 62.6% | Relevant content articles remaining to be ported |
 | **Stubs / Ignored** | 88 | 17.2% | Wiki pages with < 100 characters of text (empty templates, personal placeholders) |
 | **Total** | **513** | **100%** | All topics in `library` web |
 
@@ -17,8 +17,8 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 | :--- | :---: | :---: | :---: | :---: |
 | Unclassified/Other | 252 | 14 | **188** | 50 |
 | Electronics/Sensors & solenoids | 71 | 19 | **42** | 10 |
-| Electronics/ECU hardware & chipping | 88 | 36 | **39** | 13 |
-| Tuning & ROM editing | 43 | 15 | **22** | 6 |
+| Electronics/ECU hardware & chipping | 88 | 45 | **30** | 13 |
+| Tuning & ROM editing | 43 | 18 | **19** | 6 |
 | Electronics/Wiring & conversion | 17 | 3 | **13** | 1 |
 | Engine & Drivetrain mechanical | 11 | 0 | **9** | 2 |
 | Diagnostics & troubleshooting | 11 | 2 | **8** | 1 |
@@ -73,29 +73,26 @@ Below are the top pending articles in each category, sorted by length (approxima
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| Chips For EC Us | `chips-for-ec-us` | 1128 | Medium |
-| 27C256 | `27c256` | 1115 | Medium |
-| Ecu Connections | `ecu-connections` | 881 | Medium |
-| Desoldering Station | `desoldering-station` | 874 | Medium |
-| P14 To P13 | `p14-to-p13` | 808 | Medium |
-| Desoldering Iron | `desoldering-iron` | 806 | Medium |
-| Difference Us Can PM6 | `difference-us-can-pm6` | 798 | Medium |
-| OBD0PR4 | `obd0pr4` | 762 | Medium |
-| Epromer5 | `epromer5` | 756 | Medium |
 | Eprommer5 | `eprommer5` | 756 | Medium |
 | 28C256 | `28c256` | 726 | Medium |
 | Uber P72 | `uber-p72` | 708 | Medium |
 | Desoldering Tool | `desoldering-tool` | 704 | Medium |
 | Soldering Iron | `soldering-iron` | 699 | Medium |
 | Chip Max | `chip-max` | 669 | Medium |
+| OBD1PR4 | `obd1pr4` | 645 | Medium |
+| 91PM6 ECU LED CEL | `91pm6-ecu-led-cel` | 644 | Medium |
+| Desoldering Tips | `desoldering-tips` | 626 | Medium |
+| PM6 | `pm6` | 557 | Medium |
+| Ecu Backup Processor | `ecu-backup-processor` | 482 | Medium |
+| O2 Heater Circuit | `o2-heater-circuit` | 420 | Medium |
+| Chipping With Pictures | `chipping-with-pictures` | 390 | Medium |
+| ECU-Code Compatibility | `ecu-code-compatibility` | 387 | Medium |
+| P73 | `p73` | 369 | Medium |
 
 ### Tuning & ROM editing (Top 15 prioritized)
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| Pre Ignition | `pre-ignition` | 1166 | Medium |
-| DLC Communication | `dlc-communication` | 1076 | Medium |
-| Dual Roms | `dual-roms` | 1031 | Medium |
 | OBD0 Stock Datalogging | `obd0-stock-datalogging` | 691 | Medium |
 | Add Boost | `add-boost` | 688 | Medium |
 | Crome ROM Editor | `crome-rom-editor` | 561 | Medium |
@@ -108,6 +105,9 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Boost Controller | `boost-controller` | 265 | Low (Short reference) |
 | Recent Edits | `recent-edits` | 260 | Low (Short reference) |
 | Combustion Chamber | `combustion-chamber` | 256 | Low (Short reference) |
+| MAX233 | `max233` | 198 | Low (Short reference) |
+| Boost | `boost` | 175 | Low (Short reference) |
+| Edit Text | `edit-text` | 165 | Low (Short reference) |
 
 ### Electronics/Wiring & conversion (Top 13 prioritized)
 
