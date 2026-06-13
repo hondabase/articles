@@ -26,7 +26,7 @@ Crome plugins use the `.cpf` file extension. To be recognized by the software, t
 3.  Copy the `addextrafeatures.cpf` file and paste it into Crome's installation plugin directory. By default, this is located at:
     `C:\Program Files (x86)\Crome\Plugins\` (on 64-bit Windows systems)
     
-> [!NOTE]
+> **Note:**
 > Historically, legacy Crome plugin archives were password-protected to prevent corruption. If prompted during extraction, use the standard Crome installation password.
 
 ---

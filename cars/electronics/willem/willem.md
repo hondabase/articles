@@ -15,7 +15,7 @@ The **Willem EPROM Programmer** is a popular, open-hardware design ROM burner th
 
 While highly cost-effective and capable of burning standard Honda ROM chips like the `27C256` (OTP), `29C256` (EEPROM), and SST `27SF256` / `27SF512` (flash), the programmer relies on a legacy parallel (LPT) port and can be challenging to configure.
 
-> [!WARNING]
+> **Warning:**
 > **Parallel Port (LPT) and OS Requirements**: 
 > The Willem programmer requires a true hardware parallel port (standard base address `0x378h` or `0x278h`) to communicate with the PC. Simple USB-to-Parallel printer adapter cables **do not work** because they do not support direct I/O port mapping. To run the Willem software, you must use a motherboard with an onboard LPT header or a dedicated PCI/PCI-e parallel card, and a compatible Windows OS (often requiring 32-bit versions or legacy port drivers like `UserPort` / `io.dll` to permit direct hardware access).
 

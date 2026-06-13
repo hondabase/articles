@@ -55,7 +55,7 @@ Rather than using complex digital signal generators, this simulator uses a physi
 * **Coupling**: The distributor's camshaft drive key was removed and replaced with a 15-tooth RC car gear (Tamiya), coupled to the motor shaft using heavy-duty rubber fuel hose. This provides a flexible coupling that absorbs vibrations.
 * **Ignition Coil & ICM**: The Ignition Control Module (ICM) and ignition coil are wired into the distributor housing. To prevent Code 15 (Ignition Output Signal), 12V power is supplied to the black/yellow lead from the main relay, and the distributor body is grounded.
 
-> [!TIP]
+> **Tip:**
 > Physical distributors provide excellent mechanical feedback, but they can stall at very low speeds (under 500 RPM) if the motor lacks torque, simulating an engine stall.
 
 ---

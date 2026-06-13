@@ -13,7 +13,7 @@ tags:
 
 The PR3 Engine Control Unit (ECU) is a prominent Honda controller equipped in B16A DOHC VTEC vehicles between 1989 and 1993. 
 
-> [!IMPORTANT]
+> **Important:**
 > There are two completely different generations of ECUs designated as **PR3** (OBD0 and OBD1). They feature entirely different physical hardware casings, microprocessors, and wiring pinouts, and are **not compatible** in any way.
 
 ---
@@ -50,7 +50,7 @@ Below are the hex address offsets within the 28-pin EEPROM chip for the OBD0 ver
 | **3EF2** | 255 | High Cam Fuel Table | 15x17 VTEC fueling lookup map (uses OBD0 Fuel formula) |
 | **3FF1** | 15 | High Cam Multipliers | Column multiplier coefficients for VTEC fuel map |
 
-> [!TIP]
+> **Tip:**
 > The OBD0 PR3 applies column multipliers to fuel maps to scale raw 8-bit cell values. Refer to the [Understanding Maps guide](/cars/electronics/understanding-maps) for information on load multiplier formulas.
 
 ---

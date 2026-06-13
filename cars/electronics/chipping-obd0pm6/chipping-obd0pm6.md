@@ -33,7 +33,7 @@ Most 1988–1989 PG7, PM6, PM7, and PM8 ECUs run on a microcontroller with inter
 ![Early-Model OBD0 ECU lacking external ROM](trickyPM7small.jpg)
 *Early-model board layout without a separate external memory chip.*
 
-> [!NOTE]
+> **Note:**
 > If you have an early-model 1988–1989 ECU, see the specialized [Chipping early OBD0 ECUs](/cars/electronics/chipping-an88-89ecu) guide for instructions on adding the required hardware.
 
 ---
@@ -54,7 +54,7 @@ For 1990–1991 ECUs with a factory external ROM, the chipping process involves 
 1.  **Remove the Factory ROM:** 
     Using a sharp utility knife or razor blade, carefully slice through the 28 pins of the factory IC close to the plastic body of the chip. 
     
-    > [!CAUTION]
+    > **Caution:**
     > Do not apply heavy downward pressure. A slipped blade can easily slice the delicate copper traces on the circuit board, permanently ruining the ECU.
 
 2.  **Clean the Through-Holes:** 

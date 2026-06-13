@@ -15,7 +15,7 @@ The **Intake Air Bypass (IAB)** system controls dual-stage intake manifold runne
 
 While the Acura P72 ECU controls the IAB solenoid natively, the popular Honda P28 (Civic SOHC VTEC) ECU does not contain the necessary hardware components on the board. This guide details how to modify an OBD1 P28 ECU board to add physical IAB control.
 
-> [!IMPORTANT]
+> **Important:**
 > **Check Your Wiring Protocol First**:
 > The hardware modification procedure differs depending on how your vehicle's IAB solenoid is wired. One side of the solenoid always runs to the ECU, but the other side runs to either +12V power (USDM Active-Low) or Ground (JDM/OBD2 Active-High). You must match the modification to your wiring configuration.
 

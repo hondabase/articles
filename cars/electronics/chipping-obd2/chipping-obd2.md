@@ -55,7 +55,7 @@ To lock the microcontroller and prevent it from being read or cloned:
 1.  After successfully writing the data, move the adapter jumper to position **"S"** (Security).
 2.  Write the value **`$00`** to address **`$0000`**. This blows the internal security fuse on the OKI chip.
     
-> [!WARNING]
+> **Warning:**
 > Only execute this security step *after* writing the primary ROM data. If you write to the security address first, the MCU will lock immediately, rendering it permanently unprogrammable and useless.
 
 ---
