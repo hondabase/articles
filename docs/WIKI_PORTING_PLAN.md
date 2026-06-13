@@ -6,8 +6,8 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 
 | Status | Count | Percentage | Description |
 | :--- | :---: | :---: | :--- |
-| **Completed** | 39 | 7.6% | Articles ported, cleaned, and merged to main |
-| **Pending Porting** | 386 | 75.2% | Relevant content articles remaining to be ported |
+| **Completed** | 44 | 8.6% | Articles ported, cleaned, and merged to main |
+| **Pending Porting** | 381 | 74.2% | Relevant content articles remaining to be ported |
 | **Stubs / Ignored** | 88 | 17.2% | Wiki pages with < 100 characters of text (empty templates, personal placeholders) |
 | **Total** | **513** | **100%** | All topics in `library` web |
 
@@ -15,15 +15,15 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 
 | Category | Total | Completed | Pending | Stubs |
 | :--- | :---: | :---: | :---: | :---: |
-| Unclassified/Other | 252 | 1 | **201** | 50 |
+| Unclassified/Other | 252 | 3 | **199** | 50 |
 | Electronics/ECU hardware & chipping | 88 | 13 | **62** | 13 |
 | Electronics/Sensors & solenoids | 71 | 17 | **44** | 10 |
-| Tuning & ROM editing | 43 | 7 | **30** | 6 |
+| Tuning & ROM editing | 43 | 8 | **29** | 6 |
 | Electronics/Wiring & conversion | 17 | 0 | **16** | 1 |
 | General Info & History | 15 | 0 | **10** | 5 |
-| Diagnostics & troubleshooting | 11 | 1 | **9** | 1 |
+| Diagnostics & troubleshooting | 11 | 2 | **8** | 1 |
 | Engine & Drivetrain mechanical | 11 | 0 | **9** | 2 |
-| Fueling & Injectors | 5 | 0 | **5** | 0 |
+| Fueling & Injectors | 5 | 1 | **4** | 0 |
 
 ## 3. Prioritized Pending Articles by Category
 
@@ -34,7 +34,7 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
 | OBD | `obd` | 22774 | **Completed** (Batch 6) |
-| Debugging Data Logging | `debugging-data-logging` | 7969 | **High** (Rich content) |
+| Debugging Data Logging | `debugging-data-logging` | 7969 | **Completed** (Batch 7) |
 | Easy Rtp V10 | `easy-rtp-v10` | 7513 | **High** (Rich content) |
 | Sim | `sim` | 7008 | **High** (Rich content) |
 | Pgsrc Translation | `pgsrc-translation` | 6960 | **High** (Rich content) |
@@ -42,7 +42,7 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Release Notes | `release-notes` | 5466 | **High** (Rich content) |
 | Text Formatting Rules | `text-formatting-rules` | 4598 | **High** (Rich content) |
 | Willem | `willem` | 3806 | **High** (Rich content) |
-| Basic Concepts | `basic-concepts` | 3706 | **High** (Rich content) |
+| Basic Concepts | `basic-concepts` | 3706 | **Completed** (Batch 7) |
 | UPD7004C | `upd7004c` | 3451 | **High** (Rich content) |
 | P0A | `p0a` | 3373 | **High** (Rich content) |
 | Easy Rtp Install | `easy-rtp-install` | 3369 | **High** (Rich content) |
@@ -96,7 +96,7 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Crome Script | `crome-script` | 18510 | **High** (Rich content) |
 | Crome FAQ | `crome-faq` | 5233 | **Completed** (Batch 4) |
 | Proposed Datalogging Protocol | `proposed-datalogging-protocol` | 4149 | **High** (Rich content) |
-| Turbo Edit | `turbo-edit` | 4038 | **High** (Rich content) |
+| Turbo Edit | `turbo-edit` | 4038 | **Completed** (Batch 7) |
 | Serial Communication | `serial-communication` | 3177 | **Completed** (Batch 6) |
 | Howto Add Extra Features In Crome | `howto-add-extra-features-in-crome` | 3130 | **High** (Rich content) |
 | Second Gen Usb To Serial Converter | `second-gen-usb-to-serial-converter` | 2869 | **Completed** (Batch 6) |
@@ -148,7 +148,7 @@ Below are the top pending articles in each category, sorted by length (approxima
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| Honda Error Codes | `honda-error-codes` | 21603 | **High** (Rich content) |
+| Honda Error Codes | `honda-error-codes` | 21603 | **Completed** (Batch 7) |
 | OBD1 Code Compatibility | `obd1-code-compatibility` | 1675 | Medium |
 | CEL | `cel` | 1612 | Medium |
 | OBD0 Code Compatibility | `obd0-code-compatibility` | 1385 | Medium |
@@ -176,7 +176,7 @@ Below are the top pending articles in each category, sorted by length (approxima
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| Air Fuel Ratio | `air-fuel-ratio` | 3036 | **High** (Rich content) |
+| Air Fuel Ratio | `air-fuel-ratio` | 3036 | **Completed** (Batch 7) |
 | OBD1 8bit Fuel | `obd1-8bit-fuel` | 648 | Medium |
 | Fuel Cut | `fuel-cut` | 410 | Medium |
 | Fuel Octane | `fuel-octane` | 292 | Low (Short reference) |
