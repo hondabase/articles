@@ -6,8 +6,8 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 
 | Status | Count | Percentage | Description |
 | :--- | :---: | :---: | :--- |
-| **Completed** | 24 | 4.7% | Articles ported, cleaned, and merged to main |
-| **Pending Porting** | 401 | 78.2% | Relevant content articles remaining to be ported |
+| **Completed** | 34 | 6.6% | Articles ported, cleaned, and merged to main |
+| **Pending Porting** | 391 | 76.2% | Relevant content articles remaining to be ported |
 | **Stubs / Ignored** | 88 | 17.2% | Wiki pages with < 100 characters of text (empty templates, personal placeholders) |
 | **Total** | **513** | **100%** | All topics in `library` web |
 
@@ -16,9 +16,9 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 | Category | Total | Completed | Pending | Stubs |
 | :--- | :---: | :---: | :---: | :---: |
 | Unclassified/Other | 252 | 0 | **202** | 50 |
-| Electronics/ECU hardware & chipping | 88 | 6 | **69** | 13 |
-| Electronics/Sensors & solenoids | 71 | 16 | **45** | 10 |
-| Tuning & ROM editing | 43 | 1 | **36** | 6 |
+| Electronics/ECU hardware & chipping | 88 | 13 | **62** | 13 |
+| Electronics/Sensors & solenoids | 71 | 17 | **44** | 10 |
+| Tuning & ROM editing | 43 | 3 | **34** | 6 |
 | Electronics/Wiring & conversion | 17 | 0 | **16** | 1 |
 | General Info & History | 15 | 0 | **10** | 5 |
 | Diagnostics & troubleshooting | 11 | 1 | **9** | 1 |
@@ -54,27 +54,27 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
 | Ecu Definition Codes | `ecu-definition-codes` | 24956 | **High** (Rich content) |
-| P30 | `p30` | 9648 | **High** (Rich content) |
-| Ecu Chipping Wirelist | `ecu-chipping-wirelist` | 7799 | **High** (Rich content) |
+| P30 | `p30` | 9648 | **Completed** (Batch 4) |
+| Ecu Chipping Wirelist | `ecu-chipping-wirelist` | 7799 | **Completed** (Batch 2) |
 | Chipping An88-89ECU | `chipping-an88-89ecu` | 6471 | **High** (Rich content) |
-| P72 | `p72` | 6267 | **High** (Rich content) |
-| Ecu Tuning | `ecu-tuning` | 5899 | **High** (Rich content) |
+| P72 | `p72` | 6267 | **Completed** (Batch 5) |
+| Ecu Tuning | `ecu-tuning` | 5899 | **Completed** (Batch 5) |
 | Doc ECU School | `doc-ecu-school` | 5503 | **High** (Rich content) |
-| P13 | `p13` | 5414 | **High** (Rich content) |
-| Ecu Families | `ecu-families` | 4626 | **High** (Rich content) |
-| P28 | `p28` | 3833 | **High** (Rich content) |
+| P13 | `p13` | 5414 | **Completed** (Batch 5) |
+| Ecu Families | `ecu-families` | 4626 | **Completed** (Batch 4) |
+| P28 | `p28` | 3833 | **Completed** (Batch 4) |
 | Japanese Domestic Market P30D12 Modification | `japanese-domestic-market-p30d12-modification` | 3808 | **High** (Rich content) |
-| PW0 | `pw0` | 2928 | **High** (Rich content) |
+| PW0 | `pw0` | 2928 | **Completed** (Batch 5) |
 | OBD0 Inter Chip Communication | `obd0-inter-chip-communication` | 2924 | **High** (Rich content) |
-| PR3 | `pr3` | 2584 | **High** (Rich content) |
+| PR3 | `pr3` | 2584 | **Completed** (Batch 5) |
 | OBD0PM6PM7RAM Locations | `obd0pm6pm7ram-locations` | 2478 | Medium |
 
 ### Electronics/Sensors & solenoids (Top 15 prioritized)
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| Wide Band O2 | `wide-band-o2` | 7161 | **High** (Rich content) |
-| Understanding Maps | `understanding-maps` | 3845 | **High** (Rich content) |
+| Wide Band O2 | `wide-band-o2` | 7161 | **Completed** (Batch 2) |
+| Understanding Maps | `understanding-maps` | 3845 | **Completed** (Batch 4) |
 | Inter Wiki Map | `inter-wiki-map` | 3554 | **High** (Rich content) |
 | How To Log External Data Such As An Egt Sensor | `how-to-log-external-data-such-as-an-egt-sensor` | 3319 | **High** (Rich content) |
 | Turbo Compressor Map | `turbo-compressor-map` | 2833 | **High** (Rich content) |
@@ -94,7 +94,7 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
 | Crome Script | `crome-script` | 18510 | **High** (Rich content) |
-| Crome FAQ | `crome-faq` | 5233 | **High** (Rich content) |
+| Crome FAQ | `crome-faq` | 5233 | **Completed** (Batch 4) |
 | Proposed Datalogging Protocol | `proposed-datalogging-protocol` | 4149 | **High** (Rich content) |
 | Turbo Edit | `turbo-edit` | 4038 | **High** (Rich content) |
 | Serial Communication | `serial-communication` | 3177 | **High** (Rich content) |
