@@ -6,24 +6,24 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 
 | Status | Count | Percentage | Description |
 | :--- | :---: | :---: | :--- |
-| **Completed** | 425 | 82.8% | Articles ported, cleaned, and merged to main |
+| **Completed** | 493 | 96.1% | Articles ported, cleaned, and merged to main |
 | **Pending Porting** | 0 | 0% | Relevant content articles remaining to be ported |
-| **Stubs / Ignored** | 88 | 17.2% | Wiki pages with < 100 characters of text (empty templates, personal placeholders) |
+| **Stubs / Ignored** | 20 | 3.9% | Wiki pages with < 100 characters of text (empty templates, personal placeholders) |
 | **Total** | **513** | **100%** | All topics in `library` web |
 
 ## 2. Category Breakdown
 
 | Category | Total | Completed | Pending | Stubs |
 | :--- | :---: | :---: | :---: | :---: |
-| Unclassified/Other | 252 | 202 | **0** | 50 |
-| Electronics/Sensors & solenoids | 71 | 61 | **0** | 10 |
-| Electronics/ECU hardware & chipping | 88 | 75 | **0** | 13 |
-| Diagnostics & troubleshooting | 11 | 10 | **0** | 1 |
-| Electronics/Wiring & conversion | 17 | 16 | **0** | 1 |
-| Tuning & ROM editing | 43 | 37 | **0** | 6 |
+| Unclassified/Other | 252 | 238 | **0** | 14 |
+| Electronics/Sensors & solenoids | 71 | 71 | **0** | 0 |
+| Electronics/ECU hardware & chipping | 88 | 88 | **0** | 0 |
+| Diagnostics & troubleshooting | 11 | 11 | **0** | 0 |
+| Electronics/Wiring & conversion | 17 | 17 | **0** | 0 |
+| Tuning & ROM editing | 43 | 42 | **0** | 1 |
 | Fueling & Injectors | 5 | 5 | **0** | 0 |
-| General Info & History | 15 | 10 | **0** | 5 |
-| Engine & Drivetrain mechanical | 11 | 9 | **0** | 2 |
+| General Info & History | 15 | 11 | **0** | 4 |
+| Engine & Drivetrain mechanical | 11 | 10 | **0** | 1 |
 
 ## 3. Prioritized Pending Articles by Category
 
