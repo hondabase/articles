@@ -6,8 +6,8 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 
 | Status | Count | Percentage | Description |
 | :--- | :---: | :---: | :--- |
-| **Completed** | 104 | 20.3% | Articles ported, cleaned, and merged to main |
-| **Pending Porting** | 321 | 62.6% | Relevant content articles remaining to be ported |
+| **Completed** | 114 | 22.2% | Articles ported, cleaned, and merged to main |
+| **Pending Porting** | 311 | 60.6% | Relevant content articles remaining to be ported |
 | **Stubs / Ignored** | 88 | 17.2% | Wiki pages with < 100 characters of text (empty templates, personal placeholders) |
 | **Total** | **513** | **100%** | All topics in `library` web |
 
@@ -17,7 +17,7 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 | :--- | :---: | :---: | :---: | :---: |
 | Unclassified/Other | 252 | 14 | **188** | 50 |
 | Electronics/Sensors & solenoids | 71 | 19 | **42** | 10 |
-| Electronics/ECU hardware & chipping | 88 | 45 | **30** | 13 |
+| Electronics/ECU hardware & chipping | 88 | 55 | **20** | 13 |
 | Tuning & ROM editing | 43 | 18 | **19** | 6 |
 | Electronics/Wiring & conversion | 17 | 3 | **13** | 1 |
 | Engine & Drivetrain mechanical | 11 | 0 | **9** | 2 |
@@ -73,21 +73,21 @@ Below are the top pending articles in each category, sorted by length (approxima
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| Eprommer5 | `eprommer5` | 756 | Medium |
-| 28C256 | `28c256` | 726 | Medium |
-| Uber P72 | `uber-p72` | 708 | Medium |
-| Desoldering Tool | `desoldering-tool` | 704 | Medium |
-| Soldering Iron | `soldering-iron` | 699 | Medium |
-| Chip Max | `chip-max` | 669 | Medium |
-| OBD1PR4 | `obd1pr4` | 645 | Medium |
-| 91PM6 ECU LED CEL | `91pm6-ecu-led-cel` | 644 | Medium |
-| Desoldering Tips | `desoldering-tips` | 626 | Medium |
-| PM6 | `pm6` | 557 | Medium |
 | Ecu Backup Processor | `ecu-backup-processor` | 482 | Medium |
 | O2 Heater Circuit | `o2-heater-circuit` | 420 | Medium |
 | Chipping With Pictures | `chipping-with-pictures` | 390 | Medium |
 | ECU-Code Compatibility | `ecu-code-compatibility` | 387 | Medium |
 | P73 | `p73` | 369 | Medium |
+| ECU Nitrous Control | `ecu-nitrous-control` | 332 | Medium |
+| Desoldering Braid | `desoldering-braid` | 321 | Medium |
+| P91 | `p91` | 316 | Medium |
+| P06 | `p06` | 244 | Low (Short reference) |
+| EPROM | `eprom` | 234 | Low (Short reference) |
+| Latch | `latch` | 232 | Low (Short reference) |
+| 27SF256 | `27sf256` | 225 | Low (Short reference) |
+| ECU Boost Controller | `ecu-boost-controller` | 217 | Low (Short reference) |
+| 91PM6 | `91pm6` | 204 | Low (Short reference) |
+| P13JDM | `p13jdm` | 203 | Low (Short reference) |
 
 ### Tuning & ROM editing (Top 15 prioritized)
 
