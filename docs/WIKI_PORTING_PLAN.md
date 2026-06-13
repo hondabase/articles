@@ -6,8 +6,8 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 
 | Status | Count | Percentage | Description |
 | :--- | :---: | :---: | :--- |
-| **Completed** | 82 | 16% | Articles ported, cleaned, and merged to main |
-| **Pending Porting** | 343 | 66.9% | Relevant content articles remaining to be ported |
+| **Completed** | 92 | 17.9% | Articles ported, cleaned, and merged to main |
+| **Pending Porting** | 333 | 64.9% | Relevant content articles remaining to be ported |
 | **Stubs / Ignored** | 88 | 17.2% | Wiki pages with < 100 characters of text (empty templates, personal placeholders) |
 | **Total** | **513** | **100%** | All topics in `library` web |
 
@@ -16,9 +16,9 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 | Category | Total | Completed | Pending | Stubs |
 | :--- | :---: | :---: | :---: | :---: |
 | Unclassified/Other | 252 | 14 | **188** | 50 |
-| Electronics/ECU hardware & chipping | 88 | 29 | **46** | 13 |
 | Electronics/Sensors & solenoids | 71 | 19 | **42** | 10 |
-| Tuning & ROM editing | 43 | 12 | **25** | 6 |
+| Electronics/ECU hardware & chipping | 88 | 36 | **39** | 13 |
+| Tuning & ROM editing | 43 | 15 | **22** | 6 |
 | Electronics/Wiring & conversion | 17 | 3 | **13** | 1 |
 | Engine & Drivetrain mechanical | 11 | 0 | **9** | 2 |
 | Diagnostics & troubleshooting | 11 | 2 | **8** | 1 |
@@ -49,26 +49,6 @@ Below are the top pending articles in each category, sorted by length (approxima
 | OBD1 Oki66207 Reader-DIP64 | `obd1-oki66207-reader-dip64` | 2130 | Medium |
 | 02D01720-1500 | `02d01720-1500` | 2087 | Medium |
 
-### Electronics/ECU hardware & chipping (Top 15 prioritized)
-
-| Title | Slug | Length (chars) | Priority / Note |
-| :--- | :--- | :---: | :--- |
-| P14 | `p14` | 1489 | Medium |
-| Hi Res P72 | `hi-res-p72` | 1376 | Medium |
-| Chipping JDMP30 | `chipping-jdmp30` | 1320 | Medium |
-| Chips For EC Us | `chips-for-ec-us` | 1128 | Medium |
-| 27C256 | `27c256` | 1115 | Medium |
-| Learning To Solder | `learning-to-solder` | 1105 | Medium |
-| Rom Burner | `rom-burner` | 1087 | Medium |
-| Hardware For One Wire Vtec | `hardware-for-one-wire-vtec` | 1035 | Medium |
-| PM7 | `pm7` | 889 | Medium |
-| Ecu Connections | `ecu-connections` | 881 | Medium |
-| Desoldering Station | `desoldering-station` | 874 | Medium |
-| P14 To P13 | `p14-to-p13` | 808 | Medium |
-| Desoldering Iron | `desoldering-iron` | 806 | Medium |
-| Difference Us Can PM6 | `difference-us-can-pm6` | 798 | Medium |
-| OBD0PR4 | `obd0pr4` | 762 | Medium |
-
 ### Electronics/Sensors & solenoids (Top 15 prioritized)
 
 | Title | Slug | Length (chars) | Priority / Note |
@@ -89,13 +69,30 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Map Sensor Equation | `map-sensor-equation` | 849 | Medium |
 | Throttle Position Sensor Adjustment | `throttle-position-sensor-adjustment` | 847 | Medium |
 
+### Electronics/ECU hardware & chipping (Top 15 prioritized)
+
+| Title | Slug | Length (chars) | Priority / Note |
+| :--- | :--- | :---: | :--- |
+| Chips For EC Us | `chips-for-ec-us` | 1128 | Medium |
+| 27C256 | `27c256` | 1115 | Medium |
+| Ecu Connections | `ecu-connections` | 881 | Medium |
+| Desoldering Station | `desoldering-station` | 874 | Medium |
+| P14 To P13 | `p14-to-p13` | 808 | Medium |
+| Desoldering Iron | `desoldering-iron` | 806 | Medium |
+| Difference Us Can PM6 | `difference-us-can-pm6` | 798 | Medium |
+| OBD0PR4 | `obd0pr4` | 762 | Medium |
+| Epromer5 | `epromer5` | 756 | Medium |
+| Eprommer5 | `eprommer5` | 756 | Medium |
+| 28C256 | `28c256` | 726 | Medium |
+| Uber P72 | `uber-p72` | 708 | Medium |
+| Desoldering Tool | `desoldering-tool` | 704 | Medium |
+| Soldering Iron | `soldering-iron` | 699 | Medium |
+| Chip Max | `chip-max` | 669 | Medium |
+
 ### Tuning & ROM editing (Top 15 prioritized)
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| Usb To Serial Converter Second Gen | `usb-to-serial-converter-second-gen` | 1850 | Medium |
-| Rtp Truth Table | `rtp-truth-table` | 1514 | Medium |
-| Full Duplex Datalogging | `full-duplex-datalogging` | 1415 | Medium |
 | Pre Ignition | `pre-ignition` | 1166 | Medium |
 | DLC Communication | `dlc-communication` | 1076 | Medium |
 | Dual Roms | `dual-roms` | 1031 | Medium |
@@ -108,6 +105,9 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Dual Tables | `dual-tables` | 359 | Medium |
 | Compression Ratio | `compression-ratio` | 312 | Medium |
 | Hex2 Bin | `hex2-bin` | 271 | Low (Short reference) |
+| Boost Controller | `boost-controller` | 265 | Low (Short reference) |
+| Recent Edits | `recent-edits` | 260 | Low (Short reference) |
+| Combustion Chamber | `combustion-chamber` | 256 | Low (Short reference) |
 
 ### Electronics/Wiring & conversion (Top 13 prioritized)
 
