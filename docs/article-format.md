@@ -88,16 +88,29 @@ One `# H1` only (the title). Headings are sentence case, with acronyms left uppe
   `::: widget error-codes obd="1" :::` (rolling out; use this syntax when documented).
 - **No raw HTML** in articles; it is escaped on render. Use Markdown (tables, code, lists).
 
-## 5. Adapting legacy / wiki content (checklist)
+## 5. SEO Best Practices
 
-- [ ] Strip TWiki auto-links; keep only meaningful links and repoint them to Hondabase
-      articles, or remove them.
+To ensure articles rank well on search engines and attract readers, follow these SEO rules:
+
+- **Descriptive Titles:** Use a clean, descriptive H1 title (e.g., `# OBD1 Civic/Integra Auto to Manual Conversion` instead of `# OBD1 Civic Integra Auto Manual`).
+- **Compelling Meta Description:** Always provide a `summary` in the frontmatter. Keep it under 160 characters, and make it a compelling summary of what the reader will learn. The web renderer uses this as the page's HTML `<meta name="description">` tag.
+- **Heading Hierarchy:** Use exactly one H1 per article (the title). Use `##` for main sections, and `###` for sub-sections. Never skip levels (e.g., do not go from H1 to H3). All headings must be clean, readable sentence-cased text.
+- **Keyword Integration & Search Intent:** Proactively use natural, search-friendly terms in the lead paragraph and throughout the article (e.g., "how to socket a Honda ECU", "diagnostic trouble codes", "EF Civic VTEC swap"). Do not stuff keywords.
+- **Alt Text for Images:** Always provide descriptive alt text for images to improve image search indexing (e.g., `![OBD1 ECU board layout showing RP17 and RP18 locations](OBD1auto_manual.jpg)` instead of `![OBD1auto_manual](OBD1auto_manual.jpg)`).
+- **SEO-Friendly Anchor Text:** Never use "click here" or raw URLs as link text. Instead, write descriptive, natural anchor text that describes the target page (e.g., `read the [OBD1 ECU pinout guide](/cars/electronics/obd1-pinout)`).
+- **Remove Noise and Boilerplate:** Strip trailing wiki/forum boilerplate (e.g., "Page moved from...", edit dates, signatures like `-=dave`, attachment listings, or "Click edit below"). These dilute keyword density and look unprofessional.
+
+## 6. Adapting legacy / wiki content (checklist)
+
+- [ ] Strip TWiki auto-links; keep only meaningful links and repoint them to Hondabase articles (e.g., `/cars/electronics/slug`), or remove them.
 - [ ] Add a lead paragraph; restructure the body into the section template.
 - [ ] Normalize terminology casing per section 4.
-- [ ] Replace or remove dead external/forum links; turn "see this thread" into a named
-      reference.
+- [ ] Replace or remove dead external/forum links; turn "see this thread" into a named reference.
 - [ ] Move specs into tables; turn warnings into callouts.
 - [ ] Co-locate images, write real alt text, add captions.
 - [ ] Keep the slug; let the title be a clean H1 (or a `title:` frontmatter).
+- [ ] Ensure frontmatter contains a compelling SEO `summary` (meta description) under 160 characters.
+- [ ] Clean up broken markdown tables and format column structures properly.
+- [ ] Ensure heading hierarchy is strictly sequential (no skipped levels, e.g., H2 -> H3, no H4/H5 without H3).
 
 See also: [markdown-cheat-sheet.md](../markdown-cheat-sheet.md).
