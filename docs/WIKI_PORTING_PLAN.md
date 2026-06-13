@@ -6,8 +6,8 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 
 | Status | Count | Percentage | Description |
 | :--- | :---: | :---: | :--- |
-| **Completed** | 44 | 8.6% | Articles ported, cleaned, and merged to main |
-| **Pending Porting** | 381 | 74.2% | Relevant content articles remaining to be ported |
+| **Completed** | 59 | 11.5% | Articles ported, cleaned, and merged to main |
+| **Pending Porting** | 366 | 71.3% | Relevant content articles remaining to be ported |
 | **Stubs / Ignored** | 88 | 17.2% | Wiki pages with < 100 characters of text (empty templates, personal placeholders) |
 | **Total** | **513** | **100%** | All topics in `library` web |
 
@@ -15,14 +15,14 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 
 | Category | Total | Completed | Pending | Stubs |
 | :--- | :---: | :---: | :---: | :---: |
-| Unclassified/Other | 252 | 3 | **199** | 50 |
-| Electronics/ECU hardware & chipping | 88 | 13 | **62** | 13 |
-| Electronics/Sensors & solenoids | 71 | 17 | **44** | 10 |
+| Unclassified/Other | 252 | 9 | **193** | 50 |
+| Electronics/ECU hardware & chipping | 88 | 19 | **56** | 13 |
+| Electronics/Sensors & solenoids | 71 | 18 | **43** | 10 |
 | Tuning & ROM editing | 43 | 8 | **29** | 6 |
-| Electronics/Wiring & conversion | 17 | 0 | **16** | 1 |
+| Electronics/Wiring & conversion | 17 | 2 | **14** | 1 |
 | General Info & History | 15 | 0 | **10** | 5 |
-| Diagnostics & troubleshooting | 11 | 2 | **8** | 1 |
 | Engine & Drivetrain mechanical | 11 | 0 | **9** | 2 |
+| Diagnostics & troubleshooting | 11 | 2 | **8** | 1 |
 | Fueling & Injectors | 5 | 1 | **4** | 0 |
 
 ## 3. Prioritized Pending Articles by Category
@@ -33,48 +33,46 @@ Below are the top pending articles in each category, sorted by length (approxima
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| OBD | `obd` | 22774 | **Completed** (Batch 6) |
-| Debugging Data Logging | `debugging-data-logging` | 7969 | **Completed** (Batch 7) |
 | Easy Rtp V10 | `easy-rtp-v10` | 7513 | **High** (Rich content) |
-| Sim | `sim` | 7008 | **High** (Rich content) |
 | Pgsrc Translation | `pgsrc-translation` | 6960 | **High** (Rich content) |
-| Oki6260A | `oki6260a` | 6036 | **High** (Rich content) |
 | Release Notes | `release-notes` | 5466 | **High** (Rich content) |
 | Text Formatting Rules | `text-formatting-rules` | 4598 | **High** (Rich content) |
-| Willem | `willem` | 3806 | **High** (Rich content) |
-| Basic Concepts | `basic-concepts` | 3706 | **Completed** (Batch 7) |
-| UPD7004C | `upd7004c` | 3451 | **High** (Rich content) |
 | P0A | `p0a` | 3373 | **High** (Rich content) |
 | Easy Rtp Install | `easy-rtp-install` | 3369 | **High** (Rich content) |
-| DLC | `dlc` | 2956 | **High** (Rich content) |
-| 82C55 | `82c55` | 2880 | **High** (Rich content) |
+| 66k Assembler Docs | `66k-assembler-docs` | 2749 | **High** (Rich content) |
+| Data Logging | `data-logging` | 2736 | **High** (Rich content) |
+| New Markup Test Page | `new-markup-test-page` | 2581 | **High** (Rich content) |
+| Nico Analyze | `nico-analyze` | 2551 | **High** (Rich content) |
+| How Does Data Logging Work | `how-does-data-logging-work` | 2498 | Medium |
+| Speed Density | `speed-density` | 2469 | Medium |
+| ASM662 | `asm662` | 2464 | Medium |
+| Test Page | `test-page` | 2450 | Medium |
+| Parts For EC Us | `parts-for-ec-us` | 2415 | Medium |
 
 ### Electronics/ECU hardware & chipping (Top 15 prioritized)
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| Ecu Definition Codes | `ecu-definition-codes` | 24956 | **High** (Rich content) |
-| P30 | `p30` | 9648 | **Completed** (Batch 4) |
-| Ecu Chipping Wirelist | `ecu-chipping-wirelist` | 7799 | **Completed** (Batch 2) |
 | Chipping An88-89ECU | `chipping-an88-89ecu` | 6471 | **High** (Rich content) |
-| P72 | `p72` | 6267 | **Completed** (Batch 5) |
-| Ecu Tuning | `ecu-tuning` | 5899 | **Completed** (Batch 5) |
 | Doc ECU School | `doc-ecu-school` | 5503 | **High** (Rich content) |
-| P13 | `p13` | 5414 | **Completed** (Batch 5) |
-| Ecu Families | `ecu-families` | 4626 | **Completed** (Batch 4) |
-| P28 | `p28` | 3833 | **Completed** (Batch 4) |
 | Japanese Domestic Market P30D12 Modification | `japanese-domestic-market-p30d12-modification` | 3808 | **High** (Rich content) |
-| PW0 | `pw0` | 2928 | **Completed** (Batch 5) |
 | OBD0 Inter Chip Communication | `obd0-inter-chip-communication` | 2924 | **High** (Rich content) |
-| PR3 | `pr3` | 2584 | **Completed** (Batch 5) |
-| OBD0PM6PM7RAM Locations | `obd0pm6pm7ram-locations` | 2478 | Medium |
+| Chipping OBD2 | `chipping-obd2` | 2449 | Medium |
+| Acura Integra PR4ECU Pinout And Schematics | `acura-integra-pr4ecu-pinout-and-schematics` | 1897 | Medium |
+| Knock Board | `knock-board` | 1745 | Medium |
+| P72 Debug Mode | `p72-debug-mode` | 1702 | Medium |
+| ECU Hardware Mods | `ecu-hardware-mods` | 1492 | Medium |
+| P14 | `p14` | 1489 | Medium |
+| Chipping OBD0PM6 | `chipping-obd0pm6` | 1450 | Medium |
+| Hi Res P72 | `hi-res-p72` | 1376 | Medium |
+| Chipping JDMP30 | `chipping-jdmp30` | 1320 | Medium |
+| Chips For EC Us | `chips-for-ec-us` | 1128 | Medium |
+| 27C256 | `27c256` | 1115 | Medium |
 
 ### Electronics/Sensors & solenoids (Top 15 prioritized)
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| Wide Band O2 | `wide-band-o2` | 7161 | **Completed** (Batch 2) |
-| Understanding Maps | `understanding-maps` | 3845 | **Completed** (Batch 4) |
 | Inter Wiki Map | `inter-wiki-map` | 3554 | **High** (Rich content) |
 | How To Log External Data Such As An Egt Sensor | `how-to-log-external-data-such-as-an-egt-sensor` | 3319 | **High** (Rich content) |
 | Turbo Compressor Map | `turbo-compressor-map` | 2833 | **High** (Rich content) |
@@ -88,34 +86,34 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Add Knock To P30G00 | `add-knock-to-p30g00` | 981 | Medium |
 | Remove A Knock Sensor | `remove-a-knock-sensor` | 949 | Medium |
 | Adjust PR4 Pa Sensor | `adjust-pr4-pa-sensor` | 948 | Medium |
+| Disable Vtec VSS Check P28 | `disable-vtec-vss-check-p28` | 879 | Medium |
+| Map Sensor Equation | `map-sensor-equation` | 849 | Medium |
 
 ### Tuning & ROM editing (Top 15 prioritized)
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
 | Crome Script | `crome-script` | 18510 | **High** (Rich content) |
-| Crome FAQ | `crome-faq` | 5233 | **Completed** (Batch 4) |
-| Proposed Datalogging Protocol | `proposed-datalogging-protocol` | 4149 | **High** (Rich content) |
-| Turbo Edit | `turbo-edit` | 4038 | **Completed** (Batch 7) |
-| Serial Communication | `serial-communication` | 3177 | **Completed** (Batch 6) |
 | Howto Add Extra Features In Crome | `howto-add-extra-features-in-crome` | 3130 | **High** (Rich content) |
-| Second Gen Usb To Serial Converter | `second-gen-usb-to-serial-converter` | 2869 | **Completed** (Batch 6) |
-| Tuning Timing | `tuning-timing` | 2734 | **Completed** (Batch 6) |
-| Tuning For Smog | `tuning-for-smog` | 2727 | **Completed** (Batch 6) |
 | Nokia Cable Datalogging | `nokia-cable-datalogging` | 2533 | **High** (Rich content) |
 | Common TE Problems | `common-te-problems` | 2333 | Medium |
 | Usb To Serial Converter Second Gen | `usb-to-serial-converter-second-gen` | 1850 | Medium |
 | Rtp Truth Table | `rtp-truth-table` | 1514 | Medium |
 | Full Duplex Datalogging | `full-duplex-datalogging` | 1415 | Medium |
 | Pre Ignition | `pre-ignition` | 1166 | Medium |
+| DLC Communication | `dlc-communication` | 1076 | Medium |
+| Dual Roms | `dual-roms` | 1031 | Medium |
+| OBD0 Stock Datalogging | `obd0-stock-datalogging` | 691 | Medium |
+| Add Boost | `add-boost` | 688 | Medium |
+| Crome ROM Editor | `crome-rom-editor` | 561 | Medium |
+| Rom Emulator | `rom-emulator` | 553 | Medium |
+| Launch Control | `launch-control` | 489 | Medium |
 
-### Electronics/Wiring & conversion (Top 15 prioritized)
+### Electronics/Wiring & conversion (Top 14 prioritized)
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| Kurts OBD0-OBD1 | `kurts-obd0-obd1` | 15121 | **High** (Rich content) |
 | Accord Auto OBD2-OBD1 | `accord-auto-obd2-obd1` | 13050 | **High** (Rich content) |
-| D16Z6-4G-swapnotes | `d16z6-4g-swapnotes` | 7300 | **High** (Rich content) |
 | Wiki Plugin | `wiki-plugin` | 2552 | **High** (Rich content) |
 | Calendar Plugin | `calendar-plugin` | 1794 | Medium |
 | OBD1P08 Auto Manual | `obd1p08-auto-manual` | 888 | Medium |
@@ -128,6 +126,7 @@ Below are the top pending articles in each category, sorted by length (approxima
 | PS9 Auto Manual | `ps9-auto-manual` | 356 | Medium |
 | OBD2P5M Auto Manual | `obd2p5m-auto-manual` | 214 | Low (Short reference) |
 | Conversion | `conversion` | 211 | Low (Short reference) |
+| Spark Plug | `spark-plug` | 149 | Low (Short reference) |
 
 ### General Info & History (Top 10 prioritized)
 
@@ -144,20 +143,6 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Php Wiki | `php-wiki` | 255 | Low (Short reference) |
 | Php Wiki Documentation | `php-wiki-documentation` | 121 | Low (Short reference) |
 
-### Diagnostics & troubleshooting (Top 9 prioritized)
-
-| Title | Slug | Length (chars) | Priority / Note |
-| :--- | :--- | :---: | :--- |
-| Honda Error Codes | `honda-error-codes` | 21603 | **Completed** (Batch 7) |
-| OBD1 Code Compatibility | `obd1-code-compatibility` | 1675 | Medium |
-| CEL | `cel` | 1612 | Medium |
-| OBD0 Code Compatibility | `obd0-code-compatibility` | 1385 | Medium |
-| 91PM6 Target Idle | `91pm6-target-idle` | 1316 | Medium |
-| Label Decode | `label-decode` | 778 | Medium |
-| Limp Mode | `limp-mode` | 489 | Medium |
-| 91PM7 Target Idle | `91pm7-target-idle` | 367 | Medium |
-| Idle Air Control Valve | `idle-air-control-valve` | 190 | Low (Short reference) |
-
 ### Engine & Drivetrain mechanical (Top 9 prioritized)
 
 | Title | Slug | Length (chars) | Priority / Note |
@@ -172,11 +157,23 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Turbo | `turbo` | 294 | Low (Short reference) |
 | Cam Profile | `cam-profile` | 151 | Low (Short reference) |
 
-### Fueling & Injectors (Top 5 prioritized)
+### Diagnostics & troubleshooting (Top 8 prioritized)
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| Air Fuel Ratio | `air-fuel-ratio` | 3036 | **Completed** (Batch 7) |
+| OBD1 Code Compatibility | `obd1-code-compatibility` | 1675 | Medium |
+| CEL | `cel` | 1612 | Medium |
+| OBD0 Code Compatibility | `obd0-code-compatibility` | 1385 | Medium |
+| 91PM6 Target Idle | `91pm6-target-idle` | 1316 | Medium |
+| Label Decode | `label-decode` | 778 | Medium |
+| Limp Mode | `limp-mode` | 489 | Medium |
+| 91PM7 Target Idle | `91pm7-target-idle` | 367 | Medium |
+| Idle Air Control Valve | `idle-air-control-valve` | 190 | Low (Short reference) |
+
+### Fueling & Injectors (Top 4 prioritized)
+
+| Title | Slug | Length (chars) | Priority / Note |
+| :--- | :--- | :---: | :--- |
 | OBD1 8bit Fuel | `obd1-8bit-fuel` | 648 | Medium |
 | Fuel Cut | `fuel-cut` | 410 | Medium |
 | Fuel Octane | `fuel-octane` | 292 | Low (Short reference) |
