@@ -6,7 +6,7 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 
 | Status | Count | Percentage | Description |
 | :--- | :---: | :---: | :--- |
-| **Completed** | 72 | 14% | Articles ported and cleaned |
+| **Completed** | 72 | 14% | Articles ported, cleaned, and merged to main |
 | **Pending Porting** | 353 | 68.8% | Relevant content articles remaining to be ported |
 | **Stubs / Ignored** | 88 | 17.2% | Wiki pages with < 100 characters of text (empty templates, personal placeholders) |
 | **Total** | **513** | **100%** | All topics in `library` web |
@@ -20,9 +20,9 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 | Electronics/Sensors & solenoids | 71 | 19 | **42** | 10 |
 | Tuning & ROM editing | 43 | 9 | **28** | 6 |
 | Electronics/Wiring & conversion | 17 | 3 | **13** | 1 |
-| General Info & History | 15 | 2 | **8** | 5 |
 | Engine & Drivetrain mechanical | 11 | 0 | **9** | 2 |
 | Diagnostics & troubleshooting | 11 | 2 | **8** | 1 |
+| General Info & History | 15 | 2 | **8** | 5 |
 | Fueling & Injectors | 5 | 1 | **4** | 0 |
 
 ## 3. Prioritized Pending Articles by Category
@@ -127,19 +127,6 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Conversion | `conversion` | 211 | Low (Short reference) |
 | Spark Plug | `spark-plug` | 149 | Low (Short reference) |
 
-### General Info & History (Top 8 prioritized)
-
-| Title | Slug | Length (chars) | Priority / Note |
-| :--- | :--- | :---: | :--- |
-| Php Wiki Administration | `php-wiki-administration` | 3032 | **High** (Rich content) |
-| Wiki Word | `wiki-word` | 2126 | Medium |
-| How To Use Wiki | `how-to-use-wiki` | 1987 | Medium |
-| Magic Php Wiki UR Ls | `magic-php-wiki-ur-ls` | 1699 | Medium |
-| Inter Wiki | `inter-wiki` | 1647 | Medium |
-| Wiki Wiki Web | `wiki-wiki-web` | 847 | Medium |
-| Php Wiki | `php-wiki` | 255 | Low (Short reference) |
-| Php Wiki Documentation | `php-wiki-documentation` | 121 | Low (Short reference) |
-
 ### Engine & Drivetrain mechanical (Top 9 prioritized)
 
 | Title | Slug | Length (chars) | Priority / Note |
@@ -167,6 +154,19 @@ Below are the top pending articles in each category, sorted by length (approxima
 | 91PM7 Target Idle | `91pm7-target-idle` | 367 | Medium |
 | Idle Air Control Valve | `idle-air-control-valve` | 190 | Low (Short reference) |
 
+### General Info & History (Top 8 prioritized)
+
+| Title | Slug | Length (chars) | Priority / Note |
+| :--- | :--- | :---: | :--- |
+| Php Wiki Administration | `php-wiki-administration` | 3032 | **High** (Rich content) |
+| Wiki Word | `wiki-word` | 2126 | Medium |
+| How To Use Wiki | `how-to-use-wiki` | 1987 | Medium |
+| Magic Php Wiki UR Ls | `magic-php-wiki-ur-ls` | 1699 | Medium |
+| Inter Wiki | `inter-wiki` | 1647 | Medium |
+| Wiki Wiki Web | `wiki-wiki-web` | 847 | Medium |
+| Php Wiki | `php-wiki` | 255 | Low (Short reference) |
+| Php Wiki Documentation | `php-wiki-documentation` | 121 | Low (Short reference) |
+
 ### Fueling & Injectors (Top 4 prioritized)
 
 | Title | Slug | Length (chars) | Priority / Note |
@@ -176,42 +176,9 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Fuel Octane | `fuel-octane` | 292 | Low (Short reference) |
 | OBD0 Fuel | `obd0-fuel` | 111 | Low (Short reference) |
 
-## 4. Batch Porting Quality Gate
+## 4. Porting Roadmap & Next Steps
 
-Every batch must pass this workflow before it is considered completed:
-
-1. **Capture the source:** retain the raw archived page, attachment inventory, and
-   generated draft long enough to compare them during review.
-2. **Adapt the presentation:** remove wiki boilerplate and forum chatter; add a useful
-   lead, clear sections, tables, captions, and supported Markdown.
-3. **Preserve the evidence:** do not invent component functions, compatibility claims,
-   missing table labels, procedures, or recommendations. Keep uncertainty and source
-   contradictions visible.
-4. **Label legacy guidance:** describe old software settings, tuning defaults, supplier
-   numbers, and community procedures as archived examples rather than current safe
-   recommendations.
-5. **Bring the attachments:** compare archive attachment records with the article bundle,
-   copy every useful recovered image and download, remove broken legacy links, and
-   explicitly note important referenced files that were not recovered.
-6. **Compare source to article:** verify all values, formulas, addresses, pinouts, units,
-   filenames, and retained assets against the raw page after the rewrite.
-7. **Check rendering and URLs:** remove raw HTML, GitHub-specific callouts, unsupported
-   carousel fences, and other unsupported syntax. Verify every retained image and
-   download through its rendered article asset URL.
-8. **Run automated validation:** run `php artisan app:lint-articles`, but treat lint as a
-   structural check only. A passing linter does not establish technical accuracy.
-9. **Update this ledger:** remove completed items from the pending queues and update the
-   overall and category counts only after the batch passes the full quality gate.
-
-Source-faithful porting does not mean copying pages verbatim. Articles should be rewritten
-for clarity and mobile readability while keeping the archived technical claims,
-limitations, and uncertainty intact.
-
-## 5. Porting Roadmap & Next Steps
-
-1. **Phase 1: High-Priority Electronics & Tuning (Next Batch)**: Port and reformat
-   source-rich articles such as `doc-ecu-school`, `chipping-obd2`,
-   `howto-add-extra-features-in-crome`, and `nokia-cable-datalogging`.
+1. **Phase 1: High-Priority Electronics & Tuning (Next Batch)**: Port and reformat high-content articles (length > 2500 chars) such as `ecu-definition-codes`, `ecu-chipping-wirelist`, `kurts-obd0-obd1`, and `obd0ecuautotomanualwithoutremoveanyhardware`.
 2. **Phase 2: Wiring & Conversions**: Focus on the harness and swaps category to help enthusiasts with swaps.
 3. **Phase 3: Diagnostics & Troubleshooting**: Standardize error code guides and symptom-based checklists.
 4. **Phase 4: Mechanical & Drivetrain**: Port mechanical guides like RT4WD details, cams, and mechanical engine basics.
