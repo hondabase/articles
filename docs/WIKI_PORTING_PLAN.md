@@ -6,8 +6,8 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 
 | Status | Count | Percentage | Description |
 | :--- | :---: | :---: | :--- |
-| **Completed** | 72 | 14% | Articles ported, cleaned, and merged to main |
-| **Pending Porting** | 353 | 68.8% | Relevant content articles remaining to be ported |
+| **Completed** | 82 | 16% | Articles ported, cleaned, and merged to main |
+| **Pending Porting** | 343 | 66.9% | Relevant content articles remaining to be ported |
 | **Stubs / Ignored** | 88 | 17.2% | Wiki pages with < 100 characters of text (empty templates, personal placeholders) |
 | **Total** | **513** | **100%** | All topics in `library` web |
 
@@ -16,9 +16,9 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 | Category | Total | Completed | Pending | Stubs |
 | :--- | :---: | :---: | :---: | :---: |
 | Unclassified/Other | 252 | 14 | **188** | 50 |
-| Electronics/ECU hardware & chipping | 88 | 22 | **53** | 13 |
+| Electronics/ECU hardware & chipping | 88 | 29 | **46** | 13 |
 | Electronics/Sensors & solenoids | 71 | 19 | **42** | 10 |
-| Tuning & ROM editing | 43 | 9 | **28** | 6 |
+| Tuning & ROM editing | 43 | 12 | **25** | 6 |
 | Electronics/Wiring & conversion | 17 | 3 | **13** | 1 |
 | Engine & Drivetrain mechanical | 11 | 0 | **9** | 2 |
 | Diagnostics & troubleshooting | 11 | 2 | **8** | 1 |
@@ -53,14 +53,7 @@ Below are the top pending articles in each category, sorted by length (approxima
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| Doc ECU School | `doc-ecu-school` | 5503 | **High** (Rich content) |
-| Chipping OBD2 | `chipping-obd2` | 2449 | Medium |
-| Acura Integra PR4ECU Pinout And Schematics | `acura-integra-pr4ecu-pinout-and-schematics` | 1897 | Medium |
-| Knock Board | `knock-board` | 1745 | Medium |
-| P72 Debug Mode | `p72-debug-mode` | 1702 | Medium |
-| ECU Hardware Mods | `ecu-hardware-mods` | 1492 | Medium |
 | P14 | `p14` | 1489 | Medium |
-| Chipping OBD0PM6 | `chipping-obd0pm6` | 1450 | Medium |
 | Hi Res P72 | `hi-res-p72` | 1376 | Medium |
 | Chipping JDMP30 | `chipping-jdmp30` | 1320 | Medium |
 | Chips For EC Us | `chips-for-ec-us` | 1128 | Medium |
@@ -68,6 +61,13 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Learning To Solder | `learning-to-solder` | 1105 | Medium |
 | Rom Burner | `rom-burner` | 1087 | Medium |
 | Hardware For One Wire Vtec | `hardware-for-one-wire-vtec` | 1035 | Medium |
+| PM7 | `pm7` | 889 | Medium |
+| Ecu Connections | `ecu-connections` | 881 | Medium |
+| Desoldering Station | `desoldering-station` | 874 | Medium |
+| P14 To P13 | `p14-to-p13` | 808 | Medium |
+| Desoldering Iron | `desoldering-iron` | 806 | Medium |
+| Difference Us Can PM6 | `difference-us-can-pm6` | 798 | Medium |
+| OBD0PR4 | `obd0pr4` | 762 | Medium |
 
 ### Electronics/Sensors & solenoids (Top 15 prioritized)
 
@@ -93,9 +93,6 @@ Below are the top pending articles in each category, sorted by length (approxima
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| Howto Add Extra Features In Crome | `howto-add-extra-features-in-crome` | 3130 | **High** (Rich content) |
-| Nokia Cable Datalogging | `nokia-cable-datalogging` | 2533 | **High** (Rich content) |
-| Common TE Problems | `common-te-problems` | 2333 | Medium |
 | Usb To Serial Converter Second Gen | `usb-to-serial-converter-second-gen` | 1850 | Medium |
 | Rtp Truth Table | `rtp-truth-table` | 1514 | Medium |
 | Full Duplex Datalogging | `full-duplex-datalogging` | 1415 | Medium |
@@ -108,6 +105,9 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Rom Emulator | `rom-emulator` | 553 | Medium |
 | Launch Control | `launch-control` | 489 | Medium |
 | Serial Adapter | `serial-adapter` | 410 | Medium |
+| Dual Tables | `dual-tables` | 359 | Medium |
+| Compression Ratio | `compression-ratio` | 312 | Medium |
+| Hex2 Bin | `hex2-bin` | 271 | Low (Short reference) |
 
 ### Electronics/Wiring & conversion (Top 13 prioritized)
 
