@@ -6,8 +6,8 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 
 | Status | Count | Percentage | Description |
 | :--- | :---: | :---: | :--- |
-| **Completed** | 34 | 6.6% | Articles ported, cleaned, and merged to main |
-| **Pending Porting** | 391 | 76.2% | Relevant content articles remaining to be ported |
+| **Completed** | 39 | 7.6% | Articles ported, cleaned, and merged to main |
+| **Pending Porting** | 386 | 75.2% | Relevant content articles remaining to be ported |
 | **Stubs / Ignored** | 88 | 17.2% | Wiki pages with < 100 characters of text (empty templates, personal placeholders) |
 | **Total** | **513** | **100%** | All topics in `library` web |
 
@@ -15,10 +15,10 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 
 | Category | Total | Completed | Pending | Stubs |
 | :--- | :---: | :---: | :---: | :---: |
-| Unclassified/Other | 252 | 0 | **202** | 50 |
+| Unclassified/Other | 252 | 1 | **201** | 50 |
 | Electronics/ECU hardware & chipping | 88 | 13 | **62** | 13 |
 | Electronics/Sensors & solenoids | 71 | 17 | **44** | 10 |
-| Tuning & ROM editing | 43 | 3 | **34** | 6 |
+| Tuning & ROM editing | 43 | 7 | **30** | 6 |
 | Electronics/Wiring & conversion | 17 | 0 | **16** | 1 |
 | General Info & History | 15 | 0 | **10** | 5 |
 | Diagnostics & troubleshooting | 11 | 1 | **9** | 1 |
@@ -33,7 +33,7 @@ Below are the top pending articles in each category, sorted by length (approxima
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| OBD | `obd` | 22774 | **High** (Rich content) |
+| OBD | `obd` | 22774 | **Completed** (Batch 6) |
 | Debugging Data Logging | `debugging-data-logging` | 7969 | **High** (Rich content) |
 | Easy Rtp V10 | `easy-rtp-v10` | 7513 | **High** (Rich content) |
 | Sim | `sim` | 7008 | **High** (Rich content) |
@@ -97,11 +97,11 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Crome FAQ | `crome-faq` | 5233 | **Completed** (Batch 4) |
 | Proposed Datalogging Protocol | `proposed-datalogging-protocol` | 4149 | **High** (Rich content) |
 | Turbo Edit | `turbo-edit` | 4038 | **High** (Rich content) |
-| Serial Communication | `serial-communication` | 3177 | **High** (Rich content) |
+| Serial Communication | `serial-communication` | 3177 | **Completed** (Batch 6) |
 | Howto Add Extra Features In Crome | `howto-add-extra-features-in-crome` | 3130 | **High** (Rich content) |
-| Second Gen Usb To Serial Converter | `second-gen-usb-to-serial-converter` | 2869 | **High** (Rich content) |
-| Tuning Timing | `tuning-timing` | 2734 | **High** (Rich content) |
-| Tuning For Smog | `tuning-for-smog` | 2727 | **High** (Rich content) |
+| Second Gen Usb To Serial Converter | `second-gen-usb-to-serial-converter` | 2869 | **Completed** (Batch 6) |
+| Tuning Timing | `tuning-timing` | 2734 | **Completed** (Batch 6) |
+| Tuning For Smog | `tuning-for-smog` | 2727 | **Completed** (Batch 6) |
 | Nokia Cable Datalogging | `nokia-cable-datalogging` | 2533 | **High** (Rich content) |
 | Common TE Problems | `common-te-problems` | 2333 | Medium |
 | Usb To Serial Converter Second Gen | `usb-to-serial-converter-second-gen` | 1850 | Medium |
