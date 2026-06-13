@@ -6,8 +6,8 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 
 | Status | Count | Percentage | Description |
 | :--- | :---: | :---: | :--- |
-| **Completed** | 59 | 11.5% | Articles ported, cleaned, and merged to main |
-| **Pending Porting** | 366 | 71.3% | Relevant content articles remaining to be ported |
+| **Completed** | 72 | 14% | Articles ported and cleaned |
+| **Pending Porting** | 353 | 68.8% | Relevant content articles remaining to be ported |
 | **Stubs / Ignored** | 88 | 17.2% | Wiki pages with < 100 characters of text (empty templates, personal placeholders) |
 | **Total** | **513** | **100%** | All topics in `library` web |
 
@@ -15,12 +15,12 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 
 | Category | Total | Completed | Pending | Stubs |
 | :--- | :---: | :---: | :---: | :---: |
-| Unclassified/Other | 252 | 9 | **193** | 50 |
-| Electronics/ECU hardware & chipping | 88 | 19 | **56** | 13 |
-| Electronics/Sensors & solenoids | 71 | 18 | **43** | 10 |
-| Tuning & ROM editing | 43 | 8 | **29** | 6 |
-| Electronics/Wiring & conversion | 17 | 2 | **14** | 1 |
-| General Info & History | 15 | 0 | **10** | 5 |
+| Unclassified/Other | 252 | 14 | **188** | 50 |
+| Electronics/ECU hardware & chipping | 88 | 22 | **53** | 13 |
+| Electronics/Sensors & solenoids | 71 | 19 | **42** | 10 |
+| Tuning & ROM editing | 43 | 9 | **28** | 6 |
+| Electronics/Wiring & conversion | 17 | 3 | **13** | 1 |
+| General Info & History | 15 | 2 | **8** | 5 |
 | Engine & Drivetrain mechanical | 11 | 0 | **9** | 2 |
 | Diagnostics & troubleshooting | 11 | 2 | **8** | 1 |
 | Fueling & Injectors | 5 | 1 | **4** | 0 |
@@ -33,30 +33,27 @@ Below are the top pending articles in each category, sorted by length (approxima
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| Easy Rtp V10 | `easy-rtp-v10` | 7513 | **High** (Rich content) |
 | Pgsrc Translation | `pgsrc-translation` | 6960 | **High** (Rich content) |
 | Release Notes | `release-notes` | 5466 | **High** (Rich content) |
 | Text Formatting Rules | `text-formatting-rules` | 4598 | **High** (Rich content) |
 | P0A | `p0a` | 3373 | **High** (Rich content) |
-| Easy Rtp Install | `easy-rtp-install` | 3369 | **High** (Rich content) |
 | 66k Assembler Docs | `66k-assembler-docs` | 2749 | **High** (Rich content) |
-| Data Logging | `data-logging` | 2736 | **High** (Rich content) |
 | New Markup Test Page | `new-markup-test-page` | 2581 | **High** (Rich content) |
 | Nico Analyze | `nico-analyze` | 2551 | **High** (Rich content) |
 | How Does Data Logging Work | `how-does-data-logging-work` | 2498 | Medium |
 | Speed Density | `speed-density` | 2469 | Medium |
 | ASM662 | `asm662` | 2464 | Medium |
 | Test Page | `test-page` | 2450 | Medium |
-| Parts For EC Us | `parts-for-ec-us` | 2415 | Medium |
+| OBD1 Oki66207 Reader-PLCC68 | `obd1-oki66207-reader-plcc68` | 2256 | Medium |
+| PH3 | `ph3` | 2132 | Medium |
+| OBD1 Oki66207 Reader-DIP64 | `obd1-oki66207-reader-dip64` | 2130 | Medium |
+| 02D01720-1500 | `02d01720-1500` | 2087 | Medium |
 
 ### Electronics/ECU hardware & chipping (Top 15 prioritized)
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| Chipping An88-89ECU | `chipping-an88-89ecu` | 6471 | **High** (Rich content) |
 | Doc ECU School | `doc-ecu-school` | 5503 | **High** (Rich content) |
-| Japanese Domestic Market P30D12 Modification | `japanese-domestic-market-p30d12-modification` | 3808 | **High** (Rich content) |
-| OBD0 Inter Chip Communication | `obd0-inter-chip-communication` | 2924 | **High** (Rich content) |
 | Chipping OBD2 | `chipping-obd2` | 2449 | Medium |
 | Acura Integra PR4ECU Pinout And Schematics | `acura-integra-pr4ecu-pinout-and-schematics` | 1897 | Medium |
 | Knock Board | `knock-board` | 1745 | Medium |
@@ -68,13 +65,15 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Chipping JDMP30 | `chipping-jdmp30` | 1320 | Medium |
 | Chips For EC Us | `chips-for-ec-us` | 1128 | Medium |
 | 27C256 | `27c256` | 1115 | Medium |
+| Learning To Solder | `learning-to-solder` | 1105 | Medium |
+| Rom Burner | `rom-burner` | 1087 | Medium |
+| Hardware For One Wire Vtec | `hardware-for-one-wire-vtec` | 1035 | Medium |
 
 ### Electronics/Sensors & solenoids (Top 15 prioritized)
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
 | Inter Wiki Map | `inter-wiki-map` | 3554 | **High** (Rich content) |
-| How To Log External Data Such As An Egt Sensor | `how-to-log-external-data-such-as-an-egt-sensor` | 3319 | **High** (Rich content) |
 | Turbo Compressor Map | `turbo-compressor-map` | 2833 | **High** (Rich content) |
 | Rom Maps | `rom-maps` | 2810 | **High** (Rich content) |
 | Disable Vtec VSS Check P30 203 | `disable-vtec-vss-check-p30-203` | 1975 | Medium |
@@ -88,12 +87,12 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Adjust PR4 Pa Sensor | `adjust-pr4-pa-sensor` | 948 | Medium |
 | Disable Vtec VSS Check P28 | `disable-vtec-vss-check-p28` | 879 | Medium |
 | Map Sensor Equation | `map-sensor-equation` | 849 | Medium |
+| Throttle Position Sensor Adjustment | `throttle-position-sensor-adjustment` | 847 | Medium |
 
 ### Tuning & ROM editing (Top 15 prioritized)
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| Crome Script | `crome-script` | 18510 | **High** (Rich content) |
 | Howto Add Extra Features In Crome | `howto-add-extra-features-in-crome` | 3130 | **High** (Rich content) |
 | Nokia Cable Datalogging | `nokia-cable-datalogging` | 2533 | **High** (Rich content) |
 | Common TE Problems | `common-te-problems` | 2333 | Medium |
@@ -108,12 +107,12 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Crome ROM Editor | `crome-rom-editor` | 561 | Medium |
 | Rom Emulator | `rom-emulator` | 553 | Medium |
 | Launch Control | `launch-control` | 489 | Medium |
+| Serial Adapter | `serial-adapter` | 410 | Medium |
 
-### Electronics/Wiring & conversion (Top 14 prioritized)
+### Electronics/Wiring & conversion (Top 13 prioritized)
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| Accord Auto OBD2-OBD1 | `accord-auto-obd2-obd1` | 13050 | **High** (Rich content) |
 | Wiki Plugin | `wiki-plugin` | 2552 | **High** (Rich content) |
 | Calendar Plugin | `calendar-plugin` | 1794 | Medium |
 | OBD1P08 Auto Manual | `obd1p08-auto-manual` | 888 | Medium |
@@ -128,12 +127,10 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Conversion | `conversion` | 211 | Low (Short reference) |
 | Spark Plug | `spark-plug` | 149 | Low (Short reference) |
 
-### General Info & History (Top 10 prioritized)
+### General Info & History (Top 8 prioritized)
 
 | Title | Slug | Length (chars) | Priority / Note |
 | :--- | :--- | :---: | :--- |
-| Uber Data FAQ | `uber-data-faq` | 6847 | **High** (Rich content) |
-| Begginers FAQ | `begginers-faq` | 4405 | **High** (Rich content) |
 | Php Wiki Administration | `php-wiki-administration` | 3032 | **High** (Rich content) |
 | Wiki Word | `wiki-word` | 2126 | Medium |
 | How To Use Wiki | `how-to-use-wiki` | 1987 | Medium |
@@ -179,9 +176,42 @@ Below are the top pending articles in each category, sorted by length (approxima
 | Fuel Octane | `fuel-octane` | 292 | Low (Short reference) |
 | OBD0 Fuel | `obd0-fuel` | 111 | Low (Short reference) |
 
-## 4. Porting Roadmap & Next Steps
+## 4. Batch Porting Quality Gate
 
-1. **Phase 1: High-Priority Electronics & Tuning (Next Batch)**: Port and reformat high-content articles (length > 2500 chars) such as `ecu-definition-codes`, `ecu-chipping-wirelist`, `kurts-obd0-obd1`, and `obd0ecuautotomanualwithoutremoveanyhardware`.
+Every batch must pass this workflow before it is considered completed:
+
+1. **Capture the source:** retain the raw archived page, attachment inventory, and
+   generated draft long enough to compare them during review.
+2. **Adapt the presentation:** remove wiki boilerplate and forum chatter; add a useful
+   lead, clear sections, tables, captions, and supported Markdown.
+3. **Preserve the evidence:** do not invent component functions, compatibility claims,
+   missing table labels, procedures, or recommendations. Keep uncertainty and source
+   contradictions visible.
+4. **Label legacy guidance:** describe old software settings, tuning defaults, supplier
+   numbers, and community procedures as archived examples rather than current safe
+   recommendations.
+5. **Bring the attachments:** compare archive attachment records with the article bundle,
+   copy every useful recovered image and download, remove broken legacy links, and
+   explicitly note important referenced files that were not recovered.
+6. **Compare source to article:** verify all values, formulas, addresses, pinouts, units,
+   filenames, and retained assets against the raw page after the rewrite.
+7. **Check rendering and URLs:** remove raw HTML, GitHub-specific callouts, unsupported
+   carousel fences, and other unsupported syntax. Verify every retained image and
+   download through its rendered article asset URL.
+8. **Run automated validation:** run `php artisan app:lint-articles`, but treat lint as a
+   structural check only. A passing linter does not establish technical accuracy.
+9. **Update this ledger:** remove completed items from the pending queues and update the
+   overall and category counts only after the batch passes the full quality gate.
+
+Source-faithful porting does not mean copying pages verbatim. Articles should be rewritten
+for clarity and mobile readability while keeping the archived technical claims,
+limitations, and uncertainty intact.
+
+## 5. Porting Roadmap & Next Steps
+
+1. **Phase 1: High-Priority Electronics & Tuning (Next Batch)**: Port and reformat
+   source-rich articles such as `doc-ecu-school`, `chipping-obd2`,
+   `howto-add-extra-features-in-crome`, and `nokia-cable-datalogging`.
 2. **Phase 2: Wiring & Conversions**: Focus on the harness and swaps category to help enthusiasts with swaps.
 3. **Phase 3: Diagnostics & Troubleshooting**: Standardize error code guides and symptom-based checklists.
 4. **Phase 4: Mechanical & Drivetrain**: Port mechanical guides like RT4WD details, cams, and mechanical engine basics.

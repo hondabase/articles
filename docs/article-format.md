@@ -80,6 +80,11 @@ One `# H1` only (the title). Headings are sentence case, with acronyms left uppe
 - **Images.** Co-locate in the bundle and reference by filename, with real alt text:
   `![SCS connector under the glovebox](servicejumper.jpg)`. Add an italic caption under it
   when helpful: `*The SCS connector lives behind the glovebox kick panel.*`
+- **Attachments and downloads.** Recover every available source attachment that the
+  article retains, co-locate it in the article bundle, and link it by filename:
+  `[Download the archived schematic](schematic.pdf)`. Verify both the local file and the
+  rendered download URL. If an attachment was not recovered, do not leave a broken link;
+  explicitly say that the source referenced a missing file when that fact matters.
 - **Units.** Metric first, imperial in parentheses where useful: `30 Nm (22 ft-lb)`.
 - **Specifications** go in tables, not prose.
 - **Callouts** use a blockquote with a bold label:
@@ -88,7 +93,43 @@ One `# H1` only (the title). Headings are sentence case, with acronyms left uppe
   `::: widget error-codes obd="1" :::` (rolling out; use this syntax when documented).
 - **No raw HTML** in articles; it is escaped on render. Use Markdown (tables, code, lists).
 
-## 5. SEO Best Practices
+## 5. Source-faithful legacy ports
+
+A wiki port is an editorial adaptation of the archived source, not an opportunity to
+invent a cleaner technical story. Rewrite and restructure the material for Hondabase,
+but preserve what the source actually establishes, including its uncertainty.
+
+- **Use the archived page and its assets as primary evidence.** Compare the finished
+  article against the raw source after conversion; a generated draft or passing lint is
+  not proof that the content survived correctly.
+- **Inventory attachments before rewriting.** Compare the archive's attachment records
+  with the files copied into the article bundle. Preserve useful downloads as well as
+  displayed images, and verify that every retained image or download URL resolves through
+  the article asset route.
+- **Do not invent technical meaning.** Never add component functions, compatibility
+  claims, procedures, recommendations, units, or safety claims merely because they seem
+  plausible. Add outside facts only when they come from an authoritative source and are
+  clearly distinguished from the archived material.
+- **Preserve uncertainty and oddities.** Keep qualifiers such as "possibly," "unverified,"
+  and "unknown." When a source contains a suspicious value or contradiction, transcribe
+  it faithfully and add a note explaining the issue instead of silently correcting it.
+- **Treat tables as data.** Verify every row, column, label, unit, address, and pin against
+  the source. Do not infer missing headings or convert values unless the conversion is
+  explicit and checked.
+- **Label historical guidance.** Old supplier part numbers, software behavior, tuning
+  defaults, and community procedures must be described as archived or historical. Do not
+  turn a legacy example into a current recommendation.
+- **Do not overstate safety.** Words such as "safe," "required," "will," and "works with"
+  need direct support. Legacy tuning values and hardware modifications should be framed as
+  source examples and paired with appropriate verification warnings.
+- **Source-faithful does not mean verbatim.** Remove personalities, forum chatter, and
+  boilerplate; rewrite in clear prose while keeping the technical claims and limitations
+  intact.
+- **Use renderer-supported Markdown.** Use standard blockquote callouts such as
+  `> **Warning:**`; do not use GitHub callouts (`> [!WARNING]`), unsupported carousel
+  fences, or raw HTML. Only use widgets documented for Hondabase.
+
+## 6. SEO Best Practices
 
 To ensure articles rank well on search engines and attract readers, follow these SEO rules:
 
@@ -100,7 +141,7 @@ To ensure articles rank well on search engines and attract readers, follow these
 - **SEO-Friendly Anchor Text:** Never use "click here" or raw URLs as link text. Instead, write descriptive, natural anchor text that describes the target page (e.g., `read the [OBD1 ECU pinout guide](/cars/electronics/obd1-pinout)`).
 - **Remove Noise and Boilerplate:** Strip trailing wiki/forum boilerplate (e.g., "Page moved from...", edit dates, signatures like `-=dave`, attachment listings, or "Click edit below"). These dilute keyword density and look unprofessional.
 
-## 6. Adapting legacy / wiki content (checklist)
+## 7. Adapting legacy / wiki content (checklist)
 
 - [ ] Strip TWiki auto-links; keep only meaningful links and repoint them to Hondabase articles (e.g., `/cars/electronics/slug`), or remove them.
 - [ ] Add a lead paragraph; restructure the body into the section template.
@@ -112,5 +153,13 @@ To ensure articles rank well on search engines and attract readers, follow these
 - [ ] Ensure frontmatter contains a compelling SEO `summary` (meta description) under 160 characters.
 - [ ] Clean up broken markdown tables and format column structures properly.
 - [ ] Ensure heading hierarchy is strictly sequential (no skipped levels, e.g., H2 -> H3, no H4/H5 without H3).
+
+- [ ] Compare the completed article against the raw archived page and every retained asset.
+- [ ] Confirm every available source attachment was copied or intentionally omitted; test
+      every retained image and download URL through the rendered article.
+- [ ] Verify tables, pinouts, formulas, addresses, values, units, and filenames against the source.
+- [ ] Preserve uncertainty; flag suspicious or contradictory source values instead of silently fixing them.
+- [ ] Label legacy software settings, supplier numbers, and tuning advice as historical examples.
+- [ ] Remove unsupported callout/carousel syntax and confirm the Markdown renders as intended.
 
 See also: [markdown-cheat-sheet.md](../markdown-cheat-sheet.md).
