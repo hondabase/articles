@@ -1,5 +1,11 @@
 # Honda/Acura Trouble Codes
 
+Search the OBD trouble codes below, or browse the full list.
+
+::: widget error-codes :::
+
+## Full list
+
 - 0 - ECU - Faulty ECU Or ECU ROM
 - 1 - O2A - Oxygen Sensor #1
 - 2 - O2B - Oxygen Sensor #2
