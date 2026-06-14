@@ -13,6 +13,13 @@ tags:
   - wiring
   - conversion
   - diagnostics
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Rom Maps'
+    url: /pgmfi/wiki/library/rom-maps
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # ROM Maps
@@ -77,11 +84,11 @@ An area to collaborate on all the memory addresses found in [ROM](/cars/electron
 ####  Programming Resources 
 
 - [OBD0 PM6 PM7 RAM_Locations](/cars/electronics/obd0pm6pm7ram-locations) - the PM6 and PM7 code seems to store important values in really similar [RAM](/cars/electronics/ram) locations.
-- [OBD0 Conversion Formulas](/cars/electronics/obd0-conversion-formulas) - can be used to convert values found in these [ROM](/cars/electronics/rom)s to real world values.
+- [OBD0 Conversion Formula](/cars/electronics/obd0-conversion-formula) - can be used to convert values found in these [ROM](/cars/electronics/rom)s to real world values.
 - [OBD0 Code Compatibility](/cars/electronics/obd0-code-compatibility) - details what code can be swapped into which [ECU](/cars/electronics/ecu)s.
 - OBD0 MPFIRoutines - are often shared between [ECU](/cars/electronics/ecu)s.
 - [Intel8051](/cars/electronics/intel8051) - assembler/disassemblers can be used with these [ROM](/cars/electronics/rom)s.
 
 ###  External Resources 
 
-- A webpage with some of the [ROM](/cars/electronics/rom) locations and formulas is [here](http://www.ef-honda.com/ben/locations.html).
+- A webpage with some of the [ROM](/cars/electronics/rom) locations and formulas is [here](http://web.archive.org/web/20120411164611/http://ef-honda.com:80/ben/locations.html).
