@@ -21,7 +21,7 @@ tags:
 ###  Utilities 
 
 - [ASM662](/cars/electronics/asm662) - open-source assembler/disassembler for the Oki Nx8/200 66k processors by Andy Sloane
-- [66507 DASM](/pgmfi/forum/topic.php?id=1765) - disassembler for [OBD2](/cars/electronics/obd2) Oki 66507 processor by Pelegri Didier
+- [66507 DASM](/pgmfi/forum/topic.php?id=1765) - disassembler for [OBD2](/cars/electronics/obd2) Oki `66507` processor by Pelegri Didier
 - [assembly-Oki66k.xml](/pgmfi/forum/topic.php?id=1769) - jEdit [Edit Mode](http://jedit.org/users-guide/installing-modes.html) definition file for 66k assembly by Dave Johnson
 - [okiedit](/pgmfi/forum/topic.php?id=1770) - Win32 syntax-highlighting editor for 66k assembly by John Cui
 - [asm syntax for textpad 4.6](/pgmfi/forum/topic.php?id=1772) - syntax for texpad by Calvin Baank

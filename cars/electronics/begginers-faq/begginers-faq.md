@@ -28,7 +28,7 @@ market, year, transmission, and calibration.
 | PM7 | 1989-1991 JDM DOHC ZC EF |
 | PM8 | 1988-1991 CRX HF |
 | PR2 | 1989-1991 European ZC |
-| PR3 | 1989-1991 JDM B16A EF8/EF9; J00 or J51 also listed for 1992 |
+| PR3 | 1989-1991 JDM B16A EF8/EF9; `J00` or `J51` also listed for 1992 |
 | PW0 | 1989-1991 JDM B16A EF8/EF9 and DA6 XSi |
 | PR4 | 1990-1991 Integra LS/GS |
 | PS9 | 1988-1991 Civic EX sedan automatic |

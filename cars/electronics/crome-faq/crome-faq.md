@@ -30,14 +30,14 @@ To get started tuning and datalogging with Crome, you will need the following ha
 - **Wideband O2 Sensor:** A wideband oxygen sensor with a linear analog output voltage (e.g., Innovate, PLX, or TechEdge) is critical if you want to datalog air-fuel ratios through the ECU.
 - **EEPROM Chip Burner:** A hardware programmer (such as the Moates BURN1/BURN2 or a Willem programmer) to write files to your ROM chips. Note that Willem programmers usually require a parallel (LPT) port, which most modern laptops lack.
 - **Hardware Emulator (Optional):** An emulator like the Moates Ostrich allows real-time tuning (RTT) by uploading maps directly to the ECU without constantly burning chips.
-- **Datalogging Cable:** A USB-to-TTL serial adapter cable to connect the ECU's 4-pin datalogging header (CN2) to the laptop. Moates and other tuning vendors offer plug-and-play USB cables.
+- **Datalogging Cable:** A USB-to-TTL serial adapter cable to connect the ECU's 4-pin datalogging header (`CN2`) to the laptop. Moates and other tuning vendors offer plug-and-play USB cables.
 - **ECU Chipping Kit:** To prepare an OBD1 ECU for socketing, you need:
   - 28-pin machined DIP socket
   - 28-pin ZIF socket
-  - 4-pin CN2 datalogging header
+  - 4-pin `CN2` datalogging header
   - Two 0.1µF ceramic disc capacitors
   - 1k Ohm resistor
-  - 74HC373 latch chip
+  - `74HC373` latch chip
 
 For a step-by-step guide to installing hardware options, see the [guide on how to add extra features in Crome](/cars/electronics/howto-add-extra-features-in-crome).
 

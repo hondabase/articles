@@ -47,7 +47,7 @@ For 1990–1991 ECUs with a factory external ROM, the chipping process involves 
 *   Solder wick or a quality desoldering pump
 *   Rosin-core electronic solder (60/40 leaded solder is recommended for ease of use)
 *   Serrated utility knife or razor blade
-*   Compatible programmed EPROM (e.g., SST 27SF256)
+*   Compatible programmed EPROM (e.g., SST `27SF256`)
 
 ### Procedure
 
@@ -58,10 +58,10 @@ For 1990–1991 ECUs with a factory external ROM, the chipping process involves 
     > Do not apply heavy downward pressure. A slipped blade can easily slice the delicate copper traces on the circuit board, permanently ruining the ECU.
 
 2.  **Clean the Through-Holes:** 
-    Once the chip body is removed, heat each remaining pin leg on the solder side of the board and pull it out using tweezers. Use desoldering braid or a desoldering pump to clear the factory solder from all 28 holes. The holes must be completely clear so the new socket can slide in without force.
+    Once the chip body is removed, heat `each` remaining pin leg on the solder side of the board and pull it out using tweezers. Use desoldering braid or a desoldering pump to clear the factory solder from all 28 holes. The holes must be completely clear so the new socket can slide in without force.
 
 3.  **Install the IC Socket:** 
     Insert a standard 28-pin IC socket into the board, ensuring the notch on the socket matches the notch marker printed on the ECU circuit board. Solder all 28 pins from the underside of the board. Inspect your work with a magnifying glass to ensure there are no cold joints or solder bridges.
 
 4.  **Insert the EPROM:** 
-    Insert your custom SST 27SF256 or equivalent EPROM chip into the socket, making sure the chip notch matches the socket notch.
+    Insert your custom SST `27SF256` or equivalent EPROM chip into the socket, making sure the chip notch matches the socket notch.

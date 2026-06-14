@@ -10,7 +10,7 @@ tags:
 
 # Logic Mapping & Truth Tables for EPROM Emulation (RTP)
 
-Real-Time Programming (RTP) allows tuners to modify fuel and ignition tables in real-time while the engine is running. This is accomplished by replacing the standard read-only EPROM (27C256) with a Non-Volatile SRAM (such as the Dallas DS1230AB 32Kx8 NVSRAM). 
+Real-Time Programming (RTP) allows tuners to modify fuel and ignition tables in real-time while the engine is running. This is accomplished by replacing the standard read-only EPROM (`27C256`) with a Non-Volatile SRAM (such as the Dallas DS1230AB 32Kx8 NVSRAM). 
 
 Because the NVSRAM supports both read operations (by the ECU) and write operations (from the emulator interface), logic gates must route control signals to prevent data bus conflicts.
 

@@ -9,11 +9,11 @@ tags:
   - wiring
 ---
 
-# USB-to-Serial TTL Adapters (FTDI / USBMOD3)
+# USB-to-Serial TTL Adapters (`FTDI` / USBMOD3)
 
 Modern laptops lack the legacy RS-232 serial COM ports historically used to connect to automotive tuning hardware. To establish a real-time datalogging connection with a Honda ECU, you must use a USB-to-TTL serial converter. 
 
-One highly reliable solution is the **Elexol USBMOD3**, a breakout module powered by a high-speed FTDI transceiver chip that translates the ECU's 5V TTL serial signals into USB-compliant data packets.
+One highly reliable solution is the **Elexol USBMOD3**, a breakout module powered by a high-speed `FTDI` transceiver chip that translates the ECU's 5V TTL serial signals into USB-compliant data packets.
 
 ---
 
@@ -46,12 +46,12 @@ Before soldering the module to your ECU harness, perform a loopback test to veri
 
 ---
 
-## 3. Wiring to the ECU CN2 Port
+## 3. Wiring to the ECU `CN2` Port
 
-Once the loopback test passes, remove the temporary jumper between Pin 27 and 28, and connect the module to the ECU\'s CN2 header:
+Once the loopback test passes, remove the temporary jumper between Pin 27 and 28, and connect the module to the ECU\'s `CN2` header:
 
-1.  Connect **Pin 27 (RXD on module)** to **Pin 2 (ECU TX)** on the CN2 header.
-2.  Connect **Pin 28 (TXD on module)** to **Pin 4 (ECU RX)** on the CN2 header.
-3.  Connect **Ground (GND on module)** to **Pin 1 (ECU GND)** on the CN2 header.
+1.  Connect **Pin 27 (RXD on module)** to **Pin 2 (ECU TX)** on the `CN2` header.
+2.  Connect **Pin 28 (TXD on module)** to **Pin 4 (ECU RX)** on the `CN2` header.
+3.  Connect **Ground (GND on module)** to **Pin 1 (ECU GND)** on the `CN2` header.
 
-> **Warning:** Never connect the ECU's CN2 Pin 5 (12V) to the USBMOD3 board. This will instantly destroy the transceiver module and damage your laptop's USB port.
+> **Warning:** Never connect the ECU's `CN2` Pin 5 (12V) to the USBMOD3 board. This will instantly destroy the transceiver module and damage your laptop's USB port.

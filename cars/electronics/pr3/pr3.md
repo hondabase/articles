@@ -24,12 +24,12 @@ The PR3 Engine Control Unit (ECU) is a prominent Honda controller equipped in B1
 - **Application:** Sourced from first-generation JDM B16A models (Civic EF9, CRX EF8, Integra DA6).
 - **Hardware:** Features the OKI M66x301 microcontroller and dual knock sensor board. Uses the same code structure as the [PW0 ECU](/cars/electronics/pw0).
 - **Auto/Manual Jumper:** Check the board layout for transmission jumper identification:
-  [OBD0 PR3 Auto/Manual Jumper Identification Scan](http://pgmfi.org/resources/FAQ/scans/OBD0_pr3-auto-manual.jpg)
+  [OBD0 PR3 Auto/Manual Jumper Identification Scan](https://web.archive.org/web/http://pgmfi.org/resources/FAQ/scans/OBD0_pr3-auto-manual.jpg)
 
 ### OBD1 PR3 (1992–1993)
 - **Application:** Sourced from 1992–1993 JDM Integra RSi and XSi models (second-generation B16A).
 - **Hardware:** Built on the same standardized motherboard as the [P28](/cars/electronics/p28) and [P30](/cars/electronics/p30) ECUs (typically circuit board part number `02D01720-1500`).
-- **Layout Scan:** [OBD1 PR3 Board Layout Scan](http://pgmfi.org/resources/FAQ/scans/PR3-OBD1.jpg)
+- **Layout Scan:** [OBD1 PR3 Board Layout Scan](https://web.archive.org/web/http://pgmfi.org/resources/FAQ/scans/PR3-OBD1.jpg)
 
 ---
 
@@ -59,10 +59,10 @@ Below are the hex address offsets within the 28-pin EEPROM chip for the OBD0 ver
 Refer to the following high-resolution board scans for diagnostic troubleshooting and repair of the PR3:
 
 ![JDM PR3 J01 OBD0 ECU top board view](pr3-j01-1.JPG)
-*Top side component view of the JDM PR3 J01 ECU board.*
+*Top side component view of the JDM PR3 `J01` ECU board.*
 
 ![JDM PR3 J51 top board view showing microchip locations](pr3-j51top.jpg)
-*Top side component view of JDM PR3 J51 ECU board.*
+*Top side component view of JDM PR3 `J51` ECU board.*
 
 ![JDM PR3 J51 bottom solder trace view](pr3-j51bottom.jpg)
-*Solder trace view on the bottom side of the PR3 J51 board.*
+*Solder trace view on the bottom side of the PR3 `J51` board.*

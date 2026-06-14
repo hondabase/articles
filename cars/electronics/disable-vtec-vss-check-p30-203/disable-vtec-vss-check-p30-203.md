@@ -15,9 +15,9 @@ tags:
 
 # Disable VTEC VSS Check P30 203
 
-Author: doc 07-10-03 15:21 Did i? Ok, in a 203 or 209 rom, you can change the location 6010 (hex) from 00 to FF to bypass the [VSS](/cars/electronics/vss) check in the VTEC routine. If you use a other rom, you've to search for the right location. Here a short instruction how i would search for it: First we need a disassembly of the desired rom. Choose your faforite disassembler and create the disasm. Search for the VTEC routine. I'll normally search for "22.1", with a1k0n's disassembler you've to search for "22h.1" (don't confuse with *OFF* 22.1) and stop when i find a routine which looks similar to the following one (the addresses and offset could be different, but the RB 22.1 and RB 22.0 are in every Rom the same!):
+Author: doc 07-10-03 15:21 Did i? Ok, in a 203 or 209 rom, you can change the location 6010 (hex) from 00 to FF to bypass the [VSS](/cars/electronics/vss) check in the VTEC routine. If you use a other rom, you've to search for the right location. Here a short instruction how i would search for it: First we need a disassembly of the desired rom. Choose your faforite disassembler and create the disasm. Search for the VTEC routine. I'll normally search for "22.1", with a1k0n's disassembler you've to search for "`22h`.1" (don't confuse with *OFF* 22.1) and stop when i find a routine which looks similar to the following one (the addresses and offset could be different, but the RB 22.1 and RB 22.0 are in every Rom the same!):
 
-- 11B9- C5 22 09 : RB 22.1 ; Reset Bit Port1.1 VTEC
+- 11B9- `C5` 22 09 : RB 22.1 ; Reset Bit Port1.1 VTEC
 - 11BC- CB 24 : SJ 11E2 ; disable VTEC
 
 ---

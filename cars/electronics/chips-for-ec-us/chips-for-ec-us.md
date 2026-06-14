@@ -50,5 +50,5 @@ Early production runs of the OBD0 Acura Integra PR4 ECU (dated June 1989) shippe
 
 ## 3. Incompatibility Warnings
 
-### The 28C256 EEPROM
-Do not confuse the recommended `27SF256` or `29C256` with the standard **`28C256`** EEPROM. Although the 28C256 shares the same 32 KB capacity and 28-pin DIP package, it uses a different pin configuration (specifically on write control pins). If plugged into a standard 27C256 socket, a 28C256 will not communicate with the ECU and will trigger a solid CEL. It requires circuit trace modification to function.
+### The `28C256` EEPROM
+Do not confuse the recommended `27SF256` or `29C256` with the standard **`28C256`** EEPROM. Although the `28C256` shares the same 32 KB capacity and 28-pin DIP package, it uses a different pin configuration (specifically on write control pins). If plugged into a standard `27C256` socket, a `28C256` will not communicate with the ECU and will trigger a solid CEL. It requires circuit trace modification to function.

@@ -15,7 +15,7 @@ tags:
 
 The Japanese Domestic Market (JDM) OBD1 P30 DOHC VTEC ECU is housed in a compact, square-shaped metal casing, which differs from the larger rectangular casing used for USDM ECUs. 
 
-Because of the compact board layout, chipping a JDM P30 requires working with surface-mount devices (SMD) rather than through-hole components. The memory latch (74HC373) must be soldered directly to SMT pads on the board.
+Because of the compact board layout, chipping a JDM P30 requires working with surface-mount devices (SMD) rather than through-hole components. The memory latch (`74HC373`) must be soldered directly to SMT pads on the board.
 
 ---
 
@@ -25,11 +25,11 @@ To chip a JDM P30 ECU, source the following components:
 
 | Component Location | Description / Value | Manufacturer / Part Number |
 | :--- | :--- | :--- |
-| **Latch (IC)** | 74HC373 SMD Latch (SOP-20 package) | SN74HC373NSR (Digi-Key: `296-8310-1-ND`) |
+| **Latch (IC)** | `74HC373` SMD Latch (SOP-20 package) | SN74HC373NSR (Digi-Key: `296-8310-1-ND`) |
 | **ROM Socket** | 28-pin low-profile DIP Socket | Standard 0.6" width DIP-28 |
-| **EPROM** | Reprogrammable EPROM | SST 27SF256 or 29C256 |
-| **C49 & C50** | `0.004 uF` SMD ceramic capacitor | Digi-Key: `399-1230-1-ND` |
-| **C91 & C92** | `0.0001 uF` (100 pF) SMD ceramic capacitor | Digi-Key: `399-1192-1-ND` |
+| **EPROM** | Reprogrammable EPROM | SST `27SF256` or `29C256` |
+| **`C49` & `C50`** | `0.004 uF` SMD ceramic capacitor | Digi-Key: `399-1230-1-ND` |
+| **`C91` & `C92`** | `0.0001 uF` (100 pF) SMD ceramic capacitor | Digi-Key: `399-1192-1-ND` |
 
 > **Warning:** The original reference images showing the precise locations of the capacitors and jumpers on the board underside were not recovered from the legacy archives. Ensure you verify the pad labels silk-screened on your PCB before soldering.
 
@@ -56,8 +56,8 @@ To chip a JDM P30 ECU, source the following components:
 
 If you plan to use a real-time emulator (like Moates Ostrich) or datalog via the serial port using Crome:
 
-*   **Remove J4:** Locate and desolder the 0-ohm jumper resistor at position **`J4`** on the top side of the board. Removing J4 disconnects the factory debug routines and enables full-duplex serial data transmission.
-*   **Install CN2 Pins:** Solder a 4-pin male pin header (0.1" spacing) into the **`CN2`** port location to connect your USB-to-TTL datalogging cable.
+*   **Remove `J4`:** Locate and desolder the 0-ohm jumper resistor at position **`J4`** on the top side of the board. Removing `J4` disconnects the factory debug routines and enables full-duplex serial data transmission.
+*   **Install `CN2` Pins:** Solder a 4-pin male pin header (0.1" spacing) into the **`CN2`** port location to connect your USB-to-TTL datalogging cable.
 
 ---
 

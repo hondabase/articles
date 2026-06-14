@@ -26,7 +26,7 @@ These early fuel injection designs typically utilize external vacuum advance mec
 - **PJ1:** 1985–1987 EDM Integra 1.6i-16 / CRX Mk1 1.6i-16.
 - **PJ7:** 1986–1987 Prelude 2.0 Si (B20A3 engine).
 - **PJ0:** 1986–1989 Accord A20 (vacuum advance).
-- **PL2:** 1986–1988 Honda/Acura V6 (C25/C27 engines).
+- **PL2:** 1986–1988 Honda/Acura V6 (`C25`/`C27` engines).
 
 ## OBD0 DualPoint (DPFI) Families
 Used in entry-level Honda models featuring dual-point injection.

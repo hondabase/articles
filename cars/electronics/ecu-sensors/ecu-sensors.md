@@ -12,9 +12,9 @@ tags:
 
 Sensors present on almost all honda motors:
 
-- [Crankshaft Position Sensor](/cars/electronics/crankshaft-position-sensor) - Determines timing for fuel injection and ignition of each cylinder and also detects engine speed.
+- [Crankshaft Position Sensor](/cars/electronics/crankshaft-position-sensor) - Determines timing for fuel injection and ignition of `each` cylinder and also detects engine speed.
 - Top Dead Center Sensor - Determines ignition timing at start-up (cranking) and when crank angle is abnormal.
-- [Cylinder Position Sensor](/cars/electronics/cylinder-position-sensor) - Detects position of #1 cylinder for sequential spark ignition to each cylinder.
+- [Cylinder Position Sensor](/cars/electronics/cylinder-position-sensor) - Detects position of #1 cylinder for sequential spark ignition to `each` cylinder.
 - Engine Coolant Temperature - or ''ECT'' thermocouple input for engine coolant temperature
 - [Intake Air Temperature Sensor](/cars/electronics/intake-air-temperature-sensor) - or ''IAT'' thermocouple input for intake air temperature
 - Map Sensor - Manifold Absolute Pressure Sensor, allows [ECU](/cars/electronics/ecu) to adjust Air Fuel Ratio based on density of intake air

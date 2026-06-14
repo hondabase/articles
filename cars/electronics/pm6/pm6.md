@@ -17,7 +17,7 @@ The **PM6** is the factory OBD0 engine control unit (ECU) utilized in 1988–199
 Due to its simple architecture and widespread availability, the PM6 has historically served as a major development platform for OBD0 Honda tuning, disassembly, and real-time programming.
 
 ## Microcontroller Architecture
-The PM6 ECU is built around the OKI 83C154 / Intel 80C154 microcontroller family. The ROM code can be extracted, modified, and burnt to standard EPROMs (such as the 27C256) to adjust fuel maps, ignition maps, rev limits, and other engine parameters.
+The PM6 ECU is built around the OKI `83C154` / Intel `80C154` microcontroller family. The ROM code can be extracted, modified, and burnt to standard EPROMs (such as the `27C256`) to adjust fuel maps, ignition maps, rev limits, and other engine parameters.
 
 ## Development Resources
 

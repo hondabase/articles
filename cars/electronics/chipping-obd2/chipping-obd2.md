@@ -9,11 +9,11 @@ tags:
   - hardware
 ---
 
-# Chipping OBD2 Honda ECUs (OKI 66507 / 66P507)
+# Chipping OBD2 Honda ECUs (OKI `66507` / `66P507`)
 
 A common misconception is that OBD2 Honda ECUs cannot be chipped. While it is significantly more complex and expensive than chipping OBD0 or OBD1 boards, it is entirely possible. 
 
-Unlike older ECUs that use external memory chips or feature dedicated solder pads for an external EPROM, OBD2 Honda ECUs store their operating code directly inside the internal ROM of the main microcontroller—typically an OKI 66507 series SMT processor. Modification requires replacing this microcontroller entirely.
+Unlike older ECUs that use external memory chips or feature dedicated solder pads for an external EPROM, OBD2 Honda ECUs store their operating code directly inside the internal ROM of the main microcontroller—typically an OKI `66507` series SMT processor. Modification requires replacing this microcontroller entirely.
 
 ---
 
@@ -32,9 +32,9 @@ Because the factory microcontroller is a surface-mount device (SMD) in a PLCC84 
 
 ---
 
-## 2. Programming the OKI 66P507
+## 2. Programming the OKI `66P507`
 
-Because the OKI 66P507 is an OTP microcontroller, it can only be programmed once. You must write the correct ROM image on the first attempt.
+Because the OKI `66P507` is an OTP microcontroller, it can only be programmed once. You must write the correct ROM image on the first attempt.
 
 To write data using a standard EPROM burner (such as a Willem or similar device), you must use a custom programming adapter board. This adapter maps the PLCC84 pinout of the OKI chip to the standard DIP28 layout of a 27C512 EPROM.
 
@@ -43,7 +43,7 @@ To write data using a standard EPROM burner (such as a Willem or similar device)
 
 ### Programming Steps:
 1.  Plug the custom adapter into your EPROM burner.
-2.  Place a blank OKI 66P507 MCU into the PLCC socket on top of the adapter.
+2.  Place a blank OKI `66P507` MCU into the PLCC socket on top of the adapter.
 3.  Set the programming software to target a standard **27C512 EPROM**.
 4.  Restrict the target address range to **`$0000` to `$BFFF`** (representing the 48KB ROM code).
 5.  Set the programming voltage (Vpp) to **12.5V** and select a standard, slow programming algorithm to prevent errors.

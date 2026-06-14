@@ -19,7 +19,7 @@ tags:
 Describe [OBD0 Conversion Formula](/cars/electronics/obd0-conversion-formula) here.
 
 - [OBD016 Bit RPM](/cars/electronics/obd016-bit-rpm) is used for revlimiters, target idle and most other 16bit [RPM](/cars/electronics/rpm) values in the [ROM](/cars/electronics/rom).
-- [OBD0 VSS](/cars/electronics/obd0vss) is used to convert the values in ram 06Ch to Vehicle Speed.
+- [OBD0 VSS](/cars/electronics/obd0vss) is used to convert the values in ram `06Ch` to Vehicle Speed.
 - [OBD0 Fuel](/cars/electronics/obd0-fuel) is used to convert the hex values in the fuel maps to pulse width in milliseconds.
 - [OBD0 Ignition](/cars/electronics/obd0-ignition) is used to convert the hex values in the ignition maps into degrees advance.
 - [OBD0 VTEC](/cars/electronics/obd0vtec) is used for VTEC values.

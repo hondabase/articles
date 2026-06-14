@@ -32,8 +32,8 @@ Below is a comparison of burners commonly used for Honda ECU tuning:
 
 | Programmer Model | Interface | Status | Notes |
 | :--- | :---: | :--- | :--- |
-| **XGecu TL866 / T48 (MiniPro)** | USB | **Modern Standard** | The current go-to programmer for DIY tuners. Cheap, actively supported, and programs SST 27SF256 and 27C256 chips quickly. |
-| **Moates BURN1 / BURN2** | USB | **Legacy / Used** | Custom USB programmers designed by Moates specifically for automotive tuning. They work natively with SST 27SF256 chips and integrate directly with software like Crome. |
+| **XGecu TL866 / T48 (MiniPro)** | USB | **Modern Standard** | The current go-to programmer for DIY tuners. Cheap, actively supported, and programs SST `27SF256` and `27C256` chips quickly. |
+| **Moates BURN1 / BURN2** | USB | **Legacy / Used** | Custom USB programmers designed by Moates specifically for automotive tuning. They work natively with SST `27SF256` chips and integrate directly with software like Crome. |
 | **Willem Programmer** | Parallel (LPT) / USB | **Legacy / DIY** | Very inexpensive open-source style board. Older parallel versions require a true hardware parallel port (LPT1) and will fail on USB-to-parallel printer adapters. |
 | **Pocket Programmer 2** | Parallel | **Legacy** | Historically bundled with older Hondata packages; requires a parallel port. |
 | **Batronix USB Programmer** | USB | **Professional** | High-quality German-engineered professional burner with excellent software support. |

@@ -13,7 +13,7 @@ tags:
 
 **Real-Time Programming (RTP)** allows tuners to edit an ECU's fuel and ignition maps in real-time while the engine is running, eliminating the need to shut down the engine, burn a new EPROM chip, and swap it out for every tuning iteration.
 
-The **Easy-RTP v1.0** is a classic DIY EPROM emulator board. It is a single-sided printed circuit board (PCB) designed to house a 28-pin Non-Volatile SRAM (NVSRAM) chip (like the Dallas DS1230Y), interfacing directly with a standard socketed Honda OBD1 ECU.
+The **Easy-RTP v1.0** is a classic DIY EPROM emulator board. It is a single-sided printed circuit board (PCB) designed to house a 28-pin Non-Volatile SRAM (NVSRAM) chip (like the Dallas `DS1230Y`), interfacing directly with a standard socketed Honda OBD1 ECU.
 
 > **Warning:** This archived design requires board-level soldering and live ECU memory
 > changes. Disconnect power while wiring and verify all cuts and jumpers with a
@@ -55,14 +55,14 @@ To assemble the board, orient the PCB with the traces facing up (bottom view) to
 
 1. **Install Interface Headers**: Solder the two 1x14 pin headers from the bottom (trace side). These pins will plug directly into the ECU's 28-pin ROM socket.
 2. **Install NVSRAM Socket**: Flip the board over. Solder the 28-pin DIP socket in the top set of holes. Ensure the chip alignment notch faces **Left**.
-3. **Install J1 Jumper**: Solder a 3-pin male header or a 3-wire jumper at the **J1** jumper location.
-4. **Solder capacitors**: Install the two 0.1 uF capacitors at **C1** and **C2**.
-5. **Solder core resistors**: Solder the 10 kohm resistors at **R1** (left) and **R2** (center).
+3. **Install `J1` Jumper**: Solder a 3-pin male header or a 3-wire jumper at the **`J1`** jumper location.
+4. **Solder capacitors**: Install the two 0.1 uF capacitors at **`C1`** and **`C2`**.
+5. **Solder core resistors**: Solder the 10 kohm resistors at **`R1`** (left) and **`R2`** (center).
 6. **Configure emulation mode**:
-   * **Without 27C256 emulation**: Solder a solid wire jumper or a 0-ohm resistor across **D1**. Skip to final step.
-   * **With 27C256 emulation**: Solder the **1N4148** diode at **D1**, the NPN transistor at **Q1**, the 10 kohm resistor at **R3** (top), and the 100 kohm resistor at **R4** (bottom).
+   * **Without `27C256` emulation**: Solder a solid wire jumper or a 0-ohm resistor across **D1**. Skip to final step.
+   * **With `27C256` emulation**: Solder the **1N4148** diode at **D1**, the NPN transistor at **`Q1`**, the 10 kohm resistor at **`R3`** (top), and the 100 kohm resistor at **`R4`** (bottom).
 7. **Install the logic IC and NVSRAM**: Solder the **74HC00** IC in place. Insert the
-   **DS1230Y** NVSRAM into its socket.
+   **`DS1230Y`** NVSRAM into its socket.
 
 ### Assembly photos
 
@@ -82,19 +82,19 @@ To assemble the board, orient the PCB with the traces facing up (bottom view) to
 *NVSRAM socket solder joints.*
 
 ![J1 Jumper Installed](IM000501.JPG)
-*J1 header installed.*
+*`J1` header installed.*
 
 ![C1/C2 Capacitors Soldered](IM000503.JPG)
-*C1 and C2 installed.*
+*`C1` and `C2` installed.*
 
 ![R1/R2 Resistors Soldered](IM000505.JPG)
-*R1 and R2 installed.*
+*`R1` and `R2` installed.*
 
 ![74HC00 Logic Chip Soldered](IM000507.JPG)
 *74HC00 logic IC installed.*
 
 ![Completed Board with DS1230Y Installed](IM000509.JPG)
-*Completed board with DS1230Y installed.*
+*Completed board with `DS1230Y` installed.*
 
 ---
 
@@ -139,7 +139,7 @@ To run the Easy-RTP v1.0 board on an OBD0 ECU, you must modify the chip-select a
 5. **Isolate ECU Pin 16**: Cut the connection to ECU Pin 16 on both sides of the board,
    then reconnect the interrupted original circuit so only the ECU pin remains isolated.
 6. **Connect the RTP board**: Connect one RTP wire from its input to isolated ECU Pin 16,
-   and connect the other RTP wire to Pin 21 of the ECU's 24-pin M5128 SRAM.
+   and connect the other RTP wire to Pin 21 of the ECU's 24-pin `M5128` SRAM.
 
 ---
 

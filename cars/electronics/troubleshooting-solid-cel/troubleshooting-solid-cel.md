@@ -24,7 +24,7 @@ During its power-on self-test, the ECU's main microcontroller (MCU) performs sev
 
 If any of these low-level hardware or software checks fail, the MCU halts execution and turns on the solid CEL. On chipped (socketed) ECUs, **95% of solid CELs are caused by one of two issues**:
 1.  **Bad ROM/Program:** A corrupt ROM file, bad checksum, or a bad write/burn to the EPROM chip.
-2.  **Improper Soldering:** Cold solder joints, solder bridges (shorts), or open circuits on the newly installed socket, latch (74HC373), or J1 jumper.
+2.  **Improper Soldering:** Cold solder joints, solder bridges (shorts), or open circuits on the newly installed socket, latch (`74HC373`), or `J1` jumper.
 
 ## Procedure
 
@@ -39,25 +39,25 @@ Rule out software issues first.
     *   **Normal Behavior:** The CEL should turn on, the fuel pump should prime the fuel rail for 2 seconds, and then both the CEL and fuel pump should turn off.
     *   **Result:** If the ECU behaves normally with a stock program, your soldering is fine. The problem lies with the custom ROM you were trying to use (e.g., incorrect checksum, incompatible code base, or corrupt bin file).
 
-### Step 2: Perform the J1 Jumper Test (OBD1 Only)
+### Step 2: Perform the `J1` Jumper Test (OBD1 Only)
 If the ECU still shows a solid CEL with a known good stock ROM, test the hardware bypass.
-1.  Locate the **J1 jumper** on the ECU board (which tells the ECU to read from the external EPROM chip instead of its internal ROM).
-2.  De-solder or cut one leg of the J1 jumper. This disables the external chip socket and reverts the ECU to its factory internal ROM.
+1.  Locate the **`J1` jumper** on the ECU board (which tells the ECU to read from the external EPROM chip instead of its internal ROM).
+2.  De-solder or cut one leg of the `J1` jumper. This disables the external chip socket and reverts the ECU to its factory internal ROM.
 3.  Power up the ECU.
-    *   **Result A (Normal operation):** If the solid CEL goes away, the ECU's internal circuitry is fine. The issue is definitely located in your external chip socket, the 74HC373 latch chip, or the solder joints connecting them.
-    *   **Result B (Solid CEL persists):** If the CEL remains solid even with J1 cut, the ECU itself is likely damaged (fried) and may need to be replaced.
+    *   **Result A (Normal operation):** If the solid CEL goes away, the ECU's internal circuitry is fine. The issue is definitely located in your external chip socket, the `74HC373` latch chip, or the solder joints connecting them.
+    *   **Result B (Solid CEL persists):** If the CEL remains solid even with `J1` cut, the ECU itself is likely damaged (fried) and may need to be replaced.
 
 ### Step 3: Inspect and Test Soldering
-If the J1 test proved the external socket area is the problem, inspect the board.
+If the `J1` test proved the external socket area is the problem, inspect the board.
 1.  Clean the top and bottom of the PCB around the socket and latch using isopropyl rubbing alcohol and a toothbrush to remove all flux residue.
-2.  Use a magnifying glass or jeweler's loupe under bright light to inspect every solder joint on the EPROM socket, the 74HC373 latch, and J1. Look for:
+2.  Use a magnifying glass or jeweler's loupe under bright light to inspect every solder joint on the EPROM socket, the `74HC373` latch, and `J1`. Look for:
     *   **Cold joints:** Dull, grey, or cracked solder that didn't flow correctly.
     *   **Solder bridges:** Tiny blobs of solder bridging two adjacent pins.
     *   **Lack of penetration:** Solder that did not flow all the way through the via to the top side of the board.
 3.  Use a digital multimeter in continuity mode to trace connections between the EPROM socket, latch, and MCU to ensure there are no open circuits or shorted pins.
 
 ### Step 4: Check decoupling capacitors
-If you added noise-filtering decoupling capacitors (e.g., C91 and C92 on JDM P30 ECUs):
+If you added noise-filtering decoupling capacitors (e.g., `C91` and `C92` on JDM P30 ECUs):
 *   Verify their capacitance. Using decoupling capacitors that are too large (e.g., 0.1µF instead of the recommended 0.00001µF / 10pF) can pull down signals like PSEN or ALE, triggering a solid CEL.
 
 ## Related

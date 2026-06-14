@@ -31,7 +31,7 @@ Convert budget non-VTEC ECUs (such as the P06 Civic DX or P75 Integra LS) into V
 
 ### Secondary Runner Control (IAB Addition)
 Add Intake Air Bypass (IAB) controls to a P28 ECU. Standard P28 ECUs do not support the dual-stage intake runner solenoid found on B18C1 (Integra GS-R) and H22A (Prelude VTEC) intake manifolds.
-*   **The Mod:** Solder the IAB driver IC (typically at IC15) and supporting resistors to activate secondary runner control. See the [Adding IAB to P28](/cars/electronics/add-iab-to-p28) guide for details.
+*   **The Mod:** Solder the IAB driver IC (typically at `IC15`) and supporting resistors to activate secondary runner control. See the [Adding IAB to P28](/cars/electronics/add-iab-to-p28) guide for details.
 
 ### Knock Board Installation
 Modify a P75 or P28 ECU to accept a knock sensor by installing the OEM knock processing sub-board and soldering the input trace pins. See the [Knock Board installation guide](/cars/electronics/add-a-knock-sensor).

@@ -20,10 +20,10 @@ This guide lists the critical ROM address locations for modifying parameters (su
 
 ### ECU Board Scans & Hardware
 For hardware repairs or socketing verification, refer to these board scans:
-- [PW0 Component View 1](http://pgmfi.org/resources/FAQ/scans/PW0-000_component1.jpeg)
-- [PW0 Component View 2](http://pgmfi.org/resources/FAQ/scans/PW0-000_component2.jpeg)
-- [PW0 Knock Sensor Circuitry](http://pgmfi.org/resources/FAQ/scans/PW0-000_knock.jpeg)
-- [PW0 Solder Joints (Back View)](http://pgmfi.org/resources/FAQ/scans/PW0-E00_solder.jpeg)
+- [PW0 Component View 1](https://web.archive.org/web/http://pgmfi.org/resources/FAQ/scans/PW0-000_component1.jpeg)
+- [PW0 Component View 2](https://web.archive.org/web/http://pgmfi.org/resources/FAQ/scans/PW0-000_component2.jpeg)
+- [PW0 Knock Sensor Circuitry](https://web.archive.org/web/http://pgmfi.org/resources/FAQ/scans/PW0-000_knock.jpeg)
+- [PW0 Solder Joints (Back View)](https://web.archive.org/web/http://pgmfi.org/resources/FAQ/scans/PW0-E00_solder.jpeg)
 
 ---
 
@@ -73,7 +73,7 @@ Below are the hex address offsets within the EEPROM for European-spec PW0 calibr
 
 ## Fuel Column Multiplier Formula
 
-Because 8-bit cell values (scaled `0x00` to `0xFF` or `0-255`) cannot cover a wide enough pulse-width range without losing resolution, the PW0 ECU applies a column-specific multiplier coefficient to each load column:
+Because 8-bit cell values (scaled `0x00` to `0xFF` or `0-255`) cannot cover a wide enough pulse-width range without losing resolution, the PW0 ECU applies a column-specific multiplier coefficient to `each` load column:
 
 $$\text{Column Multiplier} = \frac{2^{\text{Multiplier Value}}}{4}$$
 

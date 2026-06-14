@@ -18,7 +18,7 @@ tags:
 
 Author: HRED (ABordeaux-103-1-10-174.abo.wanadoo.fr)
 Date: 09-30-02 13:13
-Here you can readout 66P507... Nico
+Here you can readout `66P507`... Nico
 
 - Block diagram of dumper: 
      ![BLOCK.gif](BLOCK.gif)

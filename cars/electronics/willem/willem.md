@@ -60,20 +60,20 @@ The SST **27SF512** is a 512kbit (64 Kilobyte) flash memory chip that is commonl
 
 ---
 
-## Programming SST 27SF256 Chips (256k Flash)
+## Programming SST `27SF256` Chips (256k Flash)
 
-The SST **27SF256** is a native 256kbit (32 Kilobyte) chip, meaning it matches the standard Honda ROM size perfectly. No software offsets are required, but the board configuration jumpers must be adjusted.
+The SST **`27SF256`** is a native 256kbit (32 Kilobyte) chip, meaning it matches the standard Honda ROM size perfectly. No software offsets are required, but the board configuration jumpers must be adjusted.
 
-### Erasing the SST 27SF256
+### Erasing the SST `27SF256`
 
-Unlike standard EPROMs which require UV light to erase, the SST 27SF256 is electrically erasable. However, specific jumpers must be repositioned to permit the high erase voltage to route correctly:
+Unlike standard EPROMs which require UV light to erase, the SST `27SF256` is electrically erasable. However, specific jumpers must be repositioned to permit the high erase voltage to route correctly:
 
 ![SST 27SF256 Erase Jumper Configuration](sst27sf256erase_184.jpg)
-*Willem Board Jumper Configuration for Erasing SST 27SF256*
+*Willem Board Jumper Configuration for Erasing SST `27SF256`*
 
-### Burning the SST 27SF256
+### Burning the SST `27SF256`
 
-To burn the SST 27SF256, return the jumpers to the PCB3 burn position (do not leave them in Willem mode):
+To burn the SST `27SF256`, return the jumpers to the PCB3 burn position (do not leave them in Willem mode):
 
 ![SST 27SF256 Burn Jumper Configuration](sst27sf256_136.jpg)
-*Willem Board Jumper Configuration for Burning SST 27SF256*
+*Willem Board Jumper Configuration for Burning SST `27SF256`*

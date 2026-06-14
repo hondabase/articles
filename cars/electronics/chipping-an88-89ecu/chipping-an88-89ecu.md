@@ -48,7 +48,7 @@ The source noted in January 2004 that this approach was not finished.
 Replace the 40-pin MCU with a daughterboard containing:
 
 - A socket for the original OKI MCU
-- A 74HC373 address latch
+- A `74HC373` address latch
 - An external EPROM socket
 - Hardware that configures `_EA` for external ROM
 
@@ -64,7 +64,7 @@ describes a direct flywire method and an XRAM piggyback method.
 
 This table is a direct pin mapping from the archived page.
 
-| EPROM pin | M83C154 MCU pin | 74HC373 pin |
+| EPROM pin | M83C154 MCU pin | `74HC373` pin |
 | :---: | :---: | :---: |
 | 1 | 40 | - |
 | 2 | 25 | - |

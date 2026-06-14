@@ -15,7 +15,7 @@ Datalogging records operating conditions from a running engine. This archived ov
 | Method | Archived description |
 | --- | --- |
 | Stock Data Link Connector (DLC) | Uses the ECU's original diagnostic communication path through the vehicle DLC |
-| Internal ECU serial connector | Uses CN2 on OBD1 ECUs or CN3 on OBD0 ECUs with a modified ECU-code serial handler |
+| Internal ECU serial connector | Uses `CN2` on OBD1 ECUs or `CN3` on OBD0 ECUs with a modified ECU-code serial handler |
 
 Stock OBD0 and OBD1 ECUs included diagnostic communication capability. The source says the stock serial baud rate was not standard for PC serial ports, but explicitly does not remember the exact rate or establish whether a PC could use it directly.
 

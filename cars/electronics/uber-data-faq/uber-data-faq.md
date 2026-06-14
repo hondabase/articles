@@ -26,27 +26,27 @@ socketing parts:
 
 - One 1/4 W, 1 kohm resistor
 - Two 0.1 uF ceramic disc capacitors
-- One 74HC373 address latch
+- One `74HC373` address latch
 - One 28-pin ROM socket
-- One compatible 28-pin ROM, such as a 27C256
+- One compatible 28-pin ROM, such as a `27C256`
 - A ROM programmer
 
 It gives this socketing sequence:
 
 1. Desolder the component holes.
 2. Solder a 28-pin socket into the empty ROM footprint.
-3. Solder in the 74HC373.
-4. Solder a resistor into R54; the source says this is not needed on a USDM P72 GS-R.
-5. Solder 0.1 uF capacitors into C51 and C52.
-6. Install the J1 jumper.
+3. Solder in the `74HC373`.
+4. Solder a resistor into `R54`; the source says this is not needed on a USDM P72 GS-R.
+5. Solder 0.1 uF capacitors into `C51` and `C52`.
+6. Install the `J1` jumper.
 7. Insert the ROM in the correct orientation.
 
-The source notes that R54 values from 1 kohm through 10 kohm were reported to work and
+The source notes that `R54` values from 1 kohm through 10 kohm were reported to work and
 that 1 kohm was reported to work better with some ROM emulators.
 
 > **Warning:** Installing an EPROM or EEPROM backward can overheat and damage it when
 > power is applied. If a new error appears after socketing, test a verified stock bin and
-> inspect the soldering. The archived guide says cutting J1 returns the ECU to stock code.
+> inspect the soldering. The archived guide says cutting `J1` returns the ECU to stock code.
 
 For a broader hardware guide, see
 [Introduction to ECU chipping](/cars/electronics/introduction-to-ecu-chipping).

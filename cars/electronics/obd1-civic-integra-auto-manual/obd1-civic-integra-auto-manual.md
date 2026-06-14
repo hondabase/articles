@@ -63,7 +63,7 @@ If you need to run an automatic car on an originally manual ECU:
 1.  Remove the jumper wire at **RP18**.
 2.  Install a **2.7k Ohm** resistor at **RP18**.
 3.  Install a **4.7k Ohm** resistor at **RP17**.
-4.  Add the transmission solenoid driver chip/transistor array at position **IC16** (typically a `5050S` chip or equivalent) if it is missing from the manual board.
+4.  Add the transmission solenoid driver chip/transistor array at position **`IC16`** (typically a `5050S` chip or equivalent) if it is missing from the manual board.
 
 ## Related
 

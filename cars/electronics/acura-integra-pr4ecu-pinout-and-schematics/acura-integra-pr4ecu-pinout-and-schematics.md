@@ -22,14 +22,14 @@ The following pins have been verified using wire color codes and standard OBD0 e
 ### Exhaust Gas Recirculation (EGR) (California Models Only)
 California-spec Integra models equipped with automatic transmissions feature an EGR system. These use the following pin assignments:
 *   **Pin A10:** EGR Control Solenoid (Red wire)
-*   **Pin C8:** EGR Valve Lift Sensor (Yellow wire)
+*   **Pin `C8`:** EGR Valve Lift Sensor (Yellow wire)
 
 ### Pressure Regulator Cutoff
 On standard manual transmission and non-California models, the EGR pins are repurposed or omitted:
 *   **Pin A10:** Pressure Regulator Cutoff (PRC) Solenoid Valve (Green/Yellow wire)
 
 ### Steering Switch Signal
-*   **Pin C9:** Power Steering Pressure Switch (Red wire), used by the ECU to increase idle speed when steering load is high.
+*   **Pin `C9`:** Power Steering Pressure Switch (Red wire), used by the ECU to increase idle speed when steering load is high.
 
 ## Unresolved Wiring & Missing Pins
 

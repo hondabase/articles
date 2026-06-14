@@ -27,7 +27,7 @@ Emissions analyzers measure three primary chemical pollutants from the exhaust s
 
 ## 2. Exhaust Chemistry vs. Air-Fuel Ratio (AFR)
 
-Tuning for emissions requires balancing the air-fuel ratio. Each pollutant behaves differently as the mixture changes:
+Tuning for emissions requires balancing the air-fuel ratio. `Each` pollutant behaves differently as the mixture changes:
 
 - **Running Rich (AFR < 14.7):** Lowers combustion chamber temperatures (reducing NOx), but dramatically increases HC and CO emissions due to unburnt fuel.
 - **Running Lean (AFR > 14.7):** Lowers CO and HC emissions, but increases cylinder temperatures, which causes NOx to spike.

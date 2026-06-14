@@ -13,4 +13,4 @@ tags:
 
 # OBD0CN3
 
-[OBD0](/cars/electronics/obd0) [ECU](/cars/electronics/ecu)s generally have a 5 pin serial port labelled ***"CN3"***This is the same pinout and has the same function more or less as [OBD1 CN2](/cars/electronics/obd1cn2)
+[OBD0](/cars/electronics/obd0) [ECU](/cars/electronics/ecu)s generally have a 5 pin serial port labelled ***"`CN3`"***This is the same pinout and has the same function more or less as [OBD1 CN2](/cars/electronics/obd1cn2)

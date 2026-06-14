@@ -34,7 +34,7 @@ If the [CEL](/cars/electronics/cel) is lit solid and does not blink (after jumpi
 - [Check Sum](/cars/electronics/check-sum) error
 - Faulty program stored in the [ROM](/cars/electronics/rom)
 - Faulty [ROM](/cars/electronics/rom) chip
-- Faulty 74HC373 chip
+- Faulty `74HC373` chip
 
 See [Troubleshooting Solid CEL](/cars/electronics/troubleshooting-solid-cel)####  "Phantom" Check Engine Light 
 

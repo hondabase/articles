@@ -9,11 +9,11 @@ tags:
   - hardware
 ---
 
-# USB-to-TTL Serial Converter Guide (FTDI & CP2102)
+# USB-to-TTL Serial Converter Guide (`FTDI` & CP2102)
 
 Modern laptops do not have physical DB9 serial ports. To interface with the [serial datalogging header (CN2)](/cars/electronics/serial-communication) on a Honda OBD1 ECU, you must use a USB-to-TTL converter board. These converters utilize integrated circuit chips to translate the USB bus signals into asynchronous serial TTL data (0V–5V logic) that the ECU's microcontroller can process.
 
-The most popular and reliable chips used in these converters are the **FTDI FT232RL** and the **Silicon Labs CP2102**.
+The most popular and reliable chips used in these converters are the **`FTDI` FT232RL** and the **Silicon Labs CP2102**.
 
 ---
 
@@ -34,13 +34,13 @@ Unlike older, complex modular boards that required manual configuration of jumpe
 If your datalogging software fails to connect, you can perform a **loopback test** to isolate whether the issue lies in your USB converter/driver or within the ECU itself.
 
 ### Loopback Test Steps
-1. Disconnect the USB-to-TTL module from the ECU's CN2 header.
+1. Disconnect the USB-to-TTL module from the ECU's `CN2` header.
 2. Using a small jumper wire, connect the module's **TXD** pin directly to its own **RXD** pin.
 3. Plug the module into your laptop's USB port.
 4. Open a serial terminal terminal program (such as PuTTY, Tera Term, or Arduino Serial Monitor).
 5. Select the COM port corresponding to your module (found in Windows Device Manager under *Ports (COM & LPT)*) and configure the connection for **38,400 baud**.
 6. Open the connection and type text in the terminal window:
-   - **If the characters you type appear on the screen:** The USB interface, chip, driver, and laptop configuration are working perfectly. The issue lies in your ECU's CN2 connections, soldering, ROM firmware, or wiring.
+   - **If the characters you type appear on the screen:** The USB interface, chip, driver, and laptop configuration are working perfectly. The issue lies in your ECU's `CN2` connections, soldering, ROM firmware, or wiring.
    - **If nothing appears on screen:** The converter module, USB cable, or drivers are faulty.
 
 ---
@@ -64,7 +64,7 @@ By default, FTDI and CP2102 USB drivers are configured with a latency timer opti
 
 If your loopback test passes but you still cannot establish communication with the ECU:
 
-- **Verify Signal Cross-Connection:** Double-check that TX connects to RX and RX connects to TX. It is a common mistake to wire TX-to-TX and RX-to-RX. If you suspect this, swap the two data lines on your CN2 plug.
-- **Inspect Solder Joints:** Cold solder joints on the ECU's CN2 pin header can cause intermittent connection drops under engine vibration. Reflow the solder pads with fresh flux.
+- **Verify Signal Cross-Connection:** Double-check that TX connects to RX and RX connects to TX. It is a common mistake to wire TX-to-TX and RX-to-RX. If you suspect this, swap the two data lines on your `CN2` plug.
+- **Inspect Solder Joints:** Cold solder joints on the ECU's `CN2` pin header can cause intermittent connection drops under engine vibration. Reflow the solder pads with fresh flux.
 - **Isolate Ignition Noise:** Spark plug wires and distributor coils emit electromagnetic interference (EMI). Route your datalogging USB cable away from the engine bay wiring harness and distributor. Using a USB cable with a ferrite bead clamp can help block this noise.
 - **Datalogging Plugin Check:** Verify that your ROM chip is burned with the correct datalogging plugin active (such as the Quick 2-byte datalogger for Crome) and that the ROM checksum is disabled. For more software debugging tips, consult the [debugging datalogging guide](/cars/electronics/debugging-data-logging).

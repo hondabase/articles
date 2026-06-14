@@ -25,9 +25,9 @@ A Wiki [Sand Box](/cars/electronics/sand-box) is very easy to clean. Here you ca
 
 ###  ZIP files of database 
 
-These links lead to zip files, generated on the fly, which contain all the pages in your Wiki. The zip file will be downloaded to your local computer. This ***ZIP Snapshot***  contains only the latest versions of each page, while this ***ZIP Dump***  contains all archived versions. (If the [Php Wiki](/cars/electronics/php-wiki) is configured to allow it,) anyone can download a zip file. If your php has ''zlib'' support, the files in the archive will be compressed, otherwise they will just be stored. ###  Dump to directory 
+These links lead to zip files, generated on the fly, which contain all the pages in your Wiki. The zip file will be downloaded to your local computer. This ***ZIP Snapshot***  contains only the latest versions of `each` page, while this ***ZIP Dump***  contains all archived versions. (If the [Php Wiki](/cars/electronics/php-wiki) is configured to allow it,) anyone can download a zip file. If your php has ''zlib'' support, the files in the archive will be compressed, otherwise they will just be stored. ###  Dump to directory 
 
-Here you can dump pages of your Wiki into a directory of your choice. Wiki Form action=dumpserial?> The most recent version of each page will written out to the directory, one page per file. Your server must have write permissions to the directory! ---
+Here you can dump pages of your Wiki into a directory of your choice. Wiki Form action=dumpserial?> The most recent version of `each` page will written out to the directory, one page per file. Your server must have write permissions to the directory! ---
 
 ##  Restoring 
 
@@ -39,9 +39,9 @@ Here you can load ZIP archives, individual files or entire directories. The file
 
 ##  Format of the files 
 
-Currently the pages are stored, one per file, as MIME (RFC:2045) e-mail (RFC:822) messages. The content-type ''application/x-phpwiki'' is used, and page meta-data is encoded in the content-type parameters. (If the file contains several versions of a page, it will have type ''multipart/mixed'', and contain several sub-parts, each with type ''application/x-phpwiki''.) The message body contains the page text. ###  Old Formats 
+Currently the pages are stored, one per file, as MIME (RFC:2045) e-mail (RFC:822) messages. The content-type ''application/x-phpwiki'' is used, and page meta-data is encoded in the content-type parameters. (If the file contains several versions of a page, it will have type ''multipart/mixed'', and contain several sub-parts, `each` with type ''application/x-phpwiki''.) The message body contains the page text. ###  Old Formats 
 
-***Serialized Files***The dump to directory command used to dump the pages as php ''serialized()'' strings. For humans, this made the files very hard to read, and nearly impossible to edit. ***Plain Files***Before that the page text was just dumped to a file--this means that all page meta-data was lost. Note that when loading ''plain files'', the page name is deduced from the file name. The upload and load functions will automatically recognize each of these three types of files, and handle them accordingly. ---
+***Serialized Files***The dump to directory command used to dump the pages as php ''serialized()'' strings. For humans, this made the files very hard to read, and nearly impossible to edit. ***Plain Files***Before that the page text was just dumped to a file--this means that all page meta-data was lost. Note that when loading ''plain files'', the page name is deduced from the file name. The upload and load functions will automatically recognize `each` of these three types of files, and handle them accordingly. ---
 
 ##  Dump pages as XHTML 
 

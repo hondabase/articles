@@ -17,7 +17,7 @@ tags:
 
 # Auto To Manual
 
-Most automatic [ECU](/cars/electronics/ecu)s can be converted to a 5spd rather easily. Going the other way often involves adding more components. At this time, it appears that the conversion can be done in either software OR hardware: most of the "mugen" [ROM](/cars/electronics/rom)s disable the check for automatic transmission hardware, letting an automatic [ECU](/cars/electronics/ecu) run a 5spd engine w/o throwing a code 19 (auto trans lockup solenoid) You can also modify the hardware to make and auto [ECU](/cars/electronics/ecu) think it is a Manual. This is rather specific to each [ECU](/cars/electronics/ecu).
+Most automatic [ECU](/cars/electronics/ecu)s can be converted to a 5spd rather easily. Going the other way often involves adding more components. At this time, it appears that the conversion can be done in either software OR hardware: most of the "mugen" [ROM](/cars/electronics/rom)s disable the check for automatic transmission hardware, letting an automatic [ECU](/cars/electronics/ecu) run a 5spd engine w/o throwing a code 19 (auto trans lockup solenoid) You can also modify the hardware to make and auto [ECU](/cars/electronics/ecu) think it is a Manual. This is rather specific to `each` [ECU](/cars/electronics/ecu).
 
 - [OBD0 ECU AUTO TO MANUAL WITHOUT REMOVE ANY HARDWARE](/cars/electronics/obd0ecuautotomanualwithoutremoveanyhardware) = How to Run Auto ECU WITHOUT Check Engine!
 - [PS9 Auto Manual](/cars/electronics/ps9-auto-manual) = How to turn a [OBD0](/cars/electronics/obd0) PS9, PG7, PM7, PR5 or similar circuit boards into a PM6-ish manual [ECU](/cars/electronics/ecu)

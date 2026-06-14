@@ -11,4 +11,4 @@ tags:
 
 # ECU
 
-Engine Control Unit - a computer that controls a car engine. Below are some basic questions about [ECU](/cars/electronics/ecu)'s answered. How do I tell if my [ECU](/cars/electronics/ecu) is manual or auto? ![OBD1auto_manual.jpg](http://pgmfi.org/resources/FAQ/scans/OBD1auto_manual.jpg)How do I tell if I have a JDM or USDM [ECU](/cars/electronics/ecu)? ![OBD1USDM_JDM.jpg](http://pgmfi.org/resources/FAQ/scans/OBD1USDM_JDM.jpg)It is also worth noting that ALL USDM have 37820-P??-**A##**. Another easy way to tell if you have a USDM.
+Engine Control Unit - a computer that controls a car engine. Below are some basic questions about [ECU](/cars/electronics/ecu)'s answered. How do I tell if my [ECU](/cars/electronics/ecu) is manual or auto? ![OBD1auto_manual.jpg](https://web.archive.org/web/http://pgmfi.org/resources/FAQ/scans/OBD1auto_manual.jpg)How do I tell if I have a JDM or USDM [ECU](/cars/electronics/ecu)? ![OBD1USDM_JDM.jpg](https://web.archive.org/web/http://pgmfi.org/resources/FAQ/scans/OBD1USDM_JDM.jpg)It is also worth noting that ALL USDM have 37820-P??-**A##**. Another easy way to tell if you have a USDM.

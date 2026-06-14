@@ -41,24 +41,24 @@ This is the standard configuration for USDM OBD1 B18C1 (Integra GS-R) swaps. The
 
 ## 2. JDM OBD1 / OBD2 Active-High Configuration (ECU Sends +12V)
 
-JDM B18C engines and OBD2 vehicles wire one side of the IAB solenoid directly to Ground. The ECU must output a **+12V signal** on Pin **A19** to activate the solenoid. This requires adding a **High-Side Switch** chip (`515X` / IC15 location) to the board.
+JDM B18C engines and OBD2 vehicles wire one side of the IAB solenoid directly to Ground. The ECU must output a **+12V signal** on Pin **A19** to activate the solenoid. This requires adding a **High-Side Switch** chip (`515X` / `IC15` location) to the board.
 
 ### Components to Remove
-* **`Q34`** (Cut the control leg of the driver IC15 short, thread the signal wire through the hole, and solder it to the control hole of `Q34`).
+* **`Q34`** (Cut the control leg of the driver `IC15` short, thread the signal wire through the hole, and solder it to the control hole of `Q34`).
 
 ### Components to Add
-* **`IC15`** (515X High-Side Switch IC): Solder the 515X chip in place at location IC15.
+* **`IC15`** (515X High-Side Switch IC): Solder the 515X chip in place at location `IC15`.
 * **`C61`** (1&mu;F 35V Tantalum Capacitor): Solder this capacitor in place to filter the high-side switch supply voltage.
 * **`Q17`** (A143 transistor): If not present on your board, add a new A143 transistor.
-* **Signal Wire**: Connect a wire from the cut control pin of IC15 to the control pad of Q34.
+* **Signal Wire**: Connect a wire from the cut control pin of `IC15` to the control pad of `Q34`.
 
 ### Board Modifications (High-Side Switch)
 
 ![High-Side Switch Board Modification - View 1](P28_IAB_1.jpg)
-*Overview of the High-Side Switch IC15 chip installation and wiring routing.*
+*Overview of the High-Side Switch `IC15` chip installation and wiring routing.*
 
 ![High-Side Switch Board Modification - View 2](P28_IAB_2.jpg)
-*Close-up view of the signal wire soldered to the control pad of Q34.*
+*Close-up view of the signal wire soldered to the control pad of `Q34`.*
 
 ---
 

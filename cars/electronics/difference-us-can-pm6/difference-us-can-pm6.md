@@ -47,11 +47,11 @@ Once `BR1` is open, the ECU will stop monitoring the ELD input pin, and the Code
 
 Below are scans comparing the two board layouts:
 
-### Canadian PM6-C00 Board
+### Canadian PM6-`C00` Board
 Note the open solder pads where the `BR1` jumper is omitted:
 
 ![Canadian-spec PM6-C00 ECU board scan](crx90CA_89-10-17modif2.jpg)
-*Canadian-market PM6-C00 board layout.*
+*Canadian-market PM6-`C00` board layout.*
 
 ### USDM PM6-A09 Board
 Note the populated `BR1` jumper wire installed near the edge connector:

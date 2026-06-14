@@ -15,7 +15,7 @@ tags:
 
 # PH3
 
-THe 88-89 Accord [OBD](/cars/electronics/obd)-0 B20A [ECU](/cars/electronics/ecu) uses an Electronic Advance distributor. It has an External 27c256 [ROM](/cars/electronics/rom) and is oki 80c154 based
+THe 88-89 Accord [OBD](/cars/electronics/obd)-0 B20A [ECU](/cars/electronics/ecu) uses an Electronic Advance distributor. It has an External `27C256` [ROM](/cars/electronics/rom) and is oki `80C154` based
 This [ECU](/cars/electronics/ecu) is very similar to the PK2 [ECU](/cars/electronics/ecu) for the 88-91 Prelude. However, it has the second O2 sensor disabled via BR8
 
 The 86-87 Accord [OBD](/cars/electronics/obd)-0 B20A is oki80c514 based but has a 27c128 rom.

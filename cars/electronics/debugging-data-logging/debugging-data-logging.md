@@ -9,7 +9,7 @@ tags:
   - serial
 ---
 
-# Troubleshooting Honda ECU Datalogging (CN2 Debugging)
+# Troubleshooting Honda ECU Datalogging (`CN2` Debugging)
 
 Datalogging enables real-time monitoring of engine variables, but connection failures are common during initial setups. If your tuning software (such as Crome, Hondata, or Neptune) fails to establish a live connection with the ECU, work through this troubleshooting checklist to isolate hardware, software, or operating system configuration issues.
 
@@ -38,7 +38,7 @@ A stock ECU ROM constantly calculates a checksum to verify code integrity. If yo
 - **Action:** Open your ROM in your editor, go to the enhancements menu, and select **Remove Checksum Routine** before burning the chip.
 
 ### Install a Datalogging Protocol Plugin
-Stock ROM code does not output serial diagnostic data on the CN2 header by default. You must overlay a datalogging protocol plugin onto the binary file:
+Stock ROM code does not output serial diagnostic data on the `CN2` header by default. You must overlay a datalogging protocol plugin onto the binary file:
 - **Action:** Install a protocol plugin (such as Crome's *Quick Datalogger* plugin). This inserts serial transmit loops into the ECU's main runtime program execution.
 - **Baud Rate Matching:** Verify that your software's connection settings match the plugin protocol's baud rate. For example, Crome's Quick Datalogger defaults to **38,400 bps**, while legacy protocols may run at **9,600 bps** or **115,200 bps**.
 
@@ -68,7 +68,7 @@ To boot up an OBD1 Honda ECU on a 12V DC power supply, make the following connec
 | **Diagnostic Jumper (SCS)** | **D4** | Connect this pin to ground to enable diagnostic flash codes |
 | **Check Engine Light (CEL)** | **A11** | Connect an LED in series with a 1k Ohm resistor between pin A11 and +12V. The LED will illuminate to replicate the dashboard CEL. |
 
-Once powered on the bench, connect your USB-to-TTL converter to the CN2 header and launch your datalogger. Although the datalogger will report garbage values for missing sensors, you should see active, updating numbers on your screen, indicating that the serial interface is fully functional.
+Once powered on the bench, connect your USB-to-TTL converter to the `CN2` header and launch your datalogger. Although the datalogger will report garbage values for missing sensors, you should see active, updating numbers on your screen, indicating that the serial interface is fully functional.
 
 ## Related Articles
 - [CN2 Serial Port Pinouts](/cars/electronics/serial-communication)

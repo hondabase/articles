@@ -13,4 +13,4 @@ tags:
 
 # OBD1J1
 
-J1 on [OBD1](/cars/electronics/obd1) [ECU](/cars/electronics/ecu)s controls the state of [_EA](/cars/electronics/ea). It is used to change whether the [MCU](/cars/electronics/mcu) uses an external [ROM](/cars/electronics/rom) or internal program.
+`J1` on [OBD1](/cars/electronics/obd1) [ECU](/cars/electronics/ecu)s controls the state of [_EA](/cars/electronics/ea). It is used to change whether the [MCU](/cars/electronics/mcu) uses an external [ROM](/cars/electronics/rom) or internal program.

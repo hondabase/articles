@@ -12,7 +12,7 @@ tags:
 
 The **ChipMax** (manufactured by [EE Tools](http://www.eetools.com)) is an entry-level professional universal device programmer. Originally released with a parallel port interface, newer models utilize USB connectivity (such as the ChipMax2). 
 
-It is a popular choice for burning EPROMs (like the 27C256) and EEPROMs (like the [28C256](/cars/electronics/28c256)) used in OBD0 and OBD1 Honda ECUs.
+It is a popular choice for burning EPROMs (like the `27C256`) and EEPROMs (like the [28C256](/cars/electronics/28c256)) used in OBD0 and OBD1 Honda ECUs.
 
 ## Key Features
 

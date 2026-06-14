@@ -31,7 +31,7 @@ If you have replaced your throttle body, installed an aftermarket TPS, or are ex
 
 #### Step 1: Remove the Anti-Tamper Bolts
 The factory TPS is held in place by two shear bolts that look like rivets. These bolts break off their heads when tightened at the factory to prevent tampering.
-1.  Use a rotary tool (Dremel) with a cutoff wheel to cut a straight groove into the head of each shear bolt.
+1.  Use a rotary tool (Dremel) with a cutoff wheel to cut a straight groove into the head of `each` shear bolt.
 2.  Use a flathead screwdriver to loosen and remove the bolts.
 3.  *Alternative:* Use a pair of small locking pliers (Vise-Grips) to grab the edges of the bolt head and turn them, though this carries a risk of damaging the sensor housing.
 4.  Replace these factory bolts with new M5 screws (Allen head bolts are highly recommended, as they are much easier to access in the tight space behind the intake manifold).

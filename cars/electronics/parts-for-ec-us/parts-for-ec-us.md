@@ -60,10 +60,10 @@ and dimensions before ordering.
 
 | Component | Board locations or use | Source cross-reference | Historic supplier number |
 | :--- | :--- | :--- | :--- |
-| PNP A143 | Q101 | A143 / NTE2362 | `2SB1030ARACT-ND` |
-| NPN C144 | Q26, Q30 | C144 / C2785 / NTE2361 | `2SD1423ARACT-ND` |
+| PNP A143 | `Q101` | A143 / NTE2362 | `2SB1030ARACT-ND` |
+| NPN `C144` | `Q26`, `Q30` | `C144` / C2785 / NTE2361 | `2SD1423ARACT-ND` |
 | 1N4001, 1 A diode | D11 | - | `1N4001DICT-ND` |
-| 0.1-inch, 4-pin friction-lock header | OBD1 CN2 datalogging | Manufacturer `640456-4` | `A1922-ND` |
+| 0.1-inch, 4-pin friction-lock header | OBD1 `CN2` datalogging | Manufacturer `640456-4` | `A1922-ND` |
 | Motorola 2.5-bar MAP sensor | Increased boost | Manufacturer note `737390003` | `MPX4250AP-ND` |
 
 ## Related

@@ -22,4 +22,4 @@ You can find out a lot from reading the label on a [OBD](/cars/electronics/obd)1
 - 5 = Auto
 - 2 = "11F0" board
 
-| *Library.LabelDecode moved from Library.OBD1LabelDecode on 21 Apr 2004 - 15:31 by Home.blundar* - [put it back](http://www.pgmfi.org/twiki/bin/rename/Library/LabelDecode?newweb=Library&newtopic=OBD1LabelDecode&confirm=on "Click to move topic back to previous location, with option to change references.") | | :--- |
+| *Library.LabelDecode moved from Library.OBD1LabelDecode on 21 Apr 2004 - 15:31 by Home.blundar* - [put it back](https://web.archive.org/web/http://www.pgmfi.org/twiki/bin/rename/Library/LabelDecode?newweb=Library&newtopic=OBD1LabelDecode&confirm=on "Click to move topic back to previous location, with option to change references.") | | :--- |

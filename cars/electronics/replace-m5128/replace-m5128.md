@@ -16,9 +16,9 @@ tags:
   - diagnostics
 ---
 
-# Replace M5128
+# Replace `M5128`
 
-This page explain how to replace the current [5128 XRAM](/cars/electronics/5128xram) 2K [SRAM](/cars/electronics/sram) chip by a DS1220 [NVSRAM](/cars/electronics/nvsram) for future [RTP](/cars/electronics/rtp) solution.
+This page explain how to replace the current [5128 XRAM](/cars/electronics/5128xram) 2K [SRAM](/cars/electronics/sram) chip by a `DS1220` [NVSRAM](/cars/electronics/nvsram) for future [RTP](/cars/electronics/rtp) solution.
 
 - Brief Explanation
 - Parts list:
@@ -28,7 +28,7 @@ This page explain how to replace the current [5128 XRAM](/cars/electronics/5128x
 
 ###  Brief Explanation 
 
- The M5128 chip is used to store and calculate values while the car is running. By default pin 19 and 22 are grounded, thus preventing full 2k addressing. Also, it is a good idea to replace the current M5128 by a DS1220 [NVSRAM](/cars/electronics/nvsram) module. This module behave like a normal ram, but its [RAM](/cars/electronics/ram) content will remain when power is cut. ###  Parts list: 
+ The `M5128` chip is used to store and calculate values while the car is running. By default pin 19 and 22 are grounded, thus preventing full 2k addressing. Also, it is a good idea to replace the current `M5128` by a `DS1220` [NVSRAM](/cars/electronics/nvsram) module. This module behave like a normal ram, but its [RAM](/cars/electronics/ram) content will remain when power is cut. ###  Parts list: 
 
 - 1x DS1220AB
 - 1x 24 pin IC socket
@@ -36,13 +36,13 @@ This page explain how to replace the current [5128 XRAM](/cars/electronics/5128x
 
 ###  Construction: 
 
- It is pretty simple, but required a bit of dexterity. First you need to unsolder the M5128. Then, you should cut the traces of pin 19 an dpin 22 as they both connect to the ground. Solder the 24 pin IC socket. Then, solder a wire from M5128 pin 19 to [MCU](/cars/electronics/mcu) pin 23 and solder a wire from M5128 pin 22 to [MCU](/cars/electronics/mcu) pin 22 too. ###  Step by step: 
+ It is pretty simple, but required a bit of dexterity. First you need to unsolder the `M5128`. Then, you should cut the traces of pin 19 an dpin 22 as they both connect to the ground. Solder the 24 pin IC socket. Then, solder a wire from `M5128` pin 19 to [MCU](/cars/electronics/mcu) pin 23 and solder a wire from `M5128` pin 22 to [MCU](/cars/electronics/mcu) pin 22 too. ###  Step by step: 
 
-- Desolder M5128
+- Desolder `M5128`
 - Cut traces to ground of pin 19 and pin 22
 - Solder 24 pin IC socket
-- Solder wire from M5128 pin 19 to [MCU](/cars/electronics/mcu) pin 23
-- Solder wired from M5128 pin 22 to [MCU](/cars/electronics/mcu) pin 22
+- Solder wire from `M5128` pin 19 to [MCU](/cars/electronics/mcu) pin 23
+- Solder wired from `M5128` pin 22 to [MCU](/cars/electronics/mcu) pin 22
 - Put in the DS1220AB
 
 ###  Note: 

@@ -11,7 +11,7 @@ tags:
 
 # DIY Datalogging Cable via Nokia FBUS Modification
 
-Datalogging from an OBD1 Honda ECU requires converting the 5V Transistor-Transistor Logic (TTL) serial signal from the ECU's CN2 header into a standard USB signal that a laptop can read. 
+Datalogging from an OBD1 Honda ECU requires converting the 5V Transistor-Transistor Logic (TTL) serial signal from the ECU's `CN2` header into a standard USB signal that a laptop can read. 
 
 A classic and highly cost-effective method to achieve this is modifying a legacy Nokia FBUS mobile phone data cable (originally sold for Nokia 3200, 5100, and 6100 series phones). These cables contain a **Prolific PL-2303 USB-to-TTL serial transceiver** chip embedded inside the USB plug housing, which provides a high-speed, jitter-free connection for tuning suites.
 
@@ -70,6 +70,6 @@ These generic cables feature a smaller, simpler PCB inside the USB plug:
 
 ## 3. Software Configuration
 
-1.  **Remove J12 Jumper:** To enable full-duplex serial communication on the OBD1 ECU, you must desolder and remove the **J12** jumper on the main ECU board.
+1.  **Remove `J12` Jumper:** To enable full-duplex serial communication on the OBD1 ECU, you must desolder and remove the **`J12`** jumper on the main ECU board.
 2.  **Driver Installation:** Do not install Nokia phone software. Instead, download and install the generic **Prolific PL-2303 USB-to-Serial driver** directly from Prolific's official website or support archives.
 3.  **Com Port Setup:** Connect the cable, identify the assigned COM port number in Windows Device Manager, and set your tuning software (e.g., Crome, Hondata, TurboEdit) to use that COM port at **38400 baud** (or the rate required by your specific ROM codebase).

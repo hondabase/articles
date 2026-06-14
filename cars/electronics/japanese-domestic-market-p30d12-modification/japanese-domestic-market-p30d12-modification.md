@@ -21,8 +21,8 @@ The original investigation used a USDM P30 for initial testing and a JDM P30 for
 | --- | --- | --- |
 | D12 components | All installed | Some components missing |
 | D12 circuit | Described as simpler | Described as more complex |
-| D12 analog input | AI3, 66207 Pin 57 on the 64-pin DIP package | AI5, 66207 Pin 63 on the 68-pin PLCC package |
-| Grounded analog input | AI5, 66207 Pin 59 | AI3, described as 66207 Pin 61 |
+| D12 analog input | AI3, `66207` Pin 57 on the 64-pin DIP package | AI5, `66207` Pin 63 on the 68-pin PLCC package |
+| Grounded analog input | AI5, `66207` Pin 59 | AI3, described as `66207` Pin 61 |
 | High eight ADC bits | RAM `067h` | RAM `06Bh` |
 | Remaining two ADC bits | Source describes the two most-significant bits of RAM `066h` as the ADC value's two least-significant bits | Source describes the two most-significant bits of RAM `06Ah` as the ADC value's two least-significant bits |
 
@@ -36,10 +36,10 @@ The original investigation used a USDM P30 for initial testing and a JDM P30 for
 The source says all of these changes are made on the back of the ECU board:
 
 1. Replace `R15` with a diode.
-2. Install another diode at `R14`. The source used surface-mount `1N-4148` diodes and described them as protection for the 66207 analog input.
+2. Install another diode at `R14`. The source used surface-mount `1N-4148` diodes and described them as protection for the `66207` analog input.
 3. Add a jumper across `R13`.
 4. Add a jumper across the non-ground connections of `Q3` to carry D12 into the modified circuit.
-5. Leave the `33 kohm` `R16` resistor and `C17` unchanged. The source did not identify C17's value and said it appeared to be a tantalum capacitor.
+5. Leave the `33 kohm` `R16` resistor and `C17` unchanged. The source did not identify `C17`'s value and said it appeared to be a tantalum capacitor.
 
 ![JDM P30 D12 circuit before and after modification](JDMP30D12CircuitEGTModR1.jpg)
 *Archived before-and-after schematic for the JDM P30 D12 modification.*
@@ -53,7 +53,7 @@ The author tested both P30 variants with a `10 kohm` potentiometer used as a var
 
 The archived page warns that OBD1 code appears to read AI5 and perform an unidentified function. Until that code was understood, it proposed a different, more invasive arrangement:
 
-1. Cut the traces to both AI3 and AI5 at the 66207.
+1. Cut the traces to both AI3 and AI5 at the `66207`.
 2. Ground AI5.
 3. Route the D12 circuit to AI3.
 

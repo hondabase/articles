@@ -15,7 +15,7 @@ tags:
 
 # PK2
 
-Prelude [OBD](/cars/electronics/obd)-0 B20A [ECU](/cars/electronics/ecu). Electronic Advance. External 27c256 [ROM](/cars/electronics/rom). oki 83c154 based
+Prelude [OBD](/cars/electronics/obd)-0 B20A [ECU](/cars/electronics/ecu). Electronic Advance. External `27C256` [ROM](/cars/electronics/rom). oki `83C154` based
 
 - pk-2 ECU photo.:
 

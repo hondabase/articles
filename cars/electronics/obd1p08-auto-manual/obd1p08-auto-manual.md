@@ -17,8 +17,8 @@ tags:
 - remove jumper at RP18 (Not sure what will be here)
 - add 4.7kOhm +/- 5% at RP18 SMD
 - add 2.7kOhm +/- 5% at RP17 SMD
-- add IC15 & IC16 [5050 S](/cars/electronics/515x-high-side-switch) or equiv.
-- add Caps at C73, c74, c75, c76 (values??? 0.1 uf ? should be ceramic)
+- add `IC15` & `IC16` [5050 S](/cars/electronics/515x-high-side-switch) or equiv.
+- add Caps at `C73`, c74, c75, c76 (values??? 0.1 uf ? should be ceramic)
 - add Diodes to D13 and D12 (1A Surface mount will work)
 - add q29 q28
 - add c57

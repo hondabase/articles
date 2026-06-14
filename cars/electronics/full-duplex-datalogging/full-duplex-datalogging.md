@@ -8,7 +8,7 @@ tags:
   - hardware
 ---
 
-# Full-Duplex Datalogging & the J12 Jumper
+# Full-Duplex Datalogging & the `J12` Jumper
 
 To datalog from an OBD1 Honda ECU using a PC-based tuning suite (such as Crome, Hondata, or Neptune), you must configure the ECU's serial interface to run in **full-duplex** mode. By default, the factory ECU is configured for **half-duplex** operation. 
 
@@ -25,7 +25,7 @@ The communication mode dictates how data travels between the ECU and your diagno
 
 ---
 
-## 2. Why the J12 Jumper Must Be Removed
+## 2. Why the `J12` Jumper Must Be Removed
 
 If you attempt to datalog with a PC while the **`J12`** jumper is still closed:
 
@@ -44,4 +44,4 @@ To convert the ECU to full-duplex operation:
 2.  Use desoldering braid or a soldering iron to remove the solder bridge between the two pads. Alternatively, if it is a wire jumper, carefully cut the wire with wire snips.
 3.  Ensure the two pads are completely separated and no solder bridge remains.
 
-Once J12 is opened, the serial interface will operate in full-duplex mode. This allows the PC to communicate cleanly with the ECU over the **`CN2`** header pins (using separate TX and RX lines) without echoing data back onto the PC\'s receive buffer.
+Once `J12` is opened, the serial interface will operate in full-duplex mode. This allows the PC to communicate cleanly with the ECU over the **`CN2`** header pins (using separate TX and RX lines) without echoing data back onto the PC\'s receive buffer.

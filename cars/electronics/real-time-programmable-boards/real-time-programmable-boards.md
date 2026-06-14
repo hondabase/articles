@@ -15,4 +15,4 @@ Boards that allow [Real Time Programming](/cars/electronics/real-time-programmin
 
 ####  Hardware that works 
 
-- [Easy-RTP v1.0](/cars/electronics/easy-rtp-v10) - Dave's single sided adaptation of Doc's original DS1230Y based design
+- [Easy-RTP v1.0](/cars/electronics/easy-rtp-v10) - Dave's single sided adaptation of Doc's original `DS1230Y` based design

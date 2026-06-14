@@ -14,7 +14,7 @@ tags:
 
 # 91PM6 Target Idle
 
-Author: xtensive Date: 01-04-03 20:47 Ok, here's what I found: That whole area is data tables. The routine that calls the idle value is @279A for the pm6. The stock idle is set to 768 from what I can tell. It looks up the value at 398F. There are 6 idle settings there...do you know which one it picks for different circumstances? ELD, etc. I assue? George, can you answer a quick question? (This is pm6 code, but should be close to the pm7) The routine that calls this value moves the value @ x3995 to the data pointer, then checks if bit 26h.2 is set. If it isn then it skips the next step and continues through the code. If it's not set it moves the value @ x398f into the data pointer and continues. My question is why? The value @ x3995 is exactly the same as @ 398f. Weird? Mike
+Author: xtensive Date: 01-04-03 20:47 Ok, here's what I found: That whole area is data tables. The routine that calls the idle value is @279A for the pm6. The stock idle is set to 768 from what I can tell. It looks up the value at 398F. There are 6 idle settings there...do you know which one it picks for different circumstances? ELD, etc. I assue? George, can you answer a quick question? (This is pm6 code, but should be close to the pm7) The routine that calls this value moves the value @ x3995 to the data pointer, then checks if bit `26h`.2 is set. If it isn then it skips the next step and continues through the code. If it's not set it moves the value @ x398f into the data pointer and continues. My question is why? The value @ x3995 is exactly the same as @ 398f. Weird? Mike
 
 ---
 

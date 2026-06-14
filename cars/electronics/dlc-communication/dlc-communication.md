@@ -41,7 +41,7 @@ The stock OBD1 ECU communication channel is controlled by the MCU's internal UAR
 
 *   **Baud Rate:** Stock diagnostic tools communicate at **9600 baud** (or 10400 baud on early ISO-compliant systems). 
 *   **Configuration:** 8 Data Bits, No Parity, 1 Stop Bit (8N1).
-*   **Tuning Bypasses:** Because 9600 baud is too slow for real-time engine tuning and plotting, aftermarket ROM modifications (such as Crome Gold, Hondata, or Neptune) bypass the slow factory K-line routines. They redirect serial datalogging traffic to the **CN2** header port on the ECU board, running at **38400 baud** or **115200 baud** using 5V TTL logic levels.
+*   **Tuning Bypasses:** Because 9600 baud is too slow for real-time engine tuning and plotting, aftermarket ROM modifications (such as Crome Gold, Hondata, or Neptune) bypass the slow factory K-line routines. They redirect serial datalogging traffic to the **`CN2`** header port on the ECU board, running at **38400 baud** or **115200 baud** using 5V TTL logic levels.
 
 ---
 

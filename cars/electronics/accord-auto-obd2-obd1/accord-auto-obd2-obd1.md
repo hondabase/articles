@@ -202,13 +202,13 @@ The archived guide gives these construction details:
    wire. Do not extend bare wire into the terminal socket.
 4. Use the larger terminals for OBD1 A-plug pins 1-6 and 23-26, and D-plug pins 1-2 and
    19-22. The B-plug uses small terminals.
-5. Keep soldering time on each OBD2 connector lead short to avoid softening its plastic.
+5. Keep soldering time on `each` OBD2 connector lead short to avoid softening its plastic.
 6. Insulate the soldered OBD2 leads with heat-shrink tubing.
 7. Insert OBD1 terminals with the crimp side facing the plug's locking clip.
 8. Check every completed connection for continuity before connecting the harness.
 
 > **Warning:** The archived guide says OBD1 terminals are difficult to remove after they
-> lock into a plug. Confirm each destination before inserting it.
+> lock into a plug. Confirm `each` destination before inserting it.
 
 ## Conversion files
 * [Automatic Accord OBD2-to-OBD1 Wiring Spreadsheet & Baseline Bin (ZIP)](AutoOBDconvertinfoandIntegrabin.zip)

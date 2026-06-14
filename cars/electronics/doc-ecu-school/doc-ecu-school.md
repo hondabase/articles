@@ -11,7 +11,7 @@ tags:
 
 # OBD1 Honda ECU Architecture and Memory Mapping
 
-The OBD1 Honda ECU platform (such as the P28, P30, and P72) is built around the OKI 66207 microcontroller (66k instruction set). To manage the diverse inputs and outputs required to run an engine, the MCU utilizes a mix of direct pins, analog multiplexers, and a custom 82C55 I/O expander. 
+The OBD1 Honda ECU platform (such as the P28, P30, and P72) is built around the OKI `66207` microcontroller (66k instruction set). To manage the diverse inputs and outputs required to run an engine, the MCU utilizes a mix of direct pins, analog multiplexers, and a custom 82C55 I/O expander. 
 
 Understanding how the ECU software interacts with these hardware elements is essential for custom ROM development and reverse engineering.
 

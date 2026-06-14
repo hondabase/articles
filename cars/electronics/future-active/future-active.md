@@ -10,4 +10,4 @@ tags:
 
 # Future Active
 
-[Future Active](http://www.future-active.com) is a major electronic parts distributor. They sell both the 27SF256 and Aries low-profile [ZIF](/cars/electronics/zif) cheap.
+[Future Active](http://www.future-active.com) is a major electronic parts distributor. They sell both the `27SF256` and Aries low-profile [ZIF](/cars/electronics/zif) cheap.

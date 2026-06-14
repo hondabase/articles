@@ -21,15 +21,15 @@ All of the [MCU](/cars/electronics/mcu) readers described here take advantage of
 - Manually wire an I/O pin to the [_EA](/cars/electronics/ea) pin of the [MCU](/cars/electronics/mcu). Use a pull up/pull down resistor if necessary.
 - Use a [ROM](/cars/electronics/rom) that is larger than the internal [ROM](/cars/electronics/rom) of [MCU](/cars/electronics/mcu). Make sure all address lines are connected as need be.
 - Initialize serial port of [MCU](/cars/electronics/mcu) for communication with PC
-- Jump above the masked [ROM](/cars/electronics/rom) area (32k for 66207, 48k for 66507, ...)
+- Jump above the masked [ROM](/cars/electronics/rom) area (32k for `66207`, 48k for `66507`, ...)
 - Flip state of [_EA](/cars/electronics/ea) using I/O pin
 - Enter delay loop long enough to allow internal [ROM](/cars/electronics/rom) to be masked into memory again
 - Copy [ROM](/cars/electronics/rom) contents out the serial port
 
 There are several designs that have been tested: - [OBD0 Oki83 C154 Reader](/cars/electronics/obd0-oki83c154-reader) - Blundar's adaptation
-- [OBD1 Oki66207 Reader-DIP64](/cars/electronics/obd1-oki66207-reader-dip64) - Doc's original 66207 design for DIP package chips
+- [OBD1 Oki66207 Reader-DIP64](/cars/electronics/obd1-oki66207-reader-dip64) - Doc's original `66207` design for DIP package chips
 - [OBD1 Oki66207 Reader-PLCC68](/cars/electronics/obd1-oki66207-reader-plcc68) - John de sol's adapation of Doc's design for [JDM](/cars/electronics/jdm) SMT 66207s
-- [OBD2 Oki66507 Reader Nico](/cars/electronics/obd2-oki66507-reader-nico) - Nico's original reader for the 66507
-- OBD2 Oki66507 Reader Didier - Didier's revised design for a 66507 reader
+- [OBD2 Oki66507 Reader Nico](/cars/electronics/obd2-oki66507-reader-nico) - Nico's original reader for the `66507`
+- OBD2 Oki66507 Reader Didier - Didier's revised design for a `66507` reader
 
 A reader for other chips would require adjusting the board physical package and the code for clock speed and [ROM](/cars/electronics/rom) size.

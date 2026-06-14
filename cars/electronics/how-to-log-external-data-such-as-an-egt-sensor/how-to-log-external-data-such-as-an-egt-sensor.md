@@ -15,7 +15,7 @@ This archived method uses the undocumented D12 analog input on a USDM OBD1 P30 E
 
 ## D12 analog input
 
-On the documented USDM P30, D12 leads to the 66207's AI3 input at Pin 57. The archived schematic identifies the analog-input circuit around that connection.
+On the documented USDM P30, D12 leads to the `66207`'s AI3 input at Pin 57. The archived schematic identifies the analog-input circuit around that connection.
 
 ![USDM P30 D12 ADC schematic](USDMD12adc.jpg)
 *Archived schematic of the USDM P30 analog-input section.*
@@ -28,22 +28,22 @@ The source describes the logged data as follows:
 | Main logged byte | RAM `0067h` |
 | Main-byte scale | Approximately 0.02 V per count, from `00h` at 0 V to `0FFh` at 5 V |
 | Additional ADC bits | RAM `0066h` contains the two least-significant bits of the 10-bit ADC result |
-| Reported signal loss | About 1% from D12 to AI3 at 66207 Pin 57 |
+| Reported signal loss | About 1% from D12 to AI3 at `66207` Pin 57 |
 
 The author considered the extra two ADC bits unnecessary for EGT logging. The page reports the voltage loss but does not document how it was measured or provide calibration data.
 
-## Optional C42 filter from the source
+## Optional `C42` filter from the source
 
-The stock USDM ECU documented by the source had no component installed at `C42`. The archived recommendation was to install a `1 uF`, `35 V` tantalum capacitor there to smooth the ADC input, with its positive side facing away from the 66207 and matching the orientation of the other capacitors in that row.
+The stock USDM ECU documented by the source had no component installed at `C42`. The archived recommendation was to install a `1 uF`, `35 V` tantalum capacitor there to smooth the ADC input, with its positive side facing away from the `66207` and matching the orientation of the other capacitors in that row.
 
 ![USDM P30 board with C42 installed](USDMc42.JPG)
-*Archived photo showing the added C42 capacitor.*
+*Archived photo showing the added `C42` capacitor.*
 
 > **Warning:** Capacitor polarity and board layout must be verified on the actual ECU. The archived recommendation was not documented for every P30 board revision or other ECU type.
 
 ## JDM P30 difference
 
-The source says the USDM P30 grounds AI5, while the JDM P30 grounds AI3 and routes D12 to AI5 at 66207 Pin 63. The JDM D12 path also has uninstalled components and must be modified before it can be used as described.
+The source says the USDM P30 grounds AI5, while the JDM P30 grounds AI3 and routes D12 to AI5 at `66207` Pin 63. The JDM D12 path also has uninstalled components and must be modified before it can be used as described.
 
 See the [archived JDM P30 D12 modification](/cars/electronics/japanese-domestic-market-p30d12-modification) for the circuit changes and its unresolved AI5 software caution.
 

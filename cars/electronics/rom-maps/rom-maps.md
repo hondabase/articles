@@ -52,7 +52,7 @@ An area to collaborate on all the memory addresses found in [ROM](/cars/electron
 
 ###  Other [OBD](/cars/electronics/obd)1 
 
-*Everything else [OBD](/cars/electronics/obd)1 - usually 66207 based [MCU](/cars/electronics/mcu)s*####  Memory Locations 
+*Everything else [OBD](/cars/electronics/obd)1 - usually `66207` based [MCU](/cars/electronics/mcu)s*####  Memory Locations 
 
 - [P13](/cars/electronics/p13) - The [JDM](/cars/electronics/jdm)/USDM H22 (92-95 Prelude [DOHC](/cars/electronics/dohc) VTEC).
 
