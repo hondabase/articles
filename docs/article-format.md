@@ -34,8 +34,19 @@ applies_to:
   obd: [0, 1]                  # OBD generation(s): 0, 1, 2
   years: 1992-2000             # or use scope: all-honda-cars
 complexity: beginner           # beginner | intermediate | advanced
+sources:
+  - name: pgmfi.org wiki
+    title: ECU Trouble Codes
+    url: /pgmfi/wiki/library/ecu-trouble-codes
+    license: CC BY-NC-SA 1.0
+    license_url: https://creativecommons.org/licenses/by-nc-sa/1.0/
+    adapted: true
 ---
 ```
+
+Use `sources` for adapted or imported material. Every port from the PGMFI wiki must retain
+its PGMFI source entry. Do not put author names in frontmatter: original and HondaBase
+authors are durable database records and render together on the article page.
 
 `applies_to` is **flexible and open-ended**. Hondabase covers the whole Honda and Acura
 catalog, not just Honda cars (motorcycles, aircraft, power equipment, marine), so do not
@@ -80,6 +91,20 @@ One `# H1` only (the title). Headings are sentence case, with acronyms left uppe
 - **Images.** Co-locate in the bundle and reference by filename, with real alt text:
   `![SCS connector under the glovebox](servicejumper.jpg)`. Add an italic caption under it
   when helpful: `*The SCS connector lives behind the glovebox kick panel.*`
+- **Image carousels.** Use a fenced `carousel` block for a sequence of two or more
+  co-located images. Separate slides with `<!-- slide -->`. Every slide needs alt text and
+  may have one italic plain-text caption:
+
+  ````markdown
+  ```carousel
+  ![Front of the ECU board](board-front.jpg)
+  *Front view before modification.*
+  <!-- slide -->
+  ![Rear of the ECU board](board-rear.jpg)
+  ```
+  ````
+
+  Carousels do not support remote images, arbitrary prose, nested widgets, or raw HTML.
 - **Attachments and downloads.** Recover every available source attachment that the
   article retains, co-locate it in the article bundle, and link it by filename:
   `[Download the archived schematic](schematic.pdf)`. Verify both the local file and the
@@ -87,8 +112,10 @@ One `# H1` only (the title). Headings are sentence case, with acronyms left uppe
   explicitly say that the source referenced a missing file when that fact matters.
 - **Units.** Metric first, imperial in parentheses where useful: `30 Nm (22 ft-lb)`.
 - **Specifications** go in tables, not prose.
-- **Callouts** use a blockquote with a bold label:
-  `> **Warning:** disconnect the battery first.` Also `> **Tip:**` and `> **Note:**`.
+- **Callouts** may use GitHub alert syntax on separate blockquote lines:
+  `> [!CAUTION]` followed by `> Disconnect the battery first.` Supported labels are
+  `NOTE`, `TIP`, `IMPORTANT`, `WARNING`, and `CAUTION`. A simple labelled blockquote such
+  as `> **Warning:** disconnect the battery first.` is also supported.
 - **Widgets** (interactive components, where available) embed on their own line:
   `::: widget error-codes obd="1" :::` (rolling out; use this syntax when documented).
 - **No raw HTML** in articles; it is escaped on render. Use Markdown (tables, code, lists).
@@ -125,9 +152,9 @@ but preserve what the source actually establishes, including its uncertainty.
 - **Source-faithful does not mean verbatim.** Remove personalities, forum chatter, and
   boilerplate; rewrite in clear prose while keeping the technical claims and limitations
   intact.
-- **Use renderer-supported Markdown.** Use standard blockquote callouts such as
-  `> **Warning:**`; do not use GitHub callouts (`> [!WARNING]`), unsupported carousel
-  fences, or raw HTML. Only use widgets documented for Hondabase.
+- **Use renderer-supported Markdown.** GitHub alert callouts, standard blockquotes, and
+  image carousels are supported; do not use raw HTML. Only use widgets documented for
+  Hondabase.
 
 ## 6. SEO Best Practices
 
@@ -160,6 +187,6 @@ To ensure articles rank well on search engines and attract readers, follow these
 - [ ] Verify tables, pinouts, formulas, addresses, values, units, and filenames against the source.
 - [ ] Preserve uncertainty; flag suspicious or contradictory source values instead of silently fixing them.
 - [ ] Label legacy software settings, supplier numbers, and tuning advice as historical examples.
-- [ ] Remove unsupported callout/carousel syntax and confirm the Markdown renders as intended.
+- [ ] Normalize callouts and image carousels to supported syntax and confirm they render as intended.
 
 See also: [markdown-cheat-sheet.md](../markdown-cheat-sheet.md).

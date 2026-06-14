@@ -54,6 +54,19 @@ These are the elements outlined in John Gruber’s original design document. All
 
 ![alt text](https://www.markdownguide.org/assets/images/tux.png)
 
+### Hondabase image carousel
+
+Use co-located image filenames, required alt text, and an optional italic caption:
+
+````markdown
+```carousel
+![Front of the ECU board](board-front.jpg)
+*Front view before modification.*
+<!-- slide -->
+![Rear of the ECU board](board-rear.jpg)
+```
+````
+
 ## Extended Syntax
 
 These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
