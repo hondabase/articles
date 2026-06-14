@@ -6,7 +6,7 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 
 | Status | Count | Percentage | Description |
 | :--- | :---: | :---: | :--- |
-| **Completed** | 493 | 96.1% | Articles ported, cleaned, and merged to main |
+| **Completed** | 493 | 96.1% | Topics with local article bundles |
 | **Pending Porting** | 0 | 0% | Relevant content articles remaining to be ported |
 | **Stubs / Ignored** | 20 | 3.9% | Wiki pages with < 100 characters of text (empty templates, personal placeholders) |
 | **Total** | **513** | **100%** | All topics in `library` web |
@@ -27,12 +27,26 @@ This plan assesses all **513 topics** in the `library` web of the `pgmfi` wiki a
 
 ## 3. Prioritized Pending Articles by Category
 
-Below are the top pending articles in each category, sorted by length (approximate value/content depth). This serves as our prioritized backlog.
+No substantive archived topics remain in the automated pending queue. Remaining work is post-port source-fidelity, attachment, and presentation review.
 
-## 4. Porting Roadmap & Next Steps
+## 4. Batch Porting Quality Gate
 
-1. **Phase 1: High-Priority Electronics & Tuning (Next Batch)**: Port and reformat high-content articles (length > 2500 chars) such as `ecu-definition-codes`, `ecu-chipping-wirelist`, `kurts-obd0-obd1`, and `obd0ecuautotomanualwithoutremoveanyhardware`.
-2. **Phase 2: Wiring & Conversions**: Focus on the harness and swaps category to help enthusiasts with swaps.
-3. **Phase 3: Diagnostics & Troubleshooting**: Standardize error code guides and symptom-based checklists.
-4. **Phase 4: Mechanical & Drivetrain**: Port mechanical guides like RT4WD details, cams, and mechanical engine basics.
-5. **Phase 5: Cleaning Stubs**: Review the 88 stubs and decide whether to delete them or write thin helper summaries.
+A local article bundle counts as completed in the tables above, but a port is not editorially complete until it passes this workflow:
+
+1. **Capture the source:** retain the raw archived page, attachment inventory, and generated draft long enough to compare them during review.
+2. **Adapt the presentation:** remove wiki boilerplate and forum chatter; add a useful lead, clear sections, tables, captions, and supported Markdown.
+3. **Preserve the evidence:** do not invent component functions, compatibility claims, missing table labels, procedures, or recommendations. Keep uncertainty and source contradictions visible.
+4. **Label legacy guidance:** describe old software settings, tuning defaults, supplier numbers, and community procedures as archived examples rather than current recommendations.
+5. **Bring the attachments:** compare archive attachment records with the article bundle, copy every useful recovered image and download, remove broken legacy links, and explicitly note important referenced files that were not recovered.
+6. **Compare source to article:** verify all values, formulas, addresses, pinouts, units, filenames, and retained assets against the raw page after the rewrite.
+7. **Check rendering and URLs:** remove unsupported syntax and verify every retained image and download through its rendered article asset URL.
+8. **Run automated validation:** run `php artisan app:lint-articles`, but treat lint as a structural check only. A passing linter does not establish technical accuracy or source fidelity.
+
+Source-faithful porting does not mean copying pages verbatim. Articles should be rewritten for clarity and mobile readability while keeping the archived technical claims, limitations, and uncertainty intact.
+
+## 5. Next Steps
+
+1. **Source-fidelity review:** compare generated and lightly edited articles against their archived pages, prioritizing long technical references and procedures.
+2. **Attachment audit:** reconcile archive attachment records with article bundles and verify every retained image and download URL.
+3. **Stub decisions:** review the 20 short archived topics and either intentionally ignore, merge, or expand them.
+4. **Presentation cleanup:** replace malformed legacy tables, link soup, raw HTML, and unsupported Markdown without changing technical meaning.
