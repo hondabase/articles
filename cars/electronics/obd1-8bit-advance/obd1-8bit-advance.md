@@ -1,5 +1,5 @@
 ---
-summary: "Given table value ''v'', ignition advance in degrees is IgnitionAdvance(''v'') = (''v''24)/4"
+summary: 'Ignition timing advance conversion formula for 8-bit OBD1 Honda ECUs.'
 applies_to:
   obd: [1]
 complexity: beginner
@@ -9,6 +9,11 @@ tags:
   - sensors
 ---
 
-# OBD1 8bit Advance
+# OBD1 8-Bit Ignition Advance Formula
 
-Given table value ''v'', ignition advance in degrees is Ignition_Advance(''v'') = (''v''-24)/4
+In 8-bit OBD1 Honda ECUs, the ignition advance value (in degrees) is calculated from the raw table byte value `v` using the following formula:
+
+`Ignition Advance (Degrees) = (v - 24) / 4`
+
+Where:
+*   `v` is the decimal representation of the byte at the ignition map cell.

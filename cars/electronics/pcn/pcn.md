@@ -1,5 +1,5 @@
 ---
-summary: '37820PCFN51 CYEH2955A'
+summary: 'Hardware part numbers and references for the Honda PCN ECU series.'
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
@@ -7,6 +7,9 @@ tags:
   - reference
 ---
 
-# PCN
+# Honda PCN ECU
 
-37820-PCF-N51 CY-EH2955A
+The **PCN** ECU is a Honda factory engine control unit:
+
+*   **OEM Part Number:** `37820-PCF-N51`
+*   **Board Reference:** `CY-EH2955A`

@@ -1,5 +1,5 @@
 ---
-summary: 'OBD0 and OBD1 VTEC formula: RPM = (Dec At Addy 128) x 62.52'
+summary: 'RPM conversion formula for OBD0 and OBD1 VTEC activation values.'
 applies_to:
   obd: [0, 1]
 complexity: beginner
@@ -9,6 +9,11 @@ tags:
   - sensors
 ---
 
-# OBD0VTEC
+# OBD0 & OBD1 VTEC RPM Formula
 
-[OBD](/cars/electronics/obd)0 and [OBD1](/cars/electronics/obd1) VTEC formula: [RPM](/cars/electronics/rpm) = ([Dec At Addy](/cars/electronics/dec-at-addy) - 128) x 62.52
+In OBD0 and OBD1 Honda VTEC ECUs, the VTEC engagement and disengagement thresholds are determined using the following formula:
+
+`RPM = (Decimal_Value - 128) * 62.52`
+
+Where:
+*   `Decimal_Value` is the base-10 value of the byte located at the VTEC RPM activation/deactivation addresses in the ROM.
