@@ -7,6 +7,13 @@ tags:
   - ecu
   - hardware
   - reference
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Parts For EC Us'
+    url: /pgmfi/wiki/library/parts-for-ec-us
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # Honda ECU component sourcing reference
@@ -16,7 +23,8 @@ original pgmfi community for Honda OBD0 and OBD1 ECU work. Supplier catalogs cha
 use these numbers as search references and verify package, value, voltage rating, pinout,
 and dimensions before ordering.
 
-> **Warning:** Similar-looking components are not necessarily interchangeable. Check the
+> [!WARNING]
+> Similar-looking components are not necessarily interchangeable. Check the
 > ECU board revision and the replacement component's datasheet before soldering it in.
 
 ## Capacitors

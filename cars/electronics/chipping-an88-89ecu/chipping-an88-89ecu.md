@@ -7,6 +7,13 @@ tags:
   - ecu
   - chipping
   - hardware
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Chipping An88-89ECU'
+    url: /pgmfi/wiki/library/chipping-an88-89ecu
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # Chipping 1988-1989 OBD0 ECUs
@@ -19,7 +26,8 @@ design.
 This article preserves the three modification approaches and two wiring tables described
 by the original pgmfi community.
 
-> **Warning:** Disconnect the ECU from the vehicle before soldering. Verify every
+> [!WARNING]
+> Disconnect the ECU from the vehicle before soldering. Verify every
 > connection with a continuity tester and check for shorts before applying power.
 
 ## Enabling external ROM access
@@ -27,7 +35,8 @@ by the original pgmfi community.
 The guide says to connect Pin 31, the M83C154 external-access (`_EA`) pin, to Pin 20
 (ground) so the MCU executes code from an external ROM.
 
-> **Warning:** On PM7-B020 boards, the source says MCU Pin 31 must be disconnected from
+> [!WARNING]
+> On PM7-B020 boards, the source says MCU Pin 31 must be disconnected from
 > the PCB before it is grounded. It reports a solid CEL and intermittent operation when
 > that pin remains connected. The source says to consider this on other boards only when
 > normal jumpering fails and the socket wiring has no faults.
@@ -95,7 +104,8 @@ This table is a direct pin mapping from the archived page.
 | 27 | 27 | - |
 | 28 | 20 in source table; see note | - |
 
-> **Note:** The archived flywire table lists MCU Pin 20 for EPROM Pin 28, but a later
+> [!NOTE]
+> The archived flywire table lists MCU Pin 20 for EPROM Pin 28, but a later
 > clarification on the same page says EPROM Pins 28 and 1 both connect to MCU Pin 40
 > (+5 V). Pin 20 is identified as ground elsewhere on the page. Verify the circuit
 > before wiring.

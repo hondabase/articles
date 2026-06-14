@@ -7,6 +7,13 @@ tags:
   - ecu
   - identification
   - reference
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Begginers FAQ'
+    url: /pgmfi/wiki/library/begginers-faq
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # Beginner's Honda ECU FAQ
@@ -80,8 +87,8 @@ and `N` is a number.
 It says the first three characters identify the ECU family. It also describes suffixes
 from `A00` through `A49` as generally manual and `A50` or higher as generally automatic.
 
-> **Note:** Treat the suffix ranges as a clue from the archived FAQ, not a universal
-> rule. Verify the complete part number and board configuration.
+> [!NOTE]
+> Treat the suffix ranges as a clue from the archived FAQ, not a universal rule. Verify the complete part number and board configuration.
 
 ## Where can I find the stock program?
 

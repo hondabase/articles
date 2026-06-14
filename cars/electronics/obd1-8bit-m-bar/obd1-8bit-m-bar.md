@@ -8,6 +8,13 @@ tags:
   - tuning
   - sensor
   - maps
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'OBD1 8bit M Bar'
+    url: /pgmfi/wiki/library/obd1-8bit-m-bar
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # OBD1 8-bit MAP calibration in millibars
@@ -16,7 +23,8 @@ This reference preserves the MAP conversion formulas and P72/P75 calibration val
 documented by the original pgmfi community. Use them to understand the archived ROM
 code, not as a universal calibration for every Honda ECU or MAP sensor.
 
-> **Note:** The source describes these raw values as being for P72/P75 code and says
+> [!NOTE]
+> The source describes these raw values as being for P72/P75 code and says
 > most OBD1 ECUs follow the same rule. Verify the actual ROM code, fuel-cut offset, and
 > sensor calibration before applying the formulas elsewhere.
 
@@ -67,9 +75,8 @@ They are derived on the page from the following points:
 The following values are transcribed from the source. The first table uses the source's
 full raw-value labels, while the second shows the corresponding halved stock-map labels.
 
-> **Caution:** The source labels the final full-scale row as `256`, although an unsigned
-> 8-bit value tops out at `255`. The value is preserved here as an endpoint label from the
-> original notes.
+> [!CAUTION]
+> The source labels the final full-scale row as `256`, although an unsigned 8-bit value tops out at `255`. The value is preserved here as an endpoint label from the original notes.
 
 | Source raw label | Voltage | Pressure |
 | :---: | :---: | :---: |

@@ -7,6 +7,13 @@ tags:
   - tuning
   - rom
   - software
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Uber Data FAQ'
+    url: /pgmfi/wiki/library/uber-data-faq
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # UberData tuning FAQ
@@ -15,7 +22,8 @@ UberData is a legacy Honda OBD1 ROM editor. This article preserves its archived 
 and tuning FAQ while identifying its example values as historical guidance rather than
 a ready-to-run calibration.
 
-> **Warning:** The example settings in this archived FAQ are not a safe tune for every
+> [!WARNING]
+> The example settings in this archived FAQ are not a safe tune for every
 > engine. Verify ROM compatibility, use suitable instrumentation, and tune under
 > controlled conditions.
 
@@ -44,7 +52,8 @@ It gives this socketing sequence:
 The source notes that `R54` values from 1 kohm through 10 kohm were reported to work and
 that 1 kohm was reported to work better with some ROM emulators.
 
-> **Warning:** Installing an EPROM or EEPROM backward can overheat and damage it when
+> [!WARNING]
+> Installing an EPROM or EEPROM backward can overheat and damage it when
 > power is applied. If a new error appears after socketing, test a verified stock bin and
 > inspect the soldering. The archived guide says cutting `J1` returns the ECU to stock code.
 
@@ -90,7 +99,8 @@ The FAQ describes Boost Average Efficiency as an estimate of the density change 
 by compressing and heating the intake air. It describes Boost Ignition Retard as the
 amount of timing removed per psi.
 
-> **Warning:** These are archived software examples, not universal safe settings.
+> [!WARNING]
+> These are archived software examples, not universal safe settings.
 > Required fuel and ignition values depend on the engine, fuel, compression ratio,
 > intake temperature, boost, and other conditions.
 
@@ -137,7 +147,8 @@ starting_percent = (240 / new_injector_size) * 100
 The source suggests adding 5% to 10% to the result and gives approximately 65% for
 450 cc/min injectors.
 
-> **Note:** This rough example does not account for injector dead time, fuel pressure,
+> [!NOTE]
+> This rough example does not account for injector dead time, fuel pressure,
 > voltage compensation, or nonlinear low-pulse behavior.
 
 ## What is cold-crank enrichment?

@@ -7,6 +7,13 @@ tags:
   - ecu
   - chipping
   - hardware
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Chipping OBD0PM6'
+    url: /pgmfi/wiki/library/chipping-obd0pm6
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # Chipping the OBD0 PM6 ECU (1988–1991 Civic/CRX Si)
@@ -33,7 +40,7 @@ Most 1988–1989 PG7, PM6, PM7, and PM8 ECUs run on a microcontroller with inter
 ![Early-Model OBD0 ECU lacking external ROM](trickyPM7small.jpg)
 *Early-model board layout without a separate external memory chip.*
 
-> **Note:**
+> [!NOTE]
 > If you have an early-model 1988–1989 ECU, see the specialized [Chipping early OBD0 ECUs](/cars/electronics/chipping-an88-89ecu) guide for instructions on adding the required hardware.
 
 ---

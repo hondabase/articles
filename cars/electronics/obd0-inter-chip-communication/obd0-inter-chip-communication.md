@@ -4,13 +4,21 @@ applies_to:
   obd: [0]
 complexity: advanced
 tags: [ecu, hardware, memory, reverse-engineering]
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'OBD0 Inter Chip Communication'
+    url: /pgmfi/wiki/library/obd0-inter-chip-communication
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # OBD0 inter-chip communication notes
 
 These archived reverse-engineering notes describe how an OBD0 OKI M83C154 or M80C154 MCU appears to communicate with external RAM, the I/O controller, the ADC, and, in some ECUs, an EPROM.
 
-> **Note:** This is an incomplete investigation, not a confirmed schematic. The source marks several ranges and connections with question marks and includes contradictory pin descriptions. Those uncertainties are preserved here.
+> [!NOTE]
+> This is an incomplete investigation, not a confirmed schematic. The source marks several ranges and connections with question marks and includes contradictory pin descriptions. Those uncertainties are preserved here.
 
 ## Devices on the bus
 

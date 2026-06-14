@@ -7,6 +7,13 @@ tags:
   - bench-testing
   - hardware
   - diagnostics
+sources:
+  - name: 'pgmfi.org wiki'
+    title: Sim
+    url: /pgmfi/wiki/library/sim
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # DIY Engine Simulator for ECU Bench Testing
@@ -55,7 +62,7 @@ Rather than using complex digital signal generators, this simulator uses a physi
 * **Coupling**: The distributor's camshaft drive key was removed and replaced with a 15-tooth RC car gear (Tamiya), coupled to the motor shaft using heavy-duty rubber fuel hose. This provides a flexible coupling that absorbs vibrations.
 * **Ignition Coil & ICM**: The Ignition Control Module (ICM) and ignition coil are wired into the distributor housing. To prevent Code 15 (Ignition Output Signal), 12V power is supplied to the black/yellow lead from the main relay, and the distributor body is grounded.
 
-> **Tip:**
+> [!TIP]
 > Physical distributors provide excellent mechanical feedback, but they can stall at very low speeds (under 500 RPM) if the motor lacks torque, simulating an engine stall.
 
 ---

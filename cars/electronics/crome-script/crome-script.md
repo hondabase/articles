@@ -7,6 +7,13 @@ tags:
   - tuning
   - rom
   - software
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Crome Script'
+    url: /pgmfi/wiki/library/crome-script
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # Crome JavaScript scripting API
@@ -15,7 +22,8 @@ Crome exposes a JavaScript API for extending the legacy OBD1 ROM editor with scr
 ROM handlers, and plug-ins. This reference preserves the API documented by the original
 Crome community.
 
-> **Warning:** Work on a copy of the ROM and verify every output before installing it in
+> [!WARNING]
+> Work on a copy of the ROM and verify every output before installing it in
 > an ECU. API behavior can differ between Crome versions, and an incorrect script can
 > corrupt tables, scalars, or checksums.
 
@@ -70,7 +78,8 @@ The archived documentation describes three main objects:
 | `showBrowser(url, width, height)` | Open Crome's built-in browser |
 | `refresh()` | Refresh the editor after a script changes the active ROM |
 
-> **Note:** The archived signature declares `prompt()` as returning a boolean, while its
+> [!NOTE]
+> The archived signature declares `prompt()` as returning a boolean, while its
 > description says it returns the user's response or an empty string. Verify behavior in
 > the Crome version being targeted.
 

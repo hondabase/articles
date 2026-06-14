@@ -7,6 +7,13 @@ tags:
   - ecu
   - datalogging
   - serial
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Serial Communication'
+    url: /pgmfi/wiki/library/serial-communication
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # Honda ECU Serial Datalogging (`CN2` TTL Header)
@@ -19,7 +26,7 @@ On OBD1 Honda ECUs (like the [P28](/cars/electronics/p28) or [P30](/cars/electro
 
 ## 1. Critical Voltage Warning: TTL vs. RS-232
 
-> **Caution:**
+> [!CAUTION]
 > The Honda ECU serial port uses **TTL (Transistor-Transistor Logic)** levels. TTL signals operate strictly at low voltages: **0V (logic low)** and **5V (logic high)**. 
 >
 > Standard computer serial ports and cheap DB9 cables use **RS-232 voltage levels**, which range from **-12V (logic low)** to **+12V (logic high)**. Connecting a standard RS-232 cable directly to the ECU's CN2 header will immediately destroy the ECU's internal OKI microcontroller. 

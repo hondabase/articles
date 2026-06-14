@@ -9,6 +9,13 @@ tags:
   - ecu
   - chipping
   - hardware
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Chipping JDMP30'
+    url: /pgmfi/wiki/library/chipping-jdmp30
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # Chipping the JDM OBD1 P30 ECU
@@ -31,7 +38,8 @@ To chip a JDM P30 ECU, source the following components:
 | **`C49` & `C50`** | `0.004 uF` SMD ceramic capacitor | Digi-Key: `399-1230-1-ND` |
 | **`C91` & `C92`** | `0.0001 uF` (100 pF) SMD ceramic capacitor | Digi-Key: `399-1192-1-ND` |
 
-> **Warning:** The original reference images showing the precise locations of the capacitors and jumpers on the board underside were not recovered from the legacy archives. Ensure you verify the pad labels silk-screened on your PCB before soldering.
+> [!WARNING]
+> The original reference images showing the precise locations of the capacitors and jumpers on the board underside were not recovered from the legacy archives. Ensure you verify the pad labels silk-screened on your PCB before soldering.
 
 ---
 

@@ -7,6 +7,13 @@ tags:
   - hardware
   - rom
   - chipping
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Easy Rtp V10'
+    url: /pgmfi/wiki/library/easy-rtp-v10
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # DIY Easy-RTP v1.0 build and installation guide
@@ -15,7 +22,8 @@ tags:
 
 The **Easy-RTP v1.0** is a classic DIY EPROM emulator board. It is a single-sided printed circuit board (PCB) designed to house a 28-pin Non-Volatile SRAM (NVSRAM) chip (like the Dallas `DS1230Y`), interfacing directly with a standard socketed Honda OBD1 ECU.
 
-> **Warning:** This archived design requires board-level soldering and live ECU memory
+> [!WARNING]
+> This archived design requires board-level soldering and live ECU memory
 > changes. Disconnect power while wiring and verify all cuts and jumpers with a
 > multimeter before applying power.
 
@@ -124,7 +132,8 @@ To run the Easy-RTP v1.0 board on an OBD0 ECU, you must modify the chip-select a
 
 ### Modification steps
 
-> **Warning:** The archived OBD0 instructions depend on three externally hosted marked-up
+> [!WARNING]
+> The archived OBD0 instructions depend on three externally hosted marked-up
 > images that are not present in the archive. They also call the piggybacked base IC a
 > `74LS00`, while the main Easy-RTP parts list specifies a `74HC00`. Verify the circuit
 > before attempting this incomplete procedure.

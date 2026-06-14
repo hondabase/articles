@@ -5,6 +5,13 @@ applies_to:
   engines: [B-Series, H-Series]
 complexity: intermediate
 tags: [knock, sensor, ignition]
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Knock Sensor'
+    url: /pgmfi/wiki/library/knock-sensor
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # Knock Sensor
@@ -31,8 +38,8 @@ forced-induction engines. In practice it acts as a basic safeguard against bad f
 rather than a precise knock-detection system, and it can report false positives on forged
 internals.
 
-> **Tip:** On a boosted build, the stock sensor is usually paired with a dedicated
-> aftermarket knock-detection device (for example a J&S Safeguard) for accurate protection.
+> [!TIP]
+> On a boosted build, the stock sensor is usually paired with a dedicated aftermarket knock-detection device (for example a J&S Safeguard) for accurate protection.
 
 ## Related
 

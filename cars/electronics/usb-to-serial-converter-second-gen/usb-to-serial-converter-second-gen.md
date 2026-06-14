@@ -7,6 +7,13 @@ tags:
   - datalogging
   - hardware
   - wiring
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Usb To Serial Converter Second Gen'
+    url: /pgmfi/wiki/library/usb-to-serial-converter-second-gen
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # USB-to-Serial TTL Adapters (`FTDI` / USBMOD3)
@@ -54,4 +61,5 @@ Once the loopback test passes, remove the temporary jumper between Pin 27 and 28
 2.  Connect **Pin 28 (TXD on module)** to **Pin 4 (ECU RX)** on the `CN2` header.
 3.  Connect **Ground (GND on module)** to **Pin 1 (ECU GND)** on the `CN2` header.
 
-> **Warning:** Never connect the ECU's `CN2` Pin 5 (12V) to the USBMOD3 board. This will instantly destroy the transceiver module and damage your laptop's USB port.
+> [!WARNING]
+> Never connect the ECU's `CN2` Pin 5 (12V) to the USBMOD3 board. This will instantly destroy the transceiver module and damage your laptop's USB port.

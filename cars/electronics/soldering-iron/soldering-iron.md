@@ -6,6 +6,13 @@ complexity: beginner
 tags:
   - hardware
   - education
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Soldering Iron'
+    url: /pgmfi/wiki/library/soldering-iron
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # Soldering Iron Selection & Guidelines
@@ -25,7 +32,7 @@ When choosing a soldering iron for automotive electronics:
 
 Soldering is a mechanical skill that requires practice and muscle memory. 
 
-> **Warning:**
+> [!WARNING]
 > **Do not make your primary car's ECU your very first soldering project.** 
 
 It is highly recommended to obtain a scrap circuit board (from an old household appliance, radio, or junked ECU) and practice:

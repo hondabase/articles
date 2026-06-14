@@ -6,6 +6,13 @@ complexity: beginner
 tags:
   - hardware
   - education
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Desoldering Iron'
+    url: /pgmfi/wiki/library/desoldering-iron
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # Guide to Bulb-Style Desoldering Irons
@@ -23,7 +30,8 @@ To use a standard bulb-style desoldering iron:
 3.  **Release for Suction:** Release the rubber bulb to create vacuum suction. This draws the molten solder up through the tip and into the collection chamber.
 4.  **Clear the Tip:** Squeeze the bulb over a heat-resistant tray to expel the waste solder before moving to the next pin.
 
-> **Caution:** Squeezing the bulb while the iron is near the board is clumsy. If the tip slips, it can scratch the board mask or destroy copper traces. Always compress the bulb *before* touching the pin.
+> [!CAUTION]
+> Squeezing the bulb while the iron is near the board is clumsy. If the tip slips, it can scratch the board mask or destroy copper traces. Always compress the bulb *before* touching the pin.
 
 ---
 

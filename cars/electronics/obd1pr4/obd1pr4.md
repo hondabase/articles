@@ -8,13 +8,20 @@ complexity: intermediate
 tags:
   - ecu
   - reference
+sources:
+  - name: 'pgmfi.org wiki'
+    title: OBD1PR4
+    url: /pgmfi/wiki/library/obd1pr4
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # OBD1 PR4 ECU Hardware & Reference
 
 The **PR4** ECU is the standard OBD1 engine control unit used in the 1992–1993 Acura Integra RS, LS, and GS models equipped with the 1.8L non-VTEC B18A1 engine. 
 
-> **Note:**
+> [!NOTE]
 > Acura also utilized a PR4 ECU in the 1990–1991 Integra models. However, those early models are OBD0. If you are modifying a 1990–1991 unit, please refer to the [OBD0 PR4](/cars/electronics/obd0pr4) documentation.
 
 ## Board Layout and Chipping

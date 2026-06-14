@@ -7,6 +7,13 @@ tags:
   - obd
   - reference
   - wiring
+sources:
+  - name: 'pgmfi.org wiki'
+    title: OBD
+    url: /pgmfi/wiki/library/obd
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # Honda OBD Generations Guide (OBD0, OBD1, OBD2a, OBD2b)
@@ -67,7 +74,7 @@ Honda split its OBD2 systems into two distinct wiring and ECU plug configuration
 - **OBD2a (1996–1998):** Used in early 6th-generation Civics (EK), mid-cycle Integra models (DC2), and Accord/Prelude models of this era.
 - **OBD2b (1999–2001):** Features a redesigned, more compact ECU plug layout. Used in late-model Civics (including the 1999–2000 EM1 Civic Si), late-model Integras, and late-model Preludes.
 
-> **Note:**
+> [!NOTE]
 > Because OBD2 ECUs cannot be easily socketed or emulator-tuned, enthusiasts performing engine swaps or tuning high-performance setups usually use a **converters harness** to plug an older, socketed OBD1 ECU (like a [P28](/cars/electronics/p28) or [P30](/cars/electronics/p30)) directly into the OBD2 chassis wiring harness.
 
 ---

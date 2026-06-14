@@ -7,6 +7,13 @@ tags:
   - ecu
   - chipping
   - hardware
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Chipping OBD2'
+    url: /pgmfi/wiki/library/chipping-obd2
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # Chipping OBD2 Honda ECUs (OKI `66507` / `66P507`)
@@ -55,7 +62,7 @@ To lock the microcontroller and prevent it from being read or cloned:
 1.  After successfully writing the data, move the adapter jumper to position **"S"** (Security).
 2.  Write the value **`$00`** to address **`$0000`**. This blows the internal security fuse on the OKI chip.
     
-> **Warning:**
+> [!WARNING]
 > Only execute this security step *after* writing the primary ROM data. If you write to the security address first, the MCU will lock immediately, rendering it permanently unprogrammable and useless.
 
 ---

@@ -7,13 +7,20 @@ tags:
   - ecu
   - vtec
   - reference
+sources:
+  - name: 'pgmfi.org wiki'
+    title: PR3
+    url: /pgmfi/wiki/library/pr3
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # Honda PR3 ECU Reference Guide
 
 The PR3 Engine Control Unit (ECU) is a prominent Honda controller equipped in B16A DOHC VTEC vehicles between 1989 and 1993. 
 
-> **Important:**
+> [!IMPORTANT]
 > There are two completely different generations of ECUs designated as **PR3** (OBD0 and OBD1). They feature entirely different physical hardware casings, microprocessors, and wiring pinouts, and are **not compatible** in any way.
 
 ---
@@ -24,7 +31,7 @@ The PR3 Engine Control Unit (ECU) is a prominent Honda controller equipped in B1
 - **Application:** Sourced from first-generation JDM B16A models (Civic EF9, CRX EF8, Integra DA6).
 - **Hardware:** Features the OKI M66x301 microcontroller and dual knock sensor board. Uses the same code structure as the [PW0 ECU](/cars/electronics/pw0).
 - **Auto/Manual Jumper:** Check the board layout for transmission jumper identification:
-  [OBD0 PR3 Auto/Manual Jumper Identification Scan](https://web.archive.org/web/http://pgmfi.org/resources/FAQ/scans/OBD0_pr3-auto-manual.jpg)
+  [OBD0 PR3 Auto/Manual Jumper Identification Scan](OBD0_pr3-auto-manual.jpg)
 
 ### OBD1 PR3 (1992–1993)
 - **Application:** Sourced from 1992–1993 JDM Integra RSi and XSi models (second-generation B16A).
@@ -50,7 +57,7 @@ Below are the hex address offsets within the 28-pin EEPROM chip for the OBD0 ver
 | **3EF2** | 255 | High Cam Fuel Table | 15x17 VTEC fueling lookup map (uses OBD0 Fuel formula) |
 | **3FF1** | 15 | High Cam Multipliers | Column multiplier coefficients for VTEC fuel map |
 
-> **Tip:**
+> [!TIP]
 > The OBD0 PR3 applies column multipliers to fuel maps to scale raw 8-bit cell values. Refer to the [Understanding Maps guide](/cars/electronics/understanding-maps) for information on load multiplier formulas.
 
 ---

@@ -7,6 +7,13 @@ tags:
   - datalogging
   - hardware
   - wiring
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Nokia Cable Datalogging'
+    url: /pgmfi/wiki/library/nokia-cable-datalogging
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # DIY Datalogging Cable via Nokia FBUS Modification
@@ -21,7 +28,7 @@ A classic and highly cost-effective method to achieve this is modifying a legacy
 
 The OBD1 Honda ECU sends and receives serial data on the **CN2** header port (located on the right side of the ECU board). 
 
-> **Caution:**
+> [!CAUTION]
 > Pin 5 on the CN2 header carries raw 12V battery voltage. Never connect this pin to your USB adapter or laptop. Doing so will instantly destroy the serial adapter chip, your laptop's USB port, and potentially the laptop itself.
 
 | CN2 Pin | Function | Connection |

@@ -26,13 +26,15 @@ A wideband O2 sensor uses a complex sensor element and a controller box/circuit 
 
 This wiring method is compatible with both the Hondata S300 and other hardware solutions, as it connects directly to the stock O2 sensor signal pin. If you are using a Hondata S300, you can also use the board's onboard analog inputs for a cleaner installation.
 
-> **Note:** Use a T-tap splice connector to connect wires to the factory harness without cutting. If your ECU uses a jumper harness, connect to those wires instead to keep your factory chassis wiring intact.
+> [!TIP]
+> Use a T-tap splice connector to connect wires to the factory harness without cutting. If your ECU uses a jumper harness, connect to those wires instead to keep your factory chassis wiring intact.
 
 ### Wiring Reference Table
 
 ::: widget wideband-wiring-table :::
 
-> **Note:** Connecting the Brown wire (differential ground) provides the best signal quality with the least interference, requiring little to no voltage offset correction in your tuning software.
+> [!TIP]
+> Connecting the Brown wire (differential ground) provides the best signal quality with the least interference, requiring little to no voltage offset correction in your tuning software.
 
 ## Configuration in HTS (Honda Tuning Suite)
 
@@ -45,7 +47,8 @@ Launch Honda Tuning Suite, then navigate to **File** > **Settings** > **Wideband
 ### Select ECU Pin
 Select pin **D14** for the wideband's signal input.
 
-> **Note:** Due to the physical layout of the D14 circuit, pin D14 has a voltage limit of `3.8V`, which corresponds to an AFR reading of approximately `16.0` or higher. See the [Hondata D14 circuit limitations thread](https://www.hondata.com/forum/viewtopic.php?t=10423) for details.
+> [!NOTE]
+> Due to the physical layout of the D14 circuit, pin D14 has a voltage limit of `3.8V`, which corresponds to an AFR reading of approximately `16.0` or higher. See the [Hondata D14 circuit limitations thread](https://www.hondata.com/forum/viewtopic.php?t=10423) for details.
 
 ![ECU PIN selection interface showing D14 pin](hts_ecu-input.png)
 *ECU PIN selection for wideband input in HTS.*
@@ -78,7 +81,8 @@ The configuration process in Hondata SManager (for S300 boards) follows similar 
 ### Wiring
 Connect your wideband's analog output to any of the S300 board's analog input pins (labeled **A0** through **A7**). If your wideband has an analog ground wire, connect it directly to the S300's analog ground pin (**GND**).
 
-> **Note:** To prevent voltage offsets, use thick-gauge wire for grounding, keep ground wires short, and ground both the wideband controller and the ECU to the same physical ground point.
+> [!TIP]
+> To prevent voltage offsets, use thick-gauge wire for grounding, keep ground wires short, and ground both the wideband controller and the ECU to the same physical ground point.
 
 ![Wiring diagram showing AEM 30-4100 with single analog output connection to S300](analog-wideband-1.jpg)
 *AEM 30-4100 single analog output connection to S300.*

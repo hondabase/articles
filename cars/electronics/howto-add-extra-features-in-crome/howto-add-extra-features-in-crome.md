@@ -7,6 +7,13 @@ tags:
   - tuning
   - rom
   - software
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Howto Add Extra Features In Crome'
+    url: /pgmfi/wiki/library/howto-add-extra-features-in-crome
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # How to Install the "Add Extra Features" Plugin in Crome
@@ -26,7 +33,7 @@ Crome plugins use the `.cpf` file extension. To be recognized by the software, t
 3.  Copy the `addextrafeatures.cpf` file and paste it into Crome's installation plugin directory. By default, this is located at:
     `C:\Program Files (x86)\Crome\Plugins\` (on 64-bit Windows systems)
     
-> **Note:**
+> [!NOTE]
 > Historically, legacy Crome plugin archives were password-protected to prevent corruption. If prompted during extraction, use the standard Crome installation password.
 
 ---

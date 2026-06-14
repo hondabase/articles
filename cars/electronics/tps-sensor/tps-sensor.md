@@ -6,6 +6,13 @@ complexity: intermediate
 tags:
   - sensor
   - diagnostics
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Tps Sensor'
+    url: /pgmfi/wiki/library/tps-sensor
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # Throttle Position Sensor (TPS)
@@ -45,7 +52,8 @@ The factory TPS is held in place by two shear bolts that look like rivets. These
 6.  Open the throttle fully (Wide Open Throttle) and verify the voltage sweeps smoothly up to **4.50V**.
 7.  Tighten the mounting screws. 
 
-> **Note:** The TPS can easily rotate slightly as you tighten the screws, shifting the calibration. Always double-check your readings after final tightening.
+> [!NOTE]
+> The TPS can easily rotate slightly as you tighten the screws, shifting the calibration. Always double-check your readings after final tightening.
 
 #### Step 3: Calibrate Using Datalogging
 If you have a working datalogger (e.g., Crome, Uberdata, Hondata):

@@ -5,13 +5,21 @@ applies_to:
   obd: [1]
 complexity: advanced
 tags: [rtp, ecu, hardware, chipping]
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Easy Rtp Install'
+    url: /pgmfi/wiki/library/easy-rtp-install
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # Easy-RTP v1.0 OBD1 installation
 
 These archived instructions describe installing a completed Easy-RTP v1.0 board in an OBD1 P28 ECU by interrupting the CPU write-enable circuit and connecting the RTP board to the required address and write signals.
 
-> **Warning:** The source explicitly labels these instructions preliminary and asks readers to double-check them. The procedure severs an ECU-board trace and requires soldering directly to IC pins. Verify every signal and pin against the target ECU before applying power.
+> [!WARNING]
+> The source explicitly labels these instructions preliminary and asks readers to double-check them. The procedure severs an ECU-board trace and requires soldering directly to IC pins. Verify every signal and pin against the target ECU before applying power.
 
 Build the module first using the [Easy-RTP v1.0 assembly guide](/cars/electronics/easy-rtp-v10). The source expects OBD1 boards to be similar, but only shows a P28 installation and separately lists different pins for a surface-mount JDM P30-900.
 
@@ -61,7 +69,8 @@ The source gives these alternate pins for a JDM P30-900 and says they most likel
 
 The source routes the two halves of the cut write-enable circuit to RTP-board connections 1 and 3. When the RTP module is absent, its proposed dummy plug simply joins those two wires so a standard ROM can be used.
 
-> **Warning:** Confirm the connector numbering and continuity on the actual installation. A wrongly wired jumper could connect unrelated signals or leave the original write-enable path open.
+> [!WARNING]
+> Confirm the connector numbering and continuity on the actual installation. A wrongly wired jumper could connect unrelated signals or leave the original write-enable path open.
 
 ## Datalogging connection
 

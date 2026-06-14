@@ -7,6 +7,13 @@ tags:
   - conversion
   - wiring
   - hardware
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Accord Auto OBD2-OBD1'
+    url: /pgmfi/wiki/library/accord-auto-obd2-obd1
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # Automatic Accord OBD2-to-OBD1 ECU and TCU conversion
@@ -18,7 +25,8 @@ When converting a USDM 5th-generation (1996–1997) automatic Accord from OBD2a 
 This guide, based on hardware development documented by community researcher Bird333,
 describes the parts, pin mapping, and harness construction used on that conversion.
 
-> **Warning:** This is a community-developed conversion for a specific USDM parts
+> [!WARNING]
+> This is a community-developed conversion for a specific USDM parts
 > combination. Verify every pin against the factory service manuals for the donor ECU,
 > TCU, and vehicle before applying power. An incorrect connection can damage the ECU,
 > TCU, harness, or vehicle.
@@ -148,7 +156,8 @@ The table below maps the wiring routing from the vehicle's **1996–1997 OBD2a A
 | - | D16 | A18 | **A19** | Engine Speed Output to TCU |
 | - | D18 | D18 | **D16** | Sensor Voltage Reference |
 
-> **Note:** Question marks and uncertain mappings from the archived conversion table are
+> [!NOTE]
+> Question marks and uncertain mappings from the archived conversion table are
 > preserved. In particular, it says not to connect TCU A09 to OBD2 A20 and instead uses
 > the tachometer test wire. Verify every mapping against the applicable service manuals.
 
@@ -156,7 +165,8 @@ The table below maps the wiring routing from the vehicle's **1996–1997 OBD2a A
 
 ## 4. Pin-counting references
 
-> **Warning:** Counting pins is different between OBD1 and OBD2 plugs. Miscounting pins
+> [!WARNING]
+> Counting pins is different between OBD1 and OBD2 plugs. Miscounting pins
 > is the most common cause of conversion-harness errors.
 
 ### OBD1 plugs, ECU side
@@ -207,7 +217,8 @@ The archived guide gives these construction details:
 7. Insert OBD1 terminals with the crimp side facing the plug's locking clip.
 8. Check every completed connection for continuity before connecting the harness.
 
-> **Warning:** The archived guide says OBD1 terminals are difficult to remove after they
+> [!WARNING]
+> The archived guide says OBD1 terminals are difficult to remove after they
 > lock into a plug. Confirm `each` destination before inserting it.
 
 ## Conversion files

@@ -1,5 +1,5 @@
 ---
-summary: 'A Wire Harness is a term for the connetors and wires that are connected to the ECU. OBD0 , OBD1 and OBD2 all have different connectors and there are different wire setups for different ECUs.'
+summary: 'Compare Honda OBD0, OBD1, OBD2A, and OBD2B ECU wire-harness connectors and pinout layouts.'
 applies_to:
   obd: [0, 1, 2]
   brand: Acura
@@ -12,11 +12,26 @@ tags:
   - sensors
   - wiring
   - conversion
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Wire Harness'
+    url: /pgmfi/wiki/library/wire-harness
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # Wire Harness
 
-A [Wire Harness](/cars/electronics/wire-harness) is a term for the connetors and wires that are connected to the [ECU](/cars/electronics/ecu). [OBD0](/cars/electronics/obd0) , [OBD1](/cars/electronics/obd1) and [OBD2](/cars/electronics/obd2) all have different connectors and there are different wire setups for different [ECU](/cars/electronics/ecu)s. Here are the pinouts of the [OBD2](/cars/electronics/obd2) a, [OBD2](/cars/electronics/obd2) b, and OBDI (AKA OBDIIa, OBDIIb, [OBD1](/cars/electronics/obd1) .. I'm putting in all the keywords so you can find this :) connectors. * RPT's ODB1 / [OBD](/cars/electronics/obd)2A / [OBD](/cars/electronics/obd)2B pinout image: 
+A wire harness is the set of connectors and wires attached to an [ECU](/cars/electronics/ecu). [OBD0](/cars/electronics/obd0), [OBD1](/cars/electronics/obd1), and [OBD2](/cars/electronics/obd2) systems use different connectors and wiring layouts.
 
-Note: A hi-res version of this image can be found [here.](http://kl2.smugmug.com/photos/64116307-O.jpg)
- ![OBD2to1ab2.jpg](OBD2to1ab2.jpg)[edit: what happened to the factory manual [OBD](/cars/electronics/obd)1 Integra [ECU](/cars/electronics/ecu) connector wiring diagram scans ? ? ? they used to be on [P72](/cars/electronics/p72) ]
+## ECU connector pinout
+
+The following image compares OBD1, OBD2A, and OBD2B ECU connector pinouts:
+
+[View the archived high-resolution image](http://web.archive.org/web/20070625073443/http://kl2.smugmug.com/photos/64116307-O.jpg)
+
+![OBD1, OBD2A, and OBD2B ECU connector pinouts](OBD2to1ab2.jpg)
+
+> [!WARNING]
+> The source referenced factory-manual OBD1 Integra ECU connector scans that may have been associated with the [P72 ECU](/cars/electronics/p72), but those scans are not currently available.

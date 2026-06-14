@@ -5,13 +5,21 @@ applies_to:
   obd: [1]
 complexity: advanced
 tags: [ecu, datalogging, hardware, adc]
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'Japanese Domestic Market P30D12 Modification'
+    url: /pgmfi/wiki/library/japanese-domestic-market-p30d12-modification
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # JDM P30 D12 analog-input modification
 
 This archived modification uses the otherwise-unused D12 input on a JDM OBD1 P30 ECU to log a 0-5 V analog signal, such as the output from an EGT thermocouple amplifier.
 
-> **Warning:** This procedure cuts or changes ECU-board circuits. The source reports successful tests on USDM and JDM P30 ECUs, but does not establish compatibility with other OBD1 ECUs. Verify the circuit and software behavior before modifying an ECU.
+> [!WARNING]
+> This procedure cuts or changes ECU-board circuits. The source reports successful tests on USDM and JDM P30 ECUs, but does not establish compatibility with other OBD1 ECUs. Verify the circuit and software behavior before modifying an ECU.
 
 ## USDM and JDM P30 differences
 
@@ -26,7 +34,8 @@ The original investigation used a USDM P30 for initial testing and a JDM P30 for
 | High eight ADC bits | RAM `067h` | RAM `06Bh` |
 | Remaining two ADC bits | Source describes the two most-significant bits of RAM `066h` as the ADC value's two least-significant bits | Source describes the two most-significant bits of RAM `06Ah` as the ADC value's two least-significant bits |
 
-> **Note:** The archived JDM section twice uses "USDM" while describing the JDM circuit: it calls the grounded AI3 input part of a USDM P30 and calls the D12-to-AI5 path "USDM D12 circuitry." The table above follows the surrounding JDM context, but those labels were not independently corrected or verified.
+> [!NOTE]
+> The archived JDM section twice uses "USDM" while describing the JDM circuit: it calls the grounded AI3 input part of a USDM P30 and calls the D12-to-AI5 path "USDM D12 circuitry." The table above follows the surrounding JDM context, but those labels were not independently corrected or verified.
 
 ![USDM P30 D12 input schematic](USDMP30D12Schematics.jpg)
 *Archived schematic of the USDM P30 D12 circuit.*

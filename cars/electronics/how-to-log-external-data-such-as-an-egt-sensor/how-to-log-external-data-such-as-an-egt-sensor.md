@@ -5,13 +5,21 @@ applies_to:
   obd: [1]
 complexity: advanced
 tags: [datalogging, sensor, adc, ecu]
+sources:
+  - name: 'pgmfi.org wiki'
+    title: 'How To Log External Data Such As An Egt Sensor'
+    url: /pgmfi/wiki/library/how-to-log-external-data-such-as-an-egt-sensor
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
 ---
 
 # Logging an external 0-5 V sensor through P30 D12
 
 This archived method uses the undocumented D12 analog input on a USDM OBD1 P30 ECU to record an external 0-5 V signal, such as the output from an EGT amplifier or wideband O2 controller.
 
-> **Warning:** The source only documents direct testing on a USDM P30. It suggests that other USDM OBD1 ECUs should share the circuit and says a USDM P28 appears similar, but leaves that compatibility unconfirmed. JDM P30 ECUs use a different, incomplete D12 circuit.
+> [!WARNING]
+> The source only documents direct testing on a USDM P30. It suggests that other USDM OBD1 ECUs should share the circuit and says a USDM P28 appears similar, but leaves that compatibility unconfirmed. JDM P30 ECUs use a different, incomplete D12 circuit.
 
 ## D12 analog input
 
@@ -39,7 +47,8 @@ The stock USDM ECU documented by the source had no component installed at `C42`.
 ![USDM P30 board with C42 installed](USDMc42.JPG)
 *Archived photo showing the added `C42` capacitor.*
 
-> **Warning:** Capacitor polarity and board layout must be verified on the actual ECU. The archived recommendation was not documented for every P30 board revision or other ECU type.
+> [!WARNING]
+> Capacitor polarity and board layout must be verified on the actual ECU. The archived recommendation was not documented for every P30 board revision or other ECU type.
 
 ## JDM P30 difference
 
