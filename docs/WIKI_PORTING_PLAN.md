@@ -50,3 +50,8 @@ Source-faithful porting does not mean copying pages verbatim. Articles should be
 2. **Attachment audit:** reconcile archive attachment records with article bundles and verify every retained image and download URL.
 3. **Stub decisions:** review the 20 short archived topics and either intentionally ignore, merge, or expand them.
 4. **Presentation cleanup:** replace malformed legacy tables, link soup, raw HTML, and unsupported Markdown without changing technical meaning.
+
+Run `php artisan hondabase:audit-presentation` from the app repo to produce a report-only,
+severity-sorted presentation queue across every configured locale. It flags collapsed
+tables, malformed fences, legacy attachment tables, raw HTML, glued content, and extreme
+prose lines without making existing lint or CI fail.

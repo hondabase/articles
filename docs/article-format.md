@@ -105,6 +105,10 @@ One `# H1` only (the title). Headings are sentence case, with acronyms left uppe
   ````
 
   Carousels do not support remote images, arbitrary prose, nested widgets, or raw HTML.
+- **Searchable wirelists.** Use a fenced `wirelist` block for large ECU pin/trace datasets
+  that need filtering on a phone. The structured editor manages ECU variants, component
+  groups, and rows; do not hand-edit the JSON unless you validate it with
+  `php artisan app:lint-articles`.
 - **Attachments and downloads.** Recover every available source attachment that the
   article retains, co-locate it in the article bundle, and link it by filename:
   `[Download the archived schematic](schematic.pdf)`. Verify both the local file and the
