@@ -85,7 +85,7 @@ One `# H1` only (the title). Headings are sentence case, with acronyms left uppe
   Engine and chassis codes uppercase: B16, B18C, D16, K20, H22, EK, EG, DC2, CL9, CM6.
   Brands: Honda, Acura.
 - **Links.** Link to related Hondabase articles with site-relative paths, for example
-  `[knock sensor](/cars/electronics/knock-sensor)`. Do NOT auto-link every technical term
+  `[knock sensor](/cars/ignition/knock-sensor)`. Do NOT auto-link every technical term
   (no wiki-style link soup). Use external links sparingly and only to authoritative or
   manufacturer sources; do not link dead forum threads, name the source instead.
 - **Images.** Co-locate in the bundle and reference by filename, with real alt text:

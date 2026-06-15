@@ -41,6 +41,7 @@ A local article bundle counts as completed in the tables above, but a port is no
 6. **Compare source to article:** verify all values, formulas, addresses, pinouts, units, filenames, and retained assets against the raw page after the rewrite.
 7. **Check rendering and URLs:** remove unsupported syntax and verify every retained image and download through its rendered article asset URL.
 8. **Run automated validation:** run `php artisan app:lint-articles`, but treat lint as a structural check only. A passing linter does not establish technical accuracy or source fidelity.
+9. **Preserve attribution:** every PGMFI port keeps its source and license in frontmatter, while recovered human authors are stored as database legacy-author records and shown on the article page.
 
 Source-faithful porting does not mean copying pages verbatim. Articles should be rewritten for clarity and mobile readability while keeping the archived technical claims, limitations, and uncertainty intact.
 

@@ -1,0 +1,21 @@
+---
+summary: 'PJ7 8687 Prelude 2.0 Si (B20A3) (Vac advance?)'
+tags: [reference]
+applies_to:
+  obd: [0, 1, 2]
+  brand: Honda
+  models: [civic, integra, prelude]
+  chassis: [dc2, eg, ek]
+complexity: beginner
+sources:
+  - name: 'pgmfi.org wiki'
+    title: PJ7
+    url: /pgmfi/wiki/library/pj7
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
+---
+
+# PJ7
+
+PJ7 86-87 Prelude 2.0 Si (B20A3) (Vac advance?)
