@@ -26,7 +26,7 @@ sources:
 - [P08](/cars/wiring/p08) : 92-95 [OBD](/cars/wiring/obd)-1 Civic/CRX VTi/VXi (SOHC VTEC)
 - [PR3](/cars/sensors/pr3) : 92-93 [OBD](/cars/wiring/obd)-1 [JDM](/cars/sensors/jdm) Integra RSi/XSi (B16A)
 - [PR4](/cars/sensors/pr4) : 92-93 [OBD](/cars/wiring/obd)-1 Integra RS/LS/GS (B18A)
-- [P27](/cars/sensors/p27) : 92-95 [OBD](/cars/wiring/obd)-1 Euro/Asian Civic (non-vtec 1.6l)
+- [P27](/cars/honda/civic/eg/sensors/p27) : 92-95 [OBD](/cars/wiring/obd)-1 Euro/Asian Civic (non-vtec 1.6l)
 - [P28](/cars/sensors/p28) : 92-95 [OBD](/cars/wiring/obd)-1 Civic Si/Ex (SOHC VTEC d16z6)
 - [P29](/cars/sensors/p29) : 92-95 [OBD](/cars/wiring/obd)-1 [JDM](/cars/sensors/jdm) Domani (SOHC zc)
 - [P30](/cars/sensors/p30) : 92-95 [OBD](/cars/wiring/obd)-1 [USDM](/cars/sensors/usdm) Del Sol [DOHC](/cars/sensors/dohc) VTEC Si/EG SiR

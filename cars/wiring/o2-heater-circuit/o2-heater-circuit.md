@@ -17,4 +17,4 @@ sources:
 
 # O2 Heater Circuit
 
-the O2 heater circuit is what makes 4-wire [Oxygen Sensor](/cars/fueling/oxygen-sensor)s different from 1-wire sensors. The heater circuit helps the sensor stay in its optimum temperature range so that it reads accurately. See [One Wire To4 Wire O2 Sensor](/cars/wiring/one-wire-to4-wire-o2-sensor) for information on adding circuitry to an [ECU](/cars/ecu/ecu) to support the [O2 Heater Circuit](/cars/wiring/o2-heater-circuit). See the [Rom Maps](/cars/wiring/rom-maps) for information on diabling the code 41 present when it is absent/malfunctioning.
+the O2 heater circuit is what makes 4-wire [Oxygen Sensor](/cars/fueling/oxygen-sensor)s different from 1-wire sensors. The heater circuit helps the sensor stay in its optimum temperature range so that it reads accurately. See [One Wire To4 Wire O2 Sensor](/cars/honda/civic/eg/wiring/one-wire-to4-wire-o2-sensor) for information on adding circuitry to an [ECU](/cars/ecu/ecu) to support the [O2 Heater Circuit](/cars/wiring/o2-heater-circuit). See the [Rom Maps](/cars/wiring/rom-maps) for information on diabling the code 41 present when it is absent/malfunctioning.

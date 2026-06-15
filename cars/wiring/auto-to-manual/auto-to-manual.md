@@ -25,6 +25,6 @@ Most automatic [ECU](/cars/ecu/ecu)s can be converted to a 5spd rather easily. G
 - OBD0 PR4 Auto Manual = Converting an auto [OBD0](/cars/rom/obd0) PR4 to manual
 - [PR3 Auto Manual](/cars/ecu/pr3-auto-manual) = Converting an auto PR3 to manual
 - [OBD1 Civic Integra Auto Manual](/cars/wiring/obd1-civic-integra-auto-manual) = Converting an automatic 92-95 Civic and Integra [ECU](/cars/ecu/ecu) from auto to manual
-- [OBD1 P08 Auto Manual](/cars/sensors/obd1p08-auto-manual) = Converting an automatic P08 or P30 [JDM](/cars/sensors/jdm) (mini style) [ECU](/cars/ecu/ecu) from auto to manual
+- [OBD1 P08 Auto Manual](/cars/honda/civic/eg/sensors/obd1p08-auto-manual) = Converting an automatic P08 or P30 [JDM](/cars/sensors/jdm) (mini style) [ECU](/cars/ecu/ecu) from auto to manual
 - [OBD1 P13 Auto Manual](/cars/wiring/obd1p13-auto-manual) = Converting a 92-95 H22A prelude [ECU](/cars/ecu/ecu) from auto to manual
 - [OBD2 P5 MAuto Manual](/cars/wiring/obd2p5m-auto-manual) = Converting a 97-01 H22A Prelude PCM from auto to manual
