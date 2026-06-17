@@ -35,8 +35,12 @@ The purpose of advancing ignition timing is not simply to fire the spark earlier
 
 No two engine setups require the same ignition map. The amount of advance needed depends on:
 
-- **Combustion Chamber Geometry:** Compact pent-roof chambers with centralized spark plugs (typical of DOHC VTEC engines like the B16A or H22A) burn fuel quickly and require *less* advance than older, less efficient chambers.
-- **Compression Ratio:** High-compression pistons squeeze the air-fuel mixture tighter, accelerating the speed of the flame front. High-compression engines require *less* timing advance to reach peak pressure.
+- **Combustion Chamber Geometry:** Compact pent-roof chambers with centralized spark plugs (typical of DOHC VTEC engines like the B16A or H22A) burn fuel quickly and require *less
+
+* advance than older, less efficient chambers.
+- **Compression Ratio:** High-compression pistons squeeze the air-fuel mixture tighter, accelerating the speed of the flame front. High-compression engines require *less
+
+* timing advance to reach peak pressure.
 - **Fuel Octane:** Higher octane fuels burn slower and are more resistant to self-ignition (detonation), allowing the tuner to advance timing closer to the engine's mechanical limit.
 - **Engine Geometry (Rod-to-Stroke Ratio):** The rod-to-stroke (R/S) ratio determines piston dwell time at TDC. Engines with long dwell times need different timing curves because the piston remains at the top of the cylinder longer.
 
@@ -49,14 +53,17 @@ The final ignition timing commanded by the ECU is a combination of mechanical sy
 $$\text{Total Ignition Timing} = \text{Base Mechanical Timing} + \text{ECU Map Advance} + \text{Correction Trims}$$
 
 ### Base Mechanical Timing
+
 Before the ECU's timing calculations can be accurate, the physical distributor must be mechanically synchronized with the crankshaft. 
 - For most OBD1 Honda D and B-Series engines, base mechanical timing is set to **16° $\pm$ 2° BTDC** (JDM models may vary; refer to the engine spec plate).
 - To calibrate base timing, jump the [Service Connector Switch (SCS) loop](/cars/wiring/obd) to disable the ECU's dynamic map adjustments, connect a timing light to spark plug wire #1, and rotate the distributor housing until the red timing mark on the crankshaft pulley aligns with the pointer on the engine block.
 
 ### ECU Map Advance
+
 This is the target ignition timing value retrieved from the ECU's lookup table, matching the current engine speed (RPM) and manifold pressure (load).
 
 ### Correction Trims
+
 The ECU applies compensation multipliers to protect the engine under extreme operating conditions. For example, if [Intake Air Temperature (IAT)](/cars/sensors/intake-air-temperature-sensor) or [Engine Coolant Temperature (ECT)](/cars/sensors/ecu-sensors) rise above safe thresholds, the ECU automatically retards timing to suppress detonation.
 
 ---
@@ -67,11 +74,12 @@ When calibrating timing on a dynamometer, you are looking for the point of **Max
 
 - **Detonation (Knock) Limit:** On pump gas (such as 91 or 93 octane), high load or boosted engines will often reach the detonation limit before reaching MBT. When knock is detected, timing must be retarded to prevent catastrophic ring land or bearing failure.
 - **The Hazards of Too Much Retard:** While retarding timing prevents knock, pulling too much timing causes combustion to occur late in the power stroke or even inside the exhaust manifold. This leads to:
-  - Severe loss of engine torque and power.
-  - Spikes in Exhaust Gas Temperatures (EGT), which can melt turbine housings, exhaust valves, and pistons.
-  - High coolant temperatures and cylinder head overheating.
+ - Severe loss of engine torque and power.
+ - Spikes in Exhaust Gas Temperatures (EGT), which can melt turbine housings, exhaust valves, and pistons.
+ - High coolant temperatures and cylinder head overheating.
 
 ## Related Articles
+
 - [How to Interpret ECU Maps](/cars/fueling/understanding-maps)
 - [Introduction to ECU Tuning](/cars/fueling/ecu-tuning)
 - [Crankshaft Position Sensor Guide](/cars/ignition/crankshaft-position-sensor)

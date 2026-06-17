@@ -36,4 +36,4 @@ A placa de detonação de fábrica é amplamente considerada pouco fiável para 
 ## Relacionado
 
 - [Tensões do sensor de detonação](/cars/sensors/knock-sensor-voltages)
-- [Códigos de erro da ECU](/cars/diagnostics/ecu-trouble-codes)
+- [Códigos de erro da ECU](/cars/diagnostics/diagnostic-trouble-codes)

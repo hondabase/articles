@@ -46,4 +46,4 @@ internals.
 ## Related
 
 - [Knock sensor voltages](/cars/sensors/knock-sensor-voltages)
-- [ECU trouble codes](/cars/diagnostics/ecu-trouble-codes)
+- [ECU trouble codes](/cars/diagnostics/diagnostic-trouble-codes)

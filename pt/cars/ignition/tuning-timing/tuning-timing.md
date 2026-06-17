@@ -36,8 +36,12 @@ O objetivo de avançar o ponto de ignição não é simplesmente iniciar a faís
 
 Não existem duas configurações de motor que exijam o mesmo mapa de ignição. O nível de avanço necessário depende de:
 
-- **Geometria da Câmara de Combustão:** Câmaras de combustão compactas de quatro válvulas com velas centralizadas (típicas de motores DOHC VTEC como o B16A ou H22A) queimam o combustível rapidamente e requerem *menos* avanço do que câmaras mais antigas e menos eficientes.
-- **Taxa de Compressão:** Pistões de alta compressão comprimem mais a mistura ar-combustível, acelerando a velocidade da frente de chama. Motores de alta compressão requerem *menos* avanço de ignição para atingir a pressão máxima.
+- **Geometria da Câmara de Combustão:** Câmaras de combustão compactas de quatro válvulas com velas centralizadas (típicas de motores DOHC VTEC como o B16A ou H22A) queimam o combustível rapidamente e requerem *menos
+
+* avanço do que câmaras mais antigas e menos eficientes.
+- **Taxa de Compressão:** Pistões de alta compressão comprimem mais a mistura ar-combustível, acelerando a velocidade da frente de chama. Motores de alta compressão requerem *menos
+
+* avanço de ignição para atingir a pressão máxima.
 - **Octanagem do Combustível:** Combustíveis de maior octanagem queimam mais lentamente e são mais resistentes à autoignição (detonação), permitindo ao afinador avançar a ignição mais perto do limite mecânico do motor.
 - **Geometria do Motor (Relação Biela-Curso):** A relação biela-curso (R/S) determina o tempo de permanência do pistão no PMS (ponto morto superior). Motores com tempos de permanência longos necessitam de curvas de avanço diferentes porque o pistão permanece no topo do cilindro durante mais tempo.
 
@@ -50,14 +54,17 @@ O avanço de ignição final ordenado pela ECU é uma combinação de sincroniza
 $$\text{Avanço de Ignição Total} = \text{Avanço Mecânico Base} + \text{Avanço do Mapa da ECU} + \text{Correções (Trims)}$$
 
 ### Avanço Mecânico Base
+
 Antes que os cálculos de avanço da ECU possam ser precisos, o distribuidor físico deve ser sincronizado mecanicamente com a cambota.
 - Para a maioria dos motores Honda Série D e B de tecnologia OBD1, o avanço mecânico base é ajustado para **16° $\pm$ 2° APMS (BTDC)** (os modelos JDM podem variar; consulte a placa de especificações do motor).
 - Para calibrar o avanço base, efetue um shunt no terminal de diagnóstico [Service Connector Switch (SCS)](/cars/wiring/obd) para desativar os ajustes dinâmicos do mapa da ECU, ligue uma pistola de ponto (lâmpada estroboscópica) ao cabo da vela do cilindro #1 e rode o corpo do distribuidor até que a marca vermelha de ponto na polia da cambota coincida com o ponteiro no bloco do motor.
 
 ### Avanço do Mapa da ECU
+
 Este é o valor de avanço de ignição alvo obtido a partir da tabela de consulta da ECU, correspondente à rotação atual do motor (RPM) e à pressão do coletor (carga/MAP).
 
 ### Correções (Trims)
+
 A ECU aplica multiplicadores de compensação para proteger o motor em condições de funcionamento extremas. For example, se a [Temperatura do Ar de Admissão (IAT)](/cars/sensors/intake-air-temperature-sensor) ou a [Temperatura do Líquido de Refrigeração do Motor (ECT)](/cars/sensors/ecu-sensors) subirem acima dos limites de segurança, a ECU atrasa automaticamente o avanço para suprimir a detonação.
 
 ---
@@ -68,11 +75,12 @@ Ao calibrar o avanço num dinamómetro, procura-se o ponto de **Binário Máximo
 
 - **Limite de Detonação (Grilar / Knock):** Com combustível comercial (como gasolina de 95 ou 98 octanas), motores sob carga elevada ou sobrealimentados (turbo/compressor) atingem frequentemente o limite de detonação antes de alcançarem o MBT. Quando a detonação é detetada, o avanço deve ser atrasado para evitar falhas catastróficas nas zonas entre segmentos dos pistões (ring lands) ou nos bronzes de biela.
 - **Os Perigos de Atrasar Demasiado o Ponto:** Embora atrasar o avanço previna a detonação, retirar avanço em excesso faz com que a combustão ocorra demasiado tarde no ciclo de expansão ou até mesmo dentro do coletor de escape. Isto resulta em:
-  - Perda severa de binário e potência do motor.
-  - Picos de Temperatura dos Gases de Escape (EGT), que podem derreter caixas de turbo, válvulas de escape e pistões.
-  - Temperaturas elevadas do líquido de refrigeração e sobreaquecimento da cabeça do motor.
+ - Perda severa de binário e potência do motor.
+ - Picos de Temperatura dos Gases de Escape (EGT), que podem derreter caixas de turbo, válvulas de escape e pistões.
+ - Temperaturas elevadas do líquido de refrigeração e sobreaquecimento da cabeça do motor.
 
 ## Artigos Relacionados
+
 - [Como Interpretar Mapas da ECU](/cars/fueling/understanding-maps)
 - [Introdução ao Tuning de ECUs](/cars/fueling/ecu-tuning)
 - [Guia do Sensor de Posição da Cambota](/cars/ignition/crankshaft-position-sensor)
