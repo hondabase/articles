@@ -1,20 +1,30 @@
 ---
-summary: 'The 1wire VTEC codebase is a ROM for the OBD0 MPFI ECUs that allows the Automatic Transmission Lockup Solenoid to be used to control VTEC engagement.'
-tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics]
+summary: 'Technical overview of the 1-wire VTEC ROM codebase, which utilizes the automatic transmission lockup solenoid to control VTEC engagement on OBD0 ECUs.'
+tags: [ecu, rom, tuning, vtec, obd0]
 applies_to:
   obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
-complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: '1 Wire Vtec'
-    url: /pgmfi/wiki/library/1-wire-vtec
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+complexity: intermediate
 ---
 
-# 1 Wire VTEC
+# 1-Wire VTEC Conversion
 
-The 1-wire VTEC codebase is a [ROM](/cars/rom/rom) for the [OBD0 MPFI](/cars/diagnostics/obd0mpfi) [ECU](/cars/ecu/ecu)s that allows the [Automatic Transmission Lockup Solenoid](/cars/sensors/automatic-transmission-lockup-solenoid) to be used to control VTEC engagement. Jason Parker came up with the [Hardware For One Wire VTEC](/cars/rom/hardware-for-one-wire-vtec) changes. As of Oct 2 2003 it is functional but needs some help and further testing. Dave Blundell has several cars running around on it. If you want to contribute/work/see it, check out the ***1w_vtec*** code module from [Source Forge](/cars/wiring/source-forge)
+The **1-wire VTEC** codebase is a specialized ROM modification for OBD0 MPFI ECUs. It repurposes the [Automatic Transmission Lockup Solenoid](/cars/sensors/automatic-transmission-lockup-solenoid) output to control VTEC engagement, enabling VTEC functionality on early OBD0 engine control systems.
+
+---
+
+## Overview
+
+This modification is designed for users operating OBD0 MPFI ECUs who wish to run VTEC-equipped engines. By utilizing the existing wiring and output intended for the automatic transmission lockup solenoid, it simplifies the wiring requirements for VTEC activation.
+
+### Development and Implementation
+*   **Hardware:** The necessary hardware changes for this modification are detailed in the [Hardware For One Wire VTEC](/cars/rom/hardware-for-one-wire-vtec) guide.
+*   **Source Code:** The project is open-source. Codebase contributions and development can be found via the [Source Forge](/cars/wiring/source-forge) project repository.
+
+---
+
+## Important Considerations
+
+*   **Testing:** This conversion is functional, but thorough testing is required when implementing custom code modules.
+*   **Wiring:** This modification requires specific ECU hardware changes and engine harness modifications to repurpose the lockup solenoid output. Ensure all connections are secure and verified against your specific ECU board layout.

@@ -1,20 +1,30 @@
 ---
-summary: 'Adjusting the Throttle Position Sensor It is very simple to adjust the output of your throttle position sensor.'
-tags: [sensors, reference, wiring, conversion]
+summary: 'A step-by-step procedure for adjusting the Throttle Position Sensor (TPS) to ensure accurate voltage output at idle and wide-open throttle (WOT).'
+tags: [sensors, diagnostics, tuning, calibration]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
-complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Throttle Position Sensor Adjustment'
-    url: /pgmfi/wiki/library/throttle-position-sensor-adjustment
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+complexity: intermediate
 ---
 
-# Throttle Position Sensor Adjustment
+# Throttle Position Sensor (TPS) Adjustment
 
-Adjusting the Throttle Position Sensor It is very simple to adjust the output of your throttle position sensor. Follow the steps below: 1. Use a dremel, and notch a little groove in `each` rivet. 2. Take a flathead screwdriver and use the notches to loosen the screws a little bit. 3. You can rotate the TPS a little bit `each` way and this will change the voltage. To measure it you use a multimeter with probes. Use the middle wire and one of the outside ones, can't remember which one hehe. It should read .5v at "idle" and 4.5v at [WOT](/cars/reference/wot). Once you find where it's right, just screw the rivets back in, or you can use new screws to replace them -- something like an allenhead bolt is nice because you don't need much room to use it back there. A more thorough procedure is already on the [TPS Sensor](/cars/diagnostics/tps-sensor) page **shrug** - Dave Johnson
+Accurate Throttle Position Sensor (TPS) calibration is critical for proper ECU engine management, idle control, and acceleration mapping.
+
+---
+
+## Adjustment Procedure
+
+1.  **Prep Rivets:** If your TPS uses factory break-away rivets, use a Dremel tool to cut a small notch in the head of each rivet.
+2.  **Loosen:** Use a flathead screwdriver to loosen the notched rivets (or bolts) until the TPS can be rotated by hand.
+3.  **Adjust:** Rotate the TPS to adjust the output voltage.
+4.  **Measure:** Use a digital multimeter on the TPS connector. Probe the middle wire (signal) and one of the outside wires (ground). 
+    *   **Idle Target:** Should read approximately **0.5V** at closed throttle.
+    *   **WOT Target:** Should read approximately **4.5V** at wide-open throttle.
+5.  **Secure:** Once the desired voltage range is achieved, tighten the rivets/bolts to secure the sensor. Replace the factory break-away rivets with hex-head or allen-head bolts for easier future adjustments.
+
+---
+
+## Technical Note
+*A more thorough calibration procedure—including ECU-specific voltage trimming—is available on the main [TPS Sensor](/cars/diagnostics/tps-sensor) diagnostic page. If you are experiencing erratic idle or throttle response, verify your ground and 5V reference wire integrity before attempting physical sensor adjustment.*

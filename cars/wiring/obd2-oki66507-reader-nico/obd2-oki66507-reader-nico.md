@@ -1,5 +1,5 @@
 ---
-summary: 'Author: HRED (ABordeaux103110174.abo.wanadoo.fr) Date: 093002 13:13 Here you can readout 66P507... Nico Block diagram of dumper: !BLOCK.'
+summary: 'Technical guide to building a hardware dumper for reading internal memory from Oki 66507 microcontrollers in Honda OBD2 ECUs.'
 tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics]
 applies_to:
   obd: [2]
@@ -17,9 +17,10 @@ sources:
 
 # OBD2 Oki66507 Reader Nico
 
-Author: HRED (ABordeaux-103-1-10-174.abo.wanadoo.fr)
-Date: 09-30-02 13:13
+**Author:** HRED (ABordeaux-103-1-10-174.abo.wanadoo.fr)
+
+**Date:** 09-30-02 13:13
 Here you can readout `66P507`... Nico
 
 - Block diagram of dumper: 
-     ![BLOCK.gif](BLOCK.gif)
+ ![BLOCK.gif](BLOCK.gif)

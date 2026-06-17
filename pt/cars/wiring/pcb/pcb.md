@@ -1,14 +1,9 @@
 ---
-summary: 'PCB significa printed circuit board (placa de circuito impresso). As PCBs são as placas que as ECUs e os computadores em geral utilizam.'
+summary: 'Uma introdução ao design e construção de Placas de Circuito Impresso (PCB) no que diz respeito às unidades de controlo de motor Honda.'
+tags: [ecu, reference, sensors, wiring, conversion]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
-  - wiring
-  - conversion
 sources:
   - name: 'pgmfi.org wiki'
     title: PCB

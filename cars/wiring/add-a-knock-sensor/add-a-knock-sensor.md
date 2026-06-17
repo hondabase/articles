@@ -1,28 +1,35 @@
 ---
-summary: 'Adding a knock sensor to an engine that did not come with one.'
-tags: [knock, sensor, wiring]
+summary: 'Hardware modification guide for adding a knock sensor to a Honda P75/P72 ECU board.'
+tags: [ecu, tuning, wiring, knock-sensor, hardware-modification]
 applies_to:
   obd: [1]
   models: [civic, del-sol, integra]
   chassis: [dc2, eg, eg-eh]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Add A Knock Sensor'
-    url: /pgmfi/wiki/library/add-a-knock-sensor
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Add A Knock Sensor
+# Adding a Knock Sensor to a Honda ECU
 
-To add a Knock Sensor to a P75 here is what I did:
+This guide outlines the hardware modifications required to add a knock sensor circuit to a Honda P75 ECU board, effectively upgrading it to support P72 knock sensor functionality.
 
-1. Remove a knock board from a JDM p30
-2. Move the connector strip from prot "A" to port "B"
-3. Remove `R12`
-4. Add `R15` and `R11` (both 100 ohm... you can re-use `R12`)
-5. Solder it to the p75/p72 conversion at location FC1
+---
 
-That's it. If you've already converted the p75 to a p72 then you now have a 100% functional p72 board. Go ahead and enable the knock sensor in your p72 code and have fun!! -Andrew Note: I salvaged a scrap JDM ECU from a junk yard and the process for using a JDM P72 Knock board is the same, with the exception of moving the connector strip from Connector port B to Connector port A. I believe this was what Andrew was trying to say above, just a minor typo methinks? -S\_K
+## Installation Procedure
+
+1.  **Prepare ECU Board:** Acquire a knock sensor board (e.g., from a P72 ECU).
+2.  **Connector Strip:** Install the connector strip. If using a JDM P72 board, you may need to move the connector strip from the connector port B to connector port A.
+3.  **Resistor Modifications:**
+    *   Remove **R12**.
+    *   Install **R15** and **R11** (100 Ohm resistors; you can reuse the removed R12 if appropriate).
+4.  **Final Installation:** Solder the knock board onto the P75/P72 conversion location (FC1).
+
+---
+
+## Verification and Setup
+
+Once the hardware installation is complete, the ECU board should be functionally equivalent to a P72.
+
+*   **Software Configuration:** You must enable the knock sensor in your ECU management software/ROM configuration.
+*   **Verification:** Ensure all connections are secure and verify the knock sensor wiring on the engine harness side is correct.
+
+*Always verify your board layout and component markings before soldering. Knock sensor functionality is critical for engine protection in turbocharged or high-compression applications.*

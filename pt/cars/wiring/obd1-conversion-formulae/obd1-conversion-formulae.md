@@ -1,17 +1,9 @@
 ---
-summary: 'Fórmulas e valores de conversão para ECUs OBD1, incluindo rotações (RPM), pressão absoluta (mbar), combustível e avanço de ignição.'
+summary: 'Uma lista abrangente de fórmulas matemáticas para converter valores hexadecimais brutos da ROM em unidades legíveis por humanos, como RPM, pressão e temperatura.'
+tags: [ecu, referência, tuning, rom, sensores, cablagem, conversão, diagnósticos]
 applies_to:
   obd: [1]
 complexity: beginner
-tags:
-  - ecu
-  - referência
-  - tuning
-  - rom
-  - sensores
-  - cablagem
-  - conversão
-  - diagnósticos
 sources:
   - name: 'pgmfi.org wiki'
     title: 'OBD1 Conversion Formulae'

@@ -1,21 +1,22 @@
 ---
-summary: 'OBD2B refers to 9900 Civic ECUs. They have a very slightly different connector layout than OBD2A ECUs.'
-tags: [ecu, reference, sensors, wiring, conversion]
+summary: 'Technical overview of the OBD2B ECU generation used in 1999–2000 Honda Civic models and its connector compatibility.'
+tags: [ecu, wiring, obd2]
 applies_to:
   obd: [2]
-  brand: Honda
   models: [civic]
-  chassis: {}
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: OBD2B
-    url: /pgmfi/wiki/library/obd2b
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD2B
+# OBD2B ECU Reference
 
-[OBD](/cars/wiring/obd)2B refers to 99-00 Civic [ECU](/cars/ecu/ecu)s. They have a very slightly different connector layout than [OBD](/cars/wiring/obd)2A [ECU](/cars/ecu/ecu)s.
+The **OBD2B** generation refers to the ECU and engine management systems used in 1999–2000 Honda Civic models.
+
+---
+
+## Technical Overview
+While functionally similar to the earlier OBD2A generation, OBD2B ECUs feature slightly modified connector layouts.
+
+*   **Compatibility:** OBD2B ECUs are not directly plug-and-play with OBD2A chassis wiring without a specific adapter harness.
+*   **Tuning:** Like all OBD2 variants, these ECUs are factory-locked and generally cannot be chipped. Tuners typically utilize a conversion harness to adapt the chassis to an OBD1 ECU for custom tuning functionality.
+
+*Always verify your specific ECU part number and connector configuration against service documentation when performing swaps or troubleshooting electrical issues.*

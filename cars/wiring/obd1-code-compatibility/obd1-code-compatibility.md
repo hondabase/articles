@@ -1,29 +1,39 @@
 ---
-summary: 'OBD1 Civic Integra ECUs are a common hardware platform. What this means is that you can (with minor modifications) run essentially any code on any ECU in the family.'
-tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics]
+summary: 'Guide to OBD1 ECU code compatibility, detailing VTEC requirements, sensor exclusions (O2/Knock), and regional (USDM/JDM/EDM) hardware differences.'
+tags: [ecu, tuning, obd1, compatibility, wiring]
 applies_to:
   obd: [1]
-  brand: Acura/Honda
-  models: [civic, del-sol, integra]
+  models: [civic, integra]
   chassis: [dc2, eg, eg-eh]
 complexity: advanced
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD1 Code Compatibility'
-    url: /pgmfi/wiki/library/obd1-code-compatibility
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD1 Code Compatibility
+# OBD1 ECU Code Compatibility Guide
 
-[OBD1 Civic Integra](/cars/sensors/obd1-civic-integra) [ECU](/cars/ecu/ecu)s are a common hardware platform. What this means is that you can (with minor modifications) run essentially any code on any [ECU](/cars/ecu/ecu) in the family. There are rules however: - [VTEC](/cars/sensors/vtec) programs ([P28](/cars/sensors/p28), [P30](/cars/sensors/p30), [P72](/cars/sensors/p72), ...) require a [VTEC](/cars/sensors/vtec) [ECU](/cars/ecu/ecu) or a [Non Vtec-To-Vtec](/cars/wiring/non-vtec-to-vtec) conversion.
-- Non-[VTEC](/cars/sensors/vtec) programs run in a [VTEC](/cars/sensors/vtec) [ECU](/cars/ecu/ecu) without any problems.
-- [VTEC](/cars/sensors/vtec) programs run in non-Vtec [ECU](/cars/ecu/ecu)s with VTEC disabled. (DB: they may even work with VTEC xover above redline although I think the sensor checks for VTP/VTS will cause issues.)
-- 1-wire O2 [ECU](/cars/ecu/ecu)s like [P05](/cars/wiring/p05), [P08](/cars/wiring/p08) require ***either*** [One Wire To4 Wire O2 Sensor](/cars/honda/civic/eg/wiring/one-wire-to4-wire-o2-sensor) conversion of the hardware ***or*** to disable the [O2 Heater Circuit](/cars/wiring/o2-heater-circuit) in the [ROM](/cars/rom/rom).
-- [DOHC](/cars/sensors/dohc) [VTEC](/cars/sensors/vtec) programs ([P30](/cars/sensors/p30), [P72](/cars/sensors/p72), ...) generally have a [Knock Sensor](/cars/ignition/knock-sensor) enabled. To use these programs on [ECU](/cars/ecu/ecu)s lacking the [Knock Board](/cars/sensors/knock-board) ([P28](/cars/sensors/p28), [P08](/cars/wiring/p08), conversions, ...) you must first disable the [Knock Sensor](/cars/ignition/knock-sensor).
+OBD1 Honda ECUs (92-95) share a standardized hardware platform, allowing for significant flexibility when running custom codebases. However, specific hardware-to-software requirements must be met for stable operation.
 
-For information on disabling [Knock Sensor](/cars/ignition/knock-sensor) or the [O2 Heater Circuit](/cars/wiring/o2-heater-circuit) in software, please consult the [Rom Maps](/cars/wiring/rom-maps) for the code you are working with. Additionally, different markets received different features in their [ECU](/cars/ecu/ecu)s. - [USDM](/cars/sensors/usdm) [ECU](/cars/ecu/ecu)s are by far the most full-featured. Almost any code will run in a [USDM](/cars/sensors/usdm) [ECU](/cars/ecu/ecu) if the above rules are followed.
-- [JDM](/cars/sensors/jdm) [ECU](/cars/ecu/ecu)s generally lack several things that must either be physically added to the [ECU](/cars/ecu/ecu) or disabled in the [ROM](/cars/rom/rom). The [Pressure Atmosphere](/cars/rom/pressure-atmosphere) (PA) sensor [Electrical Load Detector](/cars/sensors/electrical-load-detector) (ELD) and [Injector Test Circuit](/cars/diagnostics/injector-test-circuit) are the most notable things here.
-- [EDM](/cars/wiring/edm) [ECU](/cars/ecu/ecu)s are generally the most bare. They generally lack PA, ELD, Injector test like the [JDM](/cars/sensors/jdm) [ECU](/cars/ecu/ecu)s, and will occaisonally lack the [Knock Sensor](/cars/ignition/knock-sensor) and knock board present in [JDM](/cars/sensors/jdm) [ECU](/cars/ecu/ecu)s too.
+---
+
+## Compatibility Rules
+
+*   **VTEC Support:** VTEC-enabled ROMs require a VTEC-capable ECU. If using a non-VTEC ECU, you must perform a [Non-VTEC to VTEC conversion](/cars/wiring/non-vtec-to-vtec) or use a ROM with VTEC disabled.
+*   **Non-VTEC ROMs:** These can run in VTEC-capable ECUs without modification.
+*   **O2 Sensor Compatibility:** 1-wire O2 ECUs (e.g., P05, P08) require either a [hardware conversion](/cars/honda/civic/eg/wiring/one-wire-to4-wire-o2-sensor) or for the O2 Heater Circuit check to be disabled in the ROM.
+*   **Knock Sensor:** DOHC VTEC programs (e.g., P30, P72) require a knock sensor circuit. If using an ECU lacking a knock board (e.g., P28, P08), you must disable the knock sensor check in the ROM.
+
+---
+
+## Regional ECU Differences
+
+Different regional ECUs lack specific components that must be either physically added or disabled within the ROM:
+
+| ECU Origin | Typical Hardware Exclusions | Required Mitigation |
+| :--- | :--- | :--- |
+| **USDM** | None (Most feature-complete) | N/A |
+| **JDM** | Pressure Atmosphere (PA) Sensor, Electrical Load Detector (ELD), Injector Test Circuit. | Add components or disable in ROM. |
+| **EDM** | Same as JDM, plus occasional lack of Knock Board/Sensor. | Add components or disable in ROM. |
+
+---
+
+## Technical Note
+For detailed instructions on disabling specific sensor checks (Knock Sensor, O2 Heater, etc.) within your ROM, consult the specific [ROM Map](/cars/wiring/rom-maps) for your ECU codebase.

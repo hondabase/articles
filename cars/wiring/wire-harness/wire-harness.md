@@ -1,32 +1,28 @@
 ---
-summary: 'Compare Honda OBD0, OBD1, OBD2A, and OBD2B ECU wire-harness connectors and pinout layouts.'
-tags: [ecu, reference, tuning, rom, sensors, wiring, conversion]
+summary: 'An overview of Honda engine wiring harnesses, detailing their role in ECU communication and connector differences across OBD generations.'
+tags: [wiring, reference, engine-management, conversion]
 applies_to:
   obd: [0, 1, 2]
-  brand: Acura
-  models: [integra]
-  chassis: [dc2]
+  models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
+  chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Wire Harness'
-    url: /pgmfi/wiki/library/wire-harness
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Wire Harness
+# Engine Wiring Harness Reference
 
-A wire harness is the set of connectors and wires attached to an [ECU](/cars/ecu/ecu). [OBD0](/cars/rom/obd0), [OBD1](/cars/wiring/obd1), and [OBD2](/cars/wiring/obd2) systems use different connectors and wiring layouts.
+A **wiring harness** is the comprehensive assembly of connectors, wires, and shielding that facilitates communication between the ECU, engine sensors, and the chassis electrical system.
 
-## ECU connector pinout
+---
 
-The following image compares OBD1, OBD2A, and OBD2B ECU connector pinouts:
+## Evolution Across OBD Generations
+Honda significantly redesigned wiring harnesses with each generation to accommodate changes in engine management, emissions requirements, and sensor complexity.
 
-[View the archived high-resolution image](http://web.archive.org/web/20070625073443/http://kl2.smugmug.com/photos/64116307-O.jpg)
+*   **OBD0:** Generally utilizes large, square or rectangular grey/white connectors with physical differences that are not compatible with OBD1/2 harnesses.
+*   **OBD1:** Standardized on 3 primary grey ECU connectors (A, B, and D plugs). This is the most common harness for engine swaps and custom tuning projects.
+*   **OBD2A/OBD2B:** Introduced standardized 16-pin DLC connectors for emissions monitoring. These ECUs feature different connector counts and pin layouts compared to OBD1.
 
-![OBD1, OBD2A, and OBD2B ECU connector pinouts](OBD2to1ab2.jpg)
+## Harness Maintenance and Modification
+*   **Connector Integrity:** Corroded or loose pins are the primary cause of intermittent sensor faults and diagnostic codes. Always ensure connectors are clean and seat firmly.
+*   **Modifications:** When performing engine swaps or ECU conversions, modification (such as repinning or using adapter harnesses) must be done with precise mapping of the wiring harness pinout to the target ECU's requirements.
 
-> [!WARNING]
-> The source referenced factory-manual OBD1 Integra ECU connector scans that may have been associated with the [P72 ECU](/cars/sensors/p72), but those scans are not currently available.
+*Always verify your harness generation and pinout mapping against factory service manuals before applying power after any modifications.*

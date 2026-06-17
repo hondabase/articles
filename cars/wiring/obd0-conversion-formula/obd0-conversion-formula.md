@@ -1,27 +1,29 @@
 ---
-summary: 'Describe OBD0 Conversion Formula here. OBD016 Bit RPM is used for revlimiters, target idle and most other 16bit RPM values in the ROM.'
-tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics]
+summary: 'A directory of conversion formulas for OBD0 ECU ROM maps, including scaling factors for RPM, fuel, ignition, and VTEC parameters.'
+tags: [ecu, tuning, rom-scaling, obd0]
 applies_to:
   obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD0 Conversion Formula'
-    url: /pgmfi/wiki/library/obd0-conversion-formula
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD0 Conversion Formula
+# OBD0 ECU ROM Map Conversion Formulas
 
-Describe [OBD0 Conversion Formula](/cars/wiring/obd0-conversion-formula) here.
+This guide provides the necessary conversion formulas for translating hex values in OBD0 ROM maps into readable engineering units. These formulas are essential for effective ECU tuning and modification.
 
-- [OBD016 Bit RPM](/cars/diagnostics/obd016-bit-rpm) is used for revlimiters, target idle and most other 16bit [RPM](/cars/sensors/rpm) values in the [ROM](/cars/rom/rom).
-- [OBD0 VSS](/cars/diagnostics/obd0vss) is used to convert the values in ram `06Ch` to Vehicle Speed.
-- [OBD0 Fuel](/cars/sensors/obd0-fuel) is used to convert the hex values in the fuel maps to pulse width in milliseconds.
-- [OBD0 Ignition](/cars/sensors/obd0-ignition) is used to convert the hex values in the ignition maps into degrees advance.
-- [OBD0 VTEC](/cars/sensors/obd0vtec) is used for VTEC values.
-- [OBD08 Bit Rev](/cars/sensors/obd08-bit-rev) is used for the [OBD0](/cars/rom/obd0) VTEC [ECU](/cars/ecu/ecu)s' revlimits.
+---
+
+## Conversion References
+
+*   **16-Bit RPM:** Used for rev limiters, target idle speed, and other 16-bit RPM-based parameters.
+*   **VSS (Vehicle Speed Sensor):** Formula for converting RAM location `06Ch` into actual vehicle speed.
+*   **Fuel Maps:** Used to convert raw hex values in fuel tables into injector pulse width (milliseconds).
+*   **Ignition Maps:** Used to convert hex map values into degrees of spark advance.
+*   **VTEC Activation:** Scaling factors for VTEC engagement parameters.
+*   **8-Bit Rev Limit:** Specific scaling for rev-limiters on OBD0 VTEC-capable ECUs.
+
+---
+
+## Technical Note
+These conversion formulas are specific to the OBD0 architecture. Always verify that your specific ROM codebase supports these scaling factors, as variations may exist between different ECU part numbers or regional firmwares.

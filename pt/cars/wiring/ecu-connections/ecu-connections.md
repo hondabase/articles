@@ -27,8 +27,9 @@ Abaixo encontra-se um índice de diagramas elétricos, pinagens (pinouts) e modi
 ## 1. Geração OBD0 (1988–1991)
 
 As ECUs OBD0 utilizam três fichas de cablagem amarelas (Conetores A, B e C) para comunicar com o veículo.
-*   **Esquemas do PR4:** Para veículos equipados com B18A1, consulte o guia [Pinagem e Esquemas da ECU Acura Integra PR4](/cars/wiring/acura-integra-pr4ecu-pinout-and-schematics).
-*   **Swaps de Cablagem:** Para atualizar um chassis OBD0 para funcionar com uma ECU OBD1 mais recente, consulte o [Guia de Conversão OBD0 para OBD1 do Kurt](/cars/wiring/kurts-obd0-obd1).
+* **Esquemas do PR4:** Para veículos equipados com B18A1, consulte o guia [Pinagem e Esquemas da ECU Acura Integra PR4](/cars/wiring/acura-integra-pr4ecu-pinout-and-schematics).
+
+* **Swaps de Cablagem:** Para atualizar um chassis OBD0 para funcionar com uma ECU OBD1 mais recente, consulte o [Guia de Conversão OBD0 para OBD1 do Kurt](/cars/wiring/kurts-obd0-obd1).
 
 ---
 
@@ -37,8 +38,10 @@ As ECUs OBD0 utilizam três fichas de cablagem amarelas (Conetores A, B e C) par
 As ECUs OBD1 uniformizaram-se com três fichas cinzentas (pinos A, B e D) e representam a era mais popular para afinações personalizadas.
 
 ### Modificações Personalizadas de Interruptores
-*   **Bypass do Interruptor de Pedido de A/C:** Como ligar e ativar a linha de entrada de A/C (Pino B5) em veículos não equipados com ar condicionado de fábrica. Isto é frequentemente utilizado por afinadores para ativar mapas secundários (como um modo valet ou mapa para piso molhado).
-*   **Interruptor de Passagem de Caixa a Fundo (Full-Throttle Shift):** Utilização do interruptor de embraiagem de fábrica ou do interruptor de cancelamento do cruise control para enviar um sinal de massa (ground) para a ECU (geralmente Pino B8 ou D10) para ativar algoritmos de flat-foot shifting em Crome ou Hondata.
+
+* **Bypass do Interruptor de Pedido de A/C:** Como ligar e ativar a linha de entrada de A/C (Pino B5) em veículos não equipados com ar condicionado de fábrica. Isto é frequentemente utilizado por afinadores para ativar mapas secundários (como um modo valet ou mapa para piso molhado).
+
+* **Interruptor de Passagem de Caixa a Fundo (Full-Throttle Shift):** Utilização do interruptor de embraiagem de fábrica ou do interruptor de cancelamento do cruise control para enviar um sinal de massa (ground) para a ECU (geralmente Pino B8 ou D10) para ativar algoritmos de flat-foot shifting em Crome ou Hondata.
 
 ---
 
@@ -46,8 +49,9 @@ As ECUs OBD1 uniformizaram-se com três fichas cinzentas (pinos A, B e D) e repr
 
 Os esquemas OBD2 dividem-se em duas configurações de pinos distintas (OBD2A para veículos de 1996–1998 e OBD2B para veículos de 1999–2001).
 
-*   **Conversões OBD2 para OBD1:** Como as ECUs OBD2 estão bloqueadas e não podem levar chips, os afinadores utilizam uma cablagem de conversão plug-and-play para adaptar as fichas OBD2 do veículo a uma ECU OBD1.
-*   **Conversões de Accord:** Para conversões específicas de Accord, consulte o [Guia de Conversão de Automático para Manual OBD2 para OBD1 de Accord](/cars/wiring/accord-auto-obd2-obd1).
+* **Conversões OBD2 para OBD1:** Como as ECUs OBD2 estão bloqueadas e não podem levar chips, os afinadores utilizam uma cablagem de conversão plug-and-play para adaptar as fichas OBD2 do veículo a uma ECU OBD1.
+
+* **Conversões de Accord:** Para conversões específicas de Accord, consulte o [Guia de Conversão de Automático para Manual OBD2 para OBD1 de Accord](/cars/wiring/accord-auto-obd2-obd1).
 
 ---
 
@@ -55,4 +59,4 @@ Os esquemas OBD2 dividem-se em duas configurações de pinos distintas (OBD2A pa
 
 Para referência ao cablar um Civic ou Integra de meia geração:
 
-*   [Descarregar o PDF da Pinagem OBD2 USDM Civic 1996–1998](OBD2Pinout.pdf) *(615 KB, referência detalhada da pinagem do conetor OBD2A)*
+* [Descarregar o PDF da Pinagem OBD2 USDM Civic 1996–1998](OBD2Pinout.pdf) *(615 KB, referência detalhada da pinagem do conetor OBD2A)*

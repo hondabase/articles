@@ -1,25 +1,31 @@
 ---
-summary: 'OBD18bit Low Cam RPM eight bit values used for lowcam tables and VTEC crossover points OBD18bit High Cam RPM eight bit values used for highcam tables OBD116bit...'
-tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics]
+summary: 'Index of scaling formulas for converting raw hex values in OBD1 ECU ROM maps into readable engineering units.'
+tags: [ecu, tuning, rom-scaling, obd1]
 applies_to:
   obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eg-eh]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD1 Conversion Formulae'
-    url: /pgmfi/wiki/library/obd1-conversion-formulae
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD1 Conversion Formulae
+# OBD1 ECU ROM Conversion Formulas
 
-- [OBD1_8bit Low Cam RPM](/cars/wiring/obd1-8bit-low-cam-rpm) - eight bit values used for low-cam tables and VTEC crossover points
-- [OBD1_8bit High Cam RPM](/cars/sensors/obd1-8bit-high-cam-rpm) - eight bit values used for high-cam tables
-- [OBD1_16bit RPM](/cars/sensors/obd1-16bit-rpm) - 16-bit [RPM](/cars/sensors/rpm)s used throughout the code (including revlimits, etc)
-- [OBD1_8bit MBar](/cars/rom/obd1-8bit-m-bar) - Absolute pressure scale used in all tables
-- [OBD1_8bit Fuel](/cars/rom/obd1-8bit-fuel) - Fuel values used in all tables
-- [OBD1_8bit Advance](/cars/sensors/obd1-8bit-advance) - Ignition advance used in all tables
+This index provides reference formulas for translating raw hexadecimal values from OBD1 ECU ROM maps into human-readable engineering units. These formulas are necessary for understanding and modifying fuel, ignition, and sensor tables.
+
+---
+
+## Scaling Formula Index
+
+| Parameter | Type | Application |
+| :--- | :--- | :--- |
+| **Low-Cam RPM** | 8-Bit | Low-cam fuel/ignition tables, VTEC crossover. |
+| **High-Cam RPM** | 8-Bit | High-cam fuel/ignition tables. |
+| **RPM (General)** | 16-Bit | Rev limiters, target idle, system-wide RPM values. |
+| **MBar (Pressure)** | 8-Bit | Absolute pressure scale used in all fuel/ignition tables. |
+| **Fuel** | 8-Bit | Fuel injection pulse width values. |
+| **Advance** | 8-Bit | Ignition spark timing advance. |
+
+---
+
+## Technical Note
+These scaling formulas provide the mathematical foundation used by ROM editor software. When developing custom ROM analysis tools, ensure that your codebase correctly implements the specific bit-depth conversion logic (8-bit vs. 16-bit) to ensure table integrity.

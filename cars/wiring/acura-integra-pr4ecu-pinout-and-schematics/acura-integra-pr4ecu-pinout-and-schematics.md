@@ -1,45 +1,41 @@
 ---
-summary: 'Wiring layout, pinout details, and schematic analysis for the OBD0 and OBD1 Acura Integra PR4 ECU.'
-tags: [ecu, pinout, schematic]
+summary: 'Pinout information and wiring reference for the OBD0 Acura Integra PR4 ECU (B18A1 engine).'
+tags: [ecu, pinout, wiring, honda-integra]
 applies_to:
-  obd: [0, 1]
+  obd: [0]
   models: [integra]
-  chassis: [da, dc2]
+  chassis: [da]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Acura Integra PR4ECU Pinout And Schematics'
-    url: /pgmfi/wiki/library/acura-integra-pr4ecu-pinout-and-schematics
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Acura Integra PR4 OBD0 ECU Pinouts and Wiring
+# Acura Integra PR4 OBD0 ECU Pinouts
 
-The OBD0 PR4 ECU was used in the 1990 and 1991 Acura Integra equipped with the B18A1 engine. Finding a complete, official pinout schematic for this specific ECU can be difficult, as many factory manuals only show full wiring harnesses rather than the individual ECU connector layout. 
+The OBD0 PR4 ECU was used in 1990–1991 Acura Integra models equipped with the B18A1 engine. 
 
-By analyzing the factory 1990–1991 Integra engine control system schematics, wire colors, and functions can be cross-referenced with general OBD0 ECU standards to map key pins.
+While official factory service manuals often show full wiring harnesses rather than the individual ECU connector layout, this guide provides mapped signals derived from factory schematics and standard OBD0 electrical conventions.
+
+---
 
 ## Mapped Connector Signals
 
-The following pins have been verified using wire color codes and standard OBD0 electrical paths:
+### Emissions and EGR (California/Automatic Models)
+California-spec Integra models with automatic transmissions utilize an EGR system.
+*   **Pin A10:** EGR Control Solenoid (Red wire).
+*   **Pin C8:** EGR Valve Lift Sensor (Yellow wire).
 
-### Exhaust Gas Recirculation (EGR) (California Models Only)
-California-spec Integra models equipped with automatic transmissions feature an EGR system. These use the following pin assignments:
-*   **Pin A10:** EGR Control Solenoid (Red wire)
-*   **Pin `C8`:** EGR Valve Lift Sensor (Yellow wire)
+### Standard Models (Manual/49-State)
+On standard configurations, pins are repurposed for the Pressure Regulator Cutoff (PRC) system:
+*   **Pin A10:** Pressure Regulator Cutoff (PRC) Solenoid Valve (Green/Yellow wire).
 
-### Pressure Regulator Cutoff
-On standard manual transmission and non-California models, the EGR pins are repurposed or omitted:
-*   **Pin A10:** Pressure Regulator Cutoff (PRC) Solenoid Valve (Green/Yellow wire)
+### Idle and Steering Controls
+*   **Pin C9:** Power Steering Pressure Switch (Red wire). The ECU utilizes this signal to increase idle speed during high power steering loads.
 
-### Steering Switch Signal
-*   **Pin `C9`:** Power Steering Pressure Switch (Red wire), used by the ECU to increase idle speed when steering load is high.
+---
 
-## Unresolved Wiring & Missing Pins
+## Technical Notes
 
-Some connections in the factory manuals do not map directly to standard OBD0 pins or are not fully documented:
-*   **Data Link Connector (DLC):** The OBD0 Data Link Connector wire (Light Blue) is not mapped to a verified pin in standard documentation.
-*   **Automatic Transmission Signals:** Pin layouts for automatic transmission gear controls and lockup solenoids are omitted from standard manual transmission wiring guides.
-*   **Terminated Wires:** Two factory harness wires (**Red/Blue** and **Orange/Black**) appear in the schematics but do not connect to defined pins or sensors on standard models.
+*   **Data Link Connector (DLC):** The DLC signal wire (Light Blue) does not map to a standard verified pin in available factory documentation.
+*   **Transmission Signals:** Factory manuals for manual-transmission models do not document automatic transmission-specific gear controls or lockup solenoids.
+*   **Unused Wires:** Certain factory harness wires (notably Red/Blue and Orange/Black) are present in the schematics but do not connect to defined sensors on standard models.
+
+*Always verify your specific wire colors and pin positions against a factory service manual for your specific chassis and production region before making modifications.*

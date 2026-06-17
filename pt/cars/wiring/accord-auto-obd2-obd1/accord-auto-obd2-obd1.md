@@ -45,13 +45,18 @@ Se optar por fabricar a sua própria cablagem de conversão personalizada em vez
 * **Fio de 20 AWG**: Aproximadamente 30–36 metros (100–120 pés).
 * **Fio de 18 AWG**: Aproximadamente 3–6 metros (10–20 pés, para linhas de alimentação de alta corrente e de massa).
 * **Fichas de ECU OBD1**: Conectores Tyco / AMP:
-  * Duas fichas de 26 pinos (Tyco `#174516-6`)
-  * Duas fichas de 22 pinos (Tyco `#174515-6`)
-  * Uma ficha de 16 pinos (Tyco `#174514-6`)
+ * Duas fichas de 26 pinos (Tyco `#174516-6`)
+ 
+
+* Duas fichas de 22 pinos (Tyco `#174515-6`)
+ * Uma ficha de 16 pinos (Tyco `#174514-6`)
+
 * **Ficha Fêmea OBD2a**: Um conector macho de 104 pinos (Tyco `#179686-6` ou dessoldado de uma ECU OBD2a usada).
 * **Terminais de Conector**:
-  * 65x Pinos de contacto pequenos (Tyco `#175061-1` ou banhados a ouro `-2`)
-  * 26x Pinos de contacto grandes (Tyco `#173631-1` ou banhados a ouro `-2`)
+ * 65x Pinos de contacto pequenos (Tyco `#175061-1` ou banhados a ouro `-2`)
+ 
+
+* 26x Pinos de contacto grandes (Tyco `#173631-1` ou banhados a ouro `-2`)
 * **Alicate de Crimpagem de Terminais**: Ferramenta de crimpagem padrão para terminais abertos (ex.: Molex ou Tyco `#WM9999-ND`).
 
 ---
@@ -159,25 +164,29 @@ A tabela abaixo mapeia o encaminhamento da cablagem das **fichas da cablagem de 
 > A contagem de pinos difere entre as fichas OBD1 e OBD2. A contagem incorreta de pinos é a causa mais comum de erros nas cablagens de conversão.
 
 ### Fichas OBD1, lado da ECU
+
 Olhando diretamente para o **lado dos fios** da ficha (onde os fios entram na parte traseira do conector de plástico) com a patilha de bloqueio voltada para **Cima**:
 * O **Pino 1** é o pino superior esquerdo.
+
 * O **Pino 2** fica diretamente abaixo do Pino 1 (inferior esquerdo).
+
 * Os pinos alternam as colunas à medida que conta para a direita (Ímpares em cima, Pares em baixo).
 
 ```
 [ Patilha no Topo ]
-|  1  |  3  |  5  |  7  |  9  | ...
-|  2  |  4  |  6  |  8  |  10 | ...
+| 1 | 3 | 5 | 7 | 9 |...
+| 2 | 4 | 6 | 8 | 10 |...
 ```
 
 ### Fichas OBD2, lado da cablagem do motor
+
 Olhando diretamente para o **lado frontal** da ficha (face de encaixe, oposta aos fios) com a guia da patilha de bloqueio voltada para **Cima**:
 * Os pinos são contados sequencialmente ao longo da linha superior, da esquerda para a direita, e depois ao longo da linha inferior.
 
 ```
 [ Patilha no Topo ]
-|  1  |  2  |  3  |  4  |  5  |  6  | ...
-|  7  |  8  |  9  |  10 |  11 |  12 | ...
+| 1 | 2 | 3 | 4 | 5 | 6 |...
+| 7 | 8 | 9 | 10 | 11 | 12 |...
 ```
 
 ---
@@ -185,8 +194,11 @@ Olhando diretamente para o **lado frontal** da ficha (face de encaixe, oposta ao
 ## 5. Diretrizes de Comprimento da Cablagem
 
 Para montar a ECU OBD1 e a TCU do Accord nas suas localizações de fábrica sob o painel lateral do lado do passageiro (kick panel), corte os seus fios de ponte para os seguintes comprimentos antes de crimpar os pinos dos terminais:
+
 * **Fios de Interface da ECU**: 47 unidades cortadas a **11,4 cm (4,5 polegadas)** (vão do conector OBD2a para as fichas da ECU OBD1).
+
 * **Fios de Interface da TCU**: 27 unidades cortadas a **53,3 cm (21,0 polegadas)** (vão da cablagem OBD2a para as fichas da TCU OBD1).
+
 * **Pontes de ECU para TCU**: 5 unidades cortadas a **48,3 cm (19,0 polegadas)** (ligam sinais diretamente entre as fichas da ECU e da TCU, necessitando de terminais em ambas as extremidades).
 
 ---
@@ -208,4 +220,5 @@ O guia arquivado fornece os seguintes detalhes de construção:
 > O guia arquivado indica que os terminais OBD1 são difíceis de remover depois de bloquearem numa ficha. Confirme `cada` destino antes de inserir.
 
 ## Ficheiros de conversão
+
 * [Folha de Cálculo da Cablagem de Conversão de Accord Automático OBD2 para OBD1 e Bin de Base (ZIP)](AutoOBDconvertinfoandIntegrabin.zip)

@@ -1,31 +1,27 @@
 ---
-summary: 'OBD2 On Board Diagnostics 2 A standard in the US established in 1996 specifying standard methods for accessing vehicle engine computers, emissions controls and various other stuff.'
-tags: [hardware, education, ecu, tuning, rom, sensors, reference, wiring, conversion, diagnostics]
+summary: 'Overview of the OBD2 standardized diagnostic protocol (1996+), including its standardized DLC port and diagnostic reporting.'
+tags: [diagnostics, obd, emission-control]
 applies_to:
   obd: [2]
-  brand: Acura/Honda
+  brand: Honda/Acura
   models: [accord, civic, del-sol, integra, prelude]
-  chassis: [bb, dc2, eg, ek]
-complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: OBD2
-    url: /pgmfi/wiki/library/obd2
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+complexity: beginner
 ---
 
-# OBD2
+# OBD2 Diagnostics Standard
 
-[OBD](/cars/wiring/obd)2 - On Board Diagnostics 2 A standard in the US established in 1996 specifying standard methods for accessing vehicle engine computers, emissions controls and various other stuff. Since the 1996 model year, North American automobiles have been required to provide an [OBD](/cars/wiring/obd) (On Board Diagnostics) data port for the connection of test equipment. This port is used to obtain emissions-related diagnostics information, and in some cases can also be used to obtain real-time vehicle operating parameters. In Europe this standard was adapted and called EOBD. Since 2001 gasonline engines and since 2003 diesel engines are required to be EOBD conform. Honda [EDM](/cars/wiring/edm) [ECU](/cars/ecu/ecu)s from 1996-2000 use a 3-pin plug (that is not [OBD](/cars/wiring/obd)-compatible) for communication to diagnostic equippment. OBDII [ECU](/cars/ecu/ecu)s (96-01) - [P72](/cars/sensors/p72) : 96-00 [OBD](/cars/wiring/obd)-2 Integra GSR
-- [P73](/cars/sensors/p73) : 96-00 [OBD](/cars/wiring/obd)-2 Integra Type-R ([JDM](/cars/sensors/jdm) & [USDM](/cars/sensors/usdm))
-- [P75](/cars/sensors/p75) : 96-00 [OBD](/cars/wiring/obd)-2 Integra LS/GS
-- [P2 E](/cars/honda/civic/ek/reference/p2e) : 96+ Civic LX (Auto?)
-- [P2 N](/cars/honda/civic/ek/sensors/p2n) : 96+ [OBD](/cars/wiring/obd)-2 Civic HX Coupe
-- [P2 P](/cars/diagnostics/p2p) : 96+ [OBD](/cars/wiring/obd)-2 Civic EX Coupe
-- [P2 T](/cars/honda/civic/ek/sensors/p2t) : 99+ [OBD](/cars/wiring/obd)-2 Civic Si Coupe
-- [PCF](/cars/reference/pcf) : 99-01 [OBD](/cars/wiring/obd)-2 Accord Wagon [JDM](/cars/sensors/jdm)
-- [P5 P](/cars/sensors/p5p) : 97-00 [OBD](/cars/wiring/obd)-2 Prelude Type-S ([JDM](/cars/sensors/jdm))
-- [P5 M](/cars/sensors/p5m) : 97-00 [OBD](/cars/wiring/obd)-2 Prelude ([EDM](/cars/wiring/edm), [Oz DM](/cars/reference/oz-dm))
-- P28-G03 : ODB II 96+ European del Sol ([SOHC](/cars/sensors/sohc) VTEC) (Looks like P73)
+The **OBD2 (On-Board Diagnostics II)** protocol was established in the United States in 1996 to standardize the monitoring of vehicle emissions control systems, engine diagnostics, and operational parameters.
+
+---
+
+## Technical Overview
+Unlike the proprietary diagnostic systems used in OBD0 and OBD1, OBD2 is a standardized regulatory protocol.
+
+*   **Data Link Connector (DLC):** All OBD2 vehicles must feature a standardized 16-pin connector (SAE J1962).
+*   **Diagnostic Trouble Codes (DTCs):** OBD2 utilizes standardized error codes (e.g., `P0420` for catalyst efficiency), making diagnostic tools universal across manufacturers.
+*   **Emissions Monitoring:** Systems include secondary sensors (such as a downstream O2 sensor) to actively monitor catalytic converter performance.
+
+## Honda OBD2 Implementation
+Honda began transitioning to OBD2 in 1996. While the connector and protocol are standardized, Honda retained some proprietary system communications for non-emissions modules (ABS, SRS, etc.) on specific pin assignments within the 16-pin DLC.
+
+*For specific ECU part numbers and their generation mapping, refer to the [Honda ECU index](/cars/wiring/ecu-connections).*

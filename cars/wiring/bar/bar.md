@@ -1,20 +1,27 @@
 ---
-summary: 'One BAR is equal to 14.7 psi. Also called ""atm"" or ""atmospheres"" because it corresponds to atmospheric pressure at sea level.'
-tags: [sensors, reference, wiring, conversion]
+summary: 'An overview of the BAR unit of pressure measurement and its relationship to atmospheric pressure and PSI.'
+tags: [sensors, reference, units-of-measure]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: BAR
-    url: /pgmfi/wiki/library/bar
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# BAR
+# BAR (Unit of Pressure)
 
-One [BAR](/cars/wiring/bar) is equal to 14.7 psi. Also called ""atm"" or ""atmospheres"" because it corresponds to atmospheric pressure at sea level. psi = bar * 14.7 The metric unit is the Pascal (Pa) or Kilo Pascal (KPa) but I'm not 100% sure on the conversions.
+A **BAR** is a metric unit of pressure. It is closely related to atmospheric pressure at sea level (which is approximately 1 bar).
+
+---
+
+## Pressure Conversions
+
+Understanding pressure conversions is essential for turbocharging, supercharging, and map sensor calibration.
+
+*   **1 BAR ≈ 14.7 psi** (pounds per square inch)
+*   **PSI to BAR Conversion:** $\text{psi} \div 14.7 = \text{BAR}$
+*   **BAR to PSI Conversion:** $\text{BAR} \times 14.7 = \text{psi}$
+
+### Metric Standards
+While the BAR is commonly used in automotive tuning, the official SI unit for pressure is the **Pascal (Pa)** or **Kilopascal (kPa)**. 
+*   1 BAR = 100 kPa.

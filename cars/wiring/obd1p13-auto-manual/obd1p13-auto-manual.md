@@ -1,20 +1,30 @@
 ---
-summary: 'Most Auto Ecus have a jumper at RP11 and have a blank space at RP12. Move RP11 to RP12 and you now have a Manual ECU.'
-tags: [ecu, reference, sensors, wiring, conversion]
+summary: 'Technical guide for converting an automatic P13 ECU (Prelude H22A) for use with a manual transmission.'
+tags: [ecu, transmission, tuning, conversion]
 applies_to:
   obd: [1]
   models: [prelude]
   chassis: [bb]
-complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD1P13 Auto Manual'
-    url: /pgmfi/wiki/library/obd1p13-auto-manual
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+complexity: intermediate
 ---
 
-# OBD1P13 Auto Manual
+# OBD1 P13 ECU: Auto to Manual Conversion
 
-Most Auto Ecus have a jumper at RP11 and have a blank space at RP12. Move RP11 to RP12 and you now have a Manual [ECU](/cars/ecu/ecu). Here a closeup of the [JDM](/cars/sensors/jdm) Jumper configuration: [Auto Jumpers](/pgmfi/wiki/media/library/P13/JDM-p13-resistors.jpg) `R96`, `C49` and `R82` seem to be related to some Auto trans controls but can be left in place. Some [ECU](/cars/ecu/ecu)s (Like the [JDM P13-900](/pgmfi/wiki/media/library/P13/P13-900_jumpers.jpg)) have resistors in both places. You can just remove both of them and replace RP12 with a jumper wire. This applies to all [ECU](/cars/ecu/ecu)s that share the same board (P11, P12, P13, P14 and P39)
+This guide outlines the hardware modifications required to convert an automatic P13 ECU (commonly used for H22A engines in Honda Preludes) for manual transmission operation.
+
+---
+
+## Conversion Procedure
+
+1.  **Resistor Locations:** Locate `RP11` and `RP12` on the ECU PCB.
+2.  **Configuration:** 
+    *   **Automatic ECUs:** Typically feature a jumper at `RP11` with `RP12` left blank.
+    *   **Manual Configuration:** Move the jumper from `RP11` to `RP12` to configure the ECU for manual transmission logic.
+3.  **Alternative Configurations:** Some P13 variants may have resistors in both locations. If resistors exist in both `RP11` and `RP12`, remove both and install a jumper wire at `RP12` only.
+
+---
+
+## Compatibility
+This conversion applies to ECUs sharing the P13 board architecture, including variants such as P11, P12, P13, P14, and P39.
+
+*Always verify your board layout and component markings against a confirmed schematic for your specific ECU part number before soldering.*

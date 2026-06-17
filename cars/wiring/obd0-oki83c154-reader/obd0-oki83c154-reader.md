@@ -1,20 +1,37 @@
 ---
-summary: 'Dave says: Well, borrowing an idea from NicoHRED/Doc used in the 66Ks, here is a program that should read out the contents of a 83C154 MCU.'
-tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics]
+summary: 'Technical guide for dumping the internal ROM contents of an Oki 83C154 microcontroller, used in certain OBD0 ECUs.'
+tags: [ecu, rom-dumping, reverse-engineering, hardware]
 applies_to:
   obd: [0]
   models: [civic, crx]
   chassis: [ef]
 complexity: advanced
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD0 Oki83C154 Reader'
-    url: /pgmfi/wiki/library/obd0-oki83c154-reader
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD0 Oki83C154 Reader
+# OBD0 Oki 83C154 ROM Dumping Guide
 
-Dave says: Well, borrowing an idea from Nico-HRED/Doc used in the 66Ks, here is a program that should read out the contents of a `83C154` [MCU](/cars/rom/mcu). It assumes that you have the [MCU](/cars/rom/mcu) connected to an external [EPROM](/cars/rom/eprom). The program jumps to `4100h`, and then dumps the contents of the first 16K of memory after flipping [_EA](/cars/rom/ea) to mask the internal [ROM](/cars/rom/rom) onto 0000-`4000h`. The use of a `MAX233` serial conversion board is required. Doc says: for the hardware - you just need to open the -EA jumper and connect the -EA line of the processor to the P1.7 of the processor. (cause the P1.7 is initially LOW). On the DOWNLOADER, set serial to 4800,n,8,1. New feature in the downloader: show memory dump, and set the memory range to save. I've added this, cause the ODB1 ECU's send one junk byte over the serial when the [ECU](/cars/ecu/ecu) is powered on. The ODB0 don't do this. So you first take a look at the downloaded dump and decide what do you want to save. I dumped a PM5 (will post in the rom dumps) - looks funny, but have at least aignition and fuel table. So you ODB0 gurus can take a look on it. I think the tables are really small? cu, Doc ...
+This guide details the procedure for dumping the internal program memory of the Oki 83C154 microcontroller, commonly found in OBD0 Honda ECUs.
+
+---
+
+## Hardware Requirements
+
+*   **External Connection:** The target MCU must be connected to an external EPROM.
+*   **Serial Interface:** A `MAX233` (or compatible) serial level shifter is required to facilitate communication between the ECU and a PC.
+*   **Hardware Modification:**
+    1.  Open the `_EA` (External Access) jumper on the ECU board.
+    2.  Connect the `_EA` line of the MCU to pin `P1.7` of the MCU.
+
+---
+
+## ROM Dumping Procedure
+
+1.  **Preparation:** Configure your serial terminal software to **4800 baud, No parity, 8 data bits, 1 stop bit (4800, N, 8, 1)**.
+2.  **Code Execution:** Run the specialized dumping code which performs the following:
+    *   Jumps to memory address `4100h`.
+    *   Flips the state of the `_EA` pin (using `P1.7` to mask/unmask the internal ROM).
+    *   Enters a delay loop to allow the internal ROM to be mapped into the memory space at `0000h`–`4000h`.
+3.  **Data Extraction:** Copy the contents of the memory range via the serial port.
+4.  **Verification:** Analyze the downloaded dump to verify the integrity of the data, specifically looking for fuel and ignition tables.
+
+*Note: This process relies on hardware design vulnerabilities to bypass internal mask-ROM read protection. Ensure your wiring is correct before applying power to avoid damaging the MCU.*

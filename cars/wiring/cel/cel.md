@@ -1,43 +1,37 @@
 ---
-summary: 'Check Engine Light This indicator (usually on the dash) comes on to indicate that the ECU thinks something is wrong.'
-tags: [hardware, education, ecu, tuning, rom, sensors, reference, wiring, conversion, diagnostics]
+summary: 'An explanation of the Check Engine Light (CEL), its function, and how to retrieve diagnostic trouble codes.'
+tags: [diagnostics, obd, engine-health]
 applies_to:
   obd: [0, 1, 2]
-  brand: Honda
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
-complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: CEL
-    url: /pgmfi/wiki/library/cel
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+complexity: beginner
 ---
 
-# CEL
+# Check Engine Light (CEL)
 
-###  Check Engine Light 
+The **Check Engine Light (CEL)**, also known as the Malfunction Indicator Lamp (MIL), is a dashboard indicator that illuminates when the Engine Control Unit (ECU) detects a malfunction in the engine or emissions control systems.
 
-This indicator (usually on the dash) comes on to indicate that the [ECU](/cars/ecu/ecu) thinks something is wrong. The [ECU](/cars/ecu/ecu) will usually indicate an error code by flashing the [CEL](/cars/wiring/cel) in some manner. - On [OBD0](/cars/rom/obd0) cars, there is a window on the [ECU](/cars/ecu/ecu) through which a blinking LED can be seen to read codes.
+---
 
-- On [OBD1](/cars/wiring/obd1) cars, there is a connector located under the dash by the passenger footwell that must be shorted. This will cause the dash [CEL](/cars/wiring/cel) to blink, indicating which codes are being thrown.
+## Retrieving Diagnostic Trouble Codes
 
-- On [OBD2](/cars/wiring/obd2) cars, there is a connector located under the dash by the passenger footwell that must be shorted. This will cause the dash [CEL](/cars/wiring/cel) to blink, indicating which codes are being thrown. You can also use an [OBD2](/cars/wiring/obd2) scan tool which connects to the plug by the driver's side footwell. It is a gray connector that should be easily identifiable.
+When the CEL is active, the ECU stores diagnostic trouble codes (DTCs) that can be retrieved to identify the cause of the fault.
 
-####  Solid Check Engine Light 
+### OBD0 Systems (1988–1991)
+OBD0 ECUs feature an LED indicator mounted directly on the ECU circuit board:
+1.  Locate the ECU (typically under the passenger footwell).
+2.  Observe the blinking red LED through the circular viewing window in the ECU case.
+3.  Count the flashes to determine the error code.
 
-If the [CEL](/cars/wiring/cel) is lit solid and does not blink (after jumping the service check connector on [OBD1](/cars/wiring/obd1) ) and the car runs poorly the following could be the problem: - A faulty [ECU](/cars/ecu/ecu) (means any other component failure other than listed here)
-- Poor soldering connections
-- [Check Sum](/cars/diagnostics/check-sum) error
-- Faulty program stored in the [ROM](/cars/rom/rom)
-- Faulty [ROM](/cars/rom/rom) chip
-- Faulty `74HC373` chip
+### OBD1 Systems (1992–1995)
+OBD1 systems utilize the dashboard CEL to flash the error codes:
+1.  Locate the 2-pin Service Connector (SCS) (typically behind the passenger-side kick panel).
+2.  Jump the pins together using a jumper wire or paperclip.
+3.  Turn the ignition to the ON position.
+4.  Observe and count the flashes on the dashboard CEL.
 
-See [Troubleshooting Solid CEL](/cars/diagnostics/troubleshooting-solid-cel)####  "Phantom" Check Engine Light 
+---
 
-Sometimes you may get a [CEL](/cars/wiring/cel) that doesn't show up when you turn the car off. In order to check these, you must do the following: - DON'T turn the ignition off
-- Jump the service check connector just like normal
-
-Now the [CEL](/cars/wiring/cel) will turn off briefly and then start flashing the codes like normal. See [Honda Error Codes](/cars/diagnostics/honda-error-codes)
+## Importance of Diagnostics
+The CEL should never be ignored. It serves as the primary interface for communicating electrical or mechanical faults, ranging from minor sensor issues to critical engine malfunctions. Always retrieve and document the code before attempting repairs.

@@ -28,7 +28,7 @@ Todos os leitores de [MCU](/cars/rom/mcu) descritos aqui tiram partido de uma fa
 - Ligar manualmente um pino de I/O ao pino [_EA](/cars/rom/ea) do [MCU](/cars/rom/mcu). Utilizar um resistor pull-up/pull-down se necessário.
 - Utilizar uma [ROM](/cars/rom/rom) que seja maior do que a [ROM](/cars/rom/rom) interna do [MCU](/cars/rom/mcu). Garantir que todas as linhas de endereço estão ligadas conforme necessário.
 - Inicializar a porta série do [MCU](/cars/rom/mcu) para comunicação com o PC
-- Saltar para cima da área de [ROM](/cars/rom/rom) mascarada (32k para `66207`, 48k para `66507`, ...)
+- Saltar para cima da área de [ROM](/cars/rom/rom) mascarada (32k para `66207`, 48k para `66507`,...)
 - Inverter o estado do [_EA](/cars/rom/ea) usando o pino de I/O
 - Entrar num ciclo de atraso (delay loop) suficientemente longo para permitir que a [ROM](/cars/rom/rom) interna seja novamente mascarada na memória
 - Copiar o conteúdo da [ROM](/cars/rom/rom) para fora através da porta série

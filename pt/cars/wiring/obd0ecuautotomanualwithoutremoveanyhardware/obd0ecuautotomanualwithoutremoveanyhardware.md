@@ -29,8 +29,11 @@ Embora o método padrão para converter uma ECU envolva dessoldar jumpers intern
 Para contornar a verificação do Código 19, deve ligar uma **resistência de 220&Omega;** entre o pino de saída do solenoide de bloqueio da ECU e a massa (terra). Isto simula a resistência elétrica da bobina do solenoide original, satisfazendo o circuito de monitorização de consumo de corrente da ECU.
 
 ### Especificação da Cablagem
+
 * **Pino Alvo 1 (Saída)**: Pino **`A8`** (Saída do Solenoide de Bloqueio Automático em ECUs automáticas OBD0).
+
 * **Pino Alvo 2 (Massa/Terra)**: Pino **`A2`** (Massa de Alimentação da ECU).
+
 * **Resistência**: **220&Omega;** (uma resistência de 1/4 Watt ou 1/2 Watt é suficiente).
 
 ### Passos para Modificação da Cablagem
@@ -71,6 +74,8 @@ Este truque de cablagem é muito popular para **conversões VTEC OBD0** (como ut
 Nas ECUs VTEC OBD0 JDM (como a PW0 ou PR3), o Pino **`A8`** é o pino de controlo nativo para o Solenoide VTEC. Como as ECUs USDM PM6 automáticas também utilizam o Pino `A8` para acionar o solenoide de bloqueio automático, pode gravar software VTEC JDM numa ECU automática USDM com chip (reprogramada), e o Pino `A8` funcionará perfeitamente como a saída do solenoide VTEC.
 
 ### Utilizar um Interruptor de Seleção de Modo
+
 Ao ligar um interruptor unipolar de duas vias (SPDT) entre o Pino `A8` da ECU, a resistência de 220&Omega; (ligada à Massa/Terra) e o fio do solenoide VTEC do motor, pode criar uma cablagem comutável:
+
 * **Modo Manual / VTEC**: Liga o Pino `A8` diretamente ao Solenoide VTEC.
 * **Modo Bypass de Verificação Auto**: Liga o Pino `A8` à resistência de 220&Omega; para contornar o teste de diagnóstico da transmissão automática.

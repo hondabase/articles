@@ -1,29 +1,34 @@
 ---
-summary: "CN2 is the connector to the serial port on an OBD1 ECU. !CN2location.jpgHere's the pinout of the Dataconnector IN a Honda ECU: 1: GND 2: RX (send Data..."
-tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics]
+summary: 'Technical reference for the OBD1 ECU CN2 serial port, detailing its pinout and role in datalogging.'
+tags: [ecu, wiring, serial-communication, diagnostics]
 applies_to:
   obd: [1]
-  brand: Honda
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eg-eh]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: OBD1CN2
-    url: /pgmfi/wiki/library/obd1cn2
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD1CN2
+# OBD1 CN2 Serial Port Reference
 
-`CN2` is the connector to the serial port on an [OBD1](/cars/wiring/obd1) [ECU](/cars/ecu/ecu). ![CN2_location.jpg](CN2_location.jpg)Here's the pinout of the Dataconnector *IN* a Honda [ECU](/cars/ecu/ecu):
+The **CN2** header is the dedicated 5-pin serial communication port found on OBD1 Honda ECUs. It serves as the primary interface for ECU-to-PC communication, essential for real-time datalogging and ROM programming.
 
-- 1: GND
-- 2: RX (send Data from the PC to the [ECU](/cars/ecu/ecu))
-- 3: +5 Volt
-- 4: TX (send Data from [ECU](/cars/ecu/ecu) to the PC)
-- 5: N.C. (not connected)
+---
 
-This port is half-duplex (RX and TX are connected) in stock form. See [OBD1 J12](/cars/wiring/obd1j12) for more information about full-duplex modification. A good pin header for `CN2` is digikey part# 640456-4 ***Question From [Web Geek](/cars/electronics/web-geek)_*** "There are 3 search results for that part #, which is the right one?" For more information see this excellent post by Jim Truett: [https://web.archive.org/web/http://forum.pgmfi.org/viewtopic.php?t=1663](/pgmfi/forum/topic.php?id=1663)
+## Pinout Mapping
+
+| Pin | Function | Description |
+| :---: | :--- | :--- |
+| **1** | GND | Ground |
+| **2** | RX | Receive (from PC) |
+| **3** | +5V | Logic Power |
+| **4** | TX | Transmit (to PC) |
+| **5** | N.C. | Not Connected |
+
+---
+
+## Operational Notes
+*   **Half-Duplex:** In stock form, the CN2 port operates in half-duplex mode (RX and TX are shared/connected).
+*   **Full-Duplex Modification:** Removing the **J12** jumper on the ECU board separates the receive and transmit lines, enabling full-duplex communication. This is recommended for more reliable high-speed datalogging.
+*   **Hardware Interface:** The ECU communicates at **TTL (5V logic)** voltage levels. An appropriate RS232-to-TTL signal translator is required to interface with standard PC serial or USB ports.
+
+*Always verify your board layout and silkscreen labels if available, as variations can occasionally occur between different ECU part numbers.*

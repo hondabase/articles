@@ -23,7 +23,25 @@ sources:
 
 # RPM de Low Cam de 8 bits OBD1
 
-Esta é a conversão dos valores de [RPM](/cars/sensors/rpm) de 8 bits "low cam" (came baixa) utilizados para os pontos de transição de VTEC e nas tabelas low-cam. Envolve alguma aritmética modular, pelo que é mais fácil dividi-la em alguns passos adicionais. # Y = valor de entrada, 0 a 256 # seja H = floor(Y/64) ''Onde floor(x) = trunc(x) = int(x) = parte inteira de x. A parte fracionária é truncada. Chame-lhe o que preferir'' # seja L = Y - (H-1)*64 # [RPM](/cars/sensors/rpm) = 1875000 * L * 2^H / 240000 Também pode fazer desta forma, utilizando o operador módulo: # Y = valor de entrada, 0 a 256 # Q = Y div 64 ''(divisão inteira, o mesmo que floor(Y/64) acima)'' # R = Y mod 64 ''(módulo, ou seja, o resto após a divisão)'' # [RPM](/cars/sensors/rpm) = (2^Q)*(floor(R*500/64) + 500) Isto acaba por ser uma escala linear por partes (piecewise):
+Esta é a conversão dos valores de [RPM](/cars/sensors/rpm) de 8 bits "low cam" (came baixa) utilizados para os pontos de transição de VTEC e nas tabelas low-cam. Envolve alguma aritmética modular, pelo que é mais fácil dividi-la em alguns passos adicionais.
+
+# Y = valor de entrada, 0 a 256
+
+# seja H = floor(Y/64) ''Onde floor(x) = trunc(x) = int(x) = parte inteira de x. A parte fracionária é truncada. Chame-lhe o que preferir''
+
+# seja L = Y - (H-1)*64
+
+# [RPM](/cars/sensors/rpm) = 1875000 * L 
+
+* 2^H / 240000 Também pode fazer desta forma, utilizando o operador módulo:
+
+# Y = valor de entrada, 0 a 256
+
+# Q = Y div 64 ''(divisão inteira, o mesmo que floor(Y/64) acima)''
+
+# R = Y mod 64 ''(módulo, ou seja, o resto após a divisão)''
+
+# [RPM](/cars/sensors/rpm) = (2^Q)*(floor(R*500/64) + 500) Isto acaba por ser uma escala linear por partes (piecewise):
 
 - `00h`-`40h` = 500-1000 [RPM](/cars/sensors/rpm)
 - `40h`-`80h` = 1000-2000 [RPM](/cars/sensors/rpm)

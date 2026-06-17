@@ -43,5 +43,5 @@ Vamos ler uma `66207`:
 
 Se algo não funcionar, repita o procedimento, mas não se esqueça de clicar em RESET. Divirta-se com o seu próprio leitor de `66207`. Doc 
 <figure>
-    <img src="66207_romreader.jpg" alt="">
+ <img src="66207_romreader.jpg" alt="">
 </figure>

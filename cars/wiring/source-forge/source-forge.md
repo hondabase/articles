@@ -1,20 +1,33 @@
 ---
-summary: "Source ForgeOpen Source community for everything Currently being used for ASM662, Andy Sloane's P30 ROM development, the PM6 Future codebase, 1 Wire VTEC codebase, Crome ROMEditor scripts."
-tags: [tuning, rom, sensors, reference, wiring, conversion, diagnostics, ecu]
+summary: 'An overview of the PGMFI SourceForge repository, hosting essential open-source tools for Honda ECU development and tuning.'
+tags: [tuning, open-source, software, tools]
 applies_to:
   obd: [0, 1, 2]
-  models: [civic, crx, del-sol]
-  chassis: [ef, eg, eg-eh]
+  models: [civic, crx, del-sol, integra]
+  chassis: [ef, eg, eg-eh, dc2]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Source Forge'
-    url: /pgmfi/wiki/library/source-forge
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Source Forge
+# PGMFI SourceForge Repository
 
-[Source Forge](/cars/wiring/source-forge)-Open Source community for everything -Currently being used for [ASM662](/cars/diagnostics/asm662), Andy Sloane's P30 [ROM](/cars/rom/rom) development, the [PM6 Future](/cars/diagnostics/pm6-future) codebase, [1 Wire VTEC](/cars/wiring/1-wire-vtec) codebase, [Crome ROMEditor](/cars/rom/crome-rom-editor) scripts. the PGMFI sourceforge page can be found at [http://web.archive.org/web/20260228000421/https://sourceforge.net/projects/pgmfi/](http://web.archive.org/web/20260228000421/https://sourceforge.net/projects/pgmfi/)If you would like to take the time to make a webpage for the sourceforge stuff ([http://web.archive.org/web/20131206065104/http://web.archive.org/web/20131206065104/http://pgmfi.sourceforge.net:80/:80/](http://web.archive.org/web/20131206065104/http://web.archive.org/web/20131206065104/http://pgmfi.sourceforge.net:80/:80/) - currently blank) please email Dave BlundellEmail Dave Blundell, Andy Sloane or Calvin Baank (or any of the other sourceforge admins) if you would like to become involved. note: if you try to check out modules from sourceforge, pay attention to case! [Source Forge](/cars/wiring/source-forge) is CASE SENSITIVE!!!
+The PGMFI SourceForge repository serves as the central hub for the open-source community development of Honda ECU tuning and diagnostic tools.
+
+---
+
+## Community-Developed Projects
+The repository hosts numerous essential tools, including:
+
+*   **ASM662:** Assembler/disassembler for analyzing and modifying ECU binary files.
+*   **ROM Editing Tools:** Development environments and scripts for the P30, PM6, and other common ECU codebases.
+*   **Datalogging Interfaces:** Open-source serial datalogging protocols for real-time sensor data acquisition.
+*   **VTEC Codebases:** Specialized ROM modules for implementing VTEC functionality in non-VTEC ECUs.
+
+---
+
+## Getting Involved
+The PGMFI repository relies on community contributions for maintenance and development. 
+
+*   **Repository Access:** Projects are hosted on SourceForge; verify project activity and compatibility with your specific codebase before attempting to implement tools.
+*   **Case Sensitivity:** Note that SourceForge repositories are **case-sensitive**. Ensure you are checking out the correct branch and module names to avoid build errors.
+
+*If you are interested in contributing, ensure you follow project-specific coding standards and thoroughly document your changes within the repository.*

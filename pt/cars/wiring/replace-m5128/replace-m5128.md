@@ -31,7 +31,9 @@ Esta página explica como substituir o chip atual [5128 XRAM](/cars/rom/5128xram
 - Lista de Peças:
 - Construção:
 - Passo a passo:
-- Nota:
+-
+
+**Nota:**
 
 ### Breve Explicação 
 
@@ -56,7 +58,9 @@ O chip `M5128` é utilizado para armazenar e calcular valores enquanto o carro e
 - Soldar um fio do pino 22 do `M5128` ao pino 22 do [MCU](/cars/rom/mcu)
 - Colocar o DS1220AB
 
-### Nota: 
+###
+
+**Nota:** 
 
 As pistas a cortar numa [ECU](/cars/ecu/ecu) de 90-91 encontram-se no lado dos componentes. Nas de 88-89, há 1 pista no lado das soldaduras e 1 no lado dos componentes. Pode verificar as digitalizações (scans) para ajudar.
 

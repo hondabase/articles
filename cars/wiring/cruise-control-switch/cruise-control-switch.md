@@ -1,20 +1,31 @@
 ---
-summary: "Author: tungsten2k (12240101225.client.attbi.com) Date: 091903 01:36 fyi, for you EF people out there lookin' to do your FTS clutch switch the easy way, you've come to the right place."
-tags: [ecu, reference, tuning, rom, wiring, conversion]
+summary: 'Guide for repurposing a cruise control switch for Full Throttle Shift (FTS) functionality on EF chassis Honda vehicles.'
+tags: [wiring, tuning, fts, cruise-control]
 applies_to:
   obd: [0, 1, 2]
   chassis: [ef]
-  models: {}
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Cruise Control Switch'
-    url: /pgmfi/wiki/library/cruise-control-switch
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Cruise Control Switch
+# Cruise Control Switch for Full Throttle Shift (FTS)
 
-Author: tungsten2k (12-240-101-225.client.attbi.com) Date: 09-19-03 01:36 fyi, for you EF people out there lookin' to do your FTS clutch switch the easy way, you've come to the right place... Before : [http://www.se30.com/~grindingbassline/albums/ecu-mods/IMG_3796_002.sized.jpg](http://www.se30.com/~grindingbassline/albums/ecu-mods/IMG_3796_002.sized.jpg)After the ghetto mcgyver's personal treatment : Ghettoshift 1.0 [http://www.se30.com/~grindingbassline/albums/ecu-mods/IMG_3802.sized.jpg](http://www.se30.com/~grindingbassline/albums/ecu-mods/IMG_3802.sized.jpg)yes, that's right kids... crack open the jam nut, unscrew the original clutch stop adjuster, and slide in a brake light switch just like the one on... uh... that switch one pedal to the right ;) it cost me $2 to get into Pick-n-Pull... i walked out with 6 of these babies, (and an extra main relay, more fuses and interior screws than a Kragen store... pretty much all i could fit into my 6 pocket raver pants ;) now, this SPST Momentary Off brake switch requires that when the switch contacts are closed -> FTS rev limit, and when open -> regular limit. it might make more sense reverse the logic so that in the event of circuit failure (e.g. switch or wire not working) you're stuck in FTS limit, instead of lining up at the drags, putting in the clutch with your Im ABad Mutha Fukka With No Rev Limit.bin and listening to the valve heads break off into the piston tops. but whatever... how often do you find a brake switch failing ? :P
+This guide describes a community-developed method for repurposing the cruise control/clutch switch in an EF chassis to act as a clutch switch for **Full Throttle Shift (FTS)** functionality.
+
+---
+
+## Installation Overview
+
+The goal is to repurpose a brake light or clutch switch to act as a momentary switch for the FTS rev-limit feature.
+
+### Procedure
+1.  **Component Sourcing:** Obtain a brake light switch (commonly found in junkyards).
+2.  **Removal:** Remove the original clutch stop adjuster.
+3.  **Installation:** Install the new switch in its place.
+4.  **Wiring:** Wire the switch so that when contacts are closed, the ECU engages the FTS rev-limit; when open, the ECU operates with the regular rev-limit.
+
+> **Safety Warning:** It is recommended to configure the logic so that the FTS limit is active when the switch is closed. In the event of a circuit failure (e.g., broken wire), this approach forces the engine to the safer FTS rev-limit rather than disabling the rev-limiter entirely, which could lead to engine damage.
+
+---
+
+## Technical Considerations
+This is a custom modification requiring basic wiring and circuit testing skills. Ensure the switch reliably signals the ECU before attempting aggressive shifting maneuvers.

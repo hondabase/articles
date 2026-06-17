@@ -1,20 +1,24 @@
 ---
-summary: 'Describe Conversion here. Conversion is the act of modifying the Wire Harness at the ECU so you can fit ohter Generation (OBD) ECU.'
-tags: [ecu, reference, sensors, wiring, conversion]
+summary: 'An overview of ECU conversion procedures, allowing different OBD generations to be utilized through harness modifications.'
+tags: [ecu, tuning, wiring, conversion]
 applies_to:
   obd: [1, 2]
   models: [accord, civic, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: Conversion
-    url: /pgmfi/wiki/library/conversion
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Conversion
+# ECU Conversion Overview
 
-Describe [Conversion](/cars/wiring/conversion) here. Conversion is the act of modifying the [Wire Harness](/cars/wiring/wire-harness) at the [ECU](/cars/ecu/ecu) so you can fit ohter Generation ([OBD](/cars/wiring/obd)) [ECU](/cars/ecu/ecu). For example, you might want to run an [OBD1](/cars/wiring/obd1) [ECU](/cars/ecu/ecu) into a factory [OBD2](/cars/wiring/obd2) car.
+**Conversion** refers to the process of modifying the vehicle's engine wiring harness and ECU connectors to allow for the use of an ECU from a different OBD generation.
+
+---
+
+## Purpose
+ECU conversions are frequently performed for performance tuning, swapping newer engines into older chassis, or running specific engine management systems that were not native to the vehicle (e.g., running an OBD1 ECU in a factory OBD2 vehicle).
+
+## Conversion Methods
+*   **Plug-and-Play Harnesses:** Using a pre-built adapter harness that plugs between the chassis wiring and the ECU. This is the most straightforward method.
+*   **Manual Wiring Modification:** Repinning or splicing the factory engine harness directly to match the requirements of the target ECU. This requires precise knowledge of the factory wiring diagrams for both the vehicle and the ECU.
+
+*Always verify pin-out schematics for your specific vehicle and target ECU before making any electrical modifications.*

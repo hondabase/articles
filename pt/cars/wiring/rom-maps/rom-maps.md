@@ -1,18 +1,10 @@
 ---
-summary: 'Mapas de ROM: Uma área para colaborar em todos os endereços de memória encontrados nas ROMs. Mapas de ROM para ECUs OBD1 Civic e Integra, Localizações de Memória, Recursos de Programação, Outros...'
+summary: 'Um índice colaborativo de endereços de memória e mapas de ROM para ECUs Honda Civic e Integra OBD1, essencial para a engenharia reversa de firmware.'
+tags: [ecu, referência, tuning, rom, sensores, cablagem, conversão, diagnóstico]
 applies_to:
   obd: [0, 1]
   brand: Acura/Honda
 complexity: advanced
-tags:
-  - ecu
-  - referência
-  - tuning
-  - rom
-  - sensores
-  - cablagem
-  - conversão
-  - diagnóstico
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Rom Maps'
@@ -27,21 +19,23 @@ sources:
 ## Mapas de ROM
 
 Uma área para colaborar em todos os endereços de memória encontrados nas [ROM](/cars/rom/rom)s - Mapas de ROM
-    - ECUs OBD1 Civic e Integra
-        - Localizações de Memória
-        - Recursos de Programação
-    - Outros OBD1
-        - Localizações de Memória
-    - ECUs OBD0 VTEC
-        - Localizações de Memória
-    - OBD0 Injeção Multiponto (Multi-Point Fuel-Injected)
-        - Localizações de Memória
-        - Recursos de Programação
-    - Recursos Externos
+ - ECUs OBD1 Civic e Integra
+ - Localizações de Memória
+ - Recursos de Programação
+ - Outros OBD1
+ - Localizações de Memória
+ - ECUs OBD0 VTEC
+ - Localizações de Memória
+ - OBD0 Injeção Multiponto (Multi-Point Fuel-Injected)
+ - Localizações de Memória
+ - Recursos de Programação
+ - Recursos Externos
 
 ### ECUs [OBD](/cars/wiring/obd)1 Civic e Integra
 
-*As [ECUs OBD1 Civic Integra](/cars/diagnostics/obd1-civic-integra-ec-us) partilham muitas características*#### Localizações de Memória
+*As [ECUs OBD1 Civic Integra](/cars/diagnostics/obd1-civic-integra-ec-us) partilham muitas características*
+
+#### Localizações de Memória
 
 - [P28](/cars/sensors/p28) - [ROM](/cars/rom/rom)s baseadas no [USDM](/cars/sensors/usdm) 304 P28 (Civic D16Z6 [SOHC](/cars/sensors/sohc) VTEC 92-95)
 - [P30](/cars/sensors/p30) - [ROM](/cars/rom/rom)s baseadas no [JDM](/cars/sensors/jdm) 203 P30 (Civic B16A [DOHC](/cars/sensors/dohc) VTEC)
@@ -59,13 +53,17 @@ Uma área para colaborar em todos os endereços de memória encontrados nas [ROM
 
 ### Outros [OBD](/cars/wiring/obd)1
 
-*Tudo o resto sobre [OBD](/cars/wiring/obd)1 - normalmente [MCU](/cars/rom/mcu)s baseados em `66207`*#### Localizações de Memória
+*Tudo o resto sobre [OBD](/cars/wiring/obd)1 - normalmente [MCU](/cars/rom/mcu)s baseados em `66207`*
+
+#### Localizações de Memória
 
 - [P13](/cars/sensors/p13) - O H22 [JDM](/cars/sensors/jdm)/USDM (Prelude [DOHC](/cars/sensors/dohc) VTEC 92-95).
 
 ### ECUs [OBD](/cars/wiring/obd)0 VTEC
 
-*As [ECUs OBD0 VTEC](/cars/diagnostics/obd0-vtec-ec-us) partilham muitas características*#### Localizações de Memória
+*As [ECUs OBD0 VTEC](/cars/diagnostics/obd0-vtec-ec-us) partilham muitas características*
+
+#### Localizações de Memória
 
 - [PW0](/cars/sensors/pw0) - [ROM](/cars/rom/rom)s baseadas no PW0 [JDM](/cars/sensors/jdm) (CRX/Civic EF8/9 B16A 89-91), incluindo também algumas localizações do PW0 Europeu.
 - [PR3](/cars/sensors/pr3) - [ROM](/cars/rom/rom)s baseadas no PR3 [JDM](/cars/sensors/jdm) (Integra XSi B16A 89-91)
@@ -74,7 +72,9 @@ Uma área para colaborar em todos os endereços de memória encontrados nas [ROM
 
 ### [OBD](/cars/wiring/obd)0 Injeção Multiponto (Multi-Point Fuel-Injected)
 
-*As [ECUs OBD0 MPFI](/cars/diagnostics/obd0mpfi) partilham muitas características*#### Localizações de Memória
+*As [ECUs OBD0 MPFI](/cars/diagnostics/obd0mpfi) partilham muitas características*
+
+#### Localizações de Memória
 
 - [91 PM6](/cars/diagnostics/91pm6) - [ROM](/cars/rom/rom)s baseadas no PM6 de 91 (CRX/Civic Si [USDM](/cars/sensors/usdm) com [SOHC](/cars/sensors/sohc) D16A6)
 - 91 PR4_PA - [ROM](/cars/rom/rom)s baseadas no PR4 [USDM](/cars/sensors/usdm) de 90-91 com sensor PA interno

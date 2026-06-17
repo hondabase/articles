@@ -1,42 +1,38 @@
 ---
-summary: 'First of all i''ll thank NicoHRED again for the info he posts in the general forum about the "66P507 Readout".'
-tags: [ecu, reference, tuning, rom, sensors, wiring, conversion]
+summary: 'Technical guide for dumping the internal ROM contents of a DIP64 Oki 66207 microcontroller using a custom reader interface.'
+tags: [ecu, rom-dumping, reverse-engineering, hardware]
 applies_to:
   obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eg-eh]
 complexity: advanced
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD1 Oki66207 Reader-DIP64'
-    url: /pgmfi/wiki/library/obd1-oki66207-reader-dip64
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD1 Oki66207 Reader-DIP64
+# OBD1 Oki 66207 Reader (DIP64)
 
-First of all i'll thank Nico-HRED again for the info he posts in the general forum about the "`66P507` Readout". I adapted the idea and simplified it, so everyone of us can now readout the content of his `66207`. My reader is a bit different of the one he posted. I need a [ECU](/cars/ecu/ecu) with a `66207`, a 27C512 (EProm), a 1 k Resistor, two wires and a RS232<->TTL converter. The most of you will allready have this, if not, the parts are usual and cheep. We need to modify the [ECU](/cars/ecu/ecu) a bit to have a nice `66207` reader, here is a short description:
+This guide outlines the procedure for building a custom reader to dump the internal ROM contents of a DIP64 Oki 66207 microcontroller found in OBD1 ECUs.
 
-- If your [ECU](/cars/ecu/ecu) isn't chipped, you need to add the `74HC373`, the EProm socket and the 1kOhm resistor (`R54`).
-- Connect a wire from the `66207` pin 16 (A15) to the Eprom Pin 1 (A15).
+---
 
-BUT DON'T PUT THE PIN 1 OF THE [EPROM](/cars/rom/eprom) IN THE SOCKET! JUST CONNECT THE WIRE TO IT. - Connect a wire from the `66207` Pin 19 (P2.2) to the `66207` Pin 27 (-EA).
-- Remove the Jumper `J1` and replace it with a 1kOhm resistor.
-- Put in the 27C512 Eprom, programmed with my "ROMREADER" program on it.
-- Connect your PC via a RS232<->TTL converter to the [ECU](/cars/ecu/ecu) (see [Data Logging](/cars/diagnostics/data-logging) for more information).
+## Hardware Modification
 
-Let's read a `66207`: - Switch off your [ECU](/cars/ecu/ecu), or leave it off.
-- Start the program on the PC: DOWNLOADER
-- if the Address display isn't 0000, then click on RESET.
-- Switch on your [ECU](/cars/ecu/ecu)
-- After around 1 secound you should see the address counter running
-- after almost a minute (i never stopped it) the address counter should show 8001
-- now click SAVE to save your rom.
+The reader requires an ECU with a 66207 MCU, a 27C512 EPROM, a 1k Ohm resistor, wiring, and an RS232-to-TTL converter.
 
-If something dosn't work, retry the procedure but don't forget to click on RESET. Now have fun with your own `66207` reader. Doc 
-<figure>
-    <img src="66207_romreader.jpg" alt="Picture of hardware modifications">
-    <figcaption>Picture of hardware modifications</figcaption>
-</figure>
+1.  **ECU Preparation:** If not already chipped, install a `74HC373` latch, EPROM socket, and a 1k Ohm resistor (`R54`).
+2.  **Wiring:**
+    *   Connect a wire from MCU pin 16 (A15) to EPROM pin 1. (Do not insert pin 1 of the EPROM into the socket).
+    *   Connect MCU pin 19 (P2.2) to MCU pin 27 (`_EA`).
+    *   Remove the `J1` jumper and replace it with a 1k Ohm resistor.
+3.  **Setup:** Install a 27C512 EPROM programmed with the ROMREADER software into the socket.
+4.  **PC Interface:** Connect the ECU to a PC using an RS232-to-TTL converter.
+
+---
+
+## ROM Dumping Procedure
+
+1.  **Terminal Config:** Configure serial software to **4800 baud, 8 data bits, No parity, 1 stop bit (4800, N, 8, 1)**.
+2.  **Execution:** Power on the ECU. If the address display does not start at `0000`, click RESET.
+3.  **Extraction:** After approximately 1 second, the address counter will begin running. Wait for the counter to reach `8001`.
+4.  **Save:** Click SAVE to export the dumped ROM data.
+
+*If the process fails, reset the ECU and re-initialize the connection. This technique relies on specific MCU hardware vulnerabilities; verify all connections carefully before application.*

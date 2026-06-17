@@ -43,13 +43,17 @@ Para configurar o módulo USBMOD3 para funcionamento alimentado pelo barramento 
 
 Antes de soldar o módulo à cablagem da sua ECU, realize um teste de loopback para verificar se o chip conversor USB e os drivers do PC estão a funcionar corretamente:
 
-1.  **Ligar Linhas de Série:** Ligue temporariamente um fio de ponte (jumper) entre o **Pino 27 (RXD)** e o **Pino 28 (TXD)** na placa do USBMOD3.
-2.  **Ligar ao PC:** Ligue o cabo USB do módulo ao seu portátil. Transfira e instale os drivers padrão de Porta COM Virtual (VCP) da FTDI a partir do website oficial da FTDI.
-3.  **Identificar Porta COM:** Abra o **Gestor de Dispositivos** do Windows e expanda a secção **Portas (COM e LPT)**. Anote o número da porta COM atribuído à Porta de Série USB (ex.: `COM3`).
-4.  **Abrir Consola de Terminal:** Inicie uma aplicação de terminal de série (como o PuTTY ou Tera Term) e ligue-se à porta COM identificada a **38400 baud**.
-5.  **Teste de Digitação:** Digite vários caracteres na janela do terminal.
-    *   **Sucesso:** Se vir os caracteres aparecerem no ecrã (eco), o chip FTDI está a transmitir e a receber dados com sucesso.
-    *   **Falha:** Se não aparecer nada, verifique os seus drivers, as pontes nos pinos e o cabo USB.
+1. **Ligar Linhas de Série:** Ligue temporariamente um fio de ponte (jumper) entre o **Pino 27 (RXD)** e o **Pino 28 (TXD)** na placa do USBMOD3.
+2. **Ligar ao PC:** Ligue o cabo USB do módulo ao seu portátil. Transfira e instale os drivers padrão de Porta COM Virtual (VCP) da FTDI a partir do website oficial da FTDI.
+3. **Identificar Porta COM:** Abra o **Gestor de Dispositivos** do Windows e expanda a secção **Portas (COM e LPT)**. Anote o número da porta COM atribuído à Porta de Série USB (ex.: `COM3`).
+4. **Abrir Consola de Terminal:** Inicie uma aplicação de terminal de série (como o PuTTY ou Tera Term) e ligue-se à porta COM identificada a **38400 baud**.
+5. **Teste de Digitação:** Digite vários caracteres na janela do terminal.
+ 
+
+* **Sucesso:** Se vir os caracteres aparecerem no ecrã (eco), o chip FTDI está a transmitir e a receber dados com sucesso.
+ 
+
+* **Falha:** Se não aparecer nada, verifique os seus drivers, as pontes nos pinos e o cabo USB.
 
 ---
 
@@ -57,9 +61,9 @@ Antes de soldar o módulo à cablagem da sua ECU, realize um teste de loopback p
 
 Assim que o teste de loopback passar, remova a ponte temporária entre os pinos 27 e 28, e ligue o módulo ao conector `CN2` da ECU:
 
-1.  Ligue o **Pino 27 (RXD no módulo)** ao **Pino 2 (ECU TX)** no conector `CN2`.
-2.  Ligue o **Pino 28 (TXD no módulo)** ao **Pino 4 (ECU RX)** no conector `CN2`.
-3.  Ligue o **Ground (GND no módulo)** ao **Pino 1 (ECU GND)** no conector `CN2`.
+1. Ligue o **Pino 27 (RXD no módulo)** ao **Pino 2 (ECU TX)** no conector `CN2`.
+2. Ligue o **Pino 28 (TXD no módulo)** ao **Pino 4 (ECU RX)** no conector `CN2`.
+3. Ligue o **Ground (GND no módulo)** ao **Pino 1 (ECU GND)** no conector `CN2`.
 
 > [!WARNING]
 > Nunca ligue o Pino 5 (12V) do conector `CN2` da ECU à placa do USBMOD3. Isto destruirá instantaneamente o módulo emissor-recetor e danificará a porta USB do seu portátil.

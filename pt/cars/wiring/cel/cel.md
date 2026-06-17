@@ -56,4 +56,4 @@ Por vezes, pode surgir uma [CEL](/cars/wiring/cel) que desaparece assim que desl
 - NÃO desligue a ignição
 - Faça o shunt no conector de diagnóstico como habitualmente
 
-Agora, a [CEL](/cars/wiring/cel) irá apagar-se brevemente e depois começará a piscar os códigos normalmente. Consulte [Códigos de Erro Honda](/cars/diagnostics/honda-error-codes)
+Agora, a [CEL](/cars/wiring/cel) irá apagar-se brevemente e depois começará a piscar os códigos normalmente. Consulte [Códigos de Erro Honda](/cars/diagnostics/diagnostic-trouble-codes)

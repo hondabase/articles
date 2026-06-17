@@ -1,18 +1,9 @@
 ---
-summary: "Após fazer a modificação do Doc para ler a ROM de origem de uma ECU P30 australiana com o 66207 numa configuração DIP de 64 pinos, comecei a pensar que..."
+summary: 'Guia avançado para construir um leitor de hardware para extrair dados da ROM Interna de processadores PLCC68 Oki 66207 encontrados em ECUs Honda OBD1.'
+tags: [hardware, education, ecu, tuning, rom, sensors, reference, wiring, conversion]
 applies_to:
   obd: [1]
 complexity: advanced
-tags:
-  - hardware
-  - education
-  - ecu
-  - tuning
-  - rom
-  - sensors
-  - reference
-  - wiring
-  - conversion
 sources:
   - name: 'pgmfi.org wiki'
     title: 'OBD1 Oki66207 Reader-PLCC68'
@@ -43,7 +34,7 @@ Vamos ler um `66207`:
 - agora clique em SAVE para guardar a sua ROM.
 
 Se algo não funcionar, repita o procedimento mas não se esqueça de clicar em RESET. Divirta-se com o seu próprio leitor de `66207`. Doc. É tudo. Não se esqueça de soldar a pista que cortou quando terminar para ativar a ROM externa. - Imagem em alta resolução da configuração geral: 
-     ![DSC02697.JPG](DSC02697.JPG)
+ ![DSC02697.JPG](DSC02697.JPG)
 
 | **Anexo:** | **Modificar:** | **Tamanho:** | **Data:** | **Quem:** | **Comentário:** |
 | :--- | :--- | :--- | :--- | :--- | :--- |

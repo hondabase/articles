@@ -39,12 +39,15 @@ Este método de cablagem é compatível tanto com o Hondata S300 como com outras
 ## Configuração no HTS (Honda Tuning Suite)
 
 ### Descarregar o HTS
+
 Descarregue a versão mais recente do Honda Tuning Suite no site oficial: [hondatuningsuite.com](http://www.hondatuningsuite.com).
 
 ### Abrir as Definições de Wideband
+
 Inicie o Honda Tuning Suite e navegue até **File** > **Settings** > **Wideband** para abrir a janela de configuração.
 
 ### Selecionar o Pino da ECU
+
 Selecione o pino **D14** para a entrada de sinal do wideband.
 
 > [!NOTE]
@@ -54,7 +57,10 @@ Selecione o pino **D14** para a entrada de sinal do wideband.
 *Seleção do pino da ECU para entrada do wideband no HTS.*
 
 ### Configurar a Tabela de Conversão
-Configure a *tabela de conversão de Tensão para Lambda/AFR* selecionando uma predefinição ou especificando desvios personalizados. O HTS tem valores pré-configurados tanto para manómetros AEM mais antigos (30-4100/30-4110) como para modelos mais recentes (X-Series, que foram corrigidos na versão 2.22F2).
+
+Configure a *tabela de conversão de Tensão para Lambda/AFR
+
+* selecionando uma predefinição ou especificando desvios personalizados. O HTS tem valores pré-configurados tanto para manómetros AEM mais antigos (30-4100/30-4110) como para modelos mais recentes (X-Series, que foram corrigidos na versão 2.22F2).
 
 ![Valores pré-configurados no HTS 2.22F2](hts2.22F2_conversion-table.png)
 *Predefinições de escala de wideband pré-configuradas no HTS 2.22F2.*
@@ -63,12 +69,14 @@ Configure a *tabela de conversão de Tensão para Lambda/AFR* selecionando uma p
 *Predefinições de escala de wideband pré-configuradas no HTS 2.15.*
 
 ### Desvios Personalizados (Custom Offsets)
+
 Se o seu modelo de wideband não estiver listado, selecione **Custom** no menu suspenso e insira os valores de escala de tensão para lambda do seu wideband a partir do manual do fabricante. Certifique-se de que a gama de saída é adequada; se 3.75V não atingir 15 AFR, configure a gama de saída do controlador para caber dentro do limite de 3.8V do pino D14. Alternativamente, pode usar o pino de entrada da EGR D12, mas isso requer dessoldar resistências na placa da ECU e [apenas funciona em ECUs USDM/não-JDM](https://www.hondata.com/forum/viewtopic.php?t=8259).
 
 ![Tabela mostrando a tabela de escala da AEM](x-series_scaling-table.png)
 *Tabela de escala de tensão do AEM X-Series.*
 
 ### Calibrar o Desvio de Tensão (Voltage Offset)
+
 Se estiver a usar um manómetro físico, compare a leitura do manómetro com a indicação do HTS. Ajuste o valor do desvio (usando os botões `-` e `+`) até que os valores coincidam exatamente.
 
 ![Interface de correção de offset](hts_offset-correction.png)
@@ -79,6 +87,7 @@ Se estiver a usar um manómetro físico, compare a leitura do manómetro com a i
 O processo de configuração no Hondata SManager (para placas S300) segue princípios semelhantes aos do HTS.
 
 ### Cablagem
+
 Ligue a saída analógica do seu wideband a qualquer um dos pinos de entrada analógica da placa S300 (identificados de **A0** a **A7**). Se o seu wideband tiver um fio de massa analógico, ligue-o diretamente ao pino de massa analógica do S300 (**GND**).
 
 > [!TIP]
@@ -91,6 +100,7 @@ Ligue a saída analógica do seu wideband a qualquer um dos pinos de entrada ana
 *Ligação de saída analógica e massa do AEM 30-2310 ao S300.*
 
 ### Passos de Configuração
+
 1. Descarregue o SManager em [hondata.com/software](https://hondata.com/software).
 2. Abra o SManager e navegue até às definições de **Parameters** > **Closed Loop** ou **Closed Loop Advanced**.
 3. Em **Closed Loop**, configure os seus parâmetros de funcionamento.
@@ -116,4 +126,5 @@ Ligue a saída analógica do seu wideband a qualquer um dos pinos de entrada ana
 *Lista de opções de entrada analógica do S300.*
 
 ### Ficheiro de Ajuda
+
 A Hondata fornece documentação abrangente nos seus ficheiros de ajuda, acessíveis tanto no SManager quanto online no [Índice de Ajuda do Hondata SManager](https://www.hondata.com/help/smanager/index.html?analog_wideband.htm).

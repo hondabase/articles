@@ -6,76 +6,49 @@ applies_to:
   models: [accord, civic, crx, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, ef, eg, eg-eh]
 complexity: advanced
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Nokia Cable Datalogging'
-    url: /pgmfi/wiki/library/nokia-cable-datalogging
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# DIY Datalogging Cable via Nokia FBUS Modification
+# DIY Datalogging Cable (Nokia FBUS Modification)
 
-Datalogging from an OBD1 Honda ECU requires converting the 5V Transistor-Transistor Logic (TTL) serial signal from the ECU's `CN2` header into a standard USB signal that a laptop can read. 
+Datalogging from an OBD1 Honda ECU requires converting the ECU's 5V TTL (Transistor-Transistor Logic) serial signal from the `CN2` header into a standard USB signal.
 
-A classic and highly cost-effective method to achieve this is modifying a legacy Nokia FBUS mobile phone data cable (originally sold for Nokia 3200, 5100, and 6100 series phones). These cables contain a **Prolific PL-2303 USB-to-TTL serial transceiver** chip embedded inside the USB plug housing, which provides a high-speed, jitter-free connection for tuning suites.
+A legacy Nokia FBUS mobile phone data cable (originally used for Nokia 3200/5100/6100 series phones) can be repurposed as a high-quality USB-to-TTL serial adapter, as these cables contain a **Prolific PL-2303** transceiver chip.
 
 ---
 
-## 1. CN2 Header Pinout & Safety Warning
-
-The OBD1 Honda ECU sends and receives serial data on the **CN2** header port (located on the right side of the ECU board). 
+## Safety & Pinout
 
 > [!CAUTION]
-> Pin 5 on the CN2 header carries raw 12V battery voltage. Never connect this pin to your USB adapter or laptop. Doing so will instantly destroy the serial adapter chip, your laptop's USB port, and potentially the laptop itself.
+> Pin 5 on the ECU's `CN2` header carries raw +12V battery voltage. **Never connect this pin** to your USB adapter or laptop, as it will cause permanent damage to your equipment.
 
-| CN2 Pin | Function | Connection |
+### CN2 Header Pinout
+| Pin | Function | Connection |
 | :---: | :--- | :--- |
-| **Pin 1** | Ground (GND) | Connect to Cable Ground |
-| **Pin 2** | ECU Transmit (TX) | Connect to Cable Receive (RX) |
-| **Pin 3** | +5V Logic Power | *Unconnected* (USB port supplies power) |
-| **Pin 4** | ECU Receive (RX) | Connect to Cable Transmit (TX) |
-| **Pin 5** | +12V Power | **DO NOT CONNECT** |
+| **1** | Ground (GND) | Connect to Cable Ground |
+| **2** | ECU Transmit (TX) | Connect to Cable Receive (RX) |
+| **3** | +5V Logic | *Do not connect* |
+| **4** | ECU Receive (RX) | Connect to Cable Transmit (TX) |
+| **5** | +12V Power | **DO NOT CONNECT** |
 
 ---
 
-## 2. Wiring Mappings
+## Wiring Options
 
-To modify the cable, cut off the proprietary Nokia phone plug end and expose the internal wires. Because manufacturers used different wire configurations, you must identify your cable type.
+You must identify your specific Nokia cable type by opening the USB plug housing and examining the internal PCB.
 
-### Option A: RadioShack USB Cable (Part #170-0787)
-This cable uses a more complex internal circuit board but provides highly stable communication:
-*   **Brown Wire:** Ground. Connect to the wire shielding and solder to **Pin 1 (GND)** on the CN2 connector.
-*   **Orange Wire:** Cable RX. Solder to **Pin 2 (ECU TX)** on the CN2 connector.
-*   **Red Wire:** Cable TX. Solder to **Pin 4 (ECU RX)** on the CN2 connector.
+### Option A: RadioShack USB Cable (#170-0787)
+*   **Brown:** Ground (Pin 1)
+*   **Orange:** Cable RX -> Connect to Pin 2 (ECU TX)
+*   **Red:** Cable TX -> Connect to Pin 4 (ECU RX)
 
-| RadioShack Board Layout |
-| :---: |
-| ![RadioShack Cable Top PCB View](RadioShackUSBCabletopview.jpg) |
-| *Top view of the RadioShack cable PCB with the housing removed.* |
-| ![RadioShack Cable Bottom PCB View](RadioShackUSBCablebottomview.jpg) |
-| *Bottom view of the RadioShack cable PCB showing pin traces.* |
+### Option B: Generic / eBay Nokia Cable
+*   **Black:** Ground (Pin 1)
+*   **White:** Cable RX -> Connect to Pin 2 (ECU TX)
+*   **Blue:** Cable TX -> Connect to Pin 4 (ECU RX)
 
 ---
 
-### Option B: Generic / eBay USB Nokia Cable
-These generic cables feature a smaller, simpler PCB inside the USB plug:
-*   **Black Wire:** Ground. Connect to the wire shielding and solder to **Pin 1 (GND)** on the CN2 connector.
-*   **White Wire:** Cable RX. Solder to **Pin 2 (ECU TX)** on the CN2 connector.
-*   **Blue Wire:** Cable TX. Solder to **Pin 4 (ECU RX)** on the CN2 connector.
-
-| Generic eBay Board Layout |
-| :---: |
-| ![Generic eBay Cable Top PCB View](eBayUSBCabletopview.jpg) |
-| *Top view of the generic USB-to-TTL serial adapter board.* |
-| ![Generic eBay Cable Bottom PCB View](eBayUSBCablebottomview.jpg) |
-| *Bottom view showing wire solder points on the generic board.* |
-
----
-
-## 3. Software Configuration
-
-1.  **Remove `J12` Jumper:** To enable full-duplex serial communication on the OBD1 ECU, you must desolder and remove the **`J12`** jumper on the main ECU board.
-2.  **Driver Installation:** Do not install Nokia phone software. Instead, download and install the generic **Prolific PL-2303 USB-to-Serial driver** directly from Prolific's official website or support archives.
-3.  **Com Port Setup:** Connect the cable, identify the assigned COM port number in Windows Device Manager, and set your tuning software (e.g., Crome, Hondata, TurboEdit) to use that COM port at **38400 baud** (or the rate required by your specific ROM codebase).
+## Software Configuration
+1.  **Jumper Removal:** Desolder and remove the **`J12`** jumper on the main ECU board to enable full-duplex communication.
+2.  **Drivers:** Install the generic **Prolific PL-2303** USB-to-Serial driver.
+3.  **Baud Rate:** Set your tuning suite (Crome, Hondata, TurboEdit) to the assigned COM port at **38400 baud**.

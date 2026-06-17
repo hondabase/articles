@@ -1,21 +1,39 @@
 ---
-summary: 'Analog to Digital Converter: An integrated circuit (IC) which converts an analog signal to a digital representation.'
-tags: [ecu, reference, tuning, rom, sensors, wiring, conversion]
+summary: 'An overview of Analog-to-Digital Conversion (ADC) in automotive ECU applications, including resolution and reference voltage concepts.'
+tags: [ecu, tuning, sensors, electronics-fundamentals]
 applies_to:
   obd: [0, 1, 2]
-  brand: Acura
-  models: [integra]
-  chassis: {}
+  models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
+  chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: ADC
-    url: /pgmfi/wiki/library/adc
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# ADC
+# Analog-to-Digital Conversion (ADC)
 
-Analog to Digital Converter: An integrated circuit (IC) which converts an analog signal to a digital representation. As an example let's consider an 8-bit [ADC](/cars/wiring/adc) with a 5.00V reference. 8-bit: An "8-bit [ADC](/cars/wiring/adc)" means that it will convert the input signal to an 2^8 equivalent numerical representation (that's where the "8" comes in.) 2^8 = 2*2*2*2*2*2*2*2 = 256 possible values. In the digital world, zero is a legitimate number, which uses up one of the possible combinations, giving us a 0-255 count output. 5.00V reference: The reference voltage is what the input signal is compared to, as a fraction. If we put a 5.00V signal into our [ADC](/cars/wiring/adc), and it's using a 5.00V reference, what will be the output? Full scale! In our 8-bit example "full scale" is 255 counts so that's what we get for the output. A zero signal input will output zero. Anyway the math works out to: Digital output = ((Vin / Vref) * 2^number of bits) - 1 With this you can find out exactly what your software will read from the [ADC](/cars/wiring/adc) with a given input signal. (For the purpose of this example I left out the case of measuring both positive and negative voltages, we won't see that in an automotive [ECU](/cars/ecu/ecu).) Analog to digital conversion is ***never*** perfect. It is a process of approximation - `each` ***exact*** digital value has to represent a ***range*** of analog values. The resolution (normally measured in bits) of an analog to digital converter represents how many possible values the analog range can be divided into.
+An **Analog-to-Digital Converter (ADC)** is a fundamental integrated circuit (IC) within an ECU that converts continuous analog voltage signals from engine sensors into discrete digital values that the ECU processor can understand and manipulate.
+
+---
+
+## Key Concepts
+
+### Resolution (Bit Count)
+The resolution of an ADC, measured in bits, determines the precision with which it can represent an analog signal. 
+
+*   **Example (8-bit ADC):** An 8-bit converter divides the analog range into $2^8$ (256) possible values. 
+*   **Counting:** In digital systems, counting typically starts at zero, resulting in a range of 0 to 255.
+
+### Reference Voltage ($V_{ref}$)
+The reference voltage defines the upper limit of the analog range the ECU can measure. If an ADC is using a 5.00V reference, an input signal of 5.00V will correspond to the "full scale" digital output (e.g., 255 in an 8-bit system).
+
+---
+
+## Conversion Calculation
+The digital output value can be estimated using the following formula:
+
+$$\text{Digital Output} = \left( \frac{V_{in}}{V_{ref}} \times 2^{\text{number of bits}} \right) - 1$$
+
+*   $V_{in}$: Input signal voltage.
+*   $V_{ref}$: Reference voltage.
+
+### Precision and Approximation
+Analog-to-digital conversion is an approximation process. Each digital value represents a specific range of analog voltages, not a single, perfectly precise point. Higher bit resolution allows for finer division of this analog range, reducing the error margin in sensor readings.

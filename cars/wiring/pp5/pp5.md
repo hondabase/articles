@@ -1,54 +1,29 @@
 ---
-summary: 'PP5 : 9093 (??) UK Rover 216 Cabrio Rover (UK) had an agreement with honda where honda engines (ZC, most notably) ended up in Rover cars.'
-tags: [hardware, education, ecu, tuning, rom, sensors, reference, wiring, conversion, diagnostics]
+summary: 'Technical overview of the PP5 Rover/Honda ECU series, exploring its origins in the Rover-Honda partnership and compatibility.'
+tags: [ecu, reference, tuning, rom, hardware]
 applies_to:
   obd: [0]
-  brand: Honda
   models: [civic, crx]
   chassis: [ef]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: PP5
-    url: /pgmfi/wiki/library/pp5
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# PP5
+# PP5 ECU Reference (Rover/Honda)
 
-##  PP5 : 90-93 (??) UK Rover 216 Cabrio
- 
+The **PP5** series ECUs are historical units resulting from the partnership between Honda and Rover (UK), which led to the installation of Honda engines (specifically the ZC series) into Rover vehicles in the early 1990s.
 
-Rover (UK) had an agreement with honda where honda engines (ZC, most notably) ended up in Rover cars. They continued to use [OBD0](/cars/rom/obd0) style plugs and distributors into the early 90s apparently. They seem to be quite similar to most [ECU](/cars/ecu/ecu)s of the era.
+---
 
-The PP5-E01 is a romless ECU which ran the early Rover 216 , 416 , GSi , Gti and possibly the 220 and 420, these early romless [ECU](/cars/ecu/ecu)'s are mostly fitted to rovers without Lambda sensors. The early ECU's are difficult to chip and require some form of adapter like the romless PM6's and PM7's.
-The alternatives are PP5-G01, PP4-`R00` or PP4-G01 which I beleive to all be external [ROM](/cars/rom/rom)'d ECU's and common place in the UK. They are all ODB0 non VTEC ECU's, and should be swappable with PM7, PM6, etc. Some of these [ECU](/cars/ecu/ecu)'s use an APS which may give [CEL](/cars/wiring/cel)/Limp when not present. 
+## Technical Overview
+These ECUs are similar in design to other Honda OBD0 ECUs of the same era but were adapted for specific Rover vehicle integration.
 
-PP5-E01 Rover 216 GTi (no lambda)
-PP5-G01 Rover 216 GTi (with lambda), Honda Concerto 1.6 litre (DOHC) 93-96
-PP4-G01 Rover 216 16V (with lambda), Honda Concerto 1.6 litre (SOHC) 92-96 
-PP4-`R00` Rover 220 Coupe (with lambda), Honda Concerto 1.6 litre (SOHC) 93-96 
-PP5-`R00` Honda Concerto 1.6 litre (DOHC) 93-96 
+*   **Variants:** 
+    *   **PP5-E01:** Early ROM-less ECU (Rover 216/416/GSi/Gti). Requires external ROM adapters (similar to PM6/PM7). Primarily fitted to vehicles without Lambda sensors.
+    *   **PP5-G01 / PP4-G01 / PP4-R00:** Later versions featuring external ROM support, common in UK market vehicles.
 
+## Compatibility
+These units are generally **OBD0 non-VTEC ECUs** and are largely swappable with standard OBD0 Honda ECUs (e.g., PM7, PM6), provided wiring and sensor requirements are met.
 
-<figure>
-    <img src="PP5-E01-zdyne_component.jpg" alt="Mark Lamond&apos;s PP5 [ECU](/cars/ecu/ecu) top-side scan - Zdyne SECU">
-    <figcaption>Mark Lamond's PP5 [ECU](/cars/ecu/ecu) top-side scan - Zdyne SECU</figcaption>
-</figure>
+*   **Atmospheric Pressure Sensor (APS):** Some of these units utilize an APS. If the sensor is missing, the ECU may trigger a Check Engine Light (CEL) or enter limp mode.
 
-<figure>
-    <img src="PP5-E01zdyne_solder.jpg" alt="Mark Lamond&apos;s PP5 bottom scan - Zdyne SECU">
-    <figcaption>Mark Lamond's PP5 bottom scan - Zdyne SECU</figcaption>
-</figure>
-
-<figure>
-    <img src="IMG_1436.JPG" alt="PP5-G01">
-    <figcaption>PP5-G01</figcaption>
-</figure>
-
-<figure>
-    <img src="PP5-G01.JPG" alt="PP5-G01">
-    <figcaption>PP5-G01</figcaption>
-</figure>
+*Always verify your ECU’s specific part number and board layout before attempting swaps, as Rover-specific implementation details can vary compared to standard USDM/JDM Honda ECUs.*

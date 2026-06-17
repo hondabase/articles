@@ -42,13 +42,17 @@ To configure the USBMOD3 module for bus-powered (USB-powered) operation and bypa
 
 Before soldering the module to your ECU harness, perform a loopback test to verify that the USB converter chip and PC drivers are functioning correctly:
 
-1.  **Bridge Serial Lines:** Temporarily connect a jumper wire between **Pin 27 (RXD)** and **Pin 28 (TXD)** on the USBMOD3 board.
-2.  **Connect to PC:** Plug the module's USB cable into your laptop. Download and install the standard FTDI Virtual COM Port (VCP) drivers from the official FTDI website.
-3.  **Identify COM Port:** Open Windows **Device Manager** and expand the **Ports (COM & LPT)** section. Note the COM port number assigned to the USB Serial Port (e.g., `COM3`).
-4.  **Open Terminal Console:** Launch a serial terminal application (such as PuTTY or Tera Term) and connect to the identified COM port at **38400 baud**.
-5.  **Type Test:** Type several characters into the terminal window.
-    *   **Success:** If you see the characters echo back on the screen, the FTDI chip is successfully transmitting and receiving data.
-    *   **Failure:** If nothing appears, check your drivers, pin jumpers, and USB cable.
+1. **Bridge Serial Lines:** Temporarily connect a jumper wire between **Pin 27 (RXD)** and **Pin 28 (TXD)** on the USBMOD3 board.
+2. **Connect to PC:** Plug the module's USB cable into your laptop. Download and install the standard FTDI Virtual COM Port (VCP) drivers from the official FTDI website.
+3. **Identify COM Port:** Open Windows **Device Manager** and expand the **Ports (COM & LPT)** section. Note the COM port number assigned to the USB Serial Port (e.g., `COM3`).
+4. **Open Terminal Console:** Launch a serial terminal application (such as PuTTY or Tera Term) and connect to the identified COM port at **38400 baud**.
+5. **Type Test:** Type several characters into the terminal window.
+ 
+
+* **Success:** If you see the characters echo back on the screen, the FTDI chip is successfully transmitting and receiving data.
+ 
+
+* **Failure:** If nothing appears, check your drivers, pin jumpers, and USB cable.
 
 ---
 
@@ -56,9 +60,9 @@ Before soldering the module to your ECU harness, perform a loopback test to veri
 
 Once the loopback test passes, remove the temporary jumper between Pin 27 and 28, and connect the module to the ECU\'s `CN2` header:
 
-1.  Connect **Pin 27 (RXD on module)** to **Pin 2 (ECU TX)** on the `CN2` header.
-2.  Connect **Pin 28 (TXD on module)** to **Pin 4 (ECU RX)** on the `CN2` header.
-3.  Connect **Ground (GND on module)** to **Pin 1 (ECU GND)** on the `CN2` header.
+1. Connect **Pin 27 (RXD on module)** to **Pin 2 (ECU TX)** on the `CN2` header.
+2. Connect **Pin 28 (TXD on module)** to **Pin 4 (ECU RX)** on the `CN2` header.
+3. Connect **Ground (GND on module)** to **Pin 1 (ECU GND)** on the `CN2` header.
 
 > [!WARNING]
 > Never connect the ECU's `CN2` Pin 5 (12V) to the USBMOD3 board. This will instantly destroy the transceiver module and damage your laptop's USB port.
