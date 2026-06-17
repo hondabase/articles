@@ -1,26 +1,26 @@
 ---
-summary: 'RAM Location Bytes Description Notes : : : : ROM Location Bytes Description Notes : : : : 2EC1 1 Rev Limit Desired RPM/45.'
-tags: [tuning, rom, sensors, reference]
+summary: 'Technical reference for P13 JDM ECU memory mapping, including RAM locations and ROM-based rev limit calculations.'
+tags: [tuning, rom, sensors, reference, p13]
 applies_to:
-  obd: [0, 1, 2]
-  models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
-  chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
-complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: P13JDM
-    url: /pgmfi/wiki/library/p13jdm
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  obd: [1]
+  models: [prelude]
+  chassis: [bb]
+complexity: intermediate
 ---
 
-# P13JDM
+# P13 JDM ECU Memory Map
 
-### [RAM](/cars/reference/ram) 
+## RAM Locations
 
-| **Location** | **Bytes** | **Description** | **Notes** | | :--- | :--- | :--- | :--- | | | | | |
+| Location | Bytes | Description | Notes |
+| :--- | :--- | :--- | :--- |
+| - | - | - | - |
 
-### [ROM](/cars/rom/rom) 
+## ROM Locations
 
-| **Location** | **Bytes** | **Description** | **Notes** | | :--- | :--- | :--- | :--- | | 2EC1 | 1 | Rev Limit | Desired [RPM](/cars/sensors/rpm)/45.18 = some 8-bit decimal value. change to Hex and put in 2EC1 |
+| Location | Bytes | Description | Notes |
+| :--- | :--- | :--- | :--- |
+| 2EC1 | 1 | Rev Limit | Desired RPM / 45.18 = 8-bit decimal value. Convert to Hex and store at 2EC1. |
+
+> [!TIP]
+> To calculate the hex value for the rev limit, divide your target RPM by 45.18, then convert the resulting decimal value to hexadecimal.

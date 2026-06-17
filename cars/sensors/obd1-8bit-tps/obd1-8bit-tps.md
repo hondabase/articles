@@ -1,24 +1,34 @@
 ---
-summary: "If x is a 8bit TPS value, then: TPS(''x'') = ((hextodec''x'')/229.5100)''%'' WOT(100%)= 4.5 v = 4.5/5255 = 229.5 by Calvin Baank"
-tags: [ecu, reference, sensors]
+summary: "Technical reference for calculating Throttle Position Sensor (TPS) percentage from raw 8-bit ECU data in OBD1 Honda systems."
+tags: [ecu, sensors, tps, tuning, obd1]
 applies_to:
   obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
-  chassis: [bb, cb-cd, da, dc2, eg, eg-eh]
+  chassis: [bb, cb-cd, da, dc2, eg, eh]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD1 8bit TPS'
-    url: /pgmfi/wiki/library/obd1-8bit-tps
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD1 8bit TPS
+# OBD1 8-bit TPS Scaling Reference
 
-If x is a 8-bit TPS value, then:
+The Honda OBD1 ECU processes Throttle Position Sensor (TPS) input as an 8-bit value. This value represents the voltage signal converted into a digital range.
 
-- TPS(''x'') = ((hextodec''x'')/229.5*100)''%''
+## Calculation Formula
 
-[WOT](/cars/reference/wot)(100%)= 4.5 v = 4.5/5*255 = 229.5 by Calvin Baank
+To convert a raw 8-bit hexadecimal TPS value into a percentage, use the following formula:
+
+**TPS(x) = (HexToDec(x) / 229.5) * 100**
+
+Where:
+*   **x**: The raw 8-bit hexadecimal value from the ECU.
+*   **HexToDec(x)**: The decimal equivalent of the hexadecimal input.
+
+## Wide Open Throttle (WOT) Reference
+
+At Wide Open Throttle (WOT), the sensor outputs approximately 4.5V. The ECU maps this voltage to the 8-bit digital range as follows:
+
+*   **Voltage:** 4.5V
+*   **Calculation:** (4.5V / 5.0V) * 255 = 229.5
+*   **Result:** 229.5 (Decimal) represents 100% throttle position.
+
+> [!NOTE]
+> The value 229.5 is the theoretical maximum for the 8-bit TPS range in the OBD1 ECU architecture. Values exceeding this may indicate sensor calibration issues or wiring faults.

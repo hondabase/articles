@@ -1,26 +1,41 @@
 ---
-summary: 'RPM conversion formula for OBD0 and OBD1 VTEC activation values.'
-tags: [ecu, reference, sensors]
+summary: 'Calculate VTEC engagement and disengagement thresholds for OBD0 and OBD1 Honda ECUs using the standard RPM conversion formula.'
+tags: [ecu, tuning, vtec, rom]
 applies_to:
   obd: [0, 1]
   models: [accord, civic, crx, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, ef, eg, eg-eh]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: OBD0VTEC
-    url: /pgmfi/wiki/library/obd0vtec
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD0 & OBD1 VTEC RPM Formula
+# OBD0 and OBD1 VTEC RPM Calculation Formula
 
-In OBD0 and OBD1 Honda VTEC ECUs, the VTEC engagement and disengagement thresholds are determined using the following formula:
+VTEC engagement and disengagement thresholds in OBD0 and OBD1 Honda ECUs are stored as single-byte hexadecimal values in the ROM. These values must be converted to decimal and processed through a specific formula to determine the actual RPM trigger point.
 
-`RPM = (Decimal_Value - 128) * 62.52`
+## Calculation Formula
 
-Where:
+Use the following formula to convert the ROM byte value to engine RPM:
 
-* `Decimal_Value` is the base-10 value of the byte located at the VTEC RPM activation/deactivation addresses in the ROM.
+**RPM = (Decimal_Value - 128) * 62.52**
+
+### Variables
+* **Decimal_Value:** The base-10 integer representation of the hexadecimal byte found at the VTEC activation or deactivation memory address.
+
+> [!IMPORTANT]
+> Ensure the hexadecimal value is converted to decimal before performing the subtraction. If the resulting value is negative, the threshold is effectively set below the engine's idle range.
+
+## Reference Table
+
+| Hex Value | Decimal Value | Calculated RPM |
+| :--- | :--- | :--- |
+| 0x80 | 128 | 0 |
+| 0x90 | 144 | 1,000 |
+| 0xA0 | 160 | 2,000 |
+| 0xB0 | 176 | 3,000 |
+| 0xC0 | 192 | 4,000 |
+| 0xD0 | 208 | 5,000 |
+| 0xE0 | 224 | 6,000 |
+| 0xF0 | 240 | 7,000 |
+
+> [!TIP]
+> When tuning, always ensure the VTEC engagement RPM is set higher than the disengagement RPM to prevent "VTEC hunting" or rapid cycling of the solenoid.

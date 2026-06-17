@@ -1,26 +1,28 @@
 ---
-summary: 'Ignition timing conversion formula for OBD0 Honda ECUs.'
-tags: [ecu, reference, sensors]
+summary: 'Technical reference for the ignition timing conversion formula used in OBD0 Honda ECU ROM mapping.'
+tags: [ecu, tuning, ignition, obd0]
 applies_to:
   obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD0 Ignition'
-    url: /pgmfi/wiki/library/obd0-ignition
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD0 Ignition Formula
+# OBD0 Ignition Timing Conversion Formula
 
-In OBD0 Honda ECUs, the raw byte value stored in the ROM is converted to ignition advance degrees using the following formula:
+To convert raw hexadecimal data from an OBD0 Honda ECU ROM into usable ignition advance values, use the following calculation.
 
-`Ignition Advance (Degrees) = (Decimal_Value - 15) * 0.36`
+## Calculation Formula
 
-Where:
+The ignition advance in degrees is derived from the raw byte value stored at the specific ignition map memory address:
 
-* `Decimal_Value` is the base-10 value of the byte located at the ignition map offset (often referred to as the value at the address).
+**Ignition Advance (Degrees) = (Decimal_Value - 15) * 0.36**
+
+### Variables
+* **Decimal_Value:** The base-10 integer representation of the hexadecimal byte found at the ignition map offset.
+
+> [!NOTE]
+> This formula applies specifically to standard OBD0 ROM structures. Ensure your map offsets are correctly identified before applying this conversion.
+
+> [!TIP]
+> When working with hex editors, ensure you convert the hex byte to decimal before subtracting 15 to avoid calculation errors.

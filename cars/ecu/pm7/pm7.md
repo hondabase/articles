@@ -1,59 +1,51 @@
 ---
-summary: 'Hardware specifications, board layout differences, and stock ROM binaries for the OBD0 DOHC ZC PM7 ECU.'
-tags: [ecu, reference]
+summary: 'Technical specifications, board layout documentation, and stock ROM binaries for the OBD0 DOHC ZC PM7 ECU.'
+tags: [ecu, obd0, pm7, tuning, zc]
 applies_to:
-  brand: Honda
-  engines: [D16A8, D16A9, D16Z5]
   obd: [0]
-  models: [civic, crx, del-sol]
-  chassis: [ef, eg, eg-eh, ek]
+  engines: [D16A8, D16A9, D16Z5]
+  models: [civic, crx]
+  chassis: [ef]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: PM7
-    url: /pgmfi/wiki/library/pm7
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD0 ZC PM7 ECU Guide
+# OBD0 DOHC ZC PM7 ECU Reference
 
-The PM7 ECU was the primary engine control unit used in the 1988–1991 DOHC ZC engines (such as the D16A8, D16A9, and D16Z5) found in European and Japanese market Civics and CRXs (e.g., the CRX 1.6i-16). 
+The PM7 ECU is the engine control unit utilized for the 1988–1991 DOHC ZC engines (D16A8, D16A9, and D16Z5) found in European and Japanese market vehicles.
 
-From a software standpoint, the PM7 codebase is nearly identical to the SOHC D16A6 PM6 codebase. Because of this architectural similarity, tuned custom ROMs from one ECU can be run on the other with minor adjustments to sensor configurations.
+> [!NOTE]
+> The PM7 codebase is architecturally similar to the SOHC D16A6 PM6 codebase. Custom ROMs are often cross-compatible between these units, provided sensor configurations are adjusted accordingly.
 
----
+## Board Revisions
 
-## 1. Board Revisions and Scans
-
-Below are component and solder side layout scans for different revisions of the PM7 board:
+The following board revisions represent the primary hardware variants encountered in the field.
 
 ### European PM7-E020
-
-This revision was commonly found in European-spec DOHC CRXs:
-
-![European PM7-E020 Component Side Layout Scan](PM7-E020_component.jpg)
-*Component side (top view) scan of the European PM7-E020 board.*
-
-![European PM7-E020 Solder Side Layout Scan](PM7-E020_solder.jpg)
-*Solder side (bottom view) scan of the European PM7-E020 board.*
-
----
+```carousel
+![European PM7-E020 Component Side](PM7-E020_component.jpg)
+*Component side (top view) of the European PM7-E020 board.*
+<!-- slide -->
+![European PM7-E020 Solder Side](PM7-E020_solder.jpg)
+*Solder side (bottom view) of the European PM7-E020 board.*
+```
 
 ### Alternate PM7 Layouts
+```carousel
+![JDM PM7-0330 Component Side](PM7-0330_component.jpg)
+*Component side (top view) of the JDM PM7-0330 board.*
+<!-- slide -->
+![Experimental PM7 Prototype](zc-experimental-ecu.jpg)
+*Component side (top view) of an early experimental PM7 ECU prototype.*
+```
 
-![JDM PM7-0330 Component Side Layout Scan](PM7-0330_component.jpg)
-*Top view component side of the JDM PM7-0330 board.*
+## Stock ROM Binaries
 
-![Experimental Honda ZC PM7 board scan](zc-experimental-ecu.jpg)
-*Top scan of an early, experimental PM7 ECU prototype.*
+The following files contain the original factory calibration data for the PM7 ECU.
 
----
+| ROM Version | Application | Size |
+| :--- | :--- | :--- |
+| [PM7-0330](Pm7-03301989.bin) | JDM 1989 DOHC ZC | 32 KB |
+| [PM7-Euro](PM7-euro.bin) | German D16Z5 (125 HP) | 32 KB |
 
-## 2. ROM Binaries & Downloads
-
-For analysis and tuning, you can download the stock ROM calibration BIN files:
-
-* [Download the JDM PM7-0330 Stock ROM](Pm7-03301989.bin) *(32 KB, Stock 1989 JDM DOHC ZC calibration)*
-* [Download the European PM7 Stock ROM](PM7-euro.bin) *(32 KB, German D16Z5 DOHC ZC 125 HP calibration)*
+> [!IMPORTANT]
+> Ensure the correct checksum is verified after flashing these binaries to an EPROM to prevent engine management errors.

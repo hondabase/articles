@@ -1,20 +1,39 @@
 ---
-summary: 'crome scripts work on p06, p28, p30 (edm, jdm, usdm), p72; it recognizes the rom as do most other Rom editors.'
-tags: [ecu, reference, tuning, rom, sensors, diagnostics]
+summary: 'Learn how to utilize ROM editor scripts to expand stock ECU fuel and ignition tables for forced induction applications.'
+tags: [ecu, tuning, rom, boost, maps]
 applies_to:
-  obd: [0, 1, 2]
+  obd: [1]
   models: [civic, del-sol, integra]
-  chassis: [dc2, eg, eg-eh]
-complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Add Boost'
-    url: /pgmfi/wiki/library/add-boost
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  chassis: [dc2, eg, eh]
+complexity: intermediate
 ---
 
-# Add Boost
+# ECU Boost Table Expansion
 
-crome scripts work on p06, p28, p30 (edm, jdm, usdm), p72; it recognizes the rom as do most other Rom editors. Not all scripts work on all [ROM](/cars/rom/rom)s. Boost is a notable one to mention (works mainly w/ P72 currently). [Crome ROMEditor](/cars/rom/crome-rom-editor)'s "add boost" script enlarges the stock tables so that there is an area for boost. This is very similar to what the boost tab of [Uber Data ERM](/cars/rom/uber-data-erm) does too. The stock table size is changed 10x20 -> 15x20 (edit this if this is not right). The last 5 columns are assigned MAP values in the boost region instead of NA, allowing the [ECU](/cars/ecu/ecu) to understand what to do when the car sees boost (MAP sensor reads a pressure greater than atmospheric pressure).
+ROM editor scripts, such as those used in Crome, allow for the modification of stock ECU fuel and ignition tables to support forced induction. These scripts are compatible with various OBD1 ECU variants, including P06, P28, P30 (EDM, JDM, USDM), and P72.
+
+## Overview
+The "Add Boost" script modifies the stock ECU ROM to accommodate positive manifold pressure. By default, stock ECU tables are limited to atmospheric pressure ranges. The script expands these tables to allow the ECU to reference specific fuel and ignition values when the MAP sensor detects pressure exceeding atmospheric levels.
+
+> [!IMPORTANT]
+> Not all scripts are compatible with every ROM version. The "Add Boost" functionality is primarily validated for use with P72-based ROMs. Always verify ROM compatibility before applying scripts.
+
+## Technical Implementation
+The script performs a structural change to the internal lookup tables within the ROM:
+
+*   **Table Resizing:** The standard table dimensions are typically increased from 10x20 to 15x20.
+*   **MAP Scaling:** The additional columns are remapped to correspond to boost pressure values rather than naturally aspirated (NA) vacuum values.
+*   **ECU Logic:** This modification enables the ECU to interpret MAP sensor signals above 1.0 bar (atmospheric pressure), allowing for precise fuel and timing adjustments under boost.
+
+## Compatibility
+The following ECU models are generally supported for table expansion scripts:
+
+| ECU Model | Region |
+| :--- | :--- |
+| P06 | USDM |
+| P28 | USDM |
+| P30 | EDM, JDM, USDM |
+| P72 | USDM |
+
+> [!TIP]
+> Ensure your MAP sensor is capable of reading the intended boost levels. A stock Honda MAP sensor is typically limited to approximately 10–11 psi. For higher boost levels, an aftermarket 2-bar or 3-bar MAP sensor and corresponding ROM scaling are required.

@@ -1,24 +1,30 @@
 ---
-summary: 'Remove R62,R64,R66 right by the center divider to turn an auto ECU into a 5 spd. JDM ECUs also require the addition of BR3.'
-tags: [ecu, reference, sensors]
+summary: 'Convert an automatic transmission ECU to manual transmission operation by removing specific resistors and adding a jumper. Applies to PS9, PG7, PM6, and PM7 ECU variants.'
+tags: [ecu, conversion, transmission, hardware]
 applies_to:
-  obd: [0, 1, 2]
+  obd: [0, 1]
   models: [civic, crx]
   chassis: [ef]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'PS9 Auto Manual'
-    url: /pgmfi/wiki/library/ps9-auto-manual
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# PS9 Auto Manual
+# Automatic to Manual Transmission ECU Conversion
 
-Remove `R62`,`R64`,`R66` right by the center divider to turn an auto [ECU](/cars/ecu/ecu) into a 5 spd. [JDM](/cars/sensors/jdm) [ECU](/cars/ecu/ecu)s also require the addition of BR3. This also applies to PG7, PM6 and PM7 [ECU](/cars/ecu/ecu)s which share the same pc board.
+Converting an automatic transmission ECU to manual transmission operation requires modifying the PCB to bypass automatic-specific logic. This procedure applies to PS9, PG7, PM6, and PM7 ECUs, which share the same PCB architecture.
 
-<figure>
- <img src="PM7autoTOmanual.jpg" alt="">
-</figure>
+## Modification Procedure
+
+To convert the ECU for manual transmission use, perform the following hardware modifications:
+
+*   **Remove Resistors:** Desolder and remove resistors **R62**, **R64**, and **R66**. These are located near the center divider of the PCB.
+*   **JDM ECU Requirement:** For JDM-spec ECUs, you must also install a jumper at location **BR3**.
+
+> [!CAUTION]
+> Ensure the PCB is clean of solder bridges after removing the resistors. Use a desoldering pump or wick to clear the through-holes completely.
+
+## PCB Reference
+
+The following image illustrates the location of the components requiring modification.
+
+![Automatic to Manual Conversion Points](PM7autoTOmanual.jpg)
+*PCB layout showing the location of R62, R64, R66, and BR3*

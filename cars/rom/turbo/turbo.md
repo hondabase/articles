@@ -1,20 +1,25 @@
 ---
-summary: "A turbocharger by definition is a centrifugal compressor which boosts the intake pressure of an internalcombustion engine, driven by an exhaustgas turbine fitted to the engine's exhaust manifold."
-tags: [tuning, rom, sensors, reference]
+summary: "A turbocharger is a centrifugal compressor that increases intake pressure in an internal-combustion engine, powered by an exhaust-gas turbine."
+tags: [tuning, turbo, forced-induction, sensors]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: Turbo
-    url: /pgmfi/wiki/library/turbo
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Turbo
+# Turbocharger Fundamentals
 
-A turbocharger by definition is a centrifugal compressor which boosts the intake pressure of an internal-combustion engine, driven by an exhaust-gas turbine fitted to the engine's exhaust manifold. Below are some other more in-depth turbocharger concepts: [Reading Turbo Compressor Maps ](/cars/rom/turbo-compressor-map)
+A turbocharger is a centrifugal compressor that increases the intake pressure of an internal-combustion engine. It is driven by an exhaust-gas turbine mounted directly to the engine's exhaust manifold.
+
+## Technical Concepts
+
+For advanced tuning and hardware selection, refer to the following documentation:
+
+* [Reading Turbo Compressor Maps](/cars/rom/turbo-compressor-map)
+
+> [!NOTE]
+> Forced induction systems require significant adjustments to fuel and ignition maps within the ECU to prevent engine damage. Ensure your wideband oxygen sensor and manifold absolute pressure (MAP) sensor are correctly calibrated for boost pressures.
+
+> [!WARNING]
+> Exceeding the volumetric efficiency limits of the stock engine internals can lead to catastrophic failure. Always verify your compression ratio and fuel system capacity before increasing boost.

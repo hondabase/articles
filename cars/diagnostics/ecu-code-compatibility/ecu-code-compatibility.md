@@ -1,24 +1,41 @@
 ---
-summary: 'Most honda ECUs can run code from other ECUs of a similar age, and similar family. Civics and Integras generally can share code.'
-tags: [ecu, reference, tuning, rom, sensors, diagnostics]
+summary: 'A technical guide to Honda ECU code compatibility, detailing how ECUs within the same generation and hardware family share firmware and tuning data.'
+tags: [ecu, tuning, rom, diagnostics, firmware]
 applies_to:
   obd: [0, 1]
-  brand: Acura/Honda
   models: [accord, civic, integra, prelude]
-  chassis: {}
+  chassis: [all]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'ECU-Code Compatibility'
-    url: /pgmfi/wiki/library/ecu-code-compatibility
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# ECU-Code Compatibility
+# Honda ECU Code Compatibility and Cross-Platform Flashing
 
-Most honda [ECU](/cars/ecu/ecu)s can run code from other [ECU](/cars/ecu/ecu)s of a similar age, and similar family. Civics and Integras generally can share code. Preludes and Accords are certainly from the same design team, and sometimes can share code. For specific information consult:
+Honda ECUs within the same generation and hardware family are often capable of executing code from other units. Civic and Integra ECUs typically share high levels of compatibility, while Prelude and Accord ECUs share distinct design architectures that allow for cross-compatibility within their respective groups.
 
-- [OBD0 Code Compatibility](/cars/diagnostics/obd0-code-compatibility) - addresses [OBD0 MPFI](/cars/diagnostics/obd0mpfi) [ECU](/cars/ecu/ecu)s
-- [OBD1 Code Compatibility](/cars/wiring/obd1-code-compatibility) - addresses [OBD1 Civic Integra](/cars/sensors/obd1-civic-integra) [ECU](/cars/ecu/ecu)s
+## Compatibility Overview
+
+Compatibility is determined by the hardware generation (OBD standard) and the internal processor architecture. Before attempting to swap or flash code between units, verify the hardware revision and pinout configuration.
+
+> [!WARNING]
+> **Electrical Precautions:** Always verify the pinout of the target ECU before installation. Running incompatible code or installing an ECU into a chassis with a different pinout can result in permanent damage to the ECU, engine sensors, or the vehicle wiring harness.
+
+## Compatibility Factors
+
+When determining if code can be shared between units, evaluate the following technical requirements:
+
+* **Hardware Generation:** ECUs must share the same OBD standard (e.g., OBD0, OBD1).
+* **Processor Architecture:** The internal MCU must be compatible with the target ROM image.
+* **Sensor Configuration:** The target ECU must support the specific sensor inputs required by the engine harness (e.g., VTEC vs. non-VTEC, O2 sensor types).
+* **Board Revision:** Different board revisions may require specific jumper settings or hardware modifications to function correctly with swapped code.
+
+## Reference Documentation
+
+For detailed compatibility matrices and specific hardware requirements, refer to the following resources:
+
+| Standard | Scope |
+| :--- | :--- |
+| **OBD0** | Hardware and firmware requirements for OBD0 MPFI ECUs. |
+| **OBD1** | Hardware and firmware requirements for OBD1 Civic and Integra ECUs. |
+
+> [!TIP]
+> Always verify the board ID (e.g., P06, P30, P72) and PCB revision markings before attempting to flash firmware, as internal component population can vary significantly between units that share the same external casing.

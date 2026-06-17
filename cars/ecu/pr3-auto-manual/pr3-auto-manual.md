@@ -1,28 +1,36 @@
 ---
-summary: 'Resistor swap procedure to convert an OBD0 PR3 ECU from automatic to manual transmission.'
-tags: [ecu, reference]
+summary: 'Step-by-step procedure to convert an OBD0 PR3 ECU from automatic to manual transmission by relocating the R68 resistor.'
+tags: [ecu, obd0, pr3, transmission, modification]
 applies_to:
   obd: [0]
-  ecus: [PR3]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'PR3 Auto Manual'
-    url: /pgmfi/wiki/library/pr3-auto-manual
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD0 PR3 Auto to Manual Conversion
+# OBD0 PR3 ECU Automatic to Manual Conversion
 
-To convert an automatic transmission OBD0 PR3 ECU to a manual transmission configuration:
+Converting an OBD0 PR3 ECU from automatic to manual transmission requires a physical modification to the PCB to change the transmission configuration logic.
 
-1. Locate the resistor marked **`R68`** on the ECU board (located near the center divider of the PCB).
-2. Desolder and move the resistor from **`R68`** to the empty footprint at **`R67`**.
+## Procedure
 
-Refer to the high-resolution board diagram below for the exact resistor location:
+1. Locate the resistor labeled **R68** on the ECU PCB. It is positioned near the center divider of the board.
+2. Desolder the resistor from the **R68** position.
+3. Solder the same resistor into the empty footprint labeled **R67**.
 
-![OBD0 PR3 ECU automatic to manual transmission resistor modification location](OBD0_pr3-auto-manual.jpg)
+> [!CAUTION]
+> Ensure the ECU is disconnected from all power sources before performing any soldering. Use a temperature-controlled soldering station to prevent damage to the PCB traces.
+
+## Component Location
+
+The following carousel illustrates the board layout and the specific resistor locations required for this modification.
+
+```carousel
+![PR3 PCB Overview](pr3_board_top.jpg)
+*Top view of the OBD0 PR3 PCB showing the R67 and R68 resistor locations.*
+<!-- slide -->
+![Resistor Detail](pr3_resistor_zoom.jpg)
+*Close-up view of the R67 and R68 footprints.*
+```
+
+{{> soldering-best-practices }}

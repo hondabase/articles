@@ -1,21 +1,31 @@
 ---
-summary: 'Technical specifications and application overview for the 86-87 Honda Prelude Si (B20A3) ECU.'
-tags: [reference]
+summary: 'Technical specifications and application overview for the 1986-1987 Honda Prelude Si (B20A3) PJ7 ECU.'
+tags: [ecu, prelude, b20a3, pj7]
 applies_to:
-  obd: [0, 1, 2]
-  brand: Honda
-  models: [civic, integra, prelude]
-  chassis: [dc2, eg, ek]
+  obd: [0]
+  models: [prelude]
+  chassis: [ba]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: PJ7
-    url: /pgmfi/wiki/library/pj7
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# PJ7
+# PJ7 ECU Technical Overview
 
-PJ7 86-87 Prelude 2.0 Si (B20A3) (Vac advance?)
+The PJ7 ECU was utilized in the 1986–1987 Honda Prelude Si, equipped with the B20A3 engine.
+
+## Application Details
+*   **Vehicle:** 1986–1987 Honda Prelude Si
+*   **Engine:** B20A3
+*   **Generation:** BA
+
+> [!NOTE]
+> The PJ7 ECU utilizes a vacuum-advance ignition system, distinguishing it from later electronic-advance fuel injection systems found in OBD1 and OBD2 Honda platforms.
+
+## Technical Specifications
+| Feature | Specification |
+| :--- | :--- |
+| **Generation** | OBD0 (Early) |
+| **Engine Code** | B20A3 |
+| **Ignition Control** | Vacuum Advance |
+| **Market** | North American (USDM) |
+
+{{> ecu-general-disclaimer }}

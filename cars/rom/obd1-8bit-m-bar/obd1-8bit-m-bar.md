@@ -1,89 +1,58 @@
 ---
-summary: 'Archived P72/P75 OBD1 MAP-byte formulas and calibration values for stock and uncorked ROM code.'
-tags: [tuning, sensor, maps]
+summary: 'Technical reference for OBD1 P72/P75 MAP-byte conversion formulas, calibration values, and voltage scaling.'
+tags: [tuning, sensor, maps, obd1, p72, p75]
 applies_to:
   obd: [1]
   ecus: [P72, P75]
   models: [integra]
   chassis: [dc2]
 complexity: advanced
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD1 8bit M Bar'
-    url: /pgmfi/wiki/library/obd1-8bit-m-bar
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD1 8-bit MAP calibration in millibars
+# OBD1 8-bit MAP Calibration in Millibars
 
-This reference preserves the MAP conversion formulas and P72/P75 calibration values
-documented by the original pgmfi community. Use them to understand the archived ROM
-code, not as a universal calibration for every Honda ECU or MAP sensor.
+This reference provides the MAP conversion formulas and P72/P75 calibration values used in OBD1 ROM code. These values are intended for understanding legacy ROM structures and should be verified against specific ECU code, fuel-cut offsets, and sensor hardware before implementation.
 
 > [!NOTE]
-> The source describes these raw values as being for P72/P75 code and says
-> most OBD1 ECUs follow the same rule. Verify the actual ROM code, fuel-cut offset, and
-> sensor calibration before applying the formulas elsewhere.
+> Most OBD1 ECUs follow similar logic, but verify the actual ROM code, fuel-cut offset, and sensor calibration before applying these formulas to non-P72/P75 applications.
 
-## Basic MAP-byte formulas
+## Basic MAP-Byte Formulas
 
-The archived notes assume that the stock MAP sensor's maximum reading is `1764 mbar`.
+The following formulas assume a stock MAP sensor maximum reading of 1764 mbar.
 
-Stock code halves the MAP byte:
+### Stock Configuration
+Stock code utilizes a halved MAP byte value:
+`pressure_mbar = (1764 / 255) * (map_byte / 2)`
 
-```text
-pressure_mbar = (1764 / 255) * (map_byte / 2)
-```
+### Uncorked Configuration
+When the ROM's MAP value is uncorked, the division by two is removed:
+`pressure_mbar = (1764 / 255) * map_byte`
 
-When the ROM's MAP value is uncorked, the final division by two is removed:
+### Voltage Formulas
+The following formulas define the relationship between raw values and voltage, where the fuel-cut offset is 24 (located at address `0x4DCC` in the referenced code):
 
-```text
-pressure_mbar = (1764 / 255) 
+*   **Stock MAP:** `volts = (5 / 255) * ((raw / 2) + fuel_cut)`
+*   **Boost MAP:** `volts = (5 / 255) * (raw + fuel_cut)`
 
-* map_byte
-```
+## Voltage Conversion
 
-The same notes document these voltage formulas:
+The following linear conversions are derived from standard vacuum and absolute pressure points:
 
-```text
-stock map: volts = (5 / 255) * ((raw / 2) + fuel_cut)
-boost map: volts = (5 / 255) 
-
-* (raw + fuel_cut)
-```
-
-The listed stock fuel-cut value is `24`, editable at address `0x4DCC` in the referenced
-code.
-
-## Voltage conversion notes
-
-The archived page includes these two linear conversions:
-
-```text
-inHg = 20 * volts / 1.85 - 30.81
-mbar = 365.9 
-
-* volts - 29.9
-```
-
-They are derived on the page from the following points:
+*   **Inches of Mercury (inHg):** `inHg = 20 * volts / 1.85 - 30.81`
+*   **Millibars (mbar):** `mbar = 365.9 * volts - 29.9`
 
 | Scale | Point 1 | Point 2 |
 | :--- | :--- | :--- |
-| Vacuum | 2.85 V = 0 inHg | 1.0 V = 20 inHg |
-| Absolute pressure | 2.85 V = 1013 mbar | 1.0 V = 336 mbar |
+| **Vacuum** | 2.85 V = 0 inHg | 1.0 V = 20 inHg |
+| **Absolute Pressure** | 2.85 V = 1013 mbar | 1.0 V = 336 mbar |
 
-## Archived P72/P75 calibration values
-
-The following values are transcribed from the source. The first table uses the source's
-full raw-value labels, while the second shows the corresponding halved stock-map labels.
+## Calibration Values
 
 > [!CAUTION]
-> The source labels the final full-scale row as `256`, although an unsigned 8-bit value tops out at `255`. The value is preserved here as an endpoint label from the original notes.
+> The source documentation labels the final full-scale row as `256`. As an unsigned 8-bit value tops out at `255`, this value is preserved as an endpoint reference from the original technical notes.
 
-| Source raw label | Voltage | Pressure |
+### Full Raw-Value Calibration
+| Source Raw Label | Voltage | Pressure |
 | :---: | :---: | :---: |
 | 0 | 0.471 V | 142.3 mbar |
 | 24 | 0.706 V | 228.4 mbar |
@@ -96,7 +65,8 @@ full raw-value labels, while the second shows the corresponding halved stock-map
 | 240 | 2.824 V | 1003.0 mbar |
 | 256 | 2.980 V | 1061.0 mbar |
 
-| Halved stock-map label | Voltage | Pressure |
+### Halved Stock-Map Calibration
+| Halved Stock Label | Voltage | Pressure |
 | :---: | :---: | :---: |
 | 0 | 0.471 V | 142.3 mbar |
 | 12 | 0.706 V | 228.4 mbar |
@@ -109,12 +79,7 @@ full raw-value labels, while the second shows the corresponding halved stock-map
 | 120 | 2.824 V | 1003.0 mbar |
 | 128 | 2.980 V | 1061.0 mbar |
 
-## Sensor interface
+## Sensor Interface
 
 ![Three-wire MAP sensor interface schematic](mapsensor.jpg)
 *Archived schematic for the three-wire MAP sensor interface.*
-
-## Related
-
-- [MAP sensor overview](/cars/fueling/map-sensor)
-- [Understanding fuel and ignition maps](/cars/fueling/understanding-maps)

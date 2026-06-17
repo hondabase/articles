@@ -1,20 +1,31 @@
 ---
-summary: 'In the 8051 architecture, "C" is the name of the carry bit. When an arithmetic operation overflows, the carry bit is set to keep track of this change.'
-tags: [sensors, reference]
+summary: 'An overview of the carry bit (C) functionality within 8051 and Oki 66k architectures, focusing on arithmetic overflow tracking and bit manipulation.'
+tags: [8051, oki-66k, architecture, assembly, programming]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: advanced
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'C Carry Bit'
-    url: /pgmfi/wiki/library/c-carry-bit
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# C Carry Bit
+# 8051 and Oki 66k Carry Bit (C) Reference
 
-In the 8051 architecture, "C" is the name of the carry bit. When an arithmetic operation overflows, the carry bit is set to keep track of this change. This bit is also frequently used as a storage space for transferring bits. This goes for the Oki 66k architecture as well; the MB C, x and MB x, C instructions allow easy access to the carry flag.
+In the 8051 architecture, "C" denotes the carry bit. This flag is automatically updated during arithmetic operations to track overflow conditions.
+
+## Functional Overview
+
+The carry bit serves two primary purposes in embedded microcontroller operations:
+
+*   **Arithmetic Overflow Tracking:** The bit is set when an arithmetic operation results in a value exceeding the capacity of the register (overflow).
+*   **Bit Manipulation:** The bit acts as a temporary storage register for bit-level data transfers.
+
+## Architecture-Specific Implementation
+
+### Oki 66k Architecture
+The Oki 66k architecture utilizes the carry flag for efficient data movement and logic operations. The following instructions provide direct access to the carry flag:
+
+*   **MB C, x:** Moves the value of a specified source into the carry flag.
+*   **MB x, C:** Moves the current state of the carry flag into a specified destination.
+
+> [!NOTE]
+> While the carry bit is primarily used for arithmetic status, its role as a single-bit buffer is critical for complex logic routines and bit-shifting operations within the 66k instruction set.

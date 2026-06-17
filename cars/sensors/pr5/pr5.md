@@ -1,26 +1,40 @@
 ---
-summary: 'PR5 : 9091 JDM Integra ZXi (1.6 SOHC) This is the JDM equivalent of the USDM D16A6. Attachment: Modify: Size: Date: Who: Comment: : : : : : :'
-tags: [sensors, reference]
+summary: 'Technical overview of the PR5 ECU, the JDM equivalent to the USDM D16A6 engine control unit found in 90-91 Integra ZXi models.'
+tags: [ecu, jdm, integra, d-series]
 applies_to:
-  obd: [0, 1, 2]
-  brand: Acura
-  models: [civic, crx, del-sol, integra]
-  chassis: [ef, eg, eg-eh, ek]
+  obd: [0]
+  models: [integra]
+  chassis: [da]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: PR5
-    url: /pgmfi/wiki/library/pr5
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# PR5
+# PR5 ECU Technical Overview
 
-PR5 : 90-91 [JDM](/cars/sensors/jdm) Integra ZXi (1.6 SOHC) This is the [JDM](/cars/sensors/jdm) equivalent of the [USDM](/cars/sensors/usdm) D16A6.
+The PR5 ECU was utilized in the 1990–1991 JDM Integra ZXi (1.6L SOHC). It serves as the Japanese Domestic Market (JDM) equivalent to the USDM D16A6 engine control unit.
 
-<figure>
- <img src="PR5auto.jpg" alt="eraser@d16a&apos;s scan of an automatic PR5">
- <figcaption>eraser@d16a's scan of an automatic PR5</figcaption>
-</figure>
+## ECU Identification
+
+The PR5 is an OBD0-based ECU. It is commonly found in automatic transmission configurations for the ZXi trim level.
+
+### Hardware Reference
+
+```carousel
+![PR5 ECU Top View](PR5auto.jpg)
+*Top view of the PR5 automatic ECU*
+<!-- slide -->
+![PR5 ECU Label](PR5_label.jpg)
+*Identification label on the PR5 housing*
+```
+
+> [!NOTE]
+> Ensure the ECU part number matches your specific engine harness and transmission configuration before installation, as JDM pinouts may vary from USDM counterparts.
+
+## Technical Specifications
+
+*   **Engine:** D16A (SOHC)
+*   **Market:** JDM (Japan)
+*   **OBD Standard:** OBD0
+*   **Transmission:** Automatic (Typical)
+
+> [!IMPORTANT]
+> When swapping or tuning OBD0 ECUs, verify the resistor box requirements for your specific fuel injectors, as the PR5 may require specific impedance matching depending on the vehicle's original wiring harness.

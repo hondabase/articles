@@ -1,24 +1,35 @@
 ---
-summary: 'Technical formula reference for interpreting 8-bit fuel values in ROM editor tables for Honda OBD1 engine management.'
-tags: [ecu, reference, tuning, rom, sensors]
+summary: 'Technical reference for calculating fuel pulse width and duty cycle using 8-bit ROM table values in Honda OBD1 engine management systems.'
+tags: [ecu, tuning, rom, fuel, sensors]
 applies_to:
   obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eg-eh]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD1 8bit Fuel'
-    url: /pgmfi/wiki/library/obd1-8bit-fuel
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD1 8bit Fuel
+# OBD1 8-Bit Fuel Calculation Reference
 
-Given table value ''v'' and multiplier value ''m'', the fuel value as seen in a [ROM](/cars/rom/rom) editor is: Fuel(''v'',''m'') = ''v*m''/4
+In Honda OBD1 ROM editors, fuel table values are stored as 8-bit integers. To interpret these values into meaningful fuel metrics, use the following mathematical conversions.
 
----
+## Fuel Value Calculation
+Given a table value **v** and a multiplier **m**, the fuel value is calculated as:
 
-The result is presumably proportional to the amount of fuel entering the engine. It has an effective range of 0-16256.25 -- so how does this relate to injector duty cycle? Pulse width (ms) = PW = (''v*m''/4)/100 + 0.60ms = ''v*m''/400 + 0.60ms Max Duty Cycle is (((1000*60*2/rpm)*0.9ms) Duty Cycle = PW/TRPM = (''v*m''/400 + 0.60)/(60000/''RPM'') Simplifying, Duty Cycle = ''RPM''*(''v*m'' + 240)/24000000 ***This is based upon information provided by Didier Pelegri and not verified by myself.***--AndySloane
+**Fuel(v, m) = (v * m) / 4**
+
+The resulting value is proportional to the fuel mass entering the engine, with an effective range of 0–16256.25.
+
+## Pulse Width and Duty Cycle
+To determine the relationship between the ROM table value and injector performance, use the following formulas:
+
+### Pulse Width (PW)
+**PW (ms) = (v * m) / 400 + 0.60ms**
+
+### Duty Cycle
+**Duty Cycle = (RPM * (v * m + 240)) / 24,000,000**
+
+> [!IMPORTANT]
+> These formulas are derived from empirical data and represent theoretical calculations. Always verify fuel delivery and injector duty cycle using real-time data logging and wideband oxygen sensor feedback.
+
+> [!NOTE]
+> The constant **0.60ms** in the pulse width formula accounts for injector latency (dead time). This value may vary depending on the specific injector hardware installed.

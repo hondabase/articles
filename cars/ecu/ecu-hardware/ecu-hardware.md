@@ -1,36 +1,53 @@
 ---
-summary: 'Inside a Honda ECU: the boards, chips and circuits.'
-tags: [ecu, hardware]
+summary: 'An overview of Honda ECU hardware architecture, including PCB families, MCU specifications, and common hardware modification techniques.'
+tags: [ecu, hardware, pcb, eeprom, mcu]
 applies_to:
-  obd: [0, 1]
+  obd: [0, 1, 2a, 2b]
   models: [accord, civic, crx, integra, nsx, prelude]
   chassis: [da, ef]
 complexity: advanced
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'ECU Hardware'
-    url: /pgmfi/wiki/library/ecu-hardware
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# ECU Hardware
+# Honda ECU Hardware Architecture
 
-This page describes how the hardware in an [ECU](/cars/ecu/ecu) works, and fun things you can do with it. If you are just wanting to learn how to chip your [ECU](/cars/ecu/ecu), you should look at What You Need instead. If you are looking for detailed information about what is going on inside a particular program, you might want to look at Rom Maps. Honda definitely did not reinvent the wheel in terms of [ECU](/cars/ecu/ecu) technology for `each` new motor they released. `Each` "family" of [ECU](/cars/ecu/ecu) generally shares one or more PCBs that are populated with different components in order to run different motors. This really opens the door for ECUHardware Mods. Additionally, there are design peculiarities that carry over from one family to another. [ECU](/cars/ecu/ecu) Families:
+Honda ECU hardware is modular, with specific "families" of ECUs sharing common PCB designs populated with varying components to support different engine configurations. Understanding these hardware commonalities is essential for ECU modification and tuning.
 
-- OBD0 Vacuum Advance [ECU](/cars/ecu/ecu)s from pre-88 cars lacking electronic advance distributors share some common features.
-- OBD0 DPFI [ECU](/cars/ecu/ecu)s from 88-91 cars are useless bastards that are 2 injectors short of being useful
-- OBD0 MPFI non-vtec [ECU](/cars/ecu/ecu)s from 88-91 are a definite family.
-- OBD0 VTEC ECUs like the PW0 and PR3 are a definite family.
-- OBD1 Civic Integra ECUs are a definite family.
-- OBD1 Prelude Accord [ECU](/cars/ecu/ecu)s are a definite family.
-- V6ECUs from the Acura/Rover/Honda Legend V6 cars, NSX and (?) V6 Accord have many common features.
-- OBD2 A [ECU](/cars/ecu/ecu)s are quite similar.
-- OBD2 B [ECU](/cars/ecu/ecu)s are quite similar.
-- OBD2 K [ECU](/cars/ecu/ecu)s are an evolution of OBD2B [ECU](/cars/ecu/ecu)s designed to run K-series motors
+## ECU Families
+Honda utilized standardized PCB designs across multiple engine platforms. The following categories represent the primary hardware families:
 
-If you want to learn about how the Oki 66K MCU works, you should look at 66k Assembler Docs. There are many ECUHardware Mods you can do to change how [ECU](/cars/ecu/ecu) hardware works. Honda often used MCUs that had internal (on-chip) programs. These were often copy protected. There are Mcu Readers to defeat the copy protection. Ever wonder who designed honda's [ECU](/cars/ecu/ecu)s? Kehein Indiana Precision Technology is to blame... It is possible to switch between more than one program on your oversized EEPROM. All you need to do is add a pullup resistor to the extra address lines (A15, A16, Etc.), then to switch them, just add a debounced switch to the address lines to ground them. **Here is a diagram of 28 &amp; 32 pin EEPROMS:**- EEPROM pinouts: 
- ![1.32_pin-2-28PinIC.jpg](1.32_pin-2-28PinIC.jpg)
+*   **OBD0 Vacuum Advance:** Found in pre-1988 vehicles lacking electronic advance distributors.
+*   **OBD0 DPFI:** 1988–1991 dual-point injection units.
+*   **OBD0 MPFI (Non-VTEC):** Standard 1988–1991 multi-point injection units.
+*   **OBD0 VTEC:** High-performance units such as the PW0 and PR3.
+*   **OBD1 Civic/Integra:** Standardized architecture for 1992–1995 platforms.
+*   **OBD1 Prelude/Accord:** Distinct hardware architecture for larger displacement platforms.
+*   **V6 ECUs:** Shared features across Acura, Rover, Honda Legend, NSX, and V6 Accord platforms.
+*   **OBD2A/OBD2B:** Iterative updates to the standard ECU architecture.
+*   **OBD2 K-Series:** An evolution of the OBD2B architecture specifically designed for K-series engine management.
 
- **Attachment:** **Modify:** **Size:** **Date:** **Who:** **Comment:** ![](/pgmfi/wiki/assets/icn/bmp.gif) [1.32\_pin-2-28PinIC.jpg](1.32_pin-2-28PinIC.jpg) mod 39713 06 Feb 2007 - 01:39 Jared Karagen EEPROM pinouts
+## Technical Components
+### Microcontroller Units (MCU)
+Most Honda ECUs utilize the Oki 66K series MCU. Many of these units feature internal, copy-protected programs. Specialized MCU readers are required to bypass this protection for diagnostic or reverse-engineering purposes.
+
+### EEPROM Modification
+It is possible to expand ECU memory capacity to support multiple programs (multi-mapping). By utilizing an oversized EEPROM, you can toggle between programs by adding a pull-up resistor to the extra address lines (e.g., A15, A16) and using a debounced switch to ground the lines.
+
+> [!IMPORTANT]
+> When performing memory expansion, ensure the switch is properly debounced to prevent erratic address line behavior, which can cause the ECU to crash or enter an undefined state.
+
+## EEPROM Pinout Reference
+The following diagram illustrates the pinout configuration for 28-pin and 32-pin EEPROM chips commonly used in ECU modifications.
+
+```carousel
+![28-pin to 32-pin EEPROM conversion](1.32_pin-2-28PinIC.jpg)
+*Comparison of 28-pin and 32-pin EEPROM pin configurations for hardware upgrades*
+<!-- slide -->
+![EEPROM Pinout Detail](1.32_pin-2-28PinIC.jpg)
+*Detailed pin mapping for memory expansion*
+```
+
+## Hardware Resources
+For further technical specifications regarding ECU internals, refer to the following resources:
+
+*   **66k Assembler Docs:** Technical documentation for the Oki 66K MCU instruction set.
+*   **Rom Maps:** Detailed memory mapping for specific ECU firmware versions.

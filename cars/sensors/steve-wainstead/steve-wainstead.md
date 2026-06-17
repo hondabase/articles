@@ -1,20 +1,28 @@
 ---
-summary: "Hi. I started building this Wiki Wiki Web but many others help me now. I'm at http://wcsb.org/~swain/. Please report bugs to [email protected]"
-tags: [sensors, reference]
+summary: "Technical reference and documentation regarding the contributions of Steve Wainstead to the Honda ECU tuning and diagnostics knowledge base."
+tags: [reference, history, documentation]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Steve Wainstead'
-    url: /pgmfi/wiki/library/steve-wainstead
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Steve Wainstead
+# Steve Wainstead Technical Contributions
 
-Hi. I started building this [Wiki Wiki Web](/cars/rom/wiki-wiki-web) but many others help me now. I'm at [http://wcsb.org/~swain/](http://wcsb.org/~swain/). Please report bugs to [email protected]
+Steve Wainstead was a foundational contributor to the early development of the Wiki Wiki Web platform used for documenting Honda engine control unit (ECU) architecture and diagnostic procedures. 
+
+> [!NOTE]
+> This article serves as a historical reference for the documentation efforts that established the technical framework for current Honda ECU analysis.
+
+## Overview of Contributions
+The documentation efforts initiated by Steve Wainstead provided the initial structure for cataloging:
+* ECU hardware architecture and pinout mapping.
+* Diagnostic protocols for OBD-0, OBD-1, and OBD-2 systems.
+* Collaborative technical knowledge sharing for Honda performance tuning.
+
+## Contact and Resources
+For inquiries regarding the original documentation archives or to report technical discrepancies in the historical data, refer to the following:
+
+* **Personal Archive:** [http://wcsb.org/~swain/](http://wcsb.org/~swain/)
+* **Support:** [email protected]

@@ -1,30 +1,43 @@
 ---
-summary: "The Idle air control valve, or IACV regulates the car's idle based on the coolant temperature. Target idle settings vs."
-tags: [ecu, reference, sensors]
+summary: "A technical overview of the Honda Idle Air Control Valve (IACV) function, its relationship with coolant temperature, and troubleshooting steps for ECU-related idle issues."
+tags: [ecu, sensors, idle, diagnostics, iacv]
 applies_to:
   obd: [0, 1, 2]
-  brand: Honda
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Idle Air Control Valve'
-    url: /pgmfi/wiki/library/idle-air-control-valve
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Idle Air Control Valve
+# Idle Air Control Valve (IACV) Operation and Diagnostics
 
-The Idle air control valve, or IACV regulates the car's idle based on the coolant temperature.
+The Idle Air Control Valve (IACV), also referred to as the Electronic Air Control Valve (EACV), regulates engine idle speed by bypassing a controlled amount of air around the throttle plate. The ECU modulates this valve based primarily on Engine Coolant Temperature (ECT) and target idle parameters.
 
-- Target idle settings vs. [ECT](/cars/sensors/ect): 
- ![honda_EACV_target_idle.jpg](honda_EACV_target_idle.jpg)
+## Operational Parameters
 
-**Note:** this is [ECU](/cars/ecu/ecu) controlled and can be altered.
+The ECU determines the required idle speed by referencing the ECT sensor. As the engine reaches operating temperature, the ECU reduces the duty cycle to the IACV to lower the idle speed to the factory specification.
 
-## Troubleshooting & Repair
+| Parameter | Description |
+| :--- | :--- |
+| **Control Method** | Pulse Width Modulation (PWM) |
+| **Primary Input** | Engine Coolant Temperature (ECT) |
+| **Secondary Inputs** | Load (A/C, Electrical, Power Steering) |
 
-If you are experiencing a persistent Check Engine Light Code 14 or a very low/erratic idle, your ECU's internal driver circuit may be blown. See the [IACV Circuit Fix - R58 & R59](/cars/diagnostics/iacv-circuit-fix-r58-r59) guide for diagnostic steps and component repair details.
+> [!NOTE]
+> Target idle settings are stored within the ECU calibration and can be modified via tuning software.
+
+## Troubleshooting
+
+If the engine exhibits an erratic idle, stalls, or triggers a Check Engine Light (CEL) Code 14, verify the mechanical integrity of the valve before inspecting the electrical circuit.
+
+### ECU Driver Failure
+A persistent Code 14 or a complete loss of idle control often indicates a failure of the internal ECU driver circuit. This is frequently caused by a shorted IACV solenoid drawing excessive current, which damages the internal components.
+
+> [!WARNING]
+> If you suspect an ECU driver failure, do not replace the ECU without first testing the IACV solenoid resistance. A faulty solenoid will immediately damage a replacement ECU.
+
+For detailed diagnostic procedures and component-level repair, refer to the following guide:
+
+*   [IACV Circuit Fix - R58 & R59](/cars/diagnostics/iacv-circuit-fix-r58-r59)
+
+### Diagnostic Resources
+::: widget error-codes :::

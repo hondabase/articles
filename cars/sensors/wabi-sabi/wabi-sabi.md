@@ -1,36 +1,42 @@
 ---
-summary: 'Since wabisabi represents a comprehensive Japanese world view or aesthetic system, it is difficult to explain precisely in western terms.'
-tags: [sensors, reference]
+summary: 'An overview of the wabi-sabi aesthetic philosophy and its influence on Japanese design principles and traditional beauty.'
+tags: [philosophy, aesthetics, design]
 applies_to:
   obd: [0, 1, 2]
-  brand: Honda
   models: [accord]
-  chassis: {}
+  chassis: [all]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Wabi Sabi'
-    url: /pgmfi/wiki/library/wabi-sabi
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Wabi Sabi
+# Wabi-Sabi Aesthetic Philosophy
 
-Since wabi-sabi represents a comprehensive Japanese world view or aesthetic system, it is difficult to explain precisely in western terms. According to Leonard Koren, wabi-sabi is the most conspicuous and characteristic feature of what we think of as traditional Japanese beauty and it ''"occupies roughly the same position in the Japanese pantheon of aesthetic values as do the Greek ideals of beauty and perfection in the West."'' Wabi-sabi is a beauty of things imperfect, impermanent, and incomplete. It is the beauty of things modest and humble. It is the beauty of things unconventional. The concepts of wabi-sabi correlate with the concepts of Zen Buddhism, as the first Japanese involved with wabi-sabi were tea masters, priests, and monks who practiced Zen. Zen Buddhism originated in India, traveled to China in the 6th century, and was first introduced in Japan around the 12th century. Zen emphasizes ''"direct, intuitive insight into transcendental truth beyond all intellectual conception."'' At the core of wabi- sabi is the importance of transcending ways of looking and thinking about things/existence.
+Wabi-sabi is a comprehensive Japanese aesthetic system that emphasizes the beauty of things imperfect, impermanent, and incomplete. It occupies a central position in traditional Japanese values, contrasting with Western ideals of perfection and symmetry. The philosophy is deeply rooted in Zen Buddhism, focusing on direct, intuitive insight into existence.
 
-- All things are impermanent
-- All things are imperfect
-- All things are incomplete
+## Core Principles
 
-Material characteristics of wabi-sabi: - suggestion of natural process
-- irregular
-- intimate
-- unpretentious
-- earthy
-- simple
+The foundation of wabi-sabi rests on three fundamental realities of existence:
 
-For more about wabi-sabi, see [http://www.art.unt.edu/ntieva/artcurr/japan/wabisabi.htm](http://www.art.unt.edu/ntieva/artcurr/japan/wabisabi.htm). ---
+*   **Impermanence:** All things are in a constant state of flux.
+*   **Imperfection:** Nothing is ever finished or flawless.
+*   **Incompleteness:** All things are in a state of becoming or decay.
 
-[Php Wiki Documentation](/cars/reference/php-wiki-documentation)
+## Material Characteristics
+
+Objects and environments reflecting wabi-sabi typically exhibit the following traits:
+
+*   **Natural Process:** Evidence of aging, wear, or organic development.
+*   **Irregularity:** Asymmetry and non-standard forms.
+*   **Intimacy:** A sense of closeness and personal connection to the object.
+*   **Unpretentiousness:** Modesty and a lack of artificial refinement.
+*   **Earthy:** Use of raw, natural materials and textures.
+*   **Simplicity:** Minimalist execution that avoids unnecessary ornamentation.
+
+> [!NOTE]
+> Wabi-sabi encourages transcending conventional intellectual frameworks to appreciate the inherent value in humble and unconventional forms.
+
+## Further Reading
+
+For additional context on the historical and cultural development of these aesthetic principles, refer to the following resources:
+
+*   [Wabi-Sabi: Traditional Japanese Beauty](http://www.art.unt.edu/ntieva/artcurr/japan/wabisabi.htm)
+*   [Documentation Standards](/cars/reference/php-wiki-documentation)

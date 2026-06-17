@@ -1,20 +1,37 @@
 ---
-summary: 'The cylinder position (CYP) sensor and its role in injection timing.'
-tags: [sensor]
+summary: 'An overview of the Cylinder Position (CYP) sensor function, location, and its critical role in sequential ignition timing for Honda engines.'
+tags: [sensor, ignition, distributor, timing]
 applies_to:
   models: [crx]
-  chassis: {}
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Cylinder Position Sensor'
-    url: /pgmfi/wiki/library/cylinder-position-sensor
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  chassis: [ef]
+complexity: intermediate
 ---
 
-# Cylinder Position Sensor
+# Cylinder Position (CYP) Sensor Operation and Diagnostics
 
-in SHOC engine CYP sensor is in distributor, DHOC engine seperated at exhoust camshaft on 1991 crx model CYP 1 sensor located at the front of distributor, it s a two wire magnetic sensor. It produce a pulse when the iron part passing near to coil. it s important sensor i obsorved, some time too much retart and advance shows this sensor is not good but in fact its normal. if it not normal car is got pigging and litting MIL. It setup the sequencial spark timming, after seeing the CYP 1 signal ECU start sparking 1, 3, 2,4 and go on
+The Cylinder Position (CYP) sensor is a critical component for determining engine phase and enabling sequential ignition timing. The sensor operates as a magnetic pickup, generating a pulse when a ferrous target passes the sensor coil.
 
-- [CYP.bmp](cyp.bmp): CYP sensor apperance
+## Sensor Location and Configuration
+
+The physical location of the CYP sensor varies based on the engine architecture:
+
+*   **SOHC Engines:** The CYP sensor is integrated within the distributor housing.
+*   **DOHC Engines:** The CYP sensor is mounted externally at the end of the exhaust camshaft.
+
+> [!NOTE]
+> On the 1991 CRX, the CYP sensor is a two-wire magnetic sensor located at the front of the distributor assembly.
+
+## Functional Role
+
+The ECU utilizes the signal from the CYP sensor to establish the engine's firing order. Upon receiving the CYP signal, the ECU initiates the sequential ignition sequence (1-3-4-2).
+
+> [!IMPORTANT]
+> If the CYP sensor signal is lost or erratic, the ECU will trigger the Malfunction Indicator Lamp (MIL). Symptoms of a faulty sensor or signal interference include engine pinging, misfires, and improper ignition timing.
+
+## Diagnostic Considerations
+
+*   **Signal Interpretation:** Excessive ignition advance or retard does not necessarily indicate a faulty CYP sensor; verify sensor output before assuming component failure.
+*   **Signal Integrity:** Ensure the sensor wiring is free from electromagnetic interference, as the low-voltage magnetic pulse is sensitive to electrical noise.
+
+![CYP Sensor Appearance](cyp.bmp)
+*Cylinder Position (CYP) sensor assembly*

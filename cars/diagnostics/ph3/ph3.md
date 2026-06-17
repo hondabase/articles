@@ -1,65 +1,66 @@
 ---
-summary: 'THe 8889 Accord OBD0 B20A ECU uses an Electronic Advance distributor. It has an External 27c256 ROM and is oki 80c154 based This ECU is very similar to the PK2 ECU for the 8891 Prelude.'
-tags: [ecu, reference, tuning, rom, sensors, diagnostics]
+summary: 'Technical reference for the Honda PH3 OBD0 ECU, covering hardware specifications, processor architecture, and jumper configurations for B20A-equipped vehicles.'
+tags: [ecu, obd0, b20a, tuning, rom, diagnostics]
 applies_to:
-  obd: [0, 1, 2]
+  obd: [0]
   brand: Honda
-  models: [accord, civic, integra, prelude]
-  chassis: [dc2, eg, ek]
+  models: [accord]
+  chassis: [ca]
 complexity: advanced
-sources:
-  - name: 'pgmfi.org wiki'
-    title: PH3
-    url: /pgmfi/wiki/library/ph3
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# PH3
+# Honda PH3 ECU Technical Reference
 
-THe 88-89 Accord [OBD](/cars/wiring/obd)-0 B20A [ECU](/cars/ecu/ecu) uses an Electronic Advance distributor. It has an External `27C256` [ROM](/cars/rom/rom) and is oki `80C154` based
-This [ECU](/cars/ecu/ecu) is very similar to the PK2 [ECU](/cars/ecu/ecu) for the 88-91 Prelude. However, it has the second O2 sensor disabled via BR8
+The PH3 ECU was utilized in 1988–1989 Honda Accord models equipped with the B20A engine. It features an Electronic Advance distributor and utilizes an external 27C256 ROM. The architecture is based on the OKI 80C154 processor.
 
-The 86-87 Accord [OBD](/cars/wiring/obd)-0 B20A is oki80c514 based but has a 27c128 rom.
-It does not have a backup processor but seems to use 2 OKI processors instead
-This [ECU](/cars/ecu/ecu) has 2 diagnostics Leds Note, the latest PH3 and PK2 [ECU](/cars/ecu/ecu)s share almost the same board they are 99% similar, only slight differences can be seens between them.
-They are so similar that they can even share the same program so far.
+## Hardware Overview
 
----
+The PH3 is architecturally similar to the PK2 ECU used in 1988–1991 Prelude models. While the boards are nearly identical, the PH3 includes specific modifications for the Accord platform, such as the disabling of the secondary O2 sensor via the BR8 jumper.
 
-I posted the Options Close-up for the PH3-0732 and PH3-0632 88-89 Accord B20A [ECU](/cars/ecu/ecu)s. The 0732 is supposedly from an auto car and the 0632 a manual. I don't know if these options are related to the transmisson type or emissions. The manual PK2 [ECU](/cars/ecu/ecu) has the same options configuration as this Auto [ECU](/cars/ecu/ecu) so I'm not sure what these do yet There is also a close-up of the BR8 jumper. This jumper seems to be the one deactivating O2 sensor B input on the PH3 board. It's connected directly on the Sensor's pin. The PK2 shares almost the same Boads as the PH3 but has this jumper Blank. (see the PK2 [ECU](/cars/ecu/ecu) section) Carotman 
-<figure>
- <img src="ph3_0732.jpg" alt="88-89 Accord B20A PH3 [ECU](/cars/ecu/ecu)">
- <figcaption>88-89 Accord B20A PH3 [ECU](/cars/ecu/ecu)</figcaption>
-</figure>
+### 1986–1987 PH3 Variant
+The 1986–1987 Accord B20A variant differs significantly from the 88–89 iteration:
+*   **Processor:** OKI 80C514 based.
+*   **Memory:** 27C128 ROM.
+*   **Architecture:** Utilizes dual OKI processors rather than a single backup processor configuration.
+*   **Diagnostics:** Features two onboard diagnostic LEDs.
 
-<figure>
- <img src="ph3_043.jpg" alt="86-87 Accord B20A PH3 [ECU](/cars/ecu/ecu)">
- <figcaption>86-87 Accord B20A PH3 [ECU](/cars/ecu/ecu)</figcaption>
-</figure>
+> [!NOTE]
+> The latest PH3 and PK2 ECU boards share approximately 99% of their design and are often cross-compatible regarding program execution.
 
-<figure>
- <img src="ph3-0632_manual_options.jpg" alt="PH3-0632 Manual [ECU](/cars/ecu/ecu) (Options Close-up)">
- <figcaption>PH3-0632 Manual [ECU](/cars/ecu/ecu) (Options Close-up)</figcaption>
-</figure>
+## Configuration and Jumpers
 
-<figure>
- <img src="ph3-0632_manual.jpg" alt="PH3-0632 Accord ECU (Manual)">
- <figcaption>PH3-0632 Accord ECU (Manual)</figcaption>
-</figure>
+### BR8 Jumper
+The BR8 jumper is responsible for deactivating the O2 sensor B input on the PH3 board. It is connected directly to the sensor pin. In contrast, the PK2 ECU board typically leaves this jumper position blank.
 
-<figure>
- <img src="ph3-0732_auto_options.jpg" alt="PH3-0732 Auto [ECU](/cars/ecu/ecu) (Options Close-up)">
- <figcaption>PH3-0732 Auto [ECU](/cars/ecu/ecu) (Options Close-up)</figcaption>
-</figure>
+### Options Configuration
+The PH3-0732 (Automatic) and PH3-0632 (Manual) variants exhibit different options configurations. While these are often associated with transmission type or emissions standards, the manual PK2 ECU shares the same options configuration as the PH3 automatic unit, suggesting these settings may serve broader functional purposes.
 
-<figure>
- <img src="ph3-0732_auto.jpg" alt="PH3-0732 Auto [ECU](/cars/ecu/ecu)">
- <figcaption>PH3-0732 Auto [ECU](/cars/ecu/ecu)</figcaption>
-</figure>
+## ECU Visual Reference
 
-<figure>
- <img src="BR8-PH3.jpg" alt="BR8 Jumper that seem to cancel O2 sensor B input">
- <figcaption>BR8 Jumper that seem to cancel O2 sensor B input</figcaption>
-</figure>
+```carousel
+![88-89 Accord B20A PH3 ECU](ph3_0732.jpg)
+*88-89 Accord B20A PH3 ECU*
+<!-- slide -->
+![86-87 Accord B20A PH3 ECU](ph3_043.jpg)
+*86-87 Accord B20A PH3 ECU*
+```
+
+```carousel
+![PH3-0632 Manual ECU](ph3-0632_manual.jpg)
+*PH3-0632 Accord ECU (Manual)*
+<!-- slide -->
+![PH3-0632 Manual Options](ph3-0632_manual_options.jpg)
+*PH3-0632 Manual ECU (Options Close-up)*
+```
+
+```carousel
+![PH3-0732 Auto ECU](ph3-0732_auto.jpg)
+*PH3-0732 Auto ECU*
+<!-- slide -->
+![PH3-0732 Auto Options](ph3-0732_auto_options.jpg)
+*PH3-0732 Auto ECU (Options Close-up)*
+```
+
+```carousel
+![BR8 Jumper](BR8-PH3.jpg)
+*BR8 Jumper location for O2 sensor B input*

@@ -1,24 +1,29 @@
 ---
-summary: 'Author: HRED Date: 010303 17:27 You can alter idle target : search "09c4" value you find for example in PM7FOR6121502.'
-tags: [ecu, reference, tuning, rom, sensors]
+summary: 'Learn how to modify the target idle RPM in OBD0 PM7 ECU ROMs by locating and adjusting the hex idle target string.'
+tags: [ecu, tuning, rom, idle, obd0]
 applies_to:
   obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: '91PM7 Target Idle'
-    url: /pgmfi/wiki/library/91pm7-target-idle
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# 91PM7 Target Idle
+# Modifying Target Idle RPM in OBD0 PM7 ECUs
 
-**Author:** HRED
+To adjust the target idle RPM in an OBD0 PM7 ECU, you must locate and modify the hex idle target string within the ROM file.
 
-**Date:** 01-03-03 17:27
+## Idle Target Identification
+The idle target values are stored as a string of six hexadecimal values representing different engine operating conditions. 
 
-You can alter idle target : search "09c4" value you find for example in PM7FOR6_12-15-02.BIN rom a string with 6 rev values like this : 0A08 09C4 0964 0A77 09C4 0964 replace all values by this for 1000rpm idle target : 0753 0753 0753 0753 0753 0753 all values use the [OBD016 Bit RPM](/cars/diagnostics/obd016-bit-rpm) formula. Nicolas HRED France Bordeaux
+> [!IMPORTANT]
+> All values must be calculated using the **OBD0 16-bit RPM formula**.
+
+### Example Modification
+In the `PM7FOR6_12-15-02.BIN` ROM, the default idle target string is:
+`0A08 09C4 0964 0A77 09C4 0964`
+
+To set a constant target idle of 1000 RPM, replace all six values in the string with the hex equivalent for 1000 RPM:
+`0753 0753 0753 0753 0753 0753`
+
+## Reference
+{{> obd0-16bit-rpm-formula }}

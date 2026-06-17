@@ -1,22 +1,36 @@
 ---
-summary: 'to latch something is to hold or preserve its state latches, like the 74 HC373 are logic gates that hold the state of IO lines.'
-tags: [tuning, rom, sensors, reference]
+summary: 'An overview of latching logic gates, such as the 74HC373, used to hold and preserve the state of I/O lines in ECU hardware.'
+tags: [ecu, hardware, logic, electronics]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: Latch
-    url: /pgmfi/wiki/library/latch
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Latch
+# Latch Logic and ECU Implementation
 
-to latch something is to hold or preserve its state latches, like the [74 HC373](/cars/rom/74hc373) are logic gates that hold the state of [IO](/cars/sensors/io) lines. | *Library. Latch moved from Library.latch on 05 Mar 2004 - 17:40 by Home.blundar
+A latch is a digital logic circuit used to hold or preserve the state of an input signal. In ECU hardware, latches are critical for maintaining stable data states across I/O lines.
 
-* - [put it back](https://web.archive.org/web/http://www.pgmfi.org/twiki/bin/rename/Library/Latch?newweb=Library&newtopic=latch&confirm=on "Click to move topic back to previous location, with option to change references.") | | :--- |
+## Functionality
+Latches, such as the [74HC373](/cars/rom/74hc373), act as transparent logic gates. When the enable signal is active, the output follows the input; when the enable signal is inactive, the output is "latched" or held at its last state regardless of changes to the input.
+
+> [!NOTE]
+> Latches are frequently used in ECU memory addressing and data bus management to ensure that signals remain stable during read/write operations.
+
+## Common Applications
+* **Data Bus Buffering:** Isolating the MCU from the data bus to prevent signal degradation.
+* **Address Decoding:** Holding address bits stable while the memory chip performs a read or write cycle.
+* **I/O Expansion:** Allowing a limited number of MCU pins to control a larger number of peripheral devices.
+
+## Technical Specifications
+The 74HC373 is an octal transparent latch with 3-state outputs. It is commonly found in OBD1 and OBD2 ECU designs to interface the microcontroller with external ROM or RAM chips.
+
+| Feature | Specification |
+| :--- | :--- |
+| **Logic Family** | HC (High-speed CMOS) |
+| **Configuration** | Octal (8-bit) |
+| **Output Type** | 3-State |
+| **Function** | Transparent Latch |
+
+{{> resistor-color-codes }}

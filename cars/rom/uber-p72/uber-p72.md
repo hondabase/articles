@@ -1,6 +1,6 @@
 ---
-summary: 'Detailed walkthrough on configuring and tuning the UberData custom ROM codebase for P72 OBD1 ECUs.'
-tags: [tuning, rom, software]
+summary: 'Technical reference for RAM and ROM address offsets specific to the UberData custom ROM codebase for OBD1 P72 ECUs.'
+tags: [tuning, rom, software, p72, obd1]
 applies_to:
   brand: Acura
   ecus: [P72]
@@ -8,24 +8,18 @@ applies_to:
   models: [integra]
   chassis: [dc2]
 complexity: advanced
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Uber P72'
-    url: /pgmfi/wiki/library/uber-p72
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # Uber P72 ROM Map
 
-The **Uber P72** ROM is a modified Acura Integra GS-R [P72 OBD1 ECU](/cars/sensors/p72) factory codebase designed to work with the UberData tuning suite. 
+The Uber P72 ROM is a modified Acura Integra GS-R P72 OBD1 ECU codebase designed for compatibility with the UberData tuning suite. This document outlines the RAM and ROM address offsets specific to UberData modifications.
 
-This page documents the RAM and ROM address offsets that are specific to the UberData modifications. For factory Honda/Acura P72 addresses, refer to the standard [P72 ROM Map](/cars/sensors/p72).
+> [!NOTE]
+> For standard factory Honda/Acura P72 memory addresses, refer to the [P72 ROM Map](/cars/sensors/p72).
 
 ## RAM Address Mapping
 
-The table below outlines specific RAM locations used by the UberData custom code in a P72 ROM:
+The following table details the specific RAM locations utilized by the UberData custom code within the P72 ROM structure.
 
 | Hex Offset | Length (Bytes) | Description | Notes |
 | :---: | :---: | :--- | :--- |
@@ -33,3 +27,14 @@ The table below outlines specific RAM locations used by the UberData custom code
 | `645F` | 2 | UberData ERM Alternate VTEC RPM | Alternate threshold configuration |
 | `6464` | 2 | UberData ERM Alternate VTEC RPM | Alternate threshold configuration |
 | `6466` | 2 | UberData ERM Alternate VTEC RPM | Alternate threshold configuration |
+
+## Configuration Guidelines
+
+When modifying these addresses, ensure the following:
+
+* **Data Integrity:** Verify that the checksum is recalculated after any modifications to the ROM image.
+* **Compatibility:** Ensure the UberData version matches the specific ROM base version to prevent memory conflicts.
+* **Hardware:** Confirm the ECU is socketed correctly with a compatible EEPROM (e.g., 27SF512) before flashing.
+
+> [!WARNING]
+> Incorrect modification of RAM addresses can lead to ECU instability, engine misfire, or failure to start. Always maintain a backup of the original factory ROM image.

@@ -1,21 +1,30 @@
 ---
-summary: 'Helm Inc. http://web.archive.org/web/20260613155229/https://www/.helminc.com The distributor of the Honda Service Manual. EF (8891 Civic/CRX), EG (9295 Civic), DA (9093 Integra), DC (9401 Integra) http://web.archive.org/web/20260613155229/https://www/.'
-tags: [sensors, reference]
+summary: 'Official source for Honda and Acura factory service manuals covering EF, EG, DA, and DC chassis platforms.'
+tags: [manuals, reference, service, documentation]
 applies_to:
   obd: [0, 1, 2]
-  brand: Acura/Honda
   models: [civic, crx, integra]
-  chassis: [ef]
+  chassis: [ef, eg, da, dc]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Helms Manual'
-    url: /pgmfi/wiki/library/helms-manual
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Helms Manual
+# Honda and Acura Factory Service Manuals
 
-Helm Inc. [http://web.archive.org/web/20260613155229/https://www/.helminc.com](http://web.archive.org/web/20260613155229/https://www/.helminc.com) The distributor of the Honda [Service Manual](/cars/sensors/service-manual). EF (88-91 Civic/CRX), EG (92-95 Civic), DA (90-93 Integra), DC (94-01 Integra) [http://web.archive.org/web/20260613155229/https://www/.hybridgarage.com/tech/manuals](http://web.archive.org/web/20260613155229/https://www/.hybridgarage.com/tech/manuals)
+Helm Incorporated is the authorized publisher and distributor of official Honda and Acura factory service manuals. These manuals provide comprehensive technical specifications, wiring diagrams, and diagnostic procedures for Honda and Acura vehicles.
+
+## Supported Platforms
+
+The following chassis generations are supported by official factory documentation:
+
+*   **EF:** 1988–1991 Civic / CRX
+*   **EG:** 1992–1995 Civic
+*   **DA:** 1990–1993 Integra
+*   **DC:** 1994–2001 Integra
+
+> [!NOTE]
+> Factory service manuals are the primary reference for torque specifications, pinout diagrams, and troubleshooting flowcharts. Always refer to the specific manual for your chassis and engine combination to ensure accuracy.
+
+## Resource Links
+
+*   **Official Publisher:** [Helm Inc.](https://www.helminc.com)
+*   **Technical Documentation:** [Honda Service Manual Reference](/cars/sensors/service-manual)

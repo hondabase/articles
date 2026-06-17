@@ -1,39 +1,41 @@
 ---
-summary: 'PM5 8891 Civic base model/CRX DX (DPFI D15b) There were two distinct styles of this ECU. One features an 83C154 MCU, one features a 66201 MCU.'
+summary: 'Technical reference for the Honda PM5 ECU used in 1988–1991 Civic and CRX DX models, covering MCU variants and hardware identification.'
 tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
-  obd: [0, 1, 2]
-  brand: Honda
+  obd: [0]
   models: [civic, crx]
-  chassis: [ef, eg]
+  chassis: [ef]
 complexity: advanced
-sources:
-  - name: 'pgmfi.org wiki'
-    title: PM5
-    url: /pgmfi/wiki/library/pm5
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# PM5
+# Honda PM5 ECU Technical Reference
 
-PM5 88-91 Civic base model/CRX DX ([DPFI](/cars/sensors/dpfi) D15b) There were two distinct styles of this [ECU](/cars/ecu/ecu). One features an `83C154` [MCU](/cars/rom/mcu), one features a 66201 [MCU](/cars/rom/mcu). Presumably 88-89 vs 90-91 ?
+The PM5 ECU was utilized in 1988–1991 Honda Civic base models and CRX DX trims equipped with the DPFI D15B engine. There are two distinct hardware revisions of this ECU, differentiated primarily by the Microcontroller Unit (MCU).
 
-- PM5 dx [ECU](/cars/ecu/ecu), "old" `83C154` style, thanks TJ: 
- ![PM5dxTJ.jpg](PM5dxTJ.jpg)
+## Hardware Revisions
 
-<figure>
- <img src="PM5-230.jpg" alt="closeup of [ROM](/cars/rom/rom) area on 90-91 PM5">
- <figcaption>closeup of [ROM](/cars/rom/rom) area on 90-91 PM5</figcaption>
-</figure>
+The PM5 exists in two primary configurations, likely corresponding to the 1988–1989 and 1990–1991 production years:
 
-<figure>
- <img src="pm5-230_rom.gif" alt="one more 90-91 PM5 ( chips readable)">
- <figcaption>one more 90-91 PM5 ( chips readable)</figcaption>
-</figure>
+*   **Early Revision:** Features an 83C154 MCU.
+*   **Late Revision:** Features a 66201 MCU.
 
-<figure>
- <img src="DSC00474.JPG" alt="90-91 PM5 (image is great for comparing P04 &amp; PM5)">
- <figcaption>90-91 PM5 (image is great for comparing P04 & PM5)</figcaption>
-</figure>
+## Hardware Identification
+
+Use the following image gallery to identify specific board revisions and component layouts.
+
+```carousel
+![PM5 DX ECU (83C154 style)](PM5dxTJ.jpg)
+*Early PM5 DX ECU featuring the 83C154 MCU*
+<!-- slide -->
+![90-91 PM5 ROM area](PM5-230.jpg)
+*Close-up of the ROM area on a 90-91 PM5 board*
+<!-- slide -->
+![90-91 PM5 ROM detail](pm5-230_rom.gif)
+*Detailed view of the 90-91 PM5 ROM chips*
+<!-- slide -->
+![90-91 PM5 Board Overview](DSC00474.JPG)
+*90-91 PM5 board layout for comparison with P04 ECUs*
+```
+
+> [!NOTE]
+> The PM5 is a DPFI (Dual Point Fuel Injection) system. Ensure all diagnostic procedures and tuning efforts account for the specific sensor and injector wiring requirements of the DPFI architecture.

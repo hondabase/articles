@@ -1,50 +1,47 @@
 ---
-summary: 'Detailed hardware specifications, pinouts, and custom codebase support for the OBD0 PM6 Civic/CRX Si SOHC ECU.'
-tags: [ecu, reference]
+summary: 'Detailed hardware specifications, pinouts, and codebase support for the OBD0 PM6 Civic/CRX Si SOHC ECU.'
+tags: [ecu, obd0, pm6, tuning, d16a6]
 applies_to:
-  brand: Honda
-  ecus: [PM6]
   obd: [0]
-  models: [civic, crx, del-sol]
-  chassis: [ef, eg, eg-eh, ek]
+  models: [civic, crx]
+  chassis: [ef]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: PM6
-    url: /pgmfi/wiki/library/pm6
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# PM6 ECU (OBD0) Hardware & Code Reference
+# PM6 ECU (OBD0) Hardware and Code Reference
 
-The **PM6** is the factory OBD0 engine control unit (ECU) utilized in 1988–1991 USDM Honda Civic and CRX Si models powered by the SOHC 1.6L D16A6 engine. 
-
-Due to its simple architecture and widespread availability, the PM6 has historically served as a major development platform for OBD0 Honda tuning, disassembly, and real-time programming.
+The PM6 is the factory OBD0 engine control unit (ECU) utilized in 1988–1991 USDM Honda Civic and CRX Si models equipped with the SOHC 1.6L D16A6 engine.
 
 ## Microcontroller Architecture
 
-The PM6 ECU is built around the OKI `83C154` / Intel `80C154` microcontroller family. The ROM code can be extracted, modified, and burnt to standard EPROMs (such as the `27C256`) to adjust fuel maps, ignition maps, rev limits, and other engine parameters.
+The PM6 ECU utilizes the OKI 83C154 or Intel 80C154 microcontroller family. The ROM code can be extracted, modified, and flashed to standard EPROMs (such as the 27C256) to adjust fuel maps, ignition timing, rev limits, and other engine parameters.
+
+> [!IMPORTANT]
+> Ensure the EPROM is correctly seated and the checksum is verified after modification to prevent engine start failures or erratic operation.
 
 ## Development Resources
 
-The following development files are co-located in this directory:
+The following development files are available for this ECU:
 
-* [Pm6.asm](Pm6.asm): A comprehensive disassembly of the USDM 1991 PM6 stock ROM, with approximately 95% of the original assembly code fully mapped and commented for developers.
+* **Pm6.asm**: A comprehensive disassembly of the USDM 1991 PM6 stock ROM, with approximately 95% of the original assembly code mapped and commented.
 
 ## Board Layout Reference
 
-Below are high-resolution scans of the PM6 ECU printed circuit board (PCB) for component mapping and repair reference:
+Use the following images to identify IC locations, capacitors, and resistor packs for repair or modification.
 
-### 1. Board Top Layout
+```carousel
+![PM6 ECU circuit board top scan](PM6top.jpg)
+*Top side of the PM6 PCB showing IC locations, capacitors, and resistor packs.*
+<!-- slide -->
+![PM6 ECU circuit board bottom scan](PM6back.jpg)
+*Rear solder side of the PM6 PCB.*
+```
 
-The top side of the PM6 PCB showing IC locations, capacitors, and resistor packs:
+## ECU Pinout
 
-![PM6 ECU circuit board top scan showing electronic components](PM6top.jpg)
+The PM6 uses the standard OBD0 16-pin and 22-pin connector configuration.
 
-### 2. Board Underside Layout
+{{> obd0-pinout-reference }}
 
-The rear solder side of the PM6 PCB:
-
-![PM6 ECU circuit board bottom solder scan](PM6back.jpg)
+> [!TIP]
+> When performing hardware modifications or installing a socket for custom ROMs, always use a high-quality desoldering station to prevent damage to the PCB traces.

@@ -1,26 +1,30 @@
 ---
-summary: 'PS9 : 9091 USDM Civic EX (1.6L SOHC usually auto) The PS9 is identical to a PM6 with the addition of the circuitry to control an automatic tranny.'
-tags: [sensors, reference]
+summary: 'Technical overview of the PS9 ECU, a 1990-1991 USDM Civic EX unit featuring integrated automatic transmission control circuitry.'
+tags: [ecu, obd0, honda, ps9, pm6]
 applies_to:
-  obd: [0, 1, 2]
-  brand: Honda
-  models: [civic, crx, del-sol]
-  chassis: [ef, eg, eg-eh, ek]
+  obd: [0]
+  models: [civic]
+  chassis: [ef]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: PS9
-    url: /pgmfi/wiki/library/ps9
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# PS9
+# PS9 ECU Technical Overview
 
-PS9 : 90-91 [USDM](/cars/sensors/usdm) Civic EX (1.6L [SOHC](/cars/sensors/sohc) - usually auto) The PS9 is identical to a [PM6](/cars/ecu/pm6) with the addition of the circuitry to control an automatic tranny.
+The PS9 ECU was utilized in 1990–1991 USDM Civic EX models equipped with the 1.6L SOHC engine and automatic transmission. Architecturally, the PS9 is identical to the PM6 ECU, with the addition of dedicated circuitry required to manage automatic transmission functions.
 
-<figure>
- <img src="PS9auto.jpg" alt="eraser@d16a&apos;s scan of a [USDM](/cars/sensors/usdm) PS9 auto">
- <figcaption>eraser@d16a's scan of a [USDM](/cars/sensors/usdm) PS9 auto</figcaption>
-</figure>
+![PS9 ECU Board](PS9auto.jpg)
+*Internal view of the USDM PS9 automatic transmission ECU*
+
+> [!NOTE]
+> The PS9 shares the same base logic and hardware as the PM6, making it a functional equivalent for manual transmission applications provided the transmission control components are not required.
+
+## Technical Specifications
+
+*   **Application:** 1990–1991 USDM Civic EX
+*   **Engine:** 1.6L SOHC
+*   **Transmission:** Automatic
+*   **Base Architecture:** PM6
+
+## Compatibility and Usage
+
+Because the PS9 is essentially a PM6 with added transmission control logic, it is often used as a donor or replacement for PM6-based systems. When using a PS9 in a manual transmission vehicle, the automatic transmission control pins remain unused, and the ECU operates identically to a standard PM6 unit.

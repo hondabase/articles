@@ -1,20 +1,25 @@
 ---
-summary: "The OBD0 VTEC ECU's are the PR3 and the PW0. These ECUs ran the B16A1 in OBD0 cars from 8991. There is no code interchangeability between the two ECU's."
-tags: [ecu, reference, tuning, rom, sensors, diagnostics]
+summary: "Technical overview of OBD0 VTEC ECUs, specifically the PR3 and PW0 models used in 1989–1991 B16A1 applications."
+tags: [ecu, obd0, vtec, pr3, pw0, b16a1]
 applies_to:
   obd: [0]
-  models: [civic, crx, del-sol, integra]
-  chassis: [da, dc2, ef, eg, eg-eh, ek]
+  models: [civic, crx, integra]
+  chassis: [ef, da]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD0 Vtec EC Us'
-    url: /pgmfi/wiki/library/obd0-vtec-ec-us
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD0 VTEC EC Us
+# OBD0 VTEC ECU Reference: PR3 and PW0
 
-The [OBD0](/cars/rom/obd0) VTEC [ECU](/cars/ecu/ecu)'s are the PR3 and the PW0. These [ECU](/cars/ecu/ecu)s ran the B16A1 in [OBD0](/cars/rom/obd0) cars from 89-91. There is no code interchangeability between the two [ECU](/cars/ecu/ecu)'s. They use a crystal that operates at 7.900 MHZ These [ECU](/cars/ecu/ecu)s presently arent getting much love from the development folks.
+The OBD0 VTEC ECU family consists of two primary units: the PR3 and the PW0. These units were utilized to control the B16A1 engine in OBD0 vehicles produced between 1989 and 1991.
+
+## Compatibility and Specifications
+
+There is no code interchangeability between the PR3 and the PW0 ECUs. While they share the same application platform, their internal programming and hardware configurations are distinct.
+
+### Hardware Specifications
+
+*   **Clock Speed:** Both units utilize a crystal oscillator operating at 7.900 MHz.
+*   **Application:** B16A1 engines (1989–1991).
+
+> [!WARNING]
+> These ECUs are considered legacy hardware. Due to their age and specific architecture, they have limited support within modern tuning platforms.

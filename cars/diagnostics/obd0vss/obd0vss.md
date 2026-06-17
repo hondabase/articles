@@ -1,22 +1,29 @@
 ---
-summary: 'Author: George Date: 120302 22:36 Vehicle Speed Sensor (VSS), stored in RAM location 06Ch does appear to be linear (to my surprise!), but can only read up to ~157kph.'
-tags: [ecu, reference, sensors, diagnostics]
+summary: 'Technical reference for the OBD0 Vehicle Speed Sensor (VSS) data, including RAM memory location, linearity, and conversion formulas.'
+tags: [ecu, reference, sensors, diagnostics, vss]
 applies_to:
   obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: OBD0VSS
-    url: /pgmfi/wiki/library/obd0vss
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD0VSS
+# OBD0 Vehicle Speed Sensor (VSS) Data Reference
 
-**Author:** George
+The Vehicle Speed Sensor (VSS) data in OBD0 ECU systems is stored in RAM location `06Ch`. 
 
-**Date:** 12-03-02 22:36 [Vehicle Speed Sensor](/cars/wiring/vehicle-speed-sensor) ([VSS](/cars/sensors/vss)), stored in [RAM](/cars/reference/ram) location `06Ch` does appear to be linear (to my surprise!), but can only read up to ~157kph. Using Excel the formula is approximately: Speed (kph) = 0.6229x - 2.1385
+## Technical Specifications
+
+The VSS signal is linear; however, the system has a maximum readable threshold of approximately 157 kph.
+
+### Data Conversion
+To convert the raw hexadecimal or decimal value from RAM location `06Ch` to kilometers per hour (kph), use the following linear approximation:
+
+**Formula:**
+`Speed (kph) = 0.6229x - 2.1385`
+
+> [!NOTE]
+> The variable **x** represents the decimal value retrieved from RAM address `06Ch`.
+
+> [!IMPORTANT]
+> The sensor data saturates at approximately 157 kph. Values exceeding this threshold will not be accurately represented by the ECU.

@@ -1,24 +1,40 @@
 ---
-summary: "This formula is used to convert values in the high cam table scales to realworld RPMs. If ''x'' is an 8bit highcam scale RPM value, Hi Cam RPM(''x'') = 1875000''x'' / 53248 53248=D000h."
-tags: [ecu, reference, sensors]
+summary: "Technical reference for converting 8-bit high cam table scale values to real-world RPM for OBD1 Honda ECUs."
+tags: [ecu, tuning, sensors, obd1]
 applies_to:
   obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eg-eh]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD1 8bit High Cam RPM'
-    url: /pgmfi/wiki/library/obd1-8bit-high-cam-rpm
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD1 8bit High Cam RPM
+# OBD1 8-bit High Cam RPM Conversion
 
-This formula is used to convert values in the high cam table scales to real-world [RPM](/cars/sensors/rpm)s. If ''x'' is an 8-bit high-cam scale [RPM](/cars/sensors/rpm) value,
+This formula is used to convert 8-bit high cam table scale values to real-world RPM.
 
-- Hi Cam RPM(''x'') = 1875000*''x'' / 53248
+## Conversion Formula
 
-53248=`D000h`. Here is how it's calculated using standard integer fixed-point math tricks: | |MOV er2, `0ach`|; 0805 0 02 00 B5AC4A | |MOV er0, #`0d000h`|; 0808 0 02 00 449800D0 | |CLR A|; 080C 1 02 00 F9 | |DIV|; 080D 1 02 00 9037 | | |; DIV = (er0, A) <-- (er0, A) / er2; in this case, `0xd0000000` / (1875000/RPM) | | |; using bytes instead of words, (r1, r0,`Ah`, Al) <-- (r1, r0,`Ah`, Al) / (r5, r4) |||''... store the high bit of A, decide whether the divide overflowed, etc...'' | |LB A, r0|; 0817 0 02 00 78 | | |;r0 is the least significant byte of er0, which is the most significant word of the quotient! | |JNE label_081f|; 0818 0 02 00 CE05 |||''... overflow conditions, etc...'' |label_081f:|STB A, `0aah`|; 081F 0 02 00 D5AA
+If *x* represents an 8-bit high-cam scale RPM value, the conversion to RPM is calculated as follows:
+
+**Hi Cam RPM(x) = (1,875,000 * x) / 53,248**
+
+> [!NOTE]
+> The divisor **53,248** is equivalent to **D000h** in hexadecimal.
+
+## Assembly Implementation
+
+The following assembly logic demonstrates the fixed-point math used by the ECU to process these values:
+
+| Instruction | Opcode / Notes |
+| :--- | :--- |
+| `MOV er2, 0ach` | 0805 0 02 00 B5AC4A |
+| `MOV er0, #0d000h` | 0808 0 02 00 449800D0 |
+| `CLR A` | 080C 1 02 00 F9 |
+| `DIV` | 080D 1 02 00 9037 |
+| `DIV` Logic | (er0, A) = (er0, A) / er2 |
+| `LB A, r0` | 0817 0 02 00 78 |
+| `JNE label_081f` | 0818 0 02 00 CE05 |
+| `label_081f: STB A, 0aah` | 081F 0 02 00 D5AA |
+
+> [!IMPORTANT]
+> The register **r0** contains the least significant byte of **er0**, which represents the most significant word of the quotient. Ensure overflow conditions are handled according to the specific ECU ROM structure when implementing this logic in custom code.

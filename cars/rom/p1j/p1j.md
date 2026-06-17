@@ -1,41 +1,46 @@
 ---
-summary: 'Overview of the 96-00 UK Honda Civic D14 ECU, covering its compatibility and VTEC conversion potential.'
-tags: [ecu, reference, tuning, rom, sensors]
+summary: 'Technical overview of the P1J and P1K ECU units found in 1996–2000 UK Honda Civic D14 engines, including PCB identification and modification potential.'
+tags: [ecu, p1j, p1k, d14, obd1, tuning]
 applies_to:
-  obd: [0, 1, 2]
-  brand: Honda
+  obd: [1]
   models: [civic]
-  chassis: {}
+  chassis: [ek]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: P1J
-    url: /pgmfi/wiki/library/p1j
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# P1J
+# P1J and P1K ECU Technical Reference
 
-P1J and P1K come from 96-00 UK civics with D14 engines. Despite the years, those are OBDI [ECU](/cars/ecu/ecu)s and seem to be easyly convertable for VTEC Sorry for the bad images, please consult the page on [P1 K](/cars/rom/p1k) for better views of the [PCB](/cars/wiring/pcb). Those OBDI P1J or P1K [ECU](/cars/ecu/ecu)s share a strange board layout labeled as: "2PU6098-4460P1 5 A8E-A3", but get easyly chipped. VTEC converion seems easy, but is not yet tested.
+The P1J and P1K ECUs are factory-equipped in 1996–2000 UK Honda Civic models featuring the D14 engine series. Despite the production years, these units utilize an OBD1 architecture.
 
-<figure>
- <img src="DSC00055_small.jpg" alt="">
-</figure>
+> [!NOTE]
+> While these units are physically installed in OBD2-era vehicles, the internal architecture is OBD1.
 
-<figure>
- <img src="DSC00056_small.jpg" alt="">
-</figure>
+## PCB Identification
+These ECUs utilize a specific board layout identified by the marking: **2PU6098-4460P1 5 A8E-A3**. 
 
-<figure>
- <img src="DSC00057_small.jpg" alt="">
-</figure>
+The hardware is compatible with standard OBD1 chipping procedures. For detailed visual references of the PCB layout and component placement, refer to the [P1K ECU documentation](/cars/rom/p1k).
 
-<figure>
- <img src="DSC00058_small.jpg" alt="">
-</figure>
+## Component Gallery
 
-<figure>
- <img src="DSC00054_small.jpg" alt="">
-</figure>
+```carousel
+![P1J PCB Top View](DSC00055_small.jpg)
+*Top view of the P1J PCB assembly*
+<!-- slide -->
+![P1J PCB Bottom View](DSC00056_small.jpg)
+*Bottom view of the P1J PCB assembly*
+<!-- slide -->
+![P1J Connector Side](DSC00057_small.jpg)
+*Connector interface side of the P1J*
+<!-- slide -->
+![P1J Component Detail](DSC00058_small.jpg)
+*Detailed view of onboard components*
+<!-- slide -->
+![P1J Housing](DSC00054_small.jpg)
+*External view of the P1J ECU housing*
+```
+
+## VTEC Conversion
+The P1J and P1K boards are candidates for VTEC conversion. While the board layout supports the necessary modifications common to OBD1 platforms, VTEC functionality on these specific variants remains unverified. 
+
+> [!CAUTION]
+> VTEC conversion on P1J/P1K units is experimental. Ensure all traces are verified against standard OBD1 VTEC schematics before attempting operation.

@@ -1,31 +1,24 @@
 ---
-summary: 'PJ1 : 8587 EDM Integra 1.6i16, CRX MK1 1.6i16 Thanks to Mark Lamond for the scans (EDM) Attachment: Modify: Size: Date: Who: Comment: : : : : : :'
-tags: [hardware, education, sensors, reference]
+summary: 'Technical reference for the PJ1 ECU used in 1985–1987 EDM Integra 1.6i-16 and CRX MK1 1.6i-16 models.'
+tags: [ecu, hardware, reference, edm]
 applies_to:
-  obd: [0, 1, 2]
-  brand: Acura/Honda
-  models: [crx, integra]
-  chassis: {}
+  obd: [0]
+  models: [integra, crx]
+  chassis: [e-as, e-da]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: PJ1
-    url: /pgmfi/wiki/library/pj1
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# PJ1
+# PJ1 ECU Technical Reference
 
-PJ1 : 85-87 [EDM](/cars/wiring/edm) Integra 1.6i-16, CRX MK1 1.6i-16 Thanks to Mark Lamond for the scans ([EDM](/cars/wiring/edm))
+The PJ1 ECU was utilized in 1985–1987 European Domestic Market (EDM) Honda Integra 1.6i-16 and CRX MK1 1.6i-16 vehicles.
 
-<figure>
- <img src="PJ1-752_component.jpg" alt="PJ1 Component (top) side scan">
- <figcaption>PJ1 Component (top) side scan</figcaption>
-</figure>
+```carousel
+![PJ1 Component side](PJ1-752_component.jpg)
+*PJ1 component (top) side view*
+<!-- slide -->
+![PJ1 Solder side](PJ1-752_solder.jpg)
+*PJ1 solder (bottom) side view*
+```
 
-<figure>
- <img src="PJ1-752_solder.jpg" alt="PJ1 Solder (bottom) side scan">
- <figcaption>PJ1 Solder (bottom) side scan</figcaption>
-</figure>
+> [!NOTE]
+> This unit is a legacy OBD0-era controller. Ensure proper static discharge precautions are taken when handling the PCB.

@@ -1,22 +1,32 @@
 ---
-summary: 'An 8-bit ROM checksum verification utility by Keil.'
-tags: [tuning, rom]
+summary: 'A command-line utility for verifying and correcting 8-bit ROM checksums during firmware compilation.'
+tags: [tuning, rom, checksum, firmware]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: check8
-    url: /pgmfi/wiki/library/check8
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# check8 Checksum Utility
+# check8 8-Bit ROM Checksum Utility
 
-**check8** is an 8-bit checksum command-line utility used to verify and correct binary ROM checksum values during custom firmware compilation or assembly.
+**check8** is a command-line utility designed to verify and correct 8-bit checksum values in binary ROM files. It is primarily used during the firmware compilation and assembly process to ensure data integrity.
 
-It can be downloaded from the Keil compiler toolchain repository at [Keil](http://www.keil.com).
+## Overview
+The utility calculates the 8-bit checksum of a specified binary file and can automatically update the file to include the correct checksum value. This is essential when modifying ECU maps or custom firmware to prevent checksum-related errors during ECU initialization.
+
+> [!IMPORTANT]
+> Ensure the binary file is not currently in use by another process or emulator before running the utility to prevent file access errors.
+
+## Usage
+The utility is executed via the command line. Standard syntax typically requires the target filename as an argument:
+
+`check8 <filename.bin>`
+
+### Features
+* **Verification:** Scans the binary file and compares the existing checksum against the calculated value.
+* **Correction:** Automatically patches the binary file with the correct 8-bit checksum if a mismatch is detected.
+* **Compatibility:** Compatible with standard binary ROM formats used in OBD-series ECU tuning.
+
+## Availability
+The utility is provided as part of the Keil compiler toolchain. It can be obtained through the official [Keil website](http://www.keil.com).

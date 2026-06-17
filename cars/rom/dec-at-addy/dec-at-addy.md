@@ -1,20 +1,37 @@
 ---
-summary: 'Dec At Addy is the decimal equivalent of the hex value at the specified address or location. So if the address was 1094h and the hex value at 1094h was FF then Dec At Addy would be 255.'
-tags: [tuning, rom, sensors, reference]
+summary: 'An explanation of the Dec At Addy conversion process, which translates hexadecimal values stored at specific ECU memory addresses into their decimal equivalents.'
+tags: [tuning, rom, sensors, reference, hex-to-decimal]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Dec At Addy'
-    url: /pgmfi/wiki/library/dec-at-addy
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Dec At Addy
+# Understanding Dec At Addy
 
-[Dec At Addy](/cars/rom/dec-at-addy) is the decimal equivalent of the hex value at the specified address or location. So if the address was `1094h` and the hex value at `1094h` was FF then [Dec At Addy](/cars/rom/dec-at-addy) would be 255.
+"Dec At Addy" refers to the decimal representation of a hexadecimal value stored at a specific memory address within the ECU. This conversion is essential when interpreting raw ROM data for tuning or diagnostic purposes.
+
+## Conversion Logic
+
+To determine the decimal value, identify the hexadecimal byte located at the target memory address and convert it to base-10.
+
+**Example:**
+*   **Target Address:** `1094h`
+*   **Hex Value at Address:** `FF`
+*   **Decimal Equivalent:** `255`
+
+> [!TIP]
+> Most scientific calculators or programming environments (such as Python or C++) can perform this conversion using the `int(value, 16)` function.
+
+## Common Conversions
+
+| Hexadecimal | Decimal |
+| :--- | :--- |
+| 00 | 0 |
+| 0A | 10 |
+| 64 | 100 |
+| FF | 255 |
+
+> [!IMPORTANT]
+> Ensure you are referencing the correct memory bank or offset when reading values, as incorrect address targeting will result in erroneous data interpretation.

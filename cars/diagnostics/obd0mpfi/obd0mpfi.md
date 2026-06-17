@@ -1,43 +1,55 @@
 ---
-summary: 'There is a very distinct family of ECUs found in 8891ish OBD0 hondas. The main characteristics of this family: Oki80 C154 or Oki83 C154 MCUs that are essentially Intel8051 with a 12Mhz Clock Speed.'
-tags: [ecu, reference, tuning, rom, sensors, diagnostics]
+summary: 'Technical overview of the OBD0 MPFI ECU family, featuring Oki 80C154/83C154 architecture and common hardware components found in 1988–1991 Honda vehicles.'
+tags: [ecu, obd0, tuning, rom, mcu, diagnostics]
 applies_to:
   obd: [0]
-  brand: Acura/Honda
   models: [accord, civic, crx, del-sol, integra, prelude]
   chassis: [da, dc2, ef, eg, eg-eh, ek]
 complexity: advanced
-sources:
-  - name: 'pgmfi.org wiki'
-    title: OBD0MPFI
-    url: /pgmfi/wiki/library/obd0mpfi
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD0MPFI
+# OBD0 MPFI ECU Architecture
 
-There is a very distinct family of [ECU](/cars/ecu/ecu)s found in 88-91ish [OBD0](/cars/rom/obd0) hondas. The main characteristics of this family:
+The OBD0 MPFI ECU family, utilized in 1988–1991 Honda and Acura vehicles, is defined by a specific hardware architecture centered around the Intel 8051-based microcontroller.
 
-- [Oki80 C154](/cars/diagnostics/oki80c154) or [Oki83 C154](/cars/diagnostics/oki83c154) [MCU](/cars/rom/mcu)s that are essentially [Intel8051](/cars/rom/intel8051) with a 12Mhz [Clock Speed](/cars/sensors/clock-speed).
-- Presence of oki 38256 [EPROM](/cars/rom/eprom) on 90-91 models
-- [MPFI](/cars/sensors/mpfi) engines w/ 4 injectors
-- non-vtec engines
-- electronic advance distributors
-- Presence of [Oki6260 A](/cars/ecu/oki6260a) [IO](/cars/sensors/io) controller chip
-- Presence of NEC [UPD7004 C](/cars/sensors/upd7004c) [ADC](/cars/wiring/adc) chip
-- Presence of [5128 XRAM](/cars/rom/5128xram) 2K [SRAM](/cars/sensors/sram) chip
+## Hardware Specifications
 
-This architecture was also used by Rover in the UK, and appeared to do so for considerably longer than the 4 years this architecture was used in [USDM](/cars/sensors/usdm) and [JDM](/cars/sensors/jdm) cars. A partial list of [OBD0](/cars/rom/obd0) [ECU](/cars/ecu/ecu)s: - PG7 (88-89 Integra D16A1 - **note** the 86-87 version of this [ECU](/cars/ecu/ecu) ran the vacuum advance D16A1 motor. Different family)
-- PM6 ([USDM](/cars/sensors/usdm) Civic/CRX Si - D16A6 [SOHC](/cars/sensors/sohc))
-- PM7 ([JDM](/cars/sensors/jdm)/EDM Civic/CRX Si - ZC [DOHC](/cars/sensors/dohc))
-- PM8 ([USDM](/cars/sensors/usdm) D15B? [SOHC](/cars/sensors/sohc) HF, [EDM](/cars/wiring/edm) D16Z? ZC [DOHC](/cars/sensors/dohc))
-- PR4 ([USDM](/cars/sensors/usdm) 90-91 Int
-- PR5 ([JDM](/cars/sensors/jdm) Integra ???)
-- PP5 (UKDM Rover Cabio?)
-- PS9 ([USDM](/cars/sensors/usdm) Civic Ex 4dr D16A6 auto???)
-- PK2 ([JDM](/cars/sensors/jdm) Honda Prelude B20A Engine electronic advance)
-- PH3 ([JDM](/cars/sensors/jdm) 86-89 Honda Accord B20A)
+The primary characteristics of this ECU family include:
 
-[Chipping An88-89 ECU](/cars/rom/chipping-an88-89ecu) is not as easy as the 90-91 computers because only the later computers have replaceable external [ROM](/cars/rom/rom)s. Understanding [OBD0 Inter Chip Communication](/cars/ecu/obd0-inter-chip-communication) will be key to figuring out exactly how the [ECU](/cars/ecu/ecu)s work. Attached below is an eagle (4.09) library containing the [MCU](/cars/rom/mcu) (OKI 8xC154), [RAM](/cars/reference/ram) (`M5128`), [ADC](/cars/wiring/adc) (µPD7004) and engine control counter IC ([Oki6260 A](/cars/ecu/oki6260a)) devices for using these components in eagle layout editor.
+*   **MCU:** Oki 80C154 or Oki 83C154 (Intel 8051-based, 12 MHz clock speed).
+*   **EPROM:** Oki 38256 (found on 1990–1991 models).
+*   **SRAM:** 5128 XRAM (2K).
+*   **I/O Controller:** Oki 6260A.
+*   **ADC:** NEC UPD7004C.
+*   **Engine Management:** MPFI (4-injector), non-VTEC, electronic advance ignition.
+
+> [!NOTE]
+> This architecture was also utilized by Rover in the UK for a significantly longer production cycle than the four-year window observed in USDM and JDM markets.
+
+## ECU Identification List
+
+The following ECUs utilize the OBD0 MPFI architecture:
+
+*   **PG7:** 1988–1989 Integra (D16A1). *Note: The 1986–1987 version utilizes a different architecture for the vacuum advance D16A1.*
+*   **PM6:** USDM Civic/CRX Si (D16A6 SOHC).
+*   **PM7:** JDM/EDM Civic/CRX Si (ZC DOHC).
+*   **PM8:** USDM D15B SOHC HF / EDM D16Z ZC DOHC.
+*   **PR4:** USDM 1990–1991 Integra.
+*   **PR5:** JDM Integra.
+*   **PP5:** UKDM Rover Cabrio.
+*   **PS9:** USDM Civic EX 4dr (D16A6 Automatic).
+*   **PK2:** JDM Prelude (B20A, electronic advance).
+*   **PH3:** JDM 1986–1989 Accord (B20A).
+
+## Tuning and Development
+
+> [!IMPORTANT]
+> Chipping 1988–1989 ECUs is significantly more complex than 1990–1991 models, as the earlier units lack replaceable external ROM sockets. 
+
+To facilitate custom development, refer to the [OBD0 Inter-Chip Communication](/cars/ecu/obd0-inter-chip-communication) documentation to understand the data exchange between the MCU and peripheral ICs. 
+
+For PCB design and reverse engineering, an Eagle (v4.09) library is available containing the following device footprints:
+*   Oki 8xC154 MCU
+*   M5128 RAM
+*   µPD7004 ADC
+*   Oki 6260A Engine Control Counter IC

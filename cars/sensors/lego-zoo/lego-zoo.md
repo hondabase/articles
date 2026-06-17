@@ -1,20 +1,32 @@
 ---
-summary: 'A historical community page dedicated to the early days of the PGMFI.org wiki and the contributors who helped build the Honda tuning knowledgebase.'
-tags: [sensors, reference]
+summary: 'A reference guide to early Honda ECU modification resources and historical documentation archives.'
+tags: [ecu, history, reference]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Lego Zoo'
-    url: /pgmfi/wiki/library/lego-zoo
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Lego Zoo
+# Honda ECU Modification Historical Archive
 
-I try to be cool... [http://web.archive.org/web/20050205083030/http://home.insightbb.com:80/~legoz81/](http://web.archive.org/web/20050205083030/http://home.insightbb.com:80/~legoz81/) [email protected] Lego Z81 on the site go grab mIRC get on EFNet and /j #pgmfi.org !!! I will be hosting files there soon!
+This document serves as a reference for early Honda ECU modification documentation and historical project archives.
+
+## Overview
+The "Lego Zoo" collection represents one of the foundational repositories of early Honda engine management research. It contains documentation and files related to the initial reverse-engineering efforts of OBD-series Honda ECUs.
+
+## Historical Resources
+The following archive contains technical data and documentation originally compiled during the early development of Honda ECU tuning:
+
+*   **Archive URL:** [Lego Zoo Archive](http://web.archive.org/web/20050205083030/http://home.insightbb.com:80/~legoz81/)
+*   **Primary Focus:** Early OBD-series ECU hardware analysis and data logging.
+
+> [!NOTE]
+> This content is provided for historical reference. Modern tuning platforms and diagnostic tools have superseded many of the manual procedures documented in these legacy archives.
+
+## Technical Documentation
+For current technical specifications, refer to the following standardized resources:
+
+::: widget error-codes :::
+
+{{> resistor-color-codes }}

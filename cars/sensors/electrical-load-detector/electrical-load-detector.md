@@ -1,21 +1,37 @@
 ---
-summary: 'Electronic Load Detector measures electrical load used to determine if the alternator should be in low or high output mode.'
-tags: [sensors, reference]
+summary: 'The Electrical Load Detector (ELD) monitors vehicle electrical consumption to allow the ECU to proactively adjust idle parameters and alternator output.'
+tags: [sensors, electrical, idle, alternator]
 applies_to:
   obd: [0, 1, 2]
-  brand: Honda
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Electrical Load Detector'
-    url: /pgmfi/wiki/library/electrical-load-detector
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Electrical Load Detector
+# Electrical Load Detector (ELD) Operation
 
-Electronic Load Detector measures electrical load - used to determine if the alternator should be in low or high output mode. Since Hondas are running so lean at idle, virtually any load will cause the idle to drop. Even small electrical loads, such as the turn signals, will cause the idle to fluctuate. The electrical load detector (ELD) was added to later model Hondas to monitor for any significant electrical loads. It sends a warning signal to the ECM before the load has a chance to effect the idle. The ECM makes slight adjustments to the idle air control (IAC) valve, injector PW, and ignition timing to compensate for the electrical load.
+The Electrical Load Detector (ELD) is a sensor designed to monitor the vehicle's total electrical consumption. This data is used by the Engine Control Module (ECM) to determine the necessary alternator output mode (low or high) and to stabilize engine idle during electrical load transitions.
+
+## Functional Overview
+
+Honda engines are calibrated for lean operation at idle to maximize fuel efficiency. Because of this, even minor electrical loads—such as the activation of turn signals or cooling fans—can cause a noticeable drop in engine RPM. 
+
+The ELD monitors current flow through the main fuse box and sends a signal to the ECM. Upon receiving this signal, the ECM proactively adjusts the following parameters to compensate for the load:
+
+*   **Idle Air Control (IAC) Valve:** Increases bypass air to maintain target idle speed.
+*   **Injector Pulse Width (PW):** Adjusts fuel delivery to maintain the stoichiometric air-fuel ratio.
+*   **Ignition Timing:** Modifies spark advance to stabilize engine torque output.
+
+> [!NOTE]
+> The ELD allows the ECM to compensate for electrical loads before they result in a perceptible fluctuation in engine idle.
+
+## System Integration
+
+The ELD is integrated into the vehicle's power distribution system, typically located within the under-hood fuse/relay box. It acts as a current-sensing device that provides a variable voltage signal to the ECM, which is proportional to the total electrical load of the vehicle.
+
+### Troubleshooting Considerations
+
+If the ELD circuit fails or provides an out-of-range signal, the ECM may trigger a Diagnostic Trouble Code (DTC) related to the charging system or idle control. 
+
+> [!WARNING]
+> Always verify the integrity of the ELD ground and signal wiring before replacing the sensor unit, as high-resistance connections in the sensor circuit can mimic a faulty ELD.

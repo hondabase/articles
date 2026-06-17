@@ -1,41 +1,52 @@
 ---
-summary: 'PT3 9093 OBD1 USDM Accord SOHC nonvtec F22A1 This ECU shares the shares the same PC board with the EDM PT5 Accord ECU (02D011901504) Scan: !PT3.'
-tags: [ecu, reference, sensors]
+summary: 'Technical reference for the OBD1 PT3 ECU used in 1990-1993 USDM Honda Accord models with the F22A1 engine.'
+tags: [ecu, accord, obd1, f22a1]
 applies_to:
   obd: [1]
-  brand: Honda
   models: [accord]
-  chassis: [cb-cd]
+  chassis: [cb]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: PT3
-    url: /pgmfi/wiki/library/pt3
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# PT3
+# PT3 ECU Technical Reference
 
-PT3 90-93 [OBD1](/cars/wiring/obd1) [USDM](/cars/sensors/usdm) Accord [SOHC](/cars/sensors/sohc) non-vtec F22A1 This [ECU](/cars/ecu/ecu) shares the shares the same PC board with the [EDM](/cars/wiring/edm) PT5 Accord [ECU](/cars/ecu/ecu) (02D01190-1504) Scan: ![PT3.jpg](PT3.jpg)Scan-bottom (Thanks Andrew Shinn!): ![PT3-bot.jpg](PT3-bot.jpg)
+The PT3 ECU is an OBD1 engine control unit utilized in 1990–1993 USDM Honda Accord vehicles equipped with the SOHC non-VTEC F22A1 engine. This unit shares the same printed circuit board (PCB) architecture as the EDM PT5 Accord ECU (part number 02D01190-1504).
 
-<figure>
- <img src="PT3_A54.jpeg" alt="1992 Canadian LX Accord Auto">
- <figcaption>1992 Canadian LX Accord Auto</figcaption>
-</figure>
+## PCB Overview
 
-<figure>
- <img src="USDM-PT3-Manual-front.jpg" alt="1991 [USDM](/cars/sensors/usdm) PT3-A23 EX Accord Manual">
- <figcaption>1991 [USDM](/cars/sensors/usdm) PT3-A23 EX Accord Manual</figcaption>
-</figure>
+The PT3 architecture is consistent across various regional variants. The following images detail the component layout and board design.
 
-<figure>
- <img src="USDM-PT3-Manual-back.jpg" alt="1991 [USDM](/cars/sensors/usdm) PT3-A23 EX Accord Manual">
- <figcaption>1991 [USDM](/cars/sensors/usdm) PT3-A23 EX Accord Manual</figcaption>
-</figure>
+```carousel
+![Front view of PT3 ECU PCB](PT3.jpg)
+*Top view of the PT3 PCB assembly*
+<!-- slide -->
+![Bottom view of PT3 ECU PCB](PT3-bot.jpg)
+*Bottom view of the PT3 PCB assembly*
+```
 
-<figure>
- <img src="USDM-PT3-Manual-chips-resistors.jpg" alt="1991 [USDM](/cars/sensors/usdm) PT3-A23 - OKI 66911 38256 `74HC373`">
- <figcaption>1991 [USDM](/cars/sensors/usdm) PT3-A23 - OKI 66911 38256 `74HC373`</figcaption>
-</figure>
+## Variant Specifications
+
+The PT3 ECU was produced in several configurations depending on transmission type and regional emissions requirements.
+
+| Variant | Application | Transmission |
+| :--- | :--- | :--- |
+| PT3-A23 | 1991 USDM EX Accord | Manual |
+| PT3-A54 | 1992 Canadian LX Accord | Automatic |
+
+> [!NOTE]
+> The PT3-A23 variant utilizes the OKI 66911 processor, 38256 memory, and 74HC373 latch ICs.
+
+## Component Gallery
+
+```carousel
+![1992 Canadian LX Accord Auto](PT3_A54.jpeg)
+*PT3-A54 variant for automatic transmission*
+<!-- slide -->
+![1991 USDM PT3-A23 EX Accord Manual](USDM-PT3-Manual-front.jpg)
+*Front view of the PT3-A23 manual transmission ECU*
+<!-- slide -->
+![1991 USDM PT3-A23 EX Accord Manual](USDM-PT3-Manual-back.jpg)
+*Back view of the PT3-A23 manual transmission ECU*
+<!-- slide -->
+![PT3-A23 internal components](USDM-PT3-Manual-chips-resistors.jpg)
+*Detail of OKI 66911, 38256, and 74HC373 IC placement*

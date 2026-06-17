@@ -1,20 +1,33 @@
 ---
-summary: 'Technical advice on the use and removal of Red Loctite thread-locking compound in high-stress Honda engine component applications.'
-tags: [tuning, rom, sensors, reference]
+summary: 'Technical guidance on the application and removal of high-strength Red Loctite thread-locking compound for critical Honda engine components.'
+tags: [fasteners, assembly, maintenance, hardware]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Red Loctite'
-    url: /pgmfi/wiki/library/red-loctite
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Red Loctite
+# Red Loctite Thread-Locking Compound
 
-Red Loc-Tite is like a wife... your stuck with her and to get rid of her, it's gonna cost you a bundle. Unlike [Blue Loctite](/cars/rom/blue-loctite). You put Red Loc-Tite on a bolt that is prone to losening from vibration and also would lead to catastrophic relusts if it did. Flywheel bolt is a good example but you will have to use some major effort to get the bolt out later, so beforewarned. If it is isn't so critical but you still want to make sure it won't just vibrate loose, then you want [Blue Loctite](/cars/rom/blue-loctite).
+Red Loctite (high-strength thread-locker) is a permanent adhesive designed for heavy-duty applications where vibration resistance is critical. Due to its high bonding strength, it is intended for fasteners that do not require frequent removal.
+
+## Application Guidelines
+
+Red Loctite should be reserved for high-stress components where fastener failure would result in catastrophic engine damage. 
+
+*   **Primary Use Cases:** Flywheel bolts, pressure plate bolts, and other high-torque, high-vibration engine internals.
+*   **Removal Considerations:** Because Red Loctite creates a permanent bond, removal of fasteners often requires significant torque or the application of localized heat to break the chemical seal. 
+
+> [!WARNING]
+> Do not use Red Loctite on fasteners that require periodic maintenance or adjustment. For non-critical components prone to vibration, use Blue Loctite (medium-strength) to ensure the fastener can be removed without damaging the threads or the component.
+
+## Comparison Summary
+
+| Type | Strength | Application | Removal |
+| :--- | :--- | :--- | :--- |
+| **Blue Loctite** | Medium | General vibration-prone fasteners | Hand tools |
+| **Red Loctite** | High | Permanent, critical engine fasteners | Heat/High torque required |
+
+> [!TIP]
+> Always verify the torque specifications for the specific fastener before application. Ensure threads are clean and free of oil or debris to allow the thread-locker to cure properly.

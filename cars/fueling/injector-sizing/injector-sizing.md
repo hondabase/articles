@@ -1,23 +1,41 @@
 ---
-summary: 'Learn how to correctly calculate and select the appropriate fuel injectors based on your target horsepower and engine modifications.'
-tags: [injectors, fueling, tuning]
+summary: 'Learn how to correctly calculate and select the appropriate fuel injectors based on your target horsepower and engine modifications to ensure optimal idle and peak performance.'
+tags: [injectors, fueling, tuning, fuel-system]
 applies_to:
   models: [civic, crx, del-sol, integra, prelude, accord, s2000, nsx]
   chassis: [ef, eg, ek, da, dc2, bb, cb-cd, ap1, ap2, na1-na2]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Injector Sizing'
-    url: /pgmfi/wiki/library/injector-sizing
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Injector Sizing
+# Fuel Injector Sizing and Selection
 
-Fuel Injectors must be sized to provide adequate fuel flow at maximum HP/RPM/Boost, while being small enough to provide low-enough flow during idle. Most PGM-FI systems have a minimum injector pulsewidth of 1 millisecond, which limits the upper limit of injector size. For example, a 1000cc injector will flood a stock 1.6L Honda engine at idle because 1Ms of pulsewidth is simply way too much fuel. We could go into a ton of theory here but by far, the most comprehensive explaination of injector sizing can be found at [RC Engineering](http://www.rceng.com).
+Selecting the correct fuel injectors requires balancing the flow requirements for maximum horsepower, RPM, and boost levels against the minimum flow requirements for stable idle.
 
-### Injector Upgrades 
+## Injector Sizing Constraints
 
-A common upgrade for turbocharged or high-horsepower normally aspirated Hondas is replacing the stock injectors (usually 240cc or 290cc) with 450cc injectors from turbocharged 4-cylinder Mitsubishi and Chrysler vehicles (often called DSM for Diamond-Star Motors, a colaborative relationship between the two compnanies who's name is based on `each` of the company's logos) but these injectors are becoming more expensive as everone is hip to this mod. There are many other OEM injectors from other cars that are suitable for use in Hondas... just make sure you also get the fuel injector plugs as these are usually different between makes, as well as investigating whether the injectors are Peak And Hold Injectors or Saturated Injectors as a resistor box may be needed. A list of injector flow rates for many OEM cars can be found [here](http://www.robietherobot.com/storm/fuelinjectorguide.htm).
+Most Honda PGM-FI systems have a minimum injector pulsewidth of approximately 1.0 millisecond. This limitation dictates the maximum usable injector size for a given engine displacement.
+
+> [!WARNING]
+> Installing injectors that are too large for the engine's displacement will result in an excessively rich air-fuel ratio at idle, as the ECU cannot command a pulsewidth short enough to maintain stoichiometric combustion. For example, 1000cc injectors are typically too large for a stock 1.6L engine.
+
+## Injector Upgrades
+
+When upgrading for forced induction or high-output naturally aspirated builds, ensure the chosen injectors are compatible with the vehicle's electrical system.
+
+### Compatibility Considerations
+*   **Impedance:** Determine if the injectors are **Peak and Hold** (low impedance) or **Saturated** (high impedance). 
+*   **Resistor Box:** If installing low-impedance injectors into a system designed for high-impedance (or vice versa), a resistor box or injector driver may be required to prevent ECU damage or improper spray patterns.
+*   **Connectors:** OEM injectors from different manufacturers often utilize unique electrical connectors. Ensure you source the appropriate pigtails for your specific injector set.
+
+### Common Upgrade Paths
+Historically, 450cc injectors from DSM (Mitsubishi/Chrysler) platforms were a common budget upgrade. As these components become rarer, modern aftermarket high-impedance injectors are recommended for better spray patterns, idle stability, and ease of tuning.
+
+> [!TIP]
+> Always verify the flow rate and impedance of any used OEM injectors before installation. Refer to professional injector flow charts to ensure the flow rate matches your target horsepower goals.
+
+## Calculation Resources
+
+For precise sizing, utilize the following industry-standard calculation methods:
+
+*   **Target Horsepower:** Calculate total fuel flow requirements based on your target brake horsepower (BHP) and estimated Brake Specific Fuel Consumption (BSFC).
+*   **Duty Cycle:** Aim for a maximum injector duty cycle of 80–85% at peak load to ensure injector longevity and consistent fuel delivery.

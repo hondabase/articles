@@ -1,34 +1,44 @@
 ---
-summary: 'Technical specifications, software configuration, and chip settings for the EETools ChipMax USB device programmer.'
-tags: [hardware, reference]
+summary: 'Technical overview and usage guide for the EETools ChipMax universal device programmer, focusing on EPROM and EEPROM support for Honda ECU tuning.'
+tags: [hardware, programming, eprom, eeprom, tuning]
 applies_to:
   obd: [0, 1, 2]
-  chassis: [ef]
-  models: {}
+  chassis: [ef, eg, ek, dc]
+  models: [all]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Chip Max'
-    url: /pgmfi/wiki/library/chip-max
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # EETools ChipMax Device Programmer
 
-The **ChipMax** (manufactured by [EE Tools](http://www.eetools.com)) is an entry-level professional universal device programmer. Originally released with a parallel port interface, newer models utilize USB connectivity (such as the ChipMax2). 
-
-It is a popular choice for burning EPROMs (like the `27C256`) and EEPROMs (like the [28C256](/cars/ecu/28c256)) used in OBD0 and OBD1 Honda ECUs.
+The EETools ChipMax is a professional-grade universal device programmer designed for high-reliability memory chip operations. It is widely utilized for reading and writing EPROMs (e.g., 27C256) and EEPROMs (e.g., 28C256) required for OBD0 and OBD1 Honda ECU tuning.
 
 ## Key Features
 
-* **Universal Device Support:** Features a high-quality 40-pin Zero Insertion Force (ZIF) socket. It supports a wide range of devices including EPROMs, EEPROMs, Flash memory, and microcontrollers.
+* **40-pin ZIF Socket:** Features a high-quality Zero Insertion Force (ZIF) socket to accommodate various chip packages without mechanical stress.
+* **Universal Device Support:** Compatible with a broad spectrum of EPROMs, EEPROMs, Flash memory, and microcontrollers.
+* **Dedicated Hardware Timing:** Unlike hobbyist-grade programmers, the ChipMax utilizes dedicated internal controllers to manage precise programming voltages and timing cycles. This reduces the frequency of verification failures and prevents chip corruption.
+* **Software Interface:** The control software provides robust tools for buffer editing, blank checks, and checksum verification.
 
-* **Reliable Hardware Timings:** Unlike low-cost generic burners (such as the [Willem](/cars/rom/willem) or DIY "Ghetto Burner" designs), the ChipMax features dedicated internal controllers that handle precise programming voltages and timing cycles, preventing verification failures and damaged chips.
+> [!TIP]
+> Always ensure the latest software version is installed from the manufacturer's website to maintain compatibility with newer memory chip revisions.
 
-* **Software & Support:** EE Tools maintains regular software updates for device support. Historically, their technical support has been known to write custom device profiles upon request.
+## Usage Guidelines
 
-## Comparison & Usage
+The ChipMax is preferred for frequent ROM operations due to its stability and consistent performance. When preparing to program a chip for an ECU, follow these standard procedures:
 
-Compared to hobbyist-grade burners, the ChipMax is highly stable, making it a preferred option for tuners who frequently read and write ROMs. The control software allows for quick checksum verification, blank checks, and buffer editing prior to writing.
+1. **Device Selection:** Select the specific chip model (e.g., 27C256) within the software menu to ensure the correct voltage and timing parameters are applied.
+2. **Buffer Loading:** Load the binary file (.bin) into the software buffer.
+3. **Blank Check:** Perform a blank check on the target chip to ensure it is fully erased before initiating the write process.
+4. **Verification:** After the write cycle is complete, perform a verify operation to ensure the data in the chip matches the buffer exactly.
+
+> [!WARNING]
+> Ensure the chip is seated correctly in the ZIF socket with the notch aligned toward the lever mechanism. Improper orientation can cause permanent damage to both the chip and the programmer.
+
+## Hardware Comparison
+
+| Feature | Hobbyist Programmer (e.g., Willem) | EETools ChipMax |
+| :--- | :--- | :--- |
+| **Interface** | Parallel / USB (often unstable) | USB (stable) |
+| **Timing Control** | Software-dependent | Dedicated internal controller |
+| **Reliability** | Low (frequent verification errors) | High (industrial grade) |
+| **Ease of Use** | Manual jumper configuration | Software-controlled |

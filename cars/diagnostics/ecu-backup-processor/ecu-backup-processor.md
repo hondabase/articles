@@ -1,21 +1,32 @@
 ---
-summary: 'Honda ECUs are engineered with many levels of redundancy. There is a Backup processor (labeled NEC BACK0004 in most OBD0 and Oki 6534 in most OBD1 (??)).'
-tags: [ecu, reference, sensors, diagnostics]
+summary: 'An overview of the Honda ECU backup processor, a redundant system designed to maintain engine operation during critical main processor failures.'
+tags: [ecu, diagnostics, hardware, redundancy]
 applies_to:
   obd: [0, 1, 2]
-  brand: Honda
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Ecu Backup Processor'
-    url: /pgmfi/wiki/library/ecu-backup-processor
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# ECU Backup Processor
+# Honda ECU Backup Processor Reference
 
-Honda [ECU](/cars/ecu/ecu)s are engineered with many levels of redundancy. There is a Backup processor (labeled NEC BACK0004 in most [OBD](/cars/wiring/obd)0 and Oki 6534 in most [OBD](/cars/wiring/obd)1 (??)). The backup processor is resposible for running the car when the [ECU](/cars/ecu/ecu) has detected a severe fault, as usually indicated by a "solid" [CEL](/cars/wiring/cel). It does not use the full array of sensors that the car has, and is intended to minimally allow the car to move under its own power in the event of a "total" failure of main [ECU](/cars/ecu/ecu) logic.
+Honda ECUs utilize a secondary backup processor to provide system redundancy. This component is designed to maintain engine operation if the main processor detects a critical logic failure.
+
+## Hardware Identification
+The backup processor serves as a fail-safe mechanism. Identification varies by OBD generation:
+
+*   **OBD0:** Typically utilizes the NEC BACK0004 processor.
+*   **OBD1:** Typically utilizes the Oki 6534 processor.
+
+## Operational Logic
+The backup processor engages when the ECU detects a severe internal fault, typically signaled by a solid Check Engine Light (CEL). 
+
+> [!NOTE]
+> The backup processor does not utilize the full sensor array available to the main processor. Its primary function is to provide "limp home" capability, allowing the vehicle to move under its own power in the event of a total main logic failure.
+
+## Diagnostics
+If the vehicle is operating in backup mode, the following conditions are generally observed:
+
+*   **CEL Status:** A solid, non-blinking CEL indicates the main processor has offloaded control to the backup system.
+*   **Performance:** Engine performance will be significantly limited due to the reduced sensor input and simplified fuel/ignition maps used by the backup processor.
+*   **Diagnostic Access:** Standard diagnostic tools may fail to communicate with the ECU while the backup processor is active, as the main communication logic is often bypassed or disabled during a critical fault state.

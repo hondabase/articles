@@ -1,34 +1,36 @@
 ---
-summary: 'Research an engine simulator that mimics a running engine for Honda ECU development and bench testing.'
-tags: [ecu, reference, tuning, rom, sensors]
+summary: 'An overview of engine simulator hardware used to mimic engine operation for Honda ECU development and bench testing.'
+tags: [ecu, diagnostics, tuning, sensors, bench-testing]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Engine Sim'
-    url: /pgmfi/wiki/library/engine-sim
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Engine Sim
+# Honda ECU Engine Simulator Reference
 
-The Engine Simulator is a device designed to simulate a running engine for [ECU](/cars/ecu/ecu) development and bench testing.
+The Engine Simulator is a diagnostic and development tool designed to replicate the electrical signals of a running engine. It allows for the bench testing of Honda ECUs, enabling developers to verify code changes, test sensor inputs, and troubleshoot ECU hardware without requiring a physical engine.
 
-## Archived development threads
+## Purpose and Application
 
-The original PGMFI forum discussions were already unavailable by January 7, 2005. Three threads survive in the Internet Archive:
+Engine simulators are primarily used for:
+* **Firmware Development:** Validating custom ROMs and code modifications in a controlled environment.
+* **Hardware Diagnostics:** Testing ECU input/output circuits, such as injector drivers, ignition outputs, and sensor signal processing.
+* **Bench Calibration:** Verifying sensor scaling and data logging functionality before vehicle installation.
 
-- [PGMFI forum thread 3444](https://web.archive.org/web/20031101070445/http://www.pgmfi.org/phorum/read.php?f=5&i=3444&t=3444)
-- [PGMFI forum thread 4089](https://web.archive.org/web/20040130181552/http://www.pgmfi.org/phorum/read.php?f=5&i=4089&t=4089)
-- [PGMFI forum thread 3888](https://web.archive.org/web/20040129032605/http://www.pgmfi.org/phorum/read.php?f=5&i=3888&t=3888)
+> [!NOTE]
+> An engine simulator must accurately replicate the Crankshaft Position (CKP), Top Dead Center (TDC), and Cylinder (CYP) sensor signals to trigger the ECU's ignition and fuel injection logic.
 
-The source also referenced forum threads `4311` and `3454`, but no archived snapshots are currently known.
+## Technical Requirements
 
-## Related article
+To effectively simulate a Honda engine, the hardware must provide:
+* **Signal Generation:** Variable frequency square waves to mimic CKP/TDC/CYP sensors.
+* **Load Simulation:** Resistive loads to simulate fuel injectors and IACV solenoids.
+* **Sensor Emulation:** Potentiometers or voltage dividers to simulate analog inputs like the Throttle Position Sensor (TPS) and Coolant Temperature Sensor (ECT).
 
-- [Working engine simulator notes](/cars/diagnostics/sim) from January 27, 2007
+## Related Resources
+
+For practical implementation details and circuit designs, refer to the following documentation:
+
+* [Working Engine Simulator Notes](/cars/diagnostics/sim) — Technical guide for building and calibrating bench-top simulation hardware.

@@ -1,41 +1,40 @@
 ---
-summary: 'The input sensors a Honda ECU reads to run fuel and ignition.'
-tags: [ecu, sensors]
+summary: 'A comprehensive overview of the primary and optional sensors utilized by Honda ECUs to manage fuel injection, ignition timing, and engine operation.'
+tags: [ecu, sensors, diagnostics, engine-management]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Ecu Sensors'
-    url: /pgmfi/wiki/library/ecu-sensors
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# ECU Sensors
+# Honda ECU Sensors
 
-Sensors present on almost all honda motors:
+Honda engine management systems rely on a specific array of sensors to calculate fuel delivery, ignition timing, and idle control.
 
-- [Crankshaft Position Sensor](/cars/ignition/crankshaft-position-sensor) - Determines timing for fuel injection and ignition of `each` cylinder and also detects engine speed.
-- Top Dead Center Sensor - Determines ignition timing at start-up (cranking) and when crank angle is abnormal.
-- [Cylinder Position Sensor](/cars/sensors/cylinder-position-sensor) - Detects position of #1 cylinder for sequential spark ignition to `each` cylinder.
-- Engine Coolant Temperature - or ''ECT'' thermocouple input for engine coolant temperature
-- [Intake Air Temperature Sensor](/cars/sensors/intake-air-temperature-sensor) - or ''IAT'' thermocouple input for intake air temperature
-- Map Sensor - Manifold Absolute Pressure Sensor, allows [ECU](/cars/ecu/ecu) to adjust Air Fuel Ratio based on density of intake air
-- Oxygen Sensor - Measures oxygen content of exhaust gas
-- Pressure Atmosphere - or ''PA'' or ''Barometric Pressure Sensor'' measures atmospheric pressure.
-- TPS Sensor - Throttle Position Sensor
-- Vehicle Speed Sensor - or ''VSS'' measures how fast ***axles*** are turning
-- Idle Air Control Valve / Electronic Air Control Vale - Or ''IAC/EACV'' Helps control idle
+## Primary Sensors
+These sensors are standard on most Honda engine platforms:
 
-Optional sensors: - Electrical Load Detector - or ''ELD'' present in most US cars to measure how much electrical load there is
-- [Knock Sensor](/cars/ignition/knock-sensor) - A microphone-like device to listen for Pre Ignition, or knocking in DOHC VTEC motors.
-- Pa Sensor - Atmospheric Pressure sensor
-- VTEC Solenoid = solenoid to route oil flow to activate VTEC (on VTEC motors only :) )
+*   **Crankshaft Position Sensor (CKP):** Determines timing for fuel injection and ignition for each cylinder; also detects engine speed.
+*   **Top Dead Center Sensor (TDC):** Determines ignition timing during cranking and provides a reference when the crank angle signal is abnormal.
+*   **Cylinder Position Sensor (CYP):** Detects the position of the #1 cylinder to facilitate sequential ignition.
+*   **Engine Coolant Temperature (ECT):** Thermocouple input used to monitor engine operating temperature for fuel enrichment and cooling fan control.
+*   **Intake Air Temperature (IAT):** Thermocouple input used to measure the temperature of incoming air for air density calculations.
+*   **Manifold Absolute Pressure (MAP):** Measures intake manifold pressure, allowing the ECU to adjust the air-fuel ratio based on engine load.
+*   **Oxygen Sensor (O2):** Measures oxygen content in the exhaust gas to facilitate closed-loop fuel control.
+*   **Barometric Pressure Sensor (PA/BARO):** Measures atmospheric pressure to compensate for altitude changes.
+*   **Throttle Position Sensor (TPS):** Monitors the angle of the throttle plate to determine driver demand.
+*   **Vehicle Speed Sensor (VSS):** Measures the rotational speed of the transmission output shaft or axles.
+*   **Idle Air Control Valve (IACV/EACV):** Regulates bypass air to maintain a stable idle speed under varying loads.
 
----
+## Optional and Auxiliary Sensors
+These components are engine-specific or market-dependent:
 
-Other [ECU](/cars/ecu/ecu) Sensors not usually present on honda motors: - Maf Sensor
+*   **Electrical Load Detector (ELD):** Found in most North American vehicles to monitor total electrical system load.
+*   **Knock Sensor (KS):** A piezoelectric sensor used to detect engine detonation (knock), primarily on DOHC VTEC engines.
+*   **VTEC Solenoid:** An electro-hydraulic valve that routes oil pressure to actuate the VTEC mechanism.
+
+> [!NOTE]
+> Most Honda ECUs do not utilize a Mass Air Flow (MAF) sensor, relying instead on Speed-Density calculations derived from the MAP, IAT, and TPS sensors.
+
+{{> sensor-troubleshooting-guide }}

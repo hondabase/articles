@@ -1,46 +1,45 @@
 ---
-summary: 'How to select and use a soldering iron for ECU modification, covering wattages, tip shapes, and temperature settings.'
-tags: [hardware, education]
+summary: 'A guide to selecting and using soldering equipment for ECU modification, focusing on ESD safety, temperature control, and proper technique.'
+tags: [hardware, soldering, tools, ecu-modification]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Soldering Iron'
-    url: /pgmfi/wiki/library/soldering-iron
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Soldering Iron Selection & Guidelines
+# Soldering Iron Selection and Usage Guidelines
 
-A reliable soldering iron is essential for ECU modification and chipping. Choosing the right tool prevents thermal damage to the printed circuit board (PCB) traces and ensures solid electrical connections.
+A reliable soldering iron is essential for ECU modification and chipping. Choosing the correct tool prevents thermal damage to printed circuit board (PCB) traces and ensures reliable electrical connections.
 
-## Key Considerations
+## Equipment Selection
 
-When choosing a soldering iron for automotive electronics:
+When selecting a soldering iron for automotive electronics, prioritize the following specifications:
 
-* **Grounding & ESD Safety:** Always use a grounded iron (featuring a 3-prong plug). Ungrounded irons can leak static electricity or small AC currents onto the board, potentially damaging sensitive CMOS logic chips on the ECU.
+* **ESD Safety:** Always use a grounded iron (3-prong plug). Ungrounded irons can leak static electricity or AC currents onto the board, potentially damaging sensitive CMOS logic chips.
+* **Wattage:** If using a fixed-wattage iron, **15W to 25W** is the recommended range. Higher wattage irons without temperature control can easily lift delicate copper traces from the PCB.
+* **Tip Geometry:** Use a fine chisel or small conical tip. A tip that is too large risks bridging adjacent pins, while a tip that is too small may fail to transfer sufficient heat, leading to "cold" solder joints.
+* **Temperature Control:** A temperature-controlled soldering station is highly recommended. These units maintain a stable temperature (typically 350°C / 660°F for leaded solder) regardless of the thermal mass of the joint.
 
-* **Wattage:** If using a basic, non-adjustable iron, **15W to 25W** is ideal. Higher wattage irons without temperature control run too hot and can easily lift delicate copper traces off the board.
-
-* **Tip Selection:** Use a fine chisel tip or small conical tip. A tip that is too large will bridge adjacent pins and cause solder bridges, while a tip that is too small won't transfer enough heat to melt the solder quickly.
-
-* **Temperature Control:** While not strictly necessary for beginners, a temperature-controlled soldering station (such as a Hakko or Weller) is highly recommended. It maintains a stable temperature (typically around 350°C / 660°F for leaded solder) regardless of the thermal mass of the joint.
-
-## Important Advice for Beginners
-
-Soldering is a mechanical skill that requires practice and muscle memory. 
+## Best Practices
 
 > [!WARNING]
-> **Do not make your primary car's ECU your very first soldering project.** 
+> **Do not make your primary vehicle's ECU your first soldering project.**
 
-It is highly recommended to obtain a scrap circuit board (from an old household appliance, radio, or junked ECU) and practice:
-1. Melting and removing existing solder joints.
-2. Soldering new wire leads or header pins into place.
-3. Ensuring clean, shiny solder joints without bridges.
+Soldering is a mechanical skill that requires practice. Before working on an ECU, use a scrap circuit board to practice the following:
 
-Once you can consistently make solid, clean joints without overheating the board, you are ready to modify your ECU.
+1. **Desoldering:** Melting and removing existing solder joints without damaging the pads.
+2. **Component Installation:** Soldering new wire leads or header pins into place.
+3. **Inspection:** Ensuring joints are clean, shiny, and free of solder bridges.
+
+> [!TIP]
+> Always ensure the PCB is clean and free of oxidation before beginning. Use high-quality flux to improve solder flow and heat transfer.
+
+## Troubleshooting Solder Joints
+
+| Issue | Cause | Solution |
+| :--- | :--- | :--- |
+| **Cold Joint** | Insufficient heat | Increase temperature or dwell time slightly. |
+| **Solder Bridge** | Excess solder or large tip | Use a smaller tip and less solder; remove excess with desoldering braid. |
+| **Lifted Trace** | Excessive heat/force | Use lower temperature; ensure the iron is not held on the pad too long. |
+| **Dull/Grainy Joint** | Contamination or movement | Clean the joint and ensure the component remains stationary while cooling. |

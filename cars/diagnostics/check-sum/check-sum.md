@@ -1,21 +1,42 @@
 ---
-summary: 'A Checksum is a very basic form of error checking. A checksum is calculated by adding the values of a ROM together, without any form of carry or overflow checking.'
-tags: [hardware, education, ecu, tuning, rom, sensors, reference, diagnostics]
+summary: 'A checksum is a fundamental error-checking mechanism used in Honda OBD0 and OBD1 ECUs to verify ROM integrity by summing data values.'
+tags: [hardware, ecu, tuning, rom, diagnostics]
 applies_to:
   obd: [0, 1]
-  brand: Honda
   models: [accord, civic, crx, del-sol, integra, prelude]
-  chassis: [bb, cb-cd, da, dc2, ef, eg, eg-eh]
+  chassis: [bb, cb-cd, da, dc2, ef, eg, eh]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Check Sum'
-    url: /pgmfi/wiki/library/check-sum
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Check Sum
+# ECU ROM Checksum Calculation and Verification
 
-A Checksum is a very basic form of error checking. A checksum is calculated by adding the values of a [ROM](/cars/rom/rom) together, without any form of carry or overflow checking. Checksums can vary in size - 8bit, 16bit, 32bit checksums are all common. [OBD0](/cars/rom/obd0) and [OBD1](/cars/wiring/obd1) honda [ECU](/cars/ecu/ecu)s use exclusively 8 bit checksums i.e. checksums from 0 -> 255 decimal, 00-FF hex. There is a program called [check8](http://www.keil.com/download/files/check8.zip) (also available attached to this page) that can calculate 8bit checksums. You can update the rom so the checksum stays 00 even after editing it. Here is how to (using [Win Hex](/cars/rom/win-hex) in this example, but you can use the program posted below, but only to find checksum, not to edit the [ROM](/cars/rom/rom)) : Open [Win Hex](/cars/rom/win-hex) and select Tools Menu -> Calculate Hash (Select 8 bit). Write down the number it gives you. This is the current Checksum. Open Windows Calculator (Start -> Run -> Calc then press enter) View -> Scientific Select Hex Mode (or press F5) Do this : FF - Current_checksum ( FF - AB for example) The number it gives you is tu be written in a memory location, toward the bottom, where no code is present, and where the value FF is already there. Example : (FF - AB = 54) lets say I go to memory location 7FFF, value is FF. I replace FF by 54. if you dont have an address with a free FF value, but another value (lets say 00), use 00 in calc instead (00 - AB) and replace the free 00 with the result.
+A checksum is a basic form of error checking used to verify the integrity of data within a ROM. It is calculated by summing the values of the ROM data without carry or overflow checking.
+
+## Technical Overview
+Checksums vary in bit-depth (8-bit, 16-bit, 32-bit). Honda OBD0 and OBD1 ECUs utilize 8-bit checksums, ranging from 0 to 255 decimal (00–FF hex).
+
+> [!NOTE]
+> The ECU performs this calculation to ensure the ROM image has not been corrupted. If the calculated checksum does not match the expected value, the ECU may trigger a diagnostic trouble code or fail to operate.
+
+## Manual Checksum Adjustment
+When modifying a ROM, the checksum must be recalculated and updated to maintain compatibility. The following procedure outlines how to manually adjust the checksum using a hex editor.
+
+### Prerequisites
+*   Hex editing software (e.g., WinHex).
+*   Windows Calculator (set to Scientific/Hex mode).
+
+### Procedure
+1.  **Calculate Current Hash:** Open the ROM file in your hex editor. Navigate to the **Tools** menu and select **Calculate Hash** (8-bit). Record the resulting value.
+2.  **Determine Correction Value:** Use the Windows Calculator in Hex mode to perform the following calculation:
+    *   `FF - [Current_Checksum] = [Correction_Value]`
+3.  **Apply Correction:**
+    *   Locate an unused memory address (typically toward the end of the ROM file) that contains a value of `FF`.
+    *   Replace the `FF` at that location with your calculated `[Correction_Value]`.
+    *   If no `FF` value is available at an unused address, use the existing value at that location (e.g., `00`) in your calculation (`00 - [Current_Checksum]`) and replace that value with the result.
+
+> [!TIP]
+> Always maintain a backup of the original ROM file before performing manual edits.
+
+## Tools
+*   **Check8:** A utility designed to calculate 8-bit checksums for binary files.
+*   **Hex Editors:** Software such as WinHex is recommended for viewing and modifying raw ROM data.

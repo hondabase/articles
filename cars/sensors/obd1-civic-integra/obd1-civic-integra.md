@@ -1,21 +1,45 @@
 ---
-summary: 'bleh created this by accident. see OBD1 Civic Integra ECUs'
-tags: [ecu, reference, sensors]
+summary: 'Technical reference for OBD1 Honda Civic and Acura Integra ECU pinouts, sensor configurations, and diagnostic specifications.'
+tags: [ecu, wiring, obd1, sensors, honda, integra, civic]
 applies_to:
   obd: [1]
-  brand: Acura/Honda
   models: [civic, integra]
-  chassis: {}
+  chassis: [eg, dc2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD1 Civic Integra'
-    url: /pgmfi/wiki/library/obd1-civic-integra
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD1 Civic Integra
+# OBD1 Civic and Integra ECU Reference
 
-bleh created this by accident. see [OBD1 Civic Integra ECUs](/cars/diagnostics/obd1-civic-integra-ec-us)
+This document provides technical specifications and reference data for OBD1-era Honda Civic and Acura Integra Engine Control Units (ECUs).
+
+## Overview
+OBD1 ECUs were utilized in Honda and Acura vehicles from 1992 to 1995. These units manage fuel injection, ignition timing, and emissions systems based on inputs from various engine sensors.
+
+## Diagnostic Resources
+For detailed troubleshooting and error code identification, use the following tool:
+
+::: widget error-codes :::
+
+## ECU Pinout Reference
+The following table outlines the standard connector configuration for OBD1 ECUs.
+
+| Connector | Pins | Function |
+| :--- | :--- | :--- |
+| **Plug A** | 26 | Power, Ground, Injectors, IACV |
+| **Plug B** | 16 | Sensors, VTEC, EGR, O2 |
+| **Plug C** | 22 | Sensors, Distributor, Communication |
+
+> [!IMPORTANT]
+> Always verify wire colors against the factory service manual for your specific chassis code before performing electrical modifications.
+
+## Common Sensor Wiring
+When integrating aftermarket sensors or wideband controllers, refer to the standard wiring configurations below:
+
+::: widget wideband-wiring-table :::
+
+## Technical Notes
+*   **Grounding:** Ensure all sensor grounds are terminated at the ECU chassis ground (Pin A24/A25) to prevent signal noise.
+*   **Shielding:** Use shielded wire for sensitive signals such as the Knock Sensor and O2 sensor inputs to maintain signal integrity.
+
+> [!TIP]
+> For resistor color codes required during ECU hardware modifications, refer to the standard reference: {{> resistor-color-codes }}

@@ -1,31 +1,35 @@
 ---
-summary: 'Analysis of the PT5 EDM Honda Accord OBD1 ECU, covering its shared PCB architecture with other Accord units.'
-tags: [ecu, reference, sensors]
+summary: 'Technical overview of the PT5 EDM Honda Accord OBD1 ECU, detailing its shared PCB architecture and application for the F20A7 engine.'
+tags: [ecu, reference, accord, obd1]
 applies_to:
   obd: [1]
-  brand: Honda
   models: [accord]
-  chassis: {}
+  chassis: [cb]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: PT5
-    url: /pgmfi/wiki/library/pt5
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# PT5
+# PT5 EDM OBD1 ECU Technical Reference
 
-PT5 90-93 [OBD1](/cars/wiring/obd1) [EDM](/cars/wiring/edm) Accord [SOHC](/cars/sensors/sohc) non-vtec F20A7 This [ECU](/cars/ecu/ecu) shares the shares the same PC board with the PT3 Accord [ECU](/cars/ecu/ecu) (02D01190-1504)
+The PT5 is an OBD1 ECU utilized in 1990–1993 European (EDM) Honda Accord models equipped with the SOHC non-VTEC F20A7 engine. 
 
-<figure>
- <img src="PT5_X01_F20A7.jpg" alt="[ECU](/cars/ecu/ecu) out of an European 90-93 F20A7 Accord">
- <figcaption>[ECU](/cars/ecu/ecu) out of an European 90-93 F20A7 Accord</figcaption>
-</figure>
+> [!NOTE]
+> This unit shares the same printed circuit board (PCB) architecture as the PT3 Accord ECU (Board ID: 02D01190-1504).
 
-<figure>
- <img src="PT5_X01_F20A7-2.jpg" alt="A second shot of the PT5 [EDM](/cars/wiring/edm) 90-93 Accord [ECU](/cars/ecu/ecu)">
- <figcaption>A second shot of the PT5 [EDM](/cars/wiring/edm) 90-93 Accord [ECU](/cars/ecu/ecu)</figcaption>
-</figure>
+## PCB Overview
+
+The PT5 utilizes the 02D01190-1504 board layout. Use the following carousel to inspect the component layout and board configuration.
+
+```carousel
+![Front view of the PT5 ECU PCB](PT5_X01_F20A7.jpg)
+*Front view of the PT5 EDM ECU PCB*
+<!-- slide -->
+![Back view of the PT5 ECU PCB](PT5_X01_F20A7-2.jpg)
+*Back view of the PT5 EDM ECU PCB*
+```
+
+## Technical Specifications
+
+*   **Application:** 1990–1993 EDM Accord
+*   **Engine:** F20A7 (SOHC Non-VTEC)
+*   **OBD Standard:** OBD1
+*   **PCB ID:** 02D01190-1504

@@ -1,27 +1,26 @@
 ---
-summary: 'Some routines have already been commented for your viewing pleasure. P30 (203) Doc ECUSchool Doc explains some of how IO is performed looking at the JDM P30 203 ROM.'
+summary: 'Technical reference for OBD1 Honda ECU routines, including documentation on I/O operations and specific A/C control logic for the P30 JDM 203 ROM.'
 tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
   obd: [1]
-  brand: Acura/Honda
   models: [civic, del-sol, integra]
-  chassis: [eg, eg-eh]
+  chassis: [eg, eh]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD1 Civ Teg Routines'
-    url: /pgmfi/wiki/library/obd1-civ-teg-routines
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD1 Civ Teg Routines
+# OBD1 Honda ECU Routine Reference
 
-Some routines have already been commented for your viewing pleasure.
+This document provides technical references for commented routines found within OBD1 Honda ECU firmware.
 
-## P30 (203) 
+## P30 (203) ROM Analysis
 
-- [Doc ECUSchool](/cars/ecu/doc-ecu-school) Doc explains some of how [IO](/cars/sensors/io) is performed looking at the [JDM](/cars/sensors/jdm) P30 203 [ROM](/cars/rom/rom). (This does apply to other [OBD1 Civic Integra](/cars/sensors/obd1-civic-integra) [ECU](/cars/ecu/ecu)s too.)
-- [203_AC](/cars/diagnostics/203-ac) - 203 [JDM](/cars/sensors/jdm) P30 AC routine
-- [ACCut Routine](/cars/diagnostics/ac-cut-routine) - Cuts A/C under certain high-load conditions
+The JDM P30 203 ROM serves as a primary reference for understanding how I/O operations are executed in OBD1 Honda ECUs. These routines are generally applicable across the broader OBD1 Civic and Integra ECU family.
+
+### Routine Documentation
+
+*   **[I/O Operations](/cars/ecu/doc-ecu-school):** Detailed breakdown of how the ECU handles input and output signals.
+*   **[203_AC](/cars/diagnostics/203-ac):** Analysis of the A/C control routine specific to the JDM P30 203 calibration.
+*   **[A/C Cut Routine](/cars/diagnostics/ac-cut-routine):** Logic governing the deactivation of the A/C compressor under high-load conditions.
+
+> [!NOTE]
+> While these routines are documented based on the P30 203 ROM, the underlying logic is shared across most OBD1 Honda/Acura ECU variants.

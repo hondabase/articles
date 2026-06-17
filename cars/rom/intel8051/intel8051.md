@@ -1,26 +1,39 @@
 ---
-summary: 'for all you could want to know and a great tutorial, go to http://www.8052.comAny 8051 assembler will work fine for coding.'
-tags: [hardware, education, tuning, rom, sensors, reference]
+summary: 'A technical reference for Intel 8051 architecture development, including recommended assemblers, disassemblers, and development environments for ECU firmware modification.'
+tags: [hardware, tuning, rom, assembly, 8051]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: advanced
-sources:
-  - name: 'pgmfi.org wiki'
-    title: Intel8051
-    url: /pgmfi/wiki/library/intel8051
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Intel8051
+# Intel 8051 Development Reference
 
-for all you could want to know and a great tutorial, go to [http://www.8052.com](http://www.8052.com)Any 8051 assembler will work fine for coding. Sysrad51, available [here](http://www.systronix.com/RAD51/RAD51.exe) seems popular. Be careful when re-assembling a file after making changes to it... Sysrad seems to have some odd bugs in this regard. [Batronix](http://www.batronix.com) [Prog Studio](/cars/electronics/prog-studio) seems fairly popular too. [ASEM-51](http://plit.de/asem-51/download.htm) seems interesting. It has a couple companion IDEs, [MIDE](http://www.opcube.com/home.html) and [4Flash](http://web.archive.org/web/20090609052822/http://www.reinerjansen.de:80/4flash/). Blundar's preferred development environment is now MIDE+ASEM-51.
+The Intel 8051 architecture serves as the foundation for various legacy ECU control systems. Effective firmware modification requires a stable toolchain for assembly and disassembly.
 
-**Note:** make sure you have a colon ":" after all labels - ASEM51 is much pickier than SYSRAD. Dave Blundell modified [d51](http://www.8052.com/users/disasm/) to support Oki's non-standard use of [A5](/cars/diagnostics/a5) by creating [Pgmfi D51](/cars/rom/pgmfi-d51). Chris Favreau compiled some windows binaries for it. You can download the source and linux/win binaries [here](/cars/rom/pgmfi-d51). This looks like an interesting [8051 sim](http://home.t-online.de/home/Jens. Altmann/jsim-e.htm)Some 8051 resources:
+## Development Environments and Assemblers
 
-- [Compact lil ref guide](http://web.archive.org/web/20090518051420/http://myhome.naver.com:80/zxcv0070/chip/8051data%20book.htm)
-- [Another compact ref](8051ref.pdf)
-- [jEdit](http://jedit.org) - jEdit 4.2pre8 and higher includes a MCS51 syntax highlighting Edit Mode definition for 8051 assembly editing
+Several tools are available for 8051 assembly. Selection depends on specific project requirements and compatibility with existing source code.
+
+*   **ASEM-51:** A widely used cross-assembler. 
+    > [!IMPORTANT]
+    > ASEM-51 requires a colon (`:`) after all labels. It is significantly stricter regarding syntax than legacy tools like SYSRAD.
+*   **MIDE:** A popular Integrated Development Environment (IDE) often paired with ASEM-51 for a streamlined workflow.
+*   **SYSRAD:** A legacy 8051 assembler. Users should exercise caution when re-assembling files, as the software may exhibit bugs during iterative builds.
+*   **Batronix Prog Studio:** An alternative environment for managing 8051-based projects.
+
+## Disassembly and Simulation
+
+For reverse engineering existing ECU binaries, specialized disassemblers are required to handle non-standard instruction sets or proprietary memory mapping.
+
+*   **Pgmfi D51:** A modified version of the standard `d51` disassembler, updated to support Oki-specific non-standard instruction sets and memory addressing.
+*   **8051 Simulators:** Various software simulators are available for testing logic flow without hardware execution.
+
+## Technical Resources
+
+*   **8052.com:** Comprehensive documentation and tutorials for 8051 architecture.
+*   **jEdit:** A text editor that supports MCS51 syntax highlighting (version 4.2pre8 and higher) for improved readability of assembly source files.
+
+> [!TIP]
+> When editing assembly files, utilize syntax-aware editors like jEdit to minimize errors related to label formatting and instruction mnemonics.

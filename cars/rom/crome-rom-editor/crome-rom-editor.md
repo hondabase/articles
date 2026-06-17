@@ -1,20 +1,31 @@
 ---
-summary: 'Crome is ROMEditor that John Cui wrote. Its main feature that differentiates itself from other ROMEditors is that it supports the use of Java Script to control it and implement new features.'
-tags: [tuning, rom, sensors, reference]
+summary: 'Crome is a ROM editor for Honda ECUs that supports JavaScript-based scripting for custom feature implementation and extended tuning capabilities.'
+tags: [tuning, rom, ecu, software, scripting]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Crome ROM Editor'
-    url: /pgmfi/wiki/library/crome-rom-editor
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Crome ROM Editor
+# Crome ROM Editor Overview
 
-Crome is ROMEditor that John Cui wrote. Its main feature that differentiates itself from other ROMEditors is that it supports the use of [Java Script](/cars/rom/java-script) to control it and implement new features. The [Crome Script](/cars/rom/crome-script) [API](/cars/diagnostics/api) allows you to extend the capabilites of the editor with relative ease. People have already written many scripts for Crome, most of which can be found on the PGMFI [Source Forge](/cars/wiring/source-forge) page. The [Crome FAQ](/cars/rom/crome-faq) is a resource designed to get you started with Crome. More information can be found at the [Crome forum](/pgmfi/forum/forum.php?id=35) or at [http://web.archive.org/web/20250614145309/https://tunewithcrome.com/](http://web.archive.org/web/20250614145309/https://tunewithcrome.com/).
+Crome is a ROM editing software designed for Honda ECU tuning. Its primary feature is the integration of JavaScript, which allows users to control the application and implement custom features.
+
+## Scripting and Extensibility
+
+The Crome Script API enables users to extend the editor's capabilities. This architecture allows for the development of custom plugins and automated tuning tasks.
+
+> [!TIP]
+> A wide variety of community-developed scripts are available for Crome, which can be used to automate common tuning adjustments or add specialized functionality to the software.
+
+## Getting Started
+
+To begin using Crome for ECU tuning, refer to the following resources:
+
+*   **Crome FAQ:** A foundational resource for initial setup and basic operation.
+*   **Crome Script API:** Documentation for developing custom scripts to interface with the editor.
+*   **Official Documentation:** For further technical details and software updates, visit the [archived Crome website](http://web.archive.org/web/20250614145309/https://tunewithcrome.com/).
+
+> [!NOTE]
+> Ensure you are using the correct ROM definitions for your specific ECU hardware (e.g., P06, P30, P72) before attempting to flash any modified files.

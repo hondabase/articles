@@ -1,59 +1,49 @@
 ---
-summary: 'Link Icons are an optional new feature of Php Wiki. When activated, icons will be displayed in front of URLs to indicate the type of link.'
-tags: [ecu, reference, tuning, rom, sensors, diagnostics]
+summary: 'Link Icons provide visual indicators for different URL types within the documentation system to improve navigation and link identification.'
+tags: [reference, documentation, navigation]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
-complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Link Icons'
-    url: /pgmfi/wiki/library/link-icons
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+complexity: beginner
 ---
 
-# Link Icons
+# Link Icons for Documentation
 
-[Link Icons](/cars/diagnostics/link-icons) are an optional new feature of [Php Wiki](/cars/sensors/php-wiki). When activated, icons will be displayed in front of URLs to indicate the type of link. - [http://phpwiki.sourceforge.net/alpha/themes/default/images/http.png](http://phpwiki.sourceforge.net/alpha/themes/default/images/http.png) http link
-- [http://phpwiki.sourceforge.net/alpha/themes/default/images/url.png](http://phpwiki.sourceforge.net/alpha/themes/default/images/url.png) generic internet link
-- [http://phpwiki.sourceforge.net/alpha/themes/default/images/interwiki.png](http://phpwiki.sourceforge.net/alpha/themes/default/images/interwiki.png) [Inter Wiki](/cars/rom/inter-wiki) link
-- [http://phpwiki.sourceforge.net/alpha/themes/default/images/https.png](http://phpwiki.sourceforge.net/alpha/themes/default/images/https.png) https link
-- [http://phpwiki.sourceforge.net/alpha/themes/default/images/mailto.png](http://phpwiki.sourceforge.net/alpha/themes/default/images/mailto.png) mailto link
-- [http://phpwiki.sourceforge.net/alpha/themes/default/images/ftp.png](http://phpwiki.sourceforge.net/alpha/themes/default/images/ftp.png) ftp link
+Link Icons are an optional feature that displays specific icons in front of URLs to indicate the link type.
 
-;__Note__: Some of the default icons use the alpha channel feature of the [PNG](http://www.libpng.org/pub/png/png-sitemap.html) image format for smooth rendering on any page color or textured background. Older browsers may not display all the images properly.
+## Icon Reference
 
-# Examples 
+The following icons are used to categorize link types:
 
-The following examples will display with the above link icons only if the administrator has enabled this feature.
+| Icon | Link Type |
+| :--- | :--- |
+| ![HTTP](http://phpwiki.sourceforge.net/alpha/themes/default/images/http.png) | HTTP link |
+| ![Generic](http://phpwiki.sourceforge.net/alpha/themes/default/images/url.png) | Generic internet link |
+| ![InterWiki](http://phpwiki.sourceforge.net/alpha/themes/default/images/interwiki.png) | InterWiki link |
+| ![HTTPS](http://phpwiki.sourceforge.net/alpha/themes/default/images/https.png) | HTTPS link |
+| ![Mailto](http://phpwiki.sourceforge.net/alpha/themes/default/images/mailto.png) | Mailto link |
+| ![FTP](http://phpwiki.sourceforge.net/alpha/themes/default/images/ftp.png) | FTP link |
 
-## [Inter Wiki](/cars/rom/inter-wiki) links 
+> [!NOTE]
+> Some default icons utilize the PNG alpha channel for smooth rendering on various backgrounds. Older browsers may not support this feature, which can result in rendering artifacts.
 
-- [Inter Wiki](/cars/rom/inter-wiki) link [Php Wiki](/cars/sensors/php-wiki):InterWiki
+## Implementation Examples
 
-- A named [Inter Wiki](/cars/rom/inter-wiki) read Why Wiki Works at c2.
+Link icons appear automatically when the feature is enabled by the administrator.
 
-## URLs 
+### InterWiki Links
+*   [InterWiki](/cars/rom/inter-wiki) link to [PhpWiki](/cars/sensors/php-wiki):InterWiki
+*   Named [InterWiki](/cars/rom/inter-wiki) link: [Why Wiki Works](http://c2.com/cgi/wiki?WhyWikiWorks)
 
-- Email address PhpWiki-talk mailing list
+### Standard URLs
+*   **Email:** [PhpWiki-talk mailing list](mailto:phpwiki-talk@lists.sourceforge.net)
+*   **HTTP:** [PhpWiki Home Page](http://phpwiki.sourceforge.net/phpwiki/)
+*   **HTTPS:** [PhpWiki Home Page](https://phpwiki.sourceforge.net/phpwiki/)
+*   **FTP:** [SourceForge FTP](ftp://ftp.sourceforge.net/)
 
-- Normal http link [PhpWiki's Home Page](http://phpwiki.sourceforge.net/phpwiki/)
+> [!TIP]
+> A generic icon is displayed for less common link types, such as `news://` or `gopher://` protocols.
 
-- Secure http link [PhpWiki's Home Page](https://phpwiki.sourceforge.net/phpwiki/)
-
-- File transfer [ftp://ftp.sourceforge.net/]()
-
-''A generic icon is shown for other less common link types.'' - [news://nntp.news.com](news://nntp.news.com)
-
-- [gopher://gopher.caltech.cmu.edu](gopher://gopher.caltech.cmu.edu)
-
-[Link Icons](/cars/diagnostics/link-icons) will only display when the URL protocol is one which [Php Wiki](/cars/sensors/php-wiki) is allowed to link to. The following examples won't show any icons and [Php Wiki](/cars/sensors/php-wiki) won't automatically provide double-clickable links either, unless the administrator adds them: - bogus://oedipus.nostradamus.com
-
-- bolo://lgm.cheshire.org
-
----
-
-[Php Wiki Documentation](/cars/reference/php-wiki-documentation)
+## Protocol Restrictions
+Link icons and automatic link generation only function for protocols explicitly permitted by the system configuration. Links using unsupported protocols (e.g., `bogus://` or `bolo://`) will not display icons or generate clickable links unless specifically added to the allowed protocol list by an administrator.

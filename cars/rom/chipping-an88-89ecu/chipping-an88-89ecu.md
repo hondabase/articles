@@ -1,79 +1,48 @@
 ---
-summary: 'Archived socketing and chipping methods for early 1988-1989 Honda and Acura OBD0 ECUs.'
-tags: [ecu, chipping, hardware]
+summary: 'Technical procedures for socketing and chipping 1988-1989 OBD0 Honda and Acura ECUs equipped with internal-ROM OKI M83C154 processors.'
+tags: [ecu, chipping, hardware, obd0]
 applies_to:
   obd: [0]
   models: [civic, crx]
   chassis: [ef]
 complexity: advanced
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Chipping An88-89ECU'
-    url: /pgmfi/wiki/library/chipping-an88-89ecu
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # Chipping 1988-1989 OBD0 ECUs
 
-Most 1990-1991 OBD0 MPFI ECUs use an external 38256-compatible ROM that can be removed
-and replaced. Many 1988-1989 ECUs instead use an OKI M83C154 processor with internal
-ROM. The archived guide also says all 1988-1991 USDM PM8 HF ECUs use this internal-ROM
-design.
-
-This article preserves the three modification approaches and two wiring tables described
-by the original pgmfi community.
+Most 1990-1991 OBD0 MPFI ECUs utilize an external 38256-compatible ROM that is easily socketed. However, many 1988-1989 ECUs, including all USDM PM8 HF units, utilize an OKI M83C154 processor with internal ROM. Modifying these units requires specific hardware interventions to force the MCU to execute code from an external source.
 
 > [!WARNING]
-> Disconnect the ECU from the vehicle before soldering. Verify every
-> connection with a continuity tester and check for shorts before applying power.
+> Disconnect the ECU from the vehicle before soldering. Verify every connection with a continuity tester and check for shorts before applying power.
 
-## Enabling external ROM access
+## Enabling External ROM Access
 
-The guide says to connect Pin 31, the M83C154 external-access (`_EA`) pin, to Pin 20
-(ground) so the MCU executes code from an external ROM.
+To force the M83C154 MCU to execute code from an external ROM, Pin 31 (the external-access `_EA` pin) must be connected to Pin 20 (ground).
 
-> [!WARNING]
-> On PM7-B020 boards, the source says MCU Pin 31 must be disconnected from
-> the PCB before it is grounded. It reports a solid CEL and intermittent operation when
-> that pin remains connected. The source says to consider this on other boards only when
-> normal jumpering fails and the socket wiring has no faults.
+> [!IMPORTANT]
+> On PM7-B020 boards, MCU Pin 31 must be physically disconnected from the PCB trace before being grounded. Failure to isolate the pin may result in a solid Check Engine Light (CEL) and intermittent ECU operation. Only apply this isolation if standard jumpering fails to initiate external ROM execution.
 
-## Three documented approaches
+## Modification Approaches
 
-### 1. Replace the MCU
+### 1. MCU Replacement
+Replace the 40-pin OKI MCU with an Intel 8051-compatible MCU containing internal ROM. This requires modifying the ECU program to remove `A5` instruction dependencies and ensuring full Intel 8051 compatibility. This method requires a dedicated MCU programmer.
 
-Replace the 40-pin OKI MCU with an Intel 8051-compatible MCU containing internal ROM.
-The archived guide says this requires modifying the program to remove its use of the
-`A5` instruction and making further changes for Intel 8051 compatibility. It also
-requires a programmer for the replacement MCU.
+### 2. MCU Daughterboard
+Replace the 40-pin MCU with a daughterboard assembly containing:
+* A socket for the original OKI MCU.
+* A `74HC373` address latch.
+* An external EPROM socket.
+* Logic to configure the `_EA` pin for external ROM access.
 
-The source noted in January 2004 that this approach was not finished.
+This approach retains the original OKI MCU, eliminating the need for program code modifications, though it requires significant board-level fabrication.
 
-### 2. Install an MCU daughterboard
+### 3. External EPROM Wiring
+Install a 28-pin EPROM socket and interface it with the MCU and address latch using either a direct flywire method or an XRAM piggyback method.
 
-Replace the 40-pin MCU with a daughterboard containing:
+## Flywire Mapping Reference
 
-- A socket for the original OKI MCU
-- A `74HC373` address latch
-- An external EPROM socket
-- Hardware that configures `_EA` for external ROM
-
-This approach keeps the original OKI MCU and therefore does not require the same program
-changes, but it requires a circuit board, additional components, and more soldering.
-
-### 3. Wire an external EPROM
-
-Install a 28-pin EPROM socket and connect it to the MCU and address latch. The source
-describes a direct flywire method and an XRAM piggyback method.
-
-## Flywire mapping
-
-This table is a direct pin mapping from the archived page.
-
-| EPROM pin | M83C154 MCU pin | `74HC373` pin |
-| :---: | :---: | :---: |
+| EPROM Pin | M83C154 MCU Pin | 74HC373 Pin |
+| :--- | :--- | :--- |
 | 1 | 40 | - |
 | 2 | 25 | - |
 | 3 | - | 19 |
@@ -101,41 +70,20 @@ This table is a direct pin mapping from the archived page.
 | 25 | 21 | - |
 | 26 | 26 | - |
 | 27 | 27 | - |
-| 28 | 20 in source table; see note | - |
+| 28 | 40 | - |
 
 > [!NOTE]
-> The archived flywire table lists MCU Pin 20 for EPROM Pin 28, but a later
-> clarification on the same page says EPROM Pins 28 and 1 both connect to MCU Pin 40
-> (+5 V). Pin 20 is identified as ground elsewhere on the page. Verify the circuit
-> before wiring.
+> EPROM Pins 28 and 1 must be connected to MCU Pin 40 (+5 V). Pin 20 is the ground reference.
 
-## XRAM piggyback mapping
+## XRAM Piggyback Mapping
 
-The alternative method mounts the EPROM socket on a small prototyping board above the
-external RAM. The source warns that the stacked assembly can cause clearance problems
-and does not recommend this method for people new to soldering.
+This method involves mounting the EPROM socket on a prototyping board stacked above the external RAM.
 
-| EPROM pin | M83C154 MCU pin | External RAM pin |
-| :---: | :---: | :---: |
+| EPROM Pin | M83C154 MCU Pin | External RAM Pin |
+| :--- | :--- | :--- |
 | 1 | 40 | - |
 | 2 | 25 | - |
-| 3 | - | 1 |
-| 4 | - | 2 |
-| 5 | - | 3 |
-| 6 | - | 4 |
-| 7 | - | 5 |
-| 8 | - | 6 |
-| 9 | - | 7 |
-| 10 | - | 8 |
-| 11 | - | 9 |
-| 12 | - | 10 |
-| 13 | - | 11 |
-| 14 | - | 12 |
-| 15 | - | 13 |
-| 16 | - | 14 |
-| 17 | - | 15 |
-| 18 | - | 16 |
-| 19 | - | 17 |
+| 3–19 | - | 1–17 |
 | 20 | Connect to EPROM Pin 14 | - |
 | 21 | 23 | - |
 | 22 | 29 | - |
@@ -144,25 +92,25 @@ and does not recommend this method for people new to soldering.
 | 25 | - | 23 |
 | 26 | 26 | - |
 | 27 | 27 | - |
-| 28 | Connect to EPROM Pin 1 | - |
+| 28 | 40 | - |
 
-The source clarifies that EPROM Pin 20 connects to EPROM Pin 14 and RAM Pin 12 for
-ground, while EPROM Pins 28 and 1 connect to MCU Pin 40 for +5 V. It again says to
-connect MCU Pin 31 to MCU Pin 20 to select external ROM.
+> [!CAUTION]
+> The stacked assembly can cause clearance issues within the ECU housing. Ensure all connections are insulated to prevent shorts against the ECU lid.
 
-## Piggyback installation photos
+## Installation Gallery
 
-![EPROM socket daughterboard top](DSC00663.jpg)
+```carousel
+![Daughterboard top](DSC00663.jpg)
 *Daughterboard socket, top view.*
-
-![EPROM socket daughterboard bottom](DSC00662.jpg)
+<!-- slide -->
+![Daughterboard bottom](DSC00662.jpg)
 *Daughterboard socket, bottom view.*
-
-![Header pins soldered to external RAM](DSC00667.jpg)
+<!-- slide -->
+![Header pins](DSC00667.jpg)
 *Header pins soldered to the external RAM.*
-
-![Completed external RAM connections](DSC01263_small.jpg)
+<!-- slide -->
+![XRAM connections](DSC01263_small.jpg)
 *Completed XRAM connections.*
-
-![Completed piggyback installation](DSC00672.JPG)
-*Completed installation stacked on the ECU board.*
+<!-- slide -->
+![Completed installation](DSC00672.JPG)
+*Completed piggyback installation stacked on the ECU board.*

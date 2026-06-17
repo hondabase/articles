@@ -1,20 +1,25 @@
 ---
-summary: 'The serial interrupt code in the stock ECU is very simple. A 1 byte hex address is sent to the ECU, and the ECU responds with the contents of RAM memory at that address.'
-tags: [ecu, reference, tuning, rom, sensors, diagnostics]
+summary: 'An overview of the OBD0 ECU serial communication protocol, including baud rate limitations and the implementation of Timer2 for standard datalogging.'
+tags: [ecu, datalogging, obd0, serial, tuning, intel8051]
 applies_to:
   obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD0 Stock Datalogging'
-    url: /pgmfi/wiki/library/obd0-stock-datalogging
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD0 Stock Datalogging
+# OBD0 Stock ECU Serial Datalogging
 
-The serial interrupt code in the stock [ECU](/cars/ecu/ecu) is very simple. A 1 byte hex address is sent to the [ECU](/cars/ecu/ecu), and the [ECU](/cars/ecu/ecu) responds with the contents of [RAM](/cars/reference/ram) memory at that address. The reason that the stock [ECU](/cars/ecu/ecu) code is not suitable for datalogging under most circumstances is that the serial port is initialized to a very high baud rate. It runs at (CLK / 64 baud), or 12Mhz / 64 (187,500 baud), which is not terribly serial-port friendly. See [Intel8051](/cars/rom/intel8051) tutorials for information about this. In order to do datalogging currently, Timer2, which is unused elsewhere in the code, is used to initialize the serial port to a speed that is close to 9600 baud, which PC serial ports can communicate at.
+The serial interrupt code in the stock ECU utilizes a straightforward request-response protocol. A 1-byte hexadecimal address is transmitted to the ECU, which responds by returning the contents of the RAM memory at that specific address.
+
+## Communication Limitations
+The stock ECU serial port is initialized to a high baud rate, calculated as (CLK / 64). At a clock speed of 12MHz, this results in a baud rate of 187,500. This rate is non-standard and incompatible with most PC serial port hardware.
+
+> [!NOTE]
+> Refer to [Intel 8051](/cars/rom/intel8051) technical documentation for further details regarding serial port configuration and clock cycles.
+
+## Datalogging Implementation
+To enable functional datalogging with standard PC hardware, the serial port must be reconfigured to a compatible speed, typically 9600 baud. 
+
+> [!IMPORTANT]
+> Because the stock serial initialization is unsuitable for standard communication, the implementation requires the use of Timer2. As Timer2 is otherwise unused in the stock ECU code, it is repurposed to initialize the serial port to a standard 9600 baud rate.

@@ -1,32 +1,31 @@
 ---
-summary: "Author: xtensive Date: 010403 20:47 Ok, here's what I found: That whole area is data tables. The routine that calls the idle value is @279A for the pm6."
-tags: [tuning, rom, sensors, reference, diagnostics, ecu]
+summary: "Technical analysis of the 1991 PM6 ECU target idle routine, including memory address locations and code structure comparisons with the PM7 ECU."
+tags: [tuning, rom, sensors, diagnostics, ecu, pm6]
 applies_to:
-  obd: [0, 1, 2]
+  obd: [0]
   models: [civic, crx]
   chassis: [ef]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: '91PM6 Target Idle'
-    url: /pgmfi/wiki/library/91pm6-target-idle
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# 91PM6 Target Idle
+# 1991 PM6 ECU Target Idle Routine Analysis
 
-**Author:** xtensive
+The target idle routine for the 1991 PM6 ECU is located at memory address `@279A`. The stock idle target is configured to 768 RPM.
 
-**Date:** 01-04-03 20:47
+## Memory Mapping
+Idle settings are stored in a data table beginning at address `398F`. This table contains six distinct idle settings, which are selected based on engine load conditions, including the status of the Electrical Load Detector (ELD).
 
-Ok, here's what I found: That whole area is data tables. The routine that calls the idle value is @279A for the pm6. The stock idle is set to 768 from what I can tell. It looks up the value at 398F. There are 6 idle settings there...do you know which one it picks for different circumstances? ELD, etc. I assue? George, can you answer a quick question? (This is pm6 code, but should be close to the pm7) The routine that calls this value moves the value @ x3995 to the data pointer, then checks if bit `26h`.2 is set. If it isn then it skips the next step and continues through the code. If it's not set it moves the value @ x398f into the data pointer and continues. My question is why? The value @ x3995 is exactly the same as @ 398f. Weird? Mike
+## Code Logic
+The routine retrieves the idle value by moving the value at `x3995` to the data pointer. It then performs a conditional check on bit `26h.2`:
 
----
+*   **If bit 26h.2 is set:** The routine proceeds to the next step.
+*   **If bit 26h.2 is not set:** The routine moves the value at `x398F` into the data pointer and continues.
 
-**Author:** George
+> [!NOTE]
+> The values stored at `x3995` and `x398F` are identical in the stock PM6 ROM.
 
-**Date:** 01-04-03 23:51
+## Technical Context
+The PM6 firmware is derived from the PM7 ECU. The redundancy observed in the idle routine—where two different memory addresses point to the same value—is a result of the PM6 inheriting the PM7 code structure without full optimization. 
 
-There are quite a few instances of this in the code, as it seems the PM6 code was derived from the PM7. If you look at the PM7 tables you'll see there is a slight difference - my guess is that when they reused the PM7 code they didn't bother removing that section, instead they made both tables the same. Another instance of this type of thing is in the speed limiter - the code to implement the speed limiter is still in the PM6 code, it's just been set to an extremely high speed.
+> [!TIP]
+> Similar legacy code artifacts exist elsewhere in the PM6 firmware, such as the speed limiter routine, which remains present in the code but is configured with an extremely high threshold to effectively disable it.

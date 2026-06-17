@@ -1,31 +1,34 @@
 ---
-summary: 'Comprehensive resource list for the Oki 66K processor family used in Honda OBD1 and OBD2 ECUs, including assemblers and manuals.'
-tags: [ecu, reference, tuning, rom, sensors]
+summary: 'Comprehensive resource list for the Oki 66K processor family used in Honda OBD1 and OBD2 ECUs, including assemblers, disassemblers, and syntax definitions.'
+tags: [ecu, reference, tuning, rom, sensors, oki-66k]
 applies_to:
   obd: [1, 2]
   models: [accord, civic, del-sol, integra, nsx, prelude, rsx, s2000]
-  chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, eg, eg-eh, ek, em-ep, na1-na2]
+  chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, eg, eh, ek, em, ep, na1, na2]
 complexity: advanced
-sources:
-  - name: 'pgmfi.org wiki'
-    title: '66k Resources'
-    url: /pgmfi/wiki/library/66k-resources
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# 66k Resources
+# Oki 66K Processor Resources
 
-### Documentation 
+This document provides a centralized reference for the Oki 66K processor family, which serves as the foundation for most Honda OBD1 and OBD2 engine control units.
 
-- [66k Assembler Docs](/cars/diagnostics/66k-assembler-docs) - factory documentation on the Oki 66xxx processors used in most [OBD1](/cars/wiring/obd1) and [OBD2](/cars/wiring/obd2) implemenations
-- 66k Operations - a list of the common 66xxx assembler operations and how they are used in most PGM-FI implementations
+## Documentation
 
-### Utilities 
+*   **[66k Assembler Docs](/cars/diagnostics/66k-assembler-docs):** Official factory documentation regarding the Oki 66xxx processor architecture.
+*   **66k Operations:** A comprehensive list of standard 66xxx assembler operations and their specific implementation within PGM-FI systems.
 
-- [ASM662](/cars/diagnostics/asm662) - open-source assembler/disassembler for the Oki Nx8/200 66k processors by Andy Sloane
-- [66507 DASM](/pgmfi/forum/topic.php?id=1765) - disassembler for [OBD2](/cars/wiring/obd2) Oki `66507` processor by Pelegri Didier
-- [assembly-Oki66k.xml](/pgmfi/forum/topic.php?id=1769) - jEdit [Edit Mode](http://jedit.org/users-guide/installing-modes.html) definition file for 66k assembly by Dave Johnson
-- [okiedit](/pgmfi/forum/topic.php?id=1770) - Win32 syntax-highlighting editor for 66k assembly by John Cui
-- [asm syntax for textpad 4.6](/pgmfi/forum/topic.php?id=1772) - syntax for texpad by Calvin Baank
+## Utilities
+
+### Assemblers and Disassemblers
+
+*   **[ASM662](/cars/diagnostics/asm662):** Open-source assembler/disassembler for the Oki Nx8/200 66k processor series.
+*   **66507 DASM:** Specialized disassembler for the OBD2 Oki `66507` processor.
+
+### Development Environment Support
+
+*   **jEdit Mode Definition:** `assembly-Oki66k.xml` provides syntax highlighting and structure for the jEdit text editor.
+*   **okiedit:** A Win32-based syntax-highlighting editor specifically designed for 66k assembly development.
+*   **TextPad Syntax:** Custom syntax definition files for TextPad 4.6 to support 66k assembly formatting.
+
+> [!NOTE]
+> Ensure that your development environment is configured for the specific processor variant (e.g., 66507 vs. 66200) to avoid instruction set mismatches during disassembly or assembly.

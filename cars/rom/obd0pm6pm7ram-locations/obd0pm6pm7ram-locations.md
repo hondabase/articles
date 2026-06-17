@@ -1,18 +1,11 @@
 ---
 summary: 'A comprehensive memory mapping reference sheet of internal RAM, bit flags, and XRAM registers for OBD0 PM6 and PM7 Honda ECUs.'
-tags: [rom, reference, obd0]
+tags: [rom, reference, obd0, tuning]
 applies_to:
   obd: [0]
   models: [civic, crx, integra]
   chassis: [ef]
 complexity: advanced
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD0PM6PM7RAM Locations'
-    url: /pgmfi/wiki/library/obd0pm6pm7ram-locations
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # OBD0 PM6 & PM7 RAM Address Locations
@@ -20,8 +13,6 @@ sources:
 This reference sheet outlines the internal memory-mapped address spaces of the **PM6** (USDM 1988–1991 Civic/CRX Si) and **PM7** (JDM DOHC ZC) OBD0 Honda ECUs. 
 
 These ECUs utilize 8051-derivative microcontrollers, which partition memory into internal RAM, bit-addressable spaces, and external RAM (XRAM). This mapping is critical for reverse-engineering fuel/ignition maps, writing custom datalogging code, or modifying factory ROM routines.
-
----
 
 ## 8-Bit Internal RAM Locations (Bytes)
 
@@ -37,9 +28,7 @@ Below are the key 8-bit registers located in the primary internal RAM space:
 | **`0x34`** | BARO | Barometric Pressure (PA sensor on board). |
 | **`0x36`** | MAP | Manifold Absolute Pressure sensor reading. |
 | **`0x37`** | MAP Complement | Bitwise complement of `0x36h`. |
-| **`0x38`** | MAP
-
-* | Locked/stored MAP value (updated when bit `0x79.4` is set). |
+| **`0x38`** | MAP Locked | Locked/stored MAP value (updated when bit `0x79.4` is set). |
 | **`0x39`** | TPS | Throttle Position Sensor reading. |
 | **`0x3A`** | TPS (Backup) | Secondary or filtered TPS reading. |
 | **`0x3B`** | RPM (8-bit) | Simplified 8-bit engine speed calculation. |
@@ -53,20 +42,12 @@ Below are the key 8-bit registers located in the primary internal RAM space:
 | **`0x52`** | Delta RPM High | Rate of RPM change. Bit `0x17h` indicates the sign (1 = negative). |
 | **`0x53`** | VSS High | High byte of 16-bit Vehicle Speed Sensor counter. |
 | **`0x54`** | VSS Low | Low byte of 16-bit Vehicle Speed Sensor counter. |
-| **`0x5C`** | 6260 Port 1 Data | Loaded to OKI 6260 register `0x2001h` if bit `0x52h` is set. |
-| **`0x5D`** | 6260 Port 2 Data | Loaded to OKI 6260 register `0x2002h` if bit `0x52h` is set. |
-| **`0x5E`** | 6260 Port 1 Data | Loaded to OKI 6260 register `0x2001h` if bit `0x53h` is set. |
-| **`0x5F`** | 6260 Port 2 Data | Loaded to OKI 6260 register `0x2002h` if bit `0x53h` is set. |
-| **`0x60`** | 6260 Port 1 Data | Loaded to OKI 6260 register `0x2001h` if bit `0x54h` is set. |
-| **`0x61`** | 6260 Port 2 Data | Loaded to OKI 6260 register `0x2002h` if bit `0x54h` is set. |
 | **`0x6A`** | Fuel Trim Add | Primary short-term fuel trim adjustment. |
 | **`0x6C`** | VSS (8-bit) | Simplified 8-bit vehicle speed value. |
 | **`0x6F`** | O2 Fuel Bias | Closed-loop fueling correction factor based on O2 sensor. |
 | **`0x70`** | O2 Fuel Bias (Filtered)| Smoothed/integrated closed-loop fuel bias. |
 | **`0xA2`** | Fuel Mult Low | Low byte multiplier used to adjust fuel injector pulse width. |
 | **`0xA3`** | Fuel Mult High | High byte multiplier used to adjust fuel injector pulse width. |
-
----
 
 ## Internal RAM Bit Flags (Bit-Addressable)
 
@@ -87,8 +68,6 @@ Below are critical diagnostic and logic bits located in the bit-addressable inte
 | **`0x79.6`** | Low Load Threshold | Set to 1 if MAP is ~6.0 to ~4.0 in Hg. |
 | **`0x7A.4`** | High Load Threshold| Set to 1 if MAP is ~8.1 to ~6.0 in Hg. |
 
----
-
 ## External RAM (XRAM) Locations
 
 These addresses exist in the external static RAM chip (typically a standard 5128 SRAM chip mapped via the `MOVX` command):
@@ -102,3 +81,6 @@ These addresses exist in the external static RAM chip (typically a standard 5128
 | **`0x07Dh`** | ADC Destination PTR | Address pointer specifying where the raw ADC byte from `0x4001h` is written. |
 | **`0x0A1h`** | Checksum Accumulator| Holds the running checksum tally during ROM verification routines. |
 | **`0x0A2h`** | Checksum Pointer | Holds the next high address byte (DPH) during ROM checksum loops. |
+
+> [!IMPORTANT]
+> When modifying these memory locations via custom code, ensure that the CPU interrupt flags are disabled to prevent race conditions during multi-byte reads of RPM or VSS data.

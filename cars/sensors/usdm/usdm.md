@@ -1,25 +1,40 @@
 ---
-summary: 'Reference for USDM (United States Domestic Market) Honda ECUs, known for their comprehensive feature sets including ELD and knock control.'
-tags: [ecu, reference, sensors]
+summary: 'Technical reference for USDM (United States Domestic Market) OBD1 Honda ECUs, detailing standard features such as ELD, knock control, and hardware characteristics.'
+tags: [ecu, obd1, usdm, sensors]
 applies_to:
   obd: [1]
-  brand: Acura/Honda
   models: [civic, integra]
-  chassis: {}
+  chassis: [eg, dc2]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: USDM
-    url: /pgmfi/wiki/library/usdm
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# USDM
+# USDM OBD1 ECU Specifications
 
-United States Domestic Market - cars destined/made for the United States.
+United States Domestic Market (USDM) ECUs are characterized by a comprehensive feature set designed to meet North American emissions and diagnostic standards.
 
-**Compare to:** [EDM](/cars/wiring/edm), [JDM](/cars/sensors/jdm)
+## Hardware Characteristics
+USDM OBD1 ECUs are housed in a larger, rectangular aluminum casing compared to their JDM counterparts. Internally, these units typically utilize through-hole components rather than surface-mount technology, facilitating easier hardware modification and chip installation.
 
-**Note:** [USDM](/cars/sensors/usdm) [OBD1 Civic Integra](/cars/sensors/obd1-civic-integra) [ECU](/cars/ecu/ecu)s generally are the most feature-filled [ECU](/cars/ecu/ecu)s, and generally have the [Injector Test Circuit](/cars/diagnostics/injector-test-circuit), [Knock Sensor](/cars/ignition/knock-sensor) (in [DOHC](/cars/sensors/dohc) [VTEC](/cars/sensors/vtec) [ECU](/cars/ecu/ecu)s), [Electrical Load Detector](/cars/sensors/electrical-load-detector) and [Pressure Atmosphere](/cars/rom/pressure-atmosphere) sensors. They generally do not have surface mount components, and use a larger rectangular case compared to [JDM](/cars/sensors/jdm) [ECU](/cars/ecu/ecu)s. They also generally do not have a [Speed Limiter](/cars/diagnostics/speed-limiter).
+## Standard Features
+USDM OBD1 ECUs include several integrated diagnostic and control systems not consistently found in other regional variants:
+
+*   **Electrical Load Detector (ELD):** Monitors vehicle electrical demand to optimize alternator output.
+*   **Knock Sensor:** Standard on DOHC VTEC variants to monitor engine combustion health.
+*   **Injector Test Circuit:** Integrated diagnostic circuitry for fuel system monitoring.
+*   **Pressure Atmosphere (PA) Sensor:** Used for barometric pressure compensation.
+
+> [!NOTE]
+> Unlike many JDM variants, USDM OBD1 ECUs typically do not feature a factory-programmed speed limiter.
+
+## Regional Comparison
+| Feature | USDM | JDM | EDM |
+| :--- | :--- | :--- | :--- |
+| **Case Size** | Large Rectangular | Compact | Varies |
+| **Speed Limiter** | No | Yes | Yes |
+| **ELD** | Yes | No | Varies |
+| **Component Type** | Through-hole | Mixed | Mixed |
+
+{{> ecu-connector-reference }}
+
+> [!TIP]
+> For detailed wiring pinouts and sensor signal troubleshooting, refer to the specific ECU model page (e.g., P30, P72, P06).

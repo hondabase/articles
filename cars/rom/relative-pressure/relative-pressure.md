@@ -1,22 +1,34 @@
 ---
-summary: 'Relative Pressure is when you disregard that we are at all times surrounded by atmospheric pressure (approximatley 14.'
+summary: 'An explanation of relative pressure versus absolute pressure in the context of engine management and MAP sensor calibration.'
 tags: [tuning, rom, sensors, reference]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Relative Pressure'
-    url: /pgmfi/wiki/library/relative-pressure
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Relative Pressure
+# Understanding Relative Pressure in Engine Tuning
 
-[Relative Pressure](/cars/rom/relative-pressure) is when you disregard that we are at all times surrounded by atmospheric pressure (approximatley 14.5psi). Therefore if a container is said to contain 10psi relative pressure, it's aboslute pressure will truly be 10psi + 14.5 == 24.5psi. ---
+Relative pressure is a measurement that disregards ambient atmospheric pressure (approximately 14.5 psi). When a container is described as having 10 psi of relative pressure, the absolute pressure is calculated as:
 
-An editor that displays in [Relative Pressure](/cars/rom/relative-pressure) looks like this: ![rel_pressure_uber.jpg](rel_pressure_uber.jpg)Column 10 is approximatly atmospheric pressure, slightly less due either to interpolation or the fact that even at [WOT](/cars/reference/wot) there will be some vaccuum. Column 1 is somewhat arbitrary, and not true zero aka absolute vacuum. See also [Map Sensor](/cars/fueling/map-sensor) for the values the OEM [Map Sensor](/cars/fueling/map-sensor) is capable of reading.
+**Absolute Pressure = Relative Pressure + Atmospheric Pressure**
+*10 psi + 14.5 psi = 24.5 psi absolute*
+
+## Application in Tuning Software
+
+Tuning software often utilizes relative pressure scales for fuel and ignition mapping. 
+
+![Relative pressure mapping in tuning software](rel_pressure_uber.jpg)
+*Example of a fuel map utilizing relative pressure scaling*
+
+> [!NOTE]
+> Column 10 typically represents atmospheric pressure. Values may appear slightly lower than 14.5 psi due to interpolation or minor vacuum losses occurring even at Wide Open Throttle (WOT).
+
+> [!IMPORTANT]
+> Column 1 is an arbitrary reference point and does not represent an absolute vacuum (0 psi absolute). 
+
+## Sensor Limitations
+When configuring your ECU, ensure the selected MAP sensor is capable of reading the required pressure range. Refer to the specific sensor data sheets for the maximum absolute pressure limits of your OEM or aftermarket MAP sensor.
+
+{{> map-sensor-reference }}

@@ -1,20 +1,39 @@
 ---
-summary: 'Dual Point is used for refering to the DPFI ( DualPoint Fuel Injection) motors and ECUs. It is essencialy the next generation of carbs.'
-tags: [ecu, reference, sensors]
+summary: 'An overview of the Dual-Point Fuel Injection (DPFI) system, its operational limitations, and its role in early Honda engine management.'
+tags: [ecu, dpfi, fuel-injection, diagnostics]
 applies_to:
-  obd: [0, 1, 2]
+  obd: [0, 1]
   models: [civic, crx]
   chassis: [ef]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Dual Point'
-    url: /pgmfi/wiki/library/dual-point
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Dual Point
+# Dual-Point Fuel Injection (DPFI) Overview
 
-[Dual Point](/cars/sensors/dual-point) is used for refering to the [DPFI](/cars/sensors/dpfi) ( Dual-Point Fuel Injection) motors and [ECU](/cars/ecu/ecu)s. It is essencialy the next generation of carbs. The fuel is injected with 2 injectors in the common manifold. Which ever cylinder is on the intake stroke sucks the fuel. Fuel separation, bad fuel atomization and delivery are only some of the problems [DPFI](/cars/sensors/dpfi) systems have and those are the primary reasons they deliver less power then their [MPFI](/cars/sensors/mpfi) brothers. Software for the [DPFI](/cars/sensors/dpfi) [ECU](/cars/ecu/ecu)s like the PM5/PM9 and P04 is not developed as they are considered useless for power and tuning mods. Consider doing an [MPFI](/cars/sensors/mpfi) swap if you're on the quest for power.
+Dual-Point Fuel Injection (DPFI) represents an early electronic fuel injection architecture used by Honda, serving as a transitional technology between carbureted systems and Multi-Point Fuel Injection (MPFI).
+
+## System Operation
+The DPFI system utilizes two fuel injectors located within a common intake manifold. Fuel delivery is determined by the intake stroke of the individual cylinder; the vacuum created by the cylinder on the intake stroke draws the atomized fuel from the manifold.
+
+## Technical Limitations
+DPFI systems are inherently limited compared to MPFI systems due to several design constraints:
+
+*   **Fuel Separation:** Inconsistent fuel distribution across cylinders.
+*   **Atomization:** Poor fuel atomization characteristics compared to port-injected systems.
+*   **Delivery Efficiency:** Inefficient fuel delivery timing, which restricts overall engine volumetric efficiency and power output.
+
+> [!IMPORTANT]
+> Due to these design limitations, DPFI systems are generally considered unsuitable for performance tuning. Software development for DPFI-specific ECUs (such as the PM5, PM9, and P04) is virtually non-existent.
+
+## Performance Upgrades
+For users seeking increased power or tuning capabilities, an MPFI conversion is the standard industry recommendation. Converting to an MPFI system allows for individual cylinder fuel control and significantly improved air-fuel ratio management.
+
+### Common DPFI ECU Variants
+| ECU Model | System Type | Notes |
+| :--- | :--- | :--- |
+| PM5 | DPFI | Standard 1.5L application |
+| PM9 | DPFI | Standard 1.5L application |
+| P04 | DPFI | Late-model DPFI variant |
+
+> [!TIP]
+> If you are planning a performance build, prioritize an MPFI intake manifold and wiring harness conversion before attempting any ECU-based tuning.

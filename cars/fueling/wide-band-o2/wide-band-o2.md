@@ -1,25 +1,79 @@
 ---
-summary: 'How wideband oxygen sensors differ from narrowband sensors, integration with aftermarket controllers, and datalogging setups.'
-tags: [sensor, fueling, diagnostics]
+summary: 'An overview of wideband oxygen sensor technology, controller options, and integration methods for ECU tuning.'
+tags: [sensor, fueling, diagnostics, tuning]
 applies_to:
   obd: [0, 1, 2]
   models: [integra]
   chassis: {}
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Wide Band O2'
-    url: /pgmfi/wiki/library/wide-band-o2
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Wide Band O2
+# Wideband Oxygen Sensor Integration and Tuning
 
-***What is a Wideband O2 sensor***It is an [Oxygen Sensor](/cars/fueling/oxygen-sensor) that gives stable output over a much larger range than standard 1-wire or 4-wire oxygen sensors. It is helpful in determining the Air Fuel Ratio for ECU Tuning. The market just got a little more competitive, I'm going to do a quick summary. Traditionally you had two options for a wideband/lambda O2 meter. These were the MOTEC unit and the FJO offering. These can cost you $600-1000 and up, so I'll be focusing on cheaper solutions. The new Bosch LSU4 is a windfall to the community because it is OEM equipment on some VWs and can be had for between 30 and 60 dollars. Previously your options were generally the NGK L1H1 and the older BOSCH UEGO sensor (LSM-11?) ***What is a narrowband output?***Narrowband is what your stock O2 sensor is giving you, it is of the range 0-1volts, so there is not very much room for resolution or "accuracy." Also it was engineered to save costs, and really only tells you if you are above or at stoich (14.7:1 A/F). This is not accurate enough for tuning. ![NarrowbandOutputGraph.jpg](http://plxdevices.com/M-200/NarrowbandOutputGraph.jpg)***What is a wideband output?***A more complicated 02 sensor element is used, and it can give you more usable resolution, from 0-5 volts. It was also engineered to be accurate, re-calibrateably on the fly, and with less emphasis on making a mass-produced economical unit. A wideband needs a special circuit and power source to control it's delicate heating needs. This is the "wideband controller", or controller box, that you see advertized. ![WidebandOutputGraph.jpg](http://www.plxdevices.com/M-200/WidebandOutputGraph.jpg)***How can I make use of this?***I see two main options. Have a bung tapped into your downpipe for a second permanent O2 sensor mount. If you are planning on running the unit in the car full time. Have the ECU running off the stock O2 sensors narrowband output, and do tuning via your dedicated wideband O2 sensor and controlling unit. Once tuned, you can remove the wideband O2 sensor, and use a plug to seal the bung. The second method is more complicated, but it is more desirable for someone like myself that uses the wideband portably to tune different cars. You remove the stock O2 sensor unit, and put the wideband sensor in it's place. Then you feed a narrowband output off of your wideband O2 sensor controller to satisfy the ECU. (The narrowband output off the wideband controller, is just the wideband info scaled down to 0-1volts.) For ease of instalation, you can have an OBD1 -OBD1 "conversion/crossover" harness, instead of splicing into the customer chassis harness. Academically there may be a problem here, because when you are done tuning, and return the car to running off of the stock narrowband sensor, there might be slight inconsistencies. More research/opinion is needed on this. Ok, on to our budget options: ***Innovate Motorsports:***[https://www.innovatemotorsports.com](https://www.innovatemotorsports.com)New to the market, very competitive pricing/feature list. Uses the new, cheap LSU4 sensor. Has a patent-pending calibration routine for the sensor that none of the other companies can lay claim to. Integrated LCD for displaying values. Programmable outputs (narrowband out, wideband out, whatever you want), comes with a datalogging suite, that lacks only RPM pickup at this time, and is soon to come). It's a little too big to mount, it's more of a tuner's device, but it can easily be tucked away, and use the narrowband output to drive a A/F gauge. ***AEM UEGO:***[https://www.aemelectronics.com](https://www.aemelectronics.com)Uses a sensor very similar to the BOSCH LSU4, but the price is artificially high because only AEM is a supplier. The prodcut arries the AEM name and reputation. It can control 2 wideband sensors, for V-6 or V-8 people, or any setup with 2 O2 sensors. It does not have an internal LCD, so you need to pass the output voltages to a standalone fuel managment, or to the ECU, or to an A/F gauge or to whatever datalogging setup you have. Outputs are not scriptable, they are pre-defined. AEM's wideband output scale is different from PLX and Innovate, where the stock Honda [ECU](/cars/ecu/ecu) can only read from 8.5AFR to 13.66AFR due to the voltage sweep (0.156vdc = 8.5, 3.83vdc=13.66AFR, 4.99vdc = 20.5AFR) ***PLX-devices:***[http://www.plxdevices.com/index.htm](http://www.plxdevices.com/index.htm)PLX-devices is hopping on the band-wagon and adding a product to support the LSU4 sensor, their M-250 or M-300. They offer controllers with/without LCD, letting you choose your pricing option. Wideband and narrowband outputs, not scriptable. They also have a VERY helpful website, with alot of info to aid in your research, and really help you understand this topic, thanks PLX! ***DIY-WB:***[http://wbo2.com/](http://wbo2.com/)The !TechEdge/DIY-WB project are a bunch of very talented hobbyists who set out to build their own wideband, shocked at the prices of the FJO/MOTEC offerings. They have had an offering on the market longer than any of the other companies presented here. They offer kits that you can assemble yourself, or pay to have assembled; they will even sell you JUST the circuit board and let you source all the components yourself, for the real real cheapskate :cough: hobbyist. I'm going to focus on the !TechEdge v2.0 because it uses the LSU4 sensor, whereas the !TechEdge 1.x uses the more expensive L1H1 sensor. The 2.0 has three built-in analogue logger inputs (0 to 5 Volts), three thermocouple (K-type) inputs and a RPM input. In addition to the inputs, you have the standard narrowband and wideband outputs. Comes with a logging suite, and POSSIBLY scriptable outputs(?) info here: [http://web.archive.org/web/20160420174111/http://wbo2.com:80/sw.htm](http://web.archive.org/web/20160420174111/http://wbo2.com:80/sw.htm). The company also has options for LED display outputs. Altogether a very well thought out, robust product. I'm not going to gather prices at this time. Prices are available from all the URLs above, except for AEMPOWER. AEM UEGO can be purchased at [http://web.archive.org/web/20211208211907/http://web.archive.org/web/20211208211907/http://ks-motorsports.com//](http://web.archive.org/web/20211208211907/http://web.archive.org/web/20211208211907/http://ks-motorsports.com//), who'd I'd reccomend checking out. You are in general looking at sub 400 dollar solutions, and if you feel like assembling the DIY-WB / !TechEdge kit, you're probably looking at like 250-300 dollars. Here are some useful links: - [Wideband theory](http://www.g-speed.com/pbh/afr-o2.html)
-- [Some application notes](http://www.plxdevices.com/appnotes.htm)
-- [Hondata's take on tuning with a wideband](http://hondata.com/techwidebandtuning.html)
-- [LSU4 for ~US$40+Shipping](https://www.parts.com/partlocator/index.cfm?action=selectCatalogYearMakeModel&make=0&siteid=213799&catalogid=1)
+A wideband oxygen sensor provides stable output over a much larger range than standard narrowband sensors, making it an essential tool for accurate Air/Fuel Ratio (AFR) monitoring and ECU tuning.
 
-***Bosch LSU4/LSU4.2 Sensor Info***This sensor is more commercially available than the NTK and is used in production cars such as, Porche, Audi, VW, Subaru, Cadillac, and Volvo. The Bosch LSU 4.2 sensor is marked with the numbers 0 258 007 057/058 (sold by PLX Devices Inc.). The Bosch LSU4 sensor is marked with the numbers 0 258 006 066. ***NTK L1H1 Calibration***Below is a table of Air Fuel Ratio and respective output voltages | **A/F ratio** | Voltage(volts) | | :--- | :--- | | 10.015625 | 0 | | 10.015625 | 0.156 | | 10.015625 | 0.312 | | 10.015625 | 0.468 | | 10.015625 | 0.624 | | 10.015625 | 0.780 | | 10.2890625 | 0.936 | | 10.71875 | 1.092 | | 11.109375 | 1.248 | | 11.421875 | 1.404 | | 11.8125 | 1.560 | | 12.203125 | 1.716 | | 12.59375 | 1.872 | | 13.1015625 | 2.028 | | 13.4921875 | 2.184 | | 14.1171875 | 2.340 | | 14.703125 | 2.496 | | 15.71875 | 2.652 | | 17.0078125 | 2.808 | | 18.609375 | 2.964 | | 18.9609375 | 3.120 | | 18.9609375 | 3.276 | | 18.9609375 | 3.432 | | 18.9609375 | 3.588 | | 18.9609375 | 3.744 | | 18.9609375 | 3.900 | | 18.9609375 | 4.056 | | 18.9609375 | 4.212 | | 18.9609375 | 4.368 | | 18.9609375 | 4.524 | | 18.9609375 | 4.680 | | 18.9609375 | 4.836 | | 18.9609375 | 4.992 |
+## Wideband vs. Narrowband Sensors
+
+### Narrowband Output
+Stock oxygen sensors are narrowband, typically operating in a 0–1V range. They are designed for emissions compliance and only accurately indicate whether the engine is running at, above, or below stoichiometric (14.7:1 AFR). They lack the resolution required for performance tuning.
+
+### Wideband Output
+Wideband sensors utilize a more complex element to provide high-resolution data, typically across a 0–5V range. Because these sensors require precise heating and control, they must be paired with a dedicated wideband controller.
+
+## Integration Methods
+
+There are two primary methods for integrating a wideband sensor into your vehicle:
+
+*   **Dedicated Bung:** Install a second bung in the exhaust downpipe for a permanent wideband sensor. This allows the ECU to continue using the stock narrowband sensor for closed-loop operation while the wideband provides data for tuning.
+*   **Sensor Replacement:** Replace the stock narrowband sensor with the wideband sensor. The wideband controller is then configured to output a simulated 0–1V narrowband signal to the ECU to maintain factory operation.
+
+> [!IMPORTANT]
+> When using a simulated narrowband signal, ensure the controller is properly calibrated to prevent fueling inconsistencies during closed-loop operation.
+
+## Wideband Controller Options
+
+Several manufacturers offer controllers compatible with the Bosch LSU4 sensor series:
+
+*   **Innovate Motorsports:** Features a patent-pending calibration routine and programmable outputs. Includes a datalogging suite.
+*   **AEM UEGO:** A robust, standalone controller. Note that its output voltage scaling is unique and may require specific configuration within your tuning software.
+*   **PLX Devices:** Offers various controllers with optional integrated LCD displays. Known for high-quality documentation and ease of use.
+*   **TechEdge (DIY-WB):** A hobbyist-driven project offering DIY kits, pre-assembled units, or bare circuit boards. Features advanced inputs including RPM and thermocouple logging.
+
+## Bosch LSU4/LSU4.2 Sensor Reference
+
+The Bosch LSU4 series is widely used in OEM applications (Porsche, Audi, VW, Volvo, etc.), making it a cost-effective and reliable choice for aftermarket tuning.
+
+*   **Bosch LSU 4.2:** Part numbers 0 258 007 057 / 058.
+*   **Bosch LSU 4:** Part number 0 258 006 066.
+
+## NTK L1H1 Calibration Table
+
+| A/F Ratio | Voltage (V) |
+| :--- | :--- |
+| 10.01 | 0.000 |
+| 10.01 | 0.156 |
+| 10.01 | 0.312 |
+| 10.01 | 0.468 |
+| 10.01 | 0.624 |
+| 10.01 | 0.780 |
+| 10.29 | 0.936 |
+| 10.72 | 1.092 |
+| 11.11 | 1.248 |
+| 11.42 | 1.404 |
+| 11.81 | 1.560 |
+| 12.20 | 1.716 |
+| 12.59 | 1.872 |
+| 13.10 | 2.028 |
+| 13.49 | 2.184 |
+| 14.12 | 2.340 |
+| 14.70 | 2.496 |
+| 15.72 | 2.652 |
+| 17.01 | 2.808 |
+| 18.61 | 2.964 |
+| 18.96 | 3.120 |
+| 18.96 | 3.432 |
+| 18.96 | 3.900 |
+| 18.96 | 4.992 |
+
+> [!TIP]
+> Always verify the specific voltage-to-AFR scaling provided by your controller's manual, as these values can vary between firmware versions and hardware manufacturers.

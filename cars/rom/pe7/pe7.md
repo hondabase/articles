@@ -1,33 +1,29 @@
 ---
-summary: 'the PE7 came on 8587 EDM/USDM Civic/CRX Si (EW3/EW4 Vacuum advance) cars. Thanks to Mark Lamond for the scans.'
-tags: [hardware, education, tuning, rom, sensors, reference]
+summary: 'Technical overview and ROM reference for the Honda PE7 ECU found in 1985–1987 Civic and CRX Si models equipped with the EW3/EW4 engine.'
+tags: [hardware, tuning, rom, sensors, reference, pe7]
 applies_to:
-  obd: [0, 1, 2]
-  brand: Honda
+  obd: [0]
   models: [civic, crx]
-  chassis: {}
+  chassis: [ah, af]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: PE7
-    url: /pgmfi/wiki/library/pe7
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# PE7
+# PE7 ECU Technical Reference
 
-the PE7 came on 85-87 [EDM](/cars/wiring/edm)/USDM Civic/CRX Si (EW3/EW4 Vacuum advance) cars. Thanks to Mark Lamond for the scans.
+The PE7 ECU was utilized in 1985–1987 EDM and USDM Honda Civic and CRX Si models equipped with the EW3/EW4 vacuum-advance engines.
 
-- [PE7-682-87_Civic_Si.bin](PE7-682-87_Civic_Si.bin): [ROM](/cars/rom/rom) from a stock PE7-682 (European 87 Civic Si)
+## ROM Files
+* [PE7-682-87_Civic_Si.bin](PE7-682-87_Civic_Si.bin): Stock ROM image from a PE7-682 (European 1987 Civic Si).
 
-<figure>
- <img src="PE7-741_solder.jpg" alt="Scan of bottom (solder) side">
- <figcaption>Scan of bottom (solder) side</figcaption>
-</figure>
+## Hardware Scans
 
-<figure>
- <img src="PE7-741_component.jpg" alt="Scan of top (component) side">
- <figcaption>Scan of top (component) side</figcaption>
-</figure>
+```carousel
+![Bottom view](PE7-741_solder.jpg)
+*Scan of the bottom (solder) side of the PE7 PCB*
+<!-- slide -->
+![Top view](PE7-741_component.jpg)
+*Scan of the top (component) side of the PE7 PCB*
+```
+
+> [!NOTE]
+> The PE7 is a vacuum-advance era ECU. Ensure all vacuum lines are properly routed and leak-free when performing diagnostics or tuning on this system.

@@ -1,21 +1,38 @@
 ---
-summary: 'OK, here is what I know about these ECUs. The PT6A51 I have here has a 66911 MCU and uses an external 256k PROM.'
+summary: 'Technical reference for Honda PT6 and PK3 series ECUs, detailing MCU specifications and PROM configurations for OBD-era Prelude and Accord models.'
 tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
-  obd: [0, 1, 2]
-  brand: Honda
+  obd: [0, 1]
   models: [accord, prelude]
-  chassis: {}
+  chassis: [cb, cd, ba]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Prelude Accord'
-    url: /pgmfi/wiki/library/prelude-accord
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Prelude Accord
+# Honda PT6 and PK3 ECU Technical Specifications
 
-OK, here is what I know about these [ECU](/cars/ecu/ecu)s. The PT6-A51 I have here has a 66911 [MCU](/cars/rom/mcu) and uses an external 256k PROM. I got an [ECU](/cars/ecu/ecu) out of a 1994 Prelude SI with a 1.6 [DOHC](/cars/sensors/dohc) and it has a PK3-A00 and it also has the OKI 66911 [MCU](/cars/rom/mcu) and external 256Kbit PROM, plus has the `74HC373` -- sloopy - 16 May 2005
+This document outlines the hardware configuration for specific Honda PT6 and PK3 series ECUs found in mid-90s Accord and Prelude models.
+
+## Hardware Overview
+
+The following ECU variants utilize the OKI 66911 MCU architecture paired with external 256Kbit PROM storage.
+
+### PT6-A51 (Accord)
+*   **MCU:** OKI 66911
+*   **Memory:** External 256Kbit PROM
+
+### PK3-A00 (1994 Prelude Si, 1.6L DOHC)
+*   **MCU:** OKI 66911
+*   **Memory:** External 256Kbit PROM
+*   **Logic Components:** 74HC373 latch
+
+> [!NOTE]
+> The 74HC373 octal transparent latch is utilized in the PK3-A00 architecture to facilitate address/data bus multiplexing required by the 66911 MCU.
+
+## Technical Reference
+
+| ECU Model | Application | MCU | Memory Type |
+| :--- | :--- | :--- | :--- |
+| PT6-A51 | Accord | OKI 66911 | 256Kbit PROM |
+| PK3-A00 | 1994 Prelude Si | OKI 66911 | 256Kbit PROM |
+
+{{> ecu-safety-precautions }}

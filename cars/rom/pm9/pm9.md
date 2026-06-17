@@ -1,31 +1,42 @@
 ---
-summary: "Essentially a PM5The PM5 + PM9 are essentially the same ECU. I think one may have been for the 4 speed and one the 5 speed, but I'm not sure."
+summary: "Technical overview of the PM9 ECU, including hardware variations, processor identification, and its relationship to the PM5 platform."
 tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
-  obd: [0, 1, 2]
-  brand: Honda
+  obd: [0]
   models: [civic, crx]
   chassis: [ef]
 complexity: advanced
-sources:
-  - name: 'pgmfi.org wiki'
-    title: PM9
-    url: /pgmfi/wiki/library/pm9
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# PM9
+# PM9 ECU Technical Reference
 
-Essentially a [PM5](/cars/rom/pm5) The PM5 + PM9 are essentially the same [ECU](/cars/ecu/ecu). I think one may have been for the 4 speed and one the 5 speed, but I'm not sure. (blundar) The PM9 that I posted was from a 4 speed HF model Civic. You may be correct in your thoughts. (Warrick) The PM5+PM9 used two distinct designs (kinda like the [PG7](/cars/sensors/pg7)) - the 88-89 Use an `83C154` while the 90-91 use a 66201. The 90-91 processor quadrant looks a lot like an [OBD](/cars/wiring/obd)1 [ECU](/cars/ecu/ecu).
+The PM9 ECU is functionally equivalent to the PM5 ECU, with variations typically attributed to transmission configuration (4-speed vs. 5-speed). The PM9 is commonly found in the 1988–1991 Honda Civic HF.
 
-<figure>
- <img src="pm9top.jpg" alt="PM9 top view">
- <figcaption>PM9 top view</figcaption>
-</figure>
+## Hardware Revisions
+The PM5 and PM9 platforms utilize two distinct hardware designs, similar to the PG7 architecture. Hardware identification is determined by the onboard processor:
 
-<figure>
- <img src="pm9bottom.jpg" alt="PM9 bottom view">
- <figcaption>PM9 bottom view</figcaption>
-</figure>
+*   **1988–1989:** Utilizes the 83C154 processor.
+*   **1990–1991:** Utilizes the 66201 processor.
+
+> [!NOTE]
+> The 1990–1991 processor quadrant layout shares significant design similarities with OBD1-era ECU architectures.
+
+## Component Overview
+
+```carousel
+![PM9 top view](pm9top.jpg)
+*Top view of the PM9 PCB*
+<!-- slide -->
+![PM9 bottom view](pm9bottom.jpg)
+*Bottom view of the PM9 PCB*
+```
+
+## Technical Specifications
+
+| Feature | Specification |
+| :--- | :--- |
+| **Chassis** | EF (Civic/CRX) |
+| **OBD Generation** | OBD0 |
+| **Processor (88-89)** | 83C154 |
+| **Processor (90-91)** | 66201 |
+| **Primary Application** | Civic HF |

@@ -1,30 +1,57 @@
 ---
-summary: 'Learn how to interpret the identification labels on Honda OBD1 ECUs to determine their origin, engine compatibility, and transmission type.'
-tags: [ecu, reference, tuning, rom, sensors, diagnostics]
+summary: 'A comprehensive guide to decoding Honda OBD1 ECU part numbers to identify engine compatibility, market origin, and transmission type.'
+tags: [ecu, reference, tuning, diagnostics]
 applies_to:
   obd: [1]
-  brand: Acura/Honda
   models: [civic, crx, del-sol, integra]
-  chassis: [ef, eg, eg-eh, ek]
+  chassis: [ef, eg, eh, ek]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Label Decode'
-    url: /pgmfi/wiki/library/label-decode
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Label Decode
+# Honda OBD1 ECU Label Identification
 
-You can find out a lot from reading the label on a [OBD](/cars/wiring/obd)1 [ECU](/cars/ecu/ecu). This applies mainly to the Civic [ECU](/cars/ecu/ecu)s... dunno bount the integra ones. **37820-ABC-XYZ**| **Digits** | **Meaning** | | :--- | :--- | | ABC | Engine [ECU](/cars/ecu/ecu) designed for | | X | Market of [ECU](/cars/ecu/ecu) - see chart below | | Y | 0: 5-speed, 5: Auto | | Z | even number: "11F0" board, odd number: "1720" board | | **Code** | **Market** | | :--- | :--- | | Axx | [USDM](/cars/sensors/usdm) 49-state | | Lxx | [USDM](/cars/sensors/usdm) Cali Emissions | | xxx | [JDM](/cars/sensors/jdm) | | Jxx | [JDM](/cars/sensors/jdm) | | 9xx | [JDM](/cars/sensors/jdm) (auto) | | Gxx | [EDM](/cars/wiring/edm) | | Qxx | [Oz DM](/cars/reference/oz-dm) | | Cxx | Canadian | | Nxx | usually factory reprogrammed, no particular market | Example: **37820-P28-A52**
+Honda OBD1 ECU part numbers follow a standardized 37820-ABC-XYZ format. Understanding these identifiers allows for accurate identification of engine application, regional market, and internal hardware revisions.
 
-- P28 = [SOHC](/cars/sensors/sohc) VTEC D16Z6
-- A = US, 49 state
-- 5 = Auto
-- 2 = "11F0" board
+## Part Number Breakdown
 
-| *Library. LabelDecode moved from Library. OBD1LabelDecode on 21 Apr 2004 - 15:31 by Home.blundar
+The part number is structured as **37820-ABC-XYZ**.
 
-* - [put it back](https://web.archive.org/web/http://www.pgmfi.org/twiki/bin/rename/Library/LabelDecode?newweb=Library&newtopic=OBD1LabelDecode&confirm=on "Click to move topic back to previous location, with option to change references.") | | :--- |
+| Segment | Description |
+| :--- | :--- |
+| **ABC** | Engine/Chassis application code |
+| **X** | Regional market code |
+| **Y** | Transmission type (0: Manual, 5: Automatic) |
+| **Z** | Board revision (Even: 11F0, Odd: 1720) |
+
+## Regional Market Codes
+
+The middle character (X) of the suffix indicates the intended market for the ECU.
+
+| Code | Market |
+| :--- | :--- |
+| **A** | USDM (49-state) |
+| **L** | USDM (California Emissions) |
+| **J** | JDM |
+| **G** | EDM |
+| **Q** | Australian Market |
+| **C** | Canadian Market |
+| **N** | Factory Reprogrammed / Service Unit |
+
+> [!NOTE]
+> Some JDM units may use numerical prefixes (e.g., 9xx) to denote specific automatic transmission configurations.
+
+## Example Analysis: 37820-P28-A52
+
+Using the breakdown above, the ECU **37820-P28-A52** is identified as follows:
+
+*   **P28**: SOHC VTEC (D16Z6) application.
+*   **A**: USDM 49-state market.
+*   **5**: Automatic transmission.
+*   **2**: 11F0 board revision.
+
+## Hardware Revisions
+
+The final digit (Z) indicates the internal PCB architecture. This is critical when sourcing ECUs for socketing or hardware modifications.
+
+*   **Even Numbers (e.g., 0, 2, 4)**: Typically utilize the **11F0** board architecture.
+*   **Odd Numbers (e.g., 1, 3, 5)**: Typically utilize the **1720** board architecture.

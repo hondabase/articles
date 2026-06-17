@@ -1,33 +1,37 @@
 ---
-summary: 'Author: XDEep first thanks to nico for a great tool. the mishap im talking about is when you drag the scrollbar up and down, the cells get pushed around.'
-tags: [hardware, education, ecu, tuning, rom, sensors, reference, diagnostics]
+summary: 'A technical guide on using Nico Analyze for ECU ROM map identification, including configuration of offsets, column settings, and precision scaling.'
+tags: [ecu, tuning, rom, diagnostics, software]
 applies_to:
   obd: [0, 1, 2]
-  brand: Honda
   models: [civic, crx, del-sol]
-  chassis: [ef, eg, eg-eh]
+  chassis: [ef, eg, eh]
 complexity: intermediate
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Nico Analyze'
-    url: /pgmfi/wiki/library/nico-analyze
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Nico Analyze
+# Using Nico Analyze for ECU ROM Map Identification
 
-**Author:** XDEep first thanks to nico for a great tool. the mishap im talking about is when you drag the scrollbar up and down, the cells get pushed around. so even though i found where the maps where, i had a hard time distinguishing what was what all day until just now i lined up the fuel multipliers into a single row and all the tables magically appeared before me! or just go straight to the beginning of the maps if you know it already. so dont drag, just use the arrow buttons. as an alternative to dragging, you can change the step to 255 to skip a table at a time. change it back to 1 if your cells get pushed and you need to line it up again. precision 1 is the decimal equivalent of the hex value in 8bit form. the default is precision:2 which is the 16bit decimal value of the hex value, which makes it harder to identify the tables at first. thanks to joseph for getting me in the right direction. in this post he explained how to use the program itself-
+Nico Analyze is a utility designed to visualize hexadecimal or binary ECU data in a decimal format, facilitating the identification of fuel and ignition maps.
 
----
+## Configuration Parameters
 
-Re: P30 Excel Map Calculator
+To effectively identify maps within a ROM file, configure the following parameters in the application:
 
-**Author:** Joseph
+*   **Offset:** The memory address where the target table begins.
+*   **Columns:** Defines the table width. This is critical for proper map alignment.
+    *   **OBD0:** Set to 15 columns.
+    *   **OBD1:** Set to 10 columns.
+*   **Step:** Determines the number of memory locations the program jumps when using the arrow buttons. Setting this to 255 allows for skipping entire tables during a search.
+*   **Precision:** Acts as a multiplier for data display.
+    *   **Precision 1:** Displays raw decimal values (0–255), corresponding to the 8-bit hex values (00–FF).
+    *   **Precision 2:** Displays the 16-bit decimal equivalent of the hex value.
 
-Davis
+> [!TIP]
+> Use the arrow buttons for navigation rather than the scrollbar. Dragging the scrollbar can cause cell misalignment. If cells become misaligned, reset the step to 1 to re-synchronize the data.
 
-**Date:** 11-12-02 22:00
+## Map Recognition Techniques
 
-Sammy, all it is doing is displaying the hex or binary values in decimal. Open a [ROM](/cars/rom/rom) that you have table locations for in the program. Offset is the memory location you're looking for, that the table begins at. Colonnes is how many columns - kinda critical for newbie map recognition. Maps are 15X17 for [OBD](/cars/wiring/obd)0 and 10X20 for [OBD](/cars/wiring/obd)1 - that means Columns X Rows. Set to 15 if [OBD](/cars/wiring/obd)0 and 10 if [OBD](/cars/wiring/obd)1. Step is how many locations the program jumps when you press the up/down arrows on offset (great for searching for a table in a new [ROM](/cars/rom/rom)). Precision is just a multiplier. If you set it to 1 you'll get the real values from 0-255 in decimal instead of 00-FF in hex - since we learn decimal in school it is easier to work with at first. If you sit down with a PM6.bin and the CRX map calculator.xls you'll have zero problems identifying the maps, and the map calculator will have the same decimal as what you see in the Analyser.exe. The P30 kids came up with a similar Excel spreadsheet if you'd rather start there. You see how the values distibute themselves logically across the ignition map? The fuel is doing the same, but the further across the columns you go you have to start using that column's multiplier at the bottom of the map or else it looks like the map starts lean, goes rich, then starts lean + goes rich a couple times across it.
+Identifying maps requires recognizing logical data distribution patterns. 
+
+*   **Visual Patterns:** Ignition maps typically exhibit a logical distribution of values across the grid. Fuel maps follow similar patterns, though they often incorporate column multipliers at the bottom of the table. Without applying these multipliers, fuel maps may appear to oscillate between lean and rich values across the columns.
+*   **Cross-Referencing:** For initial identification, compare the decimal output of the analyzer against known values from established Excel-based map calculators (e.g., PM6 or P30 specific spreadsheets). 
+*   **Workflow:** Open a ROM file with known table locations to calibrate your understanding of the offset and column settings before attempting to identify unknown maps in a new ROM.

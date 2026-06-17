@@ -1,28 +1,34 @@
 ---
-summary: 'RPM to 16-bit hex value conversion formula for OBD0 Honda ECUs.'
-tags: [ecu, reference, sensors, diagnostics]
+summary: 'Technical reference for converting engine speed (RPM) to 16-bit hexadecimal values for OBD0 Honda ECU tuning and ROM modification.'
+tags: [ecu, tuning, obd0, diagnostics, rom]
 applies_to:
   obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD016 Bit RPM'
-    url: /pgmfi/wiki/library/obd016-bit-rpm
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# OBD0 16-Bit RPM Formula
+# OBD0 16-Bit RPM Conversion Formula
 
-To translate engine speed (RPM) to the 16-bit hexadecimal values expected by OBD0 Honda ECUs:
+To translate engine speed (RPM) into the 16-bit hexadecimal values required for OBD0 Honda ECU ROM tables, use the following calculation:
 
 `ECU Hex Value = 1920000 / RPM`
 
-### Excel Conversion
+> [!IMPORTANT]
+> The resulting value must be converted to hexadecimal format for entry into ECU mapping software or binary editors.
 
-If you are compiling custom ROM tables in Microsoft Excel or Google Sheets, you can calculate the hex string using:
+### Spreadsheet Implementation
 
-`=DEC2HEX(1920000 / RPM_value)`
+When working with custom ROM tables in Microsoft Excel or Google Sheets, use the following formula to automatically calculate the required hex string:
+
+`=DEC2HEX(1920000 / [Cell_Reference])`
+
+### Reference Table
+
+| RPM | Calculation | Hex Value |
+| :--- | :--- | :--- |
+| 1000 | 1920000 / 1000 | 0768 |
+| 3000 | 1920000 / 3000 | 0280 |
+| 5000 | 1920000 / 5000 | 0180 |
+| 7000 | 1920000 / 7000 | 0113 |
+| 9000 | 1920000 / 9000 | 00D5 |

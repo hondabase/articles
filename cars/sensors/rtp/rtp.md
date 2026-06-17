@@ -1,20 +1,28 @@
 ---
-summary: 'Real Time Programmability The ability to change the program/tuning of an ECU while the ECU is running the motor.'
-tags: [ecu, reference, sensors]
+summary: 'Real Time Programmability (RTP) allows for live adjustments to ECU tuning parameters while the engine is actively running.'
+tags: [ecu, tuning, rtp, programming]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: RTP
-    url: /pgmfi/wiki/library/rtp
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# RTP
+# Real Time Programmability (RTP)
 
-Real Time Programmability The ability to change the program/tuning of an [ECU](/cars/ecu/ecu) while the [ECU](/cars/ecu/ecu) is running the motor. Currently, only the [Zdyne](http://web.archive.org/web/20180503200132/http://zdyne.com:80/) SECU Gold and the [AEM](http://web.archive.org/web/20230925104126/https://www.aempower.com/) [EMS Standalone](http://web.archive.org/web/20060825170912/http://web.archive.org/web/20230925104126/https://www.aempower.com/:80/product_ems.asp) support this. Achieving real time programmability with a stock [ECU](/cars/ecu/ecu) is a significant goal for the PGMFI project.
+Real Time Programmability (RTP) is the capability to modify ECU calibration data and tuning parameters while the ECU is actively controlling the engine. This allows for immediate feedback and adjustment during the tuning process without the need to power cycle the ECU or perform a traditional flash procedure.
+
+> [!NOTE]
+> RTP is distinct from traditional "flash" tuning, which requires the engine to be stopped and the ECU to be placed into a programming mode to update the memory.
+
+## Supported Systems
+While many modern standalone ECUs support RTP, implementation on factory-based hardware remains a specialized field. Systems currently supporting this functionality include:
+
+*   **Zdyne SECU Gold:** A specialized aftermarket ECU solution designed for Honda applications.
+*   **AEM EMS Standalone:** A fully programmable engine management system that allows for live mapping changes.
+
+## Technical Objectives
+Achieving RTP on stock Honda ECU hardware is a primary objective for advanced engine management development. This requires replacing the stock ROM with a re-writable memory medium (such as battery-backed RAM or Flash memory) and implementing a communication protocol that allows the host computer to write to memory addresses while the CPU is executing code from the same memory space.
+
+> [!IMPORTANT]
+> Implementing RTP on stock hardware requires hardware modifications to the ECU board, typically involving the installation of a daughterboard or memory emulator to intercept and manage memory access.

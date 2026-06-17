@@ -1,20 +1,34 @@
 ---
-summary: 'the Automatic Transmission Lockup Solenoid is a solenoid present in automatic cars transmissions that causes the torque converter to lock under control of the ECU.'
-tags: [ecu, reference, sensors]
+summary: 'An overview of the Automatic Transmission Lockup Solenoid function, ECU pinout, and common repurposing for OBD0 Honda vehicles.'
+tags: [ecu, transmission, sensors, obd0]
 applies_to:
   obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Automatic Transmission Lockup Solenoid'
-    url: /pgmfi/wiki/library/automatic-transmission-lockup-solenoid
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # Automatic Transmission Lockup Solenoid
 
-the Automatic Transmission Lockup Solenoid is a solenoid present in automatic cars transmissions that causes the torque converter to lock under control of the [ECU](/cars/ecu/ecu). It is not needed on manual transmission cars, obviously, so it is frequently hijacked to control other things. It is pin A8 on [OBD0](/cars/rom/obd0) [ECU](/cars/ecu/ecu)s.
+The Automatic Transmission Lockup Solenoid is an electromechanical component located within the automatic transmission assembly. It is responsible for engaging the torque converter lockup mechanism under the direct control of the ECU.
+
+> [!NOTE]
+> This solenoid is exclusive to automatic transmission configurations and is not present in manual transmission vehicles.
+
+## ECU Integration
+In OBD0 Honda ECU systems, the lockup solenoid is controlled via a dedicated output pin.
+
+| ECU Type | Pin Location | Signal |
+| :--- | :--- | :--- |
+| OBD0 | A8 | Lockup Solenoid Control |
+
+## Repurposing
+Because the lockup solenoid is redundant in manual transmission conversions, the A8 output is frequently repurposed by enthusiasts to control auxiliary devices, such as:
+
+*   VTEC solenoid activation (when converting to a VTEC-capable ECU).
+*   Aftermarket shift lights.
+*   Data logging triggers.
+*   Nitrous oxide system activation.
+
+> [!TIP]
+> When repurposing pin A8, ensure the load requirements of the auxiliary device do not exceed the current-sinking capacity of the ECU's internal driver circuit. If the device draws significant current, use the ECU signal to trigger a relay rather than driving the component directly.
