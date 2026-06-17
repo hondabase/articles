@@ -1,5 +1,5 @@
 ---
-summary: "Red LocTite is like a wife... your stuck with her and to get rid of her, it's gonna cost you a bundle."
+summary: 'Technical advice on the use and removal of Red Loctite thread-locking compound in high-stress Honda engine component applications.'
 tags: [tuning, rom, sensors, reference]
 applies_to:
   obd: [0, 1, 2]

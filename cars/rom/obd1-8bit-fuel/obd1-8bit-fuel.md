@@ -1,5 +1,5 @@
 ---
-summary: "Given table value ''v'' and multiplier value ''m'', the fuel value as seen in a ROM editor is: Fuel(''v'',''m'') = ''vm''/4 The result is presumably proportional..."
+summary: 'Technical formula reference for interpreting 8-bit fuel values in ROM editor tables for Honda OBD1 engine management.'
 tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
   obd: [1]

@@ -1,5 +1,5 @@
 ---
-summary: 'Author: Gimpy Accord Date: 081403 03:42 1286 C5 22 19 : SB 22.1 1289 C5 F3 C0 32 : CMPB F3, 32 128D CA 1B : JLT 12AA 128F C5 D9 C0 44 : CMPB D9, 44 1293...'
+summary: 'Technical guide for bypassing the Vehicle Speed Sensor (VSS) check in the VTEC routine for P28 Honda OBD1 ECUs.'
 tags: [tuning, rom, sensors, reference]
 applies_to:
   obd: [0, 1, 2]
@@ -19,7 +19,11 @@ sources:
 
 # Disable VTEC VSS Check P28
 
-Author: Gimpy Accord Date: 08-14-03 03:42
+**Author:** Gimpy
+
+Accord
+
+**Date:** 08-14-03 03:42
 
 - 1286- `C5` 22 19 : SB 22.1
 - 1289- `C5` F3 `C0` 32 : CMPB F3, #32

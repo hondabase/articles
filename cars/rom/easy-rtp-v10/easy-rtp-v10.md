@@ -36,11 +36,17 @@ The **Easy-RTP v1.0** is a classic DIY EPROM emulator board. It is a single-side
 To assemble the Easy-RTP board, you will need the following electronic components:
 
 ### Core components
+
 * **NVSRAM IC**: Dallas/Maxim **DS1230Y** (or compatible 32KB 28-pin 600-mil DIP NVSRAM from TI, ST, Simtek, or ZMD).
+
 * **Logic Gate IC**: **74HC00** (Quad 2-input NAND gate) in a standard DIP package.
+
 * **Capacitors**: Two **0.1 uF** ceramic capacitors.
+
 * **Resistors**: Two **10 kohm** resistors.
+
 * **ECU Interface Headers**: Two **1x14 pin headers** (0.1" pitch, machine pin headers recommended for socket reliability).
+
 * **ROM Socket**: One **28-pin DIP Socket** (to hold the NVSRAM chip).
 
 ### Optional components for 27C256 emulation
@@ -51,7 +57,9 @@ programmer's 28C256 setting often worked, with blank-check disabled on one teste
 programmer.
 
 * **Resistors**: One **10 kohm** and one **100 kohm** resistor.
+
 * **NPN Transistor**: One generic NPN switching transistor (**2N4401** or equivalent).
+
 * **Diode**: One switching diode (**1N4148** or equivalent).
 
 ---
@@ -66,10 +74,10 @@ To assemble the board, orient the PCB with the traces facing up (bottom view) to
 4. **Solder capacitors**: Install the two 0.1 uF capacitors at **`C1`** and **`C2`**.
 5. **Solder core resistors**: Solder the 10 kohm resistors at **`R1`** (left) and **`R2`** (center).
 6. **Configure emulation mode**:
-   * **Without `27C256` emulation**: Solder a solid wire jumper or a 0-ohm resistor across **D1**. Skip to final step.
-   * **With `27C256` emulation**: Solder the **1N4148** diode at **D1**, the NPN transistor at **`Q1`**, the 10 kohm resistor at **`R3`** (top), and the 100 kohm resistor at **`R4`** (bottom).
+ * **Without `27C256` emulation**: Solder a solid wire jumper or a 0-ohm resistor across **D1**. Skip to final step.
+ * **With `27C256` emulation**: Solder the **1N4148** diode at **D1**, the NPN transistor at **`Q1`**, the 10 kohm resistor at **`R3`** (top), and the 100 kohm resistor at **`R4`** (bottom).
 7. **Install the logic IC and NVSRAM**: Solder the **74HC00** IC in place. Insert the
-   **`DS1230Y`** NVSRAM into its socket.
+ **`DS1230Y`** NVSRAM into its socket.
 
 ### Assembly photos
 
@@ -125,8 +133,11 @@ files and the target ECU before reproducing the modification.
 To run the Easy-RTP v1.0 board on an OBD0 ECU, you must modify the chip-select and write control signals because OBD0 boards handle ROM addressing differently.
 
 ### Additional components
+
 * One **74LS86N** (Quad 2-input XOR gate) IC.
+
 * One **10 kohm** resistor.
+
 * Thin insulated jumper wire.
 
 ### Modification steps
@@ -139,18 +150,20 @@ To run the Easy-RTP v1.0 board on an OBD0 ECU, you must modify the chip-select a
 
 1. **Cut Board Traces**: Cut the control traces marked in red on the PCB layout.
 2. **Prepare the XOR gate**: Cut or break off every 74LS86N pin except Pins 4, 5, 6, 7,
-   and 14.
+ and 14.
 3. **Piggyback the XOR gate**: Mount the **74LS86N** IC on the base NAND IC. Solder only
-   Pins 4, 7, and 14 to the corresponding pins below.
+ Pins 4, 7, and 14 to the corresponding pins below.
 4. **Connect signal gates**: Bend Pins 5 and 6 upward and make the connections shown in
-   the missing source images.
+ the missing source images.
 5. **Isolate ECU Pin 16**: Cut the connection to ECU Pin 16 on both sides of the board,
-   then reconnect the interrupted original circuit so only the ECU pin remains isolated.
+ then reconnect the interrupted original circuit so only the ECU pin remains isolated.
 6. **Connect the RTP board**: Connect one RTP wire from its input to isolated ECU Pin 16,
-   and connect the other RTP wire to Pin 21 of the ECU's 24-pin `M5128` SRAM.
+ and connect the other RTP wire to Pin 21 of the ECU's 24-pin `M5128` SRAM.
 
 ---
 
 ## Design files
+
 * [Easy-RTP v1.0 Eagle CAD Files (ZIP)](easyrtpv1-eagle.zip)
+
 * [Easy-RTP v1.0 Board Schematic PDF](rtp_EasyRtpV10-v1.pdf)

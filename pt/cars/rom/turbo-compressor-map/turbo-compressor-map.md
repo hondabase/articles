@@ -1,13 +1,9 @@
 ---
-summary: 'Alguns mapas comuns de compressores de turbo. A leitura de mapas de compressores de turbo é bastante simples e útil para escolher o turbo ideal.'
+summary: 'Guia para ler e interpretar mapas de compressores de turbocompressores para adequar os turbocompressores aos objetivos de performance do motor Honda.'
+tags: [tuning, rom, sensors, reference]
 applies_to:
   obd: [0, 1, 2]
 complexity: intermediate
-tags:
-  - tuning
-  - rom
-  - sensors
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Turbo Compressor Map'

@@ -37,14 +37,18 @@ pressure_mbar = (1764 / 255) * (map_byte / 2)
 Quando o valor de MAP da ROM é desbloqueado ("uncorked"), a divisão final por dois é removida:
 
 ```text
-pressure_mbar = (1764 / 255) * map_byte
+pressure_mbar = (1764 / 255) 
+
+* map_byte
 ```
 
 As mesmas notas documentam as seguintes fórmulas de tensão (voltagem):
 
 ```text
 map stock: volts = (5 / 255) * ((raw / 2) + fuel_cut)
-map boost: volts = (5 / 255) * (raw + fuel_cut)
+map boost: volts = (5 / 255) 
+
+* (raw + fuel_cut)
 ```
 
 O valor de corte de combustível (fuel-cut) original listado é `24`, editável no endereço `0x4DCC` no código de referência.
@@ -55,7 +59,9 @@ A página arquivada inclui estas duas conversões lineares:
 
 ```text
 inHg = 20 * volts / 1.85 - 30.81
-mbar = 365.9 * volts - 29.9
+mbar = 365.9 
+
+* volts - 29.9
 ```
 
 Estas fórmulas são derivadas na página a partir dos seguintes pontos:

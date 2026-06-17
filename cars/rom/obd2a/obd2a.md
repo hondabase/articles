@@ -17,4 +17,6 @@ sources:
 
 # OBD2A
 
-[OBD](/cars/wiring/obd)2A refers to the [OBD2](/cars/wiring/obd2) [ECU](/cars/ecu/ecu)s made from 96-98 | *Library.OBD2A moved from Library.OBD2AECU on 31 Mar 2004 - 18:21 by Home.blundar* - [put it back](https://web.archive.org/web/http://www.pgmfi.org/twiki/bin/rename/Library/OBD2A?newweb=Library&newtopic=OBD2AECU&confirm=on "Click to move topic back to previous location, with option to change references.") | | :--- |
+[OBD](/cars/wiring/obd)2A refers to the [OBD2](/cars/wiring/obd2) [ECU](/cars/ecu/ecu)s made from 96-98 | *Library. OBD2A moved from Library. OBD2AECU on 31 Mar 2004 - 18:21 by Home.blundar
+
+* - [put it back](https://web.archive.org/web/http://www.pgmfi.org/twiki/bin/rename/Library/OBD2A?newweb=Library&newtopic=OBD2AECU&confirm=on "Click to move topic back to previous location, with option to change references.") | | :--- |

@@ -1,5 +1,5 @@
 ---
-summary: 'Launch control refers to a "twostep" revlimiter. The way this works operationally is fairly simple there is a lower Rev Limiter while the car is stationary,...'
+summary: 'Technical explanation of launch control "two-step" rev limiter features in Honda ECUs, aiding in consistent vehicle standing starts.'
 tags: [hardware, education, tuning, rom, sensors, reference]
 applies_to:
   obd: [0, 1, 2]

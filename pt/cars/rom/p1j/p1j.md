@@ -1,15 +1,10 @@
 ---
-summary: 'As P1J e P1K provêm de Civics do Reino Unido de 96-00 com motores D14. Apesar dos anos, estas são ECUs OBD1 e parecem ser facilmente convertíveis para VTEC. Desculpem pela...'
+summary: 'Visão geral da ECU Honda Civic D14 do Reino Unido de 96-00, abrangendo a sua compatibilidade e potencial de conversão para VTEC.'
+tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
   obd: [0, 1, 2]
   brand: Honda
 complexity: intermediate
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
 sources:
   - name: 'pgmfi.org wiki'
     title: P1J

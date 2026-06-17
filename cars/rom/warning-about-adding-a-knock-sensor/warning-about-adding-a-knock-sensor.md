@@ -1,5 +1,5 @@
 ---
-summary: "The knock sensor frequency, and thus, its operation, is affected by the bore of the cylinder. From what I can tell, each ECU's knock board is also dialed..."
+summary: 'Technical warning regarding knock sensor installation on non-equipped engines, citing cylinder bore and knock board calibration complexities.'
 tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
   obd: [0, 1, 2]

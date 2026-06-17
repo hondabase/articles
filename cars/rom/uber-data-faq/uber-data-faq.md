@@ -92,7 +92,7 @@ and ignition maps. It gives these UberData calculator examples:
 
 - Set **Boost Average Efficiency** to `120%`, then apply it to generate fuel values.
 - Set **Boost Ignition Retard** to `1.0` degree per psi, then apply it to generate
-  ignition values.
+ ignition values.
 
 The FAQ describes Boost Average Efficiency as an estimate of the density change caused
 by compressing and heating the intake air. It describes Boost Ignition Retard as the
@@ -140,7 +140,9 @@ The FAQ describes TPS enrichment as extra fuel added when the throttle opens qui
 uses this rough scaling example for injectors larger than the stock 240 cc/min size:
 
 ```text
-starting_percent = (240 / new_injector_size) * 100
+starting_percent = (240 / new_injector_size) 
+
+* 100
 ```
 
 The source suggests adding 5% to 10% to the result and gives approximately 65% for

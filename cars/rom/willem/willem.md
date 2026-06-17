@@ -37,7 +37,9 @@ The SST **27SF512** is a 512kbit (64 Kilobyte) flash memory chip that is commonl
 2. **Configure DIP Switches**: Set the board's DIP switches according to the software's visual representation for the `SST27SF512` device.
 3. **Insert the Chip**: Insert the SST 27SF512 into the ZIF socket. Align the chip so that Pins 14 and 15 are at the bottom slots (closest to the ZIF handle) with the notch facing upward (away from the lever).
 4. **Erase the Chip**: In the software, click the **Erase** icon (depicted as a chip with an eraser). 
-   * *If the erase operation fails*, verify that the board's mode jumper is set to the **Erase** position as shown in the hardware settings screenshot.
+ 
+
+* *If the erase operation fails*, verify that the board's mode jumper is set to the **Erase** position as shown in the hardware settings screenshot.
 5. **Set Jumper for Programming**: Swap the board mode jumper from the Erase configuration to the **Program/Normal** configuration.
 6. **Apply the 32KB Offset**: In the bottom right corner of the Willem software window, locate the **Offset (Hex)** input field. Change the default value of `0` to `8000` (which corresponds to `32,768` bytes in decimal). This shifts the data to the upper `32KB` of the chip.
 7. **Load and Burn**: Load your compiled `.bin` file. Click the **Program** icon (complete chip illustration). When the popup appears asking if you want to use the specified hex offset, select **Yes**.

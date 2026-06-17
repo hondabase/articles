@@ -1,5 +1,5 @@
 ---
-summary: 'For more information, see the OBD0Edit forum.'
+summary: 'Information on the community OBD0Edit forum, a resource for technical discussions and development regarding OBD0 Honda ECUs.'
 tags: [ecu, reference, tuning, rom]
 applies_to:
   obd: [0]

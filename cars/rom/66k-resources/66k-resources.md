@@ -1,5 +1,5 @@
 ---
-summary: 'Documentation 66k Assembler Docs factory documentation on the Oki 66xxx processors used in most OBD1 and OBD2 implemenations 66k Operations a list of the...'
+summary: 'Comprehensive resource list for the Oki 66K processor family used in Honda OBD1 and OBD2 ECUs, including assemblers and manuals.'
 tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
   obd: [1, 2]
@@ -17,12 +17,12 @@ sources:
 
 # 66k Resources
 
-###  Documentation 
+### Documentation 
 
 - [66k Assembler Docs](/cars/diagnostics/66k-assembler-docs) - factory documentation on the Oki 66xxx processors used in most [OBD1](/cars/wiring/obd1) and [OBD2](/cars/wiring/obd2) implemenations
 - 66k Operations - a list of the common 66xxx assembler operations and how they are used in most PGM-FI implementations
 
-###  Utilities 
+### Utilities 
 
 - [ASM662](/cars/diagnostics/asm662) - open-source assembler/disassembler for the Oki Nx8/200 66k processors by Andy Sloane
 - [66507 DASM](/pgmfi/forum/topic.php?id=1765) - disassembler for [OBD2](/cars/wiring/obd2) Oki `66507` processor by Pelegri Didier

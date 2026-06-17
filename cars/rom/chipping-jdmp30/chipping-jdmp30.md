@@ -44,18 +44,24 @@ To chip a JDM P30 ECU, source the following components:
 
 ## 2. Step-by-Step Chipping Procedure
 
-1.  **Install the SMD Latch:** 
-    Locate the footprint for the 74HC373 latch on the board. Apply flux to the SMT pads, align the chip pins (ensuring the pin 1 notch matches the board layout), and solder the SOP-20 chip in place. Check for solder bridges between pins.
-2.  **Solder the ROM Socket:** 
-    Clean the factory solder out of the DIP-28 through-holes on the board. Insert the 28-pin socket from the top side and solder all 28 pins from the underside.
-3.  **Add Filtering Capacitors:** 
-    *   Solder **`C49`** and **`C50`** to their pads on the underside of the board.
-    *   Solder **`C92`** to its pads on the underside.
-    *   Solder **`C91`** to its pads on the top side of the board near the latch.
-4.  **Bridge Jumper J1:** 
-    Bridge the pads at jumper **`J1`** on the underside of the board with a blob of solder or a small wire. This tells the internal microcontroller to bypass its internal ROM and read from the newly installed EPROM.
-5.  **Insert the EPROM:** 
-    Insert a programmed SST 27SF256 EPROM into the DIP-28 socket. Make sure the notch on the chip matches the notch on the socket.
+1. **Install the SMD Latch:** 
+ Locate the footprint for the 74HC373 latch on the board. Apply flux to the SMT pads, align the chip pins (ensuring the pin 1 notch matches the board layout), and solder the SOP-20 chip in place. Check for solder bridges between pins.
+2. **Solder the ROM Socket:** 
+ Clean the factory solder out of the DIP-28 through-holes on the board. Insert the 28-pin socket from the top side and solder all 28 pins from the underside.
+3. **Add Filtering Capacitors:** 
+ 
+
+* Solder **`C49`** and **`C50`** to their pads on the underside of the board.
+ 
+
+* Solder **`C92`** to its pads on the underside.
+ 
+
+* Solder **`C91`** to its pads on the top side of the board near the latch.
+4. **Bridge Jumper J1:** 
+ Bridge the pads at jumper **`J1`** on the underside of the board with a blob of solder or a small wire. This tells the internal microcontroller to bypass its internal ROM and read from the newly installed EPROM.
+5. **Insert the EPROM:** 
+ Insert a programmed SST 27SF256 EPROM into the DIP-28 socket. Make sure the notch on the chip matches the notch on the socket.
 
 ---
 
@@ -63,8 +69,9 @@ To chip a JDM P30 ECU, source the following components:
 
 If you plan to use a real-time emulator (like Moates Ostrich) or datalog via the serial port using Crome:
 
-*   **Remove `J4`:** Locate and desolder the 0-ohm jumper resistor at position **`J4`** on the top side of the board. Removing `J4` disconnects the factory debug routines and enables full-duplex serial data transmission.
-*   **Install `CN2` Pins:** Solder a 4-pin male pin header (0.1" spacing) into the **`CN2`** port location to connect your USB-to-TTL datalogging cable.
+* **Remove `J4`:** Locate and desolder the 0-ohm jumper resistor at position **`J4`** on the top side of the board. Removing `J4` disconnects the factory debug routines and enables full-duplex serial data transmission.
+
+* **Install `CN2` Pins:** Solder a 4-pin male pin header (0.1" spacing) into the **`CN2`** port location to connect your USB-to-TTL datalogging cable.
 
 ---
 
@@ -72,6 +79,6 @@ If you plan to use a real-time emulator (like Moates Ostrich) or datalog via the
 
 To convert an automatic JDM P30 ECU to a manual configuration and prevent automatic lockup solenoid CELs:
 
-1.  Locate the resistor array in the bottom right section on the underside of the board.
-2.  Desolder and remove resistor **`RP18`** (marked "472" / 4.7k ohms) and replace it with a solid jumper wire (0 ohms).
-3.  Desolder and remove resistor **`RP17`** entirely, leaving the pads open.
+1. Locate the resistor array in the bottom right section on the underside of the board.
+2. Desolder and remove resistor **`RP18`** (marked "472" / 4.7k ohms) and replace it with a solid jumper wire (0 ohms).
+3. Desolder and remove resistor **`RP17`** entirely, leaving the pads open.

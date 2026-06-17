@@ -1,13 +1,9 @@
 ---
-summary: 'A ROM interna é a memória armazenada dentro do MCU'
+summary: 'Explicação do armazenamento de memória ROM Interna nos microcontroladores (MCUs) das ECUs Honda e o seu papel na gestão do motor.'
+tags: [tuning, rom, sensores, referência]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - sensores
-  - referência
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Internal ROM'

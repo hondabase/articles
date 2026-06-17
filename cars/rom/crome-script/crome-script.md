@@ -160,7 +160,7 @@ Use `gup()` before and after a group of changes so Crome can undo them as one ac
 ```javascript
 rom.gup();
 for (var i = 0; i <= 0x7FFF; i++) {
-    rom.byteAt(i) = LoByte(i);
+ rom.byteAt(i) = LoByte(i);
 }
 rom.gup();
 refresh();

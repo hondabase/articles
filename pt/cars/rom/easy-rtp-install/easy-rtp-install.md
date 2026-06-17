@@ -36,24 +36,24 @@ Use fio de secção fina (small-gauge) porque os pontos de soldadura são pequen
 
 1. Localize e corte a pista de `WE` do MCU mostrada na imagem marcada arquivada.
 
-   ![Localização do corte da pista de write-enable da ECU OBD1](doc_RTP_OBD1_Cut_here.jpg)
-   *Imagem arquivada marcando o corte da pista de write-enable.*
+ ![Localização do corte da pista de write-enable da ECU OBD1](doc_RTP_OBD1_Cut_here.jpg)
+ *Imagem arquivada marcando o corte da pista de write-enable.*
 
 2. Ligue o fio `A15` da placa RTP ao Pino 16 do MCU. A fonte refere que esta linha de endereço do MCU não é usada para outros fins e serve para endereçar a imagem da ROM gravável.
 3. Ligue o lado do MCU da pista de `WE` cortada, Pino 25 do MCU, ao `WE in` na placa RTP. A fonte recomenda estanhar tanto o pino do IC como o fio antes de soldar.
 
-   ![Ligações do Easy-RTP A15 e do write-enable do lado do MCU](rtp2.jpg)
-   *Foto arquivada das ligações de A15 e de WE do lado do MCU.*
+ ![Ligações do Easy-RTP A15 e do write-enable do lado do MCU](rtp2.jpg)
+ *Foto arquivada das ligações de A15 e de WE do lado do MCU.*
 
 4. Ligue o outro lado do circuito de write-enable cortado ao Pino 38 do M82C55A. A fonte refere que isto permite à placa RTP ativar as escritas na NVSRAM apenas quando A15 está em nível lógico alto (high).
 
-   ![Ligação do Easy-RTP no Pino 38 do M82C55A](rtp3.jpg)
-   *Foto arquivada da ligação ao lado oposto do circuito cortado.*
+ ![Ligação do Easy-RTP no Pino 38 do M82C55A](rtp3.jpg)
+ *Foto arquivada da ligação ao lado oposto do circuito cortado.*
 
 5. Inspecione todas as ligações e confirme que a pista cortada está isolada antes de testar.
 
-   ![Instalação concluída do Easy-RTP](rtp4.jpg)
-   *Foto arquivada da instalação concluída.*
+ ![Instalação concluída do Easy-RTP](rtp4.jpg)
+ *Foto arquivada da instalação concluída.*
 
 ## Nota sobre os pinos JDM de montagem em superfície
 

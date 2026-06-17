@@ -134,7 +134,9 @@ A fonte descreve o enriquecimento no arranque a frio (cold-crank enrichment) com
 A fonte sugere selecionar todo o mapa de combustível e aplicar este multiplicador aproximado:
 
 ```text
-multiplier_percent = (240 / new_injector_size) * 100
+multiplier_percent = (240 / new_injector_size) 
+
+* 100
 ```
 
 Sugere depois adicionar 5% a 10% porque os injetores maiores não se comportam proporcionalmente em tempos de abertura muito curtos (low pulse widths). Considere isto apenas como um método inicial histórico e valide o resultado com dados medidos (sensores).

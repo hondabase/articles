@@ -1,5 +1,5 @@
 ---
-summary: 'Dual tables simply refers to there being two sets of fuel/timing information in a single ROM. VTEC is an example of this there is one set of tuning information...'
+summary: 'Explanation of dual-table ROM structures in Honda ECUs, enabling advanced tuning features like VTEC-dependent fuel and ignition maps.'
 tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
   obd: [0, 1, 2]

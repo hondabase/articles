@@ -1,15 +1,11 @@
 ---
-summary: 'Autor: Gimpy Accord Data: 081403 03:42 1286 C5 22 19 : SB 22.1 1289 C5 F3 C0 32 : CMPB F3, 32 128D CA 1B : JLT 12AA 128F C5 D9 C0 44 : CMPB D9, 44 1293...'
+summary: 'Guia técnico para contornar a verificação do Sensor de Velocidade do Veículo (VSS) na rotina de VTEC para ECUs Honda P28 OBD1.'
+tags: [tuning, rom, sensors, reference]
 applies_to:
   obd: [0, 1, 2]
   ecus: [P28]
   brand: Honda
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - sensors
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Disable Vtec VSS Check P28'
@@ -21,7 +17,11 @@ sources:
 
 # Disable VTEC VSS Check P28
 
-Autor: Gimpy Accord Data: 08-14-03 03:42
+**Autor:** Gimpy
+
+Accord
+
+**Data:** 08-14-03 03:42
 
 - 1286- `C5` 22 19 : SB 22.1
 - 1289- `C5` F3 `C0` 32 : CMPB F3, #32

@@ -1,13 +1,9 @@
 ---
-summary: 'consulte ROMs Duplas'
+summary: 'Introdução a configurações de ROM com mapas duplos em ECUs Honda, permitindo perfis de afinação de motor comutáveis.'
+tags: [tuning, rom, sensores, referência]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - sensores
-  - referência
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Mapas Duplos'

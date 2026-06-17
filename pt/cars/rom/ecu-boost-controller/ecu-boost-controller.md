@@ -1,14 +1,9 @@
 ---
-summary: 'A funcionalidade de Controlador de Pressão de Turbo (Boost Controller) é uma funcionalidade EM DESENVOLVIMENTO na qual a ECU controla a pressão de turbo através do envio de um sinal PWM para um solenoide de purga na linha de pressão da wastegate...'
+summary: 'Visão geral das funcionalidades de controlo de pressão de turbo em desenvolvimento para ECUs Honda, utilizando sinais PWM para regulação da pressão do solenoide da wastegate.'
+tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Controlador de Pressão de Turbo da ECU'

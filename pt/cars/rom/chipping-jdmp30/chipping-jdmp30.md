@@ -45,18 +45,24 @@ Para fazer o chipping de uma ECU P30 JDM, adquira os seguintes componentes:
 
 ## 2. Procedimento de Chipping Passo a Passo
 
-1.  **Instalar o Latch SMD:** 
-    Localize a pegada para o latch 74HC373 na placa. Aplique fluxo de solda nos pads SMT, alinhe os pinos do chip (garantindo que o entalhe do pino 1 coincide com o layout da placa) e solde o chip SOP-20 no lugar. Verifique se existem pontes de solda entre os pinos.
-2.  **Soldar o Suporte de ROM:** 
-    Limpe a solda de fábrica dos furos passantes do DIP-28 na placa. Insira o suporte de 28 pinos a partir do lado superior e solde os 28 pinos a partir do lado inferior.
-3.  **Adicionar Condensadores de Filtragem:** 
-    *   Solde **`C49`** e **`C50`** nos respetivos pads na parte inferior da placa.
-    *   Solde **`C92`** nos respetivos pads na parte inferior.
-    *   Solde **`C91`** nos respetivos pads no lado superior da placa, perto do latch.
-4.  **Fazer Ponte no Jumper J1:** 
-    Faça uma ponte nos pads do jumper **`J1`** na parte inferior da placa com uma gota de solda ou um pequeno fio. Isto indica ao microcontrolador interno para ignorar a sua ROM interna e ler a partir da EPROM recém-instalada.
-5.  **Inserir a EPROM:** 
-    Insira uma EPROM SST 27SF256 programada no suporte DIP-28. Certifique-se de que o entalhe no chip coincide com o entalhe no suporte.
+1. **Instalar o Latch SMD:** 
+ Localize a pegada para o latch 74HC373 na placa. Aplique fluxo de solda nos pads SMT, alinhe os pinos do chip (garantindo que o entalhe do pino 1 coincide com o layout da placa) e solde o chip SOP-20 no lugar. Verifique se existem pontes de solda entre os pinos.
+2. **Soldar o Suporte de ROM:** 
+ Limpe a solda de fábrica dos furos passantes do DIP-28 na placa. Insira o suporte de 28 pinos a partir do lado superior e solde os 28 pinos a partir do lado inferior.
+3. **Adicionar Condensadores de Filtragem:** 
+ 
+
+* Solde **`C49`** e **`C50`** nos respetivos pads na parte inferior da placa.
+ 
+
+* Solde **`C92`** nos respetivos pads na parte inferior.
+ 
+
+* Solde **`C91`** nos respetivos pads no lado superior da placa, perto do latch.
+4. **Fazer Ponte no Jumper J1:** 
+ Faça uma ponte nos pads do jumper **`J1`** na parte inferior da placa com uma gota de solda ou um pequeno fio. Isto indica ao microcontrolador interno para ignorar a sua ROM interna e ler a partir da EPROM recém-instalada.
+5. **Inserir a EPROM:** 
+ Insira uma EPROM SST 27SF256 programada no suporte DIP-28. Certifique-se de que o entalhe no chip coincide com o entalhe no suporte.
 
 ---
 
@@ -64,8 +70,9 @@ Para fazer o chipping de uma ECU P30 JDM, adquira os seguintes componentes:
 
 Se planeia utilizar um emulador em tempo real (como o Moates Ostrich) ou fazer datalog através da porta de série usando o Crome:
 
-*   **Remover `J4`:** Localize e dessolde a resistência de jumper de 0 ohms na posição **`J4`** no lado superior da placa. A remoção do `J4` desliga as rotinas de depuração de fábrica e ativa a transmissão de dados em série em modo full-duplex.
-*   **Instalar Pinos `CN2`:** Solde um conetor de pinos macho de 4 pinos (espaçamento de 0.1") no local da porta **`CN2`** para ligar o seu cabo de datalogging USB para TTL.
+* **Remover `J4`:** Localize e dessolde a resistência de jumper de 0 ohms na posição **`J4`** no lado superior da placa. A remoção do `J4` desliga as rotinas de depuração de fábrica e ativa a transmissão de dados em série em modo full-duplex.
+
+* **Instalar Pinos `CN2`:** Solde um conetor de pinos macho de 4 pinos (espaçamento de 0.1") no local da porta **`CN2`** para ligar o seu cabo de datalogging USB para TTL.
 
 ---
 
@@ -73,6 +80,6 @@ Se planeia utilizar um emulador em tempo real (como o Moates Ostrich) ou fazer d
 
 Para converter uma ECU P30 JDM automática para uma configuração manual e evitar as luzes de aviso de motor (CEL) do solenoide de bloqueio automático:
 
-1.  Localize a matriz de resistências na secção inferior direita na parte inferior da placa.
-2.  Dessolde e remova a resistência **`RP18`** (marcada com "472" / 4.7k ohms) e substitua-a por um fio de ponte sólido (0 ohms).
-3.  Dessolde e remova a resistência **`RP17`** por completo, deixando os pads abertos.
+1. Localize a matriz de resistências na secção inferior direita na parte inferior da placa.
+2. Dessolde e remova a resistência **`RP18`** (marcada com "472" / 4.7k ohms) e substitua-a por um fio de ponte sólido (0 ohms).
+3. Dessolde e remova a resistência **`RP17`** por completo, deixando os pads abertos.

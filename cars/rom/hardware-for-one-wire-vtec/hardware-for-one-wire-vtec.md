@@ -49,16 +49,16 @@ Many of these parts are difficult to find in standard electronic component catal
 
 ## 2. Step-by-Step Installation
 
-1.  **Prep the Board:** 
-    Open the ECU casing and locate the unpopulated footprints on the right side of the PCB matching the component IDs listed above. Use solder wick to clear the factory solder from the through-holes.
-2.  **Solder Passives & Diodes:** 
-    Install the resistors (`R62`, `R64`, `R66`, `R69`, `R70`), capacitor `C77`, and diodes `D17` and `D26`. Pay attention to the polarity bands on the diodes.
-3.  **Install Transistors & Driver IC:** 
-    Solder transistors `Q42`, `Q16`, `Q28`, and the `IC17` driver IC. Ensure their orientations match the silk-screened outlines on the PCB.
-4.  **Install Jumper BR10:** 
-    Solder a solid copper jumper wire across the pads at **`BR10`**.
-    
-    > **Note:** Depending on your specific board revision, you may also need to install a jumper at **`BR3`**. Compare your board layout to a factory PS9 or automatic PM6 board to verify if the trace path requires it.
+1. **Prep the Board:** 
+ Open the ECU casing and locate the unpopulated footprints on the right side of the PCB matching the component IDs listed above. Use solder wick to clear the factory solder from the through-holes.
+2. **Solder Passives & Diodes:** 
+ Install the resistors (`R62`, `R64`, `R66`, `R69`, `R70`), capacitor `C77`, and diodes `D17` and `D26`. Pay attention to the polarity bands on the diodes.
+3. **Install Transistors & Driver IC:** 
+ Solder transistors `Q42`, `Q16`, `Q28`, and the `IC17` driver IC. Ensure their orientations match the silk-screened outlines on the PCB.
+4. **Install Jumper BR10:** 
+ Solder a solid copper jumper wire across the pads at **`BR10`**.
+ 
+ > **Note:** Depending on your specific board revision, you may also need to install a jumper at **`BR3`**. Compare your board layout to a factory PS9 or automatic PM6 board to verify if the trace path requires it.
 
 ---
 
@@ -66,5 +66,6 @@ Many of these parts are difficult to find in standard electronic component catal
 
 Once the hardware is installed, the new output channel is routed directly to the ECU connector pinout. Under standard PM6 wiring layouts:
 
-*   The output activates pin **`A8`** (which is normally the automatic transmission lockup solenoid output on automatic harnesses). 
-*   To wire VTEC, run a single wire from your VTEC solenoid in the engine bay through the firewall and pin it directly into position **`A8`** on the ECU harness plug.
+* The output activates pin **`A8`** (which is normally the automatic transmission lockup solenoid output on automatic harnesses). 
+
+* To wire VTEC, run a single wire from your VTEC solenoid in the engine bay through the firewall and pin it directly into position **`A8`** on the ECU harness plug.

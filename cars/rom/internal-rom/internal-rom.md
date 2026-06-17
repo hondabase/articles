@@ -1,5 +1,5 @@
 ---
-summary: 'Internal ROM is memory stored inside the MCU'
+summary: 'Explanation of Internal ROM memory storage within Honda ECU microcontrollers (MCUs) and its role in engine management.'
 tags: [tuning, rom, sensors, reference]
 applies_to:
   obd: [0, 1, 2]

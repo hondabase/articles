@@ -1,13 +1,9 @@
 ---
-summary: 'O LocTite Vermelho é como uma esposa... ficas preso a ela e, para te livrares dela, vai custar-te uma fortuna.'
+summary: 'Conselhos técnicos sobre a utilização e remoção do composto de travamento de roscas Loctite Vermelho em aplicações de componentes de motor Honda de elevado esforço.'
+tags: [tuning, rom, sensors, reference]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - sensors
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Red Loctite'

@@ -37,15 +37,19 @@ Because stock OBD0 ECUs were never designed to handle boost or real-time communi
 TurboEdit transforms a standard OBD0 ECU into a fully programmable engine management system:
 
 ### MAP Sensor Scaling
+
 Stock Honda MAP sensors only read up to atmospheric pressure (1-bar). TurboEdit allows you to scale the map pressure columns (MAP scalers) to support aftermarket 2-bar or 3-bar MAP sensors (such as GM or Motorola sensors), enabling the ECU to calculate fuel and timing under boost.
 
 ### Boost Retard Calibration
+
 Under forced induction, ignition timing must be retarded to prevent knock. TurboEdit allows tuners to define a timing retard slope (e.g., pulling 0.75° of timing per psi of boost) as pressure climbs into positive load columns. Refer to the [ignition timing guide](/cars/ignition/tuning-timing) for safe retard guidelines.
 
 ### Fuel Multiplier Adjustment (Injector Scaling)
+
 The OBD0 ECU calculates fuel delivery using an 8-bit map value and a column-specific multiplier. When upgrading to larger fuel injectors (such as standard DSM 450cc injectors), the factory multipliers will dump too much fuel. TurboEdit allows you to adjust these fuel multipliers to scale the entire fuel map down, matching the flow rate of larger injectors.
 
 ### Real-Time Programming (RTP)
+
 With hardware emulators (such as the Moates Ostrich or Xtronics Pocket ROMulator) plugged into the ECU's 28-pin ROM socket, TurboEdit allows you to modify fueling, timing, and rev limits on the fly while the engine is running.
 
 ---
@@ -58,6 +62,7 @@ When tuning with TurboEdit, be aware of these common OBD0 hardware limitations:
 - **Datalogging Signal Noise:** OBD0 ECUs do not have a dedicated buffer chip on the serial lines like OBD1 ECUs. Datalogging signals are highly sensitive to electrical noise from spark plug wires. Always route your serial cables away from the distributor and spark plugs.
 
 ## Related Articles
+
 - [Honda OBD Generations Overview](/cars/wiring/obd)
 - [How to Interpret Fuel and Ignition Maps](/cars/fueling/understanding-maps)
 - [Baseline Targets for Fuel and Ignition Timing](/cars/fueling/ecu-tuning)

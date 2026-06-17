@@ -37,7 +37,9 @@ Below are the key 8-bit registers located in the primary internal RAM space:
 | **`0x34`** | BARO | Barometric Pressure (PA sensor on board). |
 | **`0x36`** | MAP | Manifold Absolute Pressure sensor reading. |
 | **`0x37`** | MAP Complement | Bitwise complement of `0x36h`. |
-| **`0x38`** | MAP* | Locked/stored MAP value (updated when bit `0x79.4` is set). |
+| **`0x38`** | MAP
+
+* | Locked/stored MAP value (updated when bit `0x79.4` is set). |
 | **`0x39`** | TPS | Throttle Position Sensor reading. |
 | **`0x3A`** | TPS (Backup) | Secondary or filtered TPS reading. |
 | **`0x3B`** | RPM (8-bit) | Simplified 8-bit engine speed calculation. |

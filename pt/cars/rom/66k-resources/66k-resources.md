@@ -1,14 +1,9 @@
 ---
-summary: 'Documentação sobre 66k Assembler Docs, documentação de fábrica sobre os processadores Oki 66xxx usados na maioria das implementações OBD1 e OBD2.'
+summary: 'Lista abrangente de recursos para a família de processadores Oki 66K utilizados nas ECUs Honda OBD1 e OBD2, incluindo assemblers e manuais.'
+tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
   obd: [1, 2]
 complexity: advanced
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
 sources:
   - name: 'pgmfi.org wiki'
     title: '66k Resources'

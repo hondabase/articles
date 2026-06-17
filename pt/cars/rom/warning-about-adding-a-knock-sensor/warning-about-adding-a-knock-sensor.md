@@ -1,14 +1,9 @@
 ---
-summary: 'A frequência do sensor de detonação e, consequentemente, o seu funcionamento, são afetados pelo diâmetro do cilindro. Pelo que percebo, a placa de detonação de cada ECU também está sintonizada...'
+summary: 'Aviso técnico relativo à instalação de sensores de detonação em motores não equipados, citando as complexidades do diâmetro do cilindro e da calibração da placa de detonação.'
+tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Aviso Sobre a Adição de um Sensor de Detonação'

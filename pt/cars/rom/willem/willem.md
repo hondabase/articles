@@ -38,7 +38,9 @@ O SST **27SF512** é um chip de memória flash de 512 kbit (64 Kilobytes) que é
 2. **Configurar os DIP Switches**: Defina os DIP switches da placa de acordo com a representação visual do software para o dispositivo `SST27SF512`.
 3. **Inserir o Chip**: Insira o SST 27SF512 no socket ZIF. Alinhe o chip de modo a que os Pinos 14 e 15 fiquem nas ranhuras inferiores (mais próximas do manípulo do ZIF) com o entalhe (notch) voltado para cima (afastado da alavanca).
 4. **Apagar o Chip**: No software, clique no ícone **Erase** (representado por um chip com uma borracha). 
-   * *Se a operação de apagamento falhar*, verifique se o jumper de modo da placa está na posição **Erase**, conforme mostrado na captura de ecrã das configurações de hardware.
+ 
+
+* *Se a operação de apagamento falhar*, verifique se o jumper de modo da placa está na posição **Erase**, conforme mostrado na captura de ecrã das configurações de hardware.
 5. **Configurar o Jumper para Programação**: Altere o jumper de modo da placa da configuração de Erase para a configuração **Program/Normal**.
 6. **Aplicar o Offset de 32KB**: No canto inferior direito da janela do software Willem, localize o campo de introdução **Offset (Hex)**. Altere o valor padrão de `0` para `8000` (que corresponde a `32.768` bytes em decimal). Isto desloca os dados para os `32KB` superiores do chip.
 7. **Carregar e Gravar**: Carregue o seu ficheiro `.bin` compilado. Clique no ícone **Program** (ilustração de um chip completo). Quando aparecer a janela pop-up a perguntar se deseja utilizar o offset hexadecimal especificado, selecione **Yes** (Sim).

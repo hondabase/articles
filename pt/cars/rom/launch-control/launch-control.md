@@ -1,15 +1,9 @@
 ---
-summary: 'O controlo de arranque (launch control) refere-se a um limitador de rotação de duas etapas ("two-step"). O funcionamento operacional disto é bastante simples: existe um limitador de rotação mais baixo enquanto o carro está parado,...'
+summary: 'Explicação técnica das funcionalidades de limitador de rotação "two-step" (controlo de arranque) em ECUs Honda, auxiliando em arranques consistentes do veículo parado.'
+tags: [hardware, education, tuning, rom, sensors, reference]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - hardware
-  - education
-  - tuning
-  - rom
-  - sensors
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Launch Control'

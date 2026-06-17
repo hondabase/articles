@@ -1,5 +1,5 @@
 ---
-summary: 'Blue LocTite is like a girlfriend... your stuck with her, but you can get rid of her if you want to. Unlike Red Loctite.'
+summary: 'Guide to the appropriate use of Loctite thread-locking compounds for securing engine and hardware components in Honda projects.'
 tags: [tuning, rom, sensors, reference]
 applies_to:
   obd: [0, 1, 2]

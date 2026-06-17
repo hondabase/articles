@@ -1,14 +1,9 @@
 ---
-summary: 'Tabelas Duplas refere-se simplesmente à existência de dois conjuntos de informação de combustível/ignição numa única ROM. O VTEC é um exemplo disso - existe um conjunto de informação de afinação...'
+summary: 'Explicação das estruturas de ROM com tabelas duplas em ECUs Honda, permitindo funcionalidades de afinação avançadas como mapas de combustível e ignição dependentes do VTEC.'
+tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Dual Tables'

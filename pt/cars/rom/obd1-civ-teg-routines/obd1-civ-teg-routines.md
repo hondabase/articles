@@ -23,7 +23,7 @@ sources:
 
 Algumas rotinas já foram comentadas para o seu prazer de visualização.
 
-##  P30 (203) 
+## P30 (203) 
 
 - O [Doc ECUSchool](/cars/ecu/doc-ecu-school) explica um pouco de como o [IO](/cars/sensors/io) é executado, analisando a [ROM](/cars/rom/rom) do P30 203 [JDM](/cars/sensors/jdm). (Isto também se aplica a outras [ECUs](/cars/ecu/ecu) de [OBD1 Civic Integra](/cars/sensors/obd1-civic-integra).)
 - [203_AC](/cars/diagnostics/203-ac) - rotina de AC do P30 [JDM](/cars/sensors/jdm) 203

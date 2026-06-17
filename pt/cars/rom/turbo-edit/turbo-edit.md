@@ -38,15 +38,19 @@ Como as ECUs OBD0 de origem nunca foram concebidas para lidar com sobrealimenta�
 O TurboEdit transforma uma ECU OBD0 padrão num sistema de gestão de motor totalmente programável:
 
 ### Escala do Sensor MAP
+
 Os sensores MAP originais da Honda apenas leem até à pressão atmosférica (1-bar). O TurboEdit permite-lhe calibrar as colunas de pressão do mapa (escaladores de MAP) para suportar sensores MAP pós-venda de 2-bar ou 3-bar (como os sensores GM ou Motorola), permitindo que a ECU calcule o combustível e a ignição sob pressão (boost).
 
 ### Calibração de Atraso de Ignição sob Pressão (Boost Retard)
+
 Sob indução forçada, o ponto de ignição deve ser atrasado para evitar a detonação (knock). O TurboEdit permite aos preparadores definir uma rampa de atraso de ponto (por exemplo, retirar 0,75° de ponto por cada psi de boost) à medida que a pressão sobe nas colunas de carga positiva. Consulte o [guia de ponto de ignição](/cars/ignition/tuning-timing) para diretrizes seguras de atraso.
 
 ### Ajuste do Multiplicador de Combustível (Escala de Injetores)
+
 A ECU OBD0 calcula a entrega de combustível utilizando um valor de mapa de 8 bits e um multiplicador específico para cada coluna. Ao atualizar para injetores de combustível maiores (como os injetores padrão DSM de 450cc), os multiplicadores de fábrica enviarão demasiado combustível. O TurboEdit permite ajustar esses multiplicadores de combustível para reduzir a escala de todo o mapa de combustível, correspondendo ao débito dos injetores maiores.
 
 ### Programação em Tempo Real (RTP)
+
 Com emuladores de hardware (como o Moates Ostrich ou o Xtronics Pocket ROMulator) ligados ao socket de ROM de 28 pinos da ECU, o TurboEdit permite modificar a injeção, o ponto e os limites de rotação dinamicamente enquanto o motor está a funcionar.
 
 ---
@@ -59,6 +63,7 @@ Ao afinar com o TurboEdit, tenha em atenção estas limitações comuns de hardw
 - **Ruído no Sinal de Datalogging:** As ECUs OBD0 não têm um chip de buffer dedicado nas linhas de série como as ECUs OBD1. Os sinais de datalogging são altamente sensíveis ao ruído elétrico dos cabos das velas. Encaminhe sempre os cabos de série longe do distribuidor e das velas de ignição.
 
 ## Artigos Relacionados
+
 - [Visão Geral das Gerações OBD da Honda](/cars/wiring/obd)
 - [Como Interpretar Mapas de Combustível e Ignição](/cars/fueling/understanding-maps)
 - [Metas de Referência para Combustível e Ponto de Ignição](/cars/fueling/ecu-tuning)

@@ -38,7 +38,9 @@ Abaixo encontram-se os principais registadores de 8 bits localizados no espaço 
 | **`0x34`** | BARO | Pressão Barométrica (sensor PA na placa). |
 | **`0x36`** | MAP | Leitura do sensor de Pressão Absoluta do Coletor (MAP). |
 | **`0x37`** | MAP Complement | Complemento bit a bit de `0x36h`. |
-| **`0x38`** | MAP* | Valor de MAP bloqueado/armazenado (atualizado quando o bit `0x79.4` é definido). |
+| **`0x38`** | MAP
+
+* | Valor de MAP bloqueado/armazenado (atualizado quando o bit `0x79.4` é definido). |
 | **`0x39`** | TPS | Leitura do Sensor de Posição da Borboleta (TPS). |
 | **`0x3A`** | TPS (Backup) | Leitura secundária ou filtrada de TPS. |
 | **`0x3B`** | RPM (8-bit) | Cálculo simplificado de rotação do motor a 8 bits. |

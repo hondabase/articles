@@ -1,13 +1,9 @@
 ---
-summary: 'O JavaScript é uma linguagem de script comummente utilizada na world wide web. Também é utilizado para escrever scripts para controlar o Crome...'
+summary: 'Visão geral do scripting em JavaScript para automatizar funcionalidades no Crome e noutros softwares de edição de ROM Honda.'
+tags: [tuning, rom, sensors, reference]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - sensors
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Java Script'

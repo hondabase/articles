@@ -1,5 +1,5 @@
 ---
-summary: 'Java Script is a scripting language commonly used on the world wide web. It is also used to write scripts to control Crome if you ask google you can probably...'
+summary: 'Overview of JavaScript scripting for automating features in Crome and other Honda ROM editor software.'
 tags: [tuning, rom, sensors, reference]
 applies_to:
   obd: [0, 1, 2]
@@ -17,4 +17,4 @@ sources:
 
 # Java Script
 
-[Java Script](/cars/rom/java-script) is a scripting language commonly used on the world wide web. It is also used to write scripts to control [Crome ](/cars/rom/crome-rom-editor)if you ask [google ](https://www.google.com) you can probably find tons of information on the syntax and grammar of javascript, or just look at some scripts to infer it. (its fairly simple syntax)
+[Java Script](/cars/rom/java-script) is a scripting language commonly used on the world wide web. It is also used to write scripts to control [Crome ](/cars/rom/crome-rom-editor) if you ask [google ](https://www.google.com) you can probably find tons of information on the syntax and grammar of javascript, or just look at some scripts to infer it. (its fairly simple syntax)

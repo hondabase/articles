@@ -1,13 +1,9 @@
 ---
-summary: 'O Loctite Azul é como uma namorada... ficas preso a ela, mas podes ver-te livre dela se quiseres. Ao contrário do Loctite Vermelho.'
+summary: 'Guia para a utilização adequada de compostos de travamento de roscas Loctite para fixar componentes de motor e hardware em projetos Honda.'
+tags: [tuning, rom, sensores, referência]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - sensores
-  - referência
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Blue Loctite'

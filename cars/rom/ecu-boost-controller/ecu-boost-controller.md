@@ -1,5 +1,5 @@
 ---
-summary: 'The Boost Controller feature is a DEVELOPMENTAL feature where the ECU controls boost by sending a PWM signal to a bleed solenoid on the wastegate pressure...'
+summary: 'Overview of developmental Honda ECU boost control features, utilizing PWM signals for wastegate solenoid pressure regulation.'
 tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
   obd: [0, 1, 2]

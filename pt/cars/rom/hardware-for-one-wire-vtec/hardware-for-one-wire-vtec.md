@@ -50,16 +50,16 @@ Muitas destas peças são difíceis de encontrar em catálogos normais de compon
 
 ## 2. Instalação Passo a Passo
 
-1.  **Preparar a Placa:** 
-    Abra a caixa da ECU e localize os footprints não preenchidos no lado direito da PCB correspondentes aos IDs de componentes listados acima. Use malha de dessoldar para limpar a solda de fábrica dos orifícios (through-holes).
-2.  **Soldar Componentes Passivos e Díodos:** 
-    Instale as resistências (`R62`, `R64`, `R66`, `R69`, `R70`), o condensador `C77` e os díodos `D17` e `D26`. Preste atenção às bandas de polaridade dos díodos.
-3.  **Instalar Transístores e o CI Driver:** 
-    Solde os transístores `Q42`, `Q16`, `Q28` e o CI driver `IC17`. Certifique-se de que a orientação dos mesmos corresponde aos contornos serigrafados na PCB.
-4.  **Instalar a Ponte BR10:** 
-    Solde um fio de cobre condutor rígido entre os contactos em **`BR10`**.
-    
-    > **Nota:** Dependendo da revisão específica da sua placa, poderá também necessitar de instalar uma ponte em **`BR3`**. Compare o layout da sua placa com o de uma placa de fábrica PS9 ou PM6 automática para verificar se o caminho da pista o exige.
+1. **Preparar a Placa:** 
+ Abra a caixa da ECU e localize os footprints não preenchidos no lado direito da PCB correspondentes aos IDs de componentes listados acima. Use malha de dessoldar para limpar a solda de fábrica dos orifícios (through-holes).
+2. **Soldar Componentes Passivos e Díodos:** 
+ Instale as resistências (`R62`, `R64`, `R66`, `R69`, `R70`), o condensador `C77` e os díodos `D17` e `D26`. Preste atenção às bandas de polaridade dos díodos.
+3. **Instalar Transístores e o CI Driver:** 
+ Solde os transístores `Q42`, `Q16`, `Q28` e o CI driver `IC17`. Certifique-se de que a orientação dos mesmos corresponde aos contornos serigrafados na PCB.
+4. **Instalar a Ponte BR10:** 
+ Solde um fio de cobre condutor rígido entre os contactos em **`BR10`**.
+ 
+ > **Nota:** Dependendo da revisão específica da sua placa, poderá também necessitar de instalar uma ponte em **`BR3`**. Compare o layout da sua placa com o de uma placa de fábrica PS9 ou PM6 automática para verificar se o caminho da pista o exige.
 
 ---
 
@@ -67,5 +67,6 @@ Muitas destas peças são difíceis de encontrar em catálogos normais de compon
 
 Uma vez instalado o hardware, o novo canal de saída é encaminhado diretamente para a pinagem do conector da ECU. Sob a disposição de cablagem padrão de uma PM6:
 
-*   O canal de saída ativa o pino **`A8`** (que normalmente é a saída do solenoide de bloqueio da transmissão automática em cablagens de caixa automática). 
-*   Para cablar o VTEC, passe um único fio desde o seu solenoide VTEC no compartimento do motor através da parede corta-fogo (firewall) e ligue-o diretamente na posição **`A8`** da ficha da cablagem da ECU.
+* O canal de saída ativa o pino **`A8`** (que normalmente é a saída do solenoide de bloqueio da transmissão automática em cablagens de caixa automática). 
+
+* Para cablar o VTEC, passe um único fio desde o seu solenoide VTEC no compartimento do motor através da parede corta-fogo (firewall) e ligue-o diretamente na posição **`A8`** da ficha da cablagem da ECU.

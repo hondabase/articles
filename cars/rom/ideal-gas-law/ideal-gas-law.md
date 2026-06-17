@@ -1,5 +1,5 @@
 ---
-summary: 'the Ideal Gas Law is an equation you may or may not remember from high school chemistry. PV = nRT P = Pressure (must be an Absolute Pressure scale) V =...'
+summary: 'Application of the Ideal Gas Law in Honda speed-density engine management systems for calculating fuel requirements based on pressure and temperature.'
 tags: [tuning, rom, sensors, reference]
 applies_to:
   obd: [0, 1, 2]

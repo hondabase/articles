@@ -38,24 +38,24 @@ Use small-gauge wire because the solder points are small. The source suggests wi
 
 1. Locate and sever the MCU `WE` trace shown in the archived marked-up image.
 
-   ![OBD1 ECU write-enable trace cut location](doc_RTP_OBD1_Cut_here.jpg)
-   *Archived image marking the write-enable trace cut.*
+ ![OBD1 ECU write-enable trace cut location](doc_RTP_OBD1_Cut_here.jpg)
+ *Archived image marking the write-enable trace cut.*
 
 2. Connect the RTP board's `A15` wire to MCU Pin 16. The source says this MCU address line is otherwise unused and is used to address the writable ROM image.
 3. Connect the MCU side of the severed `WE` trace, MCU Pin 25, to `WE in` on the RTP board. The source recommends tinning both the IC pin and wire before soldering.
 
-   ![Easy-RTP A15 and MCU-side write-enable connections](rtp2.jpg)
-   *Archived photo of the A15 and MCU-side WE connections.*
+ ![Easy-RTP A15 and MCU-side write-enable connections](rtp2.jpg)
+ *Archived photo of the A15 and MCU-side WE connections.*
 
 4. Connect the other side of the severed write-enable circuit to Pin 38 of the M82C55A. The source says this lets the RTP board enable NVSRAM writes only when A15 is high.
 
-   ![Easy-RTP connection at M82C55A Pin 38](rtp3.jpg)
-   *Archived photo of the connection to the opposite side of the severed circuit.*
+ ![Easy-RTP connection at M82C55A Pin 38](rtp3.jpg)
+ *Archived photo of the connection to the opposite side of the severed circuit.*
 
 5. Inspect every connection and confirm the severed trace is isolated before testing.
 
-   ![Completed Easy-RTP installation](rtp4.jpg)
-   *Archived photo of the completed installation.*
+ ![Completed Easy-RTP installation](rtp4.jpg)
+ *Archived photo of the completed installation.*
 
 ## Surface-mount JDM pin note
 

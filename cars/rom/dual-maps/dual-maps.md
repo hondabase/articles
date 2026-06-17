@@ -1,5 +1,5 @@
 ---
-summary: 'see Dual Roms'
+summary: 'Introduction to dual-map ROM setups in Honda ECUs, allowing for switchable engine tuning profiles.'
 tags: [tuning, rom, sensors, reference]
 applies_to:
   obd: [0, 1, 2]

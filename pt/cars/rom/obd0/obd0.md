@@ -26,7 +26,7 @@ sources:
 - [PG7](/cars/sensors/pg7) : 88-89 Integra (D16A1)
 - [PM6](/cars/ecu/pm6) : 88-91 Civic/CRX [SOHC](/cars/sensors/sohc) Si (1.6l SOHC)
 - [PM7](/cars/ecu/pm7) : 89-91 Civic Si [DOHC](/cars/sensors/dohc) ZC ([JDM](/cars/sensors/jdm) EF3)
-- [PM7](/cars/ecu/pm7) : 89-91 CRX D16A8 , D16A9 ( [EDM](/cars/wiring/edm) )
+- [PM7](/cars/ecu/pm7) : 89-91 CRX D16A8, D16A9 ( [EDM](/cars/wiring/edm) )
 - [PM8](/cars/diagnostics/pm8) : 88-91 CRX HF
 - [PR3](/cars/sensors/pr3) : 89-91 [JDM](/cars/sensors/jdm) B16A EF8/9
 - [PR5](/cars/sensors/pr5) : 90-91 [JDM](/cars/sensors/jdm) Integra ZXi (1.6 SOHC)

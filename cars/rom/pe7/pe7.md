@@ -22,13 +22,12 @@ the PE7 came on 85-87 [EDM](/cars/wiring/edm)/USDM Civic/CRX Si (EW3/EW4 Vacuum 
 
 - [PE7-682-87_Civic_Si.bin](PE7-682-87_Civic_Si.bin): [ROM](/cars/rom/rom) from a stock PE7-682 (European 87 Civic Si)
 
-
 <figure>
-    <img src="PE7-741_solder.jpg" alt="Scan of bottom (solder) side">
-    <figcaption>Scan of bottom (solder) side</figcaption>
+ <img src="PE7-741_solder.jpg" alt="Scan of bottom (solder) side">
+ <figcaption>Scan of bottom (solder) side</figcaption>
 </figure>
 
 <figure>
-    <img src="PE7-741_component.jpg" alt="Scan of top (component) side">
-    <figcaption>Scan of top (component) side</figcaption>
+ <img src="PE7-741_component.jpg" alt="Scan of top (component) side">
+ <figcaption>Scan of top (component) side</figcaption>
 </figure>

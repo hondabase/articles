@@ -35,11 +35,15 @@ A **Easy-RTP v1.0** é uma placa emuladora de EPROM clássica em estilo DIY (Fa�
 Para montar a placa Easy-RTP, precisará dos seguintes componentes eletrónicos:
 
 ### Componentes principais
+
 * **IC NVSRAM**: Dallas/Maxim **DS1230Y** (ou NVSRAM DIP de 28 pinos e 600 mil de 32KB compatível da TI, ST, Simtek ou ZMD).
+
 * **IC de Portas Lógicas**: **74HC00** (Porta NAND de 4 entradas e 2 saídas - Quad 2-input NAND gate) num invólucro DIP padrão.
+
 * **Condensadores**: Dois condensadores cerâmicos de **0.1 uF**.
 * **Resistências**: Duas resistências de **10 kohm**.
 * **Pinos de Interface da ECU**: Dois **conectores de pinos 1x14** (passo de 0.1", recomendam-se pinos torneados/machine pins para fiabilidade do suporte).
+
 * **Suporte de ROM**: Um **Suporte DIP de 28 pinos** (para alojar o chip NVSRAM).
 
 ### Componentes opcionais para emulação de 27C256
@@ -48,6 +52,7 @@ A fonte original refere que estas peças são necessárias quando a emulação d
 
 * **Resistências**: Uma resistência de **10 kohm** e uma de **100 kohm**.
 * **Transístor NPN**: Um transístor de comutação NPN genérico (**2N4401** ou equivalente).
+
 * **Díodo**: Um díodo de comutação (**1N4148** ou equivalente).
 
 ---
@@ -62,8 +67,8 @@ Para montar a placa, oriente a PCB com as pistas voltadas para cima (vista infer
 4. **Soldar os condensadores**: Instale os dois condensadores de 0.1 uF em **`C1`** e **`C2`**.
 5. **Soldar as resistências principais**: Solde as resistências de 10 kohm em **`R1`** (esquerda) e **`R2`** (centro).
 6. **Configurar o modo de emulação**:
-   * **Sem emulação `27C256`**: Solde uma ponte de fio sólido ou uma resistência de 0 ohms em **D1**. Salte para o passo final.
-   * **Com emulação `27C256`**: Solde o díodo **1N4148** em **D1**, o transístor NPN em **`Q1`**, a resistência de 10 kohm em **`R3`** (topo) e a resistência de 100 kohm em **`R4`** (fundo).
+ * **Sem emulação `27C256`**: Solde uma ponte de fio sólido ou uma resistência de 0 ohms em **D1**. Salte para o passo final.
+ * **Com emulação `27C256`**: Solde o díodo **1N4148** em **D1**, o transístor NPN em **`Q1`**, a resistência de 10 kohm em **`R3`** (topo) e a resistência de 100 kohm em **`R4`** (fundo).
 7. **Instalar o IC lógico e a NVSRAM**: Solde o IC **74HC00** no lugar. Insira a NVSRAM **`DS1230Y`** no seu suporte.
 
 ### Fotos da montagem
@@ -117,7 +122,9 @@ A página arquivada inclui duas imagens que documentam uma instalação OBD1 ori
 Para correr a placa Easy-RTP v1.0 numa ECU OBD0, tem de modificar os sinais de seleção de chip (chip-select) e de controlo de escrita porque as placas OBD0 gerem o endereçamento de ROM de forma diferente.
 
 ### Componentes adicionais
+
 * Um IC **74LS86N** (Quad 2-input XOR gate).
+
 * Uma resistência de **10 kohm**.
 * Fio fino isolado para pontes (jumper wire).
 
@@ -136,5 +143,7 @@ Para correr a placa Easy-RTP v1.0 numa ECU OBD0, tem de modificar os sinais de s
 ---
 
 ## Ficheiros de design
+
 * [Ficheiros Eagle CAD da Easy-RTP v1.0 (ZIP)](easyrtpv1-eagle.zip)
+
 * [PDF do Esquema da Placa Easy-RTP v1.0](rtp_EasyRtpV10-v1.pdf)

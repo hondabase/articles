@@ -27,11 +27,11 @@ The **Add Extra Features** plugin (`addextrafeatures.cpf`) is one of the most co
 
 Crome plugins use the `.cpf` file extension. To be recognized by the software, these files must reside in Crome's local plugins folder.
 
-1.  Download the `addextrafeatures.zip` package from an authorized Honda tuning archive.
-2.  Extract the ZIP file contents.
-3.  Copy the `addextrafeatures.cpf` file and paste it into Crome's installation plugin directory. By default, this is located at:
-    `C:\Program Files (x86)\Crome\Plugins\` (on 64-bit Windows systems)
-    
+1. Download the `addextrafeatures.zip` package from an authorized Honda tuning archive.
+2. Extract the ZIP file contents.
+3. Copy the `addextrafeatures.cpf` file and paste it into Crome's installation plugin directory. By default, this is located at:
+ `C:\Program Files (x86)\Crome\Plugins\` (on 64-bit Windows systems)
+ 
 > [!NOTE]
 > Historically, legacy Crome plugin archives were password-protected to prevent corruption. If prompted during extraction, use the standard Crome installation password.
 
@@ -41,11 +41,11 @@ Crome plugins use the `.cpf` file extension. To be recognized by the software, t
 
 Once the file is in the directory, you must register it in Crome's settings interface:
 
-1.  Launch **Crome**.
-2.  In the top menu, navigate to **Plugins** -> **Install New Plugin...**
-3.  In the file explorer window that appears, navigate to Crome's `Plugins` directory.
-4.  Select **`addextrafeatures.cpf`** and click **Open**.
-5.  Verify that the plugin appears in the list of active plugins.
+1. Launch **Crome**.
+2. In the top menu, navigate to **Plugins** -> **Install New Plugin...**
+3. In the file explorer window that appears, navigate to Crome's `Plugins` directory.
+4. Select **`addextrafeatures.cpf`** and click **Open**.
+5. Verify that the plugin appears in the list of active plugins.
 
 ---
 
@@ -53,8 +53,8 @@ Once the file is in the directory, you must register it in Crome's settings inte
 
 After registration, you must apply the plugin patches to the specific ROM file you are editing.
 
-1.  Open the desired OBD1 `.bin` file in Crome (typically a stock P28 or P30 ROM).
-2.  Navigate to **Plugins** -> **Enhancements** -> **Add Extra Features**.
-3.  A wizard dialog will appear. Click **Next** to run the code injection script.
-4.  Once the patching process finishes, the new parameters will be added to the ROM.
-5.  To configure the newly added parameters (such as launch RPM limits or boost cut pressures), go to the **Options** menu or access the relevant table tabs in Crome.
+1. Open the desired OBD1 `.bin` file in Crome (typically a stock P28 or P30 ROM).
+2. Navigate to **Plugins** -> **Enhancements** -> **Add Extra Features**.
+3. A wizard dialog will appear. Click **Next** to run the code injection script.
+4. Once the patching process finishes, the new parameters will be added to the ROM.
+5. To configure the newly added parameters (such as launch RPM limits or boost cut pressures), go to the **Options** menu or access the relevant table tabs in Crome.

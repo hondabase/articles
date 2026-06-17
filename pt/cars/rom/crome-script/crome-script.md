@@ -151,7 +151,7 @@ Utilize `gup()` antes e depois de um grupo de alterações para que o Crome poss
 ```javascript
 rom.gup();
 for (var i = 0; i <= 0x7FFF; i++) {
-    rom.byteAt(i) = LoByte(i);
+ rom.byteAt(i) = LoByte(i);
 }
 rom.gup();
 refresh();

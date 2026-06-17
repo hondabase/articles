@@ -40,14 +40,18 @@ pressure_mbar = (1764 / 255) * (map_byte / 2)
 When the ROM's MAP value is uncorked, the final division by two is removed:
 
 ```text
-pressure_mbar = (1764 / 255) * map_byte
+pressure_mbar = (1764 / 255) 
+
+* map_byte
 ```
 
 The same notes document these voltage formulas:
 
 ```text
 stock map: volts = (5 / 255) * ((raw / 2) + fuel_cut)
-boost map: volts = (5 / 255) * (raw + fuel_cut)
+boost map: volts = (5 / 255) 
+
+* (raw + fuel_cut)
 ```
 
 The listed stock fuel-cut value is `24`, editable at address `0x4DCC` in the referenced
@@ -59,7 +63,9 @@ The archived page includes these two linear conversions:
 
 ```text
 inHg = 20 * volts / 1.85 - 30.81
-mbar = 365.9 * volts - 29.9
+mbar = 365.9 
+
+* volts - 29.9
 ```
 
 They are derived on the page from the following points:

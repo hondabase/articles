@@ -1,13 +1,9 @@
 ---
-summary: 'Para mais informações, consulte o fórum OBD0Edit.'
+summary: 'Informação sobre o fórum da comunidade OBD0Edit, um recurso para discussões técnicas e desenvolvimento relativo a ECUs Honda OBD0.'
+tags: [ecu, reference, tuning, rom]
 applies_to:
   obd: [0]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
 sources:
   - name: 'pgmfi.org wiki'
     title: 'OBD0 Edit'

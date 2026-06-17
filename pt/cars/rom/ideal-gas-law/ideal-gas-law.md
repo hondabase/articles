@@ -1,13 +1,9 @@
 ---
-summary: 'A Lei dos Gases Ideais é uma equação de que se pode ou não lembrar da química do ensino secundário. PV = nRT P = Pressão (deve ser uma escala de Pressão Absoluta) V =...'
+summary: 'Aplicação da Lei dos Gases Ideais nos sistemas de gestão de motor Honda baseados em velocidade-densidade para calcular os requisitos de combustível com base na pressão e temperatura.'
+tags: [tuning, rom, sensors, reference]
 applies_to:
   obd: [0, 1, 2]
 complexity: intermediate
-tags:
-  - tuning
-  - rom
-  - sensors
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Lei dos Gases Ideais'
