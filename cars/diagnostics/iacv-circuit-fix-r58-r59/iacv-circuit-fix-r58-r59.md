@@ -28,8 +28,11 @@ When the ECU's internal IACV control circuit is damaged, it typically exhibits t
 The most common cause of this circuit blowout is a human wiring mistake during an engine swap or intake manifold reassembly. 
 
 Because the engine wiring harness plugs for the **Intake Air Temperature (IAT) sensor** (or the Purge Control Solenoid / EVAP) and the **Idle Air Control Valve (IACV)** share the same connector style and physical location, they are easily swapped.
+
 * **The IACV Connector** carries a constant +12V power supply, with the ECU switching the ground side via duty cycle to control the valve.
+
 * **The IAT Connector** is a 5V sensor circuit reference from the ECU.
+
 * **The PCS (Purge Control Solenoid) Connector** is also a 12V switched circuit.
 
 If you mistakenly plug the +12V power connector into the IAT sensor (which is a low-resistance thermistor) or swap the IACV and IAT plugs, it routes high current directly into the ECU's low-voltage sensor return/ground driver lanes, instantly frying the transistor at **Q21** and the biasing resistors at **R58** and **R59**.
@@ -57,18 +60,21 @@ To fix this issue, you must inspect and replace the following components on the 
 ## Repair Procedure
 
 ### Step 1: Verify & Correct the Engine Harness Wiring
+
 Before opening the ECU, trace the wiring plugs on the engine:
 1. Check the wire colors at the IACV plug. On USDM harnesses, the IACV plug should have a **Yellow/Black** wire (+12V power) and a **Light Blue** or **Blue/Yellow** wire (ECU Pin A9 control).
 2. Check the IAT plug. It typically has a **Red/Yellow** (5V signal) and **Green/White** (Sensor Ground) wire.
 3. Replace the IAT sensor if it was subjected to +12V, as it is likely melted or damaged inside.
 
 ### Step 2: Extract the ECU and Inspect the Board
+
 1. Remove the ECU from the passenger side kick panel.
 2. Remove the top and bottom covers (using a Phillips screwdriver).
 3. Search for the **Q21** transistor (mounted to a small heatsink or directly on the board) and resistors **R58** and **R59** nearby.
 4. Inspect for black soot, charred resistor bodies, or a cracked casing on the transistor.
 
 ### Step 3: Desoldering and Component Replacement
+
 1. Using a high-quality soldering iron and a desoldering pump or wick, gently desolder the legs of the burnt components.
 2. Clean the board area with isopropyl alcohol. Check if the copper circuit board traces are lifted or burned. If they are, you will need to jumper them with thin hookup wire.
 3. Install the new components (paying attention to the orientation of the Q21 transistor, which must face the same way as the original).

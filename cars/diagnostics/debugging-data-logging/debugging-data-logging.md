@@ -28,8 +28,8 @@ Before checking software settings, use a digital multimeter in **continuity (bee
 - **Check for Solder Bridges:** Inspect the CN2 header solder pads. Ensure there are no microscopic solder bridges or flux residues connecting adjacent pins.
 - **Check Ground Connectivity:** Verify that CN2 **Pin 4** (GND) has solid, zero-resistance continuity to the main ECU metal chassis and power ground pins (pins A26/B2).
 - **Trace the Receive (RX) Line:** Verify continuity from CN2 **Pin 2** (RX) to the main OKI 66207 processor:
-  - On surface-mount processor boards (most JDM boards), trace to **Pin 42**.
-  - On dual-inline-package (DIP) processor boards (common USDM boards), trace to **Pin 39**.
+ - On surface-mount processor boards (most JDM boards), trace to **Pin 42**.
+ - On dual-inline-package (DIP) processor boards (common USDM boards), trace to **Pin 39**.
 - **Trace the Transmit (TX) Line:** Verify continuity from CN2 **Pin 1** (TX) to **Pin 6** of **IC19** (the surface-mount TX line buffer chip).
 - **TX/RX Signal Swap Check:** The most common wiring mistake is connecting TX-to-TX and RX-to-RX. Verify that your USB-to-TTL adapter's RXD wire is connected to Pin 1 (TX) of CN2, and the TXD wire is connected to Pin 2 (RX) of CN2.
 
@@ -40,12 +40,16 @@ Before checking software settings, use a digital multimeter in **continuity (bee
 If the hardware traces pass continuity tests, check the configuration of the ROM binary file burned onto your EEPROM chip:
 
 ### Disable the Checksum Routine
+
 A stock ECU ROM constantly calculates a checksum to verify code integrity. If you load custom datalogging code on a ROM, this checksum will fail, triggering a solid Check Engine Light (CEL) and locking up the serial interface.
 - **Action:** Open your ROM in your editor, go to the enhancements menu, and select **Remove Checksum Routine** before burning the chip.
 
 ### Install a Datalogging Protocol Plugin
+
 Stock ROM code does not output serial diagnostic data on the `CN2` header by default. You must overlay a datalogging protocol plugin onto the binary file:
-- **Action:** Install a protocol plugin (such as Crome's *Quick Datalogger* plugin). This inserts serial transmit loops into the ECU's main runtime program execution.
+- **Action:** Install a protocol plugin (such as Crome's *Quick Datalogger
+
+* plugin). This inserts serial transmit loops into the ECU's main runtime program execution.
 - **Baud Rate Matching:** Verify that your software's connection settings match the plugin protocol's baud rate. For example, Crome's Quick Datalogger defaults to **38,400 bps**, while legacy protocols may run at **9,600 bps** or **115,200 bps**.
 
 ---
@@ -61,9 +65,10 @@ If your hardware is correct and the ROM is properly configured, configure your l
 
 ## 4. Bench Testing the ECU
 
-To troubleshoot the datalogging interface without dealing with car wiring, you can wire a basic bench test harness to power the ECU on your desk. 
+To troubleshoot the datalogging interface without dealing with car wiring, you can wire a basic bench test harness to power the ECU on your desk.
 
 ### OBD1 Bench Test Pinout
+
 To boot up an OBD1 Honda ECU on a 12V DC power supply, make the following connections on the ECU plugs:
 
 | Connection Type | ECU Pin Number | Description |
@@ -77,6 +82,7 @@ To boot up an OBD1 Honda ECU on a 12V DC power supply, make the following connec
 Once powered on the bench, connect your USB-to-TTL converter to the `CN2` header and launch your datalogger. Although the datalogger will report garbage values for missing sensors, you should see active, updating numbers on your screen, indicating that the serial interface is fully functional.
 
 ## Related Articles
+
 - [CN2 Serial Port Pinouts](/cars/tuning/serial-communication)
 - [Configuring USB-to-TTL Adapters](/cars/tuning/second-gen-usb-to-serial-converter)
-- [How to Interpret Sensor Diagnostics](/cars/diagnostics/honda-error-codes)
+- [How to Interpret Sensor Diagnostics](/cars/diagnostics/diagnostic-trouble-codes)

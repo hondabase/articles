@@ -1,5 +1,5 @@
 ---
-summary: 'P2P (Stock Bin) This Bin is based on a P30 with P2P Maps (P2P230) 9698 OBD2 A Civic EX Coupe 9900 OBD2 B Civic EX Coupe Ignition Timing info Y8 Timing...'
+summary: 'Technical overview of the P2P OBD2 Honda Civic EX ECU, covering stock bin configurations, ignition timing maps, and hardware specifications.'
 tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
   obd: [2]

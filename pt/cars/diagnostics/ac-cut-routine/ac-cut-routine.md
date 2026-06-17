@@ -19,7 +19,11 @@ sources:
 
 # Rotina de Corte de AC
 
-Autor: evo (61.88.2.177) Data: 03-04-03 22:15 Após muita reflexão, decidi partilhar a minha rotina de corte (Cutoff) do Ar Condicionado. Esta rotina desliga o a/c abaixo de um nível especificado de RPM OU TPS. JBR off 11.2, 4320 ; Jump if A/C switch is Off J XXXX ; Hook Code located at XXXX LC A, 6D8D ; Load Target rpm
+**Autor:** evo (61.88.2.177)
+
+**Data:** 03-04-03 22:15
+
+Após muita reflexão, decidi partilhar a minha rotina de corte (Cutoff) do Ar Condicionado. Esta rotina desliga o a/c abaixo de um nível especificado de RPM OU TPS. JBR off 11.2, 4320 ; Jump if A/C switch is Off J XXXX ; Hook Code located at XXXX LC A, 6D8D ; Load Target rpm
  CMP AC, A ; Compare Actual rpm to Target rpm
  JLT 6D8A ; Jump if Actual rpm < Target
  LCB A, 6D8F ; Load Target TPS

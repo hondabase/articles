@@ -51,4 +51,6 @@ Fazer o [chipping de uma ECU de 88-89](/cars/rom/chipping-an88-89ecu) não é t�
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | ![](/pgmfi/wiki/assets/icn/else.gif) [pm6.lbr](pm6.lbr) | mod | 11725 | 05 Dec 2004 - 20:57 | l3st4rd | biblioteca eagle 4.09 para alguns componentes de [ECU](/cars/ecu/ecu) [OBD](/cars/wiring/obd)0 |
 
-*Library.OBD0MPFI movido de Library.OBD0CivicIntegra em 20 Fev 2004 - 00:37 por Home.blundar* - [coloque de volta](https://web.archive.org/web/http://www.pgmfi.org/twiki/bin/rename/Library/OBD0MPFI?newweb=Library&newtopic=OBD0CivicIntegra&confirm=on "Clique para mover o tópico de volta para a localização anterior, com a opção de alterar referências.") | | :--- |
+*Library. OBD0MPFI movido de Library. OBD0CivicIntegra em 20 Fev 2004 - 00:37 por Home.blundar
+
+* - [coloque de volta](https://web.archive.org/web/http://www.pgmfi.org/twiki/bin/rename/Library/OBD0MPFI?newweb=Library&newtopic=OBD0CivicIntegra&confirm=on "Clique para mover o tópico de volta para a localização anterior, com a opção de alterar referências.") | | :--- |

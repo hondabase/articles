@@ -22,6 +22,7 @@ To translate engine speed (RPM) to the 16-bit hexadecimal values expected by OBD
 `ECU Hex Value = 1920000 / RPM`
 
 ### Excel Conversion
+
 If you are compiling custom ROM tables in Microsoft Excel or Google Sheets, you can calculate the hex string using:
 
 `=DEC2HEX(1920000 / RPM_value)`

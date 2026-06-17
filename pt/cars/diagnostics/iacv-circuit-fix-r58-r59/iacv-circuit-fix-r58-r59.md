@@ -30,8 +30,11 @@ Quando o circuito interno de controlo da IACV da ECU está danificado, apresenta
 A causa mais comum para a queima deste circuito é um erro humano nas ligações elétricas durante um swap de motor ou na remontagem do coletor de admissão.
 
 Como as fichas da cablagem do motor para o **Sensor de Temperatura do Ar de Admissão (IAT)** (ou do Solenoide de Controlo de Purga / EVAP) e para a **Válvula de Controlo do Ralenti (IACV)** partilham o mesmo tipo de ficha e localização física, são facilmente trocadas.
+
 * **A Ficha da IACV** fornece uma alimentação constante de +12V, com a ECU a comutar o lado de massa (terra) via duty cycle para controlar a válvula.
+
 * **A Ficha do IAT** é um circuito de referência de sensor de 5V vindo da ECU.
+
 * **A Ficha do PCS (Solenoide de Controlo de Purga)** também é um circuito comutado de 12V.
 
 Se ligar por engano a ficha de alimentação de +12V ao sensor IAT (que é um termístor de baixa resistência) ou se trocar as fichas da IACV e do IAT, a corrente elevada é direcionada diretamente para as linhas de retorno/massa de baixa tensão do sensor da ECU, queimando instantaneamente o transistor em **Q21** and os resistores de polarização em **R58** e **R59**.
@@ -59,18 +62,21 @@ Para corrigir este problema, deve inspecionar e substituir os seguintes componen
 ## Procedimento de Reparação
 
 ### Passo 1: Verificar & Corrigir a Cablagem do Motor
+
 Antes de abrir a ECU, verifique as fichas da cablagem no motor:
 1. Verifique as cores dos fios na ficha da IACV. Nas cablagens USDM, a ficha da IACV deve ter um fio **Amarelo/Preto** (alimentação +12V) e um fio **Azul Claro** ou **Azul/Amarelo** (controlo no Pin A9 da ECU).
 2. Verifique a ficha do IAT. Esta tem tipicamente um fio **Vermelho/Amarelo** (sinal de 5V) e um fio **Verde/Branco** (Massa do Sensor).
 3. Substitua o sensor IAT caso tenha sido submetido a +12V, pois é provável que esteja derretido ou danificado internamente.
 
 ### Passo 2: Extrair a ECU e Inspecionar a Placa
+
 1. Remova a ECU do painel lateral do lado do passageiro (kick panel).
 2. Remova as tampas superior e inferior (usando uma chave de fendas Phillips).
 3. Procure o transistor **Q21** (montado num pequeno dissipador de calor ou diretamente na placa) e os resistores **R58** e **R59** próximos.
 4. Inspecione visualmente se existem resíduos pretos, corpos de resistores carbonizados ou rachaduras no invólucro do transistor.
 
 ### Passo 3: Dessoldagem e Substituição de Componentes
+
 1. Utilizando um ferro de soldar de alta qualidade e uma bomba de dessoldar ou malha de dessoldagem, dessolde cuidadosamente os pinos dos componentes queimados.
 2. Limpe a área da placa com álcool isopropílico. Verifique se as pistas de cobre da placa de circuito estão levantadas ou queimadas. Se estiverem, precisará de fazer uma ponte (jumper) usando um fio de ligação fino.
 3. Instale os novos componentes (prestando atenção à orientação do transistor Q21, que deve ficar voltado para o mesmo lado do original).

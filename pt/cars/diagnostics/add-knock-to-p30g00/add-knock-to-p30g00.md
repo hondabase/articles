@@ -1,15 +1,9 @@
 ---
-summary: "Nas placas 1720 ou 11f0 eu fiz: remover R140, R141 de 10k e adicionar R107, R115, R116 de 220R. Também adicionei (podem não ser essenciais): C94 4u7 16v tântalo, Q20 a143. Nas 1550-150x: remover..."
+summary: 'Guia de hardware passo a passo para adicionar um circuito de sensor de detonação a ECUs Honda P30 OBD1 não equipadas, utilizando modificações de componentes específicos.'
+tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
   obd: [0, 1, 2]
 complexity: intermediate
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - diagnostics
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Add Knock To P30G00'

@@ -32,15 +32,19 @@ Este guia detalha o design de um simulador de motor completo para montagem em ra
 Para evitar que a ECU ative códigos de erro, o simulador deve imitar de perto os comportamentos elétricos e as cargas de solenoides, aquecedores e injetores reais.
 
 ### 1. Simulação de Atuadores e Cargas
+
 * **Injetores**: Os injetores de combustível reais têm baixa resistência e consomem uma corrente significativa. O simulador utiliza quatro **resistências de potência de 12&Omega; 5W** para simular as bobinas dos injetores, evitando o Código 16 (Sistema de Injetores de Combustível).
+
 * **EACV / IACV**: Uma válvula de controlo de ar do ralenti (EACV/IACV) real está ligada ao sistema para aplicar carga ao circuito de controlo de ralenti da ECU.
 * **Solenoide VTEC (VTS)**: Um solenoide VTEC real está montado no chassis. Ouvir o "clique" físico do solenoide fornece uma confirmação imediata de que a ECU ativou o VTEC com sucesso.
 * **Pressostato de VTEC (VTP)**: Simulado utilizando uma bobina de relé padrão acionada diretamente pelo sinal de saída do VTS, fechando o interruptor à massa (terra) quando o VTEC é ativado.
 * **Aquecedor do Sensor de Oxigénio (Sonda Lambda)**: A ECU verifica o consumo de corrente na linha do aquecedor da sonda de O2. Isto é simulado utilizando três **resistências de 3.7k&Omega; 5W** ligadas em paralelo para dissipar o calor de forma segura.
+
 * **Bomba de Combustível**: Um LED bicolor em série está ligado à saída do relé da bomba de combustível, mudando de cor para mostrar quando a bomba está ativada (primed) e a funcionar.
 * **Relé Principal (Main Relay)**: Um relé principal Honda padrão de 7 pinos está integrado para distribuir energia para a placa e para a ECU exatamente como numa cablagem de fábrica.
 
 ### 2. Simulação de Sinais dos Sensores
+
 * **Sensores Analógicos (TPS, MAP, ECT, IAT, EGR)**: Simulados usando potenciómetros rotativos variáveis de alta qualidade. Pode rodar os botões para variar a tensão entre `0V` e `5V`.
 * **Detetor de Carga Elétrica (ELD)**: Uma unidade ELD real extraída de uma caixa de fusíveis de um Integra Type R JDM está ligada em série com as linhas principais de distribuição de energia de +5V/12V. Isto permite que a ECU (incluindo os modelos P13 ou P72) leia flutuações de carga de corrente em tempo real.
 * **Sensor de Detonação (Knock Sensor)**: Um sensor de detonação real está montado no chassis metálico do simulador. Bater no chassis com uma chave de fendas gera uma vibração mecânica, permitindo-lhe testar as rotinas de deteção da placa de detonação.
@@ -57,6 +61,7 @@ Em vez de utilizar geradores de sinal digitais complexos, este simulador utiliza
 *Conjunto do distribuidor e motor montado num gabarito de alinhamento personalizado.*
 
 ### Detalhes de Montagem
+
 * **Motor de Acionamento**: Um motor de 12V recuperado de um berbequim sem fios aciona o veio do distribuidor.
 * **Controlo de Velocidade**: O gatilho do berbequim sem fios está ligado a um potenciómetro rotativo grande, permitindo-lhe variar a velocidade do motor para simular rotações do motor de 500 RPM a mais de 9.000 RPM.
 * **Acoplamento**: A chaveta de acionamento da árvore de cames do distribuidor foi removida e substituída por uma engrenagem de carro telecomandado de 15 dentes (Tamiya), acoplada ao veio do motor através de uma mangueira de combustível de borracha reforçada. Isto proporciona um acoplamento flexível que absorve vibrações.
@@ -75,6 +80,7 @@ O painel de interface do utilizador permite ao operador manipular os sinais dos 
 *Layout do painel de controlo mostrando os manípulos dos sensores e interruptores de injeção de falhas.*
 
 ### Características do Painel de Controlo
+
 * **Manípulos de Ajuste de Sensores**: Controlos rotativos para ECT, IAT, RPM, VSS, TPS, MAP e EGR. 
 * **Interruptores de Falhas (Linhas Superiores)**: Interruptores SPST ligados em série com cada linha crítica de sensores. Mudar a posição de um interruptor corta o sinal, ativando instantaneamente o correspondente Código de Diagnóstico de Avaria (DTC) na ECU para verificar os diagnósticos.
 * **LEDs Indicadores**: LEDs bicolores exibem o estado do circuito. Por exemplo, o LED do interruptor de A/C muda de cor quando a ECU ordena a ativação do relé da embraiagem do ar condicionado.

@@ -1,13 +1,9 @@
 ---
-summary: 'O Xeltek SuperProZ é vendido por 249 $. Trata-se de um gravador de interface paralela como a maioria dos outros analisados, mas suporta uma vasta gama de chips...'
+summary: 'Visão geral técnica do programador de EPROM Xeltek SuperProZ, incluindo tipos de chips suportados e a sua utilização na reprogramação (chipping) de ECUs Honda.'
+tags: [sensores, referência, diagnósticos, ecu]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - sensores
-  - referência
-  - diagnósticos
-  - ecu
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Super Pro Z'

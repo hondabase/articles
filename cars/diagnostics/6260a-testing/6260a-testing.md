@@ -1,5 +1,5 @@
 ---
-summary: "J. Wong: about the 6260A thing... if you take a look at the code (91 PM6ECULEDCEL) that flashes the ECU LED for codes you'll see that it writes 16 or 96 to X2000, depending on certain conditions."
+summary: 'Technical analysis of the Honda 6260A ECU test code, explaining how it triggers the diagnostic LED to flash engine error codes.'
 tags: [ecu, reference, sensors, diagnostics]
 applies_to:
   obd: [0, 1, 2]

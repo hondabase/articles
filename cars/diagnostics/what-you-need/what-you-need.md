@@ -1,5 +1,5 @@
 ---
-summary: '"Chipping" an ECU means replacing the program running the ECU. Chipping is just slang. What we actually do is program (or "burn") a new bin file to the...'
+summary: 'Practical introduction to Honda ECU chipping: what it means, the essential tools required, and the process of burning new bin files.'
 tags: [hardware, education, ecu, tuning, rom, sensors, reference, diagnostics]
 applies_to:
   obd: [0]

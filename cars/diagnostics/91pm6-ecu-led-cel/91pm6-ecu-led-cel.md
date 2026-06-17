@@ -25,8 +25,10 @@ On OBD0 Honda ECUs like the **1991 PM6** (found in the Civic and CRX Si), diagno
 
 For developers disassembling or modifying the 1991 PM6 ROM, the LED blinking routine is located at or near offset **`026E`** in the assembly code.
 
-Rather than utilizing a standard CPU delay loop—which would halt the ECU's execution and disrupt critical fuel/ignition timing calculations—the blinking routine is integrated into the **Timer 0 interrupt handler**. 
+Rather than utilizing a standard CPU delay loop—which would halt the ECU's execution and disrupt critical fuel/ignition timing calculations—the blinking routine is integrated into the **Timer 0 interrupt handler**.
 
 ### Key Characteristics:
-*   **Interrupt Frequency:** The Timer 0 interrupt handler executes at **100 Hz** (100 times per second).
-*   **Non-Blocking Logic:** The routine maintains counter registers to track the number of elapsed interrupts. By counting these interrupts, the ECU knows exactly how long to hold the LED in the ON or OFF state to produce clean diagnostic blinks without blocking other processes.
+
+* **Interrupt Frequency:** The Timer 0 interrupt handler executes at **100 Hz** (100 times per second).
+
+* **Non-Blocking Logic:** The routine maintains counter registers to track the number of elapsed interrupts. By counting these interrupts, the ECU knows exactly how long to hold the LED in the ON or OFF state to produce clean diagnostic blinks without blocking other processes.

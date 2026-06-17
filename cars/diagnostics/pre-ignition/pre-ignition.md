@@ -1,37 +1,30 @@
 ---
 summary: 'Explains the physical mechanisms, differences, causes, and prevention methods for engine pre-ignition and detonation (knock).'
-tags: [tuning, diagnostics]
+tags: [tuning, diagnostics, engine-health]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Pre Ignition'
-    url: /pgmfi/wiki/library/pre-ignition
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # Pre-Ignition and Detonation (Engine Knock)
 
-Understanding combustion instability is one of the most critical aspects of engine tuning. While terms like "pre-ignition," "detonation," and "knocking" are often used interchangeably to describe engine knock, they refer to different physical phenomena. Both, however, can quickly destroy an engine under load.
+Understanding combustion instability is critical for safe and reliable engine tuning. While terms like "pre-ignition," "detonation," and "knocking" are often used interchangeably, they refer to different physical phenomena. Regardless of the mechanism, both can cause catastrophic engine damage under load.
 
 ---
 
 ## 1. Differentiating Pre-Ignition vs. Detonation
 
-### Detonation (Knock)
-Detonation occurs **after** the spark plug fires. 
+### Detonation (Engine Knock)
+Detonation occurs **after** the spark plug has fired.
 
-As the spark plug ignites the air-fuel mixture, a flame front expands outward, compressing and heating the remaining unburned air-fuel mixture (the "end-gas") in the cylinder. If the temperature and pressure exceed the self-ignition threshold of the fuel, the end-gas spontaneously combusts in a rapid, uncontrolled explosion. This creates high-velocity shock waves that slam into the piston and cylinder walls, producing the characteristic metallic "pinging" sound.
+As the spark plug ignites the air-fuel mixture, a flame front expands outward. This flame front compresses and heats the remaining unburned air-fuel mixture (the "end-gas") in the cylinder. If the temperature and pressure exceed the self-ignition threshold of the fuel, the end-gas spontaneously combusts in a rapid, uncontrolled explosion. This creates high-velocity shock waves that collide with the piston and cylinder walls, producing the characteristic metallic "pinging" sound associated with engine knock.
 
 ### Pre-Ignition
-Pre-ignition occurs **before** the spark plug fires.
+Pre-ignition occurs **before** the spark plug has fired.
 
-This happens when a hot spot inside the combustion chamber—such as a glowing carbon deposit, an overheated spark plug electrode, or a sharp edge on a valve—ignites the air-fuel mixture prematurely. Because the piston is still moving upward, compressing the already burning mixture, cylinder pressures and temperatures spike to extreme levels. Pre-ignition is silent and can melt a piston in seconds.
+This happens when a hot spot inside the combustion chamber—such as a glowing carbon deposit, an overheated spark plug electrode, or a sharp edge on a valve—ignites the air-fuel mixture prematurely. Because the piston is still moving upward, compressing the already-burning mixture, cylinder pressures and temperatures spike to extreme levels. Pre-ignition is typically silent and can melt a piston in seconds.
 
 ---
 
@@ -49,6 +42,6 @@ Combustion anomalies are generally caused by a combination of high cylinder temp
 
 ## 3. Mitigation and Prevention
 
-*   **Pulling Timing:** Standard Honda ECUs utilize a [knock board](/cars/sensors/knock-board) to listen for the specific frequency of detonation. If knock is detected, the ECU temporarily retards (pulls) ignition timing to reduce peak cylinder pressure.
-*   **Rich Air-Fuel Ratios:** Under boost, running a rich AFR (e.g., 11.5:1 on pump gas) cools the combustion chamber, as the excess fuel absorbs heat during vaporization.
-*   **Octane Scaling:** Match your target ignition timing to the octane rating of the fuel. Running aggressive timing maps requires premium high-octane fuel (91/93 octane, E85, or race gas) to suppress detonation.
+*   **Pulling Timing:** Factory Honda ECUs utilize a [knock board](/cars/sensors/knock-board) to detect the specific frequency of detonation. If knock is detected, the ECU temporarily retards (pulls) ignition timing to reduce peak cylinder pressure.
+*   **Rich Air-Fuel Ratios:** Under boost, running a rich AFR (e.g., 11.5:1 on pump gas) helps cool the combustion chamber, as the excess fuel absorbs heat during vaporization.
+*   **Octane Scaling:** Always match your target ignition timing to the octane rating of your fuel. Running aggressive timing maps requires premium, high-octane fuel (91/93 octane, E85, or race gas) to suppress detonation.

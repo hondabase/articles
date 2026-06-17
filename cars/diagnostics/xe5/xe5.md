@@ -21,13 +21,12 @@ sources:
 
 - [PM7-MUG.bin](PM7-MUG.bin): the Mugen XE5 race plaform [ROM](/cars/rom/rom)
 
-
 <figure>
-    <img src="XE5ECU.jpg" alt="Nico&apos;s picture of the cover of a XE5">
-    <figcaption>Nico's picture of the cover of a XE5</figcaption>
+ <img src="XE5ECU.jpg" alt="Nico&apos;s picture of the cover of a XE5">
+ <figcaption>Nico's picture of the cover of a XE5</figcaption>
 </figure>
 
 <figure>
-    <img src="XE5Inside.jpg" alt="Nico&apos;s picture of the insides of a XE5">
-    <figcaption>Nico's picture of the insides of a XE5</figcaption>
+ <img src="XE5Inside.jpg" alt="Nico&apos;s picture of the insides of a XE5">
+ <figcaption>Nico's picture of the insides of a XE5</figcaption>
 </figure>

@@ -22,7 +22,9 @@ sources:
 
 # Desativar Verificação de VSS do VTEC P30 203
 
-Autor: doc 07-10-03 15:21 Fui eu? Ok, numa ROM 203 ou 209, podes alterar a posição 6010 (hex) de 00 para FF para contornar a verificação de [VSS](/cars/sensors/vss) na rotina do VTEC. Se utilizares outra ROM, terás de procurar a localização correta. Eis uma breve instrução de como eu procuraria: Primeiro precisamos de uma desassemblagem (disassembly) da ROM desejada. Escolhe o teu desassemblador favorito e cria o disasm. Procura pela rotina do VTEC. Normalmente procuro por "22.1"; com o desassemblador do a1k0n tens de procurar por "`22h`.1" (não confundir com *OFF* 22.1) e parar quando encontrar uma rotina que se pareça com a seguinte (os endereços e offsets podem ser diferentes, mas o RB 22.1 e o RB 22.0 são iguais em todas as ROMs!):
+**Autor:** doc 07-10-03 15:21 Fui eu? Ok, numa ROM 203 ou 209, podes alterar a posição 6010 (hex) de 00 para FF para contornar a verificação de [VSS](/cars/sensors/vss) na rotina do VTEC. Se utilizares outra ROM, terás de procurar a localização correta. Eis uma breve instrução de como eu procuraria: Primeiro precisamos de uma desassemblagem (disassembly) da ROM desejada. Escolhe o teu desassemblador favorito e cria o disasm. Procura pela rotina do VTEC. Normalmente procuro por "22.1"; com o desassemblador do a1k0n tens de procurar por "`22h`.1" (não confundir com *OFF
+
+* 22.1) e parar quando encontrar uma rotina que se pareça com a seguinte (os endereços e offsets podem ser diferentes, mas o RB 22.1 e o RB 22.0 são iguais em todas as ROMs!):
 
 - 11B9- `C5` 22 09 : RB 22.1 ; Reset Bit Port1.1 VTEC
 - 11BC- CB 24 : SJ 11E2 ; desativar VTEC

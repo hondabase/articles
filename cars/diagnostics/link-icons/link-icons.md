@@ -24,15 +24,19 @@ sources:
 - [http://phpwiki.sourceforge.net/alpha/themes/default/images/mailto.png](http://phpwiki.sourceforge.net/alpha/themes/default/images/mailto.png) mailto link
 - [http://phpwiki.sourceforge.net/alpha/themes/default/images/ftp.png](http://phpwiki.sourceforge.net/alpha/themes/default/images/ftp.png) ftp link
 
-;__Note__: Some of the default icons use the alpha channel feature of the [PNG](http://www.libpng.org/pub/png/png-sitemap.html) image format for smooth rendering on any page color or textured background. Older browsers may not display all the images properly. #  Examples 
+;__Note__: Some of the default icons use the alpha channel feature of the [PNG](http://www.libpng.org/pub/png/png-sitemap.html) image format for smooth rendering on any page color or textured background. Older browsers may not display all the images properly.
 
-The following examples will display with the above link icons only if the administrator has enabled this feature. ##  [Inter Wiki](/cars/rom/inter-wiki) links 
+# Examples 
+
+The following examples will display with the above link icons only if the administrator has enabled this feature.
+
+## [Inter Wiki](/cars/rom/inter-wiki) links 
 
 - [Inter Wiki](/cars/rom/inter-wiki) link [Php Wiki](/cars/sensors/php-wiki):InterWiki
 
 - A named [Inter Wiki](/cars/rom/inter-wiki) read Why Wiki Works at c2.
 
-##  URLs 
+## URLs 
 
 - Email address PhpWiki-talk mailing list
 

@@ -1,16 +1,10 @@
 ---
-summary: 'Pode descobrir-se muita coisa ao ler a etiqueta de uma ECU OBD1. Isto aplica-se principalmente às ECUs de Civic...'
+summary: 'Aprenda a interpretar as etiquetas de identificação nas ECUs Honda OBD1 para determinar a sua origem, compatibilidade com o motor e tipo de transmissão.'
+tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
   obd: [1]
   brand: Acura/Honda
 complexity: intermediate
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - diagnostics
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Label Decode'
@@ -29,4 +23,6 @@ Pode descobrir-se muita coisa ao ler a etiqueta de uma [ECU](/cars/ecu/ecu) [OBD
 - 5 = Auto
 - 2 = placa "11F0"
 
-| *Library.LabelDecode movido de Library.OBD1LabelDecode em 21 Abr 2004 - 15:31 por Home.blundar* - [reverter](https://web.archive.org/web/http://www.pgmfi.org/twiki/bin/rename/Library/LabelDecode?newweb=Library&newtopic=OBD1LabelDecode&confirm=on "Clique para mover o tópico de volta para a localização anterior, com a opção de alterar referências.") | | :--- |
+| *Library. LabelDecode movido de Library. OBD1LabelDecode em 21 Abr 2004 - 15:31 por Home.blundar
+
+* - [reverter](https://web.archive.org/web/http://www.pgmfi.org/twiki/bin/rename/Library/LabelDecode?newweb=Library&newtopic=OBD1LabelDecode&confirm=on "Clique para mover o tópico de volta para a localização anterior, com a opção de alterar referências.") | | :--- |

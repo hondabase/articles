@@ -1,16 +1,10 @@
 ---
-summary: 'P2P (Bin Original) Este Bin é baseado numa P30 com mapas P2P (P2P230). Civic EX Coupe 96-98 OBD2A, Civic EX Coupe 99-00 OBD2B. Informação de Ponto de Ignição...'
+summary: 'Visão geral técnica da ECU Honda Civic EX P2P OBD2, abrangendo configurações de bin de origem, mapas de ponto de ignição e especificações de hardware.'
+tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
   obd: [2]
   brand: Honda
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - diagnostics
 sources:
   - name: 'pgmfi.org wiki'
     title: P2P

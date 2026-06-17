@@ -17,4 +17,4 @@ sources:
 
 # EEPROM
 
-Electrically Erasable Programmable [ROM](/cars/rom/rom)Basically, an [EPROM](/cars/rom/eprom) that can be erased using a [Rom Burner](/cars/ecu/rom-burner) or similar device.
+Electrically Erasable Programmable [ROM](/cars/rom/rom) Basically, an [EPROM](/cars/rom/eprom) that can be erased using a [Rom Burner](/cars/ecu/rom-burner) or similar device.

@@ -1,5 +1,5 @@
 ---
-summary: 'You can find out a lot from reading the label on a OBD1 ECU. This applies mainly to the Civic ECUs...'
+summary: 'Learn how to interpret the identification labels on Honda OBD1 ECUs to determine their origin, engine compatibility, and transmission type.'
 tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
   obd: [1]
@@ -25,4 +25,6 @@ You can find out a lot from reading the label on a [OBD](/cars/wiring/obd)1 [ECU
 - 5 = Auto
 - 2 = "11F0" board
 
-| *Library.LabelDecode moved from Library.OBD1LabelDecode on 21 Apr 2004 - 15:31 by Home.blundar* - [put it back](https://web.archive.org/web/http://www.pgmfi.org/twiki/bin/rename/Library/LabelDecode?newweb=Library&newtopic=OBD1LabelDecode&confirm=on "Click to move topic back to previous location, with option to change references.") | | :--- |
+| *Library. LabelDecode moved from Library. OBD1LabelDecode on 21 Apr 2004 - 15:31 by Home.blundar
+
+* - [put it back](https://web.archive.org/web/http://www.pgmfi.org/twiki/bin/rename/Library/LabelDecode?newweb=Library&newtopic=OBD1LabelDecode&confirm=on "Click to move topic back to previous location, with option to change references.") | | :--- |

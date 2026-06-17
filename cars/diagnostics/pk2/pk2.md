@@ -30,21 +30,21 @@ The PK2 and PH3 [ECU](/cars/ecu/ecu)s share almost the same PC board. Theya re 9
 
 Carotman 
 <figure>
-    <img src="pk2.jpg" alt="pk-2 ECU photo.">
-    <figcaption>pk-2 ECU photo.</figcaption>
+ <img src="pk2.jpg" alt="pk-2 ECU photo.">
+ <figcaption>pk-2 ECU photo.</figcaption>
 </figure>
 
 <figure>
-    <img src="pk2-6640_manual.jpg" alt="Canadian PK2 [ECU](/cars/ecu/ecu)">
-    <figcaption>Canadian PK2 [ECU](/cars/ecu/ecu)</figcaption>
+ <img src="pk2-6640_manual.jpg" alt="Canadian PK2 [ECU](/cars/ecu/ecu)">
+ <figcaption>Canadian PK2 [ECU](/cars/ecu/ecu)</figcaption>
 </figure>
 
 <figure>
-    <img src="pk2-6640_manual_options.jpg" alt="PK2-6640 Options Close-up">
-    <figcaption>PK2-6640 Options Close-up</figcaption>
+ <img src="pk2-6640_manual_options.jpg" alt="PK2-6640 Options Close-up">
+ <figcaption>PK2-6640 Options Close-up</figcaption>
 </figure>
 
 <figure>
-    <img src="BR8-PK2.jpg" alt="BR8 Jumper that seems to control O2 Sensor B input">
-    <figcaption>BR8 Jumper that seems to control O2 Sensor B input</figcaption>
+ <img src="BR8-PK2.jpg" alt="BR8 Jumper that seems to control O2 Sensor B input">
+ <figcaption>BR8 Jumper that seems to control O2 Sensor B input</figcaption>
 </figure>

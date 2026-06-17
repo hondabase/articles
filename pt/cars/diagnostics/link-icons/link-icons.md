@@ -28,9 +28,13 @@ Os [Ícones de Link](/cars/diagnostics/link-icons) são uma nova funcionalidade 
 - [http://phpwiki.sourceforge.net/alpha/themes/default/images/mailto.png](http://phpwiki.sourceforge.net/alpha/themes/default/images/mailto.png) link mailto
 - [http://phpwiki.sourceforge.net/alpha/themes/default/images/ftp.png](http://phpwiki.sourceforge.net/alpha/themes/default/images/ftp.png) link ftp
 
-;__Nota__: Alguns dos ícones padrão usam a funcionalidade de canal alfa do formato de imagem [PNG](http://www.libpng.org/pub/png/png-sitemap.html) para uma renderização suave em qualquer cor de página ou fundo texturado. Navegadores mais antigos podem não exibir todas as imagens corretamente. # Exemplos 
+;__Nota__: Alguns dos ícones padrão usam a funcionalidade de canal alfa do formato de imagem [PNG](http://www.libpng.org/pub/png/png-sitemap.html) para uma renderização suave em qualquer cor de página ou fundo texturado. Navegadores mais antigos podem não exibir todas as imagens corretamente.
 
-Os exemplos seguintes serão exibidos com os ícones de link acima apenas se o administrador tiver ativado esta funcionalidade. ## Links [Inter Wiki](/cars/rom/inter-wiki)
+# Exemplos 
+
+Os exemplos seguintes serão exibidos com os ícones de link acima apenas se o administrador tiver ativado esta funcionalidade.
+
+## Links [Inter Wiki](/cars/rom/inter-wiki)
 
 - Link [Inter Wiki](/cars/rom/inter-wiki) [Php Wiki](/cars/sensors/php-wiki):InterWiki
 

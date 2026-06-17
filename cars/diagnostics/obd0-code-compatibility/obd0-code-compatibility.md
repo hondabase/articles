@@ -1,5 +1,5 @@
 ---
-summary: 'Can you run code from one OBD0 MPFI ECU in another? The short answer to this is yes. The following has been tried before and is known to work successfully:...'
+summary: 'A guide to OBD0 Honda ECU code compatibility. Learn which ECUs can share code and how to successfully interchange binaries between units.'
 tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
   obd: [0]
@@ -27,7 +27,7 @@ Can you run code from one [OBD0 MPFI](/cars/diagnostics/obd0mpfi) [ECU](/cars/ec
 - PS9 in PR4 (see notes)
 
 In theory, the code should additionally interchange almost perfectly among: - PG7
-- Trash.PM6
+- Trash. PM6
 - PM7
 - PS9
 - PR5

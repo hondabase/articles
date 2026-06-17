@@ -1,5 +1,5 @@
 ---
-summary: "On 1720 or 11f0 I've: remove R140, R141 10k add R107, R115, R116 220R I also add (they may not be essential): C94 4u7 16v tant Q20 a143 On 1550150x: remove..."
+summary: 'Step-by-step hardware guide for adding a knock sensor circuit to non-equipped Honda P30 OBD1 ECUs using specific component modifications.'
 tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
   obd: [0, 1, 2]

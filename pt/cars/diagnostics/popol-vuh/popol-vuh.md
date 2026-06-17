@@ -1,13 +1,9 @@
 ---
-summary: 'Descreva Popol Vuh aqui. O meu ID no ORG é opagan, também conhecido por Popola... ok, sou o tipo que enviou o ficheiro Excel que deu origem a esta maravilhosa ideia da Wiki...'
+summary: 'Uma visão histórica do projeto Wiki PGMFI.org, abrangendo as suas origens, desenvolvimento e contribuições da comunidade para a afinação de ECUs Honda.'
+tags: [sensors, reference, diagnostics, ecu]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - sensors
-  - reference
-  - diagnostics
-  - ecu
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Popol Vuh'

@@ -29,8 +29,8 @@ Antes de verificar as definições do software, utilize um multímetro digital n
 - **Verifique se existem Pontes de Solda:** Inspecione os pontos de solda do conetor CN2. Certifique-se de que não existem pontes de solda microscópicas ou resíduos de fluxo a ligar pinos adjacentes.
 - **Verifique a Ligação à Massa:** Verifique se o **Pino 4** (GND) do CN2 tem uma continuidade sólida e de resistência zero com o chassis metálico principal da ECU e com os pinos de massa de alimentação (pinos A26/B2).
 - **Rastreie a Linha de Receção (RX):** Verifique a continuidade do **Pino 2** (RX) do CN2 até ao processador principal OKI 66207:
-  - Em placas com processador de montagem em superfície (a maioria das placas JDM), rastreie até ao **Pino 42**.
-  - Em placas com processador dual-in-line package (DIP) (comum em placas USDM), rastreie até ao **Pino 39**.
+ - Em placas com processador de montagem em superfície (a maioria das placas JDM), rastreie até ao **Pino 42**.
+ - Em placas com processador dual-in-line package (DIP) (comum em placas USDM), rastreie até ao **Pino 39**.
 - **Rastreie a Linha de Transmissão (TX):** Verifique a continuidade do **Pino 1** (TX) do CN2 até ao **Pino 6** do **IC19** (o chip buffer de linha TX de montagem em superfície).
 - **Verificação de Troca de Sinais TX/RX:** O erro de cablagem mais comum é ligar TX com TX e RX com RX. Verifique se o fio RXD do seu adaptador USB para TTL está ligado ao Pino 1 (TX) do CN2, e se o fio TXD está ligado ao Pino 2 (RX) do CN2.
 
@@ -41,12 +41,16 @@ Antes de verificar as definições do software, utilize um multímetro digital n
 Se as pistas de hardware passarem nos testes de continuidade, verifique a configuração do ficheiro binário da ROM gravado no seu chip EEPROM:
 
 ### Desative a Rotina de Checksum
+
 A ROM de uma ECU original calcula constantemente um checksum para verificar a integridade do código. Se carregar código de datalogging personalizado numa ROM, este checksum irá falhar, ativando uma luz de Check Engine (CEL) sólida (sempre acesa) e bloqueando a interface série.
 - **Ação:** Abra a sua ROM no seu editor, aceda ao menu de melhorias (enhancements) e selecione **Remove Checksum Routine** (Remover Rotina de Checksum) antes de gravar o chip.
 
 ### Instale um Plugin de Protocolo de Datalogging
+
 O código original da ROM não envia dados de diagnóstico série pelo conetor `CN2` por padrão. Deve aplicar um plugin de protocolo de datalogging sobre o ficheiro binário:
-- **Ação:** Instale um plugin de protocolo (como o plugin *Quick Datalogger* do Crome). Isto insere ciclos de transmissão série na execução do programa principal da ECU.
+- **Ação:** Instale um plugin de protocolo (como o plugin *Quick Datalogger
+
+* do Crome). Isto insere ciclos de transmissão série na execução do programa principal da ECU.
 - **Correspondência de Baud Rate (Taxa de Transmissão):** Verifique se as definições de ligação do seu software correspondem à taxa de transmissão do protocolo do plugin. Por exemplo, o Quick Datalogger do Crome predefine-se para **38.400 bps**, enquanto os protocolos mais antigos podem funcionar a **9.600 bps** ou **115.200 bps**.
 
 ---
@@ -65,6 +69,7 @@ Se o seu hardware estiver correto e a ROM estiver devidamente configurada, confi
 Para resolver problemas na interface de datalogging sem ter de lidar com a cablagem do carro, pode ligar uma cablagem básica de teste de bancada para alimentar a ECU na sua secretária.
 
 ### Pinagem de Teste de Bancada OBD1
+
 Para inicializar uma ECU Honda OBD1 numa fonte de alimentação de 12V DC, faça as seguintes ligações nas fichas da ECU:
 
 | Tipo de Ligação | Número do Pino da ECU | Descrição |
@@ -78,6 +83,7 @@ Para inicializar uma ECU Honda OBD1 numa fonte de alimentação de 12V DC, faça
 Uma vez alimentada na bancada, ligue o seu conversor USB para TTL ao conetor `CN2` e inicie o seu software de datalogging. Embora o datalogger reporte valores incorretos devido à falta de sensores, deverá ver números ativos a atualizar no seu ecrã, indicando que a interface série está totalmente funcional.
 
 ## Artigos Relacionados
+
 - [Pinagens da Porta Série CN2](/cars/tuning/serial-communication)
 - [Configurar Adaptadores USB para TTL](/cars/tuning/second-gen-usb-to-serial-converter)
-- [Como Interpretar Diagnósticos de Sensores](/cars/diagnostics/honda-error-codes)
+- [Como Interpretar Diagnósticos de Sensores](/cars/diagnostics/diagnostic-trouble-codes)

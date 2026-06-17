@@ -1,5 +1,5 @@
 ---
-summary: 'The Xeltek SuperProZ retails for $249. It is still a parallel interface programmer like most others reviewed, but it supports a wide range of chips, and...'
+summary: 'Technical overview of the Xeltek SuperProZ EPROM programmer, including supported chip types and its use in Honda ECU chipping.'
 tags: [sensors, reference, diagnostics, ecu]
 applies_to:
   obd: [0, 1, 2]

@@ -1,5 +1,5 @@
 ---
-summary: 'Full Throttle ShiftThis is simply an extension of the concept behind FullThrottle Launch (aslo called Launch Control) that allows for a different rev limit...'
+summary: 'A guide to implementing Full Throttle Shift (FTS) in Honda OBD1 ECUs, allowing for faster gear changes by maintaining boost and RPM during shifts.'
 tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
   obd: [1]

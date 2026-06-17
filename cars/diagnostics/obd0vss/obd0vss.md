@@ -17,4 +17,6 @@ sources:
 
 # OBD0VSS
 
-Author: George Date: 12-03-02 22:36 [Vehicle Speed Sensor](/cars/wiring/vehicle-speed-sensor) ([VSS](/cars/sensors/vss)), stored in [RAM](/cars/reference/ram) location `06Ch` does appear to be linear (to my surprise!), but can only read up to ~157kph. Using Excel the formula is approximately: Speed (kph) = 0.6229x - 2.1385
+**Author:** George
+
+**Date:** 12-03-02 22:36 [Vehicle Speed Sensor](/cars/wiring/vehicle-speed-sensor) ([VSS](/cars/sensors/vss)), stored in [RAM](/cars/reference/ram) location `06Ch` does appear to be linear (to my surprise!), but can only read up to ~157kph. Using Excel the formula is approximately: Speed (kph) = 0.6229x - 2.1385
