@@ -1,5 +1,5 @@
 ---
-summary: 'P2T 99+ OBD2 Civic Si Coupe'
+summary: 'Technical specifications and application overview for the 99+ Honda Civic Si ECU.'
 tags: [ecu, reference, sensors]
 applies_to:
   obd: [2]

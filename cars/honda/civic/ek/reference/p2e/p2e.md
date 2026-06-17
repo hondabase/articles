@@ -1,5 +1,5 @@
 ---
-summary: 'P2E 96+ Civic LX (Auto?)'
+summary: 'Technical specifications and application overview for the 96+ Honda Civic LX ECU.'
 tags: [reference]
 applies_to:
   obd: [0, 1, 2]

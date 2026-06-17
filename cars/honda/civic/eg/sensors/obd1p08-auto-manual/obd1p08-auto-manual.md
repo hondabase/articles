@@ -1,5 +1,5 @@
 ---
-summary: 'RP17 and RP18 values : : Automatic RP17 2.7K RP18 4.7K this is for board pn: 02d015501500 Auto to Manual: remove rp17 remove rp18 add a jumper to rp18...'
+summary: 'Technical guide for converting automatic Honda P08 OBD1 ECUs to manual transmission configurations by modifying internal resistor board values.'
 tags: [ecu, reference, sensors]
 applies_to:
   obd: [1]
@@ -31,6 +31,6 @@ sources:
 
 - Not sure about any transistors yet... If someone has a Manual P08 and can take a high quality picture of the top and bottom, Please email them to me.. CRXSi RVtec (mailto:[email protected]) 
 <figure>
-    <img src="PC030021.JPG" alt="[JDM](/cars/sensors/jdm) P08 [ECU](/cars/ecu/ecu)s (auto)">
-    <figcaption>[JDM](/cars/sensors/jdm) P08 [ECU](/cars/ecu/ecu)s (auto)</figcaption>
+ <img src="PC030021.JPG" alt="[JDM](/cars/sensors/jdm) P08 [ECU](/cars/ecu/ecu)s (auto)">
+ <figcaption>[JDM](/cars/sensors/jdm) P08 [ECU](/cars/ecu/ecu)s (auto)</figcaption>
 </figure>

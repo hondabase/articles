@@ -1,5 +1,5 @@
 ---
-summary: 'P2N 96+ OBD2 Civic HX Coupe'
+summary: 'Technical specifications and application overview for the 96+ Honda Civic HX ECU.'
 tags: [ecu, reference, sensors]
 applies_to:
   obd: [2]
