@@ -28,16 +28,24 @@ Como a NVSRAM suporta tanto operações de leitura (pela ECU) como operações d
 Uma placa RTP personalizada fica posicionada entre o encaixe (socket) da placa principal da ECU e o chip NVSRAM. Os circuitos lógicos avaliam os seguintes pinos:
 
 ### Entradas (A partir do Encaixe da ECU / MCU)
-*   **A15:** Linha de Endereço 15 (divide o mapa de memória em segmentos inferior e superior).
-*   **/WR (/WE):** Linha de permissão de escrita (Write Enable) vinda do MCU.
-*   **/OE:** Permissão de Saída (Output Enable) (Pino 22 do encaixe EPROM 27C256 padrão).
-*   **/CS:** Seleção de Chip (Chip Select) (Pino 20 do encaixe EPROM 27C256 padrão).
+
+* **A15:** Linha de Endereço 15 (divide o mapa de memória em segmentos inferior e superior).
+
+* **/WR (/WE):** Linha de permissão de escrita (Write Enable) vinda do MCU.
+
+* **/OE:** Permissão de Saída (Output Enable) (Pino 22 do encaixe EPROM 27C256 padrão).
+
+* **/CS:** Seleção de Chip (Chip Select) (Pino 20 do encaixe EPROM 27C256 padrão).
 
 ### Saídas (Para NVSRAM / Placa Principal)
-*   **/IOWE:** Saída para as linhas de permissão de escrita dos outros periféricos de E/S na placa principal da ECU.
-*   **/WE:** Pino de permissão de escrita (Write Enable) na NVSRAM DS1230.
-*   **/OE:** Pino de permissão de saída (Output Enable) na NVSRAM DS1230.
-*   **/CE:** Pino de permissão de chip (Chip Enable) na NVSRAM DS1230.
+
+* **/IOWE:** Saída para as linhas de permissão de escrita dos outros periféricos de E/S na placa principal da ECU.
+
+* **/WE:** Pino de permissão de escrita (Write Enable) na NVSRAM DS1230.
+
+* **/OE:** Pino de permissão de saída (Output Enable) na NVSRAM DS1230.
+
+* **/CE:** Pino de permissão de chip (Chip Enable) na NVSRAM DS1230.
 
 ---
 
@@ -76,4 +84,5 @@ $$\text{!/WE} = \text{/WE} \text{ NAND } \text{/WE}$$
 $$\text{!A15} = \text{A15} \text{ NAND } \text{A15}$$
 
 ### Isolamento para Programadores
+
 Em designs profissionais de placas de emulação, são colocados um díodo e um transístor nas linhas de permissão de escrita. Isto isola as portas lógicas quando todo o conjunto do emulador é ligado a um programador de EPROM padrão, protegendo os chips lógicos das elevadas tensões de programação (Vpp) aplicadas durante a configuração inicial.

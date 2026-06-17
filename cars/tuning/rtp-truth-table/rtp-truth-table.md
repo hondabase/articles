@@ -28,16 +28,24 @@ Because the NVSRAM supports both read operations (by the ECU) and write operatio
 A custom RTP board sits between the ECU motherboard socket and the NVSRAM chip. The logic circuits evaluate the following pins:
 
 ### Inputs (From ECU Socket / MCU)
-*   **A15:** Address Line 15 (splits the memory map into lower and upper segments).
-*   **/WR (/WE):** Write Enable line from the MCU.
-*   **/OE:** Output Enable (Pin 22 of the standard 27C256 EPROM socket).
-*   **/CS:** Chip Select (Pin 20 of the standard 27C256 EPROM socket).
+
+* **A15:** Address Line 15 (splits the memory map into lower and upper segments).
+
+* **/WR (/WE):** Write Enable line from the MCU.
+
+* **/OE:** Output Enable (Pin 22 of the standard 27C256 EPROM socket).
+
+* **/CS:** Chip Select (Pin 20 of the standard 27C256 EPROM socket).
 
 ### Outputs (To NVSRAM / Motherboard)
-*   **/IOWE:** Output to the Write Enable lines of other I/O peripherals on the ECU motherboard.
-*   **/WE:** Write Enable pin on the DS1230 NVSRAM.
-*   **/OE:** Output Enable pin on the DS1230 NVSRAM.
-*   **/CE:** Chip Enable pin on the DS1230 NVSRAM.
+
+* **/IOWE:** Output to the Write Enable lines of other I/O peripherals on the ECU motherboard.
+
+* **/WE:** Write Enable pin on the DS1230 NVSRAM.
+
+* **/OE:** Output Enable pin on the DS1230 NVSRAM.
+
+* **/CE:** Chip Enable pin on the DS1230 NVSRAM.
 
 ---
 
@@ -76,4 +84,5 @@ $$\text{!/WE} = \text{/WE} \text{ NAND } \text{/WE}$$
 $$\text{!A15} = \text{A15} \text{ NAND } \text{A15}$$
 
 ### Isolation for Burners
+
 In professional emulation board designs, a diode and transistor are placed on the write-enable lines. This isolates the logic gates when the entire emulator assembly is plugged into a standard EPROM programmer, protecting the logic chips from the high programming voltages (Vpp) applied during initial configuration.

@@ -40,9 +40,11 @@ Para garantir que falhas seriais aleatórias não escrevam valores corrompidos n
 2. **Buffer na ECU**: A ECU armazena os dados num buffer de memória temporário ("byte storage" ou "word storage") e envia de volta para o PC um pacote de resposta `Destination Request` (`0xA0` / `0xA1`) contendo os dados recebidos.
 3. **Verificação**: O PC recebe a solicitação de destino e verifica se os dados ecoados correspondem ao que foi enviado.
 4. **Execução**:
-   * Se estiverem corretos, o PC envia um pacote `Destination` (`0x20` / `0x21` / `0x22` / `0x23`) especificando o endereço de memória de destino final.
-   * Ao receber o pacote de destino, a ECU move os dados do buffer para o endereço de destino final no espaço RAM/ROM.
-   * Se a verificação falhar, o PC descarta o buffer e reinicia a partir do Passo 1.
+ * Se estiverem corretos, o PC envia um pacote `Destination` (`0x20` / `0x21` / `0x22` / `0x23`) especificando o endereço de memória de destino final.
+ 
+
+* Ao receber o pacote de destino, a ECU move os dados do buffer para o endereço de destino final no espaço RAM/ROM.
+ * Se a verificação falhar, o PC descarta o buffer e reinicia a partir do Passo 1.
 
 ---
 

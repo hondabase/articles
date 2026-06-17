@@ -41,8 +41,16 @@ Nas placas principais USDM OBD1, a porta `CN2` é composta por 5 pinos. No entan
 
 | Número do Pino | Nome do Sinal | Descrição |
 | :--- | :--- | :--- |
-| **Pino 1** | **TX** | Transmitir (dados enviados *da* ECU *para* o computador) |
-| **Pino 2** | **RX** | Receber (dados enviados *do* computador *para* a ECU) |
+| **Pino 1** | **TX** | Transmitir (dados enviados *da
+
+* ECU *para
+
+* o computador) |
+| **Pino 2** | **RX** | Receber (dados enviados *do
+
+* computador *para
+
+* a ECU) |
 | **Pino 3** | **VCC** (+5V) | Saída de alimentação de 5V da ECU (normalmente deixada **desligada** ao utilizar adaptadores USB com alimentação própria) |
 | **Pino 4** | **GND** | Massa de Sinal / Terra (deve ser ligada ao pino de massa do adaptador USB para estabelecer uma referência comum) |
 | **Pino 5** | **NC** | Não Ligado (frequentemente ausente ou em branco) |

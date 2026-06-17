@@ -29,6 +29,7 @@ Se é novo na afinação (tuning), modificação de chips (chipping) ou diagnós
 Para fornecer o volume correto de combustível, a ECU deve determinar a massa exata de ar que entra nos cilindros. Os fabricantes de automóveis utilizam um de dois métodos principais para calcular isto:
 
 ### Speed-Density (Honda PGM-FI)
+
 Os sistemas Honda mais antigos (OBD0, OBD1, OBD2) dependem exclusivamente do método **Speed-Density** (Velocidade-Densidade). Em vez de medir diretamente o peso do ar, a ECU calcula a massa de ar indiretamente utilizando a Lei dos Gases Ideais:
 
 $$PV = nRT$$
@@ -36,6 +37,7 @@ $$PV = nRT$$
 Ao monitorizar a Pressão Absoluta do Coletor ($P$, através do sensor MAP), a Temperatura do Ar de Admissão ($T$, através do sensor IAT) e a velocidade do motor ($V$, em RPM), a ECU calcula a eficiência volumétrica ($n$) para determinar a massa de ar do cilindro e injeta a quantidade correspondente de combustível.
 
 ### Mass Air Flow (MAF)
+
 Os sistemas MAF utilizam um sensor de fio aquecido diretamente no fluxo de admissão para medir a massa física de ar que entra no motor. Embora comum noutros fabricantes, a Honda só introduziu sensores MAF nas suas principais linhas de modelos no final dos anos 2000.
 
 ---
@@ -45,6 +47,7 @@ Os sistemas MAF utilizam um sensor de fio aquecido diretamente no fluxo de admis
 A ECU atua como o cérebro central, lendo sinais dos sensores de entrada e comandando os atuadores de saída para manter o motor a funcionar de forma suave.
 
 ### Principais Sensores de Entrada
+
 - **Sensor MAP (Manifold Absolute Pressure):** Mede o vácuo ou pressão dentro do coletor de admissão. Esta é a principal entrada utilizada para determinar a carga do motor.
 - **TPS (Throttle Position Sensor):** Mede o ângulo de abertura da borboleta de admissão. Usado para detetar pedidos rápidos de aceleração do condutor para fornecer combustível extra (enriquecimento na transição/tip-in).
 - **Sensor ECT (Engine Coolant Temperature):** Mede a temperatura do motor para ajustar o enriquecimento no arranque a frio e o controlo da ventoinha do radiador.
@@ -52,6 +55,7 @@ A ECU atua como o cérebro central, lendo sinais dos sensores de entrada e coman
 - **Sensores do Distribuidor (TDC, CKP, CYP):** Sensores dentro do distribuidor que monitorizam a velocidade do motor (RPM), a posição do pistão em relação ao Ponto Morto Superior (TDC - Top Dead Center) e a ordem de ignição dos cilindros.
 
 ### Principais Atuadores de Saída
+
 - **Injetores de Combustível:** Solenoides eletromagnéticos que se abrem por uma duração calculada (largura de pulso em milissegundos) para pulverizar combustível.
 - **Bobina de Ignição:** Gera corrente de alta tensão para disparar as velas de ignição num avanço de ignição específico.
 - **Válvula IAC (Idle Air Control):** Modula o ar de desvio (bypass) em redor da borboleta de admissão para manter o ralenti estável sob várias cargas do motor.
@@ -78,6 +82,7 @@ O software de afinação permite que os programadores injetem funcionalidades pe
 - **Multiplicadores de Combustível:** Multiplicadores de calibração personalizados que reduzem a escala de todo o mapa de combustível, permitindo que a ECU controle injetores de combustível de maior capacidade (como injetores DSM de 450cc ou Injector Dynamics de 1000cc).
 
 ## Artigos Relacionados
+
 - [Guia de Referência das Gerações Honda OBD](/cars/wiring/obd)
 - [Como Interpretar Mapas de Combustível e Ignição](/cars/fueling/understanding-maps)
 - [Afinar Motores Modificados para Testes de Emissões](/cars/fueling/tuning-for-smog)

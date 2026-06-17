@@ -39,9 +39,11 @@ To ensure that random serial glitches do not write corrupt values to running eng
 2. **ECU Buffering**: The ECU stores the data in a temporary memory buffer ("byte storage" or "word storage") and echoes a `Destination Request` packet (`0xA0` / `0xA1`) containing the received data back to the PC.
 3. **Verification**: The PC receives the destination request and verifies the echoed data matches what was sent.
 4. **Execution**: 
-   * If correct, the PC sends a `Destination` packet (`0x20` / `0x21` / `0x22` / `0x23`) specifying the final target memory address.
-   * Upon receiving the destination packet, the ECU moves the buffered data to the final target address in RAM/ROM space.
-   * If the verification fails, the PC discards the buffer and restarts from Step 1.
+ * If correct, the PC sends a `Destination` packet (`0x20` / `0x21` / `0x22` / `0x23`) specifying the final target memory address.
+ 
+
+* Upon receiving the destination packet, the ECU moves the buffered data to the final target address in RAM/ROM space.
+ * If the verification fails, the PC discards the buffer and restarts from Step 1.
 
 ---
 

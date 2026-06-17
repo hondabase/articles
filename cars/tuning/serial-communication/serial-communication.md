@@ -40,8 +40,16 @@ On USDM OBD1 motherboards, the `CN2` port consists of 5 pins. However, only 4 pi
 
 | Pin Number | Signal Name | Description |
 | :--- | :--- | :--- |
-| **Pin 1** | **TX** | Transmit (data sent *from* the ECU *to* the computer) |
-| **Pin 2** | **RX** | Receive (data sent *from* the computer *to* the ECU) |
+| **Pin 1** | **TX** | Transmit (data sent *from
+
+* the ECU *to
+
+* the computer) |
+| **Pin 2** | **RX** | Receive (data sent *from
+
+* the computer *to
+
+* the ECU) |
 | **Pin 3** | **VCC** (+5V) | 5V power supply output from the ECU (typically left **disconnected** when using self-powered USB adapters) |
 | **Pin 4** | **GND** | Signal Ground (must connect to the USB adapter ground pin to establish a common reference) |
 | **Pin 5** | **NC** | Not Connected (often absent or blank) |

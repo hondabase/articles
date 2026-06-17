@@ -40,14 +40,15 @@ Unlike older, complex modular boards that required manual configuration of jumpe
 If your datalogging software fails to connect, you can perform a **loopback test** to isolate whether the issue lies in your USB converter/driver or within the ECU itself.
 
 ### Loopback Test Steps
+
 1. Disconnect the USB-to-TTL module from the ECU's `CN2` header.
 2. Using a small jumper wire, connect the module's **TXD** pin directly to its own **RXD** pin.
 3. Plug the module into your laptop's USB port.
 4. Open a serial terminal terminal program (such as PuTTY, Tera Term, or Arduino Serial Monitor).
 5. Select the COM port corresponding to your module (found in Windows Device Manager under *Ports (COM & LPT)*) and configure the connection for **38,400 baud**.
 6. Open the connection and type text in the terminal window:
-   - **If the characters you type appear on the screen:** The USB interface, chip, driver, and laptop configuration are working perfectly. The issue lies in your ECU's `CN2` connections, soldering, ROM firmware, or wiring.
-   - **If nothing appears on screen:** The converter module, USB cable, or drivers are faulty.
+ - **If the characters you type appear on the screen:** The USB interface, chip, driver, and laptop configuration are working perfectly. The issue lies in your ECU's `CN2` connections, soldering, ROM firmware, or wiring.
+ - **If nothing appears on screen:** The converter module, USB cable, or drivers are faulty.
 
 ---
 
@@ -56,6 +57,7 @@ If your datalogging software fails to connect, you can perform a **loopback test
 By default, FTDI and CP2102 USB drivers are configured with a latency timer optimized for high-bandwidth data transfers rather than real-time diagnostics. This default setting (typically **16 ms**) causes laggy datalogging updates, slow refresh rates, or frequent disconnections in programs like Crome or Hondata.
 
 ### How to Adjust Latency in Windows:
+
 1. Open the Windows **Control Panel** and navigate to the **Device Manager**.
 2. Expand the **Ports (COM & LPT)** section.
 3. Right-click your USB-to-Serial COM port and select **Properties**.

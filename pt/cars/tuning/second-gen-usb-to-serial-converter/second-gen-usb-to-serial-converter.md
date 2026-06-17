@@ -41,14 +41,15 @@ Ao contrário das placas modulares mais antigas e complexas que exigiam a config
 Se o seu software de datalogging não se conseguir ligar, pode realizar um **teste de loopback** para isolar se o problema reside no conversor/driver USB ou na própria ECU.
 
 ### Passos do Teste de Loopback
+
 1. Desligue o módulo USB-para-TTL do conector `CN2` da ECU.
 2. Utilizando um pequeno fio de ligação (jumper), ligue o pino **TXD** do módulo diretamente ao seu próprio pino **RXD**.
 3. Ligue o módulo à porta USB do seu portátil.
 4. Abra um programa de terminal de série (como o PuTTY, Tera Term ou o Monitor Série do Arduino).
 5. Selecione a porta COM correspondente ao seu módulo (encontrada no Gestor de Dispositivos do Windows em *Portas (COM e LPT)*) e configure a ligação para **38.400 baud**.
 6. Abra a ligação e digite algum texto na janela do terminal:
-   - **Se os caracteres que digitar aparecerem no ecrã:** A interface USB, o chip, o driver e a configuração do portátil estão a funcionar perfeitamente. O problema reside nas ligações do `CN2` da ECU, soldadura, firmware da ROM ou cablagem.
-   - **Se nada aparecer no ecrã:** O módulo conversor, o cabo USB ou os drivers estão com defeito.
+ - **Se os caracteres que digitar aparecerem no ecrã:** A interface USB, o chip, o driver e a configuração do portátil estão a funcionar perfeitamente. O problema reside nas ligações do `CN2` da ECU, soldadura, firmware da ROM ou cablagem.
+ - **Se nada aparecer no ecrã:** O módulo conversor, o cabo USB ou os drivers estão com defeito.
 
 ---
 
@@ -57,6 +58,7 @@ Se o seu software de datalogging não se conseguir ligar, pode realizar um **tes
 Por padrão, os drivers USB da FTDI e CP2102 estão configurados com um temporizador de latência otimizado para transferências de dados de alta largura de banda, em vez de diagnósticos em tempo real. Esta configuração padrão (normalmente de **16 ms**) causa atualizações lentas de datalogging, taxas de atualização lentas ou desconexões frequentes em programas como o Crome ou Hondata.
 
 ### Como Ajustar a Latência no Windows:
+
 1. Abra o **Painel de Controlo** do Windows e navegue até ao **Gestor de Dispositivos**.
 2. Expanda a secção **Portas (COM e LPT)**.
 3. Clique com o botão direito na sua porta COM USB-para-Série e selecione **Propriedades**.
