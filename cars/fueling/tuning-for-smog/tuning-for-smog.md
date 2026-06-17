@@ -46,15 +46,18 @@ Tuning for emissions requires balancing the air-fuel ratio. `Each` pollutant beh
 To optimize a custom ECU map (such as a Crome or Hondata ROM calibration) for a tailpipe test, focus on low-load cruising ranges (the first 4 to 6 columns of the vacuum maps):
 
 ### Retard Ignition Timing (Cruising Ranges)
+
 Higher compression pistons or shaved cylinder heads speed up flame propagation inside the cylinder. This requires retarding timing to prevent peak cylinder pressures from occurring too early, which creates high combustion temperatures.
 - **Tuning Tip:** Pull **2° to 4° of ignition advance** from columns 1–6 in the RPM ranges tested during the smog test (typically 1,500 to 3,000 RPM). This lowers peak combustion chamber temperatures and significantly reduces NOx emissions.
 
 ### Maintain Closed-Loop Stoichiometry
+
 Do not disable the factory oxygen sensor or run the engine in permanent open loop for an emissions test. 
 - **Tuning Tip:** Ensure the factory 1-wire or 4-wire oxygen sensor is fully functional and active in the ECU software. The ECU must be allowed to cycle back and forth around the stoichiometric target of 14.7:1. This cyclic oscillation allows the catalytic converter to store and release oxygen, enabling the chemical reduction of NOx and oxidation of HC/CO.
 - *Warning:* Disabling the O2 sensor in code will trigger a dashboard Check Engine Light (CEL) or fail OBD2 readiness monitors, resulting in an automatic inspection failure.
 
 ### Control Transient Fueling (Tip-In)
+
 "Tip-in" refers to the brief fuel enrichment dump when the throttle is quickly cracked open. If tip-in enrichment is too aggressive, it will cause momentary rich spikes that show up on the sniffer as high HC and CO.
 - **Tuning Tip:** Smooth out and slightly reduce tip-in fuel tables to prevent transient rich spikes during speed transitions on the dyno rollers.
 

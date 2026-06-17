@@ -12,6 +12,7 @@ complexity: intermediate
 This article serves as a comprehensive, community-driven database of battery voltage offset (dead time / latency) tables for both OEM and aftermarket fuel injectors. In engine tuning, setting correct injector offsets is critical for ensuring stable fueling and idle quality, especially under changing battery voltages.
 
 ### Table of Contents
+
 - [Accel](#accel)
 - [Acura](#acura)
 - [Audi](#audi)
@@ -49,6 +50,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### Peak and Hold
 
 #### Accel 578CC
+
 - **Flow Rate:** 578 CC/min (approx. 55.39 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -62,6 +64,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 24.56V | 0.480 ms |
 
 #### Accel 872CC
+
 - **Flow Rate:** 872 CC/min (approx. 83.56 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -81,6 +84,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### Peak and Hold
 
 #### CL
+
 - **Flow Rate:** 240 CC/min (approx. 23.00 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -95,6 +99,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.220 ms |
 
 ### Integra (92-96 VTEC)
+
 - **Flow Rate:** 240 CC/min (approx. 23.00 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -108,6 +113,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 24.56V | 0.290 ms |
 
 ### NSX
+
 - **Flow Rate:** 240 CC/min (approx. 23.00 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -121,6 +127,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 24.56V | 0.250 ms |
 
 ### RSX (02-04)
+
 - **Flow Rate:** 290 CC/min (approx. 27.79 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -134,6 +141,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 24.56V | 0.430 ms |
 
 ### RSX Type-S (02-04)
+
 - **Flow Rate:** 330 CC/min (approx. 31.62 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -147,6 +155,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 24.56V | 0.500 ms |
 
 ### RDX
+
 - **Flow Rate:** 440 CC/min (approx. 42.17 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -163,6 +172,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ## Audi
 
 ### S4/TT
+
 - **Flow Rate:** 340 CC/min (approx. 32.58 LB/hour)
 - **Impedance:** 14 Ω
 
@@ -180,6 +190,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ## Blitz
 
 ### Blitz 850CC
+
 - **Flow Rate:** 850 CC/min (approx. 81.46 LB/hour)
 - **Impedance:** 14 Ω
 
@@ -199,6 +210,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### Peak and Hold
 
 #### Bosch 1545CC
+
 - **Flow Rate:** 1545 CC/min (approx. 148.06 LB/hour)
 - **Impedance:** 5 Ω
 
@@ -218,6 +230,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### 1000CC
 
 #### 1000CC at 29 PSI
+
 - **Flow Rate:** 816 CC/min (approx. 78.20 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -230,6 +243,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.480 ms |
 
 #### 1000CC at 43.5 PSI
+
 - **Flow Rate:** 1000 CC/min (approx. 95.83 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -242,6 +256,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.680 ms |
 
 #### 1000CC at 58 PSI
+
 - **Flow Rate:** 1155 CC/min (approx. 110.68 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -254,6 +269,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.780 ms |
 
 #### 1000CC at 72 PSI
+
 - **Flow Rate:** 1291 CC/min (approx. 123.72 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -270,6 +286,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ## Deatschwerks
 
 ### Deatschwerks 600CC
+
 - **Flow Rate:** 600 CC/min (approx. 57.50 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -281,6 +298,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.200 ms |
 
 ### Deatschwerks 800CC
+
 - **Flow Rate:** 800 CC/min (approx. 76.66 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -298,6 +316,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### Peak and Hold
 
 #### From phearable.net
+
 - **Flow Rate:** 550 CC/min (approx. 52.71 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -310,6 +329,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.340 ms |
 
 #### Denso 1600CC
+
 - **Flow Rate:** 1600 CC/min (approx. 153.33 LB/hour)
 - **Impedance:** 5 Ω
 
@@ -322,6 +342,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.500 ms |
 
 #### Denso 550CC
+
 - **Flow Rate:** 550 CC/min (approx. 52.71 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -336,6 +357,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.470 ms |
 
 #### Denso 660CC
+
 - **Flow Rate:** 660 CC/min (approx. 63.25 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -350,6 +372,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.470 ms |
 
 #### Denso 720CC
+
 - **Flow Rate:** 720 CC/min (approx. 69.00 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -368,6 +391,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ## Dodge
 
 ### 4.7
+
 - **Flow Rate:** 273 CC/min (approx. 26.16 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -381,6 +405,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.610 ms |
 
 ### SRT-4 (2003)
+
 - **Flow Rate:** 525 CC/min (approx. 50.31 LB/hour)
 - **Impedance:** 13 Ω
 
@@ -394,6 +419,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.080 ms |
 
 ### SRT-4 (2004+)
+
 - **Flow Rate:** 577 CC/min (approx. 55.29 LB/hour)
 - **Impedance:** 13 Ω
 
@@ -407,6 +433,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.390 ms |
 
 ### Viper (96-2002)
+
 - **Flow Rate:** 336 CC/min (approx. 32.20 LB/hour)
 - **Impedance:** 13 Ω
 
@@ -424,6 +451,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ## Edelbrock
 
 ### Edelbrock 630CC
+
 - **Flow Rate:** 630 CC/min (approx. 60.37 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -443,6 +471,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### Motorsport
 
 #### Ford 378CC
+
 - **Flow Rate:** 378 CC/min (approx. 36.22 LB/hour)
 - **Impedance:** 15 Ω
 
@@ -456,6 +485,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.250 ms |
 
 #### Ford 441CC
+
 - **Flow Rate:** 441 CC/min (approx. 42.26 LB/hour)
 - **Impedance:** 14 Ω
 
@@ -469,6 +499,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.420 ms |
 
 #### Ford 809CC
+
 - **Flow Rate:** 809 CC/min (approx. 77.53 LB/hour)
 - **Impedance:** 15 Ω
 
@@ -482,6 +513,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.890 ms |
 
 #### Peak and Hold
+
 - **Flow Rate:** 1600 CC/min (approx. 153.33 LB/hour)
 - **Impedance:** 5 Ω
 
@@ -495,6 +527,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.670 ms |
 
 #### Peak and Hold
+
 - **Flow Rate:** 1680 CC/min (approx. 160.99 LB/hour)
 - **Impedance:** 5 Ω
 
@@ -508,6 +541,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.700 ms |
 
 ### Mustang GT (96-03)
+
 - **Flow Rate:** 200 CC/min (approx. 19.17 LB/hour)
 - **Impedance:** 15 Ω
 
@@ -520,6 +554,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.540 ms |
 
 ### Mustang (84-95)
+
 - **Flow Rate:** 200 CC/min (approx. 19.17 LB/hour)
 - **Impedance:** 15 Ω
 
@@ -533,6 +568,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.110 ms |
 
 ### Mustang Cobra
+
 - **Flow Rate:** 252 CC/min (approx. 24.15 LB/hour)
 - **Impedance:** 15 Ω
 
@@ -552,6 +588,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### Peak and Hold
 
 #### Fuel Injector Clinic 650CC
+
 - **Flow Rate:** 650 CC/min (approx. 62.29 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -565,6 +602,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.390 ms |
 
 #### Fuel Injector Clinic 850CC
+
 - **Flow Rate:** 850 CC/min (approx. 81.46 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -578,6 +616,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.380 ms |
 
 #### Fuel Injector Clinic 950CC
+
 - **Flow Rate:** 950 CC/min (approx. 91.04 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -597,6 +636,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### Peak and Hold
 
 #### HKS 1000CC
+
 - **Flow Rate:** 1000 CC/min (approx. 95.83 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -617,6 +657,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### Peak and Hold
 
 #### Hahn Racecraft 625CC
+
 - **Flow Rate:** 625 CC/min (approx. 59.89 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -636,6 +677,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### Peak and Hold
 
 #### Holley 788CC
+
 - **Flow Rate:** 788 CC/min (approx. 75.51 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -655,6 +697,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### Peak and Hold
 
 #### All Models (86-91) from Phearable.net
+
 - **Flow Rate:** 240 CC/min (approx. 23.00 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -667,6 +710,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.140 ms |
 
 #### All Models (86-91)
+
 - **Flow Rate:** 240 CC/min (approx. 23.00 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -680,6 +724,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 24.56V | 0.250 ms |
 
 #### Prelude (92-96 VTEC)
+
 - **Flow Rate:** 330 CC/min (approx. 31.62 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -694,6 +739,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.210 ms |
 
 ### Civic (92-00 EX/SI)
+
 - **Flow Rate:** 240 CC/min (approx. 23.00 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -707,6 +753,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 24.56V | 0.320 ms |
 
 ### Civic (92-00 LX/DX/HX)
+
 - **Flow Rate:** 190 CC/min (approx. 18.21 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -721,6 +768,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.310 ms |
 
 ### Civic (01-Up LX/DX/HX)
+
 - **Flow Rate:** 215 CC/min (approx. 20.60 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -735,6 +783,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.470 ms |
 
 ### Civic (01-Up EX)
+
 - **Flow Rate:** 240 CC/min (approx. 23.00 LB/hour)
 - **Impedance:** 11 Ω
 
@@ -748,6 +797,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 24.56V | 0.360 ms |
 
 ### Civic (03-Up SI) (CRV 02+)
+
 - **Flow Rate:** 290 CC/min (approx. 27.79 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -761,6 +811,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 24.56V | 0.530 ms |
 
 ### Civic (06-Up SI)
+
 - **Flow Rate:** 330 CC/min (approx. 31.62 LB/hour)
 - **Impedance:** 10 Ω
 
@@ -774,6 +825,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 24.56V | 0.420 ms |
 
 ### Prelude (97-02)
+
 - **Flow Rate:** 290 CC/min (approx. 27.79 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -788,6 +840,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.440 ms |
 
 ### S2000
+
 - **Flow Rate:** 360 CC/min (approx. 34.50 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -808,6 +861,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### ID725
 
 #### ID725 at 40 PSI
+
 - **Flow Rate:** 690 CC/min (approx. 66.12 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -819,6 +873,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.660 ms |
 
 #### ID725 at 43.5 PSI
+
 - **Flow Rate:** 715 CC/min (approx. 68.52 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -830,6 +885,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.730 ms |
 
 #### ID725 at 45 PSI
+
 - **Flow Rate:** 730 CC/min (approx. 69.96 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -841,6 +897,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.735 ms |
 
 #### ID725 at 50 PSI
+
 - **Flow Rate:** 770 CC/min (approx. 73.79 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -852,6 +909,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.770 ms |
 
 #### ID725 at 55 PSI
+
 - **Flow Rate:** 810 CC/min (approx. 77.62 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -863,6 +921,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.805 ms |
 
 #### ID725 at 60 PSI
+
 - **Flow Rate:** 850 CC/min (approx. 81.46 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -874,6 +933,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.835 ms |
 
 #### ID725 at 65 PSI
+
 - **Flow Rate:** 890 CC/min (approx. 85.29 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -885,6 +945,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.860 ms |
 
 #### ID725 at 70 PSI
+
 - **Flow Rate:** 925 CC/min (approx. 88.64 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -896,6 +957,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.865 ms |
 
 #### ID725 at 75 PSI
+
 - **Flow Rate:** 960 CC/min (approx. 92.00 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -907,6 +969,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.905 ms |
 
 #### ID725 at 80 PSI
+
 - **Flow Rate:** 990 CC/min (approx. 94.87 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -918,6 +981,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.930 ms |
 
 #### ID725 at 85 PSI
+
 - **Flow Rate:** 1020 CC/min (approx. 97.75 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -929,6 +993,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.955 ms |
 
 #### ID725 at 90 PSI
+
 - **Flow Rate:** 1050 CC/min (approx. 100.62 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -940,6 +1005,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.985 ms |
 
 #### ID725 at 95 PSI
+
 - **Flow Rate:** 1080 CC/min (approx. 103.50 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -951,6 +1017,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.020 ms |
 
 #### ID725 at 100 PSI
+
 - **Flow Rate:** 1110 CC/min (approx. 106.37 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -961,6 +1028,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.055 ms |
 
 #### ID725 at 105 PSI
+
 - **Flow Rate:** 1140 CC/min (approx. 109.25 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -971,6 +1039,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.020 ms |
 
 #### ID725 at 110 PSI
+
 - **Flow Rate:** 1170 CC/min (approx. 112.12 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -981,6 +1050,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.055 ms |
 
 #### ID725 at 115 PSI
+
 - **Flow Rate:** 1200 CC/min (approx. 115.00 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -991,6 +1061,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.055 ms |
 
 #### ID725 at 120 PSI
+
 - **Flow Rate:** 1235 CC/min (approx. 118.35 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1003,6 +1074,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### ID850
 
 #### ID850 at 40 PSI
+
 - **Flow Rate:** 845 CC/min (approx. 80.98 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1014,6 +1086,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.710 ms |
 
 #### ID850 at 43.5 PSI
+
 - **Flow Rate:** 885 CC/min (approx. 84.81 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1025,6 +1098,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.730 ms |
 
 #### ID850 at 45 PSI
+
 - **Flow Rate:** 905 CC/min (approx. 86.73 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1036,6 +1110,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.735 ms |
 
 #### ID850 at 50 PSI
+
 - **Flow Rate:** 955 CC/min (approx. 91.52 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1047,6 +1122,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.770 ms |
 
 #### ID850 at 55 PSI
+
 - **Flow Rate:** 1005 CC/min (approx. 96.31 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1058,6 +1134,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.805 ms |
 
 #### ID850 at 60 PSI
+
 - **Flow Rate:** 1050 CC/min (approx. 100.62 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1069,6 +1146,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.835 ms |
 
 #### ID850 at 65 PSI
+
 - **Flow Rate:** 1090 CC/min (approx. 104.45 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1080,6 +1158,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.860 ms |
 
 #### ID850 at 70 PSI
+
 - **Flow Rate:** 1130 CC/min (approx. 108.29 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1091,6 +1170,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.865 ms |
 
 #### ID850 at 75 PSI
+
 - **Flow Rate:** 1170 CC/min (approx. 112.12 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1101,6 +1181,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.905 ms |
 
 #### ID850 at 80 PSI
+
 - **Flow Rate:** 1205 CC/min (approx. 115.48 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1111,6 +1192,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.930 ms |
 
 #### ID850 at 85 PSI
+
 - **Flow Rate:** 1240 CC/min (approx. 118.83 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1121,6 +1203,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.955 ms |
 
 #### ID850 at 90 PSI
+
 - **Flow Rate:** 1275 CC/min (approx. 122.18 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1131,6 +1214,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.985 ms |
 
 #### ID850 at 95 PSI
+
 - **Flow Rate:** 1310 CC/min (approx. 125.54 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1141,6 +1225,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.020 ms |
 
 #### ID850 at 100 PSI
+
 - **Flow Rate:** 1350 CC/min (approx. 129.37 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1153,6 +1238,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### ID1000
 
 #### ID1000 at 40 PSI
+
 - **Flow Rate:** 980 CC/min (approx. 93.91 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1164,6 +1250,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.800 ms |
 
 #### ID1000 at 43.5 PSI
+
 - **Flow Rate:** 1015 CC/min (approx. 97.27 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1175,6 +1262,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.805 ms |
 
 #### ID1000 at 45 PSI
+
 - **Flow Rate:** 1035 CC/min (approx. 99.18 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1186,6 +1274,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.810 ms |
 
 #### ID1000 at 50 PSI
+
 - **Flow Rate:** 1085 CC/min (approx. 103.98 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1197,6 +1286,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.815 ms |
 
 #### ID1000 at 55 PSI
+
 - **Flow Rate:** 1135 CC/min (approx. 108.77 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1208,6 +1298,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.820 ms |
 
 #### ID1000 at 60 PSI
+
 - **Flow Rate:** 1180 CC/min (approx. 113.08 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1219,6 +1310,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.845 ms |
 
 #### ID1000 at 65 PSI
+
 - **Flow Rate:** 1225 CC/min (approx. 117.39 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1230,6 +1322,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.880 ms |
 
 #### ID1000 at 70 PSI
+
 - **Flow Rate:** 1265 CC/min (approx. 121.22 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1241,6 +1334,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.925 ms |
 
 #### ID1000 at 75 PSI
+
 - **Flow Rate:** 1305 CC/min (approx. 125.06 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1251,6 +1345,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.975 ms |
 
 #### ID1000 at 80 PSI
+
 - **Flow Rate:** 1345 CC/min (approx. 128.89 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1261,6 +1356,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.020 ms |
 
 #### ID1000 at 85 PSI
+
 - **Flow Rate:** 1390 CC/min (approx. 133.20 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1271,6 +1367,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.060 ms |
 
 #### ID1000 at 90 PSI
+
 - **Flow Rate:** 1435 CC/min (approx. 137.52 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1281,6 +1378,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.095 ms |
 
 #### ID1000 at 95 PSI
+
 - **Flow Rate:** 1485 CC/min (approx. 142.31 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1291,6 +1389,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.125 ms |
 
 #### ID1000 at 100 PSI
+
 - **Flow Rate:** 1530 CC/min (approx. 146.62 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1303,6 +1402,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### ID1050x
 
 #### ID1050x at 40 PSI
+
 - **Flow Rate:** 1020 CC/min (approx. 97.75 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1314,6 +1414,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.790 ms |
 
 #### ID1050x at 43.5 PSI
+
 - **Flow Rate:** 1065 CC/min (approx. 102.06 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1325,6 +1426,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.795 ms |
 
 #### ID1050x at 45 PSI
+
 - **Flow Rate:** 1085 CC/min (approx. 103.98 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1336,6 +1438,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.800 ms |
 
 #### ID1050x at 50 PSI
+
 - **Flow Rate:** 1145 CC/min (approx. 109.73 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1347,6 +1450,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.825 ms |
 
 #### ID1050x at 55 PSI
+
 - **Flow Rate:** 1205 CC/min (approx. 115.48 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1358,6 +1462,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.845 ms |
 
 #### ID1050x at 60 PSI
+
 - **Flow Rate:** 1260 CC/min (approx. 120.75 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1369,6 +1474,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.860 ms |
 
 #### ID1050x at 65 PSI
+
 - **Flow Rate:** 1305 CC/min (approx. 125.06 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1380,6 +1486,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.855 ms |
 
 #### ID1050x at 70 PSI
+
 - **Flow Rate:** 1350 CC/min (approx. 129.37 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1391,6 +1498,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.850 ms |
 
 #### ID1050x at 75 PSI
+
 - **Flow Rate:** 1390 CC/min (approx. 133.20 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1402,6 +1510,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.850 ms |
 
 #### ID1050x at 80 PSI
+
 - **Flow Rate:** 1420 CC/min (approx. 136.08 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1413,6 +1522,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.850 ms |
 
 #### ID1050x at 85 PSI
+
 - **Flow Rate:** 1455 CC/min (approx. 139.43 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1424,6 +1534,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.855 ms |
 
 #### ID1050x at 90 PSI
+
 - **Flow Rate:** 1490 CC/min (approx. 142.79 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1435,6 +1546,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.865 ms |
 
 #### ID1050x at 95 PSI
+
 - **Flow Rate:** 1530 CC/min (approx. 146.62 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1446,6 +1558,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.880 ms |
 
 #### ID1050x at 100 PSI
+
 - **Flow Rate:** 1565 CC/min (approx. 149.97 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1459,6 +1572,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### ID1050-XDS
 
 #### ID1050-XDS at 40 PSI
+
 - **Flow Rate:** 1020 CC/min (approx. 97.75 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1470,6 +1584,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.790 ms |
 
 #### ID1050-XDS at 43.5 PSI
+
 - **Flow Rate:** 1065 CC/min (approx. 102.06 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1481,6 +1596,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.795 ms |
 
 #### ID1050-XDS at 45 PSI
+
 - **Flow Rate:** 1085 CC/min (approx. 103.98 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1492,6 +1608,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.800 ms |
 
 #### ID1050-XDS at 50 PSI
+
 - **Flow Rate:** 1145 CC/min (approx. 109.73 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1503,6 +1620,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.825 ms |
 
 #### ID1050-XDS at 55 PSI
+
 - **Flow Rate:** 1205 CC/min (approx. 115.48 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1514,6 +1632,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.845 ms |
 
 #### ID1050-XDS at 60 PSI
+
 - **Flow Rate:** 1260 CC/min (approx. 120.75 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1525,6 +1644,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.860 ms |
 
 #### ID1050-XDS at 65 PSI
+
 - **Flow Rate:** 1305 CC/min (approx. 125.06 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1536,6 +1656,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.855 ms |
 
 #### ID1050-XDS at 70 PSI
+
 - **Flow Rate:** 1350 CC/min (approx. 129.37 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1547,6 +1668,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.850 ms |
 
 #### ID1050-XDS at 75 PSI
+
 - **Flow Rate:** 1390 CC/min (approx. 133.20 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1558,6 +1680,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.850 ms |
 
 #### ID1050-XDS at 80 PSI
+
 - **Flow Rate:** 1420 CC/min (approx. 136.08 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1569,6 +1692,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.850 ms |
 
 #### ID1050-XDS at 85 PSI
+
 - **Flow Rate:** 1455 CC/min (approx. 139.43 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1580,6 +1704,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.855 ms |
 
 #### ID1050-XDS at 90 PSI
+
 - **Flow Rate:** 1490 CC/min (approx. 142.79 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1591,6 +1716,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.865 ms |
 
 #### ID1050-XDS at 95 PSI
+
 - **Flow Rate:** 1530 CC/min (approx. 146.62 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1602,6 +1728,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.880 ms |
 
 #### ID1050-XDS at 100 PSI
+
 - **Flow Rate:** 1565 CC/min (approx. 149.97 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1615,6 +1742,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### ID1300x
 
 #### ID1300x at 43.5 PSI
+
 - **Flow Rate:** 1345 CC/min (approx. 128.89 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1626,6 +1754,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.750 ms |
 
 #### ID1300x at 45 PSI
+
 - **Flow Rate:** 1365 CC/min (approx. 130.81 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1637,6 +1766,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.760 ms |
 
 #### ID1300x at 50 PSI
+
 - **Flow Rate:** 1445 CC/min (approx. 138.47 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1648,6 +1778,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.790 ms |
 
 #### ID1300x at 55 PSI
+
 - **Flow Rate:** 1520 CC/min (approx. 145.66 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1659,6 +1790,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.820 ms |
 
 #### ID1300x at 60 PSI
+
 - **Flow Rate:** 1590 CC/min (approx. 152.37 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1670,6 +1802,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.845 ms |
 
 #### ID1300x at 65 PSI
+
 - **Flow Rate:** 1655 CC/min (approx. 158.60 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1681,6 +1814,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.875 ms |
 
 #### ID1300x at 70 PSI
+
 - **Flow Rate:** 1715 CC/min (approx. 164.35 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1691,6 +1825,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.900 ms |
 
 #### ID1300x at 75 PSI
+
 - **Flow Rate:** 1775 CC/min (approx. 170.10 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1701,6 +1836,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.930 ms |
 
 #### ID1300x at 80 PSI
+
 - **Flow Rate:** 1830 CC/min (approx. 175.37 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1710,6 +1846,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.960 ms |
 
 #### ID1300x at 85 PSI
+
 - **Flow Rate:** 1885 CC/min (approx. 180.64 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1719,6 +1856,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.995 ms |
 
 #### ID1300x at 90 PSI
+
 - **Flow Rate:** 1935 CC/min (approx. 185.43 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1730,6 +1868,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### ID1300x²
 
 #### ID1300x² at 40 PSI
+
 - **Flow Rate:** 1275 CC/min (approx. 122.18 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1741,6 +1880,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.855 ms |
 
 #### ID1300x² at 43.5 PSI
+
 - **Flow Rate:** 1335 CC/min (approx. 127.93 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1752,6 +1892,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.865 ms |
 
 #### ID1300x² at 45 PSI
+
 - **Flow Rate:** 1360 CC/min (approx. 130.33 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1763,6 +1904,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.870 ms |
 
 #### ID1300x² at 50 PSI
+
 - **Flow Rate:** 1440 CC/min (approx. 138.00 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1774,6 +1916,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.880 ms |
 
 #### ID1300x² at 55 PSI
+
 - **Flow Rate:** 1520 CC/min (approx. 145.66 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1785,6 +1928,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.895 ms |
 
 #### ID1300x² at 60 PSI
+
 - **Flow Rate:** 1590 CC/min (approx. 152.37 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1796,6 +1940,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.915 ms |
 
 #### ID1300x² at 65 PSI
+
 - **Flow Rate:** 1655 CC/min (approx. 158.60 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1807,6 +1952,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.935 ms |
 
 #### ID1300x² at 70 PSI
+
 - **Flow Rate:** 1715 CC/min (approx. 164.35 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1818,6 +1964,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.960 ms |
 
 #### ID1300x² at 75 PSI
+
 - **Flow Rate:** 1770 CC/min (approx. 169.62 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1829,6 +1976,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.975 ms |
 
 #### ID1300x² at 80 PSI
+
 - **Flow Rate:** 1820 CC/min (approx. 174.41 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1840,6 +1988,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.990 ms |
 
 #### ID1300x² at 85 PSI
+
 - **Flow Rate:** 1860 CC/min (approx. 178.24 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1850,6 +1999,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.005 ms |
 
 #### ID1300x² at 90 PSI
+
 - **Flow Rate:** 1860 CC/min (approx. 178.24 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1860,6 +2010,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.005 ms |
 
 #### ID1300x² at 95 PSI
+
 - **Flow Rate:** 1925 CC/min (approx. 184.47 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1870,6 +2021,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.050 ms |
 
 #### ID1300x² at 100 PSI
+
 - **Flow Rate:** 1950 CC/min (approx. 186.87 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1882,6 +2034,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### ID1300-XDS
 
 #### ID1300-XDS at 40 PSI
+
 - **Flow Rate:** 1275 CC/min (approx. 122.18 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1893,6 +2046,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.855 ms |
 
 #### ID1300-XDS at 43.5 PSI
+
 - **Flow Rate:** 1335 CC/min (approx. 127.93 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1904,6 +2058,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.865 ms |
 
 #### ID1300-XDS at 45 PSI
+
 - **Flow Rate:** 1360 CC/min (approx. 130.33 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1915,6 +2070,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.870 ms |
 
 #### ID1300-XDS at 50 PSI
+
 - **Flow Rate:** 1440 CC/min (approx. 138.00 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1926,6 +2082,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.880 ms |
 
 #### ID1300-XDS at 55 PSI
+
 - **Flow Rate:** 1520 CC/min (approx. 145.66 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1937,6 +2094,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.895 ms |
 
 #### ID1300-XDS at 60 PSI
+
 - **Flow Rate:** 1590 CC/min (approx. 152.37 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1948,6 +2106,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.915 ms |
 
 #### ID1300-XDS at 65 PSI
+
 - **Flow Rate:** 1655 CC/min (approx. 158.60 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1959,6 +2118,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.935 ms |
 
 #### ID1300-XDS at 70 PSI
+
 - **Flow Rate:** 1715 CC/min (approx. 164.35 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1970,6 +2130,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.960 ms |
 
 #### ID1300-XDS at 75 PSI
+
 - **Flow Rate:** 1770 CC/min (approx. 169.62 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1981,6 +2142,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.975 ms |
 
 #### ID1300-XDS at 80 PSI
+
 - **Flow Rate:** 1820 CC/min (approx. 174.41 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -1992,6 +2154,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.990 ms |
 
 #### ID1300-XDS at 85 PSI
+
 - **Flow Rate:** 1860 CC/min (approx. 178.24 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2002,6 +2165,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.005 ms |
 
 #### ID1300-XDS at 90 PSI
+
 - **Flow Rate:** 1895 CC/min (approx. 181.60 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2012,6 +2176,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.025 ms |
 
 #### ID1300-XDS at 95 PSI
+
 - **Flow Rate:** 1925 CC/min (approx. 184.47 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2022,6 +2187,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.050 ms |
 
 #### ID1300-XDS at 100 PSI
+
 - **Flow Rate:** 1950 CC/min (approx. 186.87 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2034,6 +2200,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### ID1700x
 
 #### ID1700x at 43.5 PSI
+
 - **Flow Rate:** 1725 CC/min (approx. 165.31 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2045,6 +2212,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.800 ms |
 
 #### ID1700x at 45 PSI
+
 - **Flow Rate:** 1760 CC/min (approx. 168.66 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2056,6 +2224,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.805 ms |
 
 #### ID1700x at 50 PSI
+
 - **Flow Rate:** 1855 CC/min (approx. 177.76 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2067,6 +2236,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.830 ms |
 
 #### ID1700x at 55 PSI
+
 - **Flow Rate:** 1950 CC/min (approx. 186.87 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2078,6 +2248,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.855 ms |
 
 #### ID1700x at 60 PSI
+
 - **Flow Rate:** 2040 CC/min (approx. 195.49 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2089,6 +2260,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.885 ms |
 
 #### ID1700x at 65 PSI
+
 - **Flow Rate:** 2125 CC/min (approx. 203.64 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2100,6 +2272,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.920 ms |
 
 #### ID1700x at 70 PSI
+
 - **Flow Rate:** 2205 CC/min (approx. 211.31 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2110,6 +2283,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.960 ms |
 
 #### ID1700x at 75 PSI
+
 - **Flow Rate:** 2285 CC/min (approx. 218.97 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2120,6 +2294,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.995 ms |
 
 #### ID1700x at 80 PSI
+
 - **Flow Rate:** 2360 CC/min (approx. 226.16 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2130,6 +2305,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.025 ms |
 
 #### ID1700x at 85 PSI
+
 - **Flow Rate:** 2435 CC/min (approx. 233.35 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2140,6 +2316,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.055 ms |
 
 #### ID1700x at 90 PSI
+
 - **Flow Rate:** 2505 CC/min (approx. 240.05 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2150,6 +2327,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.085 ms |
 
 #### ID1700x at 95 PSI
+
 - **Flow Rate:** 2575 CC/min (approx. 246.76 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2159,6 +2337,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.120 ms |
 
 #### ID1700x at 100 PSI
+
 - **Flow Rate:** 2640 CC/min (approx. 252.99 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2170,6 +2349,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### ID1750-XDS
 
 #### ID1750-XDS at 43.5 PSI
+
 - **Flow Rate:** 1728 CC/min (approx. 165.59 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2181,6 +2361,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.689 ms |
 
 #### ID1750-XDS at 45 PSI
+
 - **Flow Rate:** 1759 CC/min (approx. 168.56 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2192,6 +2373,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.695 ms |
 
 #### ID1750-XDS at 50 PSI
+
 - **Flow Rate:** 1858 CC/min (approx. 178.05 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2203,6 +2385,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.714 ms |
 
 #### ID1750-XDS at 55 PSI
+
 - **Flow Rate:** 1953 CC/min (approx. 187.16 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2214,6 +2397,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.737 ms |
 
 #### ID1750-XDS at 60 PSI
+
 - **Flow Rate:** 2044 CC/min (approx. 195.88 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2225,6 +2409,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.766 ms |
 
 #### ID1750-XDS at 65 PSI
+
 - **Flow Rate:** 2131 CC/min (approx. 204.21 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2236,6 +2421,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.804 ms |
 
 #### ID1750-XDS at 70 PSI
+
 - **Flow Rate:** 2216 CC/min (approx. 212.36 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2246,6 +2432,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.844 ms |
 
 #### ID1750-XDS at 75 PSI
+
 - **Flow Rate:** 2296 CC/min (approx. 220.03 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2256,6 +2443,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.878 ms |
 
 #### ID1750-XDS at 80 PSI
+
 - **Flow Rate:** 2373 CC/min (approx. 227.40 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2266,6 +2454,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.908 ms |
 
 #### ID1750-XDS at 85 PSI
+
 - **Flow Rate:** 2446 CC/min (approx. 234.40 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2276,6 +2465,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.936 ms |
 
 #### ID1750-XDS at 90 PSI
+
 - **Flow Rate:** 2515 CC/min (approx. 241.01 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2286,6 +2476,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.968 ms |
 
 #### ID1750-XDS at 95 PSI
+
 - **Flow Rate:** 2582 CC/min (approx. 247.43 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2296,6 +2487,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.000 ms |
 
 #### ID1750-XDS at 100 PSI
+
 - **Flow Rate:** 2645 CC/min (approx. 253.47 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2308,6 +2500,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### ID2000
 
 #### ID2000 at 43.5 PSI
+
 - **Flow Rate:** 2225 CC/min (approx. 213.22 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2319,6 +2512,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.375 ms |
 
 #### ID2000 at 45 PSI
+
 - **Flow Rate:** 2255 CC/min (approx. 216.10 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2330,6 +2524,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.380 ms |
 
 #### ID2000 at 50 PSI
+
 - **Flow Rate:** 2365 CC/min (approx. 226.64 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2341,6 +2536,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.405 ms |
 
 #### ID2000 at 55 PSI
+
 - **Flow Rate:** 2470 CC/min (approx. 236.70 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2352,6 +2548,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.430 ms |
 
 #### ID2000 at 60 PSI
+
 - **Flow Rate:** 2575 CC/min (approx. 246.76 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2363,6 +2560,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.455 ms |
 
 #### ID2000 at 65 PSI
+
 - **Flow Rate:** 2680 CC/min (approx. 256.82 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2374,6 +2572,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.475 ms |
 
 #### ID2000 at 70 PSI
+
 - **Flow Rate:** 2780 CC/min (approx. 266.41 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2385,6 +2584,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.495 ms |
 
 #### ID2000 at 75 PSI
+
 - **Flow Rate:** 2875 CC/min (approx. 275.51 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2396,6 +2596,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.505 ms |
 
 #### ID2000 at 80 PSI
+
 - **Flow Rate:** 2970 CC/min (approx. 284.62 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2407,6 +2608,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.515 ms |
 
 #### ID2000 at 85 PSI
+
 - **Flow Rate:** 3055 CC/min (approx. 292.76 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2418,6 +2620,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.520 ms |
 
 #### ID2000 at 90 PSI
+
 - **Flow Rate:** 3140 CC/min (approx. 300.91 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2429,6 +2632,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.540 ms |
 
 #### ID2000 at 95 PSI
+
 - **Flow Rate:** 3225 CC/min (approx. 309.05 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2440,6 +2644,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.565 ms |
 
 #### ID2000 at 100 PSI
+
 - **Flow Rate:** 3300 CC/min (approx. 316.24 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2451,6 +2656,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.590 ms |
 
 #### ID2000 at 105 PSI
+
 - **Flow Rate:** 3375 CC/min (approx. 323.43 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2462,6 +2668,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.605 ms |
 
 #### ID2000 at 110 PSI
+
 - **Flow Rate:** 3445 CC/min (approx. 330.13 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2473,6 +2680,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.615 ms |
 
 #### ID2000 at 115 PSI
+
 - **Flow Rate:** 3515 CC/min (approx. 336.84 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2484,6 +2692,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.630 ms |
 
 #### ID2000 at 120 PSI
+
 - **Flow Rate:** 3580 CC/min (approx. 343.07 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2495,6 +2704,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.665 ms |
 
 #### ID2000 at 125 PSI
+
 - **Flow Rate:** 3645 CC/min (approx. 349.30 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2506,6 +2716,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.715 ms |
 
 #### ID2000 at 130 PSI
+
 - **Flow Rate:** 3710 CC/min (approx. 355.53 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2519,6 +2730,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### ID2600-XDS
 
 #### ID2600-XDS at 43.5 PSI
+
 - **Flow Rate:** 2600 CC/min (approx. 249.16 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2531,6 +2743,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 18.00V | 0.275 ms |
 
 #### ID2600-XDS at 45 PSI
+
 - **Flow Rate:** 2645 CC/min (approx. 253.47 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2543,6 +2756,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 18.00V | 0.285 ms |
 
 #### ID2600-XDS at 50 PSI
+
 - **Flow Rate:** 2780 CC/min (approx. 266.41 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2555,6 +2769,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 18.00V | 0.305 ms |
 
 #### ID2600-XDS at 55 PSI
+
 - **Flow Rate:** 2900 CC/min (approx. 277.91 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2567,6 +2782,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 18.00V | 0.325 ms |
 
 #### ID2600-XDS at 60 PSI
+
 - **Flow Rate:** 3025 CC/min (approx. 289.89 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2579,6 +2795,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 18.00V | 0.350 ms |
 
 #### ID2600-XDS at 65 PSI
+
 - **Flow Rate:** 3140 CC/min (approx. 300.91 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2591,6 +2808,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 18.00V | 0.380 ms |
 
 #### ID2600-XDS at 70 PSI
+
 - **Flow Rate:** 3255 CC/min (approx. 311.93 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2603,6 +2821,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 18.00V | 0.415 ms |
 
 #### ID2600-XDS at 75 PSI
+
 - **Flow Rate:** 3370 CC/min (approx. 322.95 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2615,6 +2834,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 18.00V | 0.445 ms |
 
 #### ID2600-XDS at 80 PSI
+
 - **Flow Rate:** 3485 CC/min (approx. 333.97 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2627,6 +2847,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 18.00V | 0.475 ms |
 
 #### ID2600-XDS at 85 PSI
+
 - **Flow Rate:** 3595 CC/min (approx. 344.51 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2639,6 +2860,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 18.00V | 0.520 ms |
 
 #### ID2600-XDS at 90 PSI
+
 - **Flow Rate:** 3680 CC/min (approx. 352.65 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2651,6 +2873,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 18.00V | 0.520 ms |
 
 #### ID2600-XDS at 95 PSI
+
 - **Flow Rate:** 3755 CC/min (approx. 359.84 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2663,6 +2886,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 18.00V | 0.540 ms |
 
 #### ID2600-XDS at 100 PSI
+
 - **Flow Rate:** 3810 CC/min (approx. 365.11 LB/hour)
 
 | Voltage | Latency (ms) |
@@ -2681,6 +2905,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### Peak and Hold
 
 #### MSD 525CC
+
 - **Flow Rate:** 525 CC/min (approx. 50.31 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -2695,6 +2920,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.340 ms |
 
 #### MSD 750CC
+
 - **Flow Rate:** 750 CC/min (approx. 71.87 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -2715,6 +2941,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### Peak and Hold
 
 #### DSM Black (90-94 Turbo)
+
 - **Flow Rate:** 450 CC/min (approx. 43.12 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -2729,6 +2956,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.300 ms |
 
 #### DSM Blue (95-99 Turbo)
+
 - **Flow Rate:** 450 CC/min (approx. 43.12 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -2743,6 +2971,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.190 ms |
 
 #### 3000GT
+
 - **Flow Rate:** 370 CC/min (approx. 35.46 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -2756,6 +2985,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 24.56V | 0.480 ms |
 
 #### EVO III
+
 - **Flow Rate:** 510 CC/min (approx. 48.87 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -2770,6 +3000,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.900 ms |
 
 #### EVO VIII
+
 - **Flow Rate:** 550 CC/min (approx. 52.71 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -2783,6 +3014,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 24.56V | 0.520 ms |
 
 ### Lancer (2.4L)
+
 - **Flow Rate:** 240 CC/min (approx. 23.00 LB/hour)
 - **Impedance:** 15 Ω
 
@@ -2802,6 +3034,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### Nismo
 
 #### Nissan 740CC
+
 - **Flow Rate:** 740 CC/min (approx. 70.91 LB/hour)
 - **Impedance:** 11 Ω
 
@@ -2817,6 +3050,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### Peak and Hold
 
 #### Skyline GT-R
+
 - **Flow Rate:** 440 CC/min (approx. 42.17 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -2829,6 +3063,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.400 ms |
 
 #### 180sx/Skyline (86-88)
+
 - **Flow Rate:** 270 CC/min (approx. 25.87 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -2841,6 +3076,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.490 ms |
 
 #### Pulsar GTi-R - SR20DET
+
 - **Flow Rate:** 444 CC/min (approx. 42.55 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -2853,6 +3089,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.600 ms |
 
 ### Sentra/200sx/NX/G20 (2.0L ONLY)
+
 - **Flow Rate:** 259 CC/min (approx. 24.82 LB/hour)
 - **Impedance:** 11 Ω
 
@@ -2866,6 +3103,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 15.00V | 0.420 ms |
 
 ### 300zx(95-96) - SR20DET
+
 - **Flow Rate:** 370 CC/min (approx. 35.46 LB/hour)
 - **Impedance:** 11 Ω
 
@@ -2878,6 +3116,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.640 ms |
 
 ### 240SX (89-90)
+
 - **Flow Rate:** 230 CC/min (approx. 22.04 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -2890,6 +3129,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.470 ms |
 
 ### 240sx (91-98)/Altima (93-01)
+
 - **Flow Rate:** 250 CC/min (approx. 23.96 LB/hour)
 - **Impedance:** 11 Ω
 
@@ -2903,6 +3143,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 15.00V | 0.400 ms |
 
 ### Skyline GTS-T
+
 - **Flow Rate:** 380 CC/min (approx. 36.42 LB/hour)
 - **Impedance:** 11 Ω
 
@@ -2921,6 +3162,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### Peak and Hold
 
 #### Precision Turbo (Rochester) 680CC
+
 - **Flow Rate:** 680 CC/min (approx. 65.16 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -2935,6 +3177,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.890 ms |
 
 #### Precision Turbo (Rochester) 1000CC
+
 - **Flow Rate:** 1000 CC/min (approx. 95.83 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -2949,6 +3192,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.530 ms |
 
 #### Precision Turbo (Rochester) 756CC
+
 - **Flow Rate:** 756 CC/min (approx. 72.45 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -2961,6 +3205,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.630 ms |
 
 #### Precision Turbo (Rochester) 1008CC
+
 - **Flow Rate:** 1008 CC/min (approx. 96.60 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -2973,6 +3218,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.700 ms |
 
 ### Precision Turbo (Rochester) 525CC
+
 - **Flow Rate:** 525 CC/min (approx. 50.31 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -2993,6 +3239,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### Peak and Hold
 
 #### From phearable.net
+
 - **Flow Rate:** 750 CC/min (approx. 71.87 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -3005,6 +3252,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.240 ms |
 
 #### RC Engineering 750CC
+
 - **Flow Rate:** 750 CC/min (approx. 71.87 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -3019,6 +3267,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.240 ms |
 
 #### From phearable.net
+
 - **Flow Rate:** 1000 CC/min (approx. 95.83 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -3031,6 +3280,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.350 ms |
 
 #### RC Engineering 1000CC
+
 - **Flow Rate:** 1000 CC/min (approx. 95.83 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -3045,6 +3295,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.830 ms |
 
 #### RC Engineering 1200CC
+
 - **Flow Rate:** 1200 CC/min (approx. 115.00 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -3059,6 +3310,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 1.320 ms |
 
 #### RC Engineering 1200CC
+
 - **Flow Rate:** 1200 CC/min (approx. 115.00 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -3073,6 +3325,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.130 ms |
 
 #### RC Engineering 900CC
+
 - **Flow Rate:** 900 CC/min (approx. 86.25 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -3087,6 +3340,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.350 ms |
 
 #### RC Engineering 1600CC
+
 - **Flow Rate:** 1600 CC/min (approx. 153.33 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -3101,6 +3355,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.700 ms |
 
 #### RC Engineering 720CC
+
 - **Flow Rate:** 720 CC/min (approx. 69.00 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -3115,6 +3370,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.830 ms |
 
 #### RC Engineering 750CC
+
 - **Flow Rate:** 750 CC/min (approx. 71.87 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -3129,6 +3385,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.010 ms |
 
 #### RC Engineering 550CC
+
 - **Flow Rate:** 550 CC/min (approx. 52.71 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -3143,6 +3400,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.300 ms |
 
 ### RC Engineering 240CC
+
 - **Flow Rate:** 240 CC/min (approx. 23.00 LB/hour)
 - **Impedance:** 16 Ω
 
@@ -3155,6 +3413,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.620 ms |
 
 ### RC Engineering 270CC
+
 - **Flow Rate:** 270 CC/min (approx. 25.87 LB/hour)
 - **Impedance:** 16 Ω
 
@@ -3169,6 +3428,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.150 ms |
 
 ### RC Engineering 310CC
+
 - **Flow Rate:** 310 CC/min (approx. 29.71 LB/hour)
 - **Impedance:** 16 Ω
 
@@ -3183,6 +3443,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.250 ms |
 
 ### RC Engineering 370CC
+
 - **Flow Rate:** 370 CC/min (approx. 35.46 LB/hour)
 - **Impedance:** 16 Ω
 
@@ -3197,6 +3458,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.040 ms |
 
 ### RC Engineering 440CC
+
 - **Flow Rate:** 440 CC/min (approx. 42.17 LB/hour)
 - **Impedance:** 13 Ω
 
@@ -3211,6 +3473,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.440 ms |
 
 ### RC Engineering 440CC
+
 - **Flow Rate:** 440 CC/min (approx. 42.17 LB/hour)
 - **Impedance:** 13 Ω
 
@@ -3223,6 +3486,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.630 ms |
 
 ### RC Engineering 440CC
+
 - **Flow Rate:** 440 CC/min (approx. 42.17 LB/hour)
 - **Impedance:** 16 Ω
 
@@ -3236,6 +3500,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.140 ms |
 
 ### RC Engineering 550CC
+
 - **Flow Rate:** 550 CC/min (approx. 52.71 LB/hour)
 - **Impedance:** 13 Ω
 
@@ -3250,6 +3515,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.350 ms |
 
 ### RC Engineering 650CC
+
 - **Flow Rate:** 650 CC/min (approx. 62.29 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -3264,6 +3530,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 16.00V | 0.220 ms |
 
 ### RC Engineering 750CC
+
 - **Flow Rate:** 750 CC/min (approx. 71.87 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -3284,6 +3551,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### Peak and Hold
 
 #### Sard 700CC
+
 - **Flow Rate:** 700 CC/min (approx. 67.08 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -3296,6 +3564,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.350 ms |
 
 #### Sard 700CC
+
 - **Flow Rate:** 700 CC/min (approx. 67.08 LB/hour)
 - **Impedance:** 2 Ω
 
@@ -3308,6 +3577,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.440 ms |
 
 #### Sard 800CC
+
 - **Flow Rate:** 800 CC/min (approx. 76.66 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -3320,6 +3590,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.240 ms |
 
 #### Sard 800CC
+
 - **Flow Rate:** 800 CC/min (approx. 76.66 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -3338,6 +3609,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ### Peak and Hold
 
 #### Siemens Deka 756CC
+
 - **Flow Rate:** 756 CC/min (approx. 72.45 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -3350,6 +3622,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.760 ms |
 
 #### Siemens Deka 872CC
+
 - **Flow Rate:** 872 CC/min (approx. 83.56 LB/hour)
 - **Impedance:** 3 Ω
 
@@ -3362,6 +3635,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.730 ms |
 
 ### Siemens Deka 578CC
+
 - **Flow Rate:** 578 CC/min (approx. 55.39 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -3374,6 +3648,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.710 ms |
 
 ### Siemens Deka 630CC
+
 - **Flow Rate:** 630 CC/min (approx. 60.37 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -3390,6 +3665,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ## Subaru
 
 ### Impreza STI (top feed)
+
 - **Flow Rate:** 550 CC/min (approx. 52.71 LB/hour)
 - **Impedance:** 13 Ω
 
@@ -3402,6 +3678,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.620 ms |
 
 ### Impreza WRX
+
 - **Flow Rate:** 440 CC/min (approx. 42.17 LB/hour)
 - **Impedance:** 13 Ω
 
@@ -3418,6 +3695,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ## Toyota
 
 ### (00+ 1.5L) xB/xA/Prius/Echo
+
 - **Flow Rate:** 200 CC/min (approx. 19.17 LB/hour)
 - **Impedance:** 14 Ω
 
@@ -3430,6 +3708,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.440 ms |
 
 ### (04+ 2.4L) tC/Solaris/Camry/RAV4
+
 - **Flow Rate:** 330 CC/min (approx. 31.62 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -3446,6 +3725,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ## Ultimate Racing
 
 ### Ultimate Racing 440CC
+
 - **Flow Rate:** 440 CC/min (approx. 42.17 LB/hour)
 - **Impedance:** 16 Ω
 
@@ -3464,6 +3744,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ## Vennom
 
 ### Vennom 880CC
+
 - **Flow Rate:** 880 CC/min (approx. 84.33 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -3480,6 +3761,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 ## Volkswagen
 
 ### Passat (98-99)/Audi A4 (97-99)
+
 - **Flow Rate:** 220 CC/min (approx. 21.08 LB/hour)
 - **Impedance:** 12 Ω
 
@@ -3492,6 +3774,7 @@ This article serves as a comprehensive, community-driven database of battery vol
 | 14.00V | 0.240 ms |
 
 ### Passat (2000)
+
 - **Flow Rate:** 240 CC/min (approx. 23.00 LB/hour)
 - **Impedance:** 12 Ω
 

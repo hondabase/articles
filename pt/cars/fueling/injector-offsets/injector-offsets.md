@@ -13,6 +13,7 @@ tags:
 Este artigo serve como uma base de dados abrangente e gerida pela comunidade de tabelas de compensação de tensão da bateria (tempo morto / latência) para injetores de combustível originais (OEM) e de pós-venda. Na afinação (tuning) do motor, a definição correta das compensações dos injetores é crucial para garantir uma alimentação de combustível estável e qualidade de ralenti, especialmente sob tensões de bateria variáveis.
 
 ### Índice
+
 - [Accel](#accel)
 - [Acura](#acura)
 - [Audi](#audi)
@@ -50,6 +51,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### Peak and Hold
 
 #### Accel 578CC
+
 - **Taxa de Fluxo:** 578 CC/min (aprox. 55.39 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -63,6 +65,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 24.56V | 0.480 ms |
 
 #### Accel 872CC
+
 - **Taxa de Fluxo:** 872 CC/min (aprox. 83.56 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -82,6 +85,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### Peak and Hold
 
 #### CL
+
 - **Taxa de Fluxo:** 240 CC/min (aprox. 23.00 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -96,6 +100,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.220 ms |
 
 ### Integra (92-96 VTEC)
+
 - **Taxa de Fluxo:** 240 CC/min (aprox. 23.00 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -109,6 +114,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 24.56V | 0.290 ms |
 
 ### NSX
+
 - **Taxa de Fluxo:** 240 CC/min (aprox. 23.00 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -122,6 +128,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 24.56V | 0.250 ms |
 
 ### RSX (02-04)
+
 - **Taxa de Fluxo:** 290 CC/min (aprox. 27.79 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -135,6 +142,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 24.56V | 0.430 ms |
 
 ### RSX Type-S (02-04)
+
 - **Taxa de Fluxo:** 330 CC/min (aprox. 31.62 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -148,6 +156,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 24.56V | 0.500 ms |
 
 ### RDX
+
 - **Taxa de Fluxo:** 440 CC/min (aprox. 42.17 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -164,6 +173,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ## Audi
 
 ### S4/TT
+
 - **Taxa de Fluxo:** 340 CC/min (aprox. 32.58 LB/hora)
 - **Impedância:** 14 Ω
 
@@ -181,6 +191,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ## Blitz
 
 ### Blitz 850CC
+
 - **Taxa de Fluxo:** 850 CC/min (aprox. 81.46 LB/hora)
 - **Impedância:** 14 Ω
 
@@ -200,6 +211,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### Peak and Hold
 
 #### Bosch 1545CC
+
 - **Taxa de Fluxo:** 1545 CC/min (aprox. 148.06 LB/hora)
 - **Impedância:** 5 Ω
 
@@ -219,6 +231,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### 1000CC
 
 #### 1000CC at 29 PSI
+
 - **Taxa de Fluxo:** 816 CC/min (aprox. 78.20 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -231,6 +244,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.480 ms |
 
 #### 1000CC at 43.5 PSI
+
 - **Taxa de Fluxo:** 1000 CC/min (aprox. 95.83 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -243,6 +257,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.680 ms |
 
 #### 1000CC at 58 PSI
+
 - **Taxa de Fluxo:** 1155 CC/min (aprox. 110.68 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -255,6 +270,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.780 ms |
 
 #### 1000CC at 72 PSI
+
 - **Taxa de Fluxo:** 1291 CC/min (aprox. 123.72 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -271,6 +287,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ## Deatschwerks
 
 ### Deatschwerks 600CC
+
 - **Taxa de Fluxo:** 600 CC/min (aprox. 57.50 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -282,6 +299,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.200 ms |
 
 ### Deatschwerks 800CC
+
 - **Taxa de Fluxo:** 800 CC/min (aprox. 76.66 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -299,6 +317,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### Peak and Hold
 
 #### da phearable.net
+
 - **Taxa de Fluxo:** 550 CC/min (aprox. 52.71 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -311,6 +330,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.340 ms |
 
 #### Denso 1600CC
+
 - **Taxa de Fluxo:** 1600 CC/min (aprox. 153.33 LB/hora)
 - **Impedância:** 5 Ω
 
@@ -323,6 +343,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.500 ms |
 
 #### Denso 550CC
+
 - **Taxa de Fluxo:** 550 CC/min (aprox. 52.71 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -337,6 +358,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.470 ms |
 
 #### Denso 660CC
+
 - **Taxa de Fluxo:** 660 CC/min (aprox. 63.25 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -351,6 +373,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.470 ms |
 
 #### Denso 720CC
+
 - **Taxa de Fluxo:** 720 CC/min (aprox. 69.00 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -369,6 +392,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ## Dodge
 
 ### 4.7
+
 - **Taxa de Fluxo:** 273 CC/min (aprox. 26.16 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -382,6 +406,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.610 ms |
 
 ### SRT-4 (2003)
+
 - **Taxa de Fluxo:** 525 CC/min (aprox. 50.31 LB/hora)
 - **Impedância:** 13 Ω
 
@@ -395,6 +420,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.080 ms |
 
 ### SRT-4 (2004+)
+
 - **Taxa de Fluxo:** 577 CC/min (aprox. 55.29 LB/hora)
 - **Impedância:** 13 Ω
 
@@ -408,6 +434,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.390 ms |
 
 ### Viper (96-2002)
+
 - **Taxa de Fluxo:** 336 CC/min (aprox. 32.20 LB/hora)
 - **Impedância:** 13 Ω
 
@@ -425,6 +452,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ## Edelbrock
 
 ### Edelbrock 630CC
+
 - **Taxa de Fluxo:** 630 CC/min (aprox. 60.37 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -444,6 +472,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### Motorsport
 
 #### Ford 378CC
+
 - **Taxa de Fluxo:** 378 CC/min (aprox. 36.22 LB/hora)
 - **Impedância:** 15 Ω
 
@@ -457,6 +486,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.250 ms |
 
 #### Ford 441CC
+
 - **Taxa de Fluxo:** 441 CC/min (aprox. 42.26 LB/hora)
 - **Impedância:** 14 Ω
 
@@ -470,6 +500,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.420 ms |
 
 #### Ford 809CC
+
 - **Taxa de Fluxo:** 809 CC/min (aprox. 77.53 LB/hora)
 - **Impedância:** 15 Ω
 
@@ -483,6 +514,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.890 ms |
 
 #### Peak and Hold
+
 - **Taxa de Fluxo:** 1600 CC/min (aprox. 153.33 LB/hora)
 - **Impedância:** 5 Ω
 
@@ -496,6 +528,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.670 ms |
 
 #### Peak and Hold
+
 - **Taxa de Fluxo:** 1680 CC/min (aprox. 160.99 LB/hora)
 - **Impedância:** 5 Ω
 
@@ -509,6 +542,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.700 ms |
 
 ### Mustang GT (96-03)
+
 - **Taxa de Fluxo:** 200 CC/min (aprox. 19.17 LB/hora)
 - **Impedância:** 15 Ω
 
@@ -521,6 +555,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.540 ms |
 
 ### Mustang (84-95)
+
 - **Taxa de Fluxo:** 200 CC/min (aprox. 19.17 LB/hora)
 - **Impedância:** 15 Ω
 
@@ -534,6 +569,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.110 ms |
 
 ### Mustang Cobra
+
 - **Taxa de Fluxo:** 252 CC/min (aprox. 24.15 LB/hora)
 - **Impedância:** 15 Ω
 
@@ -553,6 +589,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### Peak and Hold
 
 #### Fuel Injector Clinic 650CC
+
 - **Taxa de Fluxo:** 650 CC/min (aprox. 62.29 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -566,6 +603,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.390 ms |
 
 #### Fuel Injector Clinic 850CC
+
 - **Taxa de Fluxo:** 850 CC/min (aprox. 81.46 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -579,6 +617,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.380 ms |
 
 #### Fuel Injector Clinic 950CC
+
 - **Taxa de Fluxo:** 950 CC/min (aprox. 91.04 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -598,6 +637,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### Peak and Hold
 
 #### HKS 1000CC
+
 - **Taxa de Fluxo:** 1000 CC/min (aprox. 95.83 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -618,6 +658,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### Peak and Hold
 
 #### Hahn Racecraft 625CC
+
 - **Taxa de Fluxo:** 625 CC/min (aprox. 59.89 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -637,6 +678,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### Peak and Hold
 
 #### Holley 788CC
+
 - **Taxa de Fluxo:** 788 CC/min (aprox. 75.51 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -656,6 +698,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### Peak and Hold
 
 #### All Models (86-91) da Phearable.net
+
 - **Taxa de Fluxo:** 240 CC/min (aprox. 23.00 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -668,6 +711,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.140 ms |
 
 #### All Models (86-91)
+
 - **Taxa de Fluxo:** 240 CC/min (aprox. 23.00 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -681,6 +725,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 24.56V | 0.250 ms |
 
 #### Prelude (92-96 VTEC)
+
 - **Taxa de Fluxo:** 330 CC/min (aprox. 31.62 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -695,6 +740,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.210 ms |
 
 ### Civic (92-00 EX/SI)
+
 - **Taxa de Fluxo:** 240 CC/min (aprox. 23.00 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -708,6 +754,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 24.56V | 0.320 ms |
 
 ### Civic (92-00 LX/DX/HX)
+
 - **Taxa de Fluxo:** 190 CC/min (aprox. 18.21 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -722,6 +769,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.310 ms |
 
 ### Civic (01-Up LX/DX/HX)
+
 - **Taxa de Fluxo:** 215 CC/min (aprox. 20.60 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -736,6 +784,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.470 ms |
 
 ### Civic (01-Up EX)
+
 - **Taxa de Fluxo:** 240 CC/min (aprox. 23.00 LB/hora)
 - **Impedância:** 11 Ω
 
@@ -749,6 +798,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 24.56V | 0.360 ms |
 
 ### Civic (03-Up SI) (CRV 02+)
+
 - **Taxa de Fluxo:** 290 CC/min (aprox. 27.79 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -762,6 +812,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 24.56V | 0.530 ms |
 
 ### Civic (06-Up SI)
+
 - **Taxa de Fluxo:** 330 CC/min (aprox. 31.62 LB/hora)
 - **Impedância:** 10 Ω
 
@@ -775,6 +826,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 24.56V | 0.420 ms |
 
 ### Prelude (97-02)
+
 - **Taxa de Fluxo:** 290 CC/min (aprox. 27.79 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -789,6 +841,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.440 ms |
 
 ### S2000
+
 - **Taxa de Fluxo:** 360 CC/min (aprox. 34.50 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -809,6 +862,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### ID725
 
 #### ID725 at 40 PSI
+
 - **Taxa de Fluxo:** 690 CC/min (aprox. 66.12 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -820,6 +874,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.660 ms |
 
 #### ID725 at 43.5 PSI
+
 - **Taxa de Fluxo:** 715 CC/min (aprox. 68.52 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -831,6 +886,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.730 ms |
 
 #### ID725 at 45 PSI
+
 - **Taxa de Fluxo:** 730 CC/min (aprox. 69.96 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -842,6 +898,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.735 ms |
 
 #### ID725 at 50 PSI
+
 - **Taxa de Fluxo:** 770 CC/min (aprox. 73.79 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -853,6 +910,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.770 ms |
 
 #### ID725 at 55 PSI
+
 - **Taxa de Fluxo:** 810 CC/min (aprox. 77.62 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -864,6 +922,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.805 ms |
 
 #### ID725 at 60 PSI
+
 - **Taxa de Fluxo:** 850 CC/min (aprox. 81.46 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -875,6 +934,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.835 ms |
 
 #### ID725 at 65 PSI
+
 - **Taxa de Fluxo:** 890 CC/min (aprox. 85.29 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -886,6 +946,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.860 ms |
 
 #### ID725 at 70 PSI
+
 - **Taxa de Fluxo:** 925 CC/min (aprox. 88.64 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -897,6 +958,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.865 ms |
 
 #### ID725 at 75 PSI
+
 - **Taxa de Fluxo:** 960 CC/min (aprox. 92.00 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -908,6 +970,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.905 ms |
 
 #### ID725 at 80 PSI
+
 - **Taxa de Fluxo:** 990 CC/min (aprox. 94.87 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -919,6 +982,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.930 ms |
 
 #### ID725 at 85 PSI
+
 - **Taxa de Fluxo:** 1020 CC/min (aprox. 97.75 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -930,6 +994,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.955 ms |
 
 #### ID725 at 90 PSI
+
 - **Taxa de Fluxo:** 1050 CC/min (aprox. 100.62 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -941,6 +1006,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.985 ms |
 
 #### ID725 at 95 PSI
+
 - **Taxa de Fluxo:** 1080 CC/min (aprox. 103.50 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -952,6 +1018,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.020 ms |
 
 #### ID725 at 100 PSI
+
 - **Taxa de Fluxo:** 1110 CC/min (aprox. 106.37 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -962,6 +1029,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.055 ms |
 
 #### ID725 at 105 PSI
+
 - **Taxa de Fluxo:** 1140 CC/min (aprox. 109.25 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -972,6 +1040,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.020 ms |
 
 #### ID725 at 110 PSI
+
 - **Taxa de Fluxo:** 1170 CC/min (aprox. 112.12 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -982,6 +1051,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.055 ms |
 
 #### ID725 at 115 PSI
+
 - **Taxa de Fluxo:** 1200 CC/min (aprox. 115.00 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -992,6 +1062,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.055 ms |
 
 #### ID725 at 120 PSI
+
 - **Taxa de Fluxo:** 1235 CC/min (aprox. 118.35 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1004,6 +1075,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### ID850
 
 #### ID850 at 40 PSI
+
 - **Taxa de Fluxo:** 845 CC/min (aprox. 80.98 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1015,6 +1087,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.710 ms |
 
 #### ID850 at 43.5 PSI
+
 - **Taxa de Fluxo:** 885 CC/min (aprox. 84.81 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1026,6 +1099,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.730 ms |
 
 #### ID850 at 45 PSI
+
 - **Taxa de Fluxo:** 905 CC/min (aprox. 86.73 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1037,6 +1111,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.735 ms |
 
 #### ID850 at 50 PSI
+
 - **Taxa de Fluxo:** 955 CC/min (aprox. 91.52 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1048,6 +1123,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.770 ms |
 
 #### ID850 at 55 PSI
+
 - **Taxa de Fluxo:** 1005 CC/min (aprox. 96.31 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1059,6 +1135,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.805 ms |
 
 #### ID850 at 60 PSI
+
 - **Taxa de Fluxo:** 1050 CC/min (aprox. 100.62 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1070,6 +1147,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.835 ms |
 
 #### ID850 at 65 PSI
+
 - **Taxa de Fluxo:** 1090 CC/min (aprox. 104.45 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1081,6 +1159,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.860 ms |
 
 #### ID850 at 70 PSI
+
 - **Taxa de Fluxo:** 1130 CC/min (aprox. 108.29 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1092,6 +1171,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.865 ms |
 
 #### ID850 at 75 PSI
+
 - **Taxa de Fluxo:** 1170 CC/min (aprox. 112.12 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1102,6 +1182,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.905 ms |
 
 #### ID850 at 80 PSI
+
 - **Taxa de Fluxo:** 1205 CC/min (aprox. 115.48 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1112,6 +1193,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.930 ms |
 
 #### ID850 at 85 PSI
+
 - **Taxa de Fluxo:** 1240 CC/min (aprox. 118.83 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1122,6 +1204,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.955 ms |
 
 #### ID850 at 90 PSI
+
 - **Taxa de Fluxo:** 1275 CC/min (aprox. 122.18 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1132,6 +1215,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.985 ms |
 
 #### ID850 at 95 PSI
+
 - **Taxa de Fluxo:** 1310 CC/min (aprox. 125.54 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1142,6 +1226,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.020 ms |
 
 #### ID850 at 100 PSI
+
 - **Taxa de Fluxo:** 1350 CC/min (aprox. 129.37 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1154,6 +1239,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### ID1000
 
 #### ID1000 at 40 PSI
+
 - **Taxa de Fluxo:** 980 CC/min (aprox. 93.91 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1165,6 +1251,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.800 ms |
 
 #### ID1000 at 43.5 PSI
+
 - **Taxa de Fluxo:** 1015 CC/min (aprox. 97.27 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1176,6 +1263,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.805 ms |
 
 #### ID1000 at 45 PSI
+
 - **Taxa de Fluxo:** 1035 CC/min (aprox. 99.18 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1187,6 +1275,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.810 ms |
 
 #### ID1000 at 50 PSI
+
 - **Taxa de Fluxo:** 1085 CC/min (aprox. 103.98 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1198,6 +1287,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.815 ms |
 
 #### ID1000 at 55 PSI
+
 - **Taxa de Fluxo:** 1135 CC/min (aprox. 108.77 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1209,6 +1299,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.820 ms |
 
 #### ID1000 at 60 PSI
+
 - **Taxa de Fluxo:** 1180 CC/min (aprox. 113.08 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1220,6 +1311,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.845 ms |
 
 #### ID1000 at 65 PSI
+
 - **Taxa de Fluxo:** 1225 CC/min (aprox. 117.39 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1231,6 +1323,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.880 ms |
 
 #### ID1000 at 70 PSI
+
 - **Taxa de Fluxo:** 1265 CC/min (aprox. 121.22 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1242,6 +1335,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.925 ms |
 
 #### ID1000 at 75 PSI
+
 - **Taxa de Fluxo:** 1305 CC/min (aprox. 125.06 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1252,6 +1346,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.975 ms |
 
 #### ID1000 at 80 PSI
+
 - **Taxa de Fluxo:** 1345 CC/min (aprox. 128.89 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1262,6 +1357,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.020 ms |
 
 #### ID1000 at 85 PSI
+
 - **Taxa de Fluxo:** 1390 CC/min (aprox. 133.20 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1272,6 +1368,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.060 ms |
 
 #### ID1000 at 90 PSI
+
 - **Taxa de Fluxo:** 1435 CC/min (aprox. 137.52 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1282,6 +1379,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.095 ms |
 
 #### ID1000 at 95 PSI
+
 - **Taxa de Fluxo:** 1485 CC/min (aprox. 142.31 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1292,6 +1390,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.125 ms |
 
 #### ID1000 at 100 PSI
+
 - **Taxa de Fluxo:** 1530 CC/min (aprox. 146.62 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1304,6 +1403,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### ID1050x
 
 #### ID1050x at 40 PSI
+
 - **Taxa de Fluxo:** 1020 CC/min (aprox. 97.75 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1315,6 +1415,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.790 ms |
 
 #### ID1050x at 43.5 PSI
+
 - **Taxa de Fluxo:** 1065 CC/min (aprox. 102.06 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1326,6 +1427,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.795 ms |
 
 #### ID1050x at 45 PSI
+
 - **Taxa de Fluxo:** 1085 CC/min (aprox. 103.98 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1337,6 +1439,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.800 ms |
 
 #### ID1050x at 50 PSI
+
 - **Taxa de Fluxo:** 1145 CC/min (aprox. 109.73 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1348,6 +1451,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.825 ms |
 
 #### ID1050x at 55 PSI
+
 - **Taxa de Fluxo:** 1205 CC/min (aprox. 115.48 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1359,6 +1463,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.845 ms |
 
 #### ID1050x at 60 PSI
+
 - **Taxa de Fluxo:** 1260 CC/min (aprox. 120.75 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1370,6 +1475,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.860 ms |
 
 #### ID1050x at 65 PSI
+
 - **Taxa de Fluxo:** 1305 CC/min (aprox. 125.06 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1381,6 +1487,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.855 ms |
 
 #### ID1050x at 70 PSI
+
 - **Taxa de Fluxo:** 1350 CC/min (aprox. 129.37 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1392,6 +1499,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.850 ms |
 
 #### ID1050x at 75 PSI
+
 - **Taxa de Fluxo:** 1390 CC/min (aprox. 133.20 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1403,6 +1511,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.850 ms |
 
 #### ID1050x at 80 PSI
+
 - **Taxa de Fluxo:** 1420 CC/min (aprox. 136.08 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1414,6 +1523,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.850 ms |
 
 #### ID1050x at 85 PSI
+
 - **Taxa de Fluxo:** 1455 CC/min (aprox. 139.43 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1425,6 +1535,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.855 ms |
 
 #### ID1050x at 90 PSI
+
 - **Taxa de Fluxo:** 1490 CC/min (aprox. 142.79 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1436,6 +1547,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.865 ms |
 
 #### ID1050x at 95 PSI
+
 - **Taxa de Fluxo:** 1530 CC/min (aprox. 146.62 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1447,6 +1559,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.880 ms |
 
 #### ID1050x at 100 PSI
+
 - **Taxa de Fluxo:** 1565 CC/min (aprox. 149.97 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1460,6 +1573,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### ID1050-XDS
 
 #### ID1050-XDS at 40 PSI
+
 - **Taxa de Fluxo:** 1020 CC/min (aprox. 97.75 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1471,6 +1585,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.790 ms |
 
 #### ID1050-XDS at 43.5 PSI
+
 - **Taxa de Fluxo:** 1065 CC/min (aprox. 102.06 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1482,6 +1597,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.795 ms |
 
 #### ID1050-XDS at 45 PSI
+
 - **Taxa de Fluxo:** 1085 CC/min (aprox. 103.98 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1493,6 +1609,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.800 ms |
 
 #### ID1050-XDS at 50 PSI
+
 - **Taxa de Fluxo:** 1145 CC/min (aprox. 109.73 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1504,6 +1621,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.825 ms |
 
 #### ID1050-XDS at 55 PSI
+
 - **Taxa de Fluxo:** 1205 CC/min (aprox. 115.48 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1515,6 +1633,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.845 ms |
 
 #### ID1050-XDS at 60 PSI
+
 - **Taxa de Fluxo:** 1260 CC/min (aprox. 120.75 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1526,6 +1645,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.860 ms |
 
 #### ID1050-XDS at 65 PSI
+
 - **Taxa de Fluxo:** 1305 CC/min (aprox. 125.06 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1537,6 +1657,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.855 ms |
 
 #### ID1050-XDS at 70 PSI
+
 - **Taxa de Fluxo:** 1350 CC/min (aprox. 129.37 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1548,6 +1669,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.850 ms |
 
 #### ID1050-XDS at 75 PSI
+
 - **Taxa de Fluxo:** 1390 CC/min (aprox. 133.20 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1559,6 +1681,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.850 ms |
 
 #### ID1050-XDS at 80 PSI
+
 - **Taxa de Fluxo:** 1420 CC/min (aprox. 136.08 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1570,6 +1693,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.850 ms |
 
 #### ID1050-XDS at 85 PSI
+
 - **Taxa de Fluxo:** 1455 CC/min (aprox. 139.43 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1581,6 +1705,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.855 ms |
 
 #### ID1050-XDS at 90 PSI
+
 - **Taxa de Fluxo:** 1490 CC/min (aprox. 142.79 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1592,6 +1717,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.865 ms |
 
 #### ID1050-XDS at 95 PSI
+
 - **Taxa de Fluxo:** 1530 CC/min (aprox. 146.62 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1603,6 +1729,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.880 ms |
 
 #### ID1050-XDS at 100 PSI
+
 - **Taxa de Fluxo:** 1565 CC/min (aprox. 149.97 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1616,6 +1743,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### ID1300x
 
 #### ID1300x at 43.5 PSI
+
 - **Taxa de Fluxo:** 1345 CC/min (aprox. 128.89 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1627,6 +1755,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.750 ms |
 
 #### ID1300x at 45 PSI
+
 - **Taxa de Fluxo:** 1365 CC/min (aprox. 130.81 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1638,6 +1767,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.760 ms |
 
 #### ID1300x at 50 PSI
+
 - **Taxa de Fluxo:** 1445 CC/min (aprox. 138.47 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1649,6 +1779,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.790 ms |
 
 #### ID1300x at 55 PSI
+
 - **Taxa de Fluxo:** 1520 CC/min (aprox. 145.66 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1660,6 +1791,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.820 ms |
 
 #### ID1300x at 60 PSI
+
 - **Taxa de Fluxo:** 1590 CC/min (aprox. 152.37 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1671,6 +1803,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.845 ms |
 
 #### ID1300x at 65 PSI
+
 - **Taxa de Fluxo:** 1655 CC/min (aprox. 158.60 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1682,6 +1815,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.875 ms |
 
 #### ID1300x at 70 PSI
+
 - **Taxa de Fluxo:** 1715 CC/min (aprox. 164.35 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1692,6 +1826,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.900 ms |
 
 #### ID1300x at 75 PSI
+
 - **Taxa de Fluxo:** 1775 CC/min (aprox. 170.10 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1702,6 +1837,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.930 ms |
 
 #### ID1300x at 80 PSI
+
 - **Taxa de Fluxo:** 1830 CC/min (aprox. 175.37 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1711,6 +1847,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.960 ms |
 
 #### ID1300x at 85 PSI
+
 - **Taxa de Fluxo:** 1885 CC/min (aprox. 180.64 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1720,6 +1857,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.995 ms |
 
 #### ID1300x at 90 PSI
+
 - **Taxa de Fluxo:** 1935 CC/min (aprox. 185.43 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1731,6 +1869,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### ID1300x²
 
 #### ID1300x² at 40 PSI
+
 - **Taxa de Fluxo:** 1275 CC/min (aprox. 122.18 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1742,6 +1881,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.855 ms |
 
 #### ID1300x² at 43.5 PSI
+
 - **Taxa de Fluxo:** 1335 CC/min (aprox. 127.93 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1753,6 +1893,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.865 ms |
 
 #### ID1300x² at 45 PSI
+
 - **Taxa de Fluxo:** 1360 CC/min (aprox. 130.33 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1764,6 +1905,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.870 ms |
 
 #### ID1300x² at 50 PSI
+
 - **Taxa de Fluxo:** 1440 CC/min (aprox. 138.00 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1775,6 +1917,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.880 ms |
 
 #### ID1300x² at 55 PSI
+
 - **Taxa de Fluxo:** 1520 CC/min (aprox. 145.66 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1786,6 +1929,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.895 ms |
 
 #### ID1300x² at 60 PSI
+
 - **Taxa de Fluxo:** 1590 CC/min (aprox. 152.37 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1797,6 +1941,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.915 ms |
 
 #### ID1300x² at 65 PSI
+
 - **Taxa de Fluxo:** 1655 CC/min (aprox. 158.60 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1808,6 +1953,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.935 ms |
 
 #### ID1300x² at 70 PSI
+
 - **Taxa de Fluxo:** 1715 CC/min (aprox. 164.35 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1819,6 +1965,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.960 ms |
 
 #### ID1300x² at 75 PSI
+
 - **Taxa de Fluxo:** 1770 CC/min (aprox. 169.62 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1830,6 +1977,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.975 ms |
 
 #### ID1300x² at 80 PSI
+
 - **Taxa de Fluxo:** 1820 CC/min (aprox. 174.41 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1841,6 +1989,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.990 ms |
 
 #### ID1300x² at 85 PSI
+
 - **Taxa de Fluxo:** 1860 CC/min (aprox. 178.24 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1851,6 +2000,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.005 ms |
 
 #### ID1300x² at 90 PSI
+
 - **Taxa de Fluxo:** 1860 CC/min (aprox. 178.24 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1861,6 +2011,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.005 ms |
 
 #### ID1300x² at 95 PSI
+
 - **Taxa de Fluxo:** 1925 CC/min (aprox. 184.47 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1871,6 +2022,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.050 ms |
 
 #### ID1300x² at 100 PSI
+
 - **Taxa de Fluxo:** 1950 CC/min (aprox. 186.87 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1883,6 +2035,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### ID1300-XDS
 
 #### ID1300-XDS at 40 PSI
+
 - **Taxa de Fluxo:** 1275 CC/min (aprox. 122.18 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1894,6 +2047,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.855 ms |
 
 #### ID1300-XDS at 43.5 PSI
+
 - **Taxa de Fluxo:** 1335 CC/min (aprox. 127.93 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1905,6 +2059,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.865 ms |
 
 #### ID1300-XDS at 45 PSI
+
 - **Taxa de Fluxo:** 1360 CC/min (aprox. 130.33 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1916,6 +2071,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.870 ms |
 
 #### ID1300-XDS at 50 PSI
+
 - **Taxa de Fluxo:** 1440 CC/min (aprox. 138.00 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1927,6 +2083,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.880 ms |
 
 #### ID1300-XDS at 55 PSI
+
 - **Taxa de Fluxo:** 1520 CC/min (aprox. 145.66 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1938,6 +2095,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.895 ms |
 
 #### ID1300-XDS at 60 PSI
+
 - **Taxa de Fluxo:** 1590 CC/min (aprox. 152.37 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1949,6 +2107,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.915 ms |
 
 #### ID1300-XDS at 65 PSI
+
 - **Taxa de Fluxo:** 1655 CC/min (aprox. 158.60 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1960,6 +2119,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.935 ms |
 
 #### ID1300-XDS at 70 PSI
+
 - **Taxa de Fluxo:** 1715 CC/min (aprox. 164.35 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1971,6 +2131,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.960 ms |
 
 #### ID1300-XDS at 75 PSI
+
 - **Taxa de Fluxo:** 1770 CC/min (aprox. 169.62 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1982,6 +2143,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.975 ms |
 
 #### ID1300-XDS at 80 PSI
+
 - **Taxa de Fluxo:** 1820 CC/min (aprox. 174.41 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -1993,6 +2155,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.990 ms |
 
 #### ID1300-XDS at 85 PSI
+
 - **Taxa de Fluxo:** 1860 CC/min (aprox. 178.24 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2003,6 +2166,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.005 ms |
 
 #### ID1300-XDS at 90 PSI
+
 - **Taxa de Fluxo:** 1895 CC/min (aprox. 181.60 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2013,6 +2177,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.025 ms |
 
 #### ID1300-XDS at 95 PSI
+
 - **Taxa de Fluxo:** 1925 CC/min (aprox. 184.47 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2023,6 +2188,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.050 ms |
 
 #### ID1300-XDS at 100 PSI
+
 - **Taxa de Fluxo:** 1950 CC/min (aprox. 186.87 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2035,6 +2201,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### ID1700x
 
 #### ID1700x at 43.5 PSI
+
 - **Taxa de Fluxo:** 1725 CC/min (aprox. 165.31 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2046,6 +2213,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.800 ms |
 
 #### ID1700x at 45 PSI
+
 - **Taxa de Fluxo:** 1760 CC/min (aprox. 168.66 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2057,6 +2225,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.805 ms |
 
 #### ID1700x at 50 PSI
+
 - **Taxa de Fluxo:** 1855 CC/min (aprox. 177.76 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2068,6 +2237,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.830 ms |
 
 #### ID1700x at 55 PSI
+
 - **Taxa de Fluxo:** 1950 CC/min (aprox. 186.87 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2079,6 +2249,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.855 ms |
 
 #### ID1700x at 60 PSI
+
 - **Taxa de Fluxo:** 2040 CC/min (aprox. 195.49 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2090,6 +2261,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.885 ms |
 
 #### ID1700x at 65 PSI
+
 - **Taxa de Fluxo:** 2125 CC/min (aprox. 203.64 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2101,6 +2273,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.920 ms |
 
 #### ID1700x at 70 PSI
+
 - **Taxa de Fluxo:** 2205 CC/min (aprox. 211.31 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2111,6 +2284,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.960 ms |
 
 #### ID1700x at 75 PSI
+
 - **Taxa de Fluxo:** 2285 CC/min (aprox. 218.97 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2121,6 +2295,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.995 ms |
 
 #### ID1700x at 80 PSI
+
 - **Taxa de Fluxo:** 2360 CC/min (aprox. 226.16 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2131,6 +2306,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.025 ms |
 
 #### ID1700x at 85 PSI
+
 - **Taxa de Fluxo:** 2435 CC/min (aprox. 233.35 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2141,6 +2317,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.055 ms |
 
 #### ID1700x at 90 PSI
+
 - **Taxa de Fluxo:** 2505 CC/min (aprox. 240.05 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2151,6 +2328,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.085 ms |
 
 #### ID1700x at 95 PSI
+
 - **Taxa de Fluxo:** 2575 CC/min (aprox. 246.76 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2160,6 +2338,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.120 ms |
 
 #### ID1700x at 100 PSI
+
 - **Taxa de Fluxo:** 2640 CC/min (aprox. 252.99 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2171,6 +2350,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### ID1750-XDS
 
 #### ID1750-XDS at 43.5 PSI
+
 - **Taxa de Fluxo:** 1728 CC/min (aprox. 165.59 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2182,6 +2362,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.689 ms |
 
 #### ID1750-XDS at 45 PSI
+
 - **Taxa de Fluxo:** 1759 CC/min (aprox. 168.56 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2193,6 +2374,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.695 ms |
 
 #### ID1750-XDS at 50 PSI
+
 - **Taxa de Fluxo:** 1858 CC/min (aprox. 178.05 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2204,6 +2386,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.714 ms |
 
 #### ID1750-XDS at 55 PSI
+
 - **Taxa de Fluxo:** 1953 CC/min (aprox. 187.16 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2215,6 +2398,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.737 ms |
 
 #### ID1750-XDS at 60 PSI
+
 - **Taxa de Fluxo:** 2044 CC/min (aprox. 195.88 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2226,6 +2410,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.766 ms |
 
 #### ID1750-XDS at 65 PSI
+
 - **Taxa de Fluxo:** 2131 CC/min (aprox. 204.21 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2237,6 +2422,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.804 ms |
 
 #### ID1750-XDS at 70 PSI
+
 - **Taxa de Fluxo:** 2216 CC/min (aprox. 212.36 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2247,6 +2433,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.844 ms |
 
 #### ID1750-XDS at 75 PSI
+
 - **Taxa de Fluxo:** 2296 CC/min (aprox. 220.03 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2257,6 +2444,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.878 ms |
 
 #### ID1750-XDS at 80 PSI
+
 - **Taxa de Fluxo:** 2373 CC/min (aprox. 227.40 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2267,6 +2455,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.908 ms |
 
 #### ID1750-XDS at 85 PSI
+
 - **Taxa de Fluxo:** 2446 CC/min (aprox. 234.40 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2277,6 +2466,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.936 ms |
 
 #### ID1750-XDS at 90 PSI
+
 - **Taxa de Fluxo:** 2515 CC/min (aprox. 241.01 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2287,6 +2477,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.968 ms |
 
 #### ID1750-XDS at 95 PSI
+
 - **Taxa de Fluxo:** 2582 CC/min (aprox. 247.43 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2297,6 +2488,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.000 ms |
 
 #### ID1750-XDS at 100 PSI
+
 - **Taxa de Fluxo:** 2645 CC/min (aprox. 253.47 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2309,6 +2501,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### ID2000
 
 #### ID2000 at 43.5 PSI
+
 - **Taxa de Fluxo:** 2225 CC/min (aprox. 213.22 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2320,6 +2513,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.375 ms |
 
 #### ID2000 at 45 PSI
+
 - **Taxa de Fluxo:** 2255 CC/min (aprox. 216.10 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2331,6 +2525,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.380 ms |
 
 #### ID2000 at 50 PSI
+
 - **Taxa de Fluxo:** 2365 CC/min (aprox. 226.64 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2342,6 +2537,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.405 ms |
 
 #### ID2000 at 55 PSI
+
 - **Taxa de Fluxo:** 2470 CC/min (aprox. 236.70 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2353,6 +2549,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.430 ms |
 
 #### ID2000 at 60 PSI
+
 - **Taxa de Fluxo:** 2575 CC/min (aprox. 246.76 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2364,6 +2561,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.455 ms |
 
 #### ID2000 at 65 PSI
+
 - **Taxa de Fluxo:** 2680 CC/min (aprox. 256.82 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2375,6 +2573,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.475 ms |
 
 #### ID2000 at 70 PSI
+
 - **Taxa de Fluxo:** 2780 CC/min (aprox. 266.41 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2386,6 +2585,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.495 ms |
 
 #### ID2000 at 75 PSI
+
 - **Taxa de Fluxo:** 2875 CC/min (aprox. 275.51 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2397,6 +2597,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.505 ms |
 
 #### ID2000 at 80 PSI
+
 - **Taxa de Fluxo:** 2970 CC/min (aprox. 284.62 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2408,6 +2609,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.515 ms |
 
 #### ID2000 at 85 PSI
+
 - **Taxa de Fluxo:** 3055 CC/min (aprox. 292.76 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2419,6 +2621,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.520 ms |
 
 #### ID2000 at 90 PSI
+
 - **Taxa de Fluxo:** 3140 CC/min (aprox. 300.91 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2430,6 +2633,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.540 ms |
 
 #### ID2000 at 95 PSI
+
 - **Taxa de Fluxo:** 3225 CC/min (aprox. 309.05 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2441,6 +2645,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.565 ms |
 
 #### ID2000 at 100 PSI
+
 - **Taxa de Fluxo:** 3300 CC/min (aprox. 316.24 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2452,6 +2657,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.590 ms |
 
 #### ID2000 at 105 PSI
+
 - **Taxa de Fluxo:** 3375 CC/min (aprox. 323.43 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2463,6 +2669,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.605 ms |
 
 #### ID2000 at 110 PSI
+
 - **Taxa de Fluxo:** 3445 CC/min (aprox. 330.13 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2474,6 +2681,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.615 ms |
 
 #### ID2000 at 115 PSI
+
 - **Taxa de Fluxo:** 3515 CC/min (aprox. 336.84 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2485,6 +2693,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.630 ms |
 
 #### ID2000 at 120 PSI
+
 - **Taxa de Fluxo:** 3580 CC/min (aprox. 343.07 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2496,6 +2705,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.665 ms |
 
 #### ID2000 at 125 PSI
+
 - **Taxa de Fluxo:** 3645 CC/min (aprox. 349.30 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2507,6 +2717,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.715 ms |
 
 #### ID2000 at 130 PSI
+
 - **Taxa de Fluxo:** 3710 CC/min (aprox. 355.53 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2520,6 +2731,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### ID2600-XDS
 
 #### ID2600-XDS at 43.5 PSI
+
 - **Taxa de Fluxo:** 2600 CC/min (aprox. 249.16 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2532,6 +2744,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 18.00V | 0.275 ms |
 
 #### ID2600-XDS at 45 PSI
+
 - **Taxa de Fluxo:** 2645 CC/min (aprox. 253.47 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2544,6 +2757,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 18.00V | 0.285 ms |
 
 #### ID2600-XDS at 50 PSI
+
 - **Taxa de Fluxo:** 2780 CC/min (aprox. 266.41 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2556,6 +2770,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 18.00V | 0.305 ms |
 
 #### ID2600-XDS at 55 PSI
+
 - **Taxa de Fluxo:** 2900 CC/min (aprox. 277.91 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2568,6 +2783,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 18.00V | 0.325 ms |
 
 #### ID2600-XDS at 60 PSI
+
 - **Taxa de Fluxo:** 3025 CC/min (aprox. 289.89 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2580,6 +2796,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 18.00V | 0.350 ms |
 
 #### ID2600-XDS at 65 PSI
+
 - **Taxa de Fluxo:** 3140 CC/min (aprox. 300.91 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2592,6 +2809,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 18.00V | 0.380 ms |
 
 #### ID2600-XDS at 70 PSI
+
 - **Taxa de Fluxo:** 3255 CC/min (aprox. 311.93 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2604,6 +2822,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 18.00V | 0.415 ms |
 
 #### ID2600-XDS at 75 PSI
+
 - **Taxa de Fluxo:** 3370 CC/min (aprox. 322.95 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2616,6 +2835,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 18.00V | 0.445 ms |
 
 #### ID2600-XDS at 80 PSI
+
 - **Taxa de Fluxo:** 3485 CC/min (aprox. 333.97 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2628,6 +2848,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 18.00V | 0.475 ms |
 
 #### ID2600-XDS at 85 PSI
+
 - **Taxa de Fluxo:** 3595 CC/min (aprox. 344.51 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2640,6 +2861,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 18.00V | 0.520 ms |
 
 #### ID2600-XDS at 90 PSI
+
 - **Taxa de Fluxo:** 3680 CC/min (aprox. 352.65 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2652,6 +2874,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 18.00V | 0.520 ms |
 
 #### ID2600-XDS at 95 PSI
+
 - **Taxa de Fluxo:** 3755 CC/min (aprox. 359.84 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2664,6 +2887,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 18.00V | 0.540 ms |
 
 #### ID2600-XDS at 100 PSI
+
 - **Taxa de Fluxo:** 3810 CC/min (aprox. 365.11 LB/hora)
 
 | Tensão | Latência (ms) |
@@ -2682,6 +2906,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### Peak and Hold
 
 #### MSD 525CC
+
 - **Taxa de Fluxo:** 525 CC/min (aprox. 50.31 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -2696,6 +2921,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.340 ms |
 
 #### MSD 750CC
+
 - **Taxa de Fluxo:** 750 CC/min (aprox. 71.87 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -2716,6 +2942,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### Peak and Hold
 
 #### DSM Black (90-94 Turbo)
+
 - **Taxa de Fluxo:** 450 CC/min (aprox. 43.12 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -2730,6 +2957,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.300 ms |
 
 #### DSM Blue (95-99 Turbo)
+
 - **Taxa de Fluxo:** 450 CC/min (aprox. 43.12 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -2744,6 +2972,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.190 ms |
 
 #### 3000GT
+
 - **Taxa de Fluxo:** 370 CC/min (aprox. 35.46 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -2757,6 +2986,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 24.56V | 0.480 ms |
 
 #### EVO III
+
 - **Taxa de Fluxo:** 510 CC/min (aprox. 48.87 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -2771,6 +3001,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.900 ms |
 
 #### EVO VIII
+
 - **Taxa de Fluxo:** 550 CC/min (aprox. 52.71 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -2784,6 +3015,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 24.56V | 0.520 ms |
 
 ### Lancer (2.4L)
+
 - **Taxa de Fluxo:** 240 CC/min (aprox. 23.00 LB/hora)
 - **Impedância:** 15 Ω
 
@@ -2803,6 +3035,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### Nismo
 
 #### Nissan 740CC
+
 - **Taxa de Fluxo:** 740 CC/min (aprox. 70.91 LB/hora)
 - **Impedância:** 11 Ω
 
@@ -2818,6 +3051,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### Peak and Hold
 
 #### Skyline GT-R
+
 - **Taxa de Fluxo:** 440 CC/min (aprox. 42.17 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -2830,6 +3064,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.400 ms |
 
 #### 180sx/Skyline (86-88)
+
 - **Taxa de Fluxo:** 270 CC/min (aprox. 25.87 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -2842,6 +3077,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.490 ms |
 
 #### Pulsar GTi-R - SR20DET
+
 - **Taxa de Fluxo:** 444 CC/min (aprox. 42.55 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -2854,6 +3090,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.600 ms |
 
 ### Sentra/200sx/NX/G20 (2.0L ONLY)
+
 - **Taxa de Fluxo:** 259 CC/min (aprox. 24.82 LB/hora)
 - **Impedância:** 11 Ω
 
@@ -2867,6 +3104,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 15.00V | 0.420 ms |
 
 ### 300zx(95-96) - SR20DET
+
 - **Taxa de Fluxo:** 370 CC/min (aprox. 35.46 LB/hora)
 - **Impedância:** 11 Ω
 
@@ -2879,6 +3117,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.640 ms |
 
 ### 240SX (89-90)
+
 - **Taxa de Fluxo:** 230 CC/min (aprox. 22.04 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -2891,6 +3130,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.470 ms |
 
 ### 240sx (91-98)/Altima (93-01)
+
 - **Taxa de Fluxo:** 250 CC/min (aprox. 23.96 LB/hora)
 - **Impedância:** 11 Ω
 
@@ -2904,6 +3144,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 15.00V | 0.400 ms |
 
 ### Skyline GTS-T
+
 - **Taxa de Fluxo:** 380 CC/min (aprox. 36.42 LB/hora)
 - **Impedância:** 11 Ω
 
@@ -2922,6 +3163,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### Peak and Hold
 
 #### Precision Turbo (Rochester) 680CC
+
 - **Taxa de Fluxo:** 680 CC/min (aprox. 65.16 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -2936,6 +3178,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.890 ms |
 
 #### Precision Turbo (Rochester) 1000CC
+
 - **Taxa de Fluxo:** 1000 CC/min (aprox. 95.83 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -2950,6 +3193,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.530 ms |
 
 #### Precision Turbo (Rochester) 756CC
+
 - **Taxa de Fluxo:** 756 CC/min (aprox. 72.45 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -2962,6 +3206,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.630 ms |
 
 #### Precision Turbo (Rochester) 1008CC
+
 - **Taxa de Fluxo:** 1008 CC/min (aprox. 96.60 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -2974,6 +3219,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.700 ms |
 
 ### Precision Turbo (Rochester) 525CC
+
 - **Taxa de Fluxo:** 525 CC/min (aprox. 50.31 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -2994,6 +3240,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### Peak and Hold
 
 #### da phearable.net
+
 - **Taxa de Fluxo:** 750 CC/min (aprox. 71.87 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -3006,6 +3253,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.240 ms |
 
 #### RC Engineering 750CC
+
 - **Taxa de Fluxo:** 750 CC/min (aprox. 71.87 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -3020,6 +3268,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.240 ms |
 
 #### da phearable.net
+
 - **Taxa de Fluxo:** 1000 CC/min (aprox. 95.83 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -3032,6 +3281,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.350 ms |
 
 #### RC Engineering 1000CC
+
 - **Taxa de Fluxo:** 1000 CC/min (aprox. 95.83 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -3046,6 +3296,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.830 ms |
 
 #### RC Engineering 1200CC
+
 - **Taxa de Fluxo:** 1200 CC/min (aprox. 115.00 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -3060,6 +3311,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 1.320 ms |
 
 #### RC Engineering 1200CC
+
 - **Taxa de Fluxo:** 1200 CC/min (aprox. 115.00 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -3074,6 +3326,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.130 ms |
 
 #### RC Engineering 900CC
+
 - **Taxa de Fluxo:** 900 CC/min (aprox. 86.25 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -3088,6 +3341,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.350 ms |
 
 #### RC Engineering 1600CC
+
 - **Taxa de Fluxo:** 1600 CC/min (aprox. 153.33 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -3102,6 +3356,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.700 ms |
 
 #### RC Engineering 720CC
+
 - **Taxa de Fluxo:** 720 CC/min (aprox. 69.00 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -3116,6 +3371,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.830 ms |
 
 #### RC Engineering 750CC
+
 - **Taxa de Fluxo:** 750 CC/min (aprox. 71.87 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -3130,6 +3386,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.010 ms |
 
 #### RC Engineering 550CC
+
 - **Taxa de Fluxo:** 550 CC/min (aprox. 52.71 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -3144,6 +3401,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.300 ms |
 
 ### RC Engineering 240CC
+
 - **Taxa de Fluxo:** 240 CC/min (aprox. 23.00 LB/hora)
 - **Impedância:** 16 Ω
 
@@ -3156,6 +3414,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.620 ms |
 
 ### RC Engineering 270CC
+
 - **Taxa de Fluxo:** 270 CC/min (aprox. 25.87 LB/hora)
 - **Impedância:** 16 Ω
 
@@ -3170,6 +3429,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.150 ms |
 
 ### RC Engineering 310CC
+
 - **Taxa de Fluxo:** 310 CC/min (aprox. 29.71 LB/hora)
 - **Impedância:** 16 Ω
 
@@ -3184,6 +3444,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.250 ms |
 
 ### RC Engineering 370CC
+
 - **Taxa de Fluxo:** 370 CC/min (aprox. 35.46 LB/hora)
 - **Impedância:** 16 Ω
 
@@ -3198,6 +3459,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.040 ms |
 
 ### RC Engineering 440CC
+
 - **Taxa de Fluxo:** 440 CC/min (aprox. 42.17 LB/hora)
 - **Impedância:** 13 Ω
 
@@ -3212,6 +3474,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.440 ms |
 
 ### RC Engineering 440CC
+
 - **Taxa de Fluxo:** 440 CC/min (aprox. 42.17 LB/hora)
 - **Impedância:** 13 Ω
 
@@ -3224,6 +3487,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.630 ms |
 
 ### RC Engineering 440CC
+
 - **Taxa de Fluxo:** 440 CC/min (aprox. 42.17 LB/hora)
 - **Impedância:** 16 Ω
 
@@ -3237,6 +3501,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.140 ms |
 
 ### RC Engineering 550CC
+
 - **Taxa de Fluxo:** 550 CC/min (aprox. 52.71 LB/hora)
 - **Impedância:** 13 Ω
 
@@ -3251,6 +3516,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.350 ms |
 
 ### RC Engineering 650CC
+
 - **Taxa de Fluxo:** 650 CC/min (aprox. 62.29 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -3265,6 +3531,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 16.00V | 0.220 ms |
 
 ### RC Engineering 750CC
+
 - **Taxa de Fluxo:** 750 CC/min (aprox. 71.87 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -3285,6 +3552,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### Peak and Hold
 
 #### Sard 700CC
+
 - **Taxa de Fluxo:** 700 CC/min (aprox. 67.08 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -3297,6 +3565,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.350 ms |
 
 #### Sard 700CC
+
 - **Taxa de Fluxo:** 700 CC/min (aprox. 67.08 LB/hora)
 - **Impedância:** 2 Ω
 
@@ -3309,6 +3578,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.440 ms |
 
 #### Sard 800CC
+
 - **Taxa de Fluxo:** 800 CC/min (aprox. 76.66 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -3321,6 +3591,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.240 ms |
 
 #### Sard 800CC
+
 - **Taxa de Fluxo:** 800 CC/min (aprox. 76.66 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -3339,6 +3610,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ### Peak and Hold
 
 #### Siemens Deka 756CC
+
 - **Taxa de Fluxo:** 756 CC/min (aprox. 72.45 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -3351,6 +3623,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.760 ms |
 
 #### Siemens Deka 872CC
+
 - **Taxa de Fluxo:** 872 CC/min (aprox. 83.56 LB/hora)
 - **Impedância:** 3 Ω
 
@@ -3363,6 +3636,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.730 ms |
 
 ### Siemens Deka 578CC
+
 - **Taxa de Fluxo:** 578 CC/min (aprox. 55.39 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -3375,6 +3649,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.710 ms |
 
 ### Siemens Deka 630CC
+
 - **Taxa de Fluxo:** 630 CC/min (aprox. 60.37 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -3391,6 +3666,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ## Subaru
 
 ### Impreza STI (top feed)
+
 - **Taxa de Fluxo:** 550 CC/min (aprox. 52.71 LB/hora)
 - **Impedância:** 13 Ω
 
@@ -3403,6 +3679,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.620 ms |
 
 ### Impreza WRX
+
 - **Taxa de Fluxo:** 440 CC/min (aprox. 42.17 LB/hora)
 - **Impedância:** 13 Ω
 
@@ -3419,6 +3696,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ## Toyota
 
 ### (00+ 1.5L) xB/xA/Prius/Echo
+
 - **Taxa de Fluxo:** 200 CC/min (aprox. 19.17 LB/hora)
 - **Impedância:** 14 Ω
 
@@ -3431,6 +3709,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.440 ms |
 
 ### (04+ 2.4L) tC/Solaris/Camry/RAV4
+
 - **Taxa de Fluxo:** 330 CC/min (aprox. 31.62 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -3447,6 +3726,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ## Ultimate Racing
 
 ### Ultimate Racing 440CC
+
 - **Taxa de Fluxo:** 440 CC/min (aprox. 42.17 LB/hora)
 - **Impedância:** 16 Ω
 
@@ -3465,6 +3745,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ## Vennom
 
 ### Vennom 880CC
+
 - **Taxa de Fluxo:** 880 CC/min (aprox. 84.33 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -3481,6 +3762,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 ## Volkswagen
 
 ### Passat (98-99)/Audi A4 (97-99)
+
 - **Taxa de Fluxo:** 220 CC/min (aprox. 21.08 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -3493,6 +3775,7 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.240 ms |
 
 ### Passat (2000)
+
 - **Taxa de Fluxo:** 240 CC/min (aprox. 23.00 LB/hora)
 - **Impedância:** 12 Ω
 
@@ -3505,4 +3788,3 @@ Este artigo serve como uma base de dados abrangente e gerida pela comunidade de 
 | 14.00V | 0.520 ms |
 
 ---
-

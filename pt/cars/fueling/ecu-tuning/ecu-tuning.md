@@ -50,6 +50,7 @@ Para motores Honda turboalimentados de utilização diária, os seguintes parâm
 A afinação é um processo iterativo. Estabeleça sempre uma base segura de combustível antes de ajustar o ponto de ignição.
 
 ### Passo 1: Afinar Primeiro o Combustível em Aceleração Total (WOT)
+
 Não tente afinar a condução a meio acelerador (part-throttle) ou ajustar o ponto de ignição até que os seus mapas de combustível em aceleração total (Wide-Open Throttle) estejam calibrados. 
 1. Mantenha os mapas de ponto de ignição conservadores (por exemplo, tabelas originais ou ponto de ignição base atrasado para sobrealimentação).
 2. Encontre uma estrada plana e segura (ou utilize um banco de ensaio / dyno) para realizar os registos de dados (pulls).
@@ -60,17 +61,20 @@ Não tente afinar a condução a meio acelerador (part-throttle) ou ajustar o po
 7. Repita este processo até que o combustível em WOT atinja consistentemente a AFR alvo em toda a gama de RPM.
 
 ### Passo 2: Calibrar o Ponto de Ignição
+
 Assim que as suas tabelas de combustível estiverem calibradas para fornecer AFRs estáveis, pode começar a ajustar o avanço de ignição:
 - Ajuste o ponto em pequenos incrementos (por exemplo, 0.5 a 1.0 grau de cada vez).
 - Monitorize os sinais de detonação (grilar do motor). Se ocorrer detonação, atrase imediatamente o ponto de ignição nessa faixa de carga.
 - Acompanhe os valores de EGT. Se as temperaturas dos gases de escape subirem anormalmente sob carga, é frequentemente um sinal de que o ponto está demasiado atrasado, fazendo com que o combustível termine a combustão dentro do coletor de escape.
 
 ### Passo 3: Calibrar Mapas de Cruzeiro e Carga Parcial (Part-Throttle)
+
 A condução a meio acelerador (cruising) utiliza as colunas que representam o vácuo (colunas 1–6). 
 - Em modo de circuito fechado (closed-loop), a ECU tentará ajustar a compensação de combustível (fuel trim) para atingir uma AFR estequiométrica de 14.7:1 para emissões e economia de combustível.
 - Garanta que a transição das colunas de vácuo em carga parcial para as colunas de boost/carga em WOT é suave para evitar picos repentinos de mistura pobre.
 
 ## Artigos Relacionados
+
 - [Afinar para Emissões e Inspeção (Smog)](/cars/fueling/tuning-for-smog)
 - [Integrar Controladores Wideband O2](/cars/fueling/wide-band-o2)
 - [Como Interpretar Mapas de Combustível e Ignição](/cars/fueling/understanding-maps)

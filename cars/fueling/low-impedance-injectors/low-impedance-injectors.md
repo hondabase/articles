@@ -24,8 +24,8 @@ Low-impedance injectors, also referred to as **peak-and-hold injectors**, have a
 Unlike saturated circuits, peak-and-hold injectors are designed to open as fast as possible. Because of their low coil resistance, they allow a large amount of current to flow through the circuit when 12V is applied. 
 
 To control this current, true peak-and-hold ECU drivers use a two-stage current profile:
-1.  **Peak Phase:** The ECU hits the injector with a high current pulse (around 4 amps) to snap the heavy internal pintle open quickly.
-2.  **Hold Phase:** Once open, the ECU reduces the current to a lower holding level (around 1 amp) to keep the valve open for the remainder of the pulse width.
+1. **Peak Phase:** The ECU hits the injector with a high current pulse (around 4 amps) to snap the heavy internal pintle open quickly.
+2. **Hold Phase:** Once open, the ECU reduces the current to a lower holding level (around 1 amp) to keep the valve open for the remainder of the pulse width.
 
 If you connect low-impedance injectors directly to a standard saturated driver (found in most OBD1/OBD2 Honda Civic and Integra ECUs) without current limitation, the excessive current flow will overheat and burn out the ECU's internal driver transistors within minutes.
 
@@ -54,22 +54,24 @@ Below are common Honda factory vehicles that came equipped with low-impedance in
 ## Resistor Box Wiring Reference
 
 An OEM Honda resistor box (typically found mounted on the driver-side firewall of a CRX Si or Prelude) has **5 wires** coming out of it:
-*   **1 Power Wire (Red):** Receives +12V switched power from the main relay.
-*   **4 Output Wires (Black):** Connect to the power side of each of the four fuel injectors.
+
+* **1 Power Wire (Red):** Receives +12V switched power from the main relay.
+
+* **4 Output Wires (Black):** Connect to the power side of each of the four fuel injectors.
 
 ```
-                  +12V Switched Power (from Main Relay)
-                            |
-                     [ Resistor Box ]
-                       (Red Wire)
-                     /    |    \    \
-                  [10Ω] [10Ω] [10Ω] [10Ω]  (Internal Resistors)
-                   /      |      \      \
-               (Black) (Black) (Black) (Black)  (Output Wires)
-                 |        |        |        |
-            [Inj 1]   [Inj 2]   [Inj 3]   [Inj 4]
-                 |        |        |        |
-             (To ECU Ground Trigger Pins A1, A3, A5, A2)
+ +12V Switched Power (from Main Relay)
+ |
+ [ Resistor Box ]
+ (Red Wire)
+ / | \ \
+ [10Ω] [10Ω] [10Ω] [10Ω] (Internal Resistors)
+ / | \ \
+ (Black) (Black) (Black) (Black) (Output Wires)
+ | | | |
+ [Inj 1] [Inj 2] [Inj 3] [Inj 4]
+ | | | |
+ (To ECU Ground Trigger Pins A1, A3, A5, A2)
 ```
 
 ---
@@ -78,12 +80,12 @@ An OEM Honda resistor box (typically found mounted on the driver-side firewall o
 
 ### Wiring a Resistor Box into a Saturated Harness (e.g., OBD1 Civic/Integra)
 
-1.  **Locate the Injector Power Joint:** In a factory saturated harness, all four injectors share a common +12V power source wire (usually Yellow/Black) that splits near the intake manifold.
-2.  **Cut the Power Wires:** Cut the individual Yellow/Black power wires going to each injector plug. Leave the ground return wires (which go to the ECU) untouched.
-3.  **Mount the Box:** Mount the aluminum resistor box securely to the firewall.
-4.  **Connect Switched Power:** Connect the single **Red wire** of the resistor box to the main +12V switched power source wire coming from the vehicle harness.
-5.  **Connect Outputs:** Connect the **four Black wires** of the resistor box to the injector-side of the cut Yellow/Black power wires (one Black wire to each injector).
-6.  **Solder and Insulate:** Solder all connections and insulate them with marine-grade adhesive-lined heat shrink tubing to protect them from engine bay moisture.
+1. **Locate the Injector Power Joint:** In a factory saturated harness, all four injectors share a common +12V power source wire (usually Yellow/Black) that splits near the intake manifold.
+2. **Cut the Power Wires:** Cut the individual Yellow/Black power wires going to each injector plug. Leave the ground return wires (which go to the ECU) untouched.
+3. **Mount the Box:** Mount the aluminum resistor box securely to the firewall.
+4. **Connect Switched Power:** Connect the single **Red wire** of the resistor box to the main +12V switched power source wire coming from the vehicle harness.
+5. **Connect Outputs:** Connect the **four Black wires** of the resistor box to the injector-side of the cut Yellow/Black power wires (one Black wire to each injector).
+6. **Solder and Insulate:** Solder all connections and insulate them with marine-grade adhesive-lined heat shrink tubing to protect them from engine bay moisture.
 
 ---
 

@@ -1,10 +1,7 @@
 ---
-summary: 'Como dimensionar os injetores de combustível para o seu objetivo de potência.'
+summary: 'Saiba como calcular e selecionar corretamente os injetores de combustível adequados com base no seu objetivo de potência e modificações do motor.'
+tags: [injectors, fueling, tuning]
 complexity: intermediate
-tags:
-  - injectors
-  - fueling
-  - tuning
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Dimensionamento de Injetores'

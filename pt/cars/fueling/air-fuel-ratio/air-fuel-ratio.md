@@ -53,14 +53,17 @@ Ao calibrar os mapas de consulta de combustível, aponte para estes valores alvo
 À medida que a pressão no coletor sobe num motor turbocomprimido ou sobrealimentado (supercharged), as pressões e temperaturas nos cilindros sobem exponencialmente. Para manter o motor seguro, o afinador (tuner) deve coordenar o enriquecimento de combustível com o atraso do ponto de ignição:
 
 ### Arrefecimento da Carga de Admissão
+
 Baixar o AFR alvo de 12,5 para 11,0 à medida que a pressão de sobrealimentação (boost) sobe injeta combustível em excesso no cilindro. Este combustível líquido não queimado vaporiza-se na câmara, absorvendo calor e baixando as temperaturas da carga de admissão, o que suprime a detonação.
 
 ### Velocidade de Combustão
+
 Misturas mais ricas ardem mais lentamente. Para evitar que a pressão máxima ocorra demasiado tarde, ou para prevenir a pré-ignição, o ponto de ignição deve ser atrasado numa curva progressiva (um "step-retard") correspondente à curva de enriquecimento de combustível. For example, atrasar a ignição em 0,5° por cada psi de boost abaixo de 5 psi, e aumentar para 1,0° por cada psi de boost acima de 10 psi, garante que a faísca seja disparada no ângulo de cambota ideal para segurança.
 
 Consulte o [guia de calibração do ponto de ignição](/cars/ignition/tuning-timing) para obter detalhes sobre o cálculo do avanço total da ignição.
 
 ## Artigos Relacionados
+
 - [Introdução ao Tuning de ECU](/cars/fueling/ecu-tuning)
 - [Como Calibrar o Ponto de Ignição](/cars/ignition/tuning-timing)
 - [Integrar um Controlador de O2 Wideband](/cars/fueling/wide-band-o2)

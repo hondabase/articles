@@ -47,15 +47,18 @@ A afinação para emissões requer o equilíbrio da relação ar/combustível. C
 Para otimizar um mapa de ECU customizado (como uma calibração de ROM Crome ou Hondata) para um teste de gases, foque-se nas faixas de cruzeiro de baixa carga (as primeiras 4 a 6 colunas dos mapas de vácuo):
 
 ### Retardar o Ponto de Ignição (Faixas de Cruzeiro)
+
 Pistões de maior compressão ou cabeças de motor retificadas aceleram a propagação da chama dentro do cilindro. Isto requer o atraso (retard) do ponto para evitar que as pressões de pico no cilindro ocorram demasiado cedo, o que gera temperaturas de combustão elevadas.
 - **Dica de Afinação:** Retire **2° a 4° de avanço de ignição** nas colunas 1–6 nas faixas de RPM testadas durante o teste de gases (geralmente entre 1.500 e 3.000 RPM). Isto reduz as temperaturas de pico da câmara de combustão e diminui significativamente as emissões de NOx.
 
 ### Manter a Estequiometria em Closed-Loop (Circuito Fechado)
+
 Não desative o sensor de oxigénio (sonda lambda) de fábrica nem force o funcionamento do motor em open loop (circuito aberto) permanente para um teste de emissões.
 - **Dica de Afinação:** Certifique-se de que o sensor de oxigénio de fábrica de 1 ou 4 fios está totalmente funcional e ativo no software da ECU. A ECU deve ter permissão para oscilar em torno do alvo estequiométrico de 14.7:1. Esta oscilação cíclica permite que o catalisador armazene e liberte oxigénio, permitindo a redução química de NOx e a oxidação de HC/CO.
 - *Aviso:* Desativar o sensor de O2 no código ativará a luz de verificação do motor (CEL) no painel ou falhará nos monitores de prontidão OBD2, resultando numa reprovação automática na inspeção.
 
 ### Controlar o Enriquecimento Transitório (Tip-In)
+
 O "tip-in" refere-se ao breve enriquecimento de combustível quando a borboleta de admissão (throttle) é aberta rapidamente. Se o enriquecimento no tip-in for demasiado agressivo, causará picos ricos momentâneos que aparecerão no analisador como HC e CO elevados.
 - **Dica de Afinação:** Suavize e reduza ligeiramente as tabelas de combustível de tip-in para evitar picos ricos transitórios durante as transições de velocidade nos rolos do dinamómetro.
 

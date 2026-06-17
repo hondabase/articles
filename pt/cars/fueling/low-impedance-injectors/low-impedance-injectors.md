@@ -25,8 +25,8 @@ Os injetores de baixa impedância, também referidos como **injetores peak-and-h
 Ao contrário dos circuitos saturados, os injetores peak-and-hold são concebidos para abrir o mais rapidamente possível. Devido à sua baixa resistência da bobina, permitem que uma grande quantidade de corrente flua através do circuito quando são aplicados 12V. 
 
 Para controlar esta corrente, os drivers da ECU de sistemas peak-and-hold genuínos utilizam um perfil de corrente de duas fases:
-1.  **Fase de Pico (Peak Phase):** A ECU atinge o injetor com um impulso de corrente elevado (cerca de 4 amperes) para abrir rapidamente a agulha interna pesada.
-2.  **Fase de Retenção (Hold Phase):** Uma vez aberto, a ECU reduz a corrente para um nível de retenção mais baixo (cerca de 1 ampere) para manter a válvula aberta durante o resto da largura de impulso.
+1. **Fase de Pico (Peak Phase):** A ECU atinge o injetor com um impulso de corrente elevado (cerca de 4 amperes) para abrir rapidamente a agulha interna pesada.
+2. **Fase de Retenção (Hold Phase):** Uma vez aberto, a ECU reduz a corrente para um nível de retenção mais baixo (cerca de 1 ampere) para manter a válvula aberta durante o resto da largura de impulso.
 
 Se ligar injetores de baixa impedância diretamente a um driver saturado padrão (encontrado na maioria das ECUs Honda Civic e Integra OBD1/OBD2) sem limitação de corrente, o fluxo excessivo de corrente irá sobreaquecer e queimar os transístores de driver internos da ECU em poucos minutos.
 
@@ -55,22 +55,24 @@ Abaixo encontram-se os veículos de fábrica comuns da Honda que vinham equipado
 ## Referência de Cablagem da Caixa de Resistências
 
 Uma caixa de resistências original (OEM) da Honda (tipicamente encontrada montada na parede de fogo do lado do condutor de um CRX Si ou Prelude) tem **5 fios** a sair dela:
-*   **1 Fio de Alimentação (Vermelho):** Recebe alimentação de +12V comutada a partir do relé principal (main relay).
-*   **4 Fios de Saída (Preto):** Ligam ao lado de alimentação de cada um dos quatro injetores de combustível.
+
+* **1 Fio de Alimentação (Vermelho):** Recebe alimentação de +12V comutada a partir do relé principal (main relay).
+
+* **4 Fios de Saída (Preto):** Ligam ao lado de alimentação de cada um dos quatro injetores de combustível.
 
 ```
-                  Alimentação de +12V Comutada (do Relé Principal)
-                            |
-                     [ Caixa de Resistências ]
-                       (Fio Vermelho)
-                      /    |    \    \
-                   [10Ω] [10Ω] [10Ω] [10Ω]  (Resistências Internas)
-                    /      |      \      \
-                (Preto) (Preto) (Preto) (Preto)  (Fios de Saída)
-                  |        |        |        |
-             [Inj 1]   [Inj 2]   [Inj 3]   [Inj 4]
-                  |        |        |        |
-             (Para os Pinos de Controlo de Massa da ECU A1, A3, A5, A2)
+ Alimentação de +12V Comutada (do Relé Principal)
+ |
+ [ Caixa de Resistências ]
+ (Fio Vermelho)
+ / | \ \
+ [10Ω] [10Ω] [10Ω] [10Ω] (Resistências Internas)
+ / | \ \
+ (Preto) (Preto) (Preto) (Preto) (Fios de Saída)
+ | | | |
+ [Inj 1] [Inj 2] [Inj 3] [Inj 4]
+ | | | |
+ (Para os Pinos de Controlo de Massa da ECU A1, A3, A5, A2)
 ```
 
 ---
@@ -79,12 +81,12 @@ Uma caixa de resistências original (OEM) da Honda (tipicamente encontrada monta
 
 ### Ligar uma Caixa de Resistências numa Cablagem Saturada (ex: Civic/Integra OBD1)
 
-1.  **Localize a Junção de Alimentação dos Injetores:** Numa cablagem saturada de fábrica, todos os quatro injetores partilham um fio comum de fonte de alimentação de +12V (geralmente Amarelo/Preto) que se divide perto do coletor de admissão.
-2.  **Corte os Fios de Alimentação:** Corte os fios de alimentação individuais Amarelo/Preto que vão para a ficha de cada injetor. Deixe os fios de retorno de massa (que vão para a ECU) intactos.
-3.  **Monte a Caixa:** Monte a caixa de resistências de alumínio de forma segura na parede de fogo.
-4.  **Ligue a Alimentação Comutada:** Ligue o único **fio Vermelho** da caixa de resistências ao fio principal de alimentação de +12V comutada vindo da cablagem do veículo.
-5.  **Ligue as Saídas:** Ligue os **quatro fios Pretos** da caixa de resistências ao lado do injetor dos fios de alimentação Amarelo/Preto cortados (um fio Preto para cada injetor).
-6.  **Solde e Isole:** Solde todas as ligações e isole-as com manga termorretrátil com adesivo de grau marítimo para as proteger da humidade do compartimento do motor.
+1. **Localize a Junção de Alimentação dos Injetores:** Numa cablagem saturada de fábrica, todos os quatro injetores partilham um fio comum de fonte de alimentação de +12V (geralmente Amarelo/Preto) que se divide perto do coletor de admissão.
+2. **Corte os Fios de Alimentação:** Corte os fios de alimentação individuais Amarelo/Preto que vão para a ficha de cada injetor. Deixe os fios de retorno de massa (que vão para a ECU) intactos.
+3. **Monte a Caixa:** Monte a caixa de resistências de alumínio de forma segura na parede de fogo.
+4. **Ligue a Alimentação Comutada:** Ligue o único **fio Vermelho** da caixa de resistências ao fio principal de alimentação de +12V comutada vindo da cablagem do veículo.
+5. **Ligue as Saídas:** Ligue os **quatro fios Pretos** da caixa de resistências ao lado do injetor dos fios de alimentação Amarelo/Preto cortados (um fio Preto para cada injetor).
+6. **Solde e Isole:** Solde todas as ligações e isole-as com manga termorretrátil com adesivo de grau marítimo para as proteger da humidade do compartimento do motor.
 
 ---
 

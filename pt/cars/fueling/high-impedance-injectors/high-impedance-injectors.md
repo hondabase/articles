@@ -18,7 +18,7 @@ sources:
 
 # Injetores de Alta Impedância (High Impedance Injectors)
 
-Os injetores de alta impedância, também conhecidos como **injetores saturados**, têm uma resistência interna da bobina relativamente alta, tipicamente variando entre **12 e 16 ohms**. 
+Os injetores de alta impedância, também conhecidos como **injetores saturados**, têm uma resistência interna da bobina relativamente alta, tipicamente variando entre **12 e 16 ohms**.
 
 ## Visão Geral
 
@@ -32,10 +32,13 @@ Devido à sua alta resistência, a corrente elétrica que flui pelo injetor é b
 
 O uso de injetores por parte da Honda evoluiu ao longo das diferentes gerações OBD:
 
-*   **OBD0 MPFI (motores D/B-series 1988–1991):** Utilizavam de fábrica injetores de **baixa impedância** (2–3 ohms), que exigiam uma caixa de resistências (resistor box) em linha para limitar a corrente e evitar queimar os drivers da ECU.
-*   **OBD1 (motores D/B/H-series 1992–1995):** Os modelos Civic e Integra transitaram para injetores de **alta impedância** (saturados), ligando diretamente à cablagem sem caixa de resistências. (O Prelude H22/H23 continuou a ser de baixa impedância com uma caixa de resistências de fábrica).
-*   **OBD2 (motores D/B/H/F-series 1996–2001):** Todos os modelos Honda transitaram para injetores saturados de alta impedância.
-*   **K-Series (2001+):** Utilizam injetores modernos de alta impedância com conectores de ficha atualizados.
+* **OBD0 MPFI (motores D/B-series 1988–1991):** Utilizavam de fábrica injetores de **baixa impedância** (2–3 ohms), que exigiam uma caixa de resistências (resistor box) em linha para limitar a corrente e evitar queimar os drivers da ECU.
+
+* **OBD1 (motores D/B/H-series 1992–1995):** Os modelos Civic e Integra transitaram para injetores de **alta impedância** (saturados), ligando diretamente à cablagem sem caixa de resistências. (O Prelude H22/H23 continuou a ser de baixa impedância com uma caixa de resistências de fábrica).
+
+* **OBD2 (motores D/B/H/F-series 1996–2001):** Todos os modelos Honda transitaram para injetores saturados de alta impedância.
+
+* **K-Series (2001+):** Utilizam injetores modernos de alta impedância com conectores de ficha atualizados.
 
 ---
 
@@ -58,14 +61,14 @@ Os injetores de alta impedância são altamente fiáveis e amplamente utilizados
 Os injetores de alta impedância são ligados num esquema simples e direto. Cada injetor recebe uma fonte de alimentação comutada de +12V, e a sua linha de retorno à massa liga-se diretamente a um pino dedicado na ECU.
 
 ```
-       Alimentação Comutada +12V (do Relé Principal)
-                 |
-        +--------+--------+
-        |                 |
-   [Injetor 1]       [Injetor 2]       ...
-        |                 |
-        |                 |
-    Pino INJ1 da ECU  Pino INJ2 da ECU ... (ECU liga à massa para acionar)
+ Alimentação Comutada +12V (do Relé Principal)
+ |
+ +--------+--------+
+ | |
+ [Injetor 1] [Injetor 2]...
+ | |
+ | |
+ Pino INJ1 da ECU Pino INJ2 da ECU... (ECU liga à massa para acionar)
 ```
 
 Não existem caixas de resistências em linha ou módulos de drivers externos num circuito de injetores saturados.
@@ -75,11 +78,15 @@ Não existem caixas de resistências em linha ou módulos de drivers externos nu
 ## Vantagens e Diretrizes para Projetos Modernos
 
 ### Vantagens:
-*   **Cablagem mais Simples:** Não é necessária caixa de resistências, reduzindo pontos de falha e limpando o cofre do motor.
-*   **Menos Calor:** Gera menos calor tanto no corpo do injetor como nos drivers da ECU.
-*   **Tecnologia Moderna:** Os injetores aftermarket de melhor qualidade disponíveis atualmente (como os Injector Dynamics ID1050x ou os injetores Fuel Clinic) são de alta impedância. A fabricação moderna permite que estes injetores de alta impedância debitem grandes quantidades de caudal (1000cc/min+) mantendo um excelente controlo de ralenti e tempos de resposta rápidos.
+
+* **Cablagem mais Simples:** Não é necessária caixa de resistências, reduzindo pontos de falha e limpando o cofre do motor.
+
+* **Menos Calor:** Gera menos calor tanto no corpo do injetor como nos drivers da ECU.
+
+* **Tecnologia Moderna:** Os injetores aftermarket de melhor qualidade disponíveis atualmente (como os Injector Dynamics ID1050x ou os injetores Fuel Clinic) são de alta impedância. A fabricação moderna permite que estes injetores de alta impedância debitem grandes quantidades de caudal (1000cc/min+) mantendo um excelente controlo de ralenti e tempos de resposta rápidos.
 
 ### Dica de Conversão:
+
 Se estiver a converter um chassis OBD0 (que possui uma caixa de resistências de fábrica) para funcionar com uma ECU OBD1 com injetores de alta impedância, deve **remover a caixa de resistências** e unir os fios de alimentação (conhecido como "eliminação da caixa de resistências" ou "resistor box delete"). Caso não contorne a caixa de resistências, a ativação dos injetores será fraca, resultando em condições de mistura extremamente pobre porque a resistência total do circuito será demasiado elevada.
 
 ---

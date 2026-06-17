@@ -48,6 +48,7 @@ For street-driven turbocharged Honda engines, the following parameters provide a
 Tuning is an iterative process. Always establish a safe fuel baseline before adjusting ignition timing.
 
 ### Step 1: Tune Wide-Open Throttle (WOT) Fueling First
+
 Do not attempt to tune part-throttle cruising or adjust ignition timing until your wide-open throttle fuel maps are dialed in. 
 1. Keep the ignition timing maps conservative (e.g., stock tables or baseline timing retarded for boost).
 2. Find a flat, safe road (or use a chassis dyno) to perform datalogging pulls.
@@ -58,17 +59,20 @@ Do not attempt to tune part-throttle cruising or adjust ignition timing until yo
 7. Repeat this process until WOT fueling consistently hits your target AFR across the entire RPM range.
 
 ### Step 2: Calibrate Ignition Timing
+
 Once your fuel tables are calibrated to deliver stable AFRs, you can begin adjusting ignition advance:
 - Adjust timing in small increments (e.g., 0.5 to 1.0 degree at a time).
 - Monitor for signs of detonation (engine knock). If knock occurs, immediately retard ignition timing in that load range.
 - Watch EGT values. If exhaust gas temperatures spike abnormally high under load, it is often a sign that timing is retarded too far, causing fuel to finish burning inside the exhaust manifold.
 
 ### Step 3: Calibrate Cruising & Part-Throttle Maps
+
 Part-throttle cruising utilizes the columns representing vacuum (columns 1–6). 
 - In closed-loop mode, the ECU will attempt to adjust fuel trim to target a stoichiometric 14.7:1 AFR for emissions and fuel economy.
 - Ensure that the transition from part-throttle vacuum columns to WOT boost/load columns is smooth to avoid sudden fueling lean spikes.
 
 ## Related Articles
+
 - [Tuning for Smog & Emissions](/cars/fueling/tuning-for-smog)
 - [Integrating Wideband O2 Controllers](/cars/fueling/wide-band-o2)
 - [How to Interpret Fuel and Ignition Maps](/cars/fueling/understanding-maps)

@@ -22,17 +22,25 @@ The Oxygen (O2) sensor measures the oxygen content of the exhaust gases. The ECU
 ## Overview
 
 Honda has used several styles of oxygen sensors over different generations:
-*   **1-Wire Sensor (OBD0 / Early OBD1):** A simple unheated narrowband sensor. It relies solely on exhaust heat to reach its operating temperature (about 315°C / 600°F).
-*   **4-Wire Sensor (OBD1 / OBD2):** Contains an internal heating element powered by the car's electrical system to heat the sensor quickly and maintain stable readings even at idle or light loads.
-*   **5-Wire Wideband Sensor (L1H1 / LAF):** Used on lean-burn engines (such as the 1992–1995 Civic VX and 1996–1998 Civic HX). Unlike narrowband sensors, it can measure air-fuel ratios (AFR) across a wide range (from extremely lean to rich).
+* **1-Wire Sensor (OBD0 / Early OBD1):** A simple unheated narrowband sensor. It relies solely on exhaust heat to reach its operating temperature (about 315°C / 600°F).
+
+* **4-Wire Sensor (OBD1 / OBD2):** Contains an internal heating element powered by the car's electrical system to heat the sensor quickly and maintain stable readings even at idle or light loads.
+
+* **5-Wire Wideband Sensor (L1H1 / LAF):** Used on lean-burn engines (such as the 1992–1995 Civic VX and 1996–1998 Civic HX). Unlike narrowband sensors, it can measure air-fuel ratios (AFR) across a wide range (from extremely lean to rich).
 
 ### Narrowband Output Characteristics
-Standard 1-wire and 4-wire sensors are narrowband (lambda) sensors. They are designed to detect only one specific ratio: stoichiometric (**14.7:1 air-fuel ratio**).
-*   **Stoichiometric (14.7:1):** Outputs exactly **0.45V**.
-*   **Rich (AFR < 14.7):** Output swings high (up to ~0.9V–1.0V).
-*   **Lean (AFR > 14.7):** Output swings low (down to ~0.1V).
 
-Because the voltage output curve is extremely steep around the 14.7:1 mark, the sensor acts like a binary switch (rich/lean). The ECU cannot determine *how* rich or *how* lean the engine is running from a narrowband sensor; it only knows which side of stoichiometry it is on.
+Standard 1-wire and 4-wire sensors are narrowband (lambda) sensors. They are designed to detect only one specific ratio: stoichiometric (**14.7:1 air-fuel ratio**).
+* **Stoichiometric (14.7:1):** Outputs exactly **0.45V**.
+* **Rich (AFR < 14.7):** Output swings high (up to ~0.9V–1.0V).
+
+* **Lean (AFR > 14.7):** Output swings low (down to ~0.1V).
+
+Because the voltage output curve is extremely steep around the 14.7:1 mark, the sensor acts like a binary switch (rich/lean). The ECU cannot determine *how
+
+* rich or *how
+
+* lean the engine is running from a narrowband sensor; it only knows which side of stoichiometry it is on.
 
 ![Narrowband lambda O2 sensor output curve](honda_stock_o2sensor.jpg)
 *Typical sharp-switching output voltage curve of a narrowband lambda sensor.*
@@ -43,6 +51,7 @@ Because the voltage output curve is extremely steep around the 14.7:1 mark, the 
 ## Wiring Reference
 
 ### Converting 1-Wire to 4-Wire O2 Sensor
+
 When doing an OBD1 swap on an older chassis (like an EF Civic or DA Integra), you often need to wire a 4-wire heated O2 sensor to the new OBD1 ECU (e.g., P28 or P30) to prevent Heater Circuit trouble codes (Code 41).
 
 | O2 Sensor Pin / Wire (4-Wire) | Function | Connection Point |
@@ -54,6 +63,7 @@ When doing an OBD1 swap on an older chassis (like an EF Civic or DA Integra), yo
 
 ## Related
 
-*   [MAP Sensor](/cars/fueling/map-sensor)
-*   [Throttle Position Sensor (TPS)](/cars/diagnostics/tps-sensor)
-*   [ECU Trouble Codes](/cars/diagnostics/ecu-trouble-codes)
+* [MAP Sensor](/cars/fueling/map-sensor)
+* [Throttle Position Sensor (TPS)](/cars/diagnostics/tps-sensor)
+
+* [ECU Trouble Codes](/cars/diagnostics/diagnostic-trouble-codes)

@@ -52,14 +52,17 @@ When tuning fuel lookup maps, aim for these target AFR values depending on engin
 As manifold pressure climbs on a turbocharged or supercharged engine, cylinder pressures and temperatures rise exponentially. To keep the engine safe, the tuner must coordinate fuel enrichment with ignition timing retard:
 
 ### Charge Cooling
+
 Dropping the target AFR from 12.5 down to 11.0 as boost climbs dumps excess fuel into the cylinder. This unburnt liquid fuel vaporizes in the chamber, absorbing heat and lowering intake charge temperatures, which suppresses detonation.
 
 ### Combusting Velocity
+
 Richer mixtures burn slower. To prevent the peak pressure from occurring too late, or to prevent pre-ignition, the ignition timing must be retarded in a progressive curve (a "step-retard") matching the fuel enrichment curve. For example, retarding timing by 0.5° per psi of boost under 5 psi, and increasing to 1.0° per psi of boost above 10 psi, ensures the spark is fired at the optimal crank angle for safety.
 
 Refer to the [tuning timing guide](/cars/ignition/tuning-timing) for details on calculating total ignition advance.
 
 ## Related Articles
+
 - [Introduction to ECU Tuning](/cars/fueling/ecu-tuning)
 - [How to Calibrate Spark Timing](/cars/ignition/tuning-timing)
 - [Integrating a Wideband O2 Controller](/cars/fueling/wide-band-o2)
