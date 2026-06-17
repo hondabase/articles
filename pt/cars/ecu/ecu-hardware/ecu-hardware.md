@@ -32,6 +32,6 @@ Esta página descreve como funciona o hardware numa [ECU](/cars/ecu/ecu) e coisa
 
 Se quiser aprender sobre como funciona o MCU Oki 66K, deve consultar "66k Assembler Docs". Existem muitas Modificações de Hardware de ECU que pode fazer para alterar a forma como o hardware da [ECU](/cars/ecu/ecu) funciona. A Honda utilizava frequentemente MCUs com programas internos (on-chip). Estes eram frequentemente protegidos contra cópia. Existem Leitores de MCU para contornar esta proteção contra cópia. Já se perguntou quem desenhou as [ECU](/cars/ecu/ecu)s da Honda? A Keihin Indiana Precision Technology é a culpada... É possível alternar entre mais do que um programa na sua EEPROM sobredimensionada. Tudo o que precisa de fazer é adicionar uma resistência de pull-up às linhas de endereço extra (A15, A16, etc.) e, para alternar entre eles, basta adicionar um interruptor com circuito anti-ressalto (debounced switch) para ligar essas linhas de endereço à massa (ground). **Aqui está um diagrama de EEPROMs de 28 e 32 pinos:**
 - Pinagem de EEPROM: 
-     ![1.32_pin-2-28PinIC.jpg](1.32_pin-2-28PinIC.jpg)
+ ![1.32_pin-2-28PinIC.jpg](1.32_pin-2-28PinIC.jpg)
 
-  **Anexo:**  **Modificar:**  **Tamanho:**  **Data:**  **Quem:**  **Comentário:**  ![](/pgmfi/wiki/assets/icn/bmp.gif) [1.32\_pin-2-28PinIC.jpg](1.32_pin-2-28PinIC.jpg)  mod  39713  06 Feb 2007 - 01:39  Jared Karagen  Pinagem de EEPROM
+ **Anexo:** **Modificar:** **Tamanho:** **Data:** **Quem:** **Comentário:** ![](/pgmfi/wiki/assets/icn/bmp.gif) [1.32\_pin-2-28PinIC.jpg](1.32_pin-2-28PinIC.jpg) mod 39713 06 Feb 2007 - 01:39 Jared Karagen Pinagem de EEPROM

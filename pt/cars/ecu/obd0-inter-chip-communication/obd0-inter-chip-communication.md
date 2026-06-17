@@ -29,7 +29,7 @@ A fonte identifica estes dispositivos como estando ligados ao MCU:
 - [Controlador de I/O OKI 6260A](/cars/ecu/oki6260a)
 - EPROM 38256 de 32K em algumas ECUs
 
-Refere que as instruções `MOVX A,@DPTR` e `MOVX @DPTR,A` acedem a dispositivos no barramento externo. Portas lógicas em algumas linhas de endereço parecem permitir que o MCU selecione dispositivos individuais, mas a lógica de descodificação ainda estava a ser investigada.
+Refere que as instruções `MOVX A,@DPTR` e `MOVX @DPTR, A` acedem a dispositivos no barramento externo. Portas lógicas em algumas linhas de endereço parecem permitir que o MCU selecione dispositivos individuais, mas a lógica de descodificação ainda estava a ser investigada.
 
 ## Mapa de memória proposto
 
@@ -47,29 +47,29 @@ Todos os endereços abaixo estão em hexadecimal. Os limites das gamas são mant
 A página arquivada lista estes como sendo todos os endereços que observou a ECU a carregar no DPTR:
 
 ```text
-0110Bh  0001000100001011
-0110Eh  0001000100001110
-01120h  0001000100100000
-0112Bh  0001000100101011
-0112Eh  0001000100101110
-01150h  0001000101010000
-01151h  0001000101010001
-01152h  0001000101010010
-01154h  0001000101010100
-01160h  0001000101100000
-011F5h  0001000111110101
-02000h  0010000000000000
-02001h  0010000000000001
-02002h  0010000000000010
-02003h  0010000000000011
-02004h  0010000000000100
-02006h  0010000000000110
-0200Ah  0010000000001010
-0200Bh  0010000000001011
-0200Eh  0010000000001110
-0200Fh  0010000000001111
-04000h  0100000000000000
-04001h  0100000000000001
+0110Bh 0001000100001011
+0110Eh 0001000100001110
+01120h 0001000100100000
+0112Bh 0001000100101011
+0112Eh 0001000100101110
+01150h 0001000101010000
+01151h 0001000101010001
+01152h 0001000101010010
+01154h 0001000101010100
+01160h 0001000101100000
+011F5h 0001000111110101
+02000h 0010000000000000
+02001h 0010000000000001
+02002h 0010000000000010
+02003h 0010000000000011
+02004h 0010000000000100
+02006h 0010000000000110
+0200Ah 0010000000001010
+0200Bh 0010000000001011
+0200Eh 0010000000001110
+0200Fh 0010000000001111
+04000h 0100000000000000
+04001h 0100000000000001
 ```
 
 Estas observações levaram o autor a suspeitar que o próprio endereço controla qual chip de suporte é ativado.

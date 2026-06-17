@@ -31,6 +31,6 @@ This page describes how the hardware in an [ECU](/cars/ecu/ecu) works, and fun t
 - OBD2 K [ECU](/cars/ecu/ecu)s are an evolution of OBD2B [ECU](/cars/ecu/ecu)s designed to run K-series motors
 
 If you want to learn about how the Oki 66K MCU works, you should look at 66k Assembler Docs. There are many ECUHardware Mods you can do to change how [ECU](/cars/ecu/ecu) hardware works. Honda often used MCUs that had internal (on-chip) programs. These were often copy protected. There are Mcu Readers to defeat the copy protection. Ever wonder who designed honda's [ECU](/cars/ecu/ecu)s? Kehein Indiana Precision Technology is to blame... It is possible to switch between more than one program on your oversized EEPROM. All you need to do is add a pullup resistor to the extra address lines (A15, A16, Etc.), then to switch them, just add a debounced switch to the address lines to ground them. **Here is a diagram of 28 &amp; 32 pin EEPROMS:**- EEPROM pinouts: 
-     ![1.32_pin-2-28PinIC.jpg](1.32_pin-2-28PinIC.jpg)
+ ![1.32_pin-2-28PinIC.jpg](1.32_pin-2-28PinIC.jpg)
 
-  **Attachment:**  **Modify:**  **Size:**  **Date:**  **Who:**  **Comment:**  ![](/pgmfi/wiki/assets/icn/bmp.gif) [1.32\_pin-2-28PinIC.jpg](1.32_pin-2-28PinIC.jpg)  mod  39713  06 Feb 2007 - 01:39  Jared Karagen  EEPROM pinouts
+ **Attachment:** **Modify:** **Size:** **Date:** **Who:** **Comment:** ![](/pgmfi/wiki/assets/icn/bmp.gif) [1.32\_pin-2-28PinIC.jpg](1.32_pin-2-28PinIC.jpg) mod 39713 06 Feb 2007 - 01:39 Jared Karagen EEPROM pinouts

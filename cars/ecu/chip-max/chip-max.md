@@ -23,9 +23,11 @@ It is a popular choice for burning EPROMs (like the `27C256`) and EEPROMs (like 
 
 ## Key Features
 
-*   **Universal Device Support:** Features a high-quality 40-pin Zero Insertion Force (ZIF) socket. It supports a wide range of devices including EPROMs, EEPROMs, Flash memory, and microcontrollers.
-*   **Reliable Hardware Timings:** Unlike low-cost generic burners (such as the [Willem](/cars/rom/willem) or DIY "Ghetto Burner" designs), the ChipMax features dedicated internal controllers that handle precise programming voltages and timing cycles, preventing verification failures and damaged chips.
-*   **Software & Support:** EE Tools maintains regular software updates for device support. Historically, their technical support has been known to write custom device profiles upon request.
+* **Universal Device Support:** Features a high-quality 40-pin Zero Insertion Force (ZIF) socket. It supports a wide range of devices including EPROMs, EEPROMs, Flash memory, and microcontrollers.
+
+* **Reliable Hardware Timings:** Unlike low-cost generic burners (such as the [Willem](/cars/rom/willem) or DIY "Ghetto Burner" designs), the ChipMax features dedicated internal controllers that handle precise programming voltages and timing cycles, preventing verification failures and damaged chips.
+
+* **Software & Support:** EE Tools maintains regular software updates for device support. Historically, their technical support has been known to write custom device profiles upon request.
 
 ## Comparison & Usage
 

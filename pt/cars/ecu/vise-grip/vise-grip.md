@@ -1,11 +1,9 @@
 ---
-summary: 'uma ferramenta indispensável :)'
+summary: 'Um olhar rápido sobre ferramentas mecânicas essenciais, como o alicate de pressão (vise-grip), que são indispensáveis para modificações de hardware em veículos Honda.'
+tags: [hardware, education]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - hardware
-  - education
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Vise Grip'

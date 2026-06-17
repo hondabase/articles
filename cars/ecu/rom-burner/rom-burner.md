@@ -27,9 +27,11 @@ Because Honda OBD0 and OBD1 ECUs require 32 KB of program space, selecting a bur
 
 While many chips share a DIP-28 package, their writing and erasing procedures vary:
 
-*   **27C256 (EPROM):** Erasable Programmable Read-Only Memory. These are typically one-time programmable (OTP) unless you use windowed chips, which require a dedicated ultraviolet (UV) eraser box to clear before rewriting.
-*   **SST 27SF256 (Flash EPROM):** Many tuners prefer this chip. It can be electrically erased and rewritten in seconds by the burner software, eliminating the need for UV light.
-*   **AT29C256 (EEPROM):** Electrically Erasable PROM. Similar to the SST flash chip, but with different write timing algorithms and voltages.
+* **27C256 (EPROM):** Erasable Programmable Read-Only Memory. These are typically one-time programmable (OTP) unless you use windowed chips, which require a dedicated ultraviolet (UV) eraser box to clear before rewriting.
+
+* **SST 27SF256 (Flash EPROM):** Many tuners prefer this chip. It can be electrically erased and rewritten in seconds by the burner software, eliminating the need for UV light.
+
+* **AT29C256 (EEPROM):** Electrically Erasable PROM. Similar to the SST flash chip, but with different write timing algorithms and voltages.
 
 ---
 
@@ -50,5 +52,6 @@ Below is a comparison of burners commonly used for Honda ECU tuning:
 
 ## 3. Programming Tips
 
-*   **Select the Correct Chip Profile:** Always select the exact manufacturer and model prefix of your chip (e.g., `SST27SF256` instead of a generic `27C256`) in your burner software. Applying the wrong programming voltage (Vpp) can permanently damage the chip.
-*   **Verify After Writing:** Enable the "Verify" function in your burner software. This compares the chip's written contents byte-by-byte with the raw BIN file on your computer to ensure there were no write errors.
+* **Select the Correct Chip Profile:** Always select the exact manufacturer and model prefix of your chip (e.g., `SST27SF256` instead of a generic `27C256`) in your burner software. Applying the wrong programming voltage (Vpp) can permanently damage the chip.
+
+* **Verify After Writing:** Enable the "Verify" function in your burner software. This compares the chip's written contents byte-by-byte with the raw BIN file on your computer to ensure there were no write errors.

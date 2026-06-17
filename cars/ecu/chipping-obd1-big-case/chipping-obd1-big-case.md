@@ -1,5 +1,5 @@
 ---
-summary: 'This page needs added. I will do it when I get time. If you beat me to it... good for you!'
+summary: 'Coming soon: A detailed guide for socketing and chipping large-case Honda OBD1 ECUs, including component requirements and process steps.'
 tags: [ecu, reference]
 applies_to:
   obd: [1]

@@ -1,11 +1,9 @@
 ---
-summary: 'Esta página precisa de ser adicionada. Fá-lo-ei quando tiver tempo. Se me antecederes... ótimo para ti!'
+summary: 'Brevemente: Um guia detalhado para a instalação de sockets e reprogramação de ECUs Honda OBD1 de caixa grande, incluindo requisitos de componentes e passos do processo.'
+tags: [ecu, reference]
 applies_to:
   obd: [1]
 complexity: beginner
-tags:
-  - ecu
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Chipping OBD1 Big Case'

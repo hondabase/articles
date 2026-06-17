@@ -1,5 +1,5 @@
 ---
-summary: 'and indespensible tool :)'
+summary: 'A quick look at essential mechanical tools, such as the vise-grip, that are indispensable for hardware modifications on Honda vehicles.'
 tags: [hardware, education]
 applies_to:
   obd: [0, 1, 2]

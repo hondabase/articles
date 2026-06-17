@@ -23,8 +23,9 @@ O **EPROMer5** é um gravador de ROM "faça você mesmo" (DIY) baseado em porta 
 
 ## 1. Suporte a Chips e Capacidades
 
-*   **Suporte a 27C256:** Suporta nativamente EPROMs padrão de 32 KB (por exemplo, AMD, TI ou Intel 27C256).
-*   **Suporte a AT29C256:** Revisões posteriores e atualizações de software adicionaram suporte para a popular EEPROM apagável eletricamente Atmel AT29C256.
+* **Suporte a 27C256:** Suporta nativamente EPROMs padrão de 32 KB (por exemplo, AMD, TI ou Intel 27C256).
+
+* **Suporte a AT29C256:** Revisões posteriores e atualizações de software adicionaram suporte para a popular EEPROM apagável eletricamente Atmel AT29C256.
 
 ---
 
@@ -33,11 +34,16 @@ O **EPROMer5** é um gravador de ROM "faça você mesmo" (DIY) baseado em porta 
 Devido à sua natureza DIY e à dependência de comunicação por porta paralela legacy, os utilizadores frequentemente encontravam problemas específicos de configuração:
 
 ### Verificação de Juntas de Soldadura
+
 Se o dispositivo não conseguir identificar os chips, apresentar erros de verificação aleatórios ou falhar na inicialização, inspecione a placa de circuito. Muitos kits eram enviados parcialmente montados ou construídos à mão:
-*   Use uma lupa para verificar se existem soldaduras frias nos circuitos integrados (ICs) de montagem em superfície (SMD).
-*   Reaqueça quaisquer juntas suspeitas com uma ponta de soldar de cinzel fino e aplique fluxo fresco para garantir uma ligação elétrica sólida.
+
+* Use uma lupa para verificar se existem soldaduras frias nos circuitos integrados (ICs) de montagem em superfície (SMD).
+* Reaqueça quaisquer juntas suspeitas com uma ponta de soldar de cinzel fino e aplique fluxo fresco para garantir uma ligação elétrica sólida.
 
 ### Temporização da Porta Paralela (Velocidade de Gravação)
+
 As portas paralelas são sensíveis à temporização do CPU e às velocidades de barramento (bus). 
-*   **Ajustes de Temporização:** Ao correr o software do programador em computadores mais antigos (como um portátil equipado com LPT de 600 MHz), poderá ser necessário limitar manualmente a velocidade de temporização de escrita nas definições do gravador. Definir o atraso de velocidade de gravação para **"13"** (ou superior) é frequentemente necessário para evitar erros de estouro de buffer de dados ao gravar em EPROMs UV `27C256`.
-*   **Vantagem da Memória Flash:** As EEPROMs flash Atmel `29C256` gerem as operações de escrita através de buffers de página internos, o que as torna menos sensíveis à temporização da porta paralela. Normalmente, podem ser programadas em qualquer definição de velocidade sem erros induzidos por problemas de temporização.
+
+* **Ajustes de Temporização:** Ao correr o software do programador em computadores mais antigos (como um portátil equipado com LPT de 600 MHz), poderá ser necessário limitar manualmente a velocidade de temporização de escrita nas definições do gravador. Definir o atraso de velocidade de gravação para **"13"** (ou superior) é frequentemente necessário para evitar erros de estouro de buffer de dados ao gravar em EPROMs UV `27C256`.
+
+* **Vantagem da Memória Flash:** As EEPROMs flash Atmel `29C256` gerem as operações de escrita através de buffers de página internos, o que as torna menos sensíveis à temporização da porta paralela. Normalmente, podem ser programadas em qualquer definição de velocidade sem erros induzidos por problemas de temporização.

@@ -29,10 +29,12 @@ Esta diferença está relacionada com o circuito do **Electrical Load Detector (
 
 O ELD é um sensor localizado dentro da caixa de fusíveis do compartimento do motor. Ele monitoriza o consumo de corrente elétrica do alternador e da bateria (como faróis, motores do ventilador e ventoinhas do radiador). O ELD envia um sinal à ECU, permitindo-lhe aumentar a velocidade de ralenti do motor ou ajustar a saída do alternador para evitar a descarga da bateria.
 
-*   **Civic / CRX USDM:** Equipado com um ELD na caixa de fusíveis do motor. A ECU PM6 USDM monitoriza ativamente este pino de entrada do sensor (pino B14 no conetor OBD0).
-*   **Civic / CRX Canadiano:** Estes modelos não foram construídos com um ELD. A ECU PM6 de especificação canadiana tem este circuito de monitorização do sensor desativado no hardware.
+* **Civic / CRX USDM:** Equipado com um ELD na caixa de fusíveis do motor. A ECU PM6 USDM monitoriza ativamente este pino de entrada do sensor (pino B14 no conetor OBD0).
+
+* **Civic / CRX Canadiano:** Estes modelos não foram construídos com um ELD. A ECU PM6 de especificação canadiana tem este circuito de monitorização do sensor desativado no hardware.
 
 ### Sintomas de Incompatibilidade (Código 20)
+
 Se instalar uma ECU PM6 USDM num veículo canadiano, ou num chassis com swap de motor que não tenha a cablagem do ELD, a ECU detetará a falta de tensão do sensor. Isto aciona o **Código 20 (Electrical Load Detector)**. Embora o Código 20 não coloque o motor em modo de segurança (limp mode), ele aciona a luz de verificação do motor (CEL) e pode interferir com o datalogging de série ativo.
 
 ---
@@ -42,9 +44,9 @@ Se instalar uma ECU PM6 USDM num veículo canadiano, ou num chassis com swap de 
 Como a ROM de software é idêntica, o comportamento do ELD da ECU é ditado inteiramente por um jumper de fio físico na placa rotulado como **`BR1`**.
 
 Para contornar o Código 20 e converter uma ECU USDM para as especificações canadianas:
-1.  Abra a caixa da ECU.
-2.  Localize o jumper **`BR1`** na placa de circuito principal.
-3.  Dessolde e remova o fio do jumper `BR1` (ou corte o fio com um alicate de corte), deixando o circuito aberto.
+1. Abra a caixa da ECU.
+2. Localize o jumper **`BR1`** na placa de circuito principal.
+3. Dessolde e remova o fio do jumper `BR1` (ou corte o fio com um alicate de corte), deixando o circuito aberto.
 
 Uma vez aberto o `BR1`, a ECU deixará de monitorizar o pino de entrada do ELD e a CEL do Código 20 será desativada permanentemente.
 
@@ -55,12 +57,14 @@ Uma vez aberto o `BR1`, a ECU deixará de monitorizar o pino de entrada do ELD e
 Abaixo estão digitalizações comparando os layouts das duas placas:
 
 ### Placa Canadiana PM6-`C00`
+
 Note os pontos de solda abertos onde o jumper `BR1` é omitido:
 
 ![Scan da placa da ECU PM6-C00 de especificação canadiana](crx90CA_89-10-17modif2.jpg)
 *Layout da placa PM6-`C00` do mercado canadiano.*
 
 ### Placa USDM PM6-A09
+
 Note o fio do jumper `BR1` instalado perto do conetor de extremidade:
 
 ![Scan da placa da ECU PM6-A09 de especificação USDM mostrando o jumper BR1](crx91US_90-12-19modif2.jpg)

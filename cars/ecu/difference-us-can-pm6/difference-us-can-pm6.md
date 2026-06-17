@@ -29,10 +29,12 @@ This difference relates to the **Electrical Load Detector (ELD)** circuit.
 
 The ELD is a sensor located inside the engine bay fuse box. It monitors the electrical current draw from the alternator and battery (such as headlights, blower motors, and radiator fans). The ELD signals the ECU, allowing it to increase the engine idle speed or adjust alternator output to prevent battery drain.
 
-*   **USDM Civic / CRX:** Equipped with an ELD in the engine fuse box. The USDM PM6 ECU actively monitors this sensor input pin (pin B14 on the OBD0 connector).
-*   **Canadian Civic / CRX:** These models were not built with an ELD. The Canadian-spec PM6 ECU has this sensor monitoring circuit disabled in the hardware.
+* **USDM Civic / CRX:** Equipped with an ELD in the engine fuse box. The USDM PM6 ECU actively monitors this sensor input pin (pin B14 on the OBD0 connector).
+
+* **Canadian Civic / CRX:** These models were not built with an ELD. The Canadian-spec PM6 ECU has this sensor monitoring circuit disabled in the hardware.
 
 ### Mismatch Symptoms (Code 20)
+
 If you install a USDM PM6 ECU in a Canadian vehicle, or into an engine swap chassis that lacks ELD wiring, the ECU will detect a missing sensor voltage. This triggers **Code 20 (Electrical Load Detector)**. While Code 20 does not put the engine into limp mode, it triggers a Check Engine Light (CEL) and can interfere with active serial datalogging.
 
 ---
@@ -42,9 +44,9 @@ If you install a USDM PM6 ECU in a Canadian vehicle, or into an engine swap chas
 Because the software ROM is identical, the ECU's ELD behavior is dictated entirely by a physical wire jumper on the board labeled **`BR1`**. 
 
 To bypass Code 20 and convert a USDM ECU to Canadian specifications:
-1.  Open the ECU case.
-2.  Locate jumper **`BR1`** on the main circuit board.
-3.  Desolder and remove the `BR1` jumper wire (or cut the wire with wire snips), leaving the circuit open.
+1. Open the ECU case.
+2. Locate jumper **`BR1`** on the main circuit board.
+3. Desolder and remove the `BR1` jumper wire (or cut the wire with wire snips), leaving the circuit open.
 
 Once `BR1` is open, the ECU will stop monitoring the ELD input pin, and the Code 20 CEL will be permanently deactivated.
 
@@ -55,12 +57,14 @@ Once `BR1` is open, the ECU will stop monitoring the ELD input pin, and the Code
 Below are scans comparing the two board layouts:
 
 ### Canadian PM6-`C00` Board
+
 Note the open solder pads where the `BR1` jumper is omitted:
 
 ![Canadian-spec PM6-C00 ECU board scan](crx90CA_89-10-17modif2.jpg)
 *Canadian-market PM6-`C00` board layout.*
 
 ### USDM PM6-A09 Board
+
 Note the populated `BR1` jumper wire installed near the edge connector:
 
 ![USDM-spec PM6-A09 ECU board scan showing BR1 jumper](crx91US_90-12-19modif2.jpg)

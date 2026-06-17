@@ -27,9 +27,11 @@ Como as ECUs Honda OBD0 and OBD1 requerem 32 KB de espaço de programa, é essen
 
 Embora muitos chips partilhem o encapsulamento DIP-28, os seus procedimentos de gravação e apagamento variam:
 
-*   **27C256 (EPROM):** Erasable Programmable Read-Only Memory (Memória Apenas de Leitura Programável e Apagável). Estes são normalmente programáveis uma única vez (OTP), a menos que utilize chips com janela, que requerem um apagador ultravioleta (UV) dedicado para limpar antes de regravar.
-*   **SST 27SF256 (Flash EPROM):** Muitos preparadores (tuners) preferem este chip. Pode ser apagado eletricamente e regravado em segundos pelo software do gravador, eliminando a necessidade de luz UV.
-*   **AT29C256 (EEPROM):** Electrically Erasable PROM. Semelhante ao chip flash SST, mas com algoritmos de temporização e tensões de gravação diferentes.
+* **27C256 (EPROM):** Erasable Programmable Read-Only Memory (Memória Apenas de Leitura Programável e Apagável). Estes são normalmente programáveis uma única vez (OTP), a menos que utilize chips com janela, que requerem um apagador ultravioleta (UV) dedicado para limpar antes de regravar.
+
+* **SST 27SF256 (Flash EPROM):** Muitos preparadores (tuners) preferem este chip. Pode ser apagado eletricamente e regravado em segundos pelo software do gravador, eliminando a necessidade de luz UV.
+
+* **AT29C256 (EEPROM):** Electrically Erasable PROM. Semelhante ao chip flash SST, mas com algoritmos de temporização e tensões de gravação diferentes.
 
 ---
 
@@ -50,5 +52,6 @@ Abaixo está uma comparação de gravadores commumente utilizados para afinaçã
 
 ## 3. Dicas de Programação
 
-*   **Selecione o Perfil de Chip Correto:** Selecione sempre o fabricante e o prefixo do modelo exatos do seu chip (por exemplo, `SST27SF256` em vez de um `27C256` genérico) no software do seu gravador. Aplicar a tensão de programação (Vpp) errada pode danificar permanentemente o chip.
-*   **Verifique após a Gravação:** Ative a função "Verify" (Verificar) no software do seu gravador. Isto compara o conteúdo gravado no chip byte a byte com o ficheiro BIN original no seu computador para garantir que não ocorreram erros de gravação.
+* **Selecione o Perfil de Chip Correto:** Selecione sempre o fabricante e o prefixo do modelo exatos do seu chip (por exemplo, `SST27SF256` em vez de um `27C256` genérico) no software do seu gravador. Aplicar a tensão de programação (Vpp) errada pode danificar permanentemente o chip.
+
+* **Verifique após a Gravação:** Ative a função "Verify" (Verificar) no software do seu gravador. Isto compara o conteúdo gravado no chip byte a byte com o ficheiro BIN original no seu computador para garantir que não ocorreram erros de gravação.

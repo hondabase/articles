@@ -30,6 +30,7 @@ From a software standpoint, the PM7 codebase is nearly identical to the SOHC D16
 Below are component and solder side layout scans for different revisions of the PM7 board:
 
 ### European PM7-E020
+
 This revision was commonly found in European-spec DOHC CRXs:
 
 ![European PM7-E020 Component Side Layout Scan](PM7-E020_component.jpg)
@@ -54,5 +55,5 @@ This revision was commonly found in European-spec DOHC CRXs:
 
 For analysis and tuning, you can download the stock ROM calibration BIN files:
 
-*   [Download the JDM PM7-0330 Stock ROM](Pm7-03301989.bin) *(32 KB, Stock 1989 JDM DOHC ZC calibration)*
-*   [Download the European PM7 Stock ROM](PM7-euro.bin) *(32 KB, German D16Z5 DOHC ZC 125 HP calibration)*
+* [Download the JDM PM7-0330 Stock ROM](Pm7-03301989.bin) *(32 KB, Stock 1989 JDM DOHC ZC calibration)*
+* [Download the European PM7 Stock ROM](PM7-euro.bin) *(32 KB, German D16Z5 DOHC ZC 125 HP calibration)*

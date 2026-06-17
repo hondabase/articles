@@ -24,23 +24,27 @@ The **PM6** is the factory OBD0 engine control unit (ECU) utilized in 1988–199
 Due to its simple architecture and widespread availability, the PM6 has historically served as a major development platform for OBD0 Honda tuning, disassembly, and real-time programming.
 
 ## Microcontroller Architecture
+
 The PM6 ECU is built around the OKI `83C154` / Intel `80C154` microcontroller family. The ROM code can be extracted, modified, and burnt to standard EPROMs (such as the `27C256`) to adjust fuel maps, ignition maps, rev limits, and other engine parameters.
 
 ## Development Resources
 
 The following development files are co-located in this directory:
-*   [Pm6.asm](Pm6.asm): A comprehensive disassembly of the USDM 1991 PM6 stock ROM, with approximately 95% of the original assembly code fully mapped and commented for developers.
+
+* [Pm6.asm](Pm6.asm): A comprehensive disassembly of the USDM 1991 PM6 stock ROM, with approximately 95% of the original assembly code fully mapped and commented for developers.
 
 ## Board Layout Reference
 
 Below are high-resolution scans of the PM6 ECU printed circuit board (PCB) for component mapping and repair reference:
 
 ### 1. Board Top Layout
+
 The top side of the PM6 PCB showing IC locations, capacitors, and resistor packs:
 
 ![PM6 ECU circuit board top scan showing electronic components](PM6top.jpg)
 
 ### 2. Board Underside Layout
+
 The rear solder side of the PM6 PCB:
 
 ![PM6 ECU circuit board bottom solder scan](PM6back.jpg)

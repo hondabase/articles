@@ -30,6 +30,7 @@ Do ponto de vista do software, o código base da PM7 é quase idêntico ao códi
 Abaixo estão os scans de layout do lado dos componentes e das soldas para diferentes revisões da placa PM7:
 
 ### PM7-E020 Europeia
+
 Esta revisão era comummente encontrada nos CRXs DOHC de especificação europeia:
 
 ![Scan do Layout do Lado dos Componentes da PM7-E020 Europeia](PM7-E020_component.jpg)
@@ -54,5 +55,5 @@ Esta revisão era comummente encontrada nos CRXs DOHC de especificação europei
 
 Para análise e reprogramação, pode descarregar os ficheiros BIN de calibração da ROM original:
 
-*   [Descarregar a ROM Original da PM7-0330 JDM](Pm7-03301989.bin) *(32 KB, Calibração original do DOHC ZC JDM de 1989)*
-*   [Descarregar a ROM Original da PM7 Europeia](PM7-euro.bin) *(32 KB, Calibração alemã do DOHC ZC D16Z5 de 125 CV)*
+* [Descarregar a ROM Original da PM7-0330 JDM](Pm7-03301989.bin) *(32 KB, Calibração original do DOHC ZC JDM de 1989)*
+* [Descarregar a ROM Original da PM7 Europeia](PM7-euro.bin) *(32 KB, Calibração alemã do DOHC ZC D16Z5 de 125 CV)*
