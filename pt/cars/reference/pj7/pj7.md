@@ -1,11 +1,10 @@
 ---
-summary: 'PJ7 86-87 Prelude 2.0 Si (B20A3) (Avanço por vácuo?)'
+summary: 'Especificações técnicas e visão geral da aplicação para a ECU Honda Prelude Si (B20A3) 86-87.'
+tags: [reference]
 applies_to:
   obd: [0, 1, 2]
   brand: Honda
 complexity: beginner
-tags:
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: PJ7

@@ -1,10 +1,9 @@
 ---
-summary: 'Estraguei isto, por favor corrijam esta página'
+summary: 'Relatório de problema técnico relativo a erros de formatação em páginas wiki que requerem manutenção e correção de conteúdo.'
+tags: [reference]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Square Brackets'

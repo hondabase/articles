@@ -1,5 +1,5 @@
 ---
-summary: 'octal = 8 bit or base 8'
+summary: 'Explanation of octal numbering and its relevance in digital logic and bitwise operations for Honda ECU tuning.'
 tags: [reference]
 applies_to:
   obd: [0, 1, 2]

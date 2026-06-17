@@ -18,5 +18,6 @@ sources:
 
 A ECU **PCF** é uma unidade de controlo do motor original da Honda:
 
-*   **Part Number OEM:** `37820-PCF-N51`
-*   **Referência da Placa:** `CY-EH2955A`
+* **Part Number OEM:** `37820-PCF-N51`
+
+* **Referência da Placa:** `CY-EH2955A`

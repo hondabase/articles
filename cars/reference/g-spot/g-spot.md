@@ -1,5 +1,5 @@
 ---
-summary: 'For more information, see the GSpot forum.'
+summary: 'Information on the community GSpot forum, dedicated to Honda ECU hardware analysis and technical discussions.'
 tags: [reference]
 applies_to:
   obd: [0, 1, 2]

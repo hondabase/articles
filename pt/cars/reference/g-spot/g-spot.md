@@ -1,10 +1,9 @@
 ---
-summary: 'Para mais informações, consulte o fórum G-Spot.'
+summary: 'Informação sobre o fórum da comunidade GSpot, dedicado à análise de hardware de ECUs Honda e discussões técnicas.'
+tags: [referência]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - referência
 sources:
   - name: 'pgmfi.org wiki'
     title: G-Spot

@@ -1,10 +1,9 @@
 ---
-summary: 'Australiano. :)'
+summary: 'Visão geral das especificações de veículos e ECUs Honda do Mercado Doméstico Australiano (OZaDM).'
+tags: [reference]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Oz DM'

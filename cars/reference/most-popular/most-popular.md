@@ -1,5 +1,5 @@
 ---
-summary: 'Most Popular limit=20 ?'
+summary: 'Top-viewed articles in the Hondabase knowledgebase, providing easy access to popular tuning and diagnostics topics.'
 tags: [reference]
 applies_to:
   obd: [0, 1, 2]

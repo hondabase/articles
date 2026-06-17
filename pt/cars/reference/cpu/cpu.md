@@ -1,10 +1,9 @@
 ---
-summary: 'Unidade Central de Processamento - o cérebro'
+summary: 'Visão geral do papel da Unidade Central de Processamento (CPU) como o controlador principal nos sistemas de gestão de motor das ECUs Honda.'
+tags: [referência]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - referência
 sources:
   - name: 'pgmfi.org wiki'
     title: CPU

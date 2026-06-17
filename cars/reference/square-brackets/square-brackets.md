@@ -1,5 +1,5 @@
 ---
-summary: 'I broke it please fix this page'
+summary: 'Technical issue report regarding formatting errors in wiki pages requiring maintenance and content correction.'
 tags: [reference]
 applies_to:
   obd: [0, 1, 2]

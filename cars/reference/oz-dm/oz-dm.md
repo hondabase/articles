@@ -1,5 +1,5 @@
 ---
-summary: 'Australian. :)'
+summary: 'Overview of the Australian Domestic Market (OZaDM) Honda vehicle and ECU specifications.'
 tags: [reference]
 applies_to:
   obd: [0, 1, 2]

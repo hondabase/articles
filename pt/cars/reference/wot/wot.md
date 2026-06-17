@@ -1,10 +1,9 @@
 ---
-summary: 'Wide Open Throttle (Borboleta Totalmente Aberta), ou como se diz em Portugal: "pé a fundo" :)'
+summary: 'Definição e significado de "Wide Open Throttle" (WOT - Aceleração Total) na afinação de motores Honda e mapeamento de diagnóstico.'
+tags: [reference]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: WOT

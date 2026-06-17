@@ -1,5 +1,5 @@
 ---
-summary: 'Central Procesing Unit the brain'
+summary: 'Overview of the Central Processing Unit (CPU) role as the primary controller in Honda ECU engine management systems.'
 tags: [reference]
 applies_to:
   obd: [0, 1, 2]

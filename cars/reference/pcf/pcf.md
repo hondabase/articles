@@ -19,5 +19,6 @@ sources:
 
 The **PCF** ECU is a Honda factory engine control unit:
 
-*   **OEM Part Number:** `37820-PCF-N51`
-*   **Board Reference:** `CY-EH2955A`
+* **OEM Part Number:** `37820-PCF-N51`
+
+* **Board Reference:** `CY-EH2955A`

@@ -1,5 +1,5 @@
 ---
-summary: 'Wide Open Throttle "pedal to the metal" :)'
+summary: 'Definition and significance of "Wide Open Throttle" (WOT) in Honda engine tuning and diagnostic mapping.'
 tags: [reference]
 applies_to:
   obd: [0, 1, 2]

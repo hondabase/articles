@@ -1,5 +1,5 @@
 ---
-summary: 'PJ7 8687 Prelude 2.0 Si (B20A3) (Vac advance?)'
+summary: 'Technical specifications and application overview for the 86-87 Honda Prelude Si (B20A3) ECU.'
 tags: [reference]
 applies_to:
   obd: [0, 1, 2]
