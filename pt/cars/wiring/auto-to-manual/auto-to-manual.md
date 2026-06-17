@@ -1,36 +1,86 @@
+yaml
 ---
-summary: 'A maioria das ECUs automáticas pode ser convertida para uma manual de 5 velocidades de forma bastante fácil. Fazer o caminho inverso envolve frequentemente adicionar mais componentes.'
+summary: "Convert automatic transmissions to 5-speed manual ECU configurations on Honda/Acura vehicles. Most automatic ECUs can be converted via software ROM modification or hardware changes with minimal additional components."
 applies_to:
   obd: [0, 1, 2]
   brand: Acura/Honda
 complexity: intermediate
 tags:
   - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - wiring
+  - transmission
+  - auto-to-manual
   - conversion
-  - diagnosticos
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Automático para Manual'
-    url: /pgmfi/wiki/library/auto-to-manual
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - rom
+  - tuning
+  - wiring
+  - hardware-modification
+  - diagnostics
 ---
 
-# Automático para Manual
+# Automatic to Manual ECU Conversion
 
-A maioria das [ECUs](/cars/ecu/ecu) automáticas pode ser convertida para uma manual de 5 velocidades de forma bastante fácil. Fazer o caminho inverso envolve frequentemente adicionar mais componentes. Neste momento, parece que a conversão pode ser feita tanto por software COMO por hardware: a maioria das [ROMs](/cars/rom/rom) "mugen" desativa a verificação de hardware de transmissão automática, permitindo que uma [ECU](/cars/ecu/ecu) automática controle um motor manual de 5 velocidades sem gerar o código 19 (solenoide de lockup da transmissão automática). Também pode modificar o hardware para fazer com que uma [ECU](/cars/ecu/ecu) automática pense que é Manual. Isto é bastante específico para `cada` [ECU](/cars/ecu/ecu).
+## Overview
 
-- [ECU OBD0 AUTOMÁTICO PARA MANUAL SEM REMOVER NENHUM HARDWARE](/cars/wiring/obd0ecuautotomanualwithoutremoveanyhardware) = Como utilizar uma ECU automática SEM a luz de Check Engine!
-- [PS9 Automático para Manual](/cars/sensors/ps9-auto-manual) = Como transformar placas de circuito [OBD0](/cars/rom/obd0) PS9, PG7, PM7, PR5 ou similares numa [ECU](/cars/ecu/ecu) manual tipo PM6
-- OBD0 PR4 Automático para Manual = Converter uma PR4 [OBD0](/cars/rom/obd0) automática para manual
-- [PR3 Automático para Manual](/cars/ecu/pr3-auto-manual) = Converter uma PR3 automática para manual
-- [OBD1 Civic Integra Automático para Manual](/cars/wiring/obd1-civic-integra-auto-manual) = Converter uma [ECU](/cars/ecu/ecu) de Civic e Integra automático de 92-95 de automático para manual
-- [OBD1 P08 Automático para Manual](/cars/honda/civic/eg/sensors/obd1p08-auto-manual) = Converter uma [ECU](/cars/ecu/ecu) automática P08 ou P30 [JDM](/cars/sensors/jdm) (estilo mini) de automático para manual
-- [OBD1 P13 Automático para Manual](/cars/wiring/obd1p13-auto-manual) = Converter uma [ECU](/cars/ecu/ecu) de Prelude H22A de 92-95 de automático para manual
-- [OBD2 P5M Automático para Manual](/cars/wiring/obd2p5m-auto-manual) = Converter um PCM de Prelude H22A de 97-01 de automático para manual
+Most Honda/Acura automatic ECUs can be converted to control 5-speed manual transmissions with straightforward modifications. Reverse conversions (manual to automatic) typically require additional hardware components.
+
+Conversions can be accomplished via **software (ROM modification)** or **hardware changes**:
+
+- **Software Approach:** Modified ROM images (e.g., "Mugen" variants) disable automatic transmission hardware checks, allowing an automatic ECU to control a manual 5-speed engine without generating Code 19 (automatic transmission lockup solenoid error).
+- **Hardware Approach:** Physical circuit modifications can be made to trick an automatic ECU into operating as a manual unit. This method is highly specific to each ECU variant.
+
+> [!TIP]
+> Software-based conversions are generally simpler and require no soldering or component removal.
+
+## OBD0 Automatic to Manual Conversions
+
+### OBD0 Automatic to Manual Without Hardware Removal
+
+Control a manual 5-speed transmission using an automatic OBD0 ECU without triggering the Check Engine light.
+
+**Related Article:** [OBD0 ECU Automatic to Manual Without Removing Any Hardware](/cars/wiring/obd0ecuautotomanualwithoutremoveanyhardware)
+
+### PS9, PG7, PM7, PR5 Automatic to Manual
+
+Convert automatic PS9, PG7, PM7, or PR5 OBD0 circuit boards into a manual PM6-style ECU.
+
+**Related Article:** [PS9 Automatic to Manual](/cars/sensors/ps9-auto-manual)
+
+### PR4 OBD0 Automatic to Manual
+
+Convert a PR4 OBD0 automatic ECU to manual configuration.
+
+**Related Article:** OBD0 PR4 Automatic to Manual
+
+### PR3 Automatic to Manual
+
+Convert a PR3 automatic ECU to manual operation.
+
+**Related Article:** [PR3 Automatic to Manual](/cars/ecu/pr3-auto-manual)
+
+## OBD1 Automatic to Manual Conversions
+
+### Civic & Integra Automatic to Manual (1992–1995)
+
+Convert automatic ECUs from 1992–1995 Civic and Integra models to manual transmission control.
+
+**Related Article:** [OBD1 Civic Integra Automatic to Manual](/cars/wiring/obd1-civic-integra-auto-manual)
+
+### P08 & P30 Automatic to Manual (JDM Mini-Style)
+
+Convert JDM automatic P08 or P30 (mini-style) ECUs to manual configuration.
+
+**Related Article:** [OBD1 P08 Automatic to Manual](/cars/honda/civic/eg/sensors/obd1p08-auto-manual)
+
+### P13 Prelude H22A Automatic to Manual (1992–1995)
+
+Convert Prelude H22A automatic ECUs from 1992–1995 to manual transmission control.
+
+**Related Article:** [OBD1 P13 Automatic to Manual](/cars/wiring/obd1p13-auto-manual)
+
+## OBD2 Automatic to Manual Conversions
+
+### P5M Prelude H22A Automatic to Manual (1997–2001)
+
+Convert Prelude H22A PCM units from 1997–2001 from automatic to manual transmission operation.
+
+**Related Article:** [OBD2 P5M Automatic to Manual](/cars/wiring/obd2p5m-auto-manual)

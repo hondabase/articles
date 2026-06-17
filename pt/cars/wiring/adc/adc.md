@@ -1,26 +1,67 @@
+yaml
 ---
-summary: 'Conversor Analógico para Digital: Um circuito integrado (IC) que converte um sinal analógico numa representação digital.'
+summary: "An analog-to-digital converter (ADC) is an integrated circuit that converts analog signals into digital representations. Learn ADC fundamentals, bit resolution, reference voltage, and conversion mathematics."
 applies_to:
   obd: [0, 1, 2]
   brand: Acura
 complexity: intermediate
 tags:
+  - adc
   - ecu
-  - reference
-  - tuning
-  - rom
   - sensors
-  - wiring
   - conversion
-sources:
-  - name: 'pgmfi.org wiki'
-    title: ADC
-    url: /pgmfi/wiki/library/adc
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - wiring
+  - tuning
+  - reference
 ---
 
-# ADC
+# Analog-to-Digital Converter (ADC)
 
-Conversor Analógico para Digital (Analog to Digital Converter): Um circuito integrado (IC) que converte um sinal analógico numa representação digital. Como exemplo, consideremos um [ADC](/cars/wiring/adc) de 8 bits com uma referência de 5,00V. 8 bits: Um "[ADC](/cars/wiring/adc) de 8 bits" significa que este irá converter o sinal de entrada num equivalente de representação numérica de 2^8 (daí vem o "8"). 2^8 = 2*2*2*2*2*2*2*2 = 256 valores possíveis. No mundo digital, o zero é um número legítimo, o qual utiliza uma das combinações possíveis, dando-nos uma saída de contagem de 0 a 255. Referência de 5,00V: A tensão de referência é aquilo com o qual o sinal de entrada é comparado, como uma fração. Se introduzirmos um sinal de 5,00V no nosso [ADC](/cars/wiring/adc), e este estiver a usar uma referência de 5,00V, qual será o resultado de saída? Escala total! No nosso exemplo de 8 bits, a "escala total" é uma contagem de 255, pelo que é isso que obtemos na saída. Uma entrada de sinal zero produzirirá uma saída de zero. De qualquer forma, a matemática resulta em: Saída digital = ((Vin / Vref) * 2^número de bits) - 1 Com isto, pode descobrir exatamente o que o seu software lerá do [ADC](/cars/wiring/adc) com um determinado sinal de entrada. (Para efeitos deste exemplo, excluí o caso de medição de tensões positivas e negativas, algo que não veremos numa [ECU](/cars/ecu/ecu) automóvel.) A conversão analógico-digital ***nunca*** é perfeita. É um processo de aproximação - `cada` valor digital ***exato*** tem de representar uma ***gama*** de valores analógicos. A resolução (normalmente medida in bits) de um conversor analógico para digital representa em quantos valores possíveis a gama analógica pode ser dividida.
+An analog-to-digital converter (ADC) is an integrated circuit that converts analog input signals into digital representations. Understanding ADC operation is essential for sensor signal interpretation and ECU tuning.
+
+## ADC Fundamentals
+
+### Bit Resolution
+
+The bit resolution of an ADC determines how many discrete values it can represent. An 8-bit ADC produces 2^8 = 256 possible output values (0–255).
+
+**Calculation:**
+- 2^8 = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 = 256 values
+- Range: 0 to 255 (zero is a valid state)
+
+### Reference Voltage
+
+The reference voltage (Vref) is the maximum analog input that corresponds to full-scale digital output. A common reference voltage in automotive ECUs is 5.00V.
+
+**Example:**
+- If Vref = 5.00V and the input signal = 5.00V, the output = 255 (full scale)
+- If the input signal = 0V, the output = 0
+
+## Conversion Formula
+
+The digital output is calculated as:
+
+**Digital Output = ((Vin / Vref) × 2^number of bits) − 1**
+
+Where:
+- **Vin** = Input analog voltage
+- **Vref** = Reference voltage
+- **Number of bits** = ADC resolution (e.g., 8, 10, 12 bits)
+
+This formula allows precise prediction of the digital value the ECU will read for any given input signal.
+
+## Resolution and Accuracy
+
+> [!IMPORTANT]
+> Analog-to-digital conversion is inherently an approximation process. Each discrete digital value must represent a range of analog values, not a single point.
+
+**Resolution** (measured in bits) defines how finely the ADC divides the analog input range:
+
+- **Higher bit resolution** = Smaller steps between values = Greater precision
+- **Lower bit resolution** = Larger steps between values = Lower precision
+
+For example, an 8-bit ADC with a 5.00V reference has a step size (least significant bit, or LSB) of:
+- LSB = Vref / 2^bits = 5.00V / 256 ≈ 0.0195V per step
+
+An 10-bit ADC with the same 5.00V reference provides finer resolution:
+- LSB = 5.00V / 1024 ≈ 0.00488V per step

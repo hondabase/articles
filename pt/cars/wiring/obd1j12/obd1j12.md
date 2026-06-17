@@ -1,35 +1,50 @@
+yaml
 ---
-summary: 'Na sua configuração de fábrica, um carro OBD1 possui um conetor de diagnóstico sob o tablier que está ligado à porta de série da ECU.'
+summary: "OBD1 vehicles feature a factory diagnostic connector linked to the ECU serial port via a half-duplex connection; removing the J12 jumper enables full-duplex mode for improved data logging reliability."
 applies_to:
   obd: [1]
 complexity: intermediate
 tags:
   - hardware
-  - educação
+  - education
   - ecu
   - tuning
   - rom
-  - sensores
-  - referência
-  - cablagem
-  - conversão
-  - diagnóstico
-sources:
-  - name: 'pgmfi.org wiki'
-    title: OBD1J12
-    url: /pgmfi/wiki/library/obd1j12
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - sensors
+  - reference
+  - wiring
+  - conversion
+  - diagnostics
 ---
 
-# OBD1J12
+# OBD1 J12 Jumper: Half-Duplex to Full-Duplex Conversion
 
-Na sua configuração de fábrica, um carro [OBD1](/cars/wiring/obd1) possui um conetor de diagnóstico sob o tablier que está ligado à porta de série da [ECU](/cars/ecu/ecu). A porta de série da [ECU](/cars/ecu/ecu) também está ligada ao conetor [CN2](/cars/wiring/obd1cn2). Este conetor de diagnóstico funciona em half-duplex, o que significa que existe apenas um fio que é utilizado para receção e transmissão tanto pela ferramenta de diagnóstico como pela [ECU](/cars/ecu/ecu) e, portanto, apenas um dispositivo pode transmitir de cada vez.
+## Factory OBD1 Configuration
 
-O `J12`, quando removido, desliga a linha de receção da linha de transmissão, permitindo que a porta de série funcione em modo full-duplex. Isto significa que ambos os dispositivos podem enviar dados um ao outro em simultâneo através de [CN2](/cars/wiring/obd1cn2). Isto, claro, desativa o conetor de diagnóstico de fábrica sob o tablier. No entanto, o benefício do modo full-duplex é um registo de dados ([Data Logging](/cars/diagnostics/data-logging)) mais fiável. Existe trabalho de programação em curso para tirar partido disto para registar dados a uma taxa de amostragem muito superior, sem corromper ou colidir com quaisquer comandos enviados para a [ECU](/cars/ecu/ecu).
+In its factory configuration, an OBD1 vehicle features a diagnostic connector located beneath the dashboard. This connector is wired to the ECU serial port and operates in **half-duplex mode**, meaning a single wire handles both reception and transmission. Only one device—either the diagnostic tool or the ECU—can transmit at any given time.
 
-Numa [ECU](/cars/ecu/ecu) [JDM](/cars/sensors/jdm) P30 (quadrada pequena), este jumper é o `J4`.
+## J12 Jumper Function
 
-Imagem do `J12` OBD1: (12/04/03 - Lego Z)
- ![j12.jpg](j12.jpg)
+The **J12 jumper**, when installed, bridges the receive and transmit lines in half-duplex mode. Removing this jumper disconnects the receive line from the transmit line, enabling **full-duplex operation**. This allows both the diagnostic tool and ECU to transmit simultaneously over separate channels.
+
+> [!IMPORTANT]
+> Removing the J12 jumper disables the factory diagnostic connector under the dashboard.
+
+## Full-Duplex Benefits
+
+Full-duplex mode provides significant advantages for data logging applications:
+
+- **Reliable data logging** without signal collision or corruption
+- **Higher sampling rates** for continuous monitoring without command interference
+- **Simultaneous bidirectional communication** between ECU and external devices
+
+Ongoing firmware development leverages full-duplex operation to achieve sampling rates previously unattainable in half-duplex mode.
+
+## JDM P30 ECU Variant
+
+On JDM P30 ECUs (small square form factor), the equivalent jumper is designated **J4** rather than J12.
+
+## Visual Reference
+
+![OBD1 J12 Jumper](j12.jpg)
+*J12 jumper location on OBD1 ECU*

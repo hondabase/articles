@@ -1,20 +1,13 @@
 ---
-summary: 'consulte http://www.ecucontrol.com ou o fórum ECU Control para mais informações.'
+summary: "Este artigo foi removido devido a não conformidade com as diretrizes de conteúdo técnico, pois consistia apenas numa referência externa."
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
 tags:
-  - ecu
-  - referência
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'ECU Control'
-    url: /pgmfi/wiki/library/ecu-control
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - non-compliant
+  - removed
 ---
 
-# ECU Control
+# Conteúdo Removido
 
-consulte [http://www.ecucontrol.com](http://www.ecucontrol.com) ou o [fórum ECU Control](/pgmfi/forum/forum.php?id=10) para mais informações.
+Este artigo continha apenas referências externas e não fornecia conteúdo técnico direto, o que não está em conformidade com as diretrizes de conteúdo do projeto.

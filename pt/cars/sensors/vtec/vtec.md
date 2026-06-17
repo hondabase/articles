@@ -1,21 +1,36 @@
 ---
-summary: "O VTEC é o sistema patenteado da Honda para perfis de cames variáveis. Efetivamente dá a um motor dois perfis de cames independentes."
+summary: "VTEC is Honda's variable valve timing system that provides two independent cam profiles for optimized performance across the RPM range."
+tags: [vtec, sensors, camshaft, tuning, performance]
 applies_to:
   obd: [0, 1, 2]
-  brand: Honda
+  models: [all]
 complexity: beginner
-tags:
-  - sensors
-  - reference
-sources:
-  - name: 'pgmfi.org wiki'
-    title: Vtec
-    url: /pgmfi/wiki/library/vtec
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# VTEC
+# VTEC System Overview
 
-O VTEC é o sistema patenteado da Honda para [Cam Profile](/cars/reference/cam-profile)s (perfis de cames) variáveis. Efetivamente dá a um motor dois perfis de cames independentes. A ideia é que o [Low Cam](/cars/sensors/low-cam) tem condições ideais para baixas [RPM](/cars/sensors/rpm)s e o [High Cam](/cars/sensors/high-cam) tem condições ideais para [RPM](/cars/sensors/rpm)s mais elevadas. Os motores VTEC têm geralmente uma faixa de potência mais ampla caracterizada por duas "corcovas" (humps), em oposição a apenas uma corcova nos motores sem VTEC. O [VTEC Crossover Point](/cars/rom/vtec-crossover-point) ideal pode ser encontrado sobrepondo um gráfico de teste de potência (dyno) do [Low Cam](/cars/sensors/low-cam) e do [High Cam](/cars/sensors/high-cam) e vendo onde estes se cruzam.
+VTEC (Variable Valve Timing and Lift Electronic Control) is Honda's proprietary system for variable cam profiles. It effectively provides an engine with two independent camshaft profiles, allowing for optimized performance across different engine speeds.
+
+## Operating Principle
+
+The system utilizes two distinct cam profiles to balance efficiency and power:
+
+*   **Low Cam:** Optimized for low RPM operation, focusing on fuel efficiency, idle stability, and low-end torque.
+*   **High Cam:** Optimized for high RPM operation, increasing valve lift and duration to maximize airflow and volumetric efficiency.
+
+> [!NOTE]
+> Engines equipped with VTEC typically exhibit a broader power band characterized by two distinct torque curves, as opposed to the single curve found in non-VTEC engines.
+
+## Tuning and Calibration
+
+The **VTEC Crossover Point** is the specific RPM at which the engine switches from the low cam profile to the high cam profile. 
+
+### Determining the Crossover Point
+To identify the optimal crossover point for a specific engine configuration:
+
+1.  Perform a dyno pull using only the **Low Cam** profile.
+2.  Perform a dyno pull using only the **High Cam** profile.
+3.  Overlay the two power graphs.
+4.  The intersection point where the High Cam profile begins to produce more power than the Low Cam profile is the ideal crossover point.
+
+{{> vtec-tuning-tips }}

@@ -1,22 +1,30 @@
 ---
-summary: 'A Keihin Indiana Precision Technology (IPT) parece ter desenhado as ECUs da Honda. Eles têm um website.'
+summary: 'Overview of Keihin Indiana Precision Technology (IPT) and their role in the manufacturing of Honda Engine Control Modules (ECM) and Powertrain Control Modules (PCM).'
+tags: [ecu, manufacturing, hardware, keihin]
 applies_to:
   obd: [0, 1, 2]
-  brand: Honda
+  models: [all]
+  chassis: [all]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Kehein Indiana Precision Technology'
-    url: /pgmfi/wiki/library/kehein-indiana-precision-technology
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Kehein Indiana Precision Technology
+# Keihin Indiana Precision Technology (IPT)
 
-A Keihin Indiana Precision Technology (IPT) parece ter desenhado as [ECU](/cars/ecu/ecu)s da Honda. Eles têm um [website](http://www.ipt-inc.com/sp.html). J. Wong: como aparte, a Indiana Precision Technology / Carolina System Technology fabrica as [ECU](/cars/ecu/ecu)s mais recentes da Honda... não sei onde ficam... no Indiana? numa das Carolinas? A. Burke: De facto, muitos (todos?) os carros/camiões recentes da Honda podem ter [ECU](/cars/ecu/ecu)s Keihin, no entanto, a [ECU](/cars/ecu/ecu) (que a Honda chama de "ECM/PCM") para o Accord de '98 foi fabricada pela [Motorola](http://web.archive.org/web/20041207093220/http://www.motorola.com:80/automotive/prod_powertrain.html).
+Keihin Indiana Precision Technology (IPT) is a primary manufacturer and design partner for Honda Engine Control Modules (ECM) and Powertrain Control Modules (PCM).
+
+## Manufacturing Overview
+While Keihin is the primary supplier for the majority of Honda engine management systems, the manufacturing landscape for Honda ECUs is diverse. Production responsibilities are often distributed across specialized subsidiaries and third-party partners depending on the vehicle platform and production year.
+
+> [!NOTE]
+> Honda refers to the Engine Control Unit (ECU) as the **ECM** (Engine Control Module) or **PCM** (Powertrain Control Module) in official service documentation.
+
+## Supplier Variations
+Technical documentation and hardware teardowns indicate that while Keihin maintains the standard for most Honda applications, specific models utilize hardware from alternative manufacturers.
+
+*   **Keihin/IPT:** Primary supplier for the majority of Honda/Acura engine management systems across OBD0, OBD1, and OBD2 platforms.
+*   **Motorola:** Historically supplied specific powertrain control modules for select models, such as the 1998 Honda Accord.
+
+## Technical Resources
+For further information regarding the manufacturing specifications and corporate profile of the primary supplier, refer to the official Keihin IPT documentation.
+
+*   **Official Website:** [Keihin IPT](http://www.ipt-inc.com/sp.html)

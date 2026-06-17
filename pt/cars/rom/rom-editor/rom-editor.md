@@ -8,13 +8,6 @@ tags:
   - rom
   - sensors
   - reference
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Rom Editor'
-    url: /pgmfi/wiki/library/rom-editor
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # Editor de ROM

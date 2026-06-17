@@ -1,43 +1,40 @@
 ---
-summary: 'Os sensores de entrada que uma ECU Honda lê para gerir o combustível e a ignição.'
+summary: 'Guia técnico dos sensores de entrada utilizados pelas ECUs Honda para gerir os parâmetros de injeção de combustível e ignição.'
+tags: [ecu, sensores, diagnóstico, injeção]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - ecu
-  - sensors
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Sensores da ECU'
-    url: /pgmfi/wiki/library/ecu-sensors
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Sensores da ECU
+# Sensores de Entrada da ECU Honda
 
-Sensores presentes em quase todos os motores Honda:
+A ECU Honda utiliza uma rede de sensores para monitorizar as condições de funcionamento do motor e ajustar a injeção de combustível e o avanço da ignição em tempo real.
 
-- [Sensor de Posição da Cambota (Crankshaft Position Sensor)](/cars/ignition/crankshaft-position-sensor) - Determina o ponto para a injeção de combustível e ignição de `cada` cilindro, e também deteta a velocidade do motor.
-- Sensor do Ponto Morto Superior (Top Dead Center Sensor) - Determina o ponto de ignição no arranque (cranking) e quando o ângulo da cambota é anormal.
-- [Sensor de Posição do Cilindro (Cylinder Position Sensor)](/cars/sensors/cylinder-position-sensor) - Deteta a posição do cilindro #1 para ignição sequencial para `cada` cilindro.
-- Temperatura do Líquido de Refrigeração do Motor - ou entrada de termopar ''ECT'' para a temperatura do líquido de refrigeração do motor
-- [Sensor de Temperatura do Ar de Admissão](/cars/sensors/intake-air-temperature-sensor) - ou entrada de termopar ''IAT'' para a temperatura do ar de admissão
-- Sensor MAP - Sensor de Pressão Absoluta do Coletor, permite à [ECU](/cars/ecu/ecu) ajustar a Relação Ar-Combustível com base na densidade do ar de admissão
-- Sensor de Oxigénio - Mede o teor de oxigénio nos gases de escape
-- Pressão Atmosférica - ou ''PA'' ou ''Sensor de Pressão Barométrica'' mede a pressão atmosférica.
-- Sensor TPS - Sensor de Posição do Acelerador
-- Sensor de Velocidade do Veículo - ou ''VSS'' mede a velocidade a que os ***semi-eixos*** estão a rodar
-- Válvula de Controlo do Ar de Ralenti / Válvula de Controlo de Ar Eletrónica - Ou ''IAC/EACV'' ajuda a controlar o ralenti
+## Sensores Principais
 
-Sensores opcionais:
-- Detetor de Carga Elétrica - ou ''ELD'' presente na maioria dos carros dos EUA para medir o nível de carga elétrica
-- [Sensor de Detonação (Knock Sensor)](/cars/ignition/knock-sensor) - Um dispositivo semelhante a um microfone para detetar a Pré-Ignição (detonação) em motores DOHC VTEC.
-- Sensor Pa - Sensor de Pressão Atmosférica
-- Solenoide VTEC = solenoide para direcionar o fluxo de óleo para ativar o VTEC (apenas em motores VTEC :) )
+Estes sensores são essenciais para o funcionamento básico do motor e gestão de combustível:
 
----
+*   **Sensor de Posição da Cambota (CKP):** Determina o ponto para a injeção de combustível e ignição de cada cilindro, além de monitorizar a rotação do motor (RPM).
+*   **Sensor do Ponto Morto Superior (TDC):** Determina o ponto de ignição durante o arranque (*cranking*) e atua como referência quando o ângulo da cambota é anormal.
+*   **Sensor de Posição do Cilindro (CYP):** Deteta a posição do cilindro #1 para permitir a ignição sequencial.
+*   **Sensor de Temperatura do Líquido de Refrigeração (ECT):** Termistor que informa a temperatura do motor à ECU.
+*   **Sensor de Temperatura do Ar de Admissão (IAT):** Termistor que mede a temperatura do ar que entra no coletor de admissão.
+*   **Sensor de Pressão Absoluta do Coletor (MAP):** Mede a pressão no coletor de admissão, permitindo à ECU calcular a densidade do ar e ajustar a relação ar-combustível.
+*   **Sensor de Oxigénio (O2):** Monitoriza o teor de oxigénio nos gases de escape para ajuste de malha fechada (*closed loop*).
+*   **Sensor de Pressão Atmosférica (PA/BARO):** Mede a pressão atmosférica ambiente para compensação de altitude.
+*   **Sensor de Posição do Acelerador (TPS):** Mede o ângulo de abertura da borboleta de aceleração.
+*   **Sensor de Velocidade do Veículo (VSS):** Mede a velocidade de rotação dos semi-eixos.
+*   **Válvula de Controlo de Ar de Ralenti (IAC/EACV):** Atuador controlado pela ECU para regular a rotação de ralenti.
 
-Outros Sensores de [ECU](/cars/ecu/ecu) normalmente não presentes em motores Honda:
-- Sensor Maf
+## Sensores Opcionais e Específicos
+
+Estes componentes dependem da configuração do motor, mercado ou nível de acabamento do veículo:
+
+*   **Sensor de Detetor de Carga Elétrica (ELD):** Presente na maioria dos modelos do mercado norte-americano para medir a carga do sistema elétrico.
+*   **Sensor de Detonação (Knock Sensor):** Dispositivo piezoelétrico que deteta pré-ignição (detonação), comum em motores DOHC VTEC.
+*   **Solenoide VTEC:** Atuador eletromagnético que direciona o fluxo de óleo para ativar o perfil de cames de alta performance.
+
+> [!NOTE]
+> Motores Honda de série não utilizam sensores de massa de ar (MAF), baseando-se inteiramente na leitura de densidade de velocidade (MAP/IAT/RPM) para o cálculo de carga.
+
+{{> sensor-diagnostics-table }}

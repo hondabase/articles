@@ -1,5 +1,6 @@
+yaml
 ---
-summary: 'Descreva a Fórmula de Conversão OBD0 aqui. O RPM de 16 bits OBD0 é utilizado para limitadores de rotação, ralenti alvo (target idle) e para a maioria dos outros valores de RPM de 16 bits na ROM.'
+summary: OBD0 conversion formulas for RPM, vehicle speed, fuel, ignition timing, and VTEC parameters. The 16-bit OBD0 RPM formula is used for rev limiters, target idle, and most other 16-bit RPM values in the ROM.
 applies_to:
   obd: [0]
 complexity: intermediate
@@ -12,22 +13,43 @@ tags:
   - wiring
   - conversion
   - diagnostics
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD0 Conversion Formula'
-    url: /pgmfi/wiki/library/obd0-conversion-formula
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - obd0
+  - rpm
+  - vtec
 ---
 
-# Fórmula de Conversão OBD0
+# OBD0 Conversion Formulas
 
-Descreva a [Fórmula de Conversão OBD0](/cars/wiring/obd0-conversion-formula) aqui.
+OBD0 conversion formulas are essential for translating hexadecimal ROM values into real-world parameters used by the engine control unit. The following formulas define conversions for RPM, vehicle speed, fuel injection timing, ignition advance, and VTEC control.
 
-- O [OBD016 Bit RPM](/cars/diagnostics/obd016-bit-rpm) é utilizado para limitadores de rotação, ralenti alvo e a maioria dos outros valores de [RPM](/cars/sensors/rpm) de 16 bits na [ROM](/cars/rom/rom).
-- O [OBD0 VSS](/cars/diagnostics/obd0vss) é utilizado para converter os valores na ram `06Ch` para a Velocidade do Veículo.
-- O [OBD0 Fuel](/cars/sensors/obd0-fuel) é utilizado para converter os valores hexadecimais nos mapas de combustível em largura de pulso em milissegundos.
-- O [OBD0 Ignition](/cars/sensors/obd0-ignition) é utilizado para converter os valores hexadecimais nos mapas de ignição em graus de avanço.
-- O [OBD0 VTEC](/cars/sensors/obd0vtec) é utilizado para os valores de VTEC.
-- O [OBD08 Bit Rev](/cars/sensors/obd08-bit-rev) é utilizado para os limites de rotação das [ECU](/cars/ecu/ecu)s VTEC [OBD0](/cars/rom/obd0).
+## OBD0 16-Bit RPM Conversion
+
+The 16-bit OBD0 RPM formula is used for:
+- Rev limiters
+- Target idle speed
+- Most other 16-bit RPM values stored in the ROM
+
+This parameter appears throughout the fuel and ignition maps and requires proper conversion for accurate tuning.
+
+## OBD0 Vehicle Speed (VSS) Conversion
+
+The OBD0 VSS conversion translates values stored in RAM address `06Ch` into vehicle speed readings. This parameter is critical for speed-dependent fuel and ignition adjustments.
+
+## OBD0 Fuel Injection Conversion
+
+The OBD0 fuel conversion formula transforms hexadecimal values in fuel maps into pulse width duration measured in milliseconds (ms). Accurate fuel conversion ensures proper air-fuel ratio across all operating conditions.
+
+## OBD0 Ignition Timing Conversion
+
+The OBD0 ignition conversion formula converts hexadecimal ignition map values into crankshaft advance angle measured in degrees (°). This conversion directly affects engine performance and knock resistance.
+
+## OBD0 VTEC Conversion
+
+The OBD0 VTEC formula handles conversion of VTEC control parameters, determining when the variable valve timing system engages.
+
+## OBD0 vs. OBD1 Rev Limiter Differences
+
+OBD0 VTEC ECUs use an OBD0 8-bit rev limiter formula, which differs from the standard 16-bit RPM conversion. This distinction is important when tuning VTEC-equipped vehicles with OBD0 engine management systems.
+
+> [!IMPORTANT]
+> All ROM tuning requires accurate understanding of these conversion formulas. Incorrect conversions will result in improper fuel delivery, ignition timing, and VTEC engagement.

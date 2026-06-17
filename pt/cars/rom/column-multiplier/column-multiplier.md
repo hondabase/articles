@@ -8,13 +8,6 @@ tags:
   - rom
   - sensors
   - reference
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Column Multiplier'
-    url: /pgmfi/wiki/library/column-multiplier
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # Multiplicador de Coluna

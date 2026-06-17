@@ -1,26 +1,20 @@
+yaml
 ---
-summary: 'Todas as páginas (exceto os resultados de pesquisa) têm um link para Editar Texto (Edit Text) na parte inferior. Pode editar a página que está a ler clicando nesse link.'
+summary: Edit any page in the documentation by clicking the Edit Text link at the bottom. Learn how to contribute to technical content across OBD0, OBD1, and OBD2 systems.
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
 tags:
-  - tuning
-  - rom
-  - sensors
-  - reference
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Edit Text'
-    url: /pgmfi/wiki/library/edit-text
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - editing
+  - documentation
+  - contribution
+  - wiki
 ---
 
-# Editar Texto
+# Edit Text
 
-Todas as páginas (exceto os resultados de pesquisa) têm um link para [Editar Texto](/cars/rom/edit-text) na parte inferior. Pode editar a página que está a ler clicando nesse link.
+Every page in the documentation (except search results) includes an **Edit Text** link at the bottom. Click this link to edit the page you are currently reading.
 
----
+## Related Resources
 
-[Documentação do Php Wiki](/cars/reference/php-wiki-documentation)
+- [PHP Wiki Documentation](/cars/reference/php-wiki-documentation)

@@ -7,24 +7,17 @@ tags:
   - ecu
   - identification
   - reference
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Begginers FAQ'
-    url: /pgmfi/wiki/library/begginers-faq
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # FAQ de ECU Honda para Iniciantes
 
-Esta FAQ preserva as orientações introdutórias de identificação e compatibilidade de ECUs da wiki pgmfi. Os códigos de ECU Honda, tais como P28, PM6 e P72, identificam famílias de ECU, mas não confirmam, por si só, uma calibração ou aplicação completa.
+Este artigo fornece orientações introdutórias sobre a identificação e compatibilidade de ECUs Honda. Os códigos de ECU Honda, tais como P28, PM6 e P72, identificam famílias de ECU, mas não confirmam, por si só, uma calibração ou aplicação completa.
 
 ## De que carro veio esta ECU?
 
-A FAQ arquivada lista estas aplicações originais comuns. As aplicações podem variar consoante o mercado, ano, transmissão e calibração.
+A tabela abaixo lista aplicações originais comuns. As aplicações podem variar consoante o mercado, ano, transmissão e calibração.
 
-| Código de ECU | Aplicação listada na FAQ arquivada |
+| Código de ECU | Aplicação |
 | :--- | :--- |
 | PG6 | Integra 1988-1989 |
 | PM5 | Civic/CRX DX 1988-1991 |
@@ -66,32 +59,32 @@ Consulte a [Referência de Códigos de Definição de ECU Honda](/cars/ecu/ecu-d
 
 ## Que ECU deve estar no meu carro?
 
-A FAQ arquivada recomenda o uso de uma ECU que corresponda ao ano e tipo de motor. Os seus exemplos incluem uma PM6 para um D16A6, uma PR4 OBD0 para um B18 antigo, uma P72 ou P74 OBD1, e uma P73 ou P75 OBD2, conforme apropriado.
+Recomenda-se o uso de uma ECU que corresponda ao ano e tipo de motor. Exemplos incluem uma PM6 para um D16A6, uma PR4 OBD0 para um B18 antigo, uma P72 ou P74 OBD1, e uma P73 ou P75 OBD2, conforme apropriado.
 
 Considere estes apenas como exemplos gerais. A ECU correta também depende do mercado, da geração da cablagem, da transmissão, dos injetores, do distribuidor, dos sensores e do equipamento de emissões obrigatório. Leia a [Visão geral das gerações OBD](/cars/wiring/obd) antes de trocar de ECU entre gerações.
 
 ## Como identifico uma ECU?
 
-Comece pela etiqueta na lateral da caixa da ECU. A FAQ arquivada descreve um código de família seguido de um sufixo, utilizando o padrão simplificado `LLN-LNN`, onde `L` é uma letra e `N` é um número.
+Comece pela etiqueta na lateral da caixa da ECU. Um código de família seguido de um sufixo é utilizado, seguindo o padrão simplificado `LLN-LNN`, onde `L` é uma letra e `N` é um número.
 
-Diz que os três primeiros caracteres identificam a família da ECU. Também descreve os sufixos de `A00` a `A49` como geralmente manuais e `A50` ou superior como geralmente automáticos.
+Os três primeiros caracteres identificam a família da ECU. Sufixos de `A00` a `A49` geralmente indicam ECUs manuais, e `A50` ou superior geralmente indicam automáticas.
 
 > [!NOTE]
-> Considere as faixas de sufixo apenas como uma pista da FAQ arquivada, não como uma regra universal. Verifique o número de peça completo e a configuração da placa.
+> Considere as faixas de sufixo apenas como uma pista geral, não como uma regra universal. Verifique o número de peça completo e a configuração da placa.
 
 ## Onde posso encontrar o programa original?
 
-A FAQ arquivada direciona os leitores para a lista de definições de ECU para obter os binários originais (stock). Consulte a [Referência de Códigos de Definição de ECU Honda](/cars/ecu/ecu-definition-codes).
+Para obter os binários originais (stock), consulte a [Referência de Códigos de Definição de ECU Honda](/cars/ecu/ecu-definition-codes).
 
 ## Posso correr código de outra ECU?
 
-A FAQ arquivada remete esta questão para a pesquisa de compatibilidade de código de ECU. Não assuma que duas ECUs são compatíveis a nível de software apenas por partilharem conectores ou nomes de família semelhantes. Diferentes bases de código podem usar diferentes mapas de memória, drivers de hardware, lógica de sensores e atribuições de saídas.
+A compatibilidade de código de ECU deve ser pesquisada cuidadosamente. Não assuma que duas ECUs são compatíveis a nível de software apenas por partilharem conectores ou nomes de família semelhantes. Diferentes bases de código podem usar diferentes mapas de memória, drivers de hardware, lógica de sensores e atribuições de saídas.
 
 Utilize uma ROM base comprovadamente compatível e verifique a família da ECU, revisão da placa, checksum, configuração dos injetores e saídas ativas antes de testar.
 
 ## Como posso contribuir sem escrever código?
 
-A FAQ original encorajava os utilizadores não programadores a testar código, fotografar e identificar ECUs, ajudar outros utilizadores e escrever documentação. As contribuições úteis incluem:
+Utilizadores não programadores podem contribuir testando código, fotografando e identificando ECUs, ajudando outros utilizadores e escrevendo documentação. As contribuições úteis incluem:
 
 - Fotografar placas de ECU e etiquetas das caixas
 - Verificar a pinagem (pinouts) face aos manuais de serviço de fábrica

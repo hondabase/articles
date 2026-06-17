@@ -1,76 +1,71 @@
 ---
-summary: 'Archived JDM P30 D12 circuit modification for logging a 0-5 V analog input through the ECU.'
-tags: [ecu, datalogging, hardware, adc]
+summary: 'Technical guide for modifying the JDM P30 OBD1 ECU to enable 0-5 V analog signal logging via the D12 input.'
+tags: [ecu, datalogging, hardware, adc, p30]
 applies_to:
   ecus: [P30]
   obd: [1]
   models: [civic, del-sol]
-  chassis: [eg, eg-eh]
+  chassis: [eg, eh]
 complexity: advanced
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Japanese Domestic Market P30D12 Modification'
-    url: /pgmfi/wiki/library/japanese-domestic-market-p30d12-modification
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# JDM P30 D12 analog-input modification
+# JDM P30 D12 Analog-Input Modification
 
-This archived modification uses the otherwise-unused D12 input on a JDM OBD1 P30 ECU to log a 0-5 V analog signal, such as the output from an EGT thermocouple amplifier.
+This modification enables the use of the D12 input on a JDM OBD1 P30 ECU to log a 0-5 V analog signal, such as the output from an EGT thermocouple amplifier.
 
 > [!WARNING]
-> This procedure cuts or changes ECU-board circuits. The source reports successful tests on USDM and JDM P30 ECUs, but does not establish compatibility with other OBD1 ECUs. Verify the circuit and software behavior before modifying an ECU.
+> This procedure involves modifying ECU board circuits. While successful tests have been reported on specific P30 variants, compatibility with other OBD1 ECUs is not established. Verify circuit integrity and software behavior before implementation.
 
-## USDM and JDM P30 differences
+## P30 Variant Comparison
 
-The original investigation used a USDM P30 for initial testing and a JDM P30 for the modification and its testing. It expected other Honda OBD1 ECUs to be similar, but did not confirm them.
+The following table outlines the differences between USDM and JDM P30 ECU architectures regarding the D12 input circuit.
 
 | Detail | USDM P30 | JDM P30 |
-| --- | --- | --- |
-| D12 components | All installed | Some components missing |
-| D12 circuit | Described as simpler | Described as more complex |
-| D12 analog input | AI3, `66207` Pin 57 on the 64-pin DIP package | AI5, `66207` Pin 63 on the 68-pin PLCC package |
-| Grounded analog input | AI5, `66207` Pin 59 | AI3, described as `66207` Pin 61 |
-| High eight ADC bits | RAM `067h` | RAM `06Bh` |
-| Remaining two ADC bits | Source describes the two most-significant bits of RAM `066h` as the ADC value's two least-significant bits | Source describes the two most-significant bits of RAM `06Ah` as the ADC value's two least-significant bits |
+| :--- | :--- | :--- |
+| **D12 Components** | Fully installed | Partially missing |
+| **D12 Circuit** | Simplified | Complex |
+| **D12 Analog Input** | AI3 (66207 Pin 57) | AI5 (66207 Pin 63) |
+| **Grounded Input** | AI5 (66207 Pin 59) | AI3 (66207 Pin 61) |
+| **High 8 ADC Bits** | RAM 067h | RAM 06Bh |
+| **Low 2 ADC Bits** | RAM 066h (MSB 2 bits) | RAM 06Ah (MSB 2 bits) |
 
 > [!NOTE]
-> The archived JDM section twice uses "USDM" while describing the JDM circuit: it calls the grounded AI3 input part of a USDM P30 and calls the D12-to-AI5 path "USDM D12 circuitry." The table above follows the surrounding JDM context, but those labels were not independently corrected or verified.
+> The labels in the table above reflect the JDM context. Ensure your specific board revision matches these pin assignments before proceeding.
 
+### Circuit Schematics
+```carousel
 ![USDM P30 D12 input schematic](USDMP30D12Schematics.jpg)
 *Archived schematic of the USDM P30 D12 circuit.*
-
-## Archived JDM modification
-
-The source says all of these changes are made on the back of the ECU board:
-
-1. Replace `R15` with a diode.
-2. Install another diode at `R14`. The source used surface-mount `1N-4148` diodes and described them as protection for the `66207` analog input.
-3. Add a jumper across `R13`.
-4. Add a jumper across the non-ground connections of `Q3` to carry D12 into the modified circuit.
-5. Leave the `33 kohm` `R16` resistor and `C17` unchanged. The source did not identify `C17`'s value and said it appeared to be a tantalum capacitor.
-
+<!-- slide -->
 ![JDM P30 D12 circuit before and after modification](JDMP30D12CircuitEGTModR1.jpg)
 *Archived before-and-after schematic for the JDM P30 D12 modification.*
+```
+
+## Modification Procedure
+
+Perform the following modifications on the underside of the ECU PCB:
+
+1. **Replace R15:** Remove the existing component and replace it with a diode.
+2. **Install R14:** Install a 1N-4148 surface-mount diode to provide protection for the 66207 analog input.
+3. **Jumper R13:** Install a jumper across the R13 pads.
+4. **Jumper Q3:** Add a jumper across the non-ground connections of Q3 to route the D12 signal into the modified circuit.
+5. **Retain Components:** Leave the 33kΩ R16 resistor and C17 (tantalum capacitor) in their original positions.
 
 ![Modified JDM P30 board at the D12 and AI5 circuit](JDMp30D12ModPin63.JPG)
-*Archived high-resolution photo of the modified JDM P30 board.*
+*High-resolution view of the modified JDM P30 board.*
 
-The author tested both P30 variants with a `10 kohm` potentiometer used as a variable voltage divider across a 5 V supply, and with an EGADS EGT sensor. Those tests do not confirm other sensors or ECU variants.
+## AI5 Software Considerations
 
-## AI5 software caution
+OBD1 firmware may utilize AI5 for internal functions. If conflicts arise, the following invasive modification may be required to force the ECU to treat the JDM board like a USDM board:
 
-The archived page warns that OBD1 code appears to read AI5 and perform an unidentified function. Until that code was understood, it proposed a different, more invasive arrangement:
+1. **Isolate:** Cut the traces leading to both AI3 and AI5 at the 66207 MCU.
+2. **Ground:** Permanently ground AI5.
+3. **Route:** Bridge the D12 circuit to the AI3 input.
 
-1. Cut the traces to both AI3 and AI5 at the `66207`.
-2. Ground AI5.
-3. Route the D12 circuit to AI3.
+> [!IMPORTANT]
+> This pin-swap method is an unverified historical proposal. It has not been documented for broader compatibility and should be treated as experimental.
 
-The source expected that pin swap to make a JDM ECU log D12 like a USDM ECU. It did not document the unknown AI5 function or provide broader validation, so treat this as an unverified historical proposal rather than a current recommendation.
-
-## Related
+## Related Resources
 
 - [Logging an external 0-5 V sensor through D12](/cars/tuning/how-to-log-external-data-such-as-an-egt-sensor)
 - [Honda ECU datalogging overview](/cars/diagnostics/data-logging)

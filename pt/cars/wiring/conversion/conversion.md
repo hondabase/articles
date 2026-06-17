@@ -1,5 +1,5 @@
 ---
-summary: 'A conversão é o ato de modificar a cablagem na ECU para que possa instalar uma ECU de outra geração (OBD).'
+summary: Conversion involves modifying ECU wiring to install a different generation ECU (OBD1 or OBD2) in your vehicle.
 applies_to:
   obd: [1, 2]
 complexity: beginner
@@ -9,15 +9,37 @@ tags:
   - sensors
   - wiring
   - conversion
-sources:
-  - name: 'pgmfi.org wiki'
-    title: Conversion
-    url: /pgmfi/wiki/library/conversion
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Conversão
+# ECU Conversion Guide
 
-Descreva a [Conversão](/cars/wiring/conversion) aqui. Conversão é o ato de modificar a [Cablagem](/cars/wiring/wire-harness) na [ECU](/cars/ecu/ecu) para que possa instalar uma [ECU](/cars/ecu/ecu) de outra geração ([OBD](/cars/wiring/obd)). Por exemplo, pode querer utilizar uma [ECU](/cars/ecu/ecu) [OBD1](/cars/wiring/obd1) num carro originalmente equipado com [OBD2](/cars/wiring/obd2).
+Conversion is the process of modifying the wire harness on an ECU to enable installation of a different generation ECU. For example, you may want to install an OBD1 ECU in a vehicle originally equipped with OBD2, or vice versa.
+
+> [!IMPORTANT]
+> ECU conversions require careful attention to wiring pinouts and compatibility. Incorrect modifications can damage the ECU or vehicle electrical systems.
+
+## Overview
+
+When converting between OBD generations, the wire harness must be adapted to match the pinout and signal requirements of the new ECU. This involves:
+
+- Identifying differences between source and target ECU pinouts
+- Modifying or rerouting wires as necessary
+- Ensuring all sensor and actuator signals are properly connected
+- Testing all systems before full installation
+
+## Before You Start
+
+- Document the original wiring configuration
+- Obtain complete pinout diagrams for both the source and target ECU
+- Verify compatibility of all sensors and actuators
+- Use a multimeter to test connections during the conversion process
+
+> [!WARNING]
+> Always disconnect the battery before modifying the wire harness to prevent short circuits or electrical damage.
+
+## Related Topics
+
+- [ECU Pinouts](/cars/ecu/pinouts)
+- [Wire Harness](/cars/wiring/wire-harness)
+- [OBD1 Reference](/cars/wiring/obd1)
+- [OBD2 Reference](/cars/wiring/obd2)

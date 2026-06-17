@@ -1,19 +1,19 @@
 ---
-summary: 'Frequência de Detonação: A ressonância de reverberação gerada pela detonação situa-se geralmente na gama entre 2 e 12 kHz.'
+summary: 'A ressonância de reverberação gerada pela detonação situa-se geralmente na gama entre 2 e 12 kHz.'
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
 tags:
   - reference
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Detonation Frequency'
-    url: /pgmfi/wiki/library/detonation-frequency
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # Frequência de Detonação
 
-Frequência de Detonação: A ressonância de reverberação gerada pela detonação situa-se geralmente na gama entre 2 e 12 kHz. A seguinte equação pode ser utilizada para estimar a frequência de ressonância de detonação para um motor específico: 900 / (3,14 x raio do cilindro), onde a frequência de ressonância é medida em Hertz e o raio do cilindro em metros.
+A **frequência de detonação** refere-se à ressonância de reverberação gerada pela detonação, que geralmente se situa na gama entre 2 e 12 kHz.
+
+> [!NOTE]
+> A frequência de ressonância de detonação para um motor específico pode ser estimada utilizando a seguinte equação:
+
+```
+Frequência (Hz) = 900 / (3.14 * Raio do Cilindro (metros))
+```

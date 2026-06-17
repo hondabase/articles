@@ -1,25 +1,26 @@
 ---
-summary: "Placas que permitem Programação em Tempo Real. Hardware compatível: EasyRTP v1.0, a adaptação de face simples de Dave do design original de Doc baseado no DS1230Y"
+summary: "Overview of hardware boards enabling Real-Time Programming (RTP) for Honda ECUs, including the EasyRTP v1.0 design."
+tags: [ecu, rtp, tuning, hardware]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - ecu
-  - referência
-  - sensores
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Real Time Programmable Boards'
-    url: /pgmfi/wiki/library/real-time-programmable-boards
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Placas Programáveis em Tempo Real
+# Real-Time Programmable ECU Boards
 
-Placas que permitem [Programação em Tempo Real](/cars/sensors/real-time-programming)
+Real-time programmable boards allow for live calibration adjustments to the ECU without the need to physically remove or re-burn the ROM chip.
 
-#### Hardware compatível
+## Compatible Hardware
 
-- [Easy-RTP v1.0](/cars/rom/easy-rtp-v10) - A adaptação de face simples (single-sided) de Dave do design original de Doc baseado no `DS1230Y`
+The following hardware designs are compatible with standard Honda ECU RTP implementations:
+
+*   **EasyRTP v1.0:** A single-sided PCB adaptation of the original Doc design, utilizing the DS1230Y NVRAM chip.
+
+> [!NOTE]
+> Real-time programming requires specific ECU hardware modifications and compatible tuning software to interface with the memory emulator.
+
+## Technical References
+
+{{> rtp-setup-guide }}
+
+::: widget error-codes :::

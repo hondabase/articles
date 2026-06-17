@@ -1,23 +1,21 @@
 ---
-summary: 'As ECUs OBD0 geralmente possuem uma porta série de 5 pinos etiquetada "CN3". Esta tem a mesma pinagem (pinout) e a mesma função, mais ou menos, que a porta OBD1 CN2.'
-applies_to:
-  obd: [0, 1]
-complexity: beginner
+summary: "OBD0 ECUs feature a 5-pin serial port labeled CN3 with pinout and functionality similar to OBD1 CN2."
 tags:
   - ecu
-  - reference
-  - sensors
+  - obd
   - wiring
-  - conversion
-sources:
-  - name: 'pgmfi.org wiki'
-    title: OBD0CN3
-    url: /pgmfi/wiki/library/obd0cn3
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - pinout
+  - serial-communication
+applies_to:
+  obd:
+    - 0
+    - 1
+complexity: beginner
 ---
 
-# OBD0CN3
+# OBD0 CN3 Serial Port Pinout and Function
 
-As [ECU](/cars/ecu/ecu)s [OBD0](/cars/rom/obd0) possuem geralmente uma porta série de 5 pinos etiquetada ***"`CN3`"***. Esta tem a mesma pinagem e, mais ou menos, a mesma função que a [OBD1 CN2](/cars/wiring/obd1cn2)
+OBD0 ECUs typically feature a 5-pin serial port labeled **CN3**. This port shares the same pinout and similar functionality to the OBD1 CN2 port.
+
+> [!NOTE]
+> CN3 is the standard serial communication interface on OBD0 ECUs, enabling diagnostic and tuning access via serial protocol.

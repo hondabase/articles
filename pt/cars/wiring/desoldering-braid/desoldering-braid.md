@@ -1,24 +1,49 @@
+yaml
 ---
-summary: 'A malha de dessoldar é um fio trançado fino, geralmente de cobre, utilizado para remover solda usando a ação de capilaridade (efeito de "pavio") que atrai líquidos para um material semelhante a tecido.'
+summary: 'Desoldering braid is a fine stranded copper wire used to remove solder through capillary action, drawing molten solder into the braided mesh like a wick absorbs liquid.'
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
 tags:
   - hardware
-  - education
-  - sensors
+  - soldering
+  - desoldering
+  - tools
+  - pcb-repair
   - reference
-  - wiring
-  - conversion
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Desoldering Braid'
-    url: /pgmfi/wiki/library/desoldering-braid
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Malha de Dessoldar (Desoldering Braid)
+# Desoldering Braid
 
-A malha de dessoldar é um fio trançado fino, geralmente de cobre, utilizado para remover solda usando a ação de capilaridade (efeito de "pavio") que atrai líquidos para um material semelhante a tecido (muito parecido a um rolo de papel de cozinha a absorver água). A malha de dessoldar é barata, relativamente eficaz e pode ser encontrada até em lojas de eletrónica foleiras como a [Rat Shack](/cars/sensors/rat-shack).
+## Overview
+
+Desoldering braid is a fine stranded copper wire, typically copper, used to remove solder through capillary action (wick effect) that draws liquid solder into a fabric-like material—similar to how paper towel absorbs water. Desoldering braid is an inexpensive, relatively effective tool commonly available at electronics retailers.
+
+## How It Works
+
+Desoldering braid operates on capillary action: when heated and placed against molten solder, the braid's fine strands draw the liquid solder into the mesh through surface tension. This allows controlled removal of solder from joints, component leads, and PCB traces.
+
+## Advantages
+
+- **Cost-effective** — Inexpensive compared to solder suckers or specialized desoldering stations.
+- **Simple to use** — Requires only a soldering iron and no mechanical moving parts.
+- **Widely available** — Sold at most electronics retailers and online suppliers.
+- **Reusable** — A single spool provides multiple desoldering operations.
+
+## Limitations
+
+- **Heat transfer** — Depends on adequate heating from a soldering iron.
+- **Saturation** — Becomes less effective once fully saturated with solder; may require trimming the used end.
+- **Contact area** — Works best on single joints or closely spaced leads rather than large ground planes.
+
+## Selection Tips
+
+- **Braid width** — Choose width appropriate to the joint size (typically 2–3 mm for standard component work).
+- **Copper quality** — Higher-purity copper ensures better capillary action.
+- **Flux content** — Some braid includes integrated flux; verify compatibility with your solder type.
+
+> [!TIP]
+> For stubborn solder joints, apply flux to the braid before heating to improve capillary action and heat transfer.
+
+> [!CAUTION]
+> Desoldering braid becomes extremely hot during use. Allow adequate cooling time and use tools or heat-resistant gloves when handling.

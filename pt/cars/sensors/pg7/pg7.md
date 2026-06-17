@@ -1,25 +1,35 @@
 ---
-summary: 'PG7 : Integra 86-87 (D16A1 com avanço por vácuo) PG7 : Integra 88-89 (D16A1 com avanço eletrónico) Nota: Os gajos da Honda designaram duas ECUs muito diferentes com a mesma designação.'
+summary: 'Technical overview of the PG7 ECU used in 1986–1989 Acura Integra models, highlighting the critical differences between vacuum-advance and electronic-advance variants.'
+tags: [ecu, integra, d16a1, reference]
 applies_to:
-  obd: [0, 1, 2]
-  brand: Acura/Honda
+  obd: [0]
+  models: [Acura Integra]
+  chassis: [DA1]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
-sources:
-  - name: 'pgmfi.org wiki'
-    title: PG7
-    url: /pgmfi/wiki/library/pg7
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# PG7
+# PG7 ECU Identification and Variants
 
-- PG7 : 86-87 Integra (D16A1 - avanço por vácuo)
-- PG7 : 88-89 Integra (D16A1 - avanço eletrónico)
+The PG7 ECU was utilized in the 1986–1989 Acura Integra equipped with the D16A1 engine. Honda utilized the "PG7" designation for two distinct hardware revisions. It is critical to identify the specific variant, as they are not interchangeable.
 
-**Nota:** Os gajos da Honda designaram duas [ECU](/cars/ecu/ecu)s **muito** diferentes com a mesma designação. Não as misture. | **Anexo:** | **Modificar:** | **Tamanho:** | **Data:** | **Quem:** | **Comentário:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [PG7manual.jpg](PG7manual.jpg) | mod | 128290 | 18 Dec 2003 - 01:41 | O Admin | Transmissão Manual PG7 com Avanço Eletrónico 88-89 | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [TJsPG7.jpg](TJsPG7.jpg) | mod | 528765 | 30 Oct 2004 - 16:18 | TJ | Uma imagem melhor da mesma [ECU](/cars/ecu/ecu) (88-89 PG7 MT) |
+## ECU Variants
+
+*   **1986–1987 PG7:** Designed for the D16A1 engine utilizing vacuum-based ignition timing advance.
+*   **1988–1989 PG7:** Designed for the D16A1 engine utilizing electronic ignition timing advance.
+
+> [!WARNING]
+> The 86-87 and 88-89 PG7 ECUs are electrically and mechanically distinct. Ensure correct identification before installation or diagnostic procedures to prevent engine damage.
+
+## Technical Documentation
+
+| File | Description |
+| :--- | :--- |
+| [PG7manual.jpg](PG7manual.jpg) | 1988–1989 PG7 Manual Transmission (Electronic Advance) |
+| [TJsPG7.jpg](TJsPG7.jpg) | High-resolution reference image of the 1988–1989 PG7 MT ECU |
+
+```carousel
+![1988-1989 PG7 ECU Front](PG7manual.jpg)
+*Front view of the 88-89 PG7 ECU circuit board*
+<!-- slide -->
+![1988-1989 PG7 ECU Detail](TJsPG7.jpg)
+*Detailed view of the 88-89 PG7 ECU internal components*

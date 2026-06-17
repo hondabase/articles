@@ -1,21 +1,32 @@
 ---
-summary: 'Este sensor fica dentro do distribuidor. No CRX de 1991 está dentro do distribuidor, sendo um sensor magnético de 4 dentes. Produz 4 pulsos por cada rotação da árvore de cames.'
+summary: 'Technical overview of the Top Dead Center (TDC) sensor, including its location within the distributor and signal output characteristics for Honda OBD systems.'
+tags: [sensors, ignition, diagnostics, distributor]
 applies_to:
   obd: [0, 1, 2]
-  brand: Honda
+  models: [CRX, Civic, Integra]
 complexity: beginner
-tags:
-  - sensors
-  - reference
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Sensor do Ponto Morto Superior'
-    url: /pgmfi/wiki/library/top-dead-center-sensor
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Sensor do Ponto Morto Superior (TDC)
+# Top Dead Center (TDC) Sensor Technical Reference
 
-Este sensor fica dentro do distribuidor. No CRX de 1991 está dentro do distribuidor, sendo um sensor magnético de 4 dentes. Produz 4 pulsos por cada rotação da árvore de cames.
+The Top Dead Center (TDC) sensor is an electromagnetic sensor located within the distributor housing. It is a critical component for engine timing and fuel injection synchronization.
+
+## Operation
+The sensor utilizes a 4-tooth reluctor wheel mounted to the camshaft. As the camshaft rotates, the sensor generates an electromagnetic pulse for each tooth, resulting in 4 pulses per complete camshaft revolution.
+
+> [!NOTE]
+> Because the camshaft rotates at half the speed of the crankshaft, these 4 pulses correspond to the firing interval of the engine's cylinders.
+
+## Technical Specifications
+*   **Sensor Type:** Electromagnetic (Variable Reluctance)
+*   **Signal Output:** 4 pulses per camshaft revolution
+*   **Location:** Internal to the distributor assembly
+*   **Function:** Provides the ECU with a reference signal for cylinder position and engine speed (RPM)
+
+## Troubleshooting
+If the ECU fails to receive a signal from the TDC sensor, the engine will typically fail to start or exhibit severe ignition timing instability.
+
+> [!WARNING]
+> When inspecting the sensor, ensure the air gap between the sensor pickup and the reluctor wheel teeth is free of metallic debris, as this can cause signal interference or "noise" in the ECU input.
+
+{{> sensor-testing-procedures }}

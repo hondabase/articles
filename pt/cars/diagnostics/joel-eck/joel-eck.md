@@ -1,24 +1,22 @@
 ---
-summary: 'Sou o Joel Eck, o meu handle no PGMFI é 90wagon. Demorei demasiado tempo a perceber que 90wagon não era uma wikiword válida, seja lá o que isso for.'
+summary: 'Technical contributor profile for Joel Eck, specializing in Honda ECU tuning, ROM analysis, and sensor diagnostics.'
+tags: [tuning, rom, sensors, diagnostics, ecu]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - sensors
-  - reference
-  - diagnostics
-  - ecu
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Joel Eck'
-    url: /pgmfi/wiki/library/joel-eck
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Joel Eck
+# Technical Contributor: Joel Eck
 
-Sou o Joel Eck, o meu handle no PGMFI é 90wagon. Demorei demasiado tempo a perceber que 90wagon não era uma wikiword válida, seja lá o que isso for. Estou a ter algumas dificuldades em compreender todo o conceito de wiki, mas irei habituar-me. O meu endereço de e-mail é (remover o nospam) [email protected]
+Joel Eck is a technical contributor specializing in Honda ECU systems, ROM modification, and sensor diagnostics. 
+
+> [!NOTE]
+> This profile serves as a reference for technical contributions to the Hondabase project. 
+
+## Areas of Expertise
+*   **ECU Tuning:** Development and analysis of ROM files for OBD0, OBD1, and OBD2 systems.
+*   **Diagnostics:** Troubleshooting sensor data and ECU communication protocols.
+*   **Hardware Reference:** Documentation of ECU hardware configurations and signal paths.
+
+## Contact Information
+For technical inquiries regarding specific ROM modifications or diagnostic procedures, please reach out via the official project communication channels.

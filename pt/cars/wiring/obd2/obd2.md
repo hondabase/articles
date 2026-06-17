@@ -1,41 +1,50 @@
+yaml
 ---
-summary: 'OBD2 - On Board Diagnostics 2. Um padrão nos EUA estabelecido em 1996 que especifica métodos padrão para aceder aos computadores de motor do veículo, controlos de emissões e várias outras coisas.'
+summary: OBD2 (On Board Diagnostics 2) is a US standard established in 1996 that specifies methods for accessing vehicle engine computers, emission controls, and related systems. Required on all North American vehicles since 1996.
 applies_to:
   obd: [2]
-  brand: Acura/Honda
+  brand:
+    - Acura
+    - Honda
 complexity: intermediate
 tags:
-  - hardware
-  - education
-  - ecu
-  - tuning
-  - rom
-  - sensors
-  - reference
-  - wiring
-  - conversion
+  - obd2
   - diagnostics
-sources:
-  - name: 'pgmfi.org wiki'
-    title: OBD2
-    url: /pgmfi/wiki/library/obd2
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - ecu
+  - hardware
+  - wiring
+  - emissions
+  - reference
+  - tuning
+  - sensors
+  - rom
 ---
 
-# OBD2
+# OBD2: On Board Diagnostics 2
 
-[OBD](/cars/wiring/obd)2 - On Board Diagnostics 2. Um padrão nos EUA estabelecido em 1996 que especifica métodos padrão para aceder aos computadores de motor do veículo, controlos de emissões e várias outras coisas. Desde o ano de modelo de 1996, os automóveis norte-americanos são obrigados a disponibilizar uma porta de dados [OBD](/cars/wiring/obd) (On Board Diagnostics) para a ligação de equipamento de teste. Esta porta é utilizada para obter informações de diagnóstico relacionadas com emissões e, em alguns casos, também pode ser utilizada para obter parâmetros de funcionamento do veículo em tempo real. Na Europa, este padrão foi adaptado e designado por EOBD. Desde 2001 para motores a gasolina e desde 2003 para motores a gasóleo, é obrigatória a conformidade com o EOBD. As [ECU](/cars/ecu/ecu)s Honda do mercado europeu ([EDM](/cars/wiring/edm)) de 1996 a 2000 utilizam uma ficha de 3 pinos (que não é compatível com [OBD](/cars/wiring/obd)) para comunicação com o equipamento de diagnóstico.
+## Overview
 
-[ECU](/cars/ecu/ecu)s OBDII (96-01) - [P72](/cars/sensors/p72) : 96-00 [OBD](/cars/wiring/obd)-2 Integra GSR
-- [P73](/cars/sensors/p73) : 96-00 [OBD](/cars/wiring/obd)-2 Integra Type-R ([JDM](/cars/sensors/jdm) & [USDM](/cars/sensors/usdm))
-- [P75](/cars/sensors/p75) : 96-00 [OBD](/cars/wiring/obd)-2 Integra LS/GS
-- [P2 E](/cars/honda/civic/ek/reference/p2e) : 96+ Civic LX (Automático?)
-- [P2 N](/cars/honda/civic/ek/sensors/p2n) : 96+ [OBD](/cars/wiring/obd)-2 Civic HX Coupe
-- [P2 P](/cars/diagnostics/p2p) : 96+ [OBD](/cars/wiring/obd)-2 Civic EX Coupe
-- [P2 T](/cars/honda/civic/ek/sensors/p2t) : 99+ [OBD](/cars/wiring/obd)-2 Civic Si Coupe
-- [PCF](/cars/reference/pcf) : 99-01 [OBD](/cars/wiring/obd)-2 Accord Wagon [JDM](/cars/sensors/jdm)
-- [P5 P](/cars/sensors/p5p) : 97-00 [OBD](/cars/wiring/obd)-2 Prelude Type-S ([JDM](/cars/sensors/jdm))
-- [P5 M](/cars/sensors/p5m) : 97-00 [OBD](/cars/wiring/obd)-2 Prelude ([EDM](/cars/wiring/edm), [Oz DM](/cars/reference/oz-dm))
-- P28-G03 : ODB II 96+ del Sol Europeu ([SOHC](/cars/sensors/sohc) VTEC) (Semelhante ao P73)
+OBD2 (On Board Diagnostics 2) is a standardized specification established in the United States in 1996 that defines methods for accessing vehicle engine computers, emission controls, and diagnostic parameters. Since the 1996 model year, all North American automobiles are required to provide an OBD data port for connection to diagnostic equipment.
+
+The OBD2 port enables retrieval of emission-related diagnostic information and, in many cases, real-time vehicle operating parameters. In Europe, this standard was adapted as EOBD, with mandatory compliance required since 2001 for gasoline engines and 2003 for diesel engines.
+
+> [!NOTE]
+> Honda ECUs from the European market (EDM) built between 1996 and 2000 utilized a 3-pin connector incompatible with OBD2 for communication with diagnostic equipment.
+
+## OBD2 ECU Models (1996–2001)
+
+The following ECUs implement OBD2 compliance across Honda and Acura platforms:
+
+| ECU Model | Model Years | Vehicle | Market |
+|-----------|-------------|---------|--------|
+| P72 | 1996–2000 | Integra GSR | USDM |
+| P73 | 1996–2000 | Integra Type-R | JDM & USDM |
+| P75 | 1996–2000 | Integra LS/GS | USDM |
+| P2E | 1996+ | Civic LX | Automatic (USDM) |
+| P2N | 1996+ | Civic HX Coupe | USDM |
+| P2P | 1996+ | Civic EX Coupe | USDM |
+| P2T | 1999+ | Civic Si Coupe | USDM |
+| PCF | 1999–2001 | Accord Wagon | JDM |
+| P5P | 1997–2000 | Prelude Type-S | JDM |
+| P5M | 1997–2000 | Prelude | EDM, Oz DM |
+| P28-G03 | 1996+ | Del Sol (SOHC VTEC) | European | Similar to P73 |

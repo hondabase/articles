@@ -1,24 +1,45 @@
+yaml
 ---
-summary: 'O sensor de posição da cambota (CKP) e como a ECU o utiliza.'
+summary: "The crankshaft position sensor (CKP) measures engine speed and crankshaft angle, providing essential timing reference signals to the ECU for fuel injection and ignition control."
 tags:
-  - sensor
-  - ignition
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Crankshaft Position Sensor'
-    url: /pgmfi/wiki/library/crankshaft-position-sensor
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - crankshaft-position-sensor
+  - ckp-sensor
+  - engine-speed
+  - timing-reference
+  - ignition-timing
+  - fuel-injection
+applies_to:
+  obd: []
+  models: []
+  chassis: []
+complexity: intermediate
 ---
 
-# Crankshaft Position Sensor
+# Crankshaft Position Sensor (CKP)
 
-O sensor de posição da cambota (Crankshaft Position - CKP) indica à ECU a velocidade a que o motor está a rodar e a sua posição na rotação. A ECU utiliza esse sinal como referência de sincronização (timing) tanto para a injeção de combustível como para a ignição, pelo que o motor não funcionará sem um bom sinal do CKP.
+## Overview
 
-Em muitos modelos Honda mais antigos, os sensores de cambota, de cilindro (CYP) e de ponto morto superior (TDC) estão alojados em conjunto dentro do distribuidor, efetuando a leitura a partir de rodas geradoras de impulsos (reluctor wheels) dentadas rodadas pela árvore de cames. A roda do CKP tem muitos dentes para uma resolução precisa da velocidade do motor, enquanto as rodas do TDC e do CYP utilizam menos dentes para assinalar posições específicas dos cilindros.
+The crankshaft position sensor (CKP) provides the ECU with critical information about engine speed and crankshaft rotational position. The ECU uses this signal as the primary timing reference for both fuel injection and ignition control, making a reliable CKP signal essential for engine operation.
 
-## Relacionado
+> [!IMPORTANT]
+> The engine will not run without a valid CKP signal. Sensor malfunction or signal loss immediately disables fuel injection and ignition.
 
-- [Sensor de posição do cilindro](/cars/sensors/cylinder-position-sensor)
-- [Sensores da ECU](/cars/sensors/ecu-sensors)
+## Sensor Architecture
+
+In many older Honda models, the CKP, cylinder position (CYP), and top dead center (TDC) sensors are housed together within the distributor. All three sensors read from toothed reluctor wheels (tone wheels) driven by the camshaft.
+
+### Reluctor Wheel Configuration
+
+| Sensor | Wheel | Tooth Count | Purpose |
+|--------|-------|-------------|---------|
+| CKP | Crankshaft | High (many teeth) | Precise engine speed resolution |
+| CYP | Cylinder | Low (few teeth) | Cylinder identification |
+| TDC | Top Dead Center | Low (few teeth) | Cylinder position reference |
+
+> [!NOTE]
+> The high tooth count on the CKP reluctor wheel enables precise speed measurement and smooth timing calculations across all engine speeds.
+
+## Related Articles
+
+- [Cylinder Position Sensor (CYP)](/cars/sensors/cylinder-position-sensor)
+- [ECU Sensors](/cars/sensors/ecu-sensors)

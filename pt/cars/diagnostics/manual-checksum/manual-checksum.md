@@ -1,28 +1,39 @@
 ---
-summary: 'Existem duas formas de corrigir um erro de checksum. A primeira consiste em alterar o programa da ROM de modo a desativar/remover a rotina de checksum.'
+summary: "Learn how to manually correct ECU checksum errors for OBD0 and OBD1 Honda ROMs by calculating and patching the 8-bit checksum value."
+tags: [ecu, tuning, rom, diagnostics]
 applies_to:
   obd: [0, 1]
 complexity: intermediate
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - diagnostics
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Manual Checksum'
-    url: /pgmfi/wiki/library/manual-checksum
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Checksum Manual
+# Manual Checksum Correction for Honda OBD0/OBD1 ECUs
 
-Existem duas formas de corrigir um erro de checksum. A primeira consiste em alterar o programa da [ROM](/pt/cars/rom/rom) de modo a desativar/remover a rotina de checksum. Aprenda a programar se quiser fazer isto. Se se contenta em contornar o procedimento de checksum, continue a ler.
+There are two primary methods to resolve a checksum error. The first involves modifying the ROM program code to disable or bypass the checksum routine entirely. The second method, detailed below, involves manually calculating and patching the checksum to satisfy the ECU's validation routine.
 
-O checksum em todas as [ROM](/pt/cars/rom/rom)s [OBD0](/pt/cars/rom/obd0) /1 é de 8 bits - o que significa que irá variar de 0 a 255. (00-FF hex) Para descobrir qual é o checksum, precisa de fazer um [Check Sum](/pt/cars/diagnostics/check-sum) de 8 bits sobre o ficheiro. Creio que a PM6 se preocupa com a área de 0000-4FFF. A maioria das [ECU](/pt/cars/ecu/ecu)s [OBD1](/pt/cars/wiring/obd1) preocupa-se com toda a [ROM](/pt/cars/rom/rom).
+## Checksum Fundamentals
 
-Creio que o WinHex pode calcular isto, e também pode obter um utilitário chamado check8 em [http://www.keil.com](http://www.keil.com). Isto também funcionará muito bem... De qualquer forma, digamos que executa o programa de checksum e obtém um checksum de A3 (hex). Subtraia A3 de FF: FF - A3 = 5C. Agora, encontre um "FF" em algum lugar do intervalo que a [ECU](/pt/cars/ecu/ecu) está a utilizar para o checksum. O melhor é procurar um bloco de "FF"s, pois isso geralmente indica espaço não utilizado na [ROM](/pt/cars/rom/rom). Altere o FF para o resultado da sua subtração. Voila. Checksum corrigido.
+The checksum for all OBD0 and OBD1 Honda ROMs is an 8-bit value, ranging from 00 to FF (0–255). 
+
+*   **OBD0:** Typically validates the 0000–4FFF memory range (e.g., PM6 ECU).
+*   **OBD1:** Typically validates the entire ROM image.
+
+> [!IMPORTANT]
+> To successfully correct the checksum, you must perform an 8-bit checksum calculation on the specific memory range monitored by your ECU.
+
+## Correction Procedure
+
+To manually correct the checksum, follow these steps:
+
+1.  **Calculate the Current Checksum:** Use a hex editor (such as WinHex) or a dedicated utility (e.g., `check8`) to calculate the 8-bit checksum of the ROM file within the ECU's target range.
+2.  **Determine the Patch Value:** Subtract your calculated checksum from `FF` (hex).
+    *   *Example:* If your calculated checksum is `A3`, the calculation is: `FF - A3 = 5C`.
+3.  **Locate Free Space:** Identify a byte or a block of `FF` values within the ROM's unused memory area.
+4.  **Apply the Patch:** Replace one of the `FF` bytes with the result of your calculation (`5C` in this example).
+
+> [!TIP]
+> Always verify the checksum calculation again after applying the patch to ensure the final result is `00` (or the expected validation value) for the entire range.
+
+## Recommended Tools
+
+*   **WinHex:** A universal hex editor capable of calculating 8-bit checksums.
+*   **check8:** A command-line utility for calculating 8-bit checksums.

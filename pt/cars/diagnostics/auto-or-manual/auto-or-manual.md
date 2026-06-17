@@ -1,27 +1,29 @@
 ---
-summary: 'Uma interação de hardware/software determina se um programa numa ECU se comporta como manual ou automático.'
+summary: 'Learn how ECU hardware configuration and software programming interact to determine automatic or manual transmission operation in Honda ECUs.'
+tags: [ecu, transmission, wiring, diagnostics, tuning]
 applies_to:
   obd: [0, 1, 2]
 complexity: intermediate
-tags:
-  - ecu
-  - reference
-  - sensors
-  - diagnosticos
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Automático ou Manual'
-    url: /pgmfi/wiki/library/auto-or-manual
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Automático ou Manual
+# ECU Transmission Configuration: Automatic vs. Manual
 
-Uma interação de hardware/software determina se um programa numa [ECU](/cars/ecu/ecu) se comporta como manual ou automático. A configuração de hardware de RP17/RP18 determina se o hardware da [ECU](/cars/ecu/ecu) está configurado para automático ou manual. Consulte [Auto para Manual](/cars/wiring/auto-to-manual) para saber como alterar o hardware. Se uma [ECU](/cars/ecu/ecu) estiver configurada (com shunts/jumpers) para ser manual, ela funcionará sempre como manual. Os programas da [ECU](/cars/ecu/ecu) são responsáveis por verificar a configuração dos shunts para ativar o controlo da transmissão automática. Isto significa que pode fazer com que uma [ECU](/cars/ecu/ecu) configurada como automática pense que é manual usando um programa que tenha a verificação do circuito automático desativada. O exemplo mais notável deste tipo de programa são os vários programas "mugen". Além disso (posso estar enganado nisto), alguns programas de fábrica ([EDM](/cars/wiring/edm) P30???) não verificam a configuração do shunt da transmissão automática. A maioria das [USDM](/cars/sensors/usdm) (P74/P75, P28, PM6, etc.) verifica ***definitivamente*** os shunts de transmissão automática.
+The operational mode of a Honda ECU is determined by an interaction between physical hardware configuration and software logic.
 
-### Resumo:
+## Hardware Configuration
+The physical state of the ECU is determined by the presence or absence of shunts at locations **RP17** and **RP18**. These shunts define whether the ECU hardware is configured for automatic or manual transmission control.
 
-- Se precisar de converter uma [ECU](/cars/ecu/ecu) automática em manual, pode modificar o hardware de acordo com [Auto para Manual](/cars/wiring/auto-to-manual) ***OU*** desativar a verificação de shunts no software usando um programa modificado (***OU*** fazer ambos).
-- Se necessitar que a [ECU](/cars/ecu/ecu) controle uma transmissão automática, deve certificar-se de que utiliza um programa base que verifique os shunts da transmissão automática e que tenha o código necessário. A P28 [USDM](/cars/sensors/usdm) é a minha opção segura (Dave B).
+> [!IMPORTANT]
+> Refer to the [Auto to Manual Conversion](/cars/wiring/auto-to-manual) guide for specific instructions on modifying the PCB shunts to change the hardware state.
+
+## Software Logic
+ECU firmware is responsible for polling the hardware shunts to determine if automatic transmission control should be enabled. 
+
+*   **Manual-configured hardware:** If the ECU is physically configured for manual (via shunts), it will operate as a manual ECU regardless of the software.
+*   **Automatic-configured hardware:** If the ECU is configured for automatic, the software determines the behavior. It is possible to force an automatic-configured ECU to operate as a manual unit by using a calibration that has the automatic transmission circuit check disabled.
+*   **Factory Variations:** Some factory calibrations (such as specific EDM P30 variants) do not perform a check on the automatic transmission shunt configuration. Conversely, most USDM calibrations (e.g., P74, P75, P28, PM6) perform a mandatory check of these shunts.
+
+## Summary of Procedures
+
+*   **Converting Automatic to Manual:** You may modify the hardware shunts according to the [Auto to Manual](/cars/wiring/auto-to-manual) guide, disable the shunt check within the software calibration, or perform both actions.
+*   **Maintaining Automatic Control:** To ensure the ECU successfully controls an automatic transmission, you must use a base calibration that includes the necessary code to poll the transmission shunts. The USDM P28 is a standard, reliable choice for automatic applications.

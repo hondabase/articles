@@ -6,13 +6,6 @@ complexity: beginner
 tags:
   - tuning
   - rom
-sources:
-  - name: 'pgmfi.org wiki'
-    title: ROM
-    url: /pgmfi/wiki/library/rom
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # ROM

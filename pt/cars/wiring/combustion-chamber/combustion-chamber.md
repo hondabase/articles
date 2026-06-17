@@ -1,23 +1,35 @@
+yaml
 ---
-summary: 'A câmara de combustão é uma área da Cabeça do Motor (Cylinder Head) onde a Vela de Ignição se localiza para inflamar o ar e o combustível.'
+summary: The combustion chamber is the area in the cylinder head where the spark plug ignites the air-fuel mixture. Its shape influences pre-ignition tendency and engine performance.
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
 tags:
-  - ecu
-  - reference
-  - sensors
-  - wiring
-  - conversion
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Combustion Chamber'
-    url: /pgmfi/wiki/library/combustion-chamber
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - combustion-chamber
+  - cylinder-head
+  - ignition
+  - engine-fundamentals
+  - spark-plug
 ---
 
-# Câmara de Combustão
+# Combustion Chamber
 
-A câmara de combustão é uma área da Cabeça do Motor (Cylinder Head) onde a [Vela de Ignição](/cars/wiring/spark-plug) se localiza para inflamar o ar e o combustível. A queima do ar e do combustível ocorre aqui. O formato da câmara de combustão é um dos fatores que pode influenciar a facilidade com que ocorre a [Pré-Ignição (Pre-Ignition)](/cars/diagnostics/pre-ignition).
+The combustion chamber is the area within the cylinder head where the [spark plug](/cars/wiring/spark-plug) ignites the air-fuel mixture. The combustion of air and fuel occurs in this critical engine cavity. The shape and design of the combustion chamber is a primary factor influencing [pre-ignition](/cars/diagnostics/pre-ignition) tendency and overall engine performance.
+
+## Overview
+
+The combustion chamber serves as the sealed space where:
+
+- Air and fuel mixture is compressed
+- Spark plug ignition occurs
+- Controlled explosion drives the piston downward
+- Combustion byproducts are expelled during the exhaust stroke
+
+## Chamber Design Factors
+
+Chamber geometry directly affects engine efficiency and knock resistance:
+
+- **Chamber Shape** — Hemispherical, wedge, or flat designs optimize flame propagation
+- **Compression Ratio** — Tighter chamber volumes increase compression and power output
+- **Quench Area** — Narrow edge zones cool unburned mixture, reducing pre-ignition
+- **Surface Area** — Affects heat transfer and combustion speed

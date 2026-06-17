@@ -1,29 +1,38 @@
 ---
-summary: 'Um Checksum é uma forma muito básica de verificação de erros. É calculado somando os valores de uma ROM, sem qualquer tipo de verificação de transporte (carry) ou estouro (overflow).'
+summary: 'An overview of 8-bit checksum verification in Honda OBD0 and OBD1 ECUs, including the manual calculation and correction process.'
+tags: [ecu, tuning, rom, diagnostics]
 applies_to:
   obd: [0, 1]
-  brand: Honda
+  models: [all]
+  chassis: [all]
 complexity: beginner
-tags:
-  - hardware
-  - education
-  - ecu
-  - tuning
-  - rom
-  - sensors
-  - reference
-  - diagnostics
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Check Sum'
-    url: /pgmfi/wiki/library/check-sum
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Check Sum
+# Honda ECU 8-Bit Checksum Verification and Correction
 
-Um Checksum (soma de verificação) é uma forma muito básica de verificação de erros. É calculado somando os valores de uma [ROM](/cars/rom/rom), sem qualquer tipo de verificação de transporte (carry) ou estouro (overflow). Os checksums podem variar em tamanho — checksums de 8 bits, 16 bits e 32 bits são todos comuns. As [ECU](/cars/ecu/ecu)s Honda [OBD0](/cars/rom/obd0) e [OBD1](/cars/wiring/obd1) utilizam exclusivamente checksums de 8 bits, ou seja, checksums de 0 a 255 em decimal (00-FF em hexadecimal). Existe um programa chamado [check8](http://www.keil.com/download/files/check8.zip) (também disponível em anexo nesta página) que consegue calcular checksums de 8 bits. Pode atualizar a ROM para que o checksum permaneça 00 mesmo após editá-la. Eis como fazer (utilizando o [Win Hex](/cars/rom/win-hex) neste exemplo, embora possa utilizar o programa disponibilizado abaixo, mas apenas para encontrar o checksum, não para editar a [ROM](/cars/rom/rom)): Abra o [Win Hex](/cars/rom/win-hex) e selecione o Menu Tools (Ferramentas) -> Calculate Hash (Calcular Hash) (Selecione 8 bits). Aponte o número apresentado. Este é o checksum atual. Abra a Calculadora do Windows (Iniciar -> Executar -> Calc e prima enter). Ver -> Científica. Selecione o Modo Hex (ou prima F5). Faça o seguinte: FF - checksum_atual (FF - AB, por exemplo). O número resultante deve ser escrito numa posição de memória, mais perto do fim (fim do ficheiro/ROM), onde não exista código e onde o valor FF já esteja presente. Exemplo: (FF - AB = 54) imaginemos que vou à posição de memória 7FFF e o valor é FF. Substituo FF por 54. Se não tiver um endereço com um valor FF livre, mas sim outro valor (digamos 00), use 00 na calculadora em alternativa (00 - AB) e substitua o 00 livre pelo resultado.
+A checksum is a basic error-verification method calculated by summing the values within a ROM without accounting for carry or overflow. Honda OBD0 and OBD1 ECUs utilize 8-bit checksums, resulting in a value range of 00–FF (hexadecimal).
 
-| **Anexo:** | **Modificar:** | **Tamanho:** | **Data:** | **Quem:** | **Comentário:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/exe.gif) [Check8.exe](Check8.exe) | mod | 10308 | 05 Mar 2004 - 18:29 | blundar | Utilitário de checksum de 8 bits da Keil |
+> [!IMPORTANT]
+> When modifying ROM files, the checksum must be recalculated and updated to ensure the ECU accepts the modified binary. If the checksum is incorrect, the ECU will trigger a diagnostic error or fail to boot.
+
+## Checksum Calculation
+The 8-bit checksum is the sum of all bytes in the ROM. To verify or correct a checksum, you must identify the current checksum value and adjust a "padding" byte (typically located at the end of the ROM file) to force the total sum to a specific target (usually 00).
+
+### Manual Correction Procedure
+To manually correct a checksum using a hex editor (such as WinHex):
+
+1. **Calculate Current Checksum:** Use a hex editor's "Calculate Hash" or "Checksum" function, selecting the 8-bit option. Note the resulting value.
+2. **Determine Offset:** Locate an unused memory address near the end of the ROM file (often containing `FF` or `00`).
+3. **Calculate Adjustment:**
+   - If the target byte is `FF`: Use the formula `FF - current_checksum = new_value`.
+   - If the target byte is `00`: Use the formula `00 - current_checksum = new_value`.
+4. **Apply Change:** Replace the value at the chosen memory address with the `new_value` calculated in the previous step.
+
+## Tools and Utilities
+
+| Utility | Description |
+| :--- | :--- |
+| **Check8.exe** | A command-line utility for calculating 8-bit checksums. |
+
+> [!TIP]
+> While manual calculation is useful for understanding the process, most modern tuning software suites automatically recalculate and patch the checksum upon saving a ROM file.

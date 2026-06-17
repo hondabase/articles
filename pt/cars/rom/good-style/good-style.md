@@ -1,26 +1,49 @@
 ---
-summary: '"Os jovens escritores supõem frequentemente que o estilo é uma guarnição para a carne da prosa, um molho através do qual um prato insípido se torna apetecível."'
+summary: "Technical writing principles emphasizing clarity, simplicity, and direct communication in automotive documentation."
+tags:
+  - documentation
+  - style-guide
+  - writing
+  - technical-writing
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - sensors
-  - reference
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Good Style'
-    url: /pgmfi/wiki/library/good-style
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Good Style
+# Technical Writing Style Guide
 
-"Os jovens escritores supõem frequentemente que o estilo é uma guarnição para a carne da prosa, um molho através do qual um prato insípido se torna apetecível. O estilo não tem uma entidade separada; é indissociável, infiltrável. O principiante deve aproximar-se do estilo com cautela, percebendo que é de si mesmo que se está a aproximar, e de mais ninguém; e deve começar por afastar-se resolutamente de todos os artifícios que popularmente se acredita indicarem estilo — todos os maneirismos, truques, adornos. A abordagem ao estilo faz-se por via da clareza, simplicidade, ordem, sinceridade." --Strunk and White, "The Elements of Style" ''E assim, um manual americano, leitura tipicamente obrigatória para alunos do 10.º ano de Inglês, exalta sem saber algumas virtudes do [Wabi Sabi](/cars/sensors/wabi-sabi)'' --scummings
+## Core Principles
+
+The foundation of effective technical documentation rests on clarity and directness. Style is not an ornamental layer applied to technical content—it is inseparable from the substance itself.
+
+### Essential Virtues
+
+When approaching technical writing, prioritize the following principles:
+
+- **Clarity** — Remove ambiguity. Make each statement unambiguous and precise.
+- **Simplicity** — Use direct language. Avoid unnecessary jargon or complexity.
+- **Order** — Structure information logically. Guide the reader through a clear progression.
+- **Sincereness** — Write with honesty and accuracy. Present information as it is, not as it appears.
+
+> [!IMPORTANT]
+> Avoid artifice and mannerism. Do not sacrifice clarity for perceived style or aesthetic appeal.
+
+## Writing for Technical Audiences
+
+Technical documentation differs from general prose. Readers seek specific, actionable information. Structure content to serve this need:
+
+- Use **short, declarative sentences**.
+- Employ **scannable hierarchy** with clear section breaks.
+- Present **specifications and procedures** in tables or lists.
+- Eliminate **conversational filler** and unnecessary context.
+
+### Common Pitfalls
+
+- Introductory fluff or excessive preamble
+- Ambiguous section titles or unclear transitions
+- Dense paragraphs without visual breaks
+- Unexplained technical terms or acronyms on first use
 
 ---
 
-[Documentação do Php Wiki](/cars/reference/php-wiki-documentation)
+*Technical writing standards adapted from established English composition principles.*

@@ -1,21 +1,34 @@
 ---
-summary: 'O Electrical Load Detector (Detector de Carga Elétrica) mede a carga elétrica para determinar se o alternador deve estar em modo de baixa ou alta potência.'
+summary: 'The Electrical Load Detector (ELD) monitors vehicle electrical demand to allow the ECU to adjust idle and alternator output for stable engine operation.'
+tags: [sensors, electrical, idle, alternator]
 applies_to:
   obd: [0, 1, 2]
-  brand: Honda
+  models: [Honda]
 complexity: beginner
-tags:
-  - sensors
-  - reference
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Electrical Load Detector'
-    url: /pgmfi/wiki/library/electrical-load-detector
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Electrical Load Detector
+# Electrical Load Detector (ELD) Operation
 
-O Electronic Load Detector (Detector de Carga Elétrica) mede a carga elétrica — usado para determinar se o alternador deve estar em modo de baixa ou alta potência. Como os motores Honda funcionam com uma mistura muito pobre ao ralenti, praticamente qualquer carga fará com que a rotação do ralenti diminua. Mesmo pequenas cargas elétricas, como os piscas, farão com que o ralenti flutue. O detector de carga elétrica (ELD) foi adicionado aos modelos mais recentes da Honda para monitorizar quaisquer cargas elétricas significativas. Ele envia um sinal de aviso ao ECM antes que a carga tenha oportunidade de afetar o ralenti. O ECM faz pequenos ajustes na válvula de controlo de ar do ralenti (IAC), no tempo de injeção (PW) e no ponto de ignição para compensar a carga elétrica.
+The Electrical Load Detector (ELD) measures total vehicle electrical load to determine whether the alternator should operate in low or high-output mode. 
+
+Because Honda engines are calibrated for lean air-fuel ratios at idle, even minor electrical loads—such as turn signals or cooling fans—can cause idle instability. The ELD monitors these electrical demands and sends a signal to the ECU before the load impacts engine speed. Upon receiving this signal, the ECU makes proactive adjustments to the Idle Air Control (IAC) valve, fuel injection pulse width (PW), and ignition timing to maintain a stable idle.
+
+## System Functionality
+
+The ELD unit is typically integrated into the under-hood fuse/relay box. It functions as a current-sensing device that provides a voltage signal to the ECU proportional to the current flowing through the main fuse box.
+
+*   **Low Load:** The ECU commands the alternator to a lower voltage output to reduce engine drag and improve fuel economy.
+*   **High Load:** The ECU commands the alternator to a higher voltage output to ensure battery state-of-charge and prevent voltage drops during high electrical demand.
+
+## ECU Compensation
+When the ELD detects a significant increase in electrical load, the ECU performs the following compensations:
+
+*   **IAC Valve:** Increases the duty cycle to allow more bypass air into the intake manifold.
+*   **Fuel Injection:** Adjusts the pulse width to maintain the target air-fuel ratio during the transient load.
+*   **Ignition Timing:** Modifies timing advance to compensate for the increased mechanical load on the engine from the alternator.
+
+> [!NOTE]
+> If the ELD circuit fails, the ECU will typically default to a high-output alternator state to ensure the battery remains charged, which may result in slightly reduced fuel economy and minor idle fluctuations.
+
+> [!TIP]
+> If you are experiencing erratic idle when electrical accessories are activated, verify the ELD signal voltage at the ECU pinout before diagnosing the IAC valve or vacuum leaks.

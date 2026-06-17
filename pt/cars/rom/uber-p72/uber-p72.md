@@ -1,7 +1,8 @@
 ---
-summary: 'Guia detalhado sobre a configuração e reprogramação do código de ROM personalizada UberData para ECUs OBD1 P72.'
+summary: Detailed configuration and reprogramming guide for the UberData custom ROM code on Acura OBD1 P72 ECUs, including RAM address mappings and modification offsets.
 applies_to:
   brand: Acura
+  models: [Integra GS-R]
   ecus: [P72]
   obd: [1]
 complexity: advanced
@@ -9,28 +10,28 @@ tags:
   - tuning
   - rom
   - software
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Uber P72'
-    url: /pgmfi/wiki/library/uber-p72
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - p72
+  - uberdata
+  - reprogramming
 ---
 
-# Mapa de ROM do Uber P72
+# Uber P72 ROM Map
 
-A ROM **Uber P72** é uma base de código de fábrica modificada da [ECU OBD1 P72](/cars/sensors/p72) do Acura Integra GS-R, concebida para funcionar com a suite de afinação UberData. 
+The **Uber P72** is a modified factory code base derived from the [Acura OBD1 P72 ECU](/cars/sensors/p72), optimized for use with the UberData tuning suite. This guide documents the specific RAM and ROM address offsets used by UberData modifications on P72 firmware.
 
-Esta página documenta os offsets de endereço RAM e ROM específicos para as modificações do UberData. Para os endereços de fábrica do P72 Honda/Acura, consulte o [Mapa de ROM do P72](/cars/sensors/p72) padrão.
+> [!NOTE]
+> For standard Honda/Acura factory P72 address mappings, refer to the [P72 ROM Map](/cars/sensors/p72) documentation.
 
-## Mapeamento de Endereços RAM
+## RAM Address Mapping
 
-A tabela abaixo apresenta localizações de RAM específicas utilizadas pelo código personalizado do UberData numa ROM P72:
+The following table lists RAM locations used by UberData custom code in P72 ROM:
 
-| Offset Hex | Comprimento (Bytes) | Descrição | Notas |
-| :---: | :---: | :--- | :--- |
-| `645D` | 2 | RPM de VTEC Alternativo UberData ERM | Configuração alternativa de limite |
-| `645F` | 2 | RPM de VTEC Alternativo UberData ERM | Configuração alternativa de limite |
-| `6464` | 2 | RPM de VTEC Alternativo UberData ERM | Configuração alternativa de limite |
-| `6466` | 2 | RPM de VTEC Alternativo UberData ERM | Configuração alternativa de limite |
+| Hex Offset | Length (Bytes) | Description | Notes |
+|:---:|:---:|:---|:---|
+| `645D` | 2 | UberData Alternate VTEC ERM RPM | Alternative limit configuration |
+| `645F` | 2 | UberData Alternate VTEC ERM RPM | Alternative limit configuration |
+| `6464` | 2 | UberData Alternate VTEC ERM RPM | Alternative limit configuration |
+| `6466` | 2 | UberData Alternate VTEC ERM RPM | Alternative limit configuration |
+
+> [!IMPORTANT]
+> All offset addresses are relative to the RAM base address. Verify compatibility with your specific ROM version before applying modifications.

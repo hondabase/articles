@@ -1,23 +1,67 @@
+yaml
 ---
-summary: 'A maioria das ECU Automáticas tem uma ponte (jumper) em RP11 e um espaço em branco em RP12. Mova RP11 para RP12 e passará a ter uma ECU Manual.'
-applies_to:
-  obd: [1]
-complexity: beginner
+summary: Convert an OBD1P13 automatic transmission ECU to manual by moving the jumper from RP11 to RP12.
 tags:
   - ecu
-  - reference
-  - sensors
-  - wiring
+  - jumper
   - conversion
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD1P13 Auto Manual'
-    url: /pgmfi/wiki/library/obd1p13-auto-manual
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - obd1
+  - manual
+  - automatic
+applies_to:
+  obd: [1]
+  models: [P11, P12, P13, P14, P39]
+complexity: beginner
 ---
 
-# OBD1P13 Auto Manual
+# OBD1P13 Automatic to Manual ECU Conversion
 
-A maioria das ECUs Automáticas tem uma ponte (jumper) em RP11 e um espaço em branco em RP12. Mova RP11 para RP12 e passará a ter uma [ECU](/cars/ecu/ecu) Manual. Aqui está um grande plano da configuração de jumpers [JDM](/cars/sensors/jdm): as pontes de transmissão automática [Auto Jumpers](/pgmfi/wiki/media/library/P13/JDM-p13-resistors.jpg) `R96`, `C49` e `R82` parecem estar relacionadas com alguns controlos de transmissão automática, mas podem ser deixadas no sítio. Algumas [ECU](/cars/ecu/ecu)s (como a [JDM P13-900](/pgmfi/wiki/media/library/P13/P13-900_jumpers.jpg)) têm resistências em ambos os sítios. Pode simplesmente remover ambas e substituir RP12 por um fio de ponte (jumper wire). Isto aplica-se a todas as [ECU](/cars/ecu/ecu)s que partilham a mesma placa (P11, P12, P13, P14 e P39).
+## Overview
+
+Most OBD1P13 automatic transmission ECUs feature a jumper bridge at **RP11** with a blank space at **RP12**. By relocating the jumper from RP11 to RP12, you can convert the ECU to manual transmission operation.
+
+## Jumper Relocation Procedure
+
+### Step 1: Locate RP11 and RP12
+
+- **RP11** — Current jumper location (automatic transmission)
+- **RP12** — Target jumper location (manual transmission)
+
+### Step 2: Move the Jumper
+
+1. Remove the jumper bridge from **RP11**
+2. Install it at **RP12**
+3. Power on and verify operation
+
+> [!TIP]
+> If your ECU lacks a spare jumper, a standard jumper wire can substitute for the bridge at RP12.
+
+## Transmission Control Resistors
+
+The following resistors control automatic transmission functions and may remain in place:
+
+- **R96**
+- **C49**
+- **R82**
+
+These resistors relate to automatic transmission control logic but do not prevent manual operation when RP12 is jumpered.
+
+### Dual-Resistor ECUs
+
+Some ECU variants (such as the JDM P13-900) include resistors at both RP11 and RP12 locations. In this case:
+
+1. Remove both resistors entirely
+2. Install a jumper wire at **RP12** only
+
+## Applicable Models
+
+This conversion applies to all ECUs sharing the P13 platform PCB:
+
+- P11
+- P12
+- P13
+- P14
+- P39
+
+> [!IMPORTANT]
+> Verify your ECU model before proceeding. Incorrect jumper placement may result in improper transmission control behavior.

@@ -1,24 +1,41 @@
 ---
-summary: 'Aka "Limp Home Mode" Limp Mode is the mode of operation when the ECU''s CEL is lit solid red indicating a major malfunction.'
-tags: [ecu, reference, tuning, rom, sensors, diagnostics]
+summary: 'An overview of OBD0 Limp Mode, a fail-safe operating state triggered by major ECU malfunctions that limits engine performance to protect the drivetrain.'
+tags: [ecu, diagnostics, obd0, sensors, troubleshooting]
 applies_to:
   obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Limp Mode'
-    url: /pgmfi/wiki/library/limp-mode
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Limp Mode
+# OBD0 Limp Mode Diagnostics and Operation
 
-Aka "Limp Home Mode" [Limp Mode](/cars/diagnostics/limp-mode) is the mode of operation when the [ECU](/cars/ecu/ecu)'s [CEL](/cars/wiring/cel) is lit solid red indicating a major malfunction. It is intended to get the car home, and will run the car very poorly. The backup processor is running the car without using [ROM](/cars/rom/rom) at this point. Only the TDCSensor and [TPS Sensor](/cars/diagnostics/tps-sensor) are used in this mode. Revlimit is encountered at 3500rpm. More info:
+Limp Mode (also known as "Limp Home Mode") is a fail-safe operating state triggered when the ECU detects a critical system malfunction. When active, the Check Engine Light (CEL) remains illuminated solid, indicating that the ECU has bypassed standard ROM-based fuel and ignition mapping.
 
-- [OBD0 BACKUP](/cars/diagnostics/obd0backup)
+## Operational Characteristics
 
-NOTE: It would be nice to have a list of which sensor will/will not trigger [Limp Mode](/cars/diagnostics/limp-mode)
+In Limp Mode, the ECU relies on a secondary backup processor to maintain engine operation. Because the primary ROM maps are ignored, the engine will exhibit poor performance and limited drivability.
+
+*   **Sensor Input:** The ECU ignores most sensor data, relying exclusively on the TDC (Top Dead Center) sensor and the TPS (Throttle Position Sensor).
+*   **Rev Limiter:** A hard rev limiter is enforced at 3,500 RPM to prevent engine damage.
+*   **Fuel/Ignition:** The engine runs on fixed, non-optimized backup tables.
+
+> [!WARNING]
+> Limp Mode is intended only for short-term operation to reach a service location. Continued operation in this state can lead to poor fuel economy, fouled spark plugs, and potential engine damage due to non-optimized ignition timing.
+
+## Troubleshooting
+
+If the vehicle enters Limp Mode, the ECU has identified a major fault in the engine management system. 
+
+> [!TIP]
+> Use the integrated diagnostic tool to identify the specific fault code triggering the Limp Mode state.
+
+::: widget error-codes :::
+
+## Related Technical References
+
+For further information on the backup systems and diagnostic procedures for OBD0 vehicles, refer to the following documentation:
+
+*   [OBD0 Backup System Overview](/cars/diagnostics/obd0backup)
+*   [TPS Sensor Calibration](/cars/diagnostics/tps-sensor)
+*   [CEL Diagnostic Procedures](/cars/wiring/cel)

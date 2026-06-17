@@ -1,25 +1,39 @@
+yaml
 ---
-summary: 'blundar modificou um disassembler (dasm) que encontrou, o D51, para suportar a instrução A5 que é peculiar nos MCUs Oki 8XC154.'
+summary: 'D51 is a modified disassembler supporting the A5 instruction specific to Oki 8XC154 MCUs used in Honda ECUs. Available for Windows and Linux with full source code.'
+tags:
+  - ecu
+  - disassembler
+  - rom
+  - mcu
+  - oki-8xc154
+  - tuning
+  - reference
 applies_to:
   obd: [0, 1, 2]
 complexity: advanced
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Pgmfi D51'
-    url: /pgmfi/wiki/library/pgmfi-d51
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Pgmfi D51
+# D51 Disassembler for Oki 8XC154 MCUs
 
-blundar modificou um disassembler (dasm) que encontrou, o D51, para suportar a instrução A5 que é peculiar nos [MCU](/cars/rom/mcu)s Oki 8XC154. O Blundar criou binários para Linux. O Chris D criou binários para Windows. Consulte o código-fonte / leia os parâmetros da linha de comandos para obter ajuda.
+D51 is a modified disassembler designed to support the A5 instruction, which is unique to Oki 8XC154 microcontrollers found in Honda engine control units. Binary releases are available for both Windows and Linux platforms, with complete source code provided for compilation and modification.
 
-| **Anexo:** | **Modificar:** | **Tamanho:** | **Data:** | **Quem:** | **Comentário:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/zip.gif) [D51\\_w32.zip](D51_w32.zip) | mod | 33119 | 05 Mar 2004 - 19:40 | blundar | Binário Win32 em VC++, compactado (zip) | | ![](/pgmfi/wiki/assets/icn/zip.gif) [D51\\_W32\\_Source.zip](D51_W32_Source.zip) | mod | 39722 | 05 Mar 2004 - 19:40 | blundar | Ficheiros de código-fonte / projeto VC++ | | ![](/pgmfi/wiki/assets/icn/zip.gif) [d51v3.12-linux.zip](d51v3.12-linux.zip) | mod | 475876 | 05 Mar 2004 - 19:40 | blundar | Código-fonte/binários para Linux | | ![](/pgmfi/wiki/assets/icn/else.gif) [91.ctl](91.ctl) | mod | 85 | 05 Mar 2004 - 19:41 | blundar | Ficheiro de controlo simples para PM6 de 91 |
+## Overview
+
+The D51 disassembler extends the original `dasm` tool to properly handle instruction set peculiarities of the Oki 8XC154 MCU architecture. This makes it essential for ROM analysis and ECU tuning work on compatible Honda vehicles.
+
+## Downloads and Resources
+
+| File | Type | Size | Date | Author | Description |
+|:---|:---|:---|:---|:---|:---|
+| [D51_w32.zip](D51_w32.zip) | Binary | 33 KB | 2004-03-05 | blundar | Win32 executable compiled in Visual C++ |
+| [D51_W32_Source.zip](D51_W32_Source.zip) | Source | 39 KB | 2004-03-05 | blundar | Visual C++ source code and project files |
+| [d51v3.12-linux.zip](d51v3.12-linux.zip) | Source/Binary | 476 KB | 2004-03-05 | blundar | Linux source code and compiled binaries |
+| [91.ctl](91.ctl) | Control File | 85 B | 2004-03-05 | blundar | Control file example for 1991 PM6 ECU |
+
+## Usage
+
+> [!TIP]
+> Refer to the command-line parameters or source code documentation for detailed usage instructions. Each binary distribution includes help documentation.
+
+```

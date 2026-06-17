@@ -1,5 +1,5 @@
 ---
-summary: 'Guias visuais para modificar (chipping) ECUs Honda OBD0 e OBD1, incluindo as variantes PM6, caixa grande, caixa pequena e ECUs de 1988-1989.'
+summary: Visual guides for modifying (chipping) Honda OBD0 and OBD1 ECUs, including PM6, large case, small case, and 1988–1989 variants.
 applies_to:
   obd: [0, 1]
 complexity: beginner
@@ -9,20 +9,13 @@ tags:
   - tuning
   - rom
   - sensors
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Modificar ECU com Imagens (Chipping)'
-    url: /pgmfi/wiki/library/chipping-with-pictures
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Modificar ECU com Imagens
+# ECU Chipping Visual Guides
 
-Use estes guias visuais para identificar os componentes e modificações necessários para modificar (chipping) ECUs Honda comuns:
+Use these visual guides to identify components and modifications required for chipping common Honda ECUs:
 
-- [Modificar uma ECU OBD0 PM6](/cars/rom/chipping-obd0pm6) - Abrange PM6, PM7, PR5, PR4, PP5 e ECUs relacionadas de 1990-1991.
-- [Modificar uma ECU OBD1 de caixa grande](/cars/ecu/chipping-obd1-big-case) - Abrange ECUs [USDM](/cars/sensors/usdm), [EDM](/cars/wiring/edm) e algumas [JDM](/cars/sensors/jdm) antigas de caixa grande.
-- [Modificar uma ECU OBD1 de caixa pequena](/cars/sensors/chipping-obd1-small-case) - Abrange ECUs JDM de caixa pequena.
-- [Modificar uma ECU de 1988-1989](/cars/rom/chipping-an88-89ecu) - Abrange ECUs OBD0 antigas.
+- [Chipping OBD0 PM6 ECUs](/cars/rom/chipping-obd0pm6) — Covers PM6, PM7, PR5, PR4, PP5, and related 1990–1991 variants.
+- [Chipping OBD1 Large Case ECUs](/cars/ecu/chipping-obd1-big-case) — Covers USDM, EDM, and older JDM large case variants.
+- [Chipping OBD1 Small Case ECUs](/cars/sensors/chipping-obd1-small-case) — Covers JDM small case variants.
+- [Chipping 1988–1989 OBD0 ECUs](/cars/rom/chipping-an88-89ecu) — Covers early OBD0 variants.

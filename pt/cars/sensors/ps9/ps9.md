@@ -1,23 +1,36 @@
 ---
-summary: 'PS9: Civic EX USDM 90-91 (1.6L SOHC, geralmente automático). A PS9 é idêntica a uma PM6, com a adição do circuito para controlar uma transmissão automática.'
+summary: 'Technical overview of the PS9 ECU used in 1990-1991 USDM Honda Civic EX models, featuring integrated automatic transmission control.'
+tags: [ecu, obd0, honda, ps9, transmission]
 applies_to:
-  obd: [0, 1, 2]
-  brand: Honda
+  obd: [0]
+  models: [Civic EX]
+  chassis: [EF]
 complexity: beginner
-tags:
-  - sensors
-  - reference
-sources:
-  - name: 'pgmfi.org wiki'
-    title: PS9
-    url: /pgmfi/wiki/library/ps9
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# PS9
+# PS9 ECU Technical Overview
 
-PS9: Civic EX [USDM](/cars/sensors/usdm) 90-91 (1.6L [SOHC](/cars/sensors/sohc) — geralmente automático). A PS9 é idêntica a uma [PM6](/cars/ecu/pm6), com a adição do circuito para controlar uma transmissão automática.
+The PS9 ECU was utilized in 1990–1991 USDM Honda Civic EX models equipped with the 1.6L SOHC engine. 
 
-| **Anexo:** | **Modificar:** | **Tamanho:** | **Data:** | **Quem:** | **Comentário:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [PS9auto.jpg](PS9auto.jpg) | mod | 446908 | 18 Dec 2003 - 21:40 | The Admin | Digitalização da PS9 automática [USDM](/cars/sensors/usdm) por eraser@d16a |
+> [!NOTE]
+> The PS9 hardware architecture is functionally identical to the PM6 ECU, with the addition of dedicated circuitry required to manage an automatic transmission.
+
+## Hardware Specifications
+
+The PS9 is primarily distinguished by its integrated transmission control unit (TCU) functionality. When servicing or tuning this unit, refer to the following comparison:
+
+| Feature | PM6 | PS9 |
+| :--- | :--- | :--- |
+| **Engine Compatibility** | 1.6L SOHC | 1.6L SOHC |
+| **Transmission Control** | Manual | Automatic |
+| **Architecture** | OBD0 | OBD0 |
+
+## Technical Documentation
+
+The following image provides a visual reference for the PS9 PCB layout and component identification.
+
+![PS9 ECU PCB](PS9auto.jpg)
+*Digital scan of the USDM PS9 automatic ECU PCB*
+
+> [!IMPORTANT]
+> Ensure all modifications to the PS9 board are performed using appropriate ESD-safe equipment. Because the PS9 shares the same base architecture as the PM6, standard OBD0 tuning procedures apply, provided the transmission control logic remains undisturbed.

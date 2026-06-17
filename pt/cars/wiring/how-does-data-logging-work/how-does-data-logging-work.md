@@ -1,25 +1,84 @@
 ---
-summary: 'Existe uma série de programas que lhe permitem registar dados (data logging) sobre o funcionamento do seu motor, lendo informações diretamente da ECU.'
+summary: "Data logging software enables real-time monitoring of engine parameters by reading directly from the ECU via serial communication. Learn how datalogging patches are installed and used to capture engine telemetry for tuning analysis."
+tags:
+  - data logging
+  - ecu
+  - serial communication
+  - tuning
+  - rom
+  - obd1
+  - diagnostics
 applies_to:
   obd: [0, 1, 2]
 complexity: advanced
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - wiring
-  - conversion
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Como Funciona o Data Logging'
-    url: /pgmfi/wiki/library/how-does-data-logging-work
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Como Funciona o Data Logging
+# Data Logging: How It Works
 
-Existe uma série de programas que lhe permitem registar dados (datalog) sobre o funcionamento do seu motor, lendo informações diretamente da [ECU](/cars/ecu/ecu). Para as minhas [ECU](/cars/ecu/ecu)s [OBD](/cars/wiring/obd)1, utilizo o software CROME Pro ou Freelog no meu PC para registar o que está a acontecer. Estes pacotes de software utilizam uma porta série no PC (por vezes implementada com um adaptador USB) para enviar comandos e receber dados da [ECU](/cars/ecu/ecu). Há imensa informação nesta wiki sobre como configurar a sua [ECU](/cars/ecu/ecu) para poder comunicar com o PC. Basicamente, precisa de ligar o transmissor da [ECU](/cars/ecu/ecu) ao recetor do PC e ligar o recetor da [ECU](/cars/ecu/ecu) ao transmissor do PC. A porta série da [ECU](/cars/ecu/ecu) funciona com níveis de tensão [TTL](/cars/sensors/ttl) e a maioria das portas série de PC funcionam com níveis de tensão RS232, pelo que deve ser utilizado algum tipo de conversor/tradutor de sinal. Assim que o hardware da porta série estiver operacional, precisa de substituir o software que controla a porta série da [ECU](/cars/ecu/ecu) por um software que a controle de forma a conseguir comunicar com o software no PC. Eu utilizo o plugin de datalogging de John Cui no CROME para instalar este patch de software no binário (programa) da [ECU](/cars/ecu/ecu) que pretendo monitorizar. Esse binário é gravado num chip de memória flash ou [EPROM](/cars/rom/eprom) e instalado na [ECU](/cars/ecu/ecu) do carro. Assim que o motor estiver a funcionar com a [ECU](/cars/ecu/ecu) modificada e o software de datalogging do PC estiver a correr, e ambos estiverem a comunicar entre si, pode iniciar o registo de dados. Quando indica ao software do PC para iniciar o datalogging, este começa a enviar comandos para a [ECU](/cars/ecu/ecu). O software de datalogging adicionado ao binário da [ECU](/cars/ecu/ecu) recebe cada comando, interpreta-o e devolve os resultados, que o software do PC adiciona depois a um ficheiro de registo (log). Tipicamente, é utilizado um comando para obter um dado da [ECU](/cars/ecu/ecu). Com o patch de datalogger do John Cui, por exemplo, existem comandos padrão para obter os dados que a maioria das pessoas deseja, tais como [RPM](/cars/sensors/rpm), leituras da sonda de O2, leituras do sensor MAP, etc. Também existem comandos que lhe permitem ler qualquer endereço de [RAM](/cars/reference/ram) para registar dados monitorizados com menos frequência. O software de datalogging no PC apenas percorre todos os comandos para obter os dados que deseja e depois repete a mesma sequência continuamente, tão rápido quanto o PC consiga processar. Depois de registar os dados do seu carro enquanto este funciona sob diferentes cargas, pode utilizar esses dados para perceber como alterar várias características operacionais do software da [ECU](/cars/ecu/ecu), tais como os mapas de combustível e de ignição. Isto é feito com um software editor de ROM como o CROME para [ECU](/cars/ecu/ecu)s [OBD](/cars/wiring/obd)1. -- markolson - 24 Out 2005
+## Overview
+
+Data logging software allows you to capture real-time engine parameters directly from the ECU via serial communication. This telemetry is essential for tuning and diagnosing engine behavior under various operating conditions.
+
+## System Architecture
+
+### Hardware Requirements
+
+Data logging requires a serial communication link between the ECU and a PC:
+
+- **ECU Side:** Operates at **TTL voltage levels** (typically 5V logic)
+- **PC Side:** Traditional serial ports operate at **RS-232 voltage levels** (±12V)
+- **Converter:** A TTL-to-RS232 converter (or USB adapter with integrated conversion) bridges the voltage difference
+
+> [!IMPORTANT]
+> ECU transmitter connects to PC receiver; ECU receiver connects to PC transmitter. Signal levels must be converted between TTL and RS-232 standards.
+
+### Software Stack
+
+A complete data logging setup requires two components:
+
+| Component | Purpose | Example |
+|-----------|---------|---------|
+| **ECU Firmware Patch** | Embedded software that receives commands and returns sensor data | John Cui datalogging patch (CROME plugin) |
+| **PC Host Software** | Captures and logs returned data to file | CROME Pro, Freelog |
+
+## Operation
+
+### Installation Process
+
+1. Use PC host software (e.g., CROME) to load a datalogging firmware patch into your ECU binary
+2. Flash the modified binary to the ECU's ROM (EPROM or flash memory)
+3. Install the modified ECU in the vehicle
+
+### Data Capture Workflow
+
+Once the hardware and firmware are in place:
+
+1. Launch PC host software and establish serial communication with the ECU
+2. Initiate datalogging command sequence
+3. PC software continuously queries the ECU with predefined commands
+4. ECU firmware interprets commands and returns sensor values
+5. PC software writes returned data to log file
+6. Process repeats as fast as serial communication and processing allow
+
+> [!TIP]
+> Query speed is limited by serial baud rate and processing overhead. Typical automotive datalogging operates at 9600–115200 baud.
+
+## Standard Data Commands
+
+Most datalogging implementations include predefined commands for common sensor parameters:
+
+- **RPM** — Engine speed
+- **O₂ Sensor** — Exhaust oxygen content
+- **MAP Sensor** — Manifold absolute pressure
+- **Custom RAM Addresses** — User-defined monitored variables for lower-frequency polling
+
+## Applications
+
+Captured datalog files enable detailed analysis of engine behavior:
+
+- **Fuel Map Tuning** — Observe AFR response to load and RPM changes
+- **Ignition Timing Optimization** — Correlate knock events with spark advance
+- **Diagnostic Troubleshooting** — Identify sensor failures or control anomalies
+- **Performance Validation** — Verify changes before permanent ROM modifications
+
+```

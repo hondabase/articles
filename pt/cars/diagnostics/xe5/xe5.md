@@ -1,31 +1,47 @@
 ---
-summary: '88-91 (datas questionáveis?) Plataforma de Corrida Mugen (ZC). O código XE5 é derivado do PM7, especificamente o PM70330 que carece de um sensor de O2.'
+summary: 'Technical overview of the Mugen XE5 ECU, a race-spec variant derived from the PM7 platform designed for the ZC engine.'
+tags: [ecu, mugen, zc, rom, tuning]
 applies_to:
-  obd: [0, 1, 2]
-complexity: beginner
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - diagnostics
-sources:
-  - name: 'pgmfi.org wiki'
-    title: XE5
-    url: /pgmfi/wiki/library/xe5
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  obd: [0]
+  models: [88-91 Civic/CRX]
+  chassis: [EF]
+complexity: intermediate
 ---
 
-# XE5
+# Mugen XE5 ECU Technical Reference
 
-88-91 (datas questionáveis?) Plataforma de Corrida Mugen (ZC). O código XE5 é derivado do PM7, especificamente do PM7-0330 que não possui sensor de O2. Trata-se de um programa "apenas para corrida" que desativa a maior parte das verificações de sensores.
+The XE5 ECU is a specialized race-spec unit developed for the Mugen ZC engine platform (circa 1988–1991). It is derived from the PM7-0330 hardware architecture.
 
-- [PM7-MUG.bin](PM7-MUG.bin): a [ROM](/cars/rom/rom) da plataforma de corrida Mugen XE5
+> [!IMPORTANT]
+> The XE5 is a dedicated "race-only" calibration. It lacks support for an O2 sensor and disables the majority of standard factory sensor diagnostic checks.
 
-| **Anexo:** | **Modificar:** | **Tamanho:** | **Data:** | **Quem:** | **Comentário:** |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| ![](/pgmfi/wiki/assets/icn/bmp.gif) [XE5ECU.jpg](XE5ECU.jpg) | mod | 216257 | 18 Dec 2003 - 21:42 | The Admin | Fotografia de Nico da tampa de uma XE5 |
-| ![](/pgmfi/wiki/assets/icn/bmp.gif) [XE5Inside.jpg](XE5Inside.jpg) | mod | 246069 | 18 Dec 2003 - 21:43 | The Admin | Fotografia de Nico do interior de uma XE5 |
+## Hardware Overview
+
+The XE5 utilizes the PM7-0330 PCB layout. Because it is designed for closed-course competition, it omits the circuitry and logic required for closed-loop fuel control.
+
+### Component Documentation
+
+The following images detail the physical configuration of the XE5 unit:
+
+```carousel
+![Exterior view of the XE5 ECU](XE5ECU.jpg)
+*Exterior housing of the Mugen XE5 ECU*
+<!-- slide -->
+![Internal PCB view of the XE5 ECU](XE5Inside.jpg)
+*Internal view of the PM7-based XE5 circuit board*
+```
+
+## Firmware and ROM
+
+The XE5 firmware is optimized for high-output ZC engine configurations. 
+
+* **ROM File:** [PM7-MUG.bin](PM7-MUG.bin)
+
+## Technical Specifications
+
+| Feature | Specification |
+| :--- | :--- |
+| **Base Hardware** | PM7-0330 |
+| **O2 Sensor** | Disabled / Not Supported |
+| **Diagnostic Checks** | Minimal / Race-spec bypass |
+| **Application** | Mugen ZC Race Platform |

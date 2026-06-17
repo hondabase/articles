@@ -1,25 +1,24 @@
 ---
-summary: 'Sensor de Temperatura de Gases de Escape Sonda Lambda de Banda Larga Registo de Dados Programabilidade em Tempo Real Relação Ar/Combustível Dimensionamento de Injetores'
+summary: 'A comprehensive reference guide covering essential engine tuning concepts, including air/fuel ratios, wideband O2 sensors, and injector sizing.'
+tags: [tuning, sensors, fueling, diagnostics]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - sensores
-  - referência
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Conceitos de Tuning'
-    url: /pgmfi/wiki/library/tuning-concepts
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Conceitos de Tuning
+# Engine Tuning Concepts
 
-- [Sensor de Temperatura de Gases de Escape](/cars/tuning/exhaust-gas-temp-sensor)
-- [Sonda Lambda de Banda Larga](/cars/fueling/wide-band-o2)
-- [Registo de Dados (Data Logging)](/cars/diagnostics/data-logging)
-- [Programabilidade em Tempo Real](/cars/diagnostics/real-time-programability)
-- [Relação Ar/Combustível](/cars/fueling/air-fuel-ratio)
-- [Dimensionamento de Injetores](/cars/fueling/injector-sizing)
+This guide provides a technical overview of fundamental concepts required for engine management and performance tuning.
+
+## Fueling and Airflow
+*   **[Air/Fuel Ratio (AFR)](/cars/fueling/air-fuel-ratio):** The mass ratio of air to fuel present in the combustion chamber during engine operation.
+*   **[Wideband O2 Sensor](/cars/fueling/wide-band-o2):** A sensor used to measure the actual air/fuel ratio in the exhaust stream, essential for closed-loop tuning.
+*   **[Injector Sizing](/cars/fueling/injector-sizing):** The process of selecting fuel injectors with the appropriate flow rate to meet the engine's power requirements and duty cycle limits.
+
+## Diagnostics and Monitoring
+*   **[Exhaust Gas Temperature (EGT) Sensor](/cars/tuning/exhaust-gas-temp-sensor):** A probe used to monitor combustion temperatures to prevent engine damage and optimize ignition timing.
+*   **[Data Logging](/cars/diagnostics/data-logging):** The practice of recording sensor data and ECU parameters during operation to analyze engine performance and identify tuning issues.
+*   **[Real-Time Programmability](/cars/diagnostics/real-time-programability):** The ability to modify ECU calibration maps while the engine is running, allowing for immediate feedback and adjustment.
+
+> [!TIP]
+> For precise fuel calculations, ensure your injector dead-time (latency) data is accurately configured in your ECU software before adjusting global fuel trim settings.

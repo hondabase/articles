@@ -1,20 +1,31 @@
 ---
-summary: 'ppl are working on a ROM where the ECU activates the nitrous solenoid instead of the usual WOT switch.'
-tags: [ecu, reference, tuning, rom, sensors]
+summary: 'Implementing ECU-based nitrous solenoid activation to enable dynamic fuel and ignition map switching.'
+tags: [ecu, tuning, rom, nitrous, sensors]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'ECU Nitrous Control'
-    url: /pgmfi/wiki/library/ecu-nitrous-control
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# ECU Nitrous Control
+# ECU Nitrous Control Implementation
 
-ppl are working on a [ROM](/cars/rom/rom) where the [ECU](/cars/ecu/ecu) activates the nitrous solenoid instead of the usual [WOT](/cars/reference/wot) switch. The main advantage of this is that the [ECU](/cars/ecu/ecu) knows when nitrous is active, and can therefore switch to a different set of fuel/timing maps. Dry kit + 450cc injectors + [ECUNitrous Control](/cars/rom/ecu-nitrous-control) w/ [Dual Tables](/cars/rom/dual-tables) = FINE TUNED wet kit!
+ECU-based nitrous control replaces traditional wide-open throttle (WOT) switches by allowing the ECU to directly trigger the nitrous solenoid. This integration enables the ECU to recognize when the system is active and automatically transition to dedicated fuel and ignition maps.
+
+## Advantages
+*   **Dynamic Mapping:** Seamless switching between naturally aspirated and nitrous-optimized ignition and fuel tables.
+*   **Precision Tuning:** Eliminates the need for traditional wet-kit hardware by utilizing high-flow injectors and ECU-managed enrichment.
+*   **Safety:** Allows for programmable safety parameters, such as RPM windows or throttle position thresholds, before solenoid activation.
+
+> [!TIP]
+> Combining a dry nitrous kit with high-flow injectors (e.g., 450cc) and ECU-based dual-table switching provides the precision of a wet kit with the reliability of electronic management.
+
+## System Requirements
+To implement ECU-controlled nitrous, the following components and configurations are required:
+
+*   **Programmable ROM:** A compatible ECU ROM capable of handling nitrous logic and dual-table switching.
+*   **Solenoid Wiring:** The nitrous solenoid must be wired to a switched output on the ECU (typically a spare output pin).
+*   **Sensor Inputs:** Accurate throttle position sensor (TPS) and RPM signal inputs are required to define the activation window.
+
+> [!WARNING]
+> Ensure that the ECU output driver is rated for the current draw of the nitrous solenoid. If the solenoid exceeds the driver's amperage limit, a relay must be used to prevent damage to the ECU internal circuitry.

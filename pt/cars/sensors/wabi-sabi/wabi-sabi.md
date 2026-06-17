@@ -1,36 +1,36 @@
 ---
-summary: 'Uma vez que o wabi-sabi representa uma visão do mundo ou sistema estético japonês abrangente, é difícil explicá-lo com precisão em termos ocidentais.'
+summary: 'An overview of the Wabi-Sabi aesthetic philosophy and its foundational principles of impermanence, imperfection, and incompleteness.'
+tags: [philosophy, aesthetics, reference]
 applies_to:
   obd: [0, 1, 2]
-  brand: Honda
+  models: [all]
 complexity: intermediate
-tags:
-  - sensors
-  - reference
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Wabi Sabi'
-    url: /pgmfi/wiki/library/wabi-sabi
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Wabi Sabi
+# Wabi-Sabi Aesthetic Philosophy
 
-Uma vez que o wabi-sabi representa uma visão do mundo ou sistema estético japonês abrangente, é difícil explicá-lo com precisão em termos ocidentais. De acordo com Leonard Koren, o wabi-sabi é a característica mais evidente e marcante do que consideramos ser a beleza tradicional japonesa e ''"ocupa aproximadamente a mesma posição no panteão japonês de valores estéticos que os ideais gregos de beleza e perfeição no Ocidente."'' O wabi-sabi é a beleza das coisas imperfeitas, impermanentes e incompletas. É a beleza das coisas modestas e humildes. É a beleza das coisas não convencionais. Os conceitos do wabi-sabi correlacionam-se com os conceitos do Budismo Zen, visto que os primeiros japoneses envolvidos com o wabi-sabi foram mestres de chá, sacerdotes e monges que praticavam Zen. O Budismo Zen teve origem na Índia, viajou para a China no século VI e foi introduzido no Japão por volta do século XII. O Zen enfatiza a ''"compreensão direta e intuitiva da verdade transcendental além de toda a conceção intelectual."'' No cerne do wabi-sabi está a importância de transcender as formas de olhar e pensar sobre as coisas/existência.
+Wabi-sabi represents a comprehensive Japanese worldview and aesthetic system. It occupies a position in the Japanese pantheon of aesthetic values comparable to the Greek ideals of beauty and perfection in the West. 
 
-- Todas as coisas são impermanentes
-- Todas as coisas são imperfeitas
-- Todas as coisas são incompletas
+Wabi-sabi is defined as the appreciation of beauty in things that are imperfect, impermanent, and incomplete. It values the modest, the humble, and the unconventional.
 
-Características materiais do wabi-sabi: - sugestão de processo natural
-- irregular
-- íntimo
-- despretensioso
-- terroso
-- simples
+## Core Principles
 
-Para saber mais sobre o wabi-sabi, consulte [http://www.art.unt.edu/ntieva/artcurr/japan/wabisabi.htm](http://www.art.unt.edu/ntieva/artcurr/japan/wabisabi.htm). ---
+The philosophy is rooted in Zen Buddhism, emphasizing a direct, intuitive understanding of truth beyond intellectual conception. The three fundamental marks of existence within this framework are:
 
-[Documentação do PhpWiki](/cars/reference/php-wiki-documentation)
+*   **Impermanence:** All things are in a constant state of flux.
+*   **Imperfection:** Nothing is ever finished or flawless.
+*   **Incompleteness:** All things are in a state of becoming or decay.
+
+## Material Characteristics
+
+When applied to physical objects or design, wabi-sabi is characterized by the following traits:
+
+*   **Natural Process:** Evidence of age or environmental interaction.
+*   **Irregularity:** Lack of symmetry or machine-perfect uniformity.
+*   **Intimacy:** A sense of closeness and tactile engagement.
+*   **Unpretentiousness:** Absence of unnecessary ornamentation.
+*   **Earthiness:** Use of raw, organic materials.
+*   **Simplicity:** Reduction to the essential elements.
+
+> [!NOTE]
+> Wabi-sabi encourages a shift in perspective, moving away from the pursuit of idealized perfection toward an appreciation of the inherent beauty found in the natural lifecycle of objects.

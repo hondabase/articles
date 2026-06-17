@@ -8,15 +8,8 @@ tags:
   - rom
   - sensors
   - reference
-sources:
-  - name: 'pgmfi.org wiki'
-    title: FLASH
-    url: /pgmfi/wiki/library/flash
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # FLASH
 
-[FLASH](/cars/rom/flash)-[ROM](/cars/rom/rom) é muito parecida com a [EEPROM](/cars/diagnostics/eeprom), exceto pelo facto de ser apagada / gravada em setores.
+FLASH-ROM é muito parecida com a EEPROM, exceto pelo facto de ser apagada / gravada em setores.

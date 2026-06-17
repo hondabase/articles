@@ -1,75 +1,74 @@
+yaml
 ---
-summary: Modificação arquivada do circuito D12 do P30 JDM para registar uma entrada analógica de 0-5 V através da ECU.
+summary: Archived P30 JDM D12 circuit modification to log a 0–5 V analog input through the ECU via an unused pin.
 applies_to:
   ecus: [P30]
   obd: [1]
 complexity: advanced
-tags: [ecu, datalogging, hardware, adc]
+tags: [ecu, datalogging, hardware, adc, analog-input, p30-jdm]
 sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Japanese Domestic Market P30D12 Modification'
-    url: /pgmfi/wiki/library/japanese-domestic-market-p30d12-modification
+  - name: 'Japanese Domestic Market P30D12 Modification'
     license: 'CC BY-NC-SA 1.0'
     license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
     adapted: true
 ---
 
-# Modificação da entrada analógica D12 do P30 JDM
+# P30 JDM D12 Analog Input Modification
 
-Esta modificação arquivada utiliza a entrada D12, de outra forma não utilizada, numa ECU P30 OBD1 JDM para registar um sinal analógico de 0-5 V, como a saída de um amplificador de termopar EGT.
+This archived modification utilizes the otherwise unused D12 input on a P30 OBD1 JDM ECU to log a 0–5 V analog signal, such as the output from an EGT thermocouple amplifier.
 
 > [!WARNING]
-> Este procedimento corta ou altera circuitos da placa da ECU. A fonte relata testes bem-sucedidos em ECUs P30 USDM e JDM, mas não estabelece compatibilidade com outras ECUs OBD1. Verifique o circuito e o comportamento do software antes de modificar uma ECU.
+> This procedure cuts or alters ECU board circuits. The source reports successful testing on P30 USDM and JDM units but does not establish compatibility with other OBD1 ECUs. Verify the circuit and software behavior before modifying an ECU.
 
-## Diferenças entre o P30 USDM e o JDM
+## USDM vs. JDM P30 Differences
 
-A investigação original utilizou um P30 USDM para os testes iniciais e um P30 JDM para a modificação e respetivos testes. Previa-se que outras ECUs OBD1 da Honda fossem semelhantes, mas isso não foi confirmado.
+The original investigation tested on a P30 USDM unit initially and a P30 JDM unit for modification and testing. Other Honda OBD1 ECUs were expected to be similar, but this was not confirmed.
 
-| Detalhe | USDM P30 | JDM P30 |
-| --- | --- | --- |
-| Componentes de D12 | Todos instalados | Alguns componentes em falta |
-| Circuito D12 | Descrito como mais simples | Descrito como mais complexo |
-| Entrada analógica D12 | AI3, pino 57 do `66207` no encapsulamento DIP de 64 pinos | AI5, pino 63 do `66207` no encapsulamento PLCC de 68 pinos |
-| Entrada analógica ligada à massa | AI5, pino 59 do `66207` | AI3, descrito como pino 61 do `66207` |
-| Oito bits superiores do ADC | RAM `067h` | RAM `06Bh` |
-| Dois bits restantes do ADC | A fonte descreve os dois bits mais significativos da RAM `066h` como os dois bits menos significativos do valor do ADC | A fonte descreve os dois bits mais significativos da RAM `06Ah` como os dois bits menos significativos do valor do ADC |
+| Detail | USDM P30 | JDM P30 |
+|--------|----------|---------|
+| D12 components | All installed | Some components missing |
+| D12 circuit | Described as simpler | Described as more complex |
+| D12 analog input | AI3, pin 57 of `66207` in 64-pin DIP package | AI5, pin 63 of `66207` in 68-pin PLCC package |
+| Analog input grounded | AI5, pin 59 of `66207` | AI3, described as pin 61 of `66207` |
+| ADC upper eight bits | RAM `067h` | RAM `06Bh` |
+| Remaining two ADC bits | MSBs of RAM `066h` as two LSBs of ADC value | MSBs of RAM `06Ah` as two LSBs of ADC value |
 
 > [!NOTE]
-> A secção JDM arquivada utiliza duas vezes "USDM" ao descrever o circuito JDM: designa a entrada AI3 ligada à massa como parte de um P30 USDM e designa o caminho D12 para AI5 como "cablagem D12 USDM". A tabela acima segue o contexto JDM envolvente, mas essas designações não foram corrigidas ou verificadas de forma independente.
+> The archived JDM section references "USDM" twice when describing the JDM circuit: designating the grounded AI3 input as part of a USDM P30, and labeling the D12-to-AI5 path as "USDM D12 wiring." The table above follows the surrounding JDM context, but these designations were not independently corrected or verified.
 
 ![USDM P30 D12 input schematic](USDMP30D12Schematics.jpg)
-*Esquema arquivado do circuito D12 do P30 USDM.*
+*Archived schematic of the USDM P30 D12 circuit.*
 
-## Modificação JDM arquivada
+## Archived JDM Modification
 
-A fonte indica que todas estas alterações são feitas na parte de trás da placa da ECU:
+The source indicates all alterations are made on the back of the ECU board:
 
-1. Substitua `R15` por um díodo.
-2. Instale outro díodo em `R14`. A fonte utilizou díodos `1N-4148` de montagem em superfície (SMD) e descreveu-os como proteção para a entrada analógica `66207`.
-3. Adicione uma ponte (jumper) em `R13`.
-4. Adicione uma ponte (jumper) entre as ligações não ligadas à massa de `Q3` para levar D12 ao circuito modificado.
-5. Deixe a resistência `R16` de `33 kohm` e o condensador `C17` inalterados. A fonte não identificou o valor de `C17` e referiu que parecia ser um condensador de tântalo.
+1. **Replace `R15` with a diode.**
+2. **Install a diode at `R14`.** The source used surface-mount (SMD) `1N4148` diodes and described them as protection for the `66207` analog input.
+3. **Add a jumper at `R13`.**
+4. **Add a jumper between the ungrounded connections of `Q3`** to route D12 to the modified circuit.
+5. **Leave `R16` (33 kΩ) and `C17` unchanged.** The source did not identify the value of `C17` and noted it appeared to be a tantalum capacitor.
 
 ![JDM P30 D12 circuit before and after modification](JDMP30D12CircuitEGTModR1.jpg)
-*Esquema arquivado de antes e depois para a modificação do D12 do P30 JDM.*
+*Archived before-and-after schematic for the P30 JDM D12 modification.*
 
 ![Modified JDM P30 board at the D12 and AI5 circuit](JDMp30D12ModPin63.JPG)
-*Foto arquivada em alta resolução da placa modificada do P30 JDM.*
+*Archived high-resolution photo of the modified P30 JDM board.*
 
-O autor testou ambas as variantes do P30 com um potenciómetro de `10 kohm` utilizado como divisor de tensão variável numa fonte de alimentação de 5 V, e com um sensor EGT EGADS. Esses testes não confirmam o funcionamento com outros sensores ou variantes de ECU.
+The author tested both P30 variants using a 10 kΩ potentiometer as a variable voltage divider on a 5 V supply, and with an EGADS EGT sensor. These tests do not confirm operation with other sensors or ECU variants.
 
-## Aviso de software para o AI5
+## Software Warning for AI5
 
-A página arquivada avisa que o código OBD1 parece ler o AI5 e executar uma função não identificada. Até que esse código fosse compreendido, propôs-se uma disposição diferente e mais invasiva:
+The archived page warns that OBD1 code appears to read AI5 and execute an unidentified function. Until that code was understood, a different and more invasive arrangement was proposed:
 
-1. Corte as pistas para AI3 e AI5 no `66207`.
-2. Ligue AI5 à massa.
-3. Encaminhe o circuito D12 para AI3.
+1. **Cut traces to AI3 and AI5 on the `66207`.**
+2. **Ground AI5.**
+3. **Route the D12 circuit to AI3.**
 
-A fonte esperava que essa troca de pinos fizesse com que uma ECU JDM registasse o D12 como uma ECU USDM. Não documentou a função desconhecida do AI5 nem forneceu uma validação mais ampla, pelo que deve tratar isto como uma proposta histórica não verificada e não como uma recomendação atual.
+The source expected this pin swap to make a JDM ECU log D12 as a USDM ECU would. It did not document the unknown AI5 function and provided no broader validation, so treat this as an unverified historical proposal rather than a current recommendation.
 
-## Relacionado
+## Related
 
-- [Registar um sensor externo de 0-5 V através de D12](/cars/tuning/how-to-log-external-data-such-as-an-egt-sensor)
-- [Visão geral do datalogging de ECUs Honda](/cars/diagnostics/data-logging)
-- [Referência da ECU P30](/cars/sensors/p30)
+- [Log an external 0–5 V sensor via D12](/cars/tuning/how-to-log-external-data-such-as-an-egt-sensor)
+- [Honda ECU datalogging overview](/cars/diagnostics/data-logging)
+- [P30 ECU reference](/cars/sensors/p30)

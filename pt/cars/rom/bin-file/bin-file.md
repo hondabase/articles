@@ -6,13 +6,6 @@ complexity: beginner
 tags:
   - tuning
   - rom
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Ficheiro Bin'
-    url: /pgmfi/wiki/library/bin-file
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # Ficheiro Bin

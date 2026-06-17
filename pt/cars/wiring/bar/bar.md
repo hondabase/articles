@@ -1,22 +1,38 @@
 ---
-summary: 'Um BAR é igual a 14,7 psi. Também chamado ""atm"" ou ""atmosferas"" porque corresponde à pressão atmosférica ao nível do mar.'
+summary: "BAR is a unit of pressure equal to 14.7 psi, corresponding to atmospheric pressure at sea level. Essential for sensor readings and pressure conversions in automotive diagnostics."
+tags:
+  - pressure
+  - units
+  - conversion
+  - sensors
+  - reference
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - sensors
-  - reference
-  - wiring
-  - conversion
-sources:
-  - name: 'pgmfi.org wiki'
-    title: BAR
-    url: /pgmfi/wiki/library/bar
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# BAR
+# BAR Pressure Unit Reference
 
-Um [BAR](/cars/wiring/bar) é igual a 14,7 psi. Também chamado ""atm"" ou ""atmosferas"" porque corresponde à pressão atmosférica ao nível do mar. psi = bar * 14.7 A unidade métrica é o Pascal (Pa) ou Kilo Pascal (KPa), mas não tenho 100% de certeza sobre as conversões.
+## Definition
+
+**BAR** is a metric unit of pressure equal to **14.7 psi**. It is also called an **atmosphere (atm)** because it corresponds to atmospheric pressure at sea level.
+
+## Conversion Formulas
+
+| From | To | Formula |
+|------|--|----|
+| BAR | psi | psi = BAR × 14.7 |
+| psi | BAR | BAR = psi ÷ 14.7 |
+| BAR | kPa | kPa = BAR × 100 |
+| kPa | BAR | BAR = kPa ÷ 100 |
+
+## Common Pressure Values
+
+| Unit | Value |
+|------|-------|
+| 1 BAR | 14.7 psi |
+| 1 BAR | 100 kPa |
+| 1 atm | 1 BAR |
+
+> [!NOTE]
+> The SI unit for pressure is the **Pascal (Pa)** or **Kilopascal (kPa)**. BAR is a derived metric unit commonly used in automotive applications, particularly for fuel pressure and boost pressure measurements.

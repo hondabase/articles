@@ -1,32 +1,22 @@
 ---
-summary: 'Archived beginner answers for identifying, selecting, and researching Honda ECUs.'
-tags: [ecu, identification, reference]
+summary: 'A foundational reference for identifying Honda ECU families, understanding compatibility, and navigating common ECU part numbers.'
+tags: [ecu, identification, reference, obd]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, prelude, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, ef, eg, eg-eh, ek]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Begginers FAQ'
-    url: /pgmfi/wiki/library/begginers-faq
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Beginner's Honda ECU FAQ
+# Honda ECU Identification and Compatibility FAQ
 
-This FAQ preserves introductory ECU identification and compatibility guidance from the
-pgmfi wiki. Honda ECU codes such as P28, PM6, and P72 identify ECU families, but do not
-by themselves confirm a complete calibration or application.
+Honda ECU codes (e.g., P28, PM6, P72) identify specific ECU families. These codes indicate the hardware architecture and intended application but do not inherently confirm a specific calibration or vehicle compatibility.
 
-## What car did this ECU come from?
+## ECU Application Reference
 
-The archived FAQ lists these common original applications. Applications can vary by
-market, year, transmission, and calibration.
+Applications vary significantly by market, production year, transmission type, and emissions calibration. The following table lists common ECU codes and their typical original applications.
 
-| ECU code | Application listed in the archived FAQ |
+| ECU Code | Typical Application |
 | :--- | :--- |
 | PG6 | 1988-1989 Integra |
 | PM5 | 1988-1991 Civic/CRX DX |
@@ -34,86 +24,67 @@ market, year, transmission, and calibration.
 | PM7 | 1989-1991 JDM DOHC ZC EF |
 | PM8 | 1988-1991 CRX HF |
 | PR2 | 1989-1991 European ZC |
-| PR3 | 1989-1991 JDM B16A EF8/EF9; `J00` or `J51` also listed for 1992 |
+| PR3 | 1989-1991 JDM B16A EF8/EF9 |
 | PW0 | 1989-1991 JDM B16A EF8/EF9 and DA6 XSi |
 | PR4 | 1990-1991 Integra LS/GS |
-| PS9 | 1988-1991 Civic EX sedan automatic |
+| PS9 | 1988-1991 Civic EX Sedan (Automatic) |
 | P05 | 1992-1995 OBD1 Civic CX |
 | P06 | 1992-1995 OBD1 Civic DX |
 | P07 | 1992-1995 OBD1 Civic VX |
 | P08 | 1992-1995 OBD1 JDM D15 Civic |
 | P0A | 1994-1995 OBD1 Accord EX |
 | P13 | 1993-1995 OBD1 Prelude VTEC |
-| P14 | 1993-1995 OBD1 Prelude Si, non-VTEC |
+| P14 | 1993-1995 OBD1 Prelude Si (Non-VTEC) |
 | P27 | 1992-1995 OBD1 JDM EG Civic 1.6 SOHC |
 | P28 | 1992-1995 OBD1 Civic Si/EX |
 | P30 | 1992-1995 OBD1 Del Sol DOHC VTEC Si / EG SiR |
 | P54-G31 | 1997 Accord 1.8 LS |
 | P61 | 1992-1993 OBD1 Integra GS-R |
-| P72 | 1994-1995 OBD1 and 1996-2000 OBD2 Integra GS-R |
+| P72 | 1994-1995 OBD1 / 1996-2000 OBD2 Integra GS-R |
 | P73 | 1996-2000 OBD2 Integra Type R |
 | P74/P75 | 1992-1995 OBD1 Integra LS/GS |
 | P75 | 1996-2000 OBD2 Integra LS/GS |
-| P2N | 1996 and later OBD2 Civic HX coupe |
-| P2P | 1996 and later OBD2 Civic EX coupe |
-| P2E | 1996 and later OBD2 Civic DX coupe |
-| P2M | 1996 and later New Zealand Civic SOHC VTEC |
-| P2T | 1999 and later Civic Si coupe; OBD generation uncertain in source |
+| P2N | 1996+ OBD2 Civic HX |
+| P2P | 1996+ OBD2 Civic EX |
+| P2E | 1996+ OBD2 Civic DX |
+| P2M | 1996+ New Zealand Civic SOHC VTEC |
+| P2T | 1999+ Civic Si |
 | P5P | 1997-2000 OBD2 JDM Prelude Type S |
-| PBA | 1997 and later Acura 1.6EL |
-| PCT | 1998 and later JDM Integra/Civic Type R |
-| PCX | 1999 and later S2000; OBD generation uncertain in source |
+| PBA | 1997+ Acura 1.6EL |
+| PCT | 1998+ JDM Integra/Civic Type R |
+| PCX | 1999+ S2000 |
 
-See the larger [Honda ECU definition code reference](/cars/ecu/ecu-definition-codes)
-for additional part-number and market information.
+> [!TIP]
+> For detailed part-number and market-specific information, refer to the [Honda ECU definition code reference](/cars/ecu/ecu-definition-codes).
 
-## What ECU should be in my car?
+## ECU Selection and Compatibility
 
-The archived FAQ recommends using an ECU that matches the engine year and type. Its
-examples include a PM6 for a D16A6, an OBD0 PR4 for an early B18, an OBD1 P72 or P74,
-and an OBD2 P73 or P75 where appropriate.
+Selecting the correct ECU requires matching the engine year, engine type, and chassis wiring generation. 
 
-Treat these as broad examples. The correct ECU also depends on market, wiring generation,
-transmission, injectors, distributor, sensors, and required emissions equipment. Read the
-[OBD generation overview](/cars/wiring/obd) before swapping between generations.
+> [!IMPORTANT]
+> The correct ECU depends on a combination of factors: market, wiring generation, transmission type, injector impedance, distributor type, and required emissions equipment. Always consult the [OBD generation overview](/cars/wiring/obd) before attempting to swap ECUs between different generations.
 
-## How do I identify an ECU?
+## Physical Identification
 
-Start with the label on the side of the ECU case. The archived FAQ describes a family
-code followed by a suffix, using the simplified pattern `LLN-LNN`, where `L` is a letter
-and `N` is a number.
-
-It says the first three characters identify the ECU family. It also describes suffixes
-from `A00` through `A49` as generally manual and `A50` or higher as generally automatic.
+To identify an ECU, inspect the label on the side of the case. Most units follow a `LLN-LNN` pattern:
+*   **Family Code:** The first three characters identify the ECU family.
+*   **Suffix:** The suffix often denotes transmission and market variations. Generally, suffixes in the `A00–A49` range indicate manual transmissions, while `A50` and higher often indicate automatic transmissions.
 
 > [!NOTE]
-> Treat the suffix ranges as a clue from the archived FAQ, not a universal rule. Verify the complete part number and board configuration.
+> Suffix ranges are not universal. Always verify the complete part number and internal board revision before assuming compatibility.
 
-## Where can I find the stock program?
+## Software and Calibration
+Do not assume two ECUs are software-compatible simply because they share the same connector type or family name. Different ECUs may utilize different memory maps, hardware drivers, sensor logic, and output assignments.
 
-The archived FAQ points readers to the ECU definition list for stock binaries. See the
-[Honda ECU definition code reference](/cars/ecu/ecu-definition-codes).
+Before testing, verify:
+*   ECU family and board revision.
+*   Checksum validity.
+*   Injector configuration.
+*   Output pin assignments.
 
-## Can I run code from another ECU?
-
-The archived FAQ directs this question to ECU code-compatibility research. Do not assume
-two ECUs are software-compatible because they share connectors or similar family names.
-Different code bases can use different memory maps, hardware drivers, sensor logic, and
-output assignments.
-
-Use a known-compatible base ROM and verify the ECU family, board revision, checksum,
-injector configuration, and enabled outputs before testing.
-
-## How can I contribute without writing code?
-
-The original FAQ encouraged non-programmers to test code, photograph and identify ECUs,
-help other users, and write documentation. Useful contributions include:
-
-- Photographing ECU boards and case labels
-- Verifying pinouts against factory service manuals
-- Testing procedures on clearly identified hardware
-- Preserving stock ROM information and checksums
-- Writing installation and troubleshooting notes
-
-Record the exact ECU part number, board revision, vehicle, engine, transmission, and
-results with every contribution.
+## Contributing to Research
+Documentation efforts rely on accurate, verified data. You can contribute by:
+*   Providing high-resolution photographs of ECU boards and case labels.
+*   Verifying pinouts against factory service manuals.
+*   Documenting stock ROM information and checksums.
+*   Recording the exact ECU part number, board revision, vehicle, engine, and transmission for all test results.

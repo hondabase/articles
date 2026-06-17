@@ -1,26 +1,67 @@
 ---
-summary: 'A base de código VTEC de 1 fio (1wire VTEC) é uma ROM para as ECU OBD0 MPFI que permite utilizar o solenoide de bloqueio da transmissão automática (Automatic Transmission Lockup Solenoid) para controlar a ativação do VTEC.'
+summary: "1 Wire VTEC is a ROM modification for OBD0 MPFI ECUs that repurposes the automatic transmission lockup solenoid to control VTEC activation."
 applies_to:
   obd: [0]
 complexity: beginner
 tags:
   - ecu
-  - reference
-  - tuning
   - rom
-  - sensors
+  - tuning
+  - vtec
+  - solenoid
   - wiring
   - conversion
-  - diagnostics
-sources:
-  - name: 'pgmfi.org wiki'
-    title: '1 Wire Vtec'
-    url: /pgmfi/wiki/library/1-wire-vtec
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - obd0
 ---
 
 # 1 Wire VTEC
 
-A base de código VTEC de 1 fio é uma [ROM](/cars/rom/rom) para as [ECU](/cars/ecu/ecu)s [OBD0 MPFI](/cars/diagnostics/obd0mpfi) que permite utilizar o [solenoide de bloqueio da transmissão automática](/cars/sensors/automatic-transmission-lockup-solenoid) para controlar a ativação do VTEC. Jason Parker idealizou as alterações de [hardware para o VTEC de um fio](/cars/rom/hardware-for-one-wire-vtec). Desde 2 de outubro de 2003 que está funcional, mas precisa de alguma ajuda e testes adicionais. Dave Blundell tem vários carros a circular com este sistema. Se quiser contribuir/trabalhar/ver o projeto, consulte o módulo de código ***1w_vtec*** no [Source Forge](/cars/wiring/source-forge).
+## Overview
+
+1 Wire VTEC is a ROM modification for OBD0 MPFI ECUs that repurposes the automatic transmission lockup solenoid to control VTEC activation. This approach eliminates the need for dedicated VTEC wiring by utilizing an existing solenoid output on automatic transmission-equipped vehicles.
+
+> [!NOTE]
+> This implementation has been functional since October 2003 and is currently in use on multiple vehicles. Community testing and feedback continue to help refine the system.
+
+## Hardware Requirements
+
+To implement 1 Wire VTEC, you will need:
+
+- OBD0 MPFI ECU (compatible models listed below)
+- Automatic transmission lockup solenoid
+- Associated wiring harness modifications
+- Flashed ROM with 1 Wire VTEC code
+
+> [!IMPORTANT]
+> Refer to the [hardware modifications guide](/cars/rom/hardware-for-one-wire-vtec) for detailed installation and wiring specifications.
+
+## System Operation
+
+The 1 Wire VTEC system works by:
+
+1. Reading the stock VTEC activation conditions from the modified ROM
+2. Sending the VTEC engagement signal through the automatic transmission lockup solenoid output
+3. Triggering VTEC solenoid activation based on programmed engine parameters (RPM, load, throttle position)
+
+## Compatibility
+
+This modification is compatible with:
+
+- **OBD0 MPFI ECUs** with automatic transmission solenoid outputs
+- Vehicles using Honda's original VTEC solenoid hardware
+
+> [!WARNING]
+> Manual transmission vehicles or ECUs without an automatic transmission lockup solenoid output cannot use this implementation. Verify your ECU variant before proceeding.
+
+## Development and Support
+
+The 1 Wire VTEC project maintains an active codebase under the `1w_vtec` module. Community contributions, vehicle testing, and additional refinements are ongoing.
+
+For involvement with the project, consult the official source repository for the latest code and documentation.
+
+## See Also
+
+- [OBD0 MPFI Diagnostics](/cars/diagnostics/obd0mpfi)
+- [ROM Modifications](/cars/rom/rom)
+- [ECU Hardware](/cars/ecu/ecu)
+- [Automatic Transmission Lockup Solenoid](/cars/sensors/automatic-transmission-lockup-solenoid)

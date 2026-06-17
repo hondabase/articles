@@ -1,24 +1,22 @@
 ---
-summary: 'O conteúdo de todas as páginas é pesquisado para encontrar ligações para a página atual. A função Back Links também responde à pergunta: "Que páginas contêm o título desta página?".'
+summary: 'An overview of the Back Links functionality used to identify and track cross-references between technical documentation pages.'
+tags: [reference, documentation, navigation]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - sensors
-  - reference
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Back Links'
-    url: /pgmfi/wiki/library/back-links
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Back Links
+# Back Links Functionality
 
-O conteúdo de todas as páginas é pesquisado para encontrar ligações para a página atual. A função [Back Links](/cars/sensors/back-links) também responde à pergunta: "Que páginas contêm o título desta página?".
+The Back Links feature performs a comprehensive search across the documentation database to identify all pages that contain hyperlinks pointing to the current article. This tool is essential for maintaining documentation integrity and understanding the relationship between different technical topics.
 
----
+## Purpose
+The Back Links function serves two primary purposes:
+* **Dependency Tracking:** Identifies which pages reference the current technical subject, allowing for easier navigation between related components or procedures.
+* **Query Resolution:** Answers the specific question: "Which pages contain the title of this page?"
 
-Back Links exclude||='' include_self||=1 noheader||=0 page||='' info||='' ?>
+> [!NOTE]
+> This feature automatically updates as new content is added to the database, ensuring that cross-references remain accurate and discoverable.
+
+## Usage
+The system automatically scans all indexed pages to generate a dynamic list of incoming links. This ensures that users can trace the context of a specific sensor, ECU pinout, or diagnostic procedure back to the parent documentation or related troubleshooting guides.

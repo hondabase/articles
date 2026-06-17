@@ -1,35 +1,48 @@
 ---
-summary: 'ECU OBD0 B20A do Prelude. Avanço Eletrónico. ROM externa 27c256. Foto da ECU pk2 baseada em oki 83c154.: Publiquei o grande plano das Opções para a ECU manual PK26640 do B20A.'
+summary: 'Technical overview of the OBD0 PK2 ECU used in the Honda B20A Prelude, featuring hardware configuration, jumper settings, and PCB compatibility.'
+tags: [ecu, obd0, tuning, b20a, rom]
 applies_to:
-  obd: [0, 1, 2]
-  brand: Honda
+  obd: [0]
+  models: [Prelude]
+  chassis: [BA]
 complexity: advanced
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - diagnostics
-sources:
-  - name: 'pgmfi.org wiki'
-    title: PK2
-    url: /pgmfi/wiki/library/pk2
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# PK2
+# Honda PK2 ECU Technical Reference
 
-[ECU](/cars/ecu/ecu) [OBD](/cars/wiring/obd)-0 do Prelude B20A. Avanço Eletrónico. [ROM](/cars/rom/rom) externa `27C256`. Baseada em oki `83C154`.
+The PK2 ECU is an OBD0 unit utilized in the Honda Prelude equipped with the B20A engine. It features an external 27C256 ROM and is based on the OKI 83C154 microcontroller architecture.
 
-- foto da [ECU](/cars/ecu/ecu) pk-2.:
+## PCB Architecture and Compatibility
+The PK2 and PH3 ECUs share a nearly identical printed circuit board (PCB) design, with approximately 99% hardware commonality. Due to this architectural similarity, PH3 firmware is often compatible with PK2 hardware.
 
----
+> [!NOTE]
+> The Jumper **BR8** appears to control the secondary O2 sensor input. On the PH3 (which lacks a secondary O2 sensor), this jumper is used to disable the input.
 
-Publiquei o grande plano das Opções (Options Close-up) para a [ECU](/cars/ecu/ecu) manual PK2-6640 do B20A. Não sei se estas opções estão relacionadas com o tipo de transmissão ou emissões. A [ECU](/cars/ecu/ecu) PH3 automática tem a mesma configuração de opções que esta [ECU](/cars/ecu/ecu) manual, por isso ainda não tenho a certeza do que estas fazem.
+## Hardware Configuration
+The PK2-6640 manual ECU features various configuration jumpers. While the exact function of all options remains under investigation, they are suspected to be related to transmission type or regional emissions requirements.
 
-As [ECU](/cars/ecu/ecu)s PK2 e PH3 partilham quase a mesma placa de circuito impresso (PCB). São 99% semelhantes. Tão semelhantes, de facto, que o código da PH3 pode correr na PK2. O Jumper BR8 parece controlar a entrada do sensor de O2 secundário. A PH3 não tem este sensor, pelo que está desativado pelo BR8. Pode consultar a secção da PH3 para mais detalhes.
+```carousel
+![PK2 ECU Top View](pk2.jpg)
+*Overview of the PK2 ECU PCB*
+<!-- slide -->
+![PK2-6640 Manual ECU](pk2-6640_manual.jpg)
+*Canadian market PK2-6640 manual transmission ECU*
+<!-- slide -->
+![PK2-6640 Options Close-up](pk2-6640_manual_options.jpg)
+*Detailed view of the configuration options area*
+<!-- slide -->
+![BR8 Jumper Detail](BR8-PK2.jpg)
+*Close-up of the BR8 jumper location*
+```
 
-Carotman | **Anexo:** | **Modificar:** | **Tamanho:** | **Data:** | **Quem:** | **Comentário:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [pk2.jpg](pk2.jpg) | mod | 250501 | 04 Jul 2005 - 05:16 | chen | foto da [ECU](/cars/ecu/ecu) pk-2. | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [pk2-6640\\_manual.jpg](pk2-6640_manual.jpg) | mod | 1055631 | 07 Apr 2006 - 03:10 | carotman | [ECU](/cars/ecu/ecu) PK2 Canadiana | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [pk2-6640\\_manual\\_options.jpg](pk2-6640_manual_options.jpg) | mod | 1062087 | 07 Apr 2006 - 03:11 | carotman | Grande plano das Opções da PK2-6640 | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [BR8-PK2.jpg](BR8-PK2.jpg) | mod | 1069261 | 07 Apr 2006 - 03:14 | carotman | Jumper BR8 que parece controlar a entrada do Sensor de O2 B |
+## Technical Specifications
+
+| Component | Specification |
+| :--- | :--- |
+| **Microcontroller** | OKI 83C154 |
+| **ROM Type** | External 27C256 |
+| **OBD Standard** | OBD0 |
+| **Engine Application** | B20A |
+
+> [!TIP]
+> For further details regarding jumper functionality and sensor pinouts, refer to the PH3 ECU documentation, as the shared PCB design allows for cross-referencing of most circuit paths.

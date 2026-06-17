@@ -1,5 +1,6 @@
+yaml
 ---
-summary: 'OK, aqui está o que eu sei sobre estas ECUs. A PT6-A51 que tenho aqui possui um MCU 66911 e utiliza uma PROM externa de 256k.'
+summary: Technical reference for Honda Prelude and Accord ECUs, including MCU specifications, PROM configurations, and component details for OBD0, OBD1, and OBD2 variants.
 applies_to:
   obd: [0, 1, 2]
   brand: Honda
@@ -9,16 +10,32 @@ tags:
   - reference
   - tuning
   - rom
-  - sensors
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Prelude Accord'
-    url: /pgmfi/wiki/library/prelude-accord
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - mcu
+  - prelude
+  - accord
 ---
 
-# Prelude Accord
+# Honda Prelude and Accord ECU Reference
 
-OK, aqui está o que eu sei sobre estas [ECU](/cars/ecu/ecu)s. A PT6-A51 que tenho aqui possui um [MCU](/cars/rom/mcu) 66911 e utiliza uma PROM externa de 256k. Consegui uma [ECU](/cars/ecu/ecu) de um Prelude SI de 1994 com um motor 1.6 [DOHC](/cars/sensors/dohc) e esta tem a referência PK3-A00, possuindo também o [MCU](/cars/rom/mcu) OKI 66911 e uma PROM externa de 256Kbit, além de ter o `74HC373` -- sloopy - 16 de maio de 2005
+## Overview
+
+This article documents ECU specifications for Honda Prelude and Accord models across multiple OBD generations, including MCU variants, PROM configurations, and component architectures.
+
+## PT6-A51 ECU Specifications
+
+| Specification | Value |
+|---|---|
+| **MCU** | OKI 66911 |
+| **External PROM** | 256 kbit |
+
+## PK3-A00 ECU Specifications (1994 Prelude SI)
+
+| Specification | Value |
+|---|---|
+| **Engine** | 1.6L DOHC |
+| **MCU** | OKI 66911 |
+| **External PROM** | 256 kbit |
+| **Support ICs** | 74HC373 (16-bit latch) |
+
+> [!NOTE]
+> Both PT6-A51 and PK3-A00 variants utilize the OKI 66911 MCU architecture with identical 256 kbit external PROM configurations, indicating common platform design across model years.

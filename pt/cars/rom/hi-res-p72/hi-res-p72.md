@@ -9,13 +9,6 @@ tags:
   - tuning
   - rom
   - software
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Hi Res P72'
-    url: /pgmfi/wiki/library/hi-res-p72
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # Especificações da ROM P72 de Alta Resolução (Hi-Res)
@@ -24,22 +17,20 @@ A ECU original OBD1 Acura Integra GS-R P72 utiliza tabelas de combustível e ign
 
 A **ROM P72 Hi-Res** é um binário de ROM P72 modificado de forma personalizada (pioneiramente desenvolvido por John Cui) que ajusta o código das tabelas de consulta (lookup tables) da ECU. Ao redefinir o tamanho das tabelas de consulta internas da P72 para corresponder ao padrão da P28, permite aos afinadores transferir tabelas de mapas diretamente entre calibrações P28 e P72 sem erros de interpolação.
 
----
-
 ## Mapa de Offset de Memória (Localizações RAM & ROM)
 
 Ao escrever plugins ou scripts personalizados para modificar uma ROM P72 Hi-Res, os programadores devem referenciar estes endereços de memória específicos. Estes endereços diferem dos mapas de ROM P72 originais de fábrica:
 
 | Localização Hex | Comprimento (Bytes) | Descrição | Notas |
-| :---: | :---: | :--- | :--- |
-| **`0x0A50`** | 2 | Referência de localização do vetor de valores de RPM de cames baixas (low cam) | Hi-Res P72 de John Cui |
-| **`0x0A68`** | 2 | Referência de localização do vetor de valores de RPM de cames altas (high cam) | Hi-Res P72 de John Cui |
-| **`0x0A71`** | 1 | Comprimento do vetor de valores de RPM de cames altas (high cam) | Hi-Res P72 de John Cui |
-| **`0x0A80`** | 2 | Referência de localização do vetor de valores de RPM de cames altas (alternativo) | Hi-Res P72 de John Cui |
-| **`0x0A89`** | 1 | Comprimento do vetor de valores de RPM de cames altas (alternativo) | Hi-Res P72 de John Cui |
-| **`0x0AA3`** | 2 | Referência ao vetor de valores do sensor MAP | Hi-Res P72 de John Cui |
-| **`0x0AB8`** | 2 | Referência ao vetor de valores do sensor MAP (alternativo) | Hi-Res P72 de John Cui |
-| **`0x0ACD`** | 2 | Referência ao vetor de valores do sensor MAP (alternativo) | Hi-Res P72 de John Cui |
-| **`0x1269`** | 2 | Configuração do mapa de combustível de cames altas, tamanho da linha | Hi-Res P72 de John Cui |
-| **`0x1277`** | 2 | Localização do salto (jump) da consulta de combustível de cames altas | Hi-Res P72 de John Cui |
-| **`0x128B`** | 2 | Localização do salto (jump) da consulta de combustível de cames baixas | Hi-Res P72 de John Cui |
+| :--- | :---: | :--- | :--- |
+| `0x0A50` | 2 | Referência de localização do vetor de valores de RPM de cames baixas (low cam) | |
+| `0x0A68` | 2 | Referência de localização do vetor de valores de RPM de cames altas (high cam) | |
+| `0x0A71` | 1 | Comprimento do vetor de valores de RPM de cames altas (high cam) | |
+| `0x0A80` | 2 | Referência de localização do vetor de valores de RPM de cames altas (alternativo) | |
+| `0x0A89` | 1 | Comprimento do vetor de valores de RPM de cames altas (alternativo) | |
+| `0x0AA3` | 2 | Referência ao vetor de valores do sensor MAP | |
+| `0x0AB8` | 2 | Referência ao vetor de valores do sensor MAP (alternativo) | |
+| `0x0ACD` | 2 | Referência ao vetor de valores do sensor MAP (alternativo) | |
+| `0x1269` | 2 | Configuração do mapa de combustível de cames altas, tamanho da linha | |
+| `0x1277` | 2 | Localização do salto (jump) da consulta de combustível de cames altas | |
+| `0x128B` | 2 | Localização do salto (jump) da consulta de combustível de cames baixas | |

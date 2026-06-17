@@ -1,5 +1,6 @@
+yaml
 ---
-summary: 'Métodos arquivados de instalação de suporte (socketing) e modificação (chipping) para as primeiras ECUs OBD0 da Honda e Acura de 1988-1989.'
+summary: 'Archived methods for socketing and chipping early OBD0 Honda and Acura ECUs (1988–1989) with internal ROM, including flywire and piggyback EPROM installation techniques.'
 applies_to:
   obd: [0]
 complexity: advanced
@@ -7,142 +8,151 @@ tags:
   - ecu
   - chipping
   - hardware
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Chipping An88-89ECU'
-    url: /pgmfi/wiki/library/chipping-an88-89ecu
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - eprom
+  - obd0
+  - socketing
 ---
 
-# Modificação (Chipping) de ECUs OBD0 de 1988-1989
+# OBD0 ECU Chipping and ROM Modification (1988–1989)
 
-A maioria das ECUs MPFI OBD0 de 1990-1991 usa uma ROM externa compatível com 38256 que pode ser removida e substituída. Em vez disso, muitas ECUs de 1988-1989 usam um processador OKI M83C154 com ROM interna. O guia arquivado também indica que todas as ECUs USDM PM8 HF de 1988-1991 usam este design de ROM interna.
-
-Este artigo preserva as três abordagens de modificação e as duas tabelas de ligações descritas pela comunidade original pgmfi.
+Most OBD0 MPFI ECUs from 1990–1991 use external ROM cartridges compatible with the 38256 standard, which can be easily removed and replaced. Many 1988–1989 units, however, integrate ROM directly into the OKI M83C154 microprocessor. This guide documents three archived modification approaches for these internal-ROM designs, applicable to all USDM PM8 HF ECUs from 1988–1991.
 
 > [!WARNING]
-> Desliga a ECU do veículo antes de soldar. Verifica cada ligação com um teste de continuidade e verifica se existem curto-circuitos antes de ligar a alimentação.
+> Disconnect the ECU from the vehicle before soldering. Verify every connection with a continuity test and check for short circuits before applying power.
 
-## Ativar o acesso à ROM externa
+## Enabling External ROM Access
 
-O guia indica para ligar o Pin 31, o pin de acesso externo (`_EA`) do M83C154, ao Pin 20 (massa/terra) para que o MCU execute o código a partir de uma ROM externa.
+To execute code from an external ROM, connect **Pin 31** (`_EA`, the external access pin on the M83C154) to **Pin 20** (ground) on the MCU.
 
 > [!WARNING]
-> Nas placas PM7-B020, a fonte indica que o Pin 31 do MCU deve ser desligado da PCB antes de ser ligado à massa. É reportada uma luz de aviso de motor (CEL) acesa fixa e um funcionamento intermitente se esse pin continuar ligado. A fonte sugere considerar isto noutras placas apenas quando a colocação normal de jumpers falhar e as ligações do suporte não tiverem falhas.
+> On PM7-B020 boards, sources indicate that **Pin 31** must first be isolated from the PCB before connecting it to ground. Failure to do so has caused permanent check engine lights (CEL) and intermittent operation. Consider this isolation step on other boards only if standard jumper placement fails and socket connections show no faults.
 
-## Três abordagens documentadas
+## Three Documented Approaches
 
-### 1. Substituir o MCU
+### 1. MCU Replacement
 
-Substituir o MCU OKI de 40 pins por um MCU compatível com Intel 8051 que contenha ROM interna. O guia arquivado refere que isto requer a modificação do programa para remover a utilização da instrução `A5` e a realização de outras alterações para compatibilidade com o Intel 8051. Também requer um programador para o MCU de substituição.
+Replace the 40-pin OKI MCU with a compatible Intel 8051-based microprocessor containing internal ROM.
 
-A fonte observou em janeiro de 2004 que esta abordagem não estava concluída.
+**Considerations:**
+- Requires modifying firmware to remove `A5` instruction usage and ensure Intel 8051 compatibility
+- Requires a dedicated programmer for the replacement MCU
+- Status: This approach was incomplete as of January 2004
 
-### 2. Instalar uma placa filha (daughterboard) para o MCU
+### 2. Daughterboard with Integrated Address Latch
 
-Substituir o MCU de 40 pins por uma placa filha contendo:
+Replace the 40-pin MCU with a daughterboard containing:
 
-- Um suporte para o MCU OKI original
-- Um trinco de endereço (address latch) `74HC373`
-- Um suporte EPROM externo
-- Hardware que configura o `_EA` para ROM externa
+- A socket for the original OKI MCU
+- An address latch (`74HC373`)
+- An external EPROM socket
+- Hardware to configure `_EA` for external ROM operation
 
-Esta abordagem mantém o MCU OKI original e, portanto, não requer as mesmas alterações no programa, mas exige uma placa de circuito impresso, componentes adicionais e mais soldadura.
+**Advantages:**
+- Preserves the original OKI MCU, eliminating firmware modification requirements
+- Requires fewer software changes than MCU replacement
 
-### 3. Ligar uma EPROM externa (Flywire)
+**Disadvantages:**
+- Requires custom PCB fabrication, additional components, and extensive soldering
 
-Instalar um suporte EPROM de 28 pins e ligá-lo ao MCU e ao trinco de endereço. A fonte descreve um método de ligação direta por fios (flywire) e um método de sobreposição XRAM (XRAM piggyback).
+### 3. External EPROM via Flywire or Piggyback
 
-## Mapeamento de ligações diretas (Flywire)
+Mount a 28-pin EPROM socket and wire it directly to the MCU and address latch. Two wiring methods are documented: direct flywire and XRAM piggyback overlay.
 
-Esta tabela é um mapeamento direto de pins da página arquivada.
+## Flywire Pinout Map
 
-| Pin da EPROM | Pin do MCU M83C154 | Pin do `74HC373` |
-| :---: | :---: | :---: |
-| 1 | 40 | - |
-| 2 | 25 | - |
-| 3 | - | 19 |
-| 4 | - | 2 |
-| 5 | - | 16 |
-| 6 | - | 5 |
-| 7 | - | 15 |
-| 8 | - | 6 |
-| 9 | - | 12 |
-| 10 | - | 9 |
-| 11 | 39 | - |
-| 12 | 38 | - |
-| 13 | 37 | - |
-| 14 | 20 | - |
-| 15 | 36 | - |
-| 16 | 35 | - |
-| 17 | 34 | - |
-| 18 | 33 | - |
-| 19 | 32 | - |
-| 20 | - | 10 |
-| 21 | 23 | - |
-| 22 | 29 | - |
-| 23 | 24 | - |
-| 24 | 22 | - |
-| 25 | 21 | - |
-| 26 | 26 | - |
-| 27 | 27 | - |
-| 28 | 20 na tabela da fonte; ver nota | - |
+| EPROM Pin | MCU M83C154 Pin | 74HC373 Pin | Notes |
+| :---: | :---: | :---: | --- |
+| 1 | 40 | — | +5V |
+| 2 | 25 | — | |
+| 3 | — | 19 | Address bus |
+| 4 | — | 2 | Address bus |
+| 5 | — | 16 | Address bus |
+| 6 | — | 5 | Address bus |
+| 7 | — | 15 | Address bus |
+| 8 | — | 6 | Address bus |
+| 9 | — | 12 | Address bus |
+| 10 | — | 9 | Address bus |
+| 11 | 39 | — | Data bus |
+| 12 | 38 | — | Data bus |
+| 13 | 37 | — | Data bus |
+| 14 | 20 | — | Ground |
+| 15 | 36 | — | Data bus |
+| 16 | 35 | — | Data bus |
+| 17 | 34 | — | Data bus |
+| 18 | 33 | — | Data bus |
+| 19 | 32 | — | Data bus |
+| 20 | — | 10 | Control signal |
+| 21 | 23 | — | Control signal |
+| 22 | 29 | — | Control signal |
+| 23 | 24 | — | Control signal |
+| 24 | 22 | — | Control signal |
+| 25 | 21 | — | Control signal |
+| 26 | 26 | — | Control signal |
+| 27 | 27 | — | Control signal |
+| 28 | 40 | — | +5V (see note below) |
 
-> [!NOTE]
-> A tabela de flywire arquivada lista o Pin 20 do MCU para o Pin 28 da EPROM, mas um esclarecimento posterior na mesma página diz que os Pins 28 e 1 da EPROM ligam ambos ao Pin 40 do MCU (+5 V). O Pin 20 é identificado como massa noutro local da página. Verifica o circuito antes de efetuar as ligações.
+> [!IMPORTANT]
+> The archived flywire table lists MCU Pin 20 for EPROM Pin 28, but a clarification on the same source states that both EPROM Pins 28 and 1 connect to MCU Pin 40 (+5V). MCU Pin 20 is identified as ground elsewhere on the page. **Verify the circuit before making connections.**
 
-## Mapeamento de sobreposição XRAM (piggyback)
+## XRAM Piggyback Overlay Pinout Map
 
-O método alternativo monta o suporte EPROM numa pequena placa de prototipagem por cima da RAM externa. A fonte avisa que a montagem empilhada pode causar problemas de espaço e não recomenda este método para quem se está a iniciar na soldadura.
+The alternative method mounts the EPROM socket on a small prototype board stacked directly over the external RAM. **Warning:** Stacked mounting can cause clearance issues and is not recommended for soldering beginners.
 
-| Pin da EPROM | Pin do MCU M83C154 | Pin da RAM externa |
-| :---: | :---: | :---: |
-| 1 | 40 | - |
-| 2 | 25 | - |
-| 3 | - | 1 |
-| 4 | - | 2 |
-| 5 | - | 3 |
-| 6 | - | 4 |
-| 7 | - | 5 |
-| 8 | - | 6 |
-| 9 | - | 7 |
-| 10 | - | 8 |
-| 11 | - | 9 |
-| 12 | - | 10 |
-| 13 | - | 11 |
-| 14 | - | 12 |
-| 15 | - | 13 |
-| 16 | - | 14 |
-| 17 | - | 15 |
-| 18 | - | 16 |
-| 19 | - | 17 |
-| 20 | Ligar ao Pin 14 da EPROM | - |
-| 21 | 23 | - |
-| 22 | 29 | - |
-| 23 | 24 | - |
-| 24 | 22 | - |
-| 25 | - | 23 |
-| 26 | 26 | - |
-| 27 | 27 | - |
-| 28 | Ligar ao Pin 1 da EPROM | - |
+| EPROM Pin | MCU M83C154 Pin | External RAM Pin | Notes |
+| :---: | :---: | :---: | --- |
+| 1 | 40 | — | +5V |
+| 2 | 25 | — | |
+| 3 | — | 1 | Address bus |
+| 4 | — | 2 | Address bus |
+| 5 | — | 3 | Address bus |
+| 6 | — | 4 | Address bus |
+| 7 | — | 5 | Address bus |
+| 8 | — | 6 | Address bus |
+| 9 | — | 7 | Address bus |
+| 10 | — | 8 | Address bus |
+| 11 | — | 9 | Address bus |
+| 12 | — | 10 | Address bus |
+| 13 | — | 11 | Address bus |
+| 14 | — | 12 | Address bus |
+| 15 | — | 13 | Address bus |
+| 16 | — | 14 | Address bus |
+| 17 | — | 15 | Address bus |
+| 18 | — | 16 | Address bus |
+| 19 | — | 17 | Address bus |
+| 20 | Connect to EPROM Pin 14 | — | Ground reference |
+| 21 | 23 | — | Control signal |
+| 22 | 29 | — | Control signal |
+| 23 | 24 | — | Control signal |
+| 24 | 22 | — | Control signal |
+| 25 | — | 23 | Data bus |
+| 26 | 26 | — | Control signal |
+| 27 | 27 | — | Control signal |
+| 28 | Connect to EPROM Pin 1 | — | +5V |
 
-A fonte clarifica que o Pin 20 da EPROM liga ao Pin 14 da EPROM e ao Pin 12 da RAM para a massa, enquanto os Pins 28 e 1 da EPROM ligam ao Pin 40 do MCU para +5 V. Refere novamente para ligar o Pin 31 do MCU ao Pin 20 do MCU para selecionar a ROM externa.
+> [!IMPORTANT]
+> **Pin connections for XRAM piggyback:** EPROM Pin 20 connects to both EPROM Pin 14 and RAM Pin 12 (ground). EPROM Pins 28 and 1 both connect to MCU Pin 40 (+5V). **Connect MCU Pin 31 to MCU Pin 20 to select external ROM operation.**
 
-## Fotos da instalação da sobreposição (piggyback)
+## Piggyback Installation Gallery
 
-![EPROM socket daughterboard top](DSC00663.jpg)
-*Vista superior do suporte da placa filha.*
+![EPROM socket daughterboard—top view](DSC00663.jpg)
+*Top view of the EPROM socket daughterboard.*
 
-![EPROM socket daughterboard bottom](DSC00662.jpg)
-*Vista inferior do suporte da placa filha.*
+<!-- slide -->
+
+![EPROM socket daughterboard—bottom view](DSC00662.jpg)
+*Bottom view of the EPROM socket daughterboard.*
+
+<!-- slide -->
 
 ![Header pins soldered to external RAM](DSC00667.jpg)
-*Pins de cabeçalho (header pins) soldados na RAM externa.*
+*Header pins soldered to the external RAM module.*
+
+<!-- slide -->
 
 ![Completed external RAM connections](DSC01263_small.jpg)
-*Ligações da XRAM concluídas.*
+*Fully wired XRAM external connections.*
 
-![Completed piggyback installation](DSC00672.JPG)
-*Instalação concluída da sobreposição empilhada na placa da ECU.*
+<!-- slide -->
+
+![Completed piggyback installation on ECU board](DSC00672.JPG)
+*Final piggyback installation mounted on the ECU PCB.*

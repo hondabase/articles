@@ -6,13 +6,6 @@ complexity: beginner
 tags:
   - tuning
   - rom
-sources:
-  - name: 'pgmfi.org wiki'
-    title: check8
-    url: /pgmfi/wiki/library/check8
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # Utilitário de Checksum check8

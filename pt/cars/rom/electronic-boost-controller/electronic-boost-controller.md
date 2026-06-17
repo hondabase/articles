@@ -8,13 +8,6 @@ tags:
   - rom
   - sensores
   - referência
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Electronic Boost Controller'
-    url: /pgmfi/wiki/library/electronic-boost-controller
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # Controlador Eletrónico de Pressão (EBC)

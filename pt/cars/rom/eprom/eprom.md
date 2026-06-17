@@ -1,26 +1,46 @@
 ---
-summary: 'Saiba quais os tipos de EPROM que são compatíveis ao nível de pinos com as ECUs Honda OBD0 e OBD1 comuns e gravadores de ROM.'
+summary: Understand which EPROM types are pin-compatible with common Honda OBD0 and OBD1 ECUs and their programming requirements.
 applies_to:
   obd: [0, 1]
   brand: Honda
 complexity: beginner
 tags:
   - ecu
-  - reference
-  - tuning
+  - eprom
   - rom
-  - sensors
-sources:
-  - name: 'pgmfi.org wiki'
-    title: EPROM
-    url: /pgmfi/wiki/library/eprom
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - tuning
+  - pinout
+  - reference
 ---
 
-# EPROM
+# EPROM Compatibility for Honda OBD0 and OBD1 ECUs
 
-Uma EPROM é uma [ROM](/cars/rom/rom) programável que pode ser gravada usando um [gravador de ROM](/cars/ecu/rom-burner).
+An EPROM (Erasable Programmable Read-Only Memory) is a programmable ROM that can be written using a ROM programmer or burner.
 
-As [27C256](/cars/ecu/27c256) e [29C256](/cars/diagnostics/29c256) são os tipos mais comuns que são compatíveis ao nível de pinos com as [ECUs](/cars/ecu/ecu) Honda [OBD0](/cars/rom/obd0) e [OBD1](/cars/wiring/obd1). A [28C256](/cars/ecu/28c256) não é compatível ao nível de pinos.
+## Pin-Compatible EPROM Types
+
+The **27C256** and **29C256** are the most common EPROM variants that maintain full pin compatibility with Honda OBD0 and OBD1 ECUs.
+
+> [!WARNING]
+> The 28C256 is **not** pin-compatible with Honda OBD0 and OBD1 ECUs and cannot be used as a direct replacement.
+
+### 27C256
+- **Type:** UV-erasable EPROM
+- **Capacity:** 32 KB
+- **Compatibility:** OBD0, OBD1
+- **Notes:** Requires UV eraser for reprogramming; reusable
+
+### 29C256
+- **Type:** Electrically erasable EPROM (EEPROM)
+- **Capacity:** 32 KB
+- **Compatibility:** OBD0, OBD1
+- **Notes:** In-circuit reprogrammable; no external eraser required
+
+## Incompatible Types
+
+| Type | Reason | Status |
+|------|--------|--------|
+| 28C256 | Pin configuration mismatch | Not compatible |
+
+> [!TIP]
+> When selecting an EPROM for your Honda ECU tuning project, verify pin compatibility with your specific OBD revision before purchase.

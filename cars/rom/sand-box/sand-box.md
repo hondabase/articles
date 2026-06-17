@@ -1,20 +1,27 @@
 ---
-summary: 'File:http://www.nitroburn.com/pgmfiwiki/uploads/myfile.bin Up Load? Adding a URL to Elexol here. Also making a new page USBMOD3 datalogging circuit.'
-tags: [tuning, rom, sensors, reference]
+summary: 'Technical documentation for USB-based datalogging integration and external hardware interfacing for Honda ECU systems.'
+tags: [tuning, rom, sensors, datalogging, usb]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Sand Box'
-    url: /pgmfi/wiki/library/sand-box
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Sand Box
+# USB-Based ECU Datalogging and Hardware Integration
 
-File:http://www.nitroburn.com/pgmfiwiki/uploads/myfile.bin Up Load?> Adding a URL to [Elexol](http://web.archive.org/web/20240826001703/https://elexol.com/) here. Also making a new page [USBMOD3 datalogging circuit](/cars/wiring/usb-to-serial-converter-second-gen). -- markolson - 29 Oct 2004
+This article provides technical references for integrating USB-to-serial hardware with Honda ECU systems for datalogging purposes.
+
+## Hardware Integration
+For projects requiring USB connectivity for ECU datalogging, the Elexol USBMOD3 module is a common interface solution. 
+
+> [!TIP]
+> Ensure that the USB-to-serial converter is configured for the correct logic levels (TTL) required by the ECU's serial communication port.
+
+## Datalogging Circuitry
+Detailed schematics and implementation guides for building a dedicated datalogging circuit using the USBMOD3 module can be found in the technical reference below:
+
+* [USB-to-Serial Converter Datalogging Circuit](/cars/wiring/usb-to-serial-converter-second-gen)
+
+## External Resources
+* [Elexol Official Documentation](https://elexol.com/)

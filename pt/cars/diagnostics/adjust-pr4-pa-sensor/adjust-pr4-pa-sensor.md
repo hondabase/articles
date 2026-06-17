@@ -1,25 +1,40 @@
 ---
-summary: 'Dave Blundell diz "Vernon (deluded) enviou-me grande parte desta informação." Como regra geral, as PR4 de 90 têm sensores PA externos, e as ECUs de 91 têm sensores PA internos.'
+summary: 'Technical guide for identifying and configuring internal versus external Pressure Atmosphere (PA) sensors on PR4 ECUs.'
+tags: [ecu, tuning, rom, sensors, diagnostics]
 applies_to:
-  obd: [0, 1, 2]
+  obd: [0, 1]
   ecus: [PR4]
 complexity: intermediate
-tags:
-  - ecu
-  - referência
-  - afinação
-  - rom
-  - sensores
-  - diagnósticos
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Adjust PR4 Pa Sensor'
-    url: /pgmfi/wiki/library/adjust-pr4-pa-sensor
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Ajustar o Sensor PA da PR4
+# PR4 ECU Pressure Atmosphere (PA) Sensor Configuration
 
-Dave Blundell diz "Vernon (deluded) enviou-me grande parte desta informação." Como regra geral, as PR4 de 90 têm sensores PA externos, e as [ECU](/cars/ecu/ecu)s de 91 têm sensores PA internos. Pode identificar (até certo ponto) ao olhar para o "código" da [ECU](/cars/ecu/ecu): | **Etiqueta** | **Descrição** | | :--- | :--- | | A00 | 90 5 Velocidades (programa -33) | | A01 | 90 5 Velocidades (programa ??) | | A02 | 90 5 Velocidades (programa -54) | | A51 | 90 Automático (programa ??) | | A52 | 90 Automático (programa -54) | | A10 | 91 5 Velocidades (programa -92) | | A12 | 91 5 Velocidades (programa -92) | | A60 | 91 Automático (programa -92) | | A62 | 91 Automático (programa -92) | Ok, com isso esclarecido... É fácil selecionar se deve usar um sensor [PA](/cars/rom/pressure-atmosphere) interno ou externo. Veja a seguinte tabela: | **Componente** | **PA Externo** | **PA Interno** | | :--- | :--- | :--- | | Sensor PA | em falta | instalado | | `C103` | em falta | presente(103Z) | | `R92` | jumper | 10Kohm | | `C106` | em falta | presente(103Z) | ***editar***Parece que a [ECU](/cars/ecu/ecu) com PA Interno não tem o `C106`, e a [ECU](/cars/ecu/ecu) com PA Externo tem o `C106` presente.
+The PR4 ECU configuration for the Pressure Atmosphere (PA) sensor varies based on the production year. Generally, 1990 PR4 ECUs utilize an external PA sensor, while 1991 PR4 ECUs utilize an internal PA sensor.
+
+## ECU Identification
+The following table outlines PR4 ECU variants and their associated programming codes:
+
+| Label | Description |
+| :--- | :--- |
+| A00 | 1990 5-Speed (Program -33) |
+| A01 | 1990 5-Speed |
+| A02 | 1990 5-Speed (Program -54) |
+| A51 | 1990 Automatic |
+| A52 | 1990 Automatic (Program -54) |
+| A10 | 1991 5-Speed (Program -92) |
+| A12 | 1991 5-Speed (Program -92) |
+| A60 | 1991 Automatic (Program -92) |
+| A62 | 1991 Automatic (Program -92) |
+
+## Sensor Configuration
+To convert between internal and external PA sensor configurations, modify the PCB components according to the table below:
+
+| Component | External PA | Internal PA |
+| :--- | :--- | :--- |
+| PA Sensor | Not Installed | Installed |
+| C103 | Not Installed | Installed (103Z) |
+| R92 | Jumper | 10K Ohm |
+| C106 | Installed | Not Installed |
+
+> [!NOTE]
+> ECUs configured for an internal PA sensor typically omit capacitor C106, whereas ECUs configured for an external PA sensor require C106 to be present.

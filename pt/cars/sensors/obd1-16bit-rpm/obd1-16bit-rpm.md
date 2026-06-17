@@ -1,25 +1,31 @@
 ---
-summary: "Se ''x'' for um valor de RPM de 16 bits, então: RPM(''x'') = 1875000/''x''. Os valores de 16 bits são invariavelmente armazenados no formato Little Endian em todas as ECUs OBD1."
+summary: "Technical reference for calculating 16-bit RPM values in OBD1 Honda ECUs using the standard conversion formula and Little Endian byte order."
+tags: [ecu, reference, sensors, obd1]
 applies_to:
   obd: [1]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'OBD1 16bit RPM'
-    url: /pgmfi/wiki/library/obd1-16bit-rpm
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# RPM de 16 bits OBD1
+# OBD1 16-Bit RPM Calculation
 
-Se ''x'' for um valor de [RPM](/cars/sensors/rpm) de 16-bits, então:
+To convert a 16-bit raw value into engine speed (RPM) for OBD1 Honda ECUs, use the following formula:
 
-- [RPM](/cars/sensors/rpm)(''x'') = 1875000/''x''
+**RPM(x) = 1,875,000 / x**
 
-Os valores de 16-bits são invariavelmente armazenados no formato [Little Endian](/cars/reference/little-endian) em todas as [ECU](/cars/ecu/ecu)s [OBD1](/cars/wiring/obd1).
+Where **x** represents the raw 16-bit value retrieved from the ECU memory.
+
+> [!IMPORTANT]
+> All 16-bit values in OBD1 ECUs are stored in **Little Endian** byte order. When reading these values from a data stream or memory dump, ensure the bytes are swapped accordingly (Least Significant Byte followed by Most Significant Byte).
+
+## Calculation Reference
+
+| Raw Value (x) | Calculated RPM |
+| :--- | :--- |
+| 625 | 3,000 |
+| 468 | 4,006 |
+| 375 | 5,000 |
+| 312 | 6,009 |
+| 267 | 7,022 |
+
+> [!TIP]
+> This calculation is essential for custom data logging and real-time tuning applications where raw memory addresses are being polled directly from the MCU.

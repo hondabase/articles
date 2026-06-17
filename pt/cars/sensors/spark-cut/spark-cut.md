@@ -1,21 +1,34 @@
 ---
-summary: 'Um corte de ignição (spark cut) ocorre quando o combustível continua a ser fornecido ao motor, mas não são geradas faíscas para inflamar o combustível.'
+summary: 'A spark cut occurs when fuel delivery continues while ignition timing is suppressed, preventing combustion. This technique is commonly used in aftermarket engine management for rev limiting and exhaust effects.'
+tags: [ecu, ignition, tuning, diagnostics]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Spark Cut'
-    url: /pgmfi/wiki/library/spark-cut
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Spark Cut (Corte de Ignição)
+# Spark Cut (Ignition Cut) Fundamentals
 
-Um corte de ignição (spark cut) ocorre quando o combustível continua a ser fornecido ao motor, mas não são geradas faíscas para inflamar o mesmo. Esta é uma excelente forma de lançar chamas pela traseira de um escape quente. Os [cortes de ignição (Spark Cut)](/cars/sensors/spark-cut) são geralmente implementados por sistemas de ignição eletrónica aftermarket. A [ECU](/cars/ecu/ecu) original (stock) utiliza um [corte de combustível (Fuel Cut)](/cars/rom/fuel-cut) para os [limitadores de rotação (Rev Limiter)](/cars/sensors/rev-limiter) e [limitadores de velocidade (Speed Limiter)](/cars/diagnostics/speed-limiter).
+A spark cut occurs when the engine continues to receive fuel, but the ignition system is suppressed, preventing the combustion of the air-fuel mixture. 
+
+> [!NOTE]
+> Unlike a fuel cut, which stops the delivery of gasoline to the cylinders, a spark cut allows unburned fuel to pass through the combustion chamber and into the exhaust manifold.
+
+## Operational Overview
+
+*   **Mechanism:** The ECU or aftermarket ignition controller disables the signal to the ignition coil or igniter, preventing the spark plug from firing.
+*   **Exhaust Effects:** Because fuel is still being injected but not ignited, the unburned mixture enters the exhaust system. In high-performance applications with hot exhaust components, this often results in audible pops or flames exiting the tailpipe.
+*   **Application:** Spark cuts are frequently implemented by aftermarket engine management systems for advanced features such as launch control, flat-foot shifting, and aggressive rev limiters.
+
+## Comparison: Spark Cut vs. Fuel Cut
+
+The factory Honda ECU utilizes a **fuel cut** strategy for its primary limiters.
+
+| Feature | Fuel Cut | Spark Cut |
+| :--- | :--- | :--- |
+| **Primary Action** | Disables fuel injectors | Disables ignition signal |
+| **Factory Usage** | Rev Limiter, Speed Limiter | N/A |
+| **Aftermarket Usage** | Engine protection | Launch control, anti-lag, pops/bangs |
+| **Exhaust Impact** | Minimal | High (unburned fuel in exhaust) |
+
+> [!WARNING]
+> Excessive use of spark cut can lead to increased exhaust gas temperatures (EGTs), potential damage to catalytic converters, and accelerated wear on exhaust valves and turbocharger components.

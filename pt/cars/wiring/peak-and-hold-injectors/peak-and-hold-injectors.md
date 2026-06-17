@@ -1,24 +1,50 @@
 ---
-summary: 'Injetores Peak and Hold, também conhecidos como Injetores de Baixa Impedância. Impedância tipicamente de ~2-5 ohms. A 12 volts, isto representa um consumo de ~6-2,4A.'
+summary: Peak and Hold injectors are low-impedance fuel injectors (2–5 ohms) that draw 6–2.4 amperes at 12 volts. They require a resistor box for use with most Honda ECUs.
+tags:
+  - injectors
+  - peak-and-hold
+  - low-impedance
+  - fuel-system
+  - wiring
+  - ecu
+  - obd0
+  - obd1
+  - obd2
 applies_to:
-  obd: [0, 1, 2]
+  obd:
+    - 0
+    - 1
+    - 2
   brand: Honda
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
-  - wiring
-  - conversion
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Peak And Hold Injectors'
-    url: /pgmfi/wiki/library/peak-and-hold-injectors
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Injetores Peak and Hold
+# Peak and Hold Injectors
 
-[Injetores Peak and Hold](/cars/wiring/peak-and-hold-injectors), também conhecidos como [Injetores de Baixa Impedância](/cars/fueling/low-impedance-injectors). Impedância tipicamente de ~2-5 ohms. A 12 volts, isto representa um consumo de ~6-2.4 amperes. A corrente elevada fará com que os injetores funcionem mais quentes. A corrente de pico (peak) abre o injetor de forma nítida e decisiva. Em seguida, uma corrente de manutenção (hold) mais baixa mantém o injetor aberto. Para fazer funcionar estes injetores com a ECU Honda, poderá necessitar de utilizar uma [Caixa de Resistências (Resistor Box)](/cars/wiring/resistor-box) em série. O sistema [OBD0](/cars/rom/obd0) já tem uma caixa de resistências instalada. O sistema [OBD1](/cars/wiring/obd1) não possui uma [Caixa de Resistências (Resistor Box)](/cars/wiring/resistor-box). O sistema [OBD2](/cars/wiring/obd2) não possui uma [Caixa de Resistências (Resistor Box)](/cars/wiring/resistor-box).
+## Overview
+
+Peak and Hold injectors, also known as low-impedance injectors, are characterized by a typical impedance of 2–5 ohms. At 12 volts, this impedance results in a current draw of approximately 6–2.4 amperes.
+
+The high current demand causes these injectors to operate at elevated temperatures. The peak current phase opens the injector sharply and decisively, while a lower hold current phase maintains the injector in the open position.
+
+## Integration with Honda ECUs
+
+To operate Peak and Hold injectors with a Honda ECU, you may need to install a **Resistor Box** in series with the injector circuit.
+
+### Resistor Box Requirements by OBD Standard
+
+| OBD Standard | Resistor Box Status | Notes |
+|---|---|---|
+| **OBD0** | Built-in | Factory-installed resistor box already present |
+| **OBD1** | Not included | External resistor box required |
+| **OBD2** | Not included | External resistor box required |
+
+> [!IMPORTANT]
+> OBD1 and OBD2 systems require an external resistor box to safely operate Peak and Hold injectors. Failure to install a resistor box may damage the ECU's fuel injector driver circuit.
+
+## See Also
+
+- [Resistor Box Installation](/cars/wiring/resistor-box)
+- [OBD0 Systems](/cars/rom/obd0)
+- [OBD1 Wiring](/cars/wiring/obd1)
+- [OBD2 Wiring](/cars/wiring/obd2)

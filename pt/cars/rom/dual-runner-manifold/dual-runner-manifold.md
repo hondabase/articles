@@ -6,13 +6,6 @@ complexity: beginner
 tags:
   - tuning
   - rom
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Coletor de Admissão de Duas Vias'
-    url: /pgmfi/wiki/library/dual-runner-manifold
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # Coletor de Admissão de Duas Vias

@@ -1,20 +1,31 @@
 ---
-summary: 'If you have an ECU that lacks the O2 heater circuitry such as a P05, it is easy to enable this functionality.'
-tags: [ecu, reference, sensors, wiring, conversion, diagnostics]
+summary: 'Learn how to enable O2 sensor heater circuitry on OBD1 ECUs like the P05 and P08 by adding the necessary transistor components.'
+tags: [ecu, sensors, wiring, conversion, diagnostics]
 applies_to:
-  obd: [0, 1, 2]
+  obd: [1]
   models: [civic]
   chassis: [eg]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'One Wire To4 Wire O2 Sensor'
-    url: /pgmfi/wiki/library/one-wire-to4-wire-o2-sensor
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# One Wire To4 Wire O2 Sensor
+# Enabling O2 Sensor Heater Circuitry on OBD1 ECUs
 
-If you have an [ECU](/cars/ecu/ecu) that lacks the O2 heater circuitry such as a P05, it is easy to enable this functionality. To convert a P05 to pretty much anything else, you need to add a transistor to enable the O2 sensor heater or you will throw a code. `Q30` needs to be added - [C144](/cars/sensors/c144) is its value. For [JDM](/cars/sensors/jdm) [ECU](/cars/ecu/ecu)s that lack the O2 heater circuitry, such as the P08, simply add a SMT version of the 2N4401 (general purpose NPN switching transistor) to location `Q15` on the underside of the [PCB](/cars/wiring/pcb). The proper part number for the transistor is MMBT4401, and they are readily available through retail suppliers such as [http://web.archive.org/web/20260612163410/https://www.digikey.com/](http://web.archive.org/web/20260612163410/https://www.digikey.com/)
+Certain OBD1 ECUs, such as the P05 and JDM P08, lack the internal circuitry required to drive a 4-wire heated O2 sensor. Failure to enable this circuit will result in a diagnostic trouble code (DTC). The following modifications allow for the integration of the O2 heater control.
+
+## P05 ECU Modification
+To enable O2 heater functionality on a P05 ECU, you must populate the missing transistor circuit.
+
+*   **Component:** Transistor Q30
+*   **Part Number:** C144 (or equivalent NPN switching transistor)
+
+## JDM P08 ECU Modification
+JDM ECUs lacking heater circuitry require an SMT transistor to be installed on the underside of the PCB.
+
+*   **Component:** Transistor Q15
+*   **Part Number:** MMBT4401 (SMT version of the 2N4401 general-purpose NPN switching transistor)
+
+> [!IMPORTANT]
+> Ensure the transistor is oriented correctly according to the PCB silkscreen markings. Improper orientation or soldering may result in damage to the ECU's driver circuit.
+
+> [!TIP]
+> These components are standard electronic parts and can be sourced through major electronics distributors such as Digi-Key or Mouser.

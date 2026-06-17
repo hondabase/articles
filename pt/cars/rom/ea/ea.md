@@ -1,23 +1,46 @@
 ---
-summary: 'O EA (EA Prime) é um pino no MCU que controla se o MCU é executado a partir da ROM interna ou de um chip ROM externo.'
+summary: 'EA (EA Prime) is an MCU pin that controls whether the MCU executes from internal ROM or an external ROM chip.'
 applies_to:
   obd: [1]
 complexity: beginner
 tags:
   - ecu
-  - reference
-  - tuning
+  - mcu
   - rom
-  - sensors
-sources:
-  - name: 'pgmfi.org wiki'
-    title: EA
-    url: /pgmfi/wiki/library/ea
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - tuning
+  - obd1
 ---
 
-# EA
+# EA Pin (EA Prime) — MCU ROM Control
 
-_EA (EA Prime) é um pino no [MCU](/cars/rom/mcu) que controla se o [MCU](/cars/rom/mcu) é executado a partir da [ROM Interna](/cars/rom/internal-rom) ou de um chip [ROM](/cars/rom/rom) externo. O pino _EA é o pino 31 nos [MCUs](/cars/rom/mcu) [Intel8051](/cars/rom/intel8051) de 40 pinos. O [J1](/cars/rom/obd1j1) nas [ECUs](/cars/ecu/ecu) [OBD1](/cars/wiring/obd1) controla o estado do _EA, sendo utilizado para ativar uma [ROM](/cars/rom/rom) externa que instale.
+## Overview
+
+**EA** (EA Prime) is a control pin on the MCU that determines whether the processor executes code from internal ROM or an external ROM chip. On Intel 8051-based MCUs with 40-pin packages, EA is **Pin 31**. In OBD1 ECUs, the **J1** connector controls the EA pin state to enable external ROM installation.
+
+## Pin Specifications
+
+| Parameter | Value |
+|-----------|-------|
+| **MCU Pin Number** | 31 (40-pin Intel 8051) |
+| **Function** | ROM Source Selection |
+| **Control Connector** | J1 (OBD1 ECUs) |
+| **Logic Level** | High = External ROM; Low = Internal ROM |
+
+## Function
+
+- **EA = High (Logic 1):** MCU executes from external ROM chip
+- **EA = Low (Logic 0):** MCU executes from internal ROM
+
+## OBD1 Implementation
+
+In OBD1 ECUs, the J1 connector directly controls the EA pin state. This allows:
+
+- Switching between internal factory ROM and external test/tuning ROM
+- Programming and validation of external ROM contents
+- Diagnostic and development workflows
+
+> [!IMPORTANT]
+> The EA pin state must be properly configured before ECU operation. Incorrect EA configuration can prevent proper code execution or ROM access.
+
+> [!TIP]
+> Refer to your specific MCU datasheet and ECU schematic for J1 pinout and EA circuit details.

@@ -1,20 +1,33 @@
 ---
-summary: 'A Velocidade de Relógio (Clock Speed) refere-se à rapidez do oscilador de cristal que comanda o MCU. É importante para calcular grandezas baseadas em temporizadores, como a comunicação em série.'
+summary: 'An overview of ECU clock speed, its role in MCU timing, and its impact on serial communication and timer-based calculations.'
+tags: [ecu, mcu, timing, clock, reference]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - sensors
-  - reference
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Clock Speed'
-    url: /pgmfi/wiki/library/clock-speed
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Velocidade de Relógio (Clock Speed)
+# ECU Clock Speed Reference
 
-A Velocidade de Relógio (Clock Speed) refere-se à rapidez do oscilador de cristal que comanda o [MCU](/cars/rom/mcu). É importante para calcular grandezas baseadas em temporizadores (timers), como a [comunicação em série](/cars/tuning/serial-communication).
+The clock speed refers to the frequency of the crystal oscillator that drives the MCU. This frequency is the fundamental reference for all time-based operations within the ECU.
+
+## Technical Significance
+
+The clock speed is critical for calculating values dependent on internal timers, including:
+
+*   **Serial Communication:** Baud rate generation for data logging and real-time tuning.
+*   **Fuel and Ignition Timing:** Precise calculation of injector pulse width and ignition dwell/advance.
+*   **Sensor Sampling:** Frequency of Analog-to-Digital Converter (ADC) polling.
+
+> [!IMPORTANT]
+> Any modification to the crystal oscillator frequency requires a corresponding adjustment to the software constants (e.g., baud rate divisors and timer prescalers) to maintain correct operational timing.
+
+## Common Clock Frequencies
+
+| ECU Generation | Typical Crystal Frequency |
+| :--- | :--- |
+| OBD0 | 12.000 MHz |
+| OBD1 | 12.000 MHz |
+| OBD2 | 12.000 MHz |
+
+> [!NOTE]
+> While 12 MHz is the standard for most Honda ECUs, verify the specific crystal markings on your PCB before performing any diagnostic or tuning procedures involving timing-sensitive calculations.

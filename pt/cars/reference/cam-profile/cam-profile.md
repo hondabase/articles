@@ -5,13 +5,6 @@ applies_to:
 complexity: beginner
 tags:
   - reference
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Cam Profile'
-    url: /pgmfi/wiki/library/cam-profile
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # Perfil de Came

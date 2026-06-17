@@ -1,21 +1,25 @@
 ---
-summary: 'O Vacuum Advance é um método puramente mecânico para variar a quantidade de Spark Advance com base na carga do motor.'
+summary: 'Vacuum advance is a mechanical method for varying spark advance based on engine load, independent of ECU control.'
+tags: [ecu, ignition, tuning, sensors]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Vacuum Advance'
-    url: /pgmfi/wiki/library/vacuum-advance
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Vacuum Advance
+# Vacuum Advance Mechanics
 
-O Vacuum Advance é um método puramente mecânico para variar a quantidade de [Spark Advance](/cars/sensors/spark-advance) com base na carga do motor. Um distribuidor com avanço por vácuo está ligado a uma fonte de vácuo do motor. À medida que o vácuo aumenta, as forças de sucção rodam o distribuidor, criando mais avanço de ignição. **A [ECU](/cars/ecu/ecu) não consegue controlar o ponto de ignição (timing) de todo com um distribuidor de avanço por vácuo.**
+Vacuum advance is a purely mechanical method used to vary the amount of [Spark Advance](/cars/sensors/spark-advance) based on engine load.
+
+## Operation
+A distributor equipped with a vacuum advance unit is connected to a manifold vacuum source. As engine vacuum increases (typically during light load or deceleration), the suction force rotates the distributor plate, which physically advances the ignition timing.
+
+> [!IMPORTANT]
+> The [ECU](/cars/ecu/ecu) cannot control or modify ignition timing on engines equipped with a mechanical vacuum advance distributor. 
+
+## Limitations
+Because the system relies entirely on manifold pressure, it lacks the precision and multi-dimensional mapping capabilities of electronic ignition systems. 
+
+* **Load Sensitivity:** Timing is adjusted solely based on vacuum levels, ignoring factors like intake air temperature or coolant temperature.
+* **ECU Incompatibility:** Electronic ignition control systems require a fixed distributor or a crank-triggered system to function; vacuum advance units are incompatible with these setups.
+
+{{> ignition-timing-basics }}

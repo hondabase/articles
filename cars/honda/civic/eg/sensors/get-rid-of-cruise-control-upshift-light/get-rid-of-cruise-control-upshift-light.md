@@ -1,20 +1,31 @@
 ---
-summary: 'All you need to do is remove R135. When I modify some P05 ecus I would sometimes get a solid Cruise control light when using an Ex cluster.'
-tags: [ecu, reference, sensors]
+summary: 'Eliminate the persistent cruise control or upshift indicator light on modified OBD1 P05 ECUs by removing resistor R135.'
+tags: [ecu, p05, diagnostics, wiring]
 applies_to:
-  obd: [0, 1, 2]
+  obd: [1]
   models: [civic]
   chassis: [eg]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Get Rid Of Cruise Control Upshift Light'
-    url: /pgmfi/wiki/library/get-rid-of-cruise-control-upshift-light
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Get Rid Of Cruise Control Upshift Light
+# Disabling Cruise Control and Upshift Indicator Lights on P05 ECUs
 
-All you need to do is remove `R135`. When I modify some [P05](/cars/wiring/p05) ecus I would sometimes get a solid Cruise control light when using an Ex cluster. Or a solid Upshift Light when using a Cx/Vx cluster. So I went in and found that the cruise and upshift light use the same pin on the ECU D18. So i followed the traces and it lead to the `R135` resistor. I removed that resistor and bam, Cruise/Upshift light gone.
+When modifying P05 ECUs, users may encounter a solid cruise control indicator light when utilizing an EX instrument cluster, or a solid upshift indicator light when utilizing a CX/VX instrument cluster. This behavior is caused by the ECU signaling through pin D18.
+
+## Technical Overview
+
+The cruise control and upshift indicator circuits share pin D18 on the OBD1 P05 ECU. In certain modified configurations, this circuit remains active, causing the indicator to illuminate constantly.
+
+> [!IMPORTANT]
+> The cruise control and upshift light signals are routed through resistor **R135**. Removing this component breaks the connection to pin D18, effectively disabling the indicator light.
+
+## Procedure
+
+1. Open the ECU housing to access the main PCB.
+2. Locate resistor **R135** on the circuit board.
+3. Desolder and remove **R135** from the board.
+4. Verify that the solder pads are clean and no bridges remain.
+5. Reassemble the ECU and test the instrument cluster for the absence of the indicator light.
+
+> [!TIP]
+> Ensure the ECU is disconnected from the vehicle harness before performing any internal modifications to prevent electrical shorts.

@@ -1,24 +1,30 @@
 ---
-summary: 'Um ficheiro "hex" é um ficheiro codificado no formato Intel Hex. O ficheiro Intel HEX é um ficheiro de texto ASCII com linhas de texto que seguem o formato de ficheiro Intel HEX.'
+summary: 'An overview of the Intel HEX file format, a standard ASCII-based encoding used for storing machine code and data for ECU ROM and EPROM programming.'
+tags: [tuning, rom, eprom, ecu, diagnostics, reference]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - sensors
-  - reference
-  - diagnostics
-  - ecu
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Ficheiro Hex'
-    url: /pgmfi/wiki/library/hex-file
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Ficheiro Hex
+# Intel HEX File Format Reference
 
-Um ficheiro "hex" é um ficheiro codificado no formato Intel Hex. O ficheiro Intel HEX é um ficheiro de texto ASCII com linhas de texto que seguem o formato de ficheiro Intel HEX. `Cada` linha num ficheiro Intel HEX contém um registo HEX. Estes registos são compostos por números hexadecimais que representam código de linguagem de máquina e/ou dados constantes. Os ficheiros Intel HEX são frequentemente utilizados para transferir o programa e os dados que seriam armazenados numa [ROM](/cars/rom/rom) ou [EPROM](/cars/rom/eprom). A maioria dos programadores ou emuladores de [EPROM](/cars/rom/eprom) pode utilizar ficheiros Intel HEX.
+An Intel HEX file is an ASCII text file used to store machine language code and constant data. Each line in an Intel HEX file represents a single hexadecimal record.
+
+## File Structure
+The format is widely used in automotive tuning and diagnostics for transferring binary data to be written into [ROM](/cars/rom/rom) or [EPROM](/cars/rom/eprom) chips.
+
+> [!NOTE]
+> Most EPROM programmers and ECU emulators natively support the Intel HEX format for flashing or real-time emulation.
+
+### Record Composition
+Each line in the file follows a specific structure consisting of hexadecimal numbers. These records contain:
+* **Data:** The actual machine code or constant values.
+* **Addressing:** Information regarding where the data should be placed in the memory map.
+* **Checksum:** A validation byte used to ensure data integrity during the transfer process.
+
+## Usage in ECU Tuning
+When working with engine management systems, Intel HEX files serve as the bridge between compiled binary code and the physical hardware. 
+
+* **Programming:** Used to load base maps or modified calibration data onto EPROM chips.
+* **Emulation:** Used by hardware emulators to simulate the presence of a physical ROM chip, allowing for real-time tuning.
+* **Diagnostics:** Used to verify the contents of an ECU's memory against known-good stock files.

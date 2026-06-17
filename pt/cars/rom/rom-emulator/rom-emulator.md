@@ -1,5 +1,6 @@
+yaml
 ---
-summary: 'Os emuladores de ROM (ROM Emulators) "parecem" uma ROM para qualquer dispositivo a que os ligue. Na maioria dos casos aqui, isso seria normalmente uma ECU.'
+summary: ROM emulators appear as standard ROM devices to ECUs and other controllers, allowing real-time data modification during operation via SRAM/NVSRAM and logic gates or FPGAs.
 applies_to:
   obd: [0, 1, 2]
 complexity: intermediate
@@ -9,15 +10,32 @@ tags:
   - tuning
   - rom
   - sensors
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Rom Emulator'
-    url: /pgmfi/wiki/library/rom-emulator
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - rom-emulator
 ---
 
 # ROM Emulator
 
-Os emuladores de [ROM](/cars/rom/rom) "parecem" uma [ROM](/cars/rom/rom) para qualquer dispositivo a que os ligue. Na maioria dos casos aqui, isso seria normalmente uma [ECU](/cars/ecu/ecu). A característica mais importante de um emulador de ROM ([Rom Emulator](/cars/rom/rom-emulator)) em comparação com uma [EPROM](/cars/rom/eprom) ou mesmo uma [FLASH](/cars/rom/flash)-[ROM](/cars/rom/rom) é que se pode alterar os dados que o emulador de ROM contém no momento (on the fly), enquanto este está a funcionar. Na maioria das vezes, isto é conseguido utilizando [SRAM](/cars/sensors/sram)/NVSRAM associada a um conjunto de portas lógicas ou a um FPGA para evitar o processamento lento de dados. O [Xtronics Romulator](http://web.archive.org/web/20260528071037/https://xtronics.com/) é o emulador de ROM ([Rom Emulator](/cars/rom/rom-emulator)) mais comummente falado, uma vez que é recomendado pela [Hon Data](/cars/diagnostics/hon-data) para utilização com os seus produtos.
+## Overview
+
+ROM emulators present themselves as standard ROM devices to any connected controller—typically an ECU. Unlike traditional EPROMs or FLASH-ROMs, ROM emulators allow real-time modification of stored data while the system operates. This capability is achieved using SRAM or NVSRAM paired with logic gates or an FPGA to avoid slow data processing bottlenecks.
+
+> [!TIP]
+> ROM emulators are particularly valuable for tuning and testing workflows where immediate parameter adjustments are required without physical ROM replacement.
+
+## How ROM Emulators Work
+
+ROM emulators function by intercepting the ROM access signals from the ECU and responding with data stored in fast, volatile memory (SRAM/NVSRAM). The logic layer manages address decoding and data multiplexing to maintain full transparency to the host controller.
+
+### Key Advantages
+
+- **Real-time modification:** Change calibration data on-the-fly without reprogramming
+- **Reduced development time:** Test multiple parameter sets in a single session
+- **Non-destructive testing:** Original ROM remains unchanged
+- **Live tuning capability:** Adjust parameters while monitoring engine behavior
+
+## Common ROM Emulator Solutions
+
+The **Xtronics Romulator** is the most widely discussed ROM emulator solution, with particular adoption among tuning professionals and diagnostic tool providers for ECU development and calibration work.
+
+> [!IMPORTANT]
+> Verify emulator compatibility with your specific ECU model and OBD specification before deployment.

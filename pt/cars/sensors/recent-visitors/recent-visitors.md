@@ -1,20 +1,18 @@
 ---
-summary: 'Assine e coloque a data com o seu nome abaixo! Arno Hollosi, Aredridel Stauck, Jeff Dairiki, Steve Wainstead, os autores da Php Wiki.'
+summary: 'A registry of contributors and recent visitors to the Hondabase technical documentation project.'
+tags: [community, reference]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - sensors
-  - reference
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Recent Visitors'
-    url: /pgmfi/wiki/library/recent-visitors
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Visitantes Recentes
+# Hondabase Contributor Registry
 
-Assine e coloque a data com o seu nome abaixo! Arno Hollosi, Aredridel Stauck, Jeff Dairiki, Steve Wainstead, os autores da [Php Wiki](/cars/sensors/php-wiki).
+This page serves as a historical record of contributors and visitors to the Hondabase technical documentation project. 
+
+> [!NOTE]
+> This registry acknowledges the original authors of the Php Wiki platform: Arno Hollosi, Aredridel Stauck, Jeff Dairiki, and Steve Wainstead.
+
+## Sign-in Log
+
+Please add your name and the current date to the registry below to document your contribution or visit.

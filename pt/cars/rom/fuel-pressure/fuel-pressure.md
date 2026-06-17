@@ -1,23 +1,43 @@
+yaml
 ---
-summary: 'Pode aumentar a quantidade de combustível fornecida ao aumentar a sua Pressão de Combustível estática. No entanto, uma Pressão de Combustível elevada pode atrasar a abertura do injetor, sacrificando uma entrega precisa de combustível.'
+summary: "Static fuel pressure controls fuel delivery volume in Honda vehicles. Elevated fuel pressure can delay injector opening and compromise precision; OEM Honda specification is 38–42 psi."
 applies_to:
   obd: [0, 1, 2]
   brand: Honda
 complexity: beginner
 tags:
   - tuning
-  - rom
-  - sensors
-  - reference
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Fuel Pressure'
-    url: /pgmfi/wiki/library/fuel-pressure
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - fuel-pressure
+  - fuel-delivery
+  - injectors
+  - diagnostics
 ---
 
-# Pressão de Combustível
+# Fuel Pressure
 
-Pode aumentar a quantidade de combustível fornecida ao aumentar a sua [Pressão de Combustível](/cars/rom/fuel-pressure) estática. No entanto, uma [Pressão de Combustível](/cars/rom/fuel-pressure) elevada pode atrasar a abertura do injetor, sacrificando uma entrega precisa de combustível. A pressão de combustível OEM da Honda deve ser de 38-42 psi.
+## Overview
+
+Fuel pressure regulates the volume of fuel supplied to the engine. Increasing static fuel pressure raises fuel delivery volume; however, elevated fuel pressure can delay injector opening, compromising precise fuel metering.
+
+> [!IMPORTANT]
+> OEM Honda fuel pressure specification: **38–42 psi** across OBD-0, OBD-1, and OBD-2 vehicles.
+
+## Pressure Effects on Injector Performance
+
+**High Fuel Pressure:**
+- Increases fuel delivery volume
+- Delays injector opening response time
+- May compromise fuel atomization precision
+- Can increase injector wear under sustained elevation
+
+**Low Fuel Pressure:**
+- Reduces fuel delivery volume
+- Improves injector response time
+- Risk of fuel starvation under high load conditions
+
+> [!WARNING]
+> Operating fuel pressure outside OEM specification can damage fuel injectors and degradate combustion efficiency. Always verify pressure with proper gauge before tuning adjustments.
+
+## Measurement and Adjustment
+
+Fuel pressure should be measured at the fuel rail using a calibrated fuel pressure gauge. Reference OEM specification tables for your vehicle's OBD generation and engine variant to ensure correct baseline before any modifications.

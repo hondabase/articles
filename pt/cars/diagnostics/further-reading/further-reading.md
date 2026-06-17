@@ -1,23 +1,30 @@
 ---
-summary: 'Então queres aprender mais sobre a teoria de EFI, ECUs ou apenas coisas em geral. Isto pretende ser um local para colocar links para leituras interessantes.'
+summary: 'A curated collection of technical resources covering electronic fuel injection (EFI) theory, ECU architecture, and engine management systems.'
+tags: [ecu, reference, sensors, diagnostics, tuning]
 applies_to:
   obd: [0, 1, 2]
-  brand: Honda
+  models: [all]
 complexity: intermediate
-tags:
-  - ecu
-  - reference
-  - sensors
-  - diagnostics
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Leitura Adicional'
-    url: /pgmfi/wiki/library/further-reading
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Leitura Adicional
+# Technical Reference and EFI Theory Resources
 
-Então queres aprender mais sobre a teoria de EFI, [ECU](/cars/ecu/ecu)s ou apenas coisas em geral. Isto pretende ser um local para colocar links para leituras interessantes. Website da [Hon Data](/cars/diagnostics/hon-data) ([site](http://www.hondata.com)) - toneladas de boa informação, muito dela bastante aplicável considerando que usam [ECU](/cars/ecu/ecu)s originais como base para as suas standalone [http://web.archive.org/web/20250925104144/http://web.archive.org/web/20250925104144/http://www.diy-efi.org//](http://web.archive.org/web/20250925104144/http://web.archive.org/web/20250925104144/http://www.diy-efi.org//) - começou com uma forte inclinação para carros americanos (domestics), mas tem uma RIQUEZA de bons conhecimentos e toneladas de indivíduos ***muito*** inteligentes na lista de e-mail [http://web.archive.org/web/20110910002838/http://web.archive.org/web/20110910002838/http://www.efi-tuning.org//](http://web.archive.org/web/20110910002838/http://web.archive.org/web/20110910002838/http://www.efi-tuning.org//) - um site dedicado a afinação (tuning) de maioritariamente [ECU](/cars/ecu/ecu)s GM e Bosch (BMW, etc.) [http://www.eci-multi.org](http://www.eci-multi.org) - o equivalente do PGMFI para DSMs. [http://www.sdsefi.com](http://www.sdsefi.com) - um fornecedor comercial de sistemas de gestão de motor standalone que tem uma secção técnica com todos os artigos que valem a pena ler duas vezes [http://www.howstuffworks.com](http://www.howstuffworks.com) - um excelente site com muitos artigos de qualidade sobre tópicos relacionados com automóveis, bem como imensa informação sobre a teoria científica por detrás do funcionamento das coisas. Toneladas de imagens, leitura fascinante. [http://www.bgsoflex.com/megasquirt.html](http://www.bgsoflex.com/megasquirt.html) - O Mega Squirt é um computador de injeção de combustível caseiro ([DIY](/cars/sensors/diy)) bastante bem documentado e com esquema completo. [http://www.bgsoflex.com/mjl/mjl_edis.html](http://www.bgsoflex.com/mjl/mjl_edis.html) - Mega Jolt é um sistema parcialmente completo para controlar módulos Ford EDIS [https://www.msextra.com](https://www.msextra.com) - Mega Spark é um sistema [DIY](/cars/sensors/diy) para controlar a ignição standalone usando um 6AL ou semelhante para comandar a própria faísca.
+This document serves as a centralized repository for technical literature regarding electronic fuel injection (EFI) theory, ECU architecture, and engine management systems.
+
+## Industry and Technical Resources
+
+*   **[Hondata](http://www.hondata.com):** Extensive technical documentation regarding Honda ECU architecture and standalone engine management systems based on factory hardware.
+*   **[DIY-EFI](http://web.archive.org/web/20250925104144/http://www.diy-efi.org//):** A foundational resource for EFI theory with a deep archive of technical discussions and engineering knowledge.
+*   **[EFI-Tuning](http://web.archive.org/web/20110910002838/http://www.efi-tuning.org//):** Specialized documentation focused on GM and Bosch (BMW) engine management systems and calibration strategies.
+*   **[ECI-Multi](http://www.eci-multi.org):** Technical resources and community documentation for Mitsubishi/DSM engine management systems.
+*   **[SDS EFI](http://www.sdsefi.com):** Commercial standalone engine management provider featuring a comprehensive technical library on EFI fundamentals.
+*   **[HowStuffWorks](http://www.howstuffworks.com):** Detailed articles explaining the scientific principles and mechanical operation of automotive systems.
+
+## DIY Engine Management Systems
+
+*   **[MegaSquirt](http://www.bgsoflex.com/megasquirt.html):** Documentation for the open-source DIY fuel injection computer, including full schematics and hardware theory.
+*   **[MegaJolt](http://www.bgsoflex.com/mjl/mjl_edis.html):** Technical reference for ignition control systems utilizing Ford EDIS modules.
+*   **[MSExtra](https://www.msextra.com):** Advanced documentation for DIY standalone ignition control and engine management integration.
+
+> [!NOTE]
+> External links are provided for reference purposes. Technical specifications and procedures found in these resources should be verified against specific vehicle service manuals.

@@ -1,23 +1,31 @@
 ---
-summary: 'PR5 : 90-91 JDM Integra ZXi (1.6 SOHC). Este é o equivalente JDM ao USDM D16A6.'
+summary: 'Technical overview of the PR5 ECU, the JDM equivalent to the USDM D16A6 engine control unit used in 90-91 Integra ZXi models.'
+tags: [ecu, jdm, integra, d16a6, pr5]
 applies_to:
-  obd: [0, 1, 2]
-  brand: Acura
+  obd: [0]
+  models: [Integra]
+  chassis: [DA]
 complexity: beginner
-tags:
-  - sensors
-  - reference
-sources:
-  - name: 'pgmfi.org wiki'
-    title: PR5
-    url: /pgmfi/wiki/library/pr5
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# PR5
+# PR5 ECU Technical Overview
 
-PR5 : 90-91 [JDM](/cars/sensors/jdm) Integra ZXi (1.6 SOHC). Este é o equivalente [JDM](/cars/sensors/jdm) ao [USDM](/cars/sensors/usdm) D16A6.
+The PR5 ECU is the JDM-spec engine control unit utilized in 1990–1991 Honda Integra ZXi models equipped with the 1.6L SOHC engine. It serves as the JDM equivalent to the USDM D16A6 engine management system.
 
-| **Anexo:** | **Modificar:** | **Tamanho:** | **Data:** | **Quem:** | **Comentário:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [PR5auto.jpg](PR5auto.jpg) | mod | 135396 | 18 Dez 2003 - 21:35 | The Admin | digitalização de eraser@d16a de uma PR5 automática |
+## ECU Specifications
+
+The PR5 is designed for the D16A series SOHC engines. It utilizes OBD0 architecture common to the 1990–1991 Integra chassis.
+
+### Hardware Documentation
+
+| File Name | Type | Size | Date | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| PR5auto.jpg | Image | 135 KB | 18 Dec 2003 | Digital scan of a PR5 automatic transmission ECU |
+
+> [!NOTE]
+> This unit is specific to the JDM market. Ensure compatibility with your specific wiring harness and engine sensor configuration before installation.
+
+## Compatibility
+* **Engine:** D16A (SOHC)
+* **Chassis:** DA (1990–1991 Integra)
+* **Market:** JDM (Japanese Domestic Market)

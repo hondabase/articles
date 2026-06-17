@@ -7,21 +7,18 @@ complexity: beginner
 tags:
   - ecu
   - pgm-fi
-sources:
-  - name: 'pgmfi.org wiki'
-    title: ECU
-    url: /pgmfi/wiki/library/ecu
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # ECU
 
-Engine Control Unit (Unidade de Controlo do Motor) - um computador que controla o motor de um automóvel. Abaixo são respondidas algumas questões básicas sobre as [ECU](/cars/ecu/ecu)s.
+A Unidade de Controlo do Motor (ECU) é um computador que gere o motor de um automóvel. As secões seguintes abordam questões comuns sobre a identificação de ECUs.
 
-Como posso saber se a minha [ECU](/cars/ecu/ecu) é manual ou automática? ![OBD1auto_manual.jpg](OBD1auto_manual.jpg)
+```carousel
+![Identificação de ECU OBD1 manual vs. automática](OBD1auto_manual.jpg)
+*Diferenças visuais para identificar uma ECU OBD1 manual ou automática.*
+<!-- slide -->
+![Identificação de ECU OBD1 USDM vs. JDM](OBD1USDM_JDM.jpg)
+*Diferenças visuais para identificar uma ECU OBD1 USDM ou JDM.*
+```
 
-Como posso saber se tenho uma [ECU](/cars/ecu/ecu) JDM ou USDM? ![OBD1USDM_JDM.jpg](OBD1USDM_JDM.jpg)
-
-Também vale a pena notar que TODAS as USDM têm a referência 37820-P??-**A##**. Esta é outra forma fácil de identificar se tem uma USDM.
+As ECUs USDM têm tipicamente a referência 37820-P??-**A##**, o que é outra forma fácil de as identificar.

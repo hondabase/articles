@@ -1,28 +1,37 @@
 ---
-summary: 'A maioria das ECUs Honda consegue executar código de outras ECUs de idade semelhante e da mesma família. Civics e Integras geralmente conseguem partilhar código.'
+summary: 'Learn about ECU code compatibility across Honda and Acura platforms, including cross-model sharing for OBD0 and OBD1 systems.'
+tags: [ecu, tuning, rom, diagnostics]
 applies_to:
   obd: [0, 1]
-  brand: Acura/Honda
+  models: [Civic, Integra, Prelude, Accord]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - diagnostics
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Compatibilidade de Código de ECU'
-    url: /pgmfi/wiki/library/ecu-code-compatibility
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Compatibilidade de Código de ECU
+# Honda ECU Code Compatibility
 
-A maioria das [ECU](/cars/ecu/ecu)s Honda consegue executar código de outras [ECU](/cars/ecu/ecu)s de idade semelhante e da mesma família. Civics e Integras geralmente conseguem partilhar código. Preludes e Accords são certamente da mesma equipa de design e, às vezes, conseguem partilhar código. Para informações específicas, consulte:
+Most Honda ECUs can execute code from other ECUs of a similar generation and family. Generally, Civic and Integra ECUs share high levels of code compatibility. Prelude and Accord ECUs often share design architectures and may also support cross-platform code execution.
 
-- [Compatibilidade de Código OBD0](/cars/diagnostics/obd0-code-compatibility) - aborda as [ECU](/cars/ecu/ecu)s [OBD0 MPFI](/cars/diagnostics/obd0mpfi)
-- [Compatibilidade de Código OBD1](/cars/wiring/obd1-code-compatibility) - aborda as [ECU](/cars/ecu/ecu)s [OBD1 Civic Integra](/cars/sensors/obd1-civic-integra)
+## Compatibility Overview
+
+Code compatibility is primarily determined by the generation of the hardware and the specific sensor configuration requirements of the target vehicle.
+
+> [!NOTE]
+> Always verify that the target ECU hardware supports the specific sensor suite (e.g., O2 sensor type, VTEC solenoid presence) required by your engine configuration before flashing or swapping ROMs.
+
+## Reference Guides
+
+For detailed compatibility matrices and specific hardware requirements, refer to the following technical documentation:
+
+*   **[OBD0 Code Compatibility](/cars/diagnostics/obd0-code-compatibility):** Covers compatibility for OBD0 MPFI ECUs.
+*   **[OBD1 Code Compatibility](/cars/wiring/obd1-code-compatibility):** Covers compatibility for OBD1 Civic and Integra ECUs.
+
+## Technical Considerations
+
+When evaluating code compatibility between different ECU models, consider the following factors:
+
+*   **Hardware Revision:** Ensure the PCB revision supports the required memory mapping.
+*   **Sensor Logic:** Verify that the target code expects the same input signals (e.g., 1-wire vs. 4-wire O2 sensors).
+*   **I/O Mapping:** Confirm that the pinout configuration matches the target vehicle's wiring harness to prevent electrical damage.
+
+> [!WARNING]
+> Running incompatible code can lead to engine damage due to incorrect fuel maps, ignition timing, or failure to trigger critical safety features like VTEC or knock control. Always verify checksums and map definitions before implementation.

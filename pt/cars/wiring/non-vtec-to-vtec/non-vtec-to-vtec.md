@@ -1,24 +1,53 @@
+yaml
 ---
-summary: 'Na maioria dos casos, é relativamente simples converter ECUs não-VTEC para VTEC. A mesma PCB era utilizada em várias ECUs, com componentes adicionados ou omitidos conforme necessário.'
+summary: "Convert non-VTEC Honda ECUs to VTEC by populating missing components on the same PCB design. The same board was used across multiple ECU variants with components added or omitted as needed."
 applies_to:
   obd: [0, 1, 2]
   brand: Honda
 complexity: intermediate
 tags:
   - ecu
-  - reference
-  - sensors
-  - wiring
+  - vtec
   - conversion
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Non-VTEC para VTEC'
-    url: /pgmfi/wiki/library/non-vtec-to-vtec
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - wiring
+  - pcb
+  - sensors
 ---
 
-# Non-VTEC para VTEC
+# Non-VTEC to VTEC ECU Conversion
 
-Na maioria dos casos, é relativamente simples converter [ECU](/cars/ecu/ecu)s não-VTEC para VTEC. A mesma [PCB](/cars/wiring/pcb) era utilizada em várias [ECU](/cars/ecu/ecu)s, com componentes adicionados ou omitidos conforme necessário. Procure por um número de peça como "02D011F0-1500", que foi usado em muitas [ECU](/cars/ecu/ecu)s de Civic de 94-95. Em muitos casos, poderá precisar de consultar também [Sensor de O2 de 1 Fio para 4 Fios](/cars/honda/civic/eg/wiring/one-wire-to4-wire-o2-sensor) ou [Automático para Manual](/cars/wiring/auto-to-manual). Conversão para placas [02 D01720-1500](/cars/wiring/02d01720-1500) Conversão para placas [02 D011 F0-1500](/cars/honda/civic/eg/wiring/02d011f0-1500) Conversão para placas [02 D01980-1500](/cars/wiring/02d01980-1500) Conversão para [P14 para P13](/cars/wiring/p14-to-p13) (Qual placa?) Use [5050s](/cars/wiring/5050s) como driver VTEC para a conversão acima
+## Overview
+
+In most cases, converting a non-VTEC ECU to VTEC is straightforward. Honda used the same PCB design across multiple ECU variants, with components added or omitted based on the target application. The conversion typically involves populating missing components on an existing non-VTEC board.
+
+> [!TIP]
+> Look for PCB part numbers like **02D011F0-1500**, which was used in many 1994–1995 Civic ECUs. This design supports component-level conversion to VTEC functionality.
+
+## Related Conversions
+
+Before proceeding, determine if your conversion also requires:
+
+- **Oxygen Sensor Upgrade:** [One-Wire to Four-Wire O2 Sensor Conversion](/cars/honda/civic/eg/wiring/one-wire-to-four-wire-o2-sensor)
+- **Transmission Compatibility:** [Automatic to Manual ECU Conversion](/cars/wiring/auto-to-manual)
+
+## PCB-Specific Conversion Guides
+
+### 02D01720-1500
+Conversion procedures and component requirements for this PCB variant.
+
+### 02D011F0-1500
+This is a common base board for non-VTEC to VTEC conversion. See [detailed conversion guide](/cars/honda/civic/eg/wiring/02d011f0-1500).
+
+### 02D01980-1500
+Conversion procedures and component requirements for this PCB variant.
+
+## Additional Considerations
+
+### Connector Conversion
+- **P14 to P13 Conversion:** If required for your specific application, see [P14 to P13 Connector Conversion](/cars/wiring/p14-to-p13).
+
+### VTEC Driver Configuration
+Use **5050 relay modules** as VTEC solenoid drivers for non-VTEC to VTEC conversion systems.
+
+> [!IMPORTANT]
+> Verify your specific ECU part number and PCB revision before beginning any component-level modifications. Incorrect component population can result in non-functional VTEC control.

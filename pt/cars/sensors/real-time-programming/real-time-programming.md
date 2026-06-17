@@ -1,27 +1,28 @@
 ---
-summary: "Usado para afinar a sua ECU e fazer alterações em tempo real. Hardware EasyRTP v1.0, a adaptação de face única de Dave do design original de Doc baseado no DS1230Y."
+summary: "Overview of Real-Time Programming (RTP) hardware for Honda ECU tuning, including the EasyRTP v1.0 interface and SRAM modification methods."
+tags: [ecu, tuning, rtp, hardware, rom]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Programação em Tempo Real'
-    url: /pgmfi/wiki/library/real-time-programming
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Programação em Tempo Real
+# Real-Time Programming (RTP) Hardware Reference
 
-Usado para afinar a sua ECU e fazer alterações em tempo real (on the fly).
+Real-Time Programming (RTP) allows for on-the-fly calibration changes to the ECU during engine operation. This document outlines the hardware components required to enable RTP functionality.
 
-### Hardware
+## Hardware Components
 
-- [Easy-RTP v1.0](/cars/rom/easy-rtp-v10) - A adaptação de face única de Dave do design original de Doc baseado no `DS1230Y`.
-- [Instalação do Easy-RTP](/cars/rom/easy-rtp-install) - Modificações de hardware para a instalação da placa Easy-RtpV1.0 numa [ECU](/cars/ecu/ecu) [OBD](/cars/wiring/obd)1.
-- [Substituição do chip RAM M5128](/cars/wiring/replace-m5128) - Substituição do chip [SRAM](/cars/sensors/sram) 2K [5128 XRAM](/cars/rom/5128xram) por uma [NVSRAM](/cars/wiring/nvsram) `DS1220` (outro método de [RTP](/cars/sensors/rtp), ainda não finalizado)
+The following hardware solutions are used to facilitate real-time tuning:
+
+*   **EasyRTP v1.0:** A single-sided PCB adaptation of the original Doc design, utilizing the DS1230Y NVRAM chip.
+*   **EasyRTP Installation:** Hardware modification procedures required to integrate the EasyRTP v1.0 board into an OBD1 ECU.
+*   **M5128 SRAM Replacement:** A method for replacing the standard 2K M5128 SRAM chip with a DS1220 NVSRAM to enable RTP capabilities.
+
+> [!NOTE]
+> Ensure all soldering modifications are performed using high-quality leaded solder and proper ESD protection to prevent damage to the ECU logic board.
+
+## Related Resources
+
+*   [EasyRTP v1.0 Documentation](/cars/rom/easy-rtp-v10)
+*   [EasyRTP Installation Guide](/cars/rom/easy-rtp-install)
+*   [M5128 SRAM Replacement Procedure](/cars/wiring/replace-m5128)

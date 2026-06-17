@@ -1,24 +1,56 @@
+yaml
 ---
-summary: 'Se tens uma ECU a que falta o circuito de aquecimento de O2, como uma P05, é fácil ativar esta funcionalidade.'
+summary: "Easily enable O2 sensor heater functionality on ECUs lacking the circuit, such as P05 models, by adding a single transistor component."
+tags: [ecu, o2-sensor, heater, wiring, transistor, conversion, obd-codes]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - ecu
-  - referência
-  - sensores
-  - cablagem
-  - conversão
-  - diagnósticos
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'One Wire To4 Wire O2 Sensor'
-    url: /pgmfi/wiki/library/one-wire-to4-wire-o2-sensor
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Conversão de Sensor de O2 de 1 Fio para 4 Fios
+# O2 Sensor Heater Circuit Retrofit
 
-Se tiveres uma [ECU](/cars/ecu/ecu) a que falte o circuito de aquecimento do sensor de O2, como uma P05, é fácil ativar esta funcionalidade. Para converter uma P05 em praticamente qualquer outra, precisas de adicionar um transístor para ativar o aquecedor do sensor de O2, caso contrário irás obter um código de erro. É necessário adicionar o `Q30` - o seu valor é [C144](/cars/sensors/c144). Para [ECU](/cars/ecu/ecu)s [JDM](/cars/sensors/jdm) a que falte o circuito de aquecimento do sensor de O2, como a P08, basta adicionar uma versão SMT do 2N4401 (transístor de comutação NPN de uso geral) na localização `Q15` na parte inferior da [PCB](/cars/wiring/pcb). O part number correto para o transístor é MMBT4401, e estes estão facilmente disponíveis através de fornecedores retalhistas como [http://web.archive.org/web/20260612163410/https://www.digikey.com/](http://web.archive.org/web/20260612163410/https://www.digikey.com/)
+## Overview
+
+ECUs lacking an O2 sensor heater circuit—such as P05 and P08 models—can be retrofitted with this functionality by adding a single transistor. Without the heater circuit, the ECU will generate a fault code. This guide covers the retrofit procedure for both USDM and JDM variants.
+
+> [!IMPORTANT]
+> Adding the heater circuit transistor is required to prevent O2 sensor heater fault codes on ECUs that lack factory implementation.
+
+## Required Components
+
+| Component | Designation | Part Number | Notes |
+|-----------|-------------|------------|-------|
+| NPN Switching Transistor (SMD) | Q30 or Q15 | MMBT4401 or C144 | 2N4401 equivalent |
+
+## P05 ECU Retrofit
+
+**Location:** Q30 on the main PCB
+
+1. Identify transistor location Q30 on the ECU board.
+2. Install an NPN switching transistor (part number C144 or equivalent 2N4401).
+3. Verify solder connections for continuity before reinstalling the ECU.
+
+> [!TIP]
+> The C144 designation is the OEM equivalent to a standard 2N4401 transistor.
+
+## P08 (JDM) ECU Retrofit
+
+**Location:** Q15 on the bottom of the PCB
+
+1. Locate position Q15 on the underside of the board.
+2. Install a surface-mount (SMT) variant of the 2N4401 transistor (MMBT4401).
+3. Verify component orientation: emitter (E), base (B), and collector (C) must align with board markings.
+
+> [!NOTE]
+> MMBT4401 components are readily available through standard electronics distributors such as Digi-Key.
+
+## Verification
+
+After installation, perform the following checks:
+
+- **Visual Inspection:** Confirm solder joints are clean and free of bridges.
+- **Continuity Test:** Verify transistor pins are properly connected using a multimeter.
+- **Fault Code Clear:** Erase any existing O2 sensor heater fault codes after installation.
+
+> [!CAUTION]
+> Improper transistor installation or orientation may result in circuit damage or continued fault codes. Double-check component polarity before soldering.

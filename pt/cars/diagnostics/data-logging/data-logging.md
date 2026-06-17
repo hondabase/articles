@@ -1,58 +1,50 @@
 ---
-summary: Visão geral histórica dos métodos, portas, adaptadores e software para datalogging de ECUs Honda OBD0 e OBD1.
+summary: "Visão geral técnica dos métodos, interfaces e software para datalogging em ECUs Honda OBD0 e OBD1."
+tags: [datalogging, serial, diagnostics, ecu, obd0, obd1]
 applies_to:
   obd: [0, 1]
 complexity: intermediate
-tags: [datalogging, serial, diagnostics, ecu]
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Data Logging'
-    url: /pgmfi/wiki/library/data-logging
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Visão geral do datalogging de ECUs Honda OBD0 e OBD1
+# Datalogging em ECUs Honda OBD0 e OBD1
 
-O datalogging regista as condições de funcionamento de um motor em marcha. Esta visão geral arquivada descreve os dois métodos de comunicação de série (serial) e os softwares comummente utilizados pela comunidade pioneira de reprogramação de ECUs Honda.
+O datalogging permite o registro em tempo real das condições de funcionamento do motor. Este guia descreve os métodos de comunicação serial e as ferramentas de software utilizadas para extrair dados de diagnóstico de ECUs Honda OBD0 e OBD1.
 
-## Métodos de ligação
+## Métodos de Conexão
 
-| Método | Descrição arquivada |
-| --- | --- |
-| Conector de Ligação de Dados Original (DLC) | Utiliza a via original de comunicação de diagnóstico da ECU através do DLC do veículo |
-| Conector de série interno da ECU | Utiliza a porta `CN2` nas ECUs OBD1 ou `CN3` nas ECUs OBD0 com um módulo de tratamento de série modificado no código da ECU |
+A comunicação com a ECU pode ser estabelecida através da porta de diagnóstico original ou via conexão direta na placa da ECU.
 
-As ECUs originais OBD0 e OBD1 incluíam capacidade de comunicação de diagnóstico. A fonte refere que a taxa de transmissão (baud rate) de série original não era padrão para as portas de série dos PCs, mas explicitamente não se recorda da taxa exata nem estabelece se um PC poderia utilizá-la diretamente.
+| Método | Descrição |
+| :--- | :--- |
+| **Conector de Diagnóstico (DLC)** | Utiliza a porta de diagnóstico original do veículo para comunicação. |
+| **Porta Serial Interna (CN2/CN3)** | Utiliza o conector `CN2` (OBD1) ou `CN3` (OBD0) na placa da ECU, exigindo um módulo de tratamento de dados modificado no firmware. |
 
-Para mais detalhes sobre as interfaces físicas, consulte a [comunicação de série (serial)](/cars/tuning/serial-communication) e a [referência do Conector de Ligação de Dados (DLC)](/cars/wiring/dlc).
+> [!IMPORTANT]
+> As ECUs originais utilizam uma taxa de transmissão (baud rate) não padrão para portas seriais de PC. A conexão direta requer hardware compatível com níveis de sinal TTL de 5V.
 
-## Software histórico
+## Interface Elétrica
 
-A página arquivada menciona estas ferramentas da comunidade para ROMs que utilizam um módulo de tratamento de série modificado, derivado do código de datalogging original do Doc:
+Para conectar a ECU a um computador moderno, é necessário converter os sinais da ECU para o protocolo do host:
 
-- **ECUControl:** descrito como o software original de datalogging do PGMFI, com suporte histórico para Windows, Palm OS e suporte planeado para Pocket PC.
-- **Cuddle:** software histórico de datalogging e controlo RTP para OBD1.
-- **TurboEdit:** software histórico de datalogging e afinação automática offline para OBD0.
+*   **Adaptadores de Nível:** Se o hardware do computador não suportar níveis TTL de 5V, um conversor de nível lógico é obrigatório.
+*   **USB para Serial:** Em computadores sem porta serial nativa, deve-se utilizar um adaptador USB-to-Serial de alta qualidade.
 
-A página também assinala que o código de datalogging original do Doc continha um erro de programação (bug), sem no entanto o identificar.
+Consulte o [guia de resolução de problemas de datalogging](/cars/diagnostics/debugging-data-logging) para obter detalhes sobre a configuração de hardware e drivers.
 
-## Interface elétrica
+## Software de Datalogging
 
-Se o hardware do computador não suportar a comunicação TTL de 5 V da ECU, a fonte afirma que é necessário um adaptador de série. Os portáteis mais recentes que não possuem portas de série podiam, em alternativa, utilizar um conversor USB para série (USB-to-serial).
+O desenvolvimento histórico de datalogging para ECUs Honda baseou-se em módulos de código modificados. As ferramentas legadas incluem:
 
-Consulte o guia arquivado do [conversor USB para série de segunda geração](/cars/tuning/second-gen-usb-to-serial-converter) e o [guia de resolução de problemas de datalogging](/cars/diagnostics/debugging-data-logging) para notas de hardware relacionadas.
+*   **ECUControl:** Software de referência para datalogging, com suporte histórico para Windows, Palm OS e Pocket PC.
+*   **Cuddle:** Ferramenta de datalogging e controle RTP (Real-Time Programming) para sistemas OBD1.
+*   **TurboEdit:** Software focado em datalogging e afinação para sistemas OBD0.
 
-## Nota sobre o jumper do P30 JDM
+## Notas Técnicas
 
-A fonte regista `J12 = J4` numa ECU P30 JDM e refere que isto pode aplicar-se a outras ECUs JDM, mas assinala explicitamente que essa aplicabilidade mais ampla é incerta.
+### Jumper P30 JDM
+Em unidades P30 JDM, a configuração `J12 = J4` é utilizada para habilitar certas funções de comunicação. A aplicabilidade desta configuração em outras variantes de ECU JDM não é universal e deve ser verificada via esquema elétrico específico.
 
-## Relacionado
-
-- [Comunicação de série (serial)](/cars/tuning/serial-communication)
-- [Conector de Ligação de Dados (DLC)](/cars/wiring/dlc)
-- [TurboEdit](/cars/rom/turbo-edit)
-- [Conversor USB para série de segunda geração](/cars/tuning/second-gen-usb-to-serial-converter)
-- [Resolução de problemas de datalogging de ECU](/cars/diagnostics/debugging-data-logging)
-- [Registar um sensor externo de 0-5 V através do pino P30 D12](/cars/tuning/how-to-log-external-data-such-as-an-egt-sensor)
+### Recursos Adicionais
+*   [Comunicação de série (serial)](/cars/tuning/serial-communication)
+*   [Referência do Conector de Ligação de Dados (DLC)](/cars/wiring/dlc)
+*   [Registar um sensor externo de 0-5 V através do pino P30 D12](/cars/tuning/how-to-log-external-data-such-as-an-egt-sensor)

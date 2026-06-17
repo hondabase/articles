@@ -9,13 +9,6 @@ tags:
   - afinação
   - rom
   - sensores
-sources:
-  - name: 'pgmfi.org wiki'
-    title: OBD1J1
-    url: /pgmfi/wiki/library/obd1j1
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
 # OBD1J1

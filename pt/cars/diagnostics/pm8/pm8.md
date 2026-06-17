@@ -1,25 +1,33 @@
 ---
-summary: 'A PM8 vinha nos EUA no CRX HF de 88-91. Estas ECUs sempre careceram de ROMs externas e parecem ser ligeiramente diferentes das PM6/PM7 em termos de configuração de hardware.'
+summary: 'Technical overview of the PM8 ECU found in 1988-1991 Honda CRX HF models, detailing its hardware architecture and relationship to PM6/PM7 units.'
+tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
-  obd: [0, 1, 2]
-  brand: Honda
+  obd: [0]
+  models: [CRX HF]
+  chassis: [EF]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - diagnostics
-sources:
-  - name: 'pgmfi.org wiki'
-    title: PM8
-    url: /pgmfi/wiki/library/pm8
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# PM8
+# PM8 ECU Technical Reference
 
-A PM8 vinha nos EUA no CRX HF de 88-91. Estas [ECU](/cars/ecu/ecu)s sempre careceram de [ROM](/cars/rom/rom)s externas e parecem ser apenas ligeiramente diferentes das [PM6](/cars/ecu/pm6)/[PM7](/cars/ecu/pm7) em termos de configuração de hardware. São muito mais semelhantes à [PM6](/cars/ecu/pm6)/[PM7](/cars/ecu/pm7) do que à [PR4](/cars/sensors/pr4) -- [The Admin](/pgmfi/wiki/home/the-admin) - 18 de Dezembro de 2003
+The PM8 ECU was factory-equipped in 1988–1991 US-market Honda CRX HF models. 
+
+## Hardware Overview
+The PM8 architecture is distinct from other period-correct ECUs due to the absence of external ROM chips. In terms of hardware configuration, the PM8 is closely related to the PM6 and PM7 series ECUs rather than the PR4 series.
+
+> [!NOTE]
+> Unlike many other OBD0 Honda ECUs, the PM8 does not utilize a socketed external ROM, which limits traditional chip-based tuning methods.
+
+## Comparison Summary
+The PM8 shares significant design commonalities with the following units:
+
+| ECU Model | Architecture Similarity | Notes |
+| :--- | :--- | :--- |
+| **PM6** | High | Similar hardware layout and component mapping. |
+| **PM7** | High | Similar hardware layout and component mapping. |
+| **PR4** | Low | Significant differences in board design and logic. |
+
+## Diagnostics and Tuning
+Due to the lack of external ROM, modifying the PM8 requires advanced hardware intervention. Users seeking to tune this specific unit should verify board revisions, as they may differ slightly from standard PM6/PM7 configurations.
+
+::: widget error-codes :::

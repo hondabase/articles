@@ -1,5 +1,6 @@
+yaml
 ---
-summary: 'Tem de fazer uma ponte no interruptor do Termóstato do A/C sob o painel de instrumentos; é um conetor 2P com fita azul colado à cablagem perto da zona do ventilador da chaufagem.'
+summary: 'Bridge the A/C thermostat switch under the instrument panel using a 2-pin blue-taped connector located near the heating fan area.'
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
@@ -9,15 +10,40 @@ tags:
   - sensors
   - wiring
   - conversion
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Ac Switch'
-    url: /pgmfi/wiki/library/ac-switch
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  - ac-system
 ---
 
-# Interruptor de A/C
+# A/C Thermostat Switch Bypass
 
-Tem de fazer uma ponte (shunt) no interruptor do Termóstato do A/C sob o painel de instrumentos. É um conetor 2P com fita azul colado à cablagem perto da zona do ventilador da chaufagem (aquecedor). As cores dos fios são azul/vermelho e amarelo/branco. Sob o capot, existe o conetor da cablagem secundária do A/C (Subharness) no lado do passageiro, onde precisa de fazer uma ponte entre o azul/vermelho e o amarelo/branco. Vou tentar obter fotos amanhã.
+## Overview
+
+The A/C thermostat switch must be bypassed by bridging a 2-pin connector located under the instrument panel. This connector is secured with blue tape and positioned near the heating fan area.
+
+## Connector Details
+
+**Location:** Under the instrument panel, near the heating fan zone
+
+**Connector Type:** 2-pin connector with blue tape
+
+**Wire Colors:**
+- Blue/Red
+- Yellow/White
+
+## Bypass Procedure
+
+### Under the Dashboard
+
+1. Locate the 2-pin connector beneath the instrument panel
+2. Identify the blue tape securing the connector to the wiring harness
+3. Bridge the blue/red and yellow/white wires together
+
+### Under the Hood
+
+1. Locate the secondary A/C subharness connector on the passenger side
+2. Bridge the blue/red and yellow/white wires at this location as well
+
+> [!NOTE]
+> Both the dashboard-mounted and engine bay connectors must be bridged for proper A/C system operation during ECU conversion.
+
+> [!IMPORTANT]
+> Ensure all connections are secure and properly insulated after bridging to prevent short circuits or electrical faults.

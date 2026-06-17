@@ -1,24 +1,31 @@
 ---
-summary: 'Os scripts do Crome funcionam em P06, P28, P30 (EDM, JDM, USDM), P72; reconhecem a ROM assim como a maioria dos outros editores de ROM.'
+summary: 'Learn how to use the Crome ROMEditor "Add Boost" script to expand ECU fuel and ignition tables for forced induction tuning.'
+tags: [ecu, tuning, rom, boost, map-sensor]
 applies_to:
-  obd: [0, 1, 2]
-complexity: beginner
-tags:
-  - ecu
-  - referencia
-  - tuning
-  - rom
-  - sensores
-  - diagnosticos
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Add Boost'
-    url: /pgmfi/wiki/library/add-boost
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
+  obd: [1]
+  models: [P06, P28, P30, P72]
+complexity: intermediate
 ---
 
-# Add Boost
+# Adding Boost Support via Crome ROMEditor
 
-Os scripts do Crome funcionam em P06, P28, P30 (EDM, JDM, USDM), P72; reconhecem a ROM assim como a maioria dos outros editores de ROM. Nem todos os scripts funcionam em todas as [ROM](/cars/rom/rom)s. O de Boost é um caso notável a referir (atualmente funciona principalmente com P72). O script "add boost" do [Crome ROMEditor](/cars/rom/crome-rom-editor) alarga as tabelas originais para que haja uma área dedicada à pressão de sobrealimentação (boost). Isto é muito semelhante ao que a aba de boost do [Uber Data ERM](/cars/rom/uber-data-erm) também faz. O tamanho da tabela original é alterado de 10x20 -> 15x20 (edite isto se não estiver correto). Às últimas 5 colunas são atribuídos valores de MAP na região de boost em vez de atmosférica (NA), permitindo que a [ECU](/cars/ecu/ecu) compreenda o que fazer quando o carro vê pressão/boost (o sensor MAP lê uma pressão superior à pressão atmosférica).
+The Crome ROMEditor "Add Boost" script allows for the expansion of standard fuel and ignition tables to accommodate forced induction. By modifying the table structure, the ECU can interpret and map values for manifold absolute pressure (MAP) readings exceeding atmospheric pressure.
+
+## Overview
+Crome scripts are compatible with various OBD1 ECU variants, including P06, P28, P30 (EDM, JDM, USDM), and P72. While most scripts are universally compatible, the "Add Boost" script is primarily optimized for the P72 ROM architecture.
+
+> [!IMPORTANT]
+> Not all scripts are compatible with every ROM. Always verify the specific ROM compatibility within the Crome interface before applying modifications.
+
+## Technical Implementation
+The "Add Boost" script functions by remapping the table dimensions to allocate specific columns for boost pressure.
+
+*   **Table Expansion:** The standard table size is typically expanded from 10x20 to 15x20.
+*   **MAP Scaling:** The final five columns are reconfigured to represent positive pressure (boost) rather than atmospheric (NA) values.
+*   **ECU Logic:** This modification enables the ECU to reference dedicated fuel and ignition timing values when the MAP sensor detects pressure above atmospheric levels.
+
+## Compatibility
+This script is designed to function similarly to the boost tab features found in other tuning platforms like UberData. Ensure your ECU hardware is properly converted for socketing and that you are using a compatible MAP sensor (e.g., 2.5-bar or 3-bar) capable of reading boost pressures.
+
+> [!TIP]
+> After applying the "Add Boost" script, verify that your fuel and ignition maps are properly populated in the newly created boost columns to prevent lean conditions or engine knock under load.

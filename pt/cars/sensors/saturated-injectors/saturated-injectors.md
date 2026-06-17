@@ -1,22 +1,31 @@
 ---
-summary: 'Injetores saturados, também conhecidos como injetores de alta impedância. Impedância tipicamente de 12-16 ohms. A 12 volts, isto representa um consumo de ~1 a 0,75 amperes.'
+summary: 'Technical overview of saturated (high-impedance) fuel injectors, including impedance specifications and electrical operation for Honda OBD1 and newer systems.'
+tags: [ecu, fueling, injectors, sensors]
 applies_to:
-  obd: [1]
-  brand: Honda
+  obd: [1, 2]
+  models: [all]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Saturated Injectors'
-    url: /pgmfi/wiki/library/saturated-injectors
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Injetores Saturados
+# Saturated Fuel Injectors (High Impedance)
 
-[Injetores Saturados](/cars/sensors/saturated-injectors) (também conhecidos como [Injetores de Alta Impedância](/cars/fueling/high-impedance-injectors)). A impedância é tipicamente de 12-16 ohms. A 12 volts, isto representa um consumo de ~1 a 0,75 amperes. A corrente baixa ajuda a manter os injetores frescos. Os injetores saturados recebem 12 volts constantes, e a massa (ground) é modulada para produzir a pulsação. Estes são os injetores de estilo original (stock) para Hondas OBD1 e superiores, pelo que não é necessária uma caixa de resistências (resistor box).
+Saturated injectors, commonly referred to as high-impedance injectors, are the standard fuel delivery components for Honda OBD1 and newer engine management systems.
+
+## Technical Specifications
+
+*   **Impedance Range:** 12–16 ohms.
+*   **Current Draw:** Approximately 0.75A to 1.0A at 12V.
+
+## Electrical Operation
+
+Saturated injectors operate by receiving a constant 12V power supply. The ECU modulates the ground circuit to trigger the injector pulse. 
+
+> [!IMPORTANT]
+> Because these injectors operate at a lower current, they generate less heat during operation compared to peak-and-hold (low impedance) injectors.
+
+## Compatibility and Installation
+
+*   **Resistor Box:** Not required. Saturated injectors are designed to be driven directly by the ECU injector drivers.
+*   **System Integration:** These are the factory-standard injectors for all OBD1 and later Honda platforms. If upgrading from low-impedance injectors, the factory resistor box must be removed and the wiring bypassed to ensure proper operation.
+
+{{> injector-wiring-guide }}

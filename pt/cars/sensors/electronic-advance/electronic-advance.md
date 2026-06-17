@@ -1,21 +1,31 @@
 ---
-summary: 'O Avanço Eletrónico refere-se a uma configuração de motor onde o Avanço de Ignição pode ser controlado eletronicamente pela ECU.'
+summary: 'An overview of Electronic Advance systems, where ignition timing is dynamically controlled by the ECU to replace traditional vacuum-based mechanical systems.'
+tags: [ecu, ignition, tuning, sensors]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Electronic Advance'
-    url: /pgmfi/wiki/library/electronic-advance
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Avanço Eletrónico
+# Electronic Ignition Advance
 
-O [Avanço Eletrónico](/cars/sensors/electronic-advance) refere-se a uma configuração de motor onde o [Avanço de Ignição](/cars/sensors/spark-advance) pode ser controlado eletronicamente pela [ECU](/cars/ecu/ecu). O Avanço Eletrónico substituiu o [Avanço por Vácuo](/cars/sensors/vacuum-advance) porque é muito mais flexível para afinação (tuning) e permite um controlo muito melhor do motor. Os sistemas de ignição direta sem distribuidor (distributorless direct-fire) estão a substituir em larga escala o avanço eletrónico atualmente (início de 2004).
+Electronic Advance refers to an engine configuration where ignition timing is dynamically controlled by the ECU. This system replaced traditional vacuum advance mechanisms, providing significantly greater flexibility for engine tuning and precise ignition control.
+
+## Overview
+Unlike mechanical vacuum advance, which relies on manifold pressure to physically adjust timing, Electronic Advance allows the ECU to calculate the optimal ignition timing based on real-time sensor data. This enables:
+
+*   **Precise Timing Maps:** Ignition timing can be mapped against load, RPM, and temperature.
+*   **Improved Efficiency:** Optimized combustion cycles across the entire operating range.
+*   **Enhanced Tuning Capability:** Easier adjustments for modified engines compared to mechanical spring/weight systems.
+
+> [!NOTE]
+> While Electronic Advance was a major advancement over mechanical systems, modern engine management has largely transitioned to distributorless direct-fire ignition systems for even greater control and reliability.
+
+## System Components
+The ECU determines the ignition timing by processing inputs from several key sensors:
+
+*   **Crankshaft Position Sensor (CKP):** Provides engine speed and piston position data.
+*   **Manifold Absolute Pressure (MAP):** Measures engine load.
+*   **Coolant Temperature Sensor (ECT):** Adjusts timing based on engine thermal state.
+*   **Throttle Position Sensor (TPS):** Monitors driver demand and rate of change.
+
+{{> ignition-timing-basics }}

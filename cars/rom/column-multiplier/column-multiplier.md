@@ -1,20 +1,36 @@
 ---
-summary: 'The column multiplier is a number used in a formula for calculating one column of the fuel map. This multiplier is found right at the end of the said fuel map.'
-tags: [tuning, rom, sensors, reference]
+summary: 'The column multiplier is a critical value used in fuel map calculations, located immediately following the fuel map data in the ROM.'
+tags: [tuning, rom, fuel-map, calibration]
 applies_to:
   obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Column Multiplier'
-    url: /pgmfi/wiki/library/column-multiplier
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Column Multiplier
+# Understanding the ECU Fuel Map Column Multiplier
 
-The column multiplier is a number used in a formula for calculating one column of the fuel map. This multiplier is found right at the end of the said fuel map. The first number after the fuel map is the multiplier for column 1 of the map, the second number is for column 2 and so on.
+The column multiplier is a scalar value used in the calculation formula for individual columns within an ECU fuel map. These multipliers are stored in the ROM immediately following the fuel map data.
+
+## Data Structure and Location
+
+The multipliers are mapped sequentially to the fuel map columns. The first value following the fuel map corresponds to column 1, the second value to column 2, and so on.
+
+> [!IMPORTANT]
+> Ensure that the multiplier values are correctly identified during ROM editing. Incorrect values will result in improper fuel scaling across the entire load or RPM range associated with that specific column.
+
+## Calculation Reference
+
+The ECU utilizes these multipliers to scale raw fuel map data into usable pulse-width values. When modifying fuel maps, verify that the column multipliers remain within the operational limits defined by the specific ECU architecture to prevent lean or rich conditions.
+
+### Multiplier Mapping Table
+
+| Map Column | Multiplier Location |
+| :--- | :--- |
+| Column 1 | First byte/word after map |
+| Column 2 | Second byte/word after map |
+| Column 3 | Third byte/word after map |
+| Column N | Nth byte/word after map |
+
+> [!TIP]
+> Use a hex editor or tuning software with defined map offsets to visualize these multipliers. They are typically located immediately after the final row of the fuel table in the binary file.

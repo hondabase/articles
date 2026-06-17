@@ -1,22 +1,23 @@
 ---
-summary: 'Páginas Semelhantes (Like Pages) são páginas que partilham uma palavra inicial ou final com essa página. Consulte também Wiki:LikePages e Meat Ball:LikePages.'
+summary: 'An overview of the Like Pages feature, which identifies related technical documentation by matching shared initial or terminal keywords.'
+tags: [reference, documentation, navigation]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - sensores
-  - referência
-sources:
-  - name: 'pgmfi.org wiki'
-    title: 'Like Pages'
-    url: /pgmfi/wiki/library/like-pages
-    license: 'CC BY-NC-SA 1.0'
-    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
-    adapted: true
 ---
 
-# Páginas Semelhantes (Like Pages)
+# Like Pages Reference
 
-[Páginas Semelhantes](/cars/sensors/like-pages) são páginas que partilham uma palavra inicial ou final com essa página. Consulte também Wiki:LikePages e Meat Ball:LikePages. ---
+The **Like Pages** feature is a navigation tool used to identify related technical documentation. Pages are categorized as "Like Pages" if they share a common initial or terminal keyword with the current article.
 
-Páginas Semelhantes ?>
+> [!NOTE]
+> This feature is designed to improve content discoverability by grouping articles with similar technical subject matter or naming conventions.
+
+## Usage
+To view pages related to the current topic, navigate to the **Like Pages** section at the bottom of the article. This list is dynamically generated based on keyword overlap.
+
+## Related Resources
+For further information on the implementation and logic behind this cross-referencing system, refer to the following documentation:
+
+* **Wiki:LikePages**
+* **Meat Ball:LikePages**
