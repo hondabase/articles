@@ -22,5 +22,3 @@ for all you could want to know and a great tutorial, go to [http://www.8052.com]
 - [Compact lil ref guide](http://web.archive.org/web/20090518051420/http://myhome.naver.com:80/zxcv0070/chip/8051data%20book.htm)
 - [Another compact ref](8051ref.pdf)
 - [jEdit](http://jedit.org) - jEdit 4.2pre8 and higher includes a MCS51 syntax highlighting Edit Mode definition for 8051 assembly editing
-
-| **Attachment:** | **Modify:** | **Size:** | **Date:** | **Who:** | **Comment:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/exe.gif) [RAD51.exe](RAD51.exe) | mod | 5891853 | 20 Jul 2004 - 04:21 | blundar | Copy of Sysrad51 as of 7/18/04 locally |

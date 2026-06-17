@@ -20,4 +20,13 @@ sources:
 
 PT5 90-93 [OBD1](/cars/wiring/obd1) [EDM](/cars/wiring/edm) Accord [SOHC](/cars/sensors/sohc) non-vtec F20A7 This [ECU](/cars/ecu/ecu) shares the shares the same PC board with the PT3 Accord [ECU](/cars/ecu/ecu) (02D01190-1504)
 
-| **Attachment:** | **Modify:** | **Size:** | **Date:** | **Who:** | **Comment:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [PT5\\_X01\\_F20A7.jpg](PT5_X01_F20A7.jpg) | mod | 912674 | 08 Feb 2006 - 06:19 | carotman | [ECU](/cars/ecu/ecu) out of an European 90-93 F20A7 Accord | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [PT5\\_X01\\_F20A7-2.jpg](PT5_X01_F20A7-2.jpg) | mod | 434819 | 08 Feb 2006 - 06:20 | carotman | A second shot of the PT5 [EDM](/cars/wiring/edm) 90-93 Accord [ECU](/cars/ecu/ecu) |
+
+<figure>
+    <img src="PT5_X01_F20A7.jpg" alt="[ECU](/cars/ecu/ecu) out of an European 90-93 F20A7 Accord">
+    <figcaption>[ECU](/cars/ecu/ecu) out of an European 90-93 F20A7 Accord</figcaption>
+</figure>
+
+<figure>
+    <img src="PT5_X01_F20A7-2.jpg" alt="A second shot of the PT5 [EDM](/cars/wiring/edm) 90-93 Accord [ECU](/cars/ecu/ecu)">
+    <figcaption>A second shot of the PT5 [EDM](/cars/wiring/edm) 90-93 Accord [ECU](/cars/ecu/ecu)</figcaption>
+</figure>

@@ -35,4 +35,8 @@ Let's read a `66207`: - Switch off your [ECU](/cars/ecu/ecu), or leave it off.
 - after almost a minute (i never stopped it) the address counter should show 8001
 - now click SAVE to save your rom.
 
-If something dosn't work, retry the procedure but don't forget to click on RESET. Now have fun with your own `66207` reader. Doc | **Attachment:** | **Modify:** | **Size:** | **Date:** | **Who:** | **Comment:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/zip.gif) [downloader.zip](downloader.zip) | mod | 225127 | 05 Mar 2004 - 18:09 | blundar | Win32 downloader application | | ![](/pgmfi/wiki/assets/icn/else.gif) [romreader66207.bin](romreader66207.bin) | mod | 65536 | 05 Mar 2004 - 18:10 | blundar | BIN file to use for reading [MCU](/cars/rom/mcu) | | ![](/pgmfi/wiki/assets/icn/txt.gif) [romreader.txt](romreader.txt) | mod | 2212 | 05 Mar 2004 - 18:10 | blundar | Assembly source of reader program | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [66207\\_romreader.jpg](66207_romreader.jpg) | mod | 57642 | 05 Mar 2004 - 18:10 | blundar | Picture of hardware modifications |
+If something dosn't work, retry the procedure but don't forget to click on RESET. Now have fun with your own `66207` reader. Doc 
+<figure>
+    <img src="66207_romreader.jpg" alt="Picture of hardware modifications">
+    <figcaption>Picture of hardware modifications</figcaption>
+</figure>

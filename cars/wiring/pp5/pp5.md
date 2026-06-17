@@ -32,4 +32,23 @@ PP4-G01 Rover 216 16V (with lambda), Honda Concerto 1.6 litre (SOHC) 92-96
 PP4-`R00` Rover 220 Coupe (with lambda), Honda Concerto 1.6 litre (SOHC) 93-96 
 PP5-`R00` Honda Concerto 1.6 litre (DOHC) 93-96 
 
-| **Attachment:** | **Modify:** | **Size:** | **Date:** | **Who:** | **Comment:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [PP5-E01-zdyne\\_component.jpg](PP5-E01-zdyne_component.jpg) | mod | 1260999 | 18 Dec 2003 - 21:18 | The Admin | Mark Lamond's PP5 [ECU](/cars/ecu/ecu) top-side scan - Zdyne SECU | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [PP5-E01zdyne\\_solder.jpg](PP5-E01zdyne_solder.jpg) | mod | 1763475 | 18 Dec 2003 - 21:18 | The Admin | Mark Lamond's PP5 bottom scan - Zdyne SECU | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [IMG\\_1436.JPG](IMG_1436.JPG) | mod | 1793377 | 21 Oct 2004 - 09:14 | CREX | PP5-G01 | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [PP5-G01.JPG](PP5-G01.JPG) | mod | 1793377 | 21 Oct 2004 - 11:47 | CREX | PP5-G01 |
+
+<figure>
+    <img src="PP5-E01-zdyne_component.jpg" alt="Mark Lamond&apos;s PP5 [ECU](/cars/ecu/ecu) top-side scan - Zdyne SECU">
+    <figcaption>Mark Lamond's PP5 [ECU](/cars/ecu/ecu) top-side scan - Zdyne SECU</figcaption>
+</figure>
+
+<figure>
+    <img src="PP5-E01zdyne_solder.jpg" alt="Mark Lamond&apos;s PP5 bottom scan - Zdyne SECU">
+    <figcaption>Mark Lamond's PP5 bottom scan - Zdyne SECU</figcaption>
+</figure>
+
+<figure>
+    <img src="IMG_1436.JPG" alt="PP5-G01">
+    <figcaption>PP5-G01</figcaption>
+</figure>
+
+<figure>
+    <img src="PP5-G01.JPG" alt="PP5-G01">
+    <figcaption>PP5-G01</figcaption>
+</figure>

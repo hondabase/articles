@@ -21,5 +21,3 @@ In a VTEC motor, the [Low Cam](/cars/sensors/low-cam) is used at low [RPM](/cars
 
 - [Low Cam](/cars/sensors/low-cam) of VTEC camshaft: 
      ![vteclow.gif](vteclow.gif)
-
-| **Attachment:** | **Modify:** | **Size:** | **Date:** | **Who:** | **Comment:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [vteclow.gif](vteclow.gif) | mod | 9775 | 30 Mar 2004 - 08:06 | tekphobia | [Low Cam](/cars/sensors/low-cam) of VTEC camshaft |

@@ -1,0 +1,20 @@
+---
+summary: 'Um setor é um bloco de dados. Pode variar em tamanho.'
+applies_to:
+  obd: [0, 1, 2]
+complexity: beginner
+tags:
+  - sensors
+  - reference
+sources:
+  - name: 'pgmfi.org wiki'
+    title: sectors
+    url: /pgmfi/wiki/library/sectors
+    license: 'CC BY-NC-SA 1.0'
+    license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
+    adapted: true
+---
+
+# setores
+
+Um setor é um bloco de dados. Pode variar em tamanho.

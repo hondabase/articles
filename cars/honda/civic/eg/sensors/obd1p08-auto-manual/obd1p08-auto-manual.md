@@ -29,4 +29,8 @@ sources:
 - add q29 q28
 - add c57
 
-- Not sure about any transistors yet... If someone has a Manual P08 and can take a high quality picture of the top and bottom, Please email them to me.. CRXSi RVtec (mailto:[email protected]) | **Attachment:** | **Modify:** | **Size:** | **Date:** | **Who:** | **Comment:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [PC030021.JPG](PC030021.JPG) | mod | 143950 | 30 Mar 2004 - 02:14 | eg6ajk | [JDM](/cars/sensors/jdm) P08 [ECU](/cars/ecu/ecu)s (auto) |
+- Not sure about any transistors yet... If someone has a Manual P08 and can take a high quality picture of the top and bottom, Please email them to me.. CRXSi RVtec (mailto:[email protected]) 
+<figure>
+    <img src="PC030021.JPG" alt="[JDM](/cars/sensors/jdm) P08 [ECU](/cars/ecu/ecu)s (auto)">
+    <figcaption>[JDM](/cars/sensors/jdm) P08 [ECU](/cars/ecu/ecu)s (auto)</figcaption>
+</figure>

@@ -28,4 +28,38 @@ They are so similar that they can even share the same program so far.
 
 ---
 
-I posted the Options Close-up for the PH3-0732 and PH3-0632 88-89 Accord B20A [ECU](/cars/ecu/ecu)s. The 0732 is supposedly from an auto car and the 0632 a manual. I don't know if these options are related to the transmisson type or emissions. The manual PK2 [ECU](/cars/ecu/ecu) has the same options configuration as this Auto [ECU](/cars/ecu/ecu) so I'm not sure what these do yet There is also a close-up of the BR8 jumper. This jumper seems to be the one deactivating O2 sensor B input on the PH3 board. It's connected directly on the Sensor's pin. The PK2 shares almost the same Boads as the PH3 but has this jumper Blank. (see the PK2 [ECU](/cars/ecu/ecu) section) Carotman | **Attachment:** | **Modify:** | **Size:** | **Date:** | **Who:** | **Comment:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [ph3\\_0732.jpg](ph3_0732.jpg) | mod | 212615 | 30 Jan 2006 - 07:01 | carotman | 88-89 Accord B20A PH3 [ECU](/cars/ecu/ecu) | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [ph3\\_043.jpg](ph3_043.jpg) | mod | 341522 | 30 Jan 2006 - 07:08 | carotman | 86-87 Accord B20A PH3 [ECU](/cars/ecu/ecu) | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [ph3-0632\\_manual\\_options.jpg](ph3-0632_manual_options.jpg) | mod | 1056389 | 07 Apr 2006 - 02:44 | carotman | PH3-0632 Manual [ECU](/cars/ecu/ecu) (Options Close-up) | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [ph3-0632\\_manual.jpg](ph3-0632_manual.jpg) | mod | 1054856 | 07 Apr 2006 - 02:45 | carotman | PH3-0632 Accord ECU (Manual) | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [ph3-0732\\_auto\\_options.jpg](ph3-0732_auto_options.jpg) | mod | 1059425 | 07 Apr 2006 - 02:46 | carotman | PH3-0732 Auto [ECU](/cars/ecu/ecu) (Options Close-up) | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [ph3-0732\\_auto.jpg](ph3-0732_auto.jpg) | mod | 1082686 | 07 Apr 2006 - 02:49 | carotman | PH3-0732 Auto [ECU](/cars/ecu/ecu) | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [BR8-PH3.jpg](BR8-PH3.jpg) | mod | 1061228 | 07 Apr 2006 - 03:03 | carotman | BR8 Jumper that seem to cancel O2 sensor B input |
+I posted the Options Close-up for the PH3-0732 and PH3-0632 88-89 Accord B20A [ECU](/cars/ecu/ecu)s. The 0732 is supposedly from an auto car and the 0632 a manual. I don't know if these options are related to the transmisson type or emissions. The manual PK2 [ECU](/cars/ecu/ecu) has the same options configuration as this Auto [ECU](/cars/ecu/ecu) so I'm not sure what these do yet There is also a close-up of the BR8 jumper. This jumper seems to be the one deactivating O2 sensor B input on the PH3 board. It's connected directly on the Sensor's pin. The PK2 shares almost the same Boads as the PH3 but has this jumper Blank. (see the PK2 [ECU](/cars/ecu/ecu) section) Carotman 
+<figure>
+    <img src="ph3_0732.jpg" alt="88-89 Accord B20A PH3 [ECU](/cars/ecu/ecu)">
+    <figcaption>88-89 Accord B20A PH3 [ECU](/cars/ecu/ecu)</figcaption>
+</figure>
+
+<figure>
+    <img src="ph3_043.jpg" alt="86-87 Accord B20A PH3 [ECU](/cars/ecu/ecu)">
+    <figcaption>86-87 Accord B20A PH3 [ECU](/cars/ecu/ecu)</figcaption>
+</figure>
+
+<figure>
+    <img src="ph3-0632_manual_options.jpg" alt="PH3-0632 Manual [ECU](/cars/ecu/ecu) (Options Close-up)">
+    <figcaption>PH3-0632 Manual [ECU](/cars/ecu/ecu) (Options Close-up)</figcaption>
+</figure>
+
+<figure>
+    <img src="ph3-0632_manual.jpg" alt="PH3-0632 Accord ECU (Manual)">
+    <figcaption>PH3-0632 Accord ECU (Manual)</figcaption>
+</figure>
+
+<figure>
+    <img src="ph3-0732_auto_options.jpg" alt="PH3-0732 Auto [ECU](/cars/ecu/ecu) (Options Close-up)">
+    <figcaption>PH3-0732 Auto [ECU](/cars/ecu/ecu) (Options Close-up)</figcaption>
+</figure>
+
+<figure>
+    <img src="ph3-0732_auto.jpg" alt="PH3-0732 Auto [ECU](/cars/ecu/ecu)">
+    <figcaption>PH3-0732 Auto [ECU](/cars/ecu/ecu)</figcaption>
+</figure>
+
+<figure>
+    <img src="BR8-PH3.jpg" alt="BR8 Jumper that seem to cancel O2 sensor B input">
+    <figcaption>BR8 Jumper that seem to cancel O2 sensor B input</figcaption>
+</figure>

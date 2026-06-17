@@ -20,4 +20,8 @@ sources:
 
 PR5 : 90-91 [JDM](/cars/sensors/jdm) Integra ZXi (1.6 SOHC) This is the [JDM](/cars/sensors/jdm) equivalent of the [USDM](/cars/sensors/usdm) D16A6.
 
-| **Attachment:** | **Modify:** | **Size:** | **Date:** | **Who:** | **Comment:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [PR5auto.jpg](PR5auto.jpg) | mod | 135396 | 18 Dec 2003 - 21:35 | The Admin | eraser@d16a's scan of an automatic PR5 |
+
+<figure>
+    <img src="PR5auto.jpg" alt="eraser@d16a&apos;s scan of an automatic PR5">
+    <figcaption>eraser@d16a's scan of an automatic PR5</figcaption>
+</figure>

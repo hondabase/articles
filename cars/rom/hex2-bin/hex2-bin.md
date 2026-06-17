@@ -18,5 +18,3 @@ sources:
 # Hex2 Bin
 
 You can convert [Hex File](/cars/diagnostics/hex-file)s to [Bin File](/cars/rom/bin-file)s using [hex2bin ](http://www.keil.com/download/files/hex2bin.zip) (also available as an attachment to this page)
-
-| **Attachment:** | **Modify:** | **Size:** | **Date:** | **Who:** | **Comment:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/exe.gif) [hex2bin.exe](hex2bin.exe) | mod | 11642 | 05 Mar 2004 - 18:31 | blundar | Keil's hex to bin converter |

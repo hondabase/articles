@@ -20,4 +20,23 @@ sources:
 
 PT3 90-93 [OBD1](/cars/wiring/obd1) [USDM](/cars/sensors/usdm) Accord [SOHC](/cars/sensors/sohc) non-vtec F22A1 This [ECU](/cars/ecu/ecu) shares the shares the same PC board with the [EDM](/cars/wiring/edm) PT5 Accord [ECU](/cars/ecu/ecu) (02D01190-1504) Scan: ![PT3.jpg](PT3.jpg)Scan-bottom (Thanks Andrew Shinn!): ![PT3-bot.jpg](PT3-bot.jpg)
 
-| **Attachment:** | **Modify:** | **Size:** | **Date:** | **Who:** | **Comment:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [PT3\\_A54.jpeg](PT3_A54.jpeg) | mod | 164554 | 31 Jan 2006 - 23:19 | carotman | 1992 Canadian LX Accord Auto | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [USDM-PT3-Manual-front.jpg](USDM-PT3-Manual-front.jpg) | mod | 2166109 | 25 Mar 2006 - 19:54 | acclude | 1991 [USDM](/cars/sensors/usdm) PT3-A23 EX Accord Manual | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [USDM-PT3-Manual-back.jpg](USDM-PT3-Manual-back.jpg) | mod | 1981177 | 25 Mar 2006 - 19:55 | acclude | 1991 [USDM](/cars/sensors/usdm) PT3-A23 EX Accord Manual | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [USDM-PT3-Manual-chips-resistors.jpg](USDM-PT3-Manual-chips-resistors.jpg) | mod | 2059412 | 25 Mar 2006 - 20:00 | acclude | 1991 [USDM](/cars/sensors/usdm) PT3-A23 - OKI 66911 38256 `74HC373` |
+
+<figure>
+    <img src="PT3_A54.jpeg" alt="1992 Canadian LX Accord Auto">
+    <figcaption>1992 Canadian LX Accord Auto</figcaption>
+</figure>
+
+<figure>
+    <img src="USDM-PT3-Manual-front.jpg" alt="1991 [USDM](/cars/sensors/usdm) PT3-A23 EX Accord Manual">
+    <figcaption>1991 [USDM](/cars/sensors/usdm) PT3-A23 EX Accord Manual</figcaption>
+</figure>
+
+<figure>
+    <img src="USDM-PT3-Manual-back.jpg" alt="1991 [USDM](/cars/sensors/usdm) PT3-A23 EX Accord Manual">
+    <figcaption>1991 [USDM](/cars/sensors/usdm) PT3-A23 EX Accord Manual</figcaption>
+</figure>
+
+<figure>
+    <img src="USDM-PT3-Manual-chips-resistors.jpg" alt="1991 [USDM](/cars/sensors/usdm) PT3-A23 - OKI 66911 38256 `74HC373`">
+    <figcaption>1991 [USDM](/cars/sensors/usdm) PT3-A23 - OKI 66911 38256 `74HC373`</figcaption>
+</figure>

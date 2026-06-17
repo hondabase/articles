@@ -20,4 +20,8 @@ sources:
 
 PS9 : 90-91 [USDM](/cars/sensors/usdm) Civic EX (1.6L [SOHC](/cars/sensors/sohc) - usually auto) The PS9 is identical to a [PM6](/cars/ecu/pm6) with the addition of the circuitry to control an automatic tranny.
 
-| **Attachment:** | **Modify:** | **Size:** | **Date:** | **Who:** | **Comment:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [PS9auto.jpg](PS9auto.jpg) | mod | 446908 | 18 Dec 2003 - 21:40 | The Admin | eraser@d16a's scan of a [USDM](/cars/sensors/usdm) PS9 auto |
+
+<figure>
+    <img src="PS9auto.jpg" alt="eraser@d16a&apos;s scan of a [USDM](/cars/sensors/usdm) PS9 auto">
+    <figcaption>eraser@d16a's scan of a [USDM](/cars/sensors/usdm) PS9 auto</figcaption>
+</figure>

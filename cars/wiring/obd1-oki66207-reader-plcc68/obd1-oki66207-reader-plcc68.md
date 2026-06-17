@@ -36,5 +36,3 @@ Let's read a `66207`: - Switch off your [ECU](/cars/ecu/ecu), or leave it off.
 
 If something dosn't work, retry the procedure but don't forget to click on RESET. Now have fun with your own `66207` reader. Doc Thats It Dont forget to Solder the track you cut when finished to enable the external rom. - Hi Res of the overall setup: 
      ![DSC02697.JPG](DSC02697.JPG)
-
-| **Attachment:** | **Modify:** | **Size:** | **Date:** | **Who:** | **Comment:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/zip.gif) [66207plcc.zip](66207plcc.zip) | mod | 174118 | 05 Mar 2004 - 18:05 | blundar | Pictures of mods needed | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [DSC02697.JPG](DSC02697.JPG) | mod | 1838687 | 08 Jun 2006 - 00:20 | synoptic | Hi Res of the overall setup |

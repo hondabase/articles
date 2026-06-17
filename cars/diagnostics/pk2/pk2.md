@@ -28,4 +28,23 @@ I posted the Options Close-up for the PK2-6640 manual B20A [ECU](/cars/ecu/ecu).
 
 The PK2 and PH3 [ECU](/cars/ecu/ecu)s share almost the same PC board. Theya re 99% similar. So similar in fact that the PH3 code can run on the PK2. The BR8 Jumper seems to control the Secondary O2 sensor input. The PH3 doesn't have this sensor so it's deactivated by BR8. You can see the PH3 section for more details. 
 
-Carotman | **Attachment:** | **Modify:** | **Size:** | **Date:** | **Who:** | **Comment:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [pk2.jpg](pk2.jpg) | mod | 250501 | 04 Jul 2005 - 05:16 | chen | pk-2 ECU photo. | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [pk2-6640\\_manual.jpg](pk2-6640_manual.jpg) | mod | 1055631 | 07 Apr 2006 - 03:10 | carotman | Canadian PK2 [ECU](/cars/ecu/ecu) | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [pk2-6640\\_manual\\_options.jpg](pk2-6640_manual_options.jpg) | mod | 1062087 | 07 Apr 2006 - 03:11 | carotman | PK2-6640 Options Close-up | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [BR8-PK2.jpg](BR8-PK2.jpg) | mod | 1069261 | 07 Apr 2006 - 03:14 | carotman | BR8 Jumper that seems to control O2 Sensor B input |
+Carotman 
+<figure>
+    <img src="pk2.jpg" alt="pk-2 ECU photo.">
+    <figcaption>pk-2 ECU photo.</figcaption>
+</figure>
+
+<figure>
+    <img src="pk2-6640_manual.jpg" alt="Canadian PK2 [ECU](/cars/ecu/ecu)">
+    <figcaption>Canadian PK2 [ECU](/cars/ecu/ecu)</figcaption>
+</figure>
+
+<figure>
+    <img src="pk2-6640_manual_options.jpg" alt="PK2-6640 Options Close-up">
+    <figcaption>PK2-6640 Options Close-up</figcaption>
+</figure>
+
+<figure>
+    <img src="BR8-PK2.jpg" alt="BR8 Jumper that seems to control O2 Sensor B input">
+    <figcaption>BR8 Jumper that seems to control O2 Sensor B input</figcaption>
+</figure>

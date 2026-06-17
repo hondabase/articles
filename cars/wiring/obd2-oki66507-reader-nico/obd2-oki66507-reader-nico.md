@@ -23,5 +23,3 @@ Here you can readout `66P507`... Nico
 
 - Block diagram of dumper: 
      ![BLOCK.gif](BLOCK.gif)
-
-| **Attachment:** | **Modify:** | **Size:** | **Date:** | **Who:** | **Comment:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/txt.gif) [ROM-PGM.txt](ROM-PGM.txt) | mod | 1637 | 05 Mar 2004 - 17:36 | blundar | source code for [ROM](/cars/rom/rom) dumper |

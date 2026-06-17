@@ -21,5 +21,3 @@ in a [VTEC](/cars/sensors/vtec) motor, the [High Cam](/cars/sensors/high-cam) is
 
 - [High Cam](/cars/sensors/high-cam) of VTEC camshaft: 
      ![vtechigh.gif](vtechigh.gif)
-
-| **Attachment:** | **Modify:** | **Size:** | **Date:** | **Who:** | **Comment:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [vtechigh.gif](vtechigh.gif) | mod | 8630 | 30 Mar 2004 - 08:08 | tekphobia | [High Cam](/cars/sensors/high-cam) of VTEC camshaft |

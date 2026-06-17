@@ -46,4 +46,18 @@ This page explain how to replace the current [5128 XRAM](/cars/rom/5128xram) 2K 
 
 ###  Note: 
 
-The traces to be cut on a 90-91 [ECU](/cars/ecu/ecu) are on the component side. On the 88-89, there is 1 trace on the solder side, and 1 on the component side. You can check out the scans to help you out. | **Attachment:** | **Modify:** | **Size:** | **Date:** | **Who:** | **Comment:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [DS1220-88-89.jpg](DS1220-88-89.jpg) | mod | 681906 | 27 Feb 2004 - 17:48 | synoptic | Solder side of a 1988 - 1989 [ECU](/cars/ecu/ecu) | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [DS1220-90-91.jpg](DS1220-90-91.jpg) | mod | 728209 | 27 Feb 2004 - 17:49 | synoptic | Solder side of a 1990 - 1991 [ECU](/cars/ecu/ecu) | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [DS1220-TOP-90-91.jpg](DS1220-TOP-90-91.jpg) | mod | 115939 | 27 Feb 2004 - 17:50 | synoptic | Component side of a 1990 - 1991 [ECU](/cars/ecu/ecu) |
+The traces to be cut on a 90-91 [ECU](/cars/ecu/ecu) are on the component side. On the 88-89, there is 1 trace on the solder side, and 1 on the component side. You can check out the scans to help you out. 
+<figure>
+    <img src="DS1220-88-89.jpg" alt="Solder side of a 1988 - 1989 [ECU](/cars/ecu/ecu)">
+    <figcaption>Solder side of a 1988 - 1989 [ECU](/cars/ecu/ecu)</figcaption>
+</figure>
+
+<figure>
+    <img src="DS1220-90-91.jpg" alt="Solder side of a 1990 - 1991 [ECU](/cars/ecu/ecu)">
+    <figcaption>Solder side of a 1990 - 1991 [ECU](/cars/ecu/ecu)</figcaption>
+</figure>
+
+<figure>
+    <img src="DS1220-TOP-90-91.jpg" alt="Component side of a 1990 - 1991 [ECU](/cars/ecu/ecu)">
+    <figcaption>Component side of a 1990 - 1991 [ECU](/cars/ecu/ecu)</figcaption>
+</figure>

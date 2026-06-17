@@ -21,4 +21,13 @@ sources:
 
 - [PM7-MUG.bin](PM7-MUG.bin): the Mugen XE5 race plaform [ROM](/cars/rom/rom)
 
-| **Attachment:** | **Modify:** | **Size:** | **Date:** | **Who:** | **Comment:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [XE5ECU.jpg](XE5ECU.jpg) | mod | 216257 | 18 Dec 2003 - 21:42 | The Admin | Nico's picture of the cover of a XE5 | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [XE5Inside.jpg](XE5Inside.jpg) | mod | 246069 | 18 Dec 2003 - 21:43 | The Admin | Nico's picture of the insides of a XE5 |
+
+<figure>
+    <img src="XE5ECU.jpg" alt="Nico&apos;s picture of the cover of a XE5">
+    <figcaption>Nico's picture of the cover of a XE5</figcaption>
+</figure>
+
+<figure>
+    <img src="XE5Inside.jpg" alt="Nico&apos;s picture of the insides of a XE5">
+    <figcaption>Nico's picture of the insides of a XE5</figcaption>
+</figure>

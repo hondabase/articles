@@ -24,4 +24,23 @@ Most those [ECU](/cars/ecu/ecu)s were made by Matsushita. Some of them (86-87?)u
 
 The California Emissions PJ0 were OKI `80C154` based and always use a 128k External [ROM](/cars/rom/rom)
 
-| **Attachment:** | **Modify:** | **Size:** | **Date:** | **Who:** | **Comment:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [PJ0-A03.jpg](PJ0-A03.jpg) | mod | 282684 | 30 Jan 2006 - 06:54 | carotman | Canadian 89 Accord [ECU](/cars/ecu/ecu). Made by Matsushita | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [PJ0-604-2.JPG](PJ0-604-2.JPG) | mod | 588048 | 30 Jan 2006 - 07:13 | carotman | [EDM](/cars/wiring/edm) A20A4 no EGR and no O2 sensor from an 89 EX-i | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [PJ0\\_L022.JPG](PJ0_L022.JPG) | mod | 212536 | 08 Feb 2006 - 22:55 | carotman | California Emissions PJ0 [ECU](/cars/ecu/ecu). OKI based | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [PJ0-666-front.jpg](PJ0-666-front.jpg) | mod | 797657 | 29 Dec 2006 - 20:22 | carotman | [USDM](/cars/sensors/usdm) 86-87 Prelude SI PJ0 [ECU](/cars/ecu/ecu) |
+
+<figure>
+    <img src="PJ0-A03.jpg" alt="Canadian 89 Accord [ECU](/cars/ecu/ecu). Made by Matsushita">
+    <figcaption>Canadian 89 Accord [ECU](/cars/ecu/ecu). Made by Matsushita</figcaption>
+</figure>
+
+<figure>
+    <img src="PJ0-604-2.JPG" alt="[EDM](/cars/wiring/edm) A20A4 no EGR and no O2 sensor from an 89 EX-i">
+    <figcaption>[EDM](/cars/wiring/edm) A20A4 no EGR and no O2 sensor from an 89 EX-i</figcaption>
+</figure>
+
+<figure>
+    <img src="PJ0_L022.JPG" alt="California Emissions PJ0 [ECU](/cars/ecu/ecu). OKI based">
+    <figcaption>California Emissions PJ0 [ECU](/cars/ecu/ecu). OKI based</figcaption>
+</figure>
+
+<figure>
+    <img src="PJ0-666-front.jpg" alt="[USDM](/cars/sensors/usdm) 86-87 Prelude SI PJ0 [ECU](/cars/ecu/ecu)">
+    <figcaption>[USDM](/cars/sensors/usdm) 86-87 Prelude SI PJ0 [ECU](/cars/ecu/ecu)</figcaption>
+</figure>
