@@ -1,5 +1,5 @@
 ---
-summary: 'Fuel "Octane" is a measure of gasoline''s resistance to Pre Ignition. the Gasoline FAQ explains all you ever wanted to know about gasoline, including a...'
+summary: 'Understanding fuel octane ratings and their impact on Honda engine performance, knock resistance, and ignition timing optimization.'
 tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]

@@ -1,13 +1,9 @@
 ---
-summary: 'P2T 99+ OBD2 Civic Si Coupe'
+summary: 'Especificações técnicas e visão geral da aplicação para a ECU Honda Civic Si 99+.'
+tags: [ecu, reference, sensors]
 applies_to:
   obd: [2]
-brand: Honda
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
 sources:
   - name: 'pgmfi.org wiki'
     title: P2T
@@ -15,6 +11,7 @@ sources:
     license: 'CC BY-NC-SA 1.0'
     license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'
     adapted: true
+brand: Honda
 ---
 
 # P2T

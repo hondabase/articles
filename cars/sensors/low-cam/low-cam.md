@@ -20,4 +20,4 @@ sources:
 In a VTEC motor, the [Low Cam](/cars/sensors/low-cam) is used at low [RPM](/cars/sensors/rpm)s. Generally, this Cam Shaft is optimized for fuel economy and a smooth idle. See also: [High Cam](/cars/sensors/high-cam)
 
 - [Low Cam](/cars/sensors/low-cam) of VTEC camshaft: 
-     ![vteclow.gif](vteclow.gif)
+ ![vteclow.gif](vteclow.gif)

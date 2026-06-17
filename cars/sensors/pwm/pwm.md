@@ -1,5 +1,5 @@
 ---
-summary: 'see Pulse Width Modulation'
+summary: 'Explanation of Pulse Width Modulation (PWM) and its use in Honda ECUs for controlling solenoids like the IACV, boost controllers, and VTEC.'
 tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]

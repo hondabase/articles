@@ -1,13 +1,10 @@
 ---
-summary: 'PT5 90-93 OBD1 EDM Accord SOHC sem VTEC F20A7. Esta ECU partilha a mesma placa de circuito impresso com a ECU Accord PT3 (02D011901504).'
+summary: 'Análise da ECU Honda Accord EDM OBD1 PT5, abrangendo a sua arquitetura de PCB partilhada com outras unidades Accord.'
+tags: [ecu, reference, sensors]
 applies_to:
   obd: [1]
   brand: Honda
 complexity: intermediate
-tags:
-  - ecu
-  - reference
-  - sensors
 sources:
   - name: 'pgmfi.org wiki'
     title: PT5

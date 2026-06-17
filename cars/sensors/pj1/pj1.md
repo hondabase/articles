@@ -20,13 +20,12 @@ sources:
 
 PJ1 : 85-87 [EDM](/cars/wiring/edm) Integra 1.6i-16, CRX MK1 1.6i-16 Thanks to Mark Lamond for the scans ([EDM](/cars/wiring/edm))
 
-
 <figure>
-    <img src="PJ1-752_component.jpg" alt="PJ1 Component (top) side scan">
-    <figcaption>PJ1 Component (top) side scan</figcaption>
+ <img src="PJ1-752_component.jpg" alt="PJ1 Component (top) side scan">
+ <figcaption>PJ1 Component (top) side scan</figcaption>
 </figure>
 
 <figure>
-    <img src="PJ1-752_solder.jpg" alt="PJ1 Solder (bottom) side scan">
-    <figcaption>PJ1 Solder (bottom) side scan</figcaption>
+ <img src="PJ1-752_solder.jpg" alt="PJ1 Solder (bottom) side scan">
+ <figcaption>PJ1 Solder (bottom) side scan</figcaption>
 </figure>

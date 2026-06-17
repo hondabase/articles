@@ -1,11 +1,9 @@
 ---
-summary: 'A "Octanagem" do combustível é uma medida da resistência da gasolina à pré-ignição. As Perguntas Frequentes (FAQ) sobre Gasolina explicam tudo o que sempre quis saber sobre gasolina, incluindo...'
+summary: 'Compreender os índices de octanagem do combustível e o seu impacto na performance do motor Honda, resistência à detonação e otimização do ponto de ignição.'
+tags: [sensores, referência]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - sensores
-  - referência
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Fuel Octane'

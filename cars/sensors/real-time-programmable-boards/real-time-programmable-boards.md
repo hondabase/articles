@@ -19,6 +19,6 @@ sources:
 
 Boards that allow [Real Time Programming](/cars/sensors/real-time-programming)
 
-####  Hardware that works 
+#### Hardware that works 
 
 - [Easy-RTP v1.0](/cars/rom/easy-rtp-v10) - Dave's single sided adaptation of Doc's original `DS1230Y` based design

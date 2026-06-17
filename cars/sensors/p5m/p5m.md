@@ -1,5 +1,5 @@
 ---
-summary: '37820P5MG61 083100565 EDM Honda Prelude 97 2.2VTI Automatic Board: Denshigiken E2YB 0014FL500000 X1 : 31MHz IC1: OKI M66509 524 (microcontroller) IC2:...'
+summary: 'Hardware analysis and component specifications for the P5M 97+ Honda Prelude 2.2VTi (EDM) OBD2 ECU.'
 tags: [ecu, reference, sensors]
 applies_to:
   obd: [0, 1, 2]

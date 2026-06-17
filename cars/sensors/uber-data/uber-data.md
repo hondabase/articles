@@ -1,5 +1,5 @@
 ---
-summary: 'see Uber Data ERM'
+summary: 'Historical overview of the UberData tuning software, one of the original free platforms for Honda OBD1 ECU remapping.'
 tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]

@@ -1,11 +1,9 @@
 ---
-summary: 'ver Pulse Width Modulation (Modulação por Largura de Pulso)'
+summary: 'Explicação da Modulação por Largura de Pulso (PWM) e a sua utilização nas ECUs Honda para controlar solenoides como a IACV, controladores de pressão de turbo e VTEC.'
+tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - sensors
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: PWM

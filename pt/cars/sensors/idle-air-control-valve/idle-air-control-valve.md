@@ -22,9 +22,9 @@ sources:
 A válvula de controlo de ar do ralenti, ou IACV, regula o ralenti do carro com base na temperatura do líquido de arrefecimento.
 
 - Configurações de ralenti desejado vs. [ECT](/cars/sensors/ect): 
-     ![honda_EACV_target_idle.jpg](honda_EACV_target_idle.jpg)
+ ![honda_EACV_target_idle.jpg](honda_EACV_target_idle.jpg)
 
-Nota: isto é controlado pela [ECU](/cars/ecu/ecu) e pode ser alterado.
+**Nota:** isto é controlado pela [ECU](/cars/ecu/ecu) e pode ser alterado.
 
 ## Resolução de Problemas & Reparação
 

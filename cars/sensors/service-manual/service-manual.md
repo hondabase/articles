@@ -1,5 +1,5 @@
 ---
-summary: 'Helms Manual'
+summary: 'Information on obtaining and using factory service manuals (Helms) for accurate Honda vehicle wiring and mechanical repair.'
 tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]

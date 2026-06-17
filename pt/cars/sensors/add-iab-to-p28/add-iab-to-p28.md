@@ -33,12 +33,17 @@ Embora a ECU Acura P72 controle o solenoide IAB de fábrica, a popular ECU Honda
 Esta é a configuração padrão para conversões (swaps) de USDM OBD1 B18C1 (Integra GS-R). O solenoide IAB é alimentado com +12V constantes sob o capô, e a ECU comuta o Pino **A17** para a Massa (Ground) para ativar as condutas.
 
 ### Componentes a Remover
+
 * **`R135`** (apenas presente nas revisões de placa 11F0/1720 de ECUs automáticas)
+
 * **`R150`** (apenas presente em placas de revisão 1980/LS)
 
 ### Componentes a Adicionar
+
 * **`Q17`** (transístor digital PNP A143): Já presente em placas automáticas USDM 11F0/1720. Se não estiver presente, solde um novo transístor A143 aqui.
+
 * **`Q34`** (transístor NPN D1780 ou C3225): Já presente em placas automáticas USDM 11F0/1720. Se não estiver presente, pode reaproveitar um transístor D1780 da saída do solenoide de purga (Q31) se tiver desativado o controlo de purga (EVAP) no software.
+
 * **Fio Jumper (Shunt)**: Solde um fio jumper do orifício direito de **`R135`** (o lado do transístor) a **`D13`** (o lado da seta do díodo).
 
 ![USDM OBD1 IAB Jumper Wire](P28_IAB_OBD1.jpg)
@@ -51,12 +56,17 @@ Esta é a configuração padrão para conversões (swaps) de USDM OBD1 B18C1 (In
 Os motores JDM B18C e os veículos OBD2 ligam um dos lados do solenoide IAB diretamente à Massa. A ECU deve enviar um **sinal de +12V** no Pino **A19** para ativar o solenoide. Isto requer a adição de um chip de comutação do lado de alta tensão ou **High-Side Switch** (localização `515X` / `IC15`) na placa.
 
 ### Componentes a Remover
+
 * **`Q34`** (Corte o pino de controlo do driver `IC15` curto, passe o fio de sinal através do orifício e solde-o ao orifício de controlo de `Q34`).
 
 ### Componentes a Adicionar
+
 * **`IC15`** (IC High-Side Switch 515X): Solde o chip 515X no lugar, na localização `IC15`.
+
 * **`C61`** (Condensador de Tântalo de 1&mu;F 35V): Solde este condensador no lugar para filtrar a tensão de alimentação do high-side switch.
+
 * **`Q17`** (transístor A143): Se não estiver presente na sua placa, adicione um novo transístor A143.
+
 * **Fio de Sinal**: Ligue um fio do pino de controlo cortado do `IC15` ao pad de controlo de `Q34`.
 
 ### Modificações na Placa (High-Side Switch)
@@ -73,5 +83,5 @@ Os motores JDM B18C e os veículos OBD2 ligam um dos lados do solenoide IAB dire
 
 Como o software padrão do Civic P28 não possui parâmetros de código para monitorizar ou controlar IABs, modificar a placa física é apenas metade da batalha. Deve configurar o seu software de ROM para o suportar:
 
-1. **Base de Código P72**: Grave uma ROM modificada de Acura Integra P72 (que suporta nativamente IABs) na sua EPROM com chip. Se o seu motor não tiver um sensor de detonação (knock sensor), deve utilizar um ficheiro .bin com a rotina do knock sensor desativada (caso contrário a ECU acionará o Código de Erro 23).
+1. **Base de Código P72**: Grave uma ROM modificada de Acura Integra P72 (que suporta nativamente IABs) na sua EPROM com chip. Se o seu motor não tiver um sensor de detonação (knock sensor), deve utilizar um ficheiro.bin com a rotina do knock sensor desativada (caso contrário a ECU acionará o Código de Erro 23).
 2. **Editor de ROM Crome**: Se estiver a usar uma base de código P28 personalizada em Crome, deve ativar manualmente o **IAB Plugin** e definir o limite de rotação desejado para ativação (normalmente 5.750 RPM).

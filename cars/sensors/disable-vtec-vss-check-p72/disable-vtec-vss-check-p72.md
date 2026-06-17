@@ -18,7 +18,11 @@ sources:
 
 # Disable VTEC VSS Check P72
 
-How to disable 25mph [VSS](/cars/sensors/vss) check for VTEC engagement on P72: Author: Speedz Date: 08-23-03 15:59 here's where its at in the p72 :)
+How to disable 25mph [VSS](/cars/sensors/vss) check for VTEC engagement on P72:
+
+**Author:** Speedz
+
+**Date:** 08-23-03 15:59 here's where its at in the p72 :)
 
 - 11FD- `C5` 22 09 : RB 22.1
 - 1200- CB 24 : SJ 1226

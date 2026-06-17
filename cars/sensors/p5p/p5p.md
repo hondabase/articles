@@ -1,5 +1,5 @@
 ---
-summary: 'P5P 9700 OBD2 Prelude TypeS (JDM)'
+summary: 'Overview of the P5P JDM Honda Prelude Type-S OBD2 ECU, including its unique hardware features and performance mapping.'
 tags: [ecu, reference, sensors]
 applies_to:
   obd: [2]

@@ -22,4 +22,4 @@ In 8-bit OBD1 Honda ECUs, the ignition advance value (in degrees) is calculated 
 `Ignition Advance (Degrees) = (v - 24) / 4`
 
 Where:
-*   `v` is the decimal representation of the byte at the ignition map cell.
+* `v` is the decimal representation of the byte at the ignition map cell.

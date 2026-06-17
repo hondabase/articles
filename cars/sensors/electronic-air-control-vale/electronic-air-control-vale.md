@@ -1,5 +1,5 @@
 ---
-summary: 'See : Idle Air Control Valve'
+summary: 'A detailed explanation of the Electronic Air Control Valve (EACV), also known as the Idle Air Control Valve (IACV), and its function in maintaining Honda idle speed.'
 tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]
@@ -17,4 +17,4 @@ sources:
 
 # Electronic Air Control Vale
 
-See : [Idle Air Control Valve](/cars/sensors/idle-air-control-valve)
+**See :** [Idle Air Control Valve](/cars/sensors/idle-air-control-valve)

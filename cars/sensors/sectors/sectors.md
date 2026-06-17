@@ -1,5 +1,5 @@
 ---
-summary: 'A sector is a block of data. It can vary in size.'
+summary: 'Understanding memory sectors in EPROMs and Flash chips used for Honda ECU tuning and data storage.'
 tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]

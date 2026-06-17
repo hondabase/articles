@@ -1,5 +1,5 @@
 ---
-summary: 'See Pressure Atmosphere'
+summary: 'Technical guide to the Atmospheric Pressure (PA) sensor in Honda ECUs, explaining its role in altitude compensation and fueling adjustments.'
 tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]

@@ -23,4 +23,5 @@ Nas ECUs Honda OBD0, o valor em byte bruto armazenado na ROM é convertido em gr
 `Avanço de Ignição (Graus) = (Valor_Decimal - 15) * 0.36`
 
 Onde:
-*   `Valor_Decimal` é o valor em base 10 do byte localizado no offset do mapa de ignição (frequentemente referido como o valor no endereço).
+
+* `Valor_Decimal` é o valor em base 10 do byte localizado no offset do mapa de ignição (frequentemente referido como o valor no endereço).

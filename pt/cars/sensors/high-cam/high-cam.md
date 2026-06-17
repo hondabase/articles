@@ -20,7 +20,7 @@ sources:
 Num motor [VTEC](/cars/sensors/vtec), a [High Cam](/cars/sensors/high-cam) (came de altas) é utilizada a [RPM](/cars/sensors/rpm)s mais elevadas. Esta árvore de cames (Cam Shaft) é geralmente otimizada para potência e RPMs mais elevadas. Ver também: [Low Cam](/cars/sensors/low-cam)
 
 - [High Cam](/cars/sensors/high-cam) da árvore de cames VTEC: 
-     ![vtechigh.gif](vtechigh.gif)
+ ![vtechigh.gif](vtechigh.gif)
 
 | **Anexo:** | **Modificar:** | **Tamanho:** | **Data:** | **Quem:** | **Comentário:** |
 | :--- | :--- | :--- | :--- | :--- | :--- |

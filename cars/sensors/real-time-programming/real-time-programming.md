@@ -19,7 +19,7 @@ sources:
 
 Used for tuning your ECU and making changes to it on the fly.
 
-###  Hardware 
+### Hardware 
 
 - [Easy-RTP v1.0](/cars/rom/easy-rtp-v10) - Dave's single sided adaptation of Doc's original `DS1230Y` based design.
 - [Easy-RTP Installation](/cars/rom/easy-rtp-install) - Hardware mods for installation of the Easy-RtpV1.0 board on an [OBD](/cars/wiring/obd)1 [ECU](/cars/ecu/ecu).

@@ -1,11 +1,9 @@
 ---
-summary: 'Temperatura do Líquido de Refrigeração do Motor'
+summary: 'Visão geral técnica do sensor de Temperatura do Líquido de Arrefecimento do Motor (ECT) em motores Honda, incluindo o seu papel no combustível, ponto de ignição e enriquecimento no arranque a frio.'
+tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - sensors
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: ECT

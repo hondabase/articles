@@ -1,12 +1,9 @@
 ---
-summary: 'Ver: Rotinas OBD1 Civ Teg ou ...'
+summary: 'Uma coleção de rotinas em linguagem assembly Oki 66K e trechos de código para modificar o firmware das ECUs Honda OBD1 e OBD2.'
+tags: [ecu, reference, sensors]
 applies_to:
   obd: [1]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
 sources:
   - name: 'pgmfi.org wiki'
     title: '66k Assembler Routines'
@@ -18,4 +15,4 @@ sources:
 
 # Rotinas Assembly 66k
 
-Ver: [Rotinas OBD1 Civ Teg](/cars/rom/obd1-civ-teg-routines) ou ...
+**Ver:** [Rotinas OBD1 Civ Teg](/cars/rom/obd1-civ-teg-routines) ou...

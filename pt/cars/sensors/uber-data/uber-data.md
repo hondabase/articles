@@ -1,11 +1,9 @@
 ---
-summary: 'ver Uber Data ERM'
+summary: 'Visão histórica do software de afinação UberData, uma das plataformas gratuitas originais para a reprogramação de ECUs Honda OBD1.'
+tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - sensors
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Uber Data'

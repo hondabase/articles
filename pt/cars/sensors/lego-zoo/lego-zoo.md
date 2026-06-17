@@ -1,11 +1,9 @@
 ---
-summary: 'Tento ser porreiro... http://web.archive.org/web/20050205083030/http://home.insightbb.com:80/~legoz81/ [email protected] Lego Z81 no site, vai buscar o mIRC, entra na EFNet e faz /j #pgmfi.org.'
+summary: 'Uma página histórica da comunidade dedicada aos primórdios da wiki PGMFI.org e aos colaboradores que ajudaram a construir a base de conhecimentos de afinação Honda.'
+tags: [sensores, referência]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - sensores
-  - referência
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Lego Zoo'

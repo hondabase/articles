@@ -20,11 +20,13 @@ sources:
 The PW0 Engine Control Unit (ECU) is a classic OBD0 controller equipped in JDM (Japanese Domestic Market) and European-market Hondas from 1989 to 1991. Sourced from the JDM Civic SiR (EF9), CRX SiR (EF8), and Integra XSi/RSi (DA6), the PW0 controls the first-generation DOHC VTEC 1.6L B16A engine.
 
 ## Overview
+
 As one of Honda's earliest VTEC ECUs, the PW0 features a robust internal layout that includes dual knock sensor inputs (JDM versions) and uses an OKI-based microcontroller architecture. Like the similar [PR3 ECU](/cars/sensors/pr3), the PW0 is highly popular among enthusiasts restoring or tuning 4th-generation Civics and CRXs.
 
 This guide lists the critical ROM address locations for modifying parameters (such as checksums, VTEC crossovers, and rev limits) on both JDM and European-spec PW0 ROMs.
 
 ### ECU Board Scans & Hardware
+
 For hardware repairs or socketing verification, refer to these board scans:
 - [PW0 Component View 1](PW0-000_component1.jpeg)
 - [PW0 Component View 2](PW0-000_component2.jpeg)
@@ -34,6 +36,7 @@ For hardware repairs or socketing verification, refer to these board scans:
 ---
 
 ## JDM PW0 ROM Address Map
+
 Below are the hex address offsets within the EEPROM for JDM PW0 calibrations (e.g., standard PW0-000 ROMs):
 
 | Location | Bytes | Description | Notes |
@@ -56,6 +59,7 @@ Below are the hex address offsets within the EEPROM for JDM PW0 calibrations (e.
 ---
 
 ## European PW0 ROM Address Map
+
 Below are the hex address offsets within the EEPROM for European-spec PW0 calibrations:
 
 | Location | Bytes | Description | Notes |

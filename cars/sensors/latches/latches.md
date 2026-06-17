@@ -1,5 +1,5 @@
 ---
-summary: 'A logic gate that preserves the state of IO lines'
+summary: 'Technical explanation of address latches (e.g., 74HC373) used in Honda OBD1 ECUs to interface the MCU with external EPROM memory.'
 tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]

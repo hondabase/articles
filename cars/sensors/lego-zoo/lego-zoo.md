@@ -1,5 +1,5 @@
 ---
-summary: 'I try to be cool... http://web.archive.org/web/20050205083030/http://home.insightbb.com:80/~legoz81/ [email protected] Lego Z81 on the site go grab mIRC get on EFNet and /j pgmfi.'
+summary: 'A historical community page dedicated to the early days of the PGMFI.org wiki and the contributors who helped build the Honda tuning knowledgebase.'
 tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]

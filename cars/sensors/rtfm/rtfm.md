@@ -1,5 +1,5 @@
 ---
-summary: 'RTFM is a acronym for "Read The Fucking Manual". If you are told this... you should probbabally do some searching around WIKI and the forums , because...'
+summary: 'A humorous but important reminder to consult the available documentation and manuals before performing complex Honda ECU modifications.'
 tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]

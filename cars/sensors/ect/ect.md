@@ -1,5 +1,5 @@
 ---
-summary: 'Engine Coolant Temperature'
+summary: 'Technical overview of the Engine Coolant Temperature (ECT) sensor in Honda engines, including its role in fueling, ignition timing, and cold start enrichment.'
 tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]

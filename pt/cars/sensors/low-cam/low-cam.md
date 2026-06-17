@@ -20,6 +20,6 @@ sources:
 Num motor VTEC, a [Cames Baixa (Low Cam)](/cars/sensors/low-cam) é utilizada em [RPM](/cars/sensors/rpm)s baixas. Geralmente, esta Árvore de Cames é otimizada para economia de combustível e um ralenti estável e suave. Ver também: [Cames Alta (High Cam)](/cars/sensors/high-cam)
 
 - [Cames Baixa (Low Cam)](/cars/sensors/low-cam) da árvore de cames VTEC: 
-     ![vteclow.gif](vteclow.gif)
+ ![vteclow.gif](vteclow.gif)
 
 | **Anexo (Attachment):** | **Modificar:** | **Tamanho:** | **Data:** | **Quem:** | **Comentário:** | | :--- | :--- | :--- | :--- | :--- | :--- | | ![](/pgmfi/wiki/assets/icn/bmp.gif) [vteclow.gif](vteclow.gif) | mod | 9775 | 30 Mar 2004 - 08:06 | tekphobia | [Cames Baixa (Low Cam)](/cars/sensors/low-cam) da árvore de cames VTEC |

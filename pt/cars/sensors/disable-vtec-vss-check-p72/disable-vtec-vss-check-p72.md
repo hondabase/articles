@@ -18,7 +18,11 @@ sources:
 
 # Desativar Verificação de VSS do VTEC na P72
 
-Como desativar a verificação de VSS (sensor de velocidade do veículo) de 25 mph para ativação do VTEC na P72: Autor: Speedz Data: 23-08-03 15:59 aqui é onde se encontra na p72 :)
+Como desativar a verificação de VSS (sensor de velocidade do veículo) de 25 mph para ativação do VTEC na P72:
+
+**Autor:** Speedz
+
+**Data:** 23-08-03 15:59 aqui é onde se encontra na p72 :)
 
 - 11FD- `C5` 22 09 : RB 22.1
 - 1200- CB 24 : SJ 1226

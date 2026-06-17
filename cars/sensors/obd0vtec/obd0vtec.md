@@ -22,4 +22,5 @@ In OBD0 and OBD1 Honda VTEC ECUs, the VTEC engagement and disengagement threshol
 `RPM = (Decimal_Value - 128) * 62.52`
 
 Where:
-*   `Decimal_Value` is the base-10 value of the byte located at the VTEC RPM activation/deactivation addresses in the ROM.
+
+* `Decimal_Value` is the base-10 value of the byte located at the VTEC RPM activation/deactivation addresses in the ROM.

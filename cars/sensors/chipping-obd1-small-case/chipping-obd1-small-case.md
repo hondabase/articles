@@ -1,5 +1,5 @@
 ---
-summary: 'For a write up go to Chipping JDMP30'
+summary: 'Step-by-step instructions for socketing and chipping small-case Honda OBD1 ECUs, commonly found in JDM and some European models.'
 tags: [ecu, reference, sensors]
 applies_to:
   obd: [1]

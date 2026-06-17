@@ -19,4 +19,4 @@ sources:
 
 [Páginas Órfãs](/cars/sensors/orphaned-pages) são aquelas páginas que não têm nenhuns links a apontar para elas. ---
 
-Info de Páginas Órfãs||=hits,pagename,mtime?>
+Info de Páginas Órfãs||=hits, pagename, mtime?>

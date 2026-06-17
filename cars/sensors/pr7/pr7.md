@@ -1,5 +1,5 @@
 ---
-summary: 'PR7 9194 OBD1 NSX'
+summary: 'Hardware overview and technical specifications for the PR7 91-94 Honda NSX OBD1 ECU.'
 tags: [ecu, reference, sensors]
 applies_to:
   obd: [1]

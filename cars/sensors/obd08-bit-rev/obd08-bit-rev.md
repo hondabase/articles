@@ -22,4 +22,4 @@ For OBD0 Honda VTEC ECUs, the rev limit thresholds and recovery/restart speeds a
 `RPM = 1848000 / Decimal_Value`
 
 Where:
-*   `Decimal_Value` is the base-10 value of the byte at the rev limit address.
+* `Decimal_Value` is the base-10 value of the byte at the rev limit address.

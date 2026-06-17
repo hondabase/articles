@@ -1,5 +1,5 @@
 ---
-summary: 'bleh fuckup'
+summary: 'Learn how to disable the VTEC Vehicle Speed Sensor (VSS) check in Honda OBD1 ECUs, enabling VTEC engagement without a working speed signal.'
 tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]

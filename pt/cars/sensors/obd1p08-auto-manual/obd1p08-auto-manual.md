@@ -1,13 +1,10 @@
 ---
-summary: 'Valores de RP17 e RP18 : : Automático RP17 2.7K RP18 4.7K isto é para placa c/ ref: 02d015501500 Auto para Manual: remover rp17, remover rp18, adicionar uma ponte em rp18...'
+summary: 'Guia técnico para converter ECUs Honda P08 OBD1 automáticas para configurações de transmissão manual, modificando os valores internos da placa de resistências.'
+tags: [ecu, reference, sensors]
 applies_to:
   obd: [1]
   brand: Honda
 complexity: intermediate
-tags:
-  - ecu
-  - reference
-  - sensors
 sources:
   - name: 'pgmfi.org wiki'
     title: 'OBD1P08 Auto Manual'

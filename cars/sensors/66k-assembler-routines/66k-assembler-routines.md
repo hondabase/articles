@@ -1,5 +1,5 @@
 ---
-summary: 'See: OBD1 Civ Teg Routines or ...'
+summary: 'A collection of Oki 66K assembly language routines and code snippets for modifying Honda OBD1 and OBD2 ECU firmware.'
 tags: [ecu, reference, sensors]
 applies_to:
   obd: [1]
@@ -17,4 +17,4 @@ sources:
 
 # 66k Assembler Routines
 
-See: [OBD1 Civ Teg Routines](/cars/rom/obd1-civ-teg-routines) or ...
+**See:** [OBD1 Civ Teg Routines](/cars/rom/obd1-civ-teg-routines) or...

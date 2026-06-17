@@ -19,4 +19,4 @@ sources:
 
 [Orphaned Pages](/cars/sensors/orphaned-pages) are those pages which don't have any links to them. ---
 
-Orphaned Pages info||=hits,pagename,mtime?>
+Orphaned Pages info||=hits, pagename, mtime?>

@@ -1,5 +1,5 @@
 ---
-summary: 'Input / Output lets a MCU talk to other things'
+summary: 'Basic overview of Input/Output (I/O) ports in Honda ECU microcontrollers and how they interface with engine sensors and actuators.'
 tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]

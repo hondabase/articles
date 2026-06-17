@@ -1,5 +1,5 @@
 ---
-summary: 'P0C 9295 OBD1 Accord 2.2L (??? F22B DOHC nonvtec)'
+summary: 'Technical specifications and pinout information for the P0C 92-95 Honda Accord 2.2L OBD1 ECU.'
 tags: [ecu, reference, sensors]
 applies_to:
   obd: [1]

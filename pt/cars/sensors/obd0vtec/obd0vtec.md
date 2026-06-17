@@ -23,4 +23,5 @@ Nas ECUs Honda VTEC OBD0 e OBD1, os limites de ativação (engagement) e desativ
 `RPM = (Valor_Decimal - 128) * 62.52`
 
 Onde:
-*   `Valor_Decimal` é o valor na base 10 (decimal) do byte localizado nos endereços de ativação/desativação de RPM do VTEC na ROM.
+
+* `Valor_Decimal` é o valor na base 10 (decimal) do byte localizado nos endereços de ativação/desativação de RPM do VTEC na ROM.

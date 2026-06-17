@@ -23,4 +23,4 @@ Nas ECUs Honda OBD1 de 8 bits, o valor do avanço de ignição (em graus) é cal
 `Avanço de Ignição (Graus) = (v - 24) / 4`
 
 Onde:
-*   `v` é a representação decimal do byte na célula do mapa de ignição.
+* `v` é a representação decimal do byte na célula do mapa de ignição.

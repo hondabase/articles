@@ -23,4 +23,4 @@ Para as ECUs Honda OBD0 VTEC, os limites de rotação (rev limit) e as rotaçõe
 `RPM = 1848000 / Valor_Decimal`
 
 Onde:
-*   `Valor_Decimal` é o valor em base 10 do byte no endereço do limite de rotação.
+* `Valor_Decimal` é o valor em base 10 do byte no endereço do limite de rotação.

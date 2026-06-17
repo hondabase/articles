@@ -28,12 +28,14 @@ A Unidade de Controlo do Motor (ECU) PR3 é uma unidade de controlo proeminente 
 ## Identificação OBD0 vs. OBD1 PR3
 
 ### OBD0 PR3 (1989–1991)
+
 - **Aplicação:** Proveniente de modelos JDM B16A de primeira geração (Civic EF9, CRX EF8, Integra DA6).
 - **Hardware:** Apresenta o microcontrolador OKI M66x301 e placa dupla de sensor de detonação (knock sensor). Utiliza a mesma estrutura de código que a [ECU PW0](/cars/sensors/pw0).
 - **Jumper de Caixa Automática/Manual:** Verifique o esquema da placa para identificação do jumper de transmissão:
-  [Scan de Identificação do Jumper Auto/Manual do OBD0 PR3](OBD0_pr3-auto-manual.jpg)
+ [Scan de Identificação do Jumper Auto/Manual do OBD0 PR3](OBD0_pr3-auto-manual.jpg)
 
 ### OBD1 PR3 (1992–1993)
+
 - **Aplicação:** Proveniente de modelos JDM Integra RSi e XSi de 1992–1993 (segunda geração B16A).
 - **Hardware:** Construída na mesma placa-mãe padronizada das ECUs [P28](/cars/sensors/p28) e [P30](/cars/sensors/p30) (normalmente com o número de peça de placa de circuito `02D01720-1500`).
 - **Scan do Esquema:** [Scan do Esquema da Placa OBD1 PR3](https://web.archive.org/web/http://pgmfi.org/resources/FAQ/scans/PR3-OBD1.jpg)
@@ -41,6 +43,7 @@ A Unidade de Controlo do Motor (ECU) PR3 é uma unidade de controlo proeminente 
 ---
 
 ## Mapa de Endereços da ROM OBD0 PR3
+
 Abaixo encontram-se os desvios (offsets) de endereços hexadecimais no chip EEPROM de 28 pinos para a versão OBD0 da ECU PR3:
 
 | Localização | Bytes | Descrição | Notas |
@@ -63,6 +66,7 @@ Abaixo encontram-se os desvios (offsets) de endereços hexadecimais no chip EEPR
 ---
 
 ## Esquemas de Placa de Circuito da ECU
+
 Consulte os seguintes scans de placa de alta resolução para diagnóstico e reparação da PR3:
 
 ![JDM PR3 J01 OBD0 ECU top board view](pr3-j01-1.JPG)

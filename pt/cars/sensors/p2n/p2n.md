@@ -1,13 +1,10 @@
 ---
-summary: 'P2N Civic HX Coupe 96+ OBD2'
+summary: 'Especificações técnicas e visão geral da aplicação para a ECU Honda Civic HX 96+.'
+tags: [ecu, reference, sensors]
 applies_to:
   obd: [2]
   brand: Honda
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
 sources:
   - name: 'pgmfi.org wiki'
     title: P2N

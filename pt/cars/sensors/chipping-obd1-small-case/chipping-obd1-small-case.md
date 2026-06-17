@@ -1,12 +1,9 @@
 ---
-summary: 'Para ler o artigo completo, consulte Chipping JDMP30'
+summary: 'Instruções passo a passo para a instalação de sockets e reprogramação de ECUs Honda OBD1 de caixa pequena, comummente encontradas em modelos JDM e alguns europeus.'
+tags: [ecu, reference, sensors]
 applies_to:
   obd: [1]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Chipping OBD1 Small Case'

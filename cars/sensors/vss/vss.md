@@ -1,5 +1,5 @@
 ---
-summary: 'See Vehicle Speed Sensor'
+summary: 'Technical guide to the Vehicle Speed Sensor (VSS) in Honda vehicles, covering signal types, troubleshooting, and its impact on VTEC.'
 tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]

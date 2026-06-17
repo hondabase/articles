@@ -20,4 +20,4 @@ sources:
 in a [VTEC](/cars/sensors/vtec) motor, the [High Cam](/cars/sensors/high-cam) is used at higher [RPM](/cars/sensors/rpm)s. This Cam Shaft is generally optimized for power and higher-RPMs. See also: [Low Cam](/cars/sensors/low-cam)
 
 - [High Cam](/cars/sensors/high-cam) of VTEC camshaft: 
-     ![vtechigh.gif](vtechigh.gif)
+ ![vtechigh.gif](vtechigh.gif)

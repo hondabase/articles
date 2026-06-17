@@ -21,9 +21,9 @@ sources:
 The Idle air control valve, or IACV regulates the car's idle based on the coolant temperature.
 
 - Target idle settings vs. [ECT](/cars/sensors/ect): 
-     ![honda_EACV_target_idle.jpg](honda_EACV_target_idle.jpg)
+ ![honda_EACV_target_idle.jpg](honda_EACV_target_idle.jpg)
 
-Note: this is [ECU](/cars/ecu/ecu) controlled and can be altered.
+**Note:** this is [ECU](/cars/ecu/ecu) controlled and can be altered.
 
 ## Troubleshooting & Repair
 

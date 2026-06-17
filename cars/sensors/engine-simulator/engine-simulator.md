@@ -1,5 +1,5 @@
 ---
-summary: 'See Engine Sim'
+summary: 'Guide to using or building an engine simulator to bench-test Honda OBD0 and OBD1 ECUs without a vehicle.'
 tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]

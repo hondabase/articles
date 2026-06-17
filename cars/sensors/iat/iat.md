@@ -1,5 +1,5 @@
 ---
-summary: 'See Intake Air Temperature Sensor'
+summary: 'Technical overview of the Intake Air Temperature (IAT) sensor and its critical role in air density calculations and fueling corrections for Honda ECUs.'
 tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]

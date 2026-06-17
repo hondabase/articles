@@ -1,5 +1,5 @@
 ---
-summary: 'see Uber Data ERM'
+summary: 'Information on the UberData Engine Management (ERM) system, a legacy tuning solution for Honda OBD1 ECUs.'
 tags: [sensors, reference]
 applies_to:
   obd: [0, 1, 2]

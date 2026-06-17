@@ -1,13 +1,10 @@
 ---
-summary: 'P5P 97-00 OBD2 Prelude Type-S (JDM)'
+summary: 'Visão geral da ECU Honda Prelude Type-S JDM OBD2 P5P, incluindo as suas características únicas de hardware e mapeamento de performance.'
+tags: [ecu, reference, sensors]
 applies_to:
   obd: [2]
   brand: Honda
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
 sources:
   - name: 'pgmfi.org wiki'
     title: P5P

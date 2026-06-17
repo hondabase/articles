@@ -1,11 +1,9 @@
 ---
-summary: 'RTFM é uma sigla para "Read The Fucking Manual" (Lê o P@rra do Manual). Se te disserem isto... provavelmente deves pesquisar na WIKI e nos fóruns, porque...'
+summary: 'Um lembrete humorístico mas importante para consultar a documentação e os manuais disponíveis antes de realizar modificações complexas em ECUs Honda.'
+tags: [sensores, referência]
 applies_to:
   obd: [0, 1, 2]
 complexity: beginner
-tags:
-  - sensores
-  - referência
 sources:
   - name: 'pgmfi.org wiki'
     title: RTFM

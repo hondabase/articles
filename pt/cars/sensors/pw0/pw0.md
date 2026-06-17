@@ -21,11 +21,13 @@ sources:
 A Unidade de Controlo do Motor (ECU) PW0 é um controlador clássico OBD0 que equipou os Hondas do mercado doméstico japonês (JDM) e europeu de 1989 a 1991. Proveniente do Civic SiR JDM (EF9), CRX SiR (EF8) e Integra XSi/RSi (DA6), a PW0 controla o motor B16A de 1.6L DOHC VTEC de primeira geração.
 
 ## Visão Geral
+
 Sendo uma das primeiras ECUs VTEC da Honda, a PW0 apresenta um layout interno robusto que inclui entradas duplas para sensores de detonação (nas versões JDM) e utiliza uma arquitetura de microcontrolador baseada em OKI. À semelhança da ECU [PR3](/cars/sensors/pr3) similar, a PW0 é altamente popular entre entusiastas que restauram ou afinam (tuning) Civics e CRXs de 4.ª geração.
 
 Este guia lista os endereços ROM críticos para modificar parâmetros (tais como checksums, transições de VTEC e limites de rotação) tanto em ROMs PW0 JDM como de especificação europeia.
 
 ### Imagens da Placa da ECU & Hardware
+
 Para reparações de hardware ou verificação de encaixe (socketing), consulte estas imagens da placa:
 - [Vista de Componentes PW0 1](PW0-000_component1.jpeg)
 - [Vista de Componentes PW0 2](PW0-000_component2.jpeg)
@@ -35,6 +37,7 @@ Para reparações de hardware ou verificação de encaixe (socketing), consulte 
 ---
 
 ## Mapa de Endereços ROM da PW0 JDM
+
 Abaixo estão os desvios (offsets) de endereços hexadecimais na EEPROM para calibrações de PW0 JDM (ex.: ROMs PW0-000 padrão):
 
 | Localização | Bytes | Descrição | Notas |
@@ -57,6 +60,7 @@ Abaixo estão os desvios (offsets) de endereços hexadecimais na EEPROM para cal
 ---
 
 ## Mapa de Endereços ROM da PW0 Europeia
+
 Abaixo estão os desvios (offsets) de endereços hexadecimais na EEPROM para calibrações de PW0 de especificação europeia:
 
 | Localização | Bytes | Descrição | Notas |

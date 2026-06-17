@@ -23,11 +23,11 @@ sources:
 
 **Note:** The bastards at honda designated two **very** different [ECU](/cars/ecu/ecu)s with the same designation. Don't mix and match. 
 <figure>
-    <img src="PG7manual.jpg" alt="88-89 Electronic Advance PG7 Manual Transmiission">
-    <figcaption>88-89 Electronic Advance PG7 Manual Transmiission</figcaption>
+ <img src="PG7manual.jpg" alt="88-89 Electronic Advance PG7 Manual Transmiission">
+ <figcaption>88-89 Electronic Advance PG7 Manual Transmiission</figcaption>
 </figure>
 
 <figure>
-    <img src="TJsPG7.jpg" alt="A better picture of the same [ECU](/cars/ecu/ecu) (88-89 PG7 MT)">
-    <figcaption>A better picture of the same [ECU](/cars/ecu/ecu) (88-89 PG7 MT)</figcaption>
+ <img src="TJsPG7.jpg" alt="A better picture of the same [ECU](/cars/ecu/ecu) (88-89 PG7 MT)">
+ <figcaption>A better picture of the same [ECU](/cars/ecu/ecu) (88-89 PG7 MT)</figcaption>
 </figure>

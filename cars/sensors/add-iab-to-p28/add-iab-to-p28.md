@@ -32,12 +32,17 @@ While the Acura P72 ECU controls the IAB solenoid natively, the popular Honda P2
 This is the standard configuration for USDM OBD1 B18C1 (Integra GS-R) swaps. The IAB solenoid is supplied with constant +12V power under the hood, and the ECU switches Pin **A17** to Ground to activate the runners.
 
 ### Components to Remove
+
 * **`R135`** (only present on 11F0/1720 board revisions from automatic ECUs)
+
 * **`R150`** (only present on 1980/LS revision boards)
 
 ### Components to Add
+
 * **`Q17`** (A143 PNP digital transistor): Already present on USDM automatic 11F0/1720 boards. If not present, solder a new A143 transistor here.
+
 * **`Q34`** (D1780 or C3225 NPN transistor): Already present on USDM automatic 11F0/1720 boards. If not present, you can salvage a D1780 transistor from the purge control solenoid output (Q31) if you have disabled purge control in software.
+
 * **Jumper Wire**: Solder a jumper wire from the right hole of **`R135`** (the transistor side) to **`D13`** (the diode arrow side).
 
 ![USDM OBD1 IAB Jumper Wire](P28_IAB_OBD1.jpg)
@@ -50,12 +55,17 @@ This is the standard configuration for USDM OBD1 B18C1 (Integra GS-R) swaps. The
 JDM B18C engines and OBD2 vehicles wire one side of the IAB solenoid directly to Ground. The ECU must output a **+12V signal** on Pin **A19** to activate the solenoid. This requires adding a **High-Side Switch** chip (`515X` / `IC15` location) to the board.
 
 ### Components to Remove
+
 * **`Q34`** (Cut the control leg of the driver `IC15` short, thread the signal wire through the hole, and solder it to the control hole of `Q34`).
 
 ### Components to Add
+
 * **`IC15`** (515X High-Side Switch IC): Solder the 515X chip in place at location `IC15`.
+
 * **`C61`** (1&mu;F 35V Tantalum Capacitor): Solder this capacitor in place to filter the high-side switch supply voltage.
+
 * **`Q17`** (A143 transistor): If not present on your board, add a new A143 transistor.
+
 * **Signal Wire**: Connect a wire from the cut control pin of `IC15` to the control pad of `Q34`.
 
 ### Board Modifications (High-Side Switch)
