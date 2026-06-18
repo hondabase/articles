@@ -37,7 +37,7 @@ Effective technical documentation relies on plainness, simplicity, orderliness, 
 *   **ECU Wirelists:** Use the `wirelist` component for structured pinout data to ensure searchability.
 *   **Image Carousels:** Use carousels for multi-angle views of hardware, ensuring each slide includes descriptive alt text and a caption.
 *   **Widgets:** Integrate standard widgets (e.g., `error-codes`, `wideband-wiring-table`) to provide interactive, up-to-date reference data.
-*   **Partials:** Reuse common technical blocks via partials (e.g., `{{> resistor-color-codes }}`) to maintain consistency across the documentation.
+*   **Partials:** Reuse common technical blocks, such as the resistor color-code reference, to maintain consistency across the documentation.
 
 ## Documentation Maintenance
 When editing existing articles, prioritize the removal of outdated conversational notes and ensure the content aligns with current project standards. Focus on creating content that is high-intent and optimized for search engine discovery.

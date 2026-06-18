@@ -42,4 +42,6 @@ When integrating aftermarket sensors or wideband controllers, refer to the stand
 *   **Shielding:** Use shielded wire for sensitive signals such as the Knock Sensor and O2 sensor inputs to maintain signal integrity.
 
 > [!TIP]
-> For resistor color codes required during ECU hardware modifications, refer to the standard reference: {{> resistor-color-codes }}
+> Resistor color codes used during ECU hardware modifications are included below.
+
+{{> resistor-color-codes }}

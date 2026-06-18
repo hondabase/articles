@@ -24,8 +24,9 @@ This section provides direct access to the most frequently referenced documentat
 ## Hardware and Electrical References
 
 *   **Resistor Color Codes:** Standard reference for identifying resistor values used in ECU modifications and sensor signal conditioning.
-    {{> resistor-color-codes }}
 *   **Sensor Calibration Data:** Voltage-to-value scaling factors for common Honda sensors, including MAP, TPS, and ECT.
+
+{{> resistor-color-codes }}
 
 > [!TIP]
 > Use the search functionality in the navigation bar to find specific chassis or engine-code-related documentation if the resource you require is not listed above.
