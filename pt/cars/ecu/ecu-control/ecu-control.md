@@ -1,11 +1,7 @@
 ---
-summary: "Este artigo foi removido devido a não conformidade com as diretrizes de conteúdo técnico, pois consistia apenas numa referência externa."
-applies_to:
-  obd: [0, 1, 2]
+summary: 'Este artigo foi removido devido a não conformidade com as diretrizes de conteúdo técnico, pois consistia apenas numa referência externa.'
+tags: [non-compliant, removed]
 complexity: beginner
-tags:
-  - non-compliant
-  - removed
 ---
 
 # Conteúdo Removido

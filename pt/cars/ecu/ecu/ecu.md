@@ -1,12 +1,9 @@
 ---
 summary: 'A unidade de controlo do motor (ECU) lê os sensores e controla o combustível, a ignição e o ralenti nos motores Honda PGM-FI.'
+tags: [ecu, pgm-fi]
 applies_to:
-  obd: [0, 1, 2]
   scope: all-honda-cars
 complexity: beginner
-tags:
-  - ecu
-  - pgm-fi
 ---
 
 # ECU

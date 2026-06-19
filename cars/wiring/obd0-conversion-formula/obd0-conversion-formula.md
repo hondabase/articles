@@ -2,7 +2,6 @@
 summary: 'A directory of conversion formulas for OBD0 ECU ROM maps, including scaling factors for RPM, fuel, ignition, and VTEC parameters.'
 tags: [ecu, tuning, rom-scaling, obd0]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: intermediate

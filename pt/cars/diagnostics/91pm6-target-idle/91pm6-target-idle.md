@@ -1,15 +1,7 @@
 ---
 summary: 'Autor: xtensive Data: 010403 20:47 Ok, aqui está o que descobri: Toda essa área são tabelas de dados. A rotina que chama o valor de ralenti é @279A para a pm6.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [tuning, rom, sensors, reference, diagnostics, ecu]
 complexity: intermediate
-tags:
-  - tuning
-  - rom
-  - sensors
-  - reference
-  - diagnostics
-  - ecu
 sources:
   - name: 'pgmfi.org wiki'
     title: '91PM6 Target Idle'

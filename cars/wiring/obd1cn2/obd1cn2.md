@@ -2,7 +2,6 @@
 summary: 'Technical reference for the OBD1 ECU CN2 serial port, detailing its pinout and role in datalogging.'
 tags: [ecu, wiring, serial-communication, diagnostics]
 applies_to:
-  obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eg-eh]
 complexity: intermediate

@@ -1,20 +1,7 @@
 ---
-summary: Peak and Hold injectors are low-impedance fuel injectors (2–5 ohms) that draw 6–2.4 amperes at 12 volts. They require a resistor box for use with most Honda ECUs.
-tags:
-  - injectors
-  - peak-and-hold
-  - low-impedance
-  - fuel-system
-  - wiring
-  - ecu
-  - obd0
-  - obd1
-  - obd2
+summary: 'Peak and Hold injectors are low-impedance fuel injectors (2–5 ohms) that draw 6–2.4 amperes at 12 volts. They require a resistor box for use with most Honda ECUs.'
+tags: [injectors, peak-and-hold, low-impedance, fuel-system, wiring, ecu, obd0, obd1, obd2]
 applies_to:
-  obd:
-    - 0
-    - 1
-    - 2
   brand: Honda
 complexity: beginner
 ---

@@ -1,11 +1,7 @@
 ---
 summary: 'Uma tabela de referência de part numbers de ECUs Honda e Acura OBD0, OBD1 e OBD2, os seus mercados e as designações de códigos correspondentes.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [ECU, referência]
 complexity: beginner
-tags:
-  - ECU
-  - referência
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Códigos de Definição de ECU'

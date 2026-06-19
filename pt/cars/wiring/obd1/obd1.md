@@ -1,20 +1,9 @@
-yaml
 ---
-summary: OBD1 refers to Honda engine management electronics from 1992–1995, with some Accords and Preludes using OBD1 connectors as early as 1990. This guide covers OBD1 ECU variants and their vehicle applications.
+summary: 'OBD1 refers to Honda engine management electronics from 1992–1995, with some Accords and Preludes using OBD1 connectors as early as 1990. This guide covers OBD1 ECU variants and their vehicle applications.'
+tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, obd1, honda]
 applies_to:
-  obd: [1, 2]
   brand: Acura/Honda
 complexity: advanced
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - wiring
-  - conversion
-  - obd1
-  - honda
 ---
 
 # OBD1 ECU Reference Guide

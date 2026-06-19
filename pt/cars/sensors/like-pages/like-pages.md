@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of the Like Pages feature, which identifies related technical documentation by matching shared initial or terminal keywords.'
 tags: [reference, documentation, navigation]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

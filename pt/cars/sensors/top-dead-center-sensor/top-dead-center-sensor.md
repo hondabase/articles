@@ -2,7 +2,6 @@
 summary: 'Technical overview of the Top Dead Center (TDC) sensor, including its location within the distributor and signal output characteristics for Honda OBD systems.'
 tags: [sensors, ignition, diagnostics, distributor]
 applies_to:
-  obd: [0, 1, 2]
   models: [CRX, Civic, Integra]
 complexity: beginner
 ---

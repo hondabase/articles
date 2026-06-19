@@ -2,7 +2,6 @@
 summary: 'A comprehensive hardware and software reference guide for the JDM and European OBD0 PW0 DOHC VTEC ECU, including ROM address calibrations and mapping.'
 tags: [ecu, vtec, reference, obd0, pw0]
 applies_to:
-  obd: [0]
   models: [civic, crx, del-sol, integra]
   chassis: [da, dc2, ef, eg, eh, ek]
 complexity: intermediate

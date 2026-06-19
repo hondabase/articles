@@ -1,16 +1,7 @@
-yaml
 ---
-summary: ROM emulators appear as standard ROM devices to ECUs and other controllers, allowing real-time data modification during operation via SRAM/NVSRAM and logic gates or FPGAs.
-applies_to:
-  obd: [0, 1, 2]
+summary: 'ROM emulators appear as standard ROM devices to ECUs and other controllers, allowing real-time data modification during operation via SRAM/NVSRAM and logic gates or FPGAs.'
+tags: [ecu, reference, tuning, rom, sensors, rom-emulator]
 complexity: intermediate
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - rom-emulator
 ---
 
 # ROM Emulator

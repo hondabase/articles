@@ -1,8 +1,7 @@
 ---
-summary: "Technical overview of the PM9 ECU, including hardware variations, processor identification, and its relationship to the PM5 platform."
+summary: 'Technical overview of the PM9 ECU, including hardware variations, processor identification, and its relationship to the PM5 platform.'
 tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
-  obd: [0]
   models: [civic, crx]
   chassis: [ef]
 complexity: advanced

@@ -2,7 +2,6 @@
 summary: 'A guide to utilizing factory service manuals, commonly known as Helms manuals, for accurate Honda wiring diagrams, mechanical specifications, and diagnostic procedures.'
 tags: [manuals, reference, wiring, diagnostics]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner

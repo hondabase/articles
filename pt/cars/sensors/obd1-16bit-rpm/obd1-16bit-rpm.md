@@ -1,8 +1,6 @@
 ---
-summary: "Technical reference for calculating 16-bit RPM values in OBD1 Honda ECUs using the standard conversion formula and Little Endian byte order."
+summary: 'Technical reference for calculating 16-bit RPM values in OBD1 Honda ECUs using the standard conversion formula and Little Endian byte order.'
 tags: [ecu, reference, sensors, obd1]
-applies_to:
-  obd: [1]
 complexity: beginner
 ---
 

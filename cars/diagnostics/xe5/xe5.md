@@ -2,7 +2,6 @@
 summary: 'Technical overview of the Mugen XE5 ECU, a race-oriented variant derived from the PM7-0330 platform designed for ZC engines.'
 tags: [ecu, mugen, zc, rom, tuning, diagnostics]
 applies_to:
-  obd: [0]
   models: [civic, crx]
   chassis: [ef]
 complexity: intermediate

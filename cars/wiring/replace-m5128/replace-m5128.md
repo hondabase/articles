@@ -2,7 +2,6 @@
 summary: 'Technical guide for upgrading a 2K SRAM chip in an OBD0 Honda ECU to a DS1220 NVSRAM for non-volatile memory retention.'
 tags: [ecu, hardware, memory, tuning]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [ef, da]
 complexity: intermediate

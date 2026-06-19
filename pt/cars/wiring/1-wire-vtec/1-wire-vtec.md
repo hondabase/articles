@@ -1,17 +1,7 @@
 ---
-summary: "1 Wire VTEC is a ROM modification for OBD0 MPFI ECUs that repurposes the automatic transmission lockup solenoid to control VTEC activation."
-applies_to:
-  obd: [0]
+summary: '1 Wire VTEC is a ROM modification for OBD0 MPFI ECUs that repurposes the automatic transmission lockup solenoid to control VTEC activation.'
+tags: [ecu, rom, tuning, vtec, solenoid, wiring, conversion, obd0]
 complexity: beginner
-tags:
-  - ecu
-  - rom
-  - tuning
-  - vtec
-  - solenoid
-  - wiring
-  - conversion
-  - obd0
 ---
 
 # 1 Wire VTEC

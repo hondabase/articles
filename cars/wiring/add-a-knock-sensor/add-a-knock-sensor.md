@@ -2,7 +2,6 @@
 summary: 'Hardware modification guide for adding a knock sensor to a Honda P75/P72 ECU board.'
 tags: [ecu, tuning, wiring, knock-sensor, hardware-modification]
 applies_to:
-  obd: [1]
   models: [civic, del-sol, integra]
   chassis: [dc2, eg, eg-eh]
 complexity: intermediate

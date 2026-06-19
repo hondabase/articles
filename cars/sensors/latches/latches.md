@@ -2,7 +2,6 @@
 summary: 'Technical explanation of address latches (e.g., 74HC373) used in Honda OBD1 ECUs to interface the MCU with external EPROM memory.'
 tags: [ecu, hardware, eprom, memory]
 applies_to:
-  obd: [1]
   models: [civic, integra, prelude, accord]
   chassis: [ef, eg, ek, da, dc2, bb]
 complexity: intermediate

@@ -2,7 +2,6 @@
 summary: 'Technical documentation regarding the OBD0 ECU memory bus, peripheral address ranges, and chip-select logic for the OKI M83C154/M80C154 MCU.'
 tags: [ecu, hardware, memory, reverse-engineering, obd0]
 applies_to:
-  obd: [0]
   models: [civic, crx]
   chassis: [ef]
 complexity: advanced

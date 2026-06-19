@@ -1,8 +1,6 @@
 ---
-summary: "An overview of Honda ignition distributors, explaining their function in routing high-voltage spark to multiple engine cylinders."
+summary: 'An overview of Honda ignition distributors, explaining their function in routing high-voltage spark to multiple engine cylinders.'
 tags: [ignition, distributor, sensors, maintenance]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

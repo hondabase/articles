@@ -1,12 +1,7 @@
 ---
 summary: 'Respostas arquivadas para iniciantes sobre identificação, seleção e pesquisa de ECUs Honda.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [ecu, identification, reference]
 complexity: beginner
-tags:
-  - ecu
-  - identification
-  - reference
 ---
 
 # FAQ de ECU Honda para Iniciantes

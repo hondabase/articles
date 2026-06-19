@@ -1,15 +1,7 @@
 ---
 summary: 'O Programador USB Batronix é um produto ligeiramente mais polido do que o Eprommer3.3 deles. A 9 de outubro de 2003, custa $248.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [tuning, rom, sensores, referência, diagnósticos, ecu]
 complexity: intermediate
-tags:
-  - tuning
-  - rom
-  - sensores
-  - referência
-  - diagnósticos
-  - ecu
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Programador USB Batronix'

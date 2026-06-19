@@ -2,7 +2,6 @@
 summary: 'Technical wirelist for OBD1 Honda ECU chipping, detailing connections for 74HC373 latch and ROM sockets.'
 tags: [ecu, chipping, hardware, wiring]
 applies_to:
-  obd: [1]
   models: [civic, del-sol]
   chassis: [eg, eg-eh]
 complexity: advanced

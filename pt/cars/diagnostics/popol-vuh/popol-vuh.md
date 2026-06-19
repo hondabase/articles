@@ -1,8 +1,6 @@
 ---
 summary: 'Uma visão histórica do projeto Wiki PGMFI.org, abrangendo as suas origens, desenvolvimento e contribuições da comunidade para a afinação de ECUs Honda.'
 tags: [sensors, reference, diagnostics, ecu]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

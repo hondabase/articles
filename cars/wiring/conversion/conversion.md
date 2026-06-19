@@ -2,7 +2,6 @@
 summary: 'An overview of ECU conversion procedures, allowing different OBD generations to be utilized through harness modifications.'
 tags: [ecu, tuning, wiring, conversion]
 applies_to:
-  obd: [1, 2]
   models: [accord, civic, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner

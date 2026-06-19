@@ -1,12 +1,7 @@
 ---
 summary: 'Guia técnico para injetores de combustível de baixa impedância (peak-and-hold), caixas de resistências em série e conversão entre tipos de injetores em motores Honda.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [injectors, fueling, hardware]
 complexity: intermediate
-tags:
-  - injectors
-  - fueling
-  - hardware
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Low Impedance Injectors'

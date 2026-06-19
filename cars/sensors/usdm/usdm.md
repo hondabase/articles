@@ -2,7 +2,6 @@
 summary: 'Technical reference for USDM (United States Domestic Market) OBD1 Honda ECUs, detailing standard features such as ELD, knock control, and hardware characteristics.'
 tags: [ecu, obd1, usdm, sensors]
 applies_to:
-  obd: [1]
   models: [civic, integra]
   chassis: [eg, dc2]
 complexity: intermediate

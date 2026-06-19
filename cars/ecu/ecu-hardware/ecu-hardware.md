@@ -2,7 +2,6 @@
 summary: 'An overview of Honda ECU hardware architecture, including PCB families, MCU specifications, and common hardware modification techniques.'
 tags: [ecu, hardware, pcb, eeprom, mcu]
 applies_to:
-  obd: [0, 1, 2a, 2b]
   models: [accord, civic, crx, integra, nsx, prelude]
   chassis: [da, ef]
 complexity: advanced

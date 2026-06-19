@@ -1,8 +1,6 @@
 ---
 summary: 'Análise técnica do código de teste da ECU Honda 6260A, explicando como ativa o LED de diagnóstico para piscar os códigos de erro do motor.'
 tags: [ecu, referência, sensores, diagnósticos]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

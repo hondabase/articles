@@ -1,17 +1,11 @@
 ---
-title: Guia de Instalação de Wideband para ECUs Honda OBD1
-summary: Aprenda a instalar e configurar um sensor de O2 wideband AEM na sua ECU Honda OBD1 usando o Honda Tuning Suite (HTS) ou o Hondata SManager.
-complexity: advanced
-tags:
-  - ecu
-  - referência
-  - afinação
-  - sensores
-  - cablagem
+title: 'Guia de Instalação de Wideband para ECUs Honda OBD1'
+summary: 'Aprenda a instalar e configurar um sensor de O2 wideband AEM na sua ECU Honda OBD1 usando o Honda Tuning Suite (HTS) ou o Hondata SManager.'
+tags: [ecu, referência, afinação, sensores, cablagem, obd1]
 applies_to:
   brand: [honda, acura]
-  obd: [1]
   ecus: [P28, P30, P72, P06, P75]
+complexity: advanced
 ---
 
 Um sensor de oxigénio wideband (também conhecido como UEGO - Universal Exhaust Gas Oxygen sensor) é uma ferramenta crucial para a afinação do motor do seu Honda. Ao contrário do sensor de O2 narrowband original (de fábrica), um wideband fornece medições precisas da relação ar/combustível (AFR) numa gama ampla, permitindo uma afinação precisa e a monitorização do desempenho do seu motor.

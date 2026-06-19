@@ -1,12 +1,7 @@
 ---
 summary: 'O Sensor de Velocidade do Veículo (VSS) envia impulsos de velocidade para o painel de instrumentos e para a ECU. Diagnóstico de falhas no velocímetro e problemas de ativação do VTEC relacionados com o VSS.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [sensor, diagnósticos, cablagem]
 complexity: intermediate
-tags:
-  - sensor
-  - diagnósticos
-  - cablagem
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Vehicle Speed Sensor'

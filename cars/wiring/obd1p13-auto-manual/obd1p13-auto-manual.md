@@ -2,7 +2,6 @@
 summary: 'Technical guide for converting an automatic P13 ECU (Prelude H22A) for use with a manual transmission.'
 tags: [ecu, transmission, tuning, conversion]
 applies_to:
-  obd: [1]
   models: [prelude]
   chassis: [bb]
 complexity: intermediate

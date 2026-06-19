@@ -2,7 +2,6 @@
 summary: 'Especificações técnicas e visão geral da aplicação para a ECU Honda Prelude Si (B20A3) 86-87.'
 tags: [reference]
 applies_to:
-  obd: [0, 1, 2]
   brand: Honda
 complexity: beginner
 sources:

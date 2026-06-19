@@ -1,15 +1,7 @@
 ---
 summary: 'Autor: tungsten2k (12240101225.client.attbi.com) Data: 19/09/03 01:36 Para vossa informação, para a malta dos EF que anda à procura de fazer o interruptor de embraiagem FTS da forma mais fácil, vieram ao sítio certo.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [ecu, referência, tuning, rom, cablagem, conversão]
 complexity: intermediate
-tags:
-  - ecu
-  - referência
-  - tuning
-  - rom
-  - cablagem
-  - conversão
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Interruptor do Cruise Control'

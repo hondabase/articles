@@ -1,8 +1,6 @@
 ---
-summary: "Visão geral técnica dos métodos, interfaces e software para datalogging em ECUs Honda OBD0 e OBD1."
+summary: 'Visão geral técnica dos métodos, interfaces e software para datalogging em ECUs Honda OBD0 e OBD1.'
 tags: [datalogging, serial, diagnostics, ecu, obd0, obd1]
-applies_to:
-  obd: [0, 1]
 complexity: intermediate
 ---
 

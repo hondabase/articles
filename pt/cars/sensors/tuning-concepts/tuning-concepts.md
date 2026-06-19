@@ -1,8 +1,6 @@
 ---
 summary: 'A comprehensive reference guide covering essential engine tuning concepts, including air/fuel ratios, wideband O2 sensors, and injector sizing.'
 tags: [tuning, sensors, fueling, diagnostics]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

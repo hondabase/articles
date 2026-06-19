@@ -1,11 +1,7 @@
 ---
 summary: 'Especificações técnicas, configuração de software e definições de chips para o programador de dispositivos USB EETools ChipMax.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [hardware, reference]
 complexity: intermediate
-tags:
-  - hardware
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Chip Max'

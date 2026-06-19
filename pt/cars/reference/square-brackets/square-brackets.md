@@ -1,8 +1,6 @@
 ---
 summary: 'Relatório de problema técnico relativo a erros de formatação em páginas wiki que requerem manutenção e correção de conteúdo.'
 tags: [reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

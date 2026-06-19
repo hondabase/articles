@@ -2,7 +2,6 @@
 summary: 'An overview of OBD0 stock datalogging capabilities and the current status of hardware and software support for Honda/Acura OBD0 ECUs.'
 tags: [ecu, reference, tuning, rom, sensors, obd0]
 applies_to:
-  obd: [0]
   models: [civic, integra]
   chassis: [ef, da]
 complexity: beginner

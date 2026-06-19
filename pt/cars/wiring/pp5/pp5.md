@@ -1,28 +1,9 @@
-yaml
 ---
-summary: "PP5 ECU variants used in 1990–93 UK Rover 216 Cabrio and Honda Concerto models equipped with Honda ZC engines. Covers romless and external ROM configurations, Lambda sensor options, and cross-compatibility with PM-series ECUs."
-tags:
-  - pp5
-  - ecu
-  - obd0
-  - rover
-  - honda-concerto
-  - zc-engine
-  - romless
-  - lambda-sensor
-  - wiring
-  - tuning
-  - diagnostics
-  - hardware
+summary: 'PP5 ECU variants used in 1990–93 UK Rover 216 Cabrio and Honda Concerto models equipped with Honda ZC engines. Covers romless and external ROM configurations, Lambda sensor options, and cross-compatibility with PM-series ECUs.'
+tags: [pp5, ecu, obd0, rover, honda-concerto, zc-engine, romless, lambda-sensor, wiring, tuning, diagnostics, hardware]
 applies_to:
-  obd:
-    - 0
   brand: Honda
-  vehicles:
-    - Rover 216 Cabrio
-    - Rover 216 GTi
-    - Rover 220 Coupe
-    - Honda Concerto 1.6L
+  vehicles: ['Rover 216 Cabrio', 'Rover 216 GTi', 'Rover 220 Coupe', 'Honda Concerto 1.6L']
 complexity: intermediate
 ---
 

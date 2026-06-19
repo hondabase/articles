@@ -1,12 +1,7 @@
 ---
 summary: 'Truque de hardware para contornar a verificação do solenoide de bloqueio (lock-up) da transmissão automática em ECUs Honda OBD0 usando uma resistência de 220 ohms.'
-applies_to:
-  obd: [0]
+tags: [ecu, rom, conversion]
 complexity: advanced
-tags:
-  - ecu
-  - rom
-  - conversion
 sources:
   - name: 'pgmfi.org wiki'
     title: OBD0ECUAUTOTOMANUALWITHOUTREMOVEANYHARDWARE

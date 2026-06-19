@@ -2,7 +2,6 @@
 summary: 'The Vehicle Speed Sensor (VSS) sends speed pulses to the cluster and ECU. Diagnosing speedo failures and VSS-related VTEC engagement issues.'
 tags: [sensor, diagnostics, wiring]
 applies_to:
-  obd: [0, 1, 2]
   models: [integra]
   chassis: {}
 complexity: intermediate

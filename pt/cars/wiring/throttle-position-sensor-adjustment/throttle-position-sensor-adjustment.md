@@ -1,15 +1,7 @@
-yaml
 ---
-summary: Adjust throttle position sensor (TPS) output voltage by rotating the sensor housing and securing with rivets or screws. Simple procedure suitable for OBD0, OBD1, and OBD2 systems.
-applies_to:
-  obd: [0, 1, 2]
+summary: 'Adjust throttle position sensor (TPS) output voltage by rotating the sensor housing and securing with rivets or screws. Simple procedure suitable for OBD0, OBD1, and OBD2 systems.'
+tags: ['throttle position sensor', TPS, 'sensor adjustment', 'voltage calibration', tuning]
 complexity: beginner
-tags:
-  - throttle position sensor
-  - TPS
-  - sensor adjustment
-  - voltage calibration
-  - tuning
 ---
 
 # Throttle Position Sensor (TPS) Adjustment

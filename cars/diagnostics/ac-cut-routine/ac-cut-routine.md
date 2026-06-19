@@ -2,7 +2,6 @@
 summary: 'Author: evo (61.88.2.177) Date: 030403 22:15 After much thought, ive decided to share my AirConditioner Cutoff routine.'
 tags: [sensors, reference, diagnostics, ecu]
 applies_to:
-  obd: [0, 1, 2]
   models: [civic, del-sol]
   chassis: [eg, eg-eh]
 complexity: beginner

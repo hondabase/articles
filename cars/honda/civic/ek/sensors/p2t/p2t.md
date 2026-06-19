@@ -2,7 +2,6 @@
 summary: 'Technical specifications and application overview for the 99+ Honda Civic Si ECU.'
 tags: [ecu, reference, sensors]
 applies_to:
-  obd: [2]
   brand: Honda
   models: [civic]
   chassis: [ek]

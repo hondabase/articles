@@ -2,7 +2,6 @@
 summary: 'A comprehensive guide to building a DIY hardware Engine Simulator for bench-testing and debugging Honda OBD0, OBD1, and OBD2 ECUs.'
 tags: [bench-testing, hardware, diagnostics, ecu, wiring]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, prelude]
   chassis: [bb, da, dc2, ef, eg, eg-eh, ek]
 complexity: advanced

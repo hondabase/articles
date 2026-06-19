@@ -2,7 +2,6 @@
 summary: 'Technical reference for the Honda PH3 OBD0 ECU, covering hardware specifications, processor architecture, and jumper configurations for B20A-equipped vehicles.'
 tags: [ecu, obd0, b20a, tuning, rom, diagnostics]
 applies_to:
-  obd: [0]
   brand: Honda
   models: [accord]
   chassis: [ca]

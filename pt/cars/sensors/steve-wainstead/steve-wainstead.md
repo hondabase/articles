@@ -1,11 +1,7 @@
 ---
-summary: "Este artigo continha informações pessoais e não técnicas que não estão em conformidade com as diretrizes de conteúdo do projeto."
-applies_to:
-  obd: [0, 1, 2]
+summary: 'Este artigo continha informações pessoais e não técnicas que não estão em conformidade com as diretrizes de conteúdo do projeto.'
+tags: [non-compliant, removed]
 complexity: beginner
-tags:
-  - non-compliant
-  - removed
 ---
 
 # Conteúdo Removido

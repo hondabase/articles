@@ -1,8 +1,7 @@
 ---
-summary: "An analysis of the technical limitations of piggyback ECU controllers, focusing on the inherent conflicts between fuel and ignition timing adjustments."
+summary: 'An analysis of the technical limitations of piggyback ECU controllers, focusing on the inherent conflicts between fuel and ignition timing adjustments.'
 tags: [ecu, tuning, rom, sensors, piggyback]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: intermediate

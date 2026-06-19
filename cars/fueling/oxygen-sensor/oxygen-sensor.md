@@ -2,7 +2,6 @@
 summary: 'Technical guide on Honda narrowband and wideband oxygen sensors, including operating principles, output characteristics, and 1-wire to 4-wire conversion wiring.'
 tags: [sensor, fueling, diagnostics, obd1, wiring]
 applies_to:
-  obd: [0, 1, 2]
   models: [civic, del-sol, integra]
   chassis: [ef, eg, eh]
 complexity: intermediate

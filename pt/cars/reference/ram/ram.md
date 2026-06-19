@@ -1,10 +1,7 @@
 ---
 summary: 'Random Access Memory (RAM) é a memória de acesso aleatório utilizada para armazenar dados ativamente em uso, sendo volátil e apagada sem alimentação.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [reference]
 complexity: beginner
-tags:
-  - reference
 ---
 
 # RAM

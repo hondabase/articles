@@ -1,12 +1,9 @@
 ---
 summary: 'Tensões de sinal esperadas do sensor de detonação (knock sensor) com o motor em funcionamento.'
+tags: [knock, sensor]
 applies_to:
   engines: [B-Series, H-Series]
-  obd: [1, 2]
 complexity: advanced
-tags:
-  - knock
-  - sensor
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Tensões do Sensor de Detonação'

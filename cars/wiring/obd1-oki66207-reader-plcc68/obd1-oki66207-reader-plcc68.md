@@ -1,8 +1,7 @@
 ---
 summary: 'Technical guide for dumping the internal ROM contents of a PLCC68 Oki 66207 microcontroller using a custom reader interface.'
-tags: [ecu, rom-dumping, reverse-engineering, hardware]
+tags: [ecu, rom-dumping, reverse-engineering, hardware, obd1]
 applies_to:
-  obd: [1]
   models: [civic, del-sol]
   chassis: [eg, eg-eh]
 complexity: advanced

@@ -1,13 +1,7 @@
 ---
 summary: 'Guia de resolução de problemas para erros comuns de configuração, problemas de redimensionamento de colunas do sensor MAP e modificações de bytes VTEC no software de afinação TurboEdit OBD0.'
-applies_to:
-  obd: [0]
+tags: [afinação, rom, software, diagnósticos]
 complexity: intermediate
-tags:
-  - afinação
-  - rom
-  - software
-  - diagnósticos
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Common TE Problems'

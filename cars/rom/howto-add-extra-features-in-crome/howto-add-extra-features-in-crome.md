@@ -2,7 +2,6 @@
 summary: 'A technical guide for installing and applying the Add Extra Features plugin in Crome to enable advanced OBD1 tuning functions like launch control and boost tables.'
 tags: [tuning, rom, software, crome, obd1]
 applies_to:
-  obd: [1]
   models: [civic, del-sol, integra, prelude]
   chassis: [eg, eh, ej, dc, da]
 complexity: intermediate

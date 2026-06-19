@@ -2,7 +2,6 @@
 summary: 'Technical overview of the OBD0 PK2 ECU used in the Honda B20A Prelude, featuring hardware configuration, jumper settings, and PCB compatibility.'
 tags: [ecu, obd0, tuning, b20a, rom]
 applies_to:
-  obd: [0]
   models: [Prelude]
   chassis: [BA]
 complexity: advanced

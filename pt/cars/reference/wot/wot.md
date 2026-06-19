@@ -1,8 +1,6 @@
 ---
 summary: 'Definição e significado de "Wide Open Throttle" (WOT - Aceleração Total) na afinação de motores Honda e mapeamento de diagnóstico.'
 tags: [reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

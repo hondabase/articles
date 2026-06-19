@@ -2,7 +2,6 @@
 summary: 'Technical reference for converting engine speed (RPM) to 16-bit hexadecimal values for OBD0 Honda ECU tuning and ROM modification.'
 tags: [ecu, tuning, obd0, diagnostics, rom]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: beginner

@@ -1,13 +1,7 @@
 ---
 summary: 'Pode converter Ficheiros Hex em Ficheiros Bin usando a ferramenta hex2bin.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [tuning, rom, sensores, referência]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - sensores
-  - referência
 ---
 
 # Hex2 Bin

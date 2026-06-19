@@ -2,7 +2,6 @@
 summary: 'An overview of the PGMFI SourceForge repository, hosting essential open-source tools for Honda ECU development and tuning.'
 tags: [tuning, open-source, software, tools]
 applies_to:
-  obd: [0, 1, 2]
   models: [civic, crx, del-sol, integra]
   chassis: [ef, eg, eg-eh, dc2]
 complexity: intermediate

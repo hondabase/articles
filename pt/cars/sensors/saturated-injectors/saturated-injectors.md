@@ -2,7 +2,6 @@
 summary: 'Technical overview of saturated (high-impedance) fuel injectors, including impedance specifications and electrical operation for Honda OBD1 and newer systems.'
 tags: [ecu, fueling, injectors, sensors]
 applies_to:
-  obd: [1, 2]
   models: [all]
 complexity: beginner
 ---

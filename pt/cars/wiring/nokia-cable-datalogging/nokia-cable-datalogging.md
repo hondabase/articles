@@ -1,12 +1,7 @@
 ---
 summary: 'Guia técnico para converter um cabo de telemóvel serial Nokia FBUS antigo num adaptador serial USB-para-TTL de baixo custo para datalogging de ECUs Honda OBD1.'
-applies_to:
-  obd: [0, 1]
+tags: [datalogging, hardware, wiring]
 complexity: advanced
-tags:
-  - datalogging
-  - hardware
-  - wiring
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Nokia Cable Datalogging'

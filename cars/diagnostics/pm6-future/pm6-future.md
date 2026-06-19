@@ -2,7 +2,6 @@
 summary: 'An overview of the PM6 Future code module for Honda PM6 ECUs, providing resources for tuning and firmware development.'
 tags: [tuning, rom, sensors, diagnostics, ecu, pm6]
 applies_to:
-  obd: [0]
   ecus: [PM6]
   models: [civic, crx]
   chassis: [ef]

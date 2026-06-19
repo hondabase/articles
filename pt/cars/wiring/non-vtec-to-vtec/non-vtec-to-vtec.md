@@ -1,17 +1,9 @@
-yaml
 ---
-summary: "Convert non-VTEC Honda ECUs to VTEC by populating missing components on the same PCB design. The same board was used across multiple ECU variants with components added or omitted as needed."
+summary: 'Convert non-VTEC Honda ECUs to VTEC by populating missing components on the same PCB design. The same board was used across multiple ECU variants with components added or omitted as needed.'
+tags: [ecu, vtec, conversion, wiring, pcb, sensors]
 applies_to:
-  obd: [0, 1, 2]
   brand: Honda
 complexity: intermediate
-tags:
-  - ecu
-  - vtec
-  - conversion
-  - wiring
-  - pcb
-  - sensors
 ---
 
 # Non-VTEC to VTEC ECU Conversion

@@ -1,19 +1,7 @@
 ---
 summary: 'Esta página explica como substituir o chip atual 5128 XRAM 2K SRAM por um NVSRAM DS1220 para uma futura solução RTP.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [hardware, education, ecu, tuning, rom, sensors, reference, wiring, conversion, diagnostics]
 complexity: intermediate
-tags:
-  - hardware
-  - education
-  - ecu
-  - tuning
-  - rom
-  - sensors
-  - reference
-  - wiring
-  - conversion
-  - diagnostics
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Replace M5128'

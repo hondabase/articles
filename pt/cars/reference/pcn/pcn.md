@@ -1,10 +1,7 @@
 ---
 summary: 'Números de peça de hardware e referências para a série de ECUs Honda PCN.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [reference]
 complexity: beginner
-tags:
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: PCN

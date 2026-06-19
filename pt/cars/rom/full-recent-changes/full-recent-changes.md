@@ -1,14 +1,7 @@
 ---
-summary: "Comprehensive archive of all recent page modifications across the wiki, including historical edits and content updates."
-applies_to:
-  obd: [0, 1, 2]
+summary: 'Comprehensive archive of all recent page modifications across the wiki, including historical edits and content updates.'
+tags: [tuning, rom, sensors, reference, documentation]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - sensors
-  - reference
-  - documentation
 ---
 
 # Complete Recent Changes Archive

@@ -1,8 +1,7 @@
 ---
-summary: "A turbocharger is a centrifugal compressor that increases intake pressure in an internal-combustion engine, powered by an exhaust-gas turbine."
+summary: 'A turbocharger is a centrifugal compressor that increases intake pressure in an internal-combustion engine, powered by an exhaust-gas turbine.'
 tags: [tuning, turbo, forced-induction, sensors]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner

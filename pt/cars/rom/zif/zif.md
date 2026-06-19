@@ -1,16 +1,7 @@
 ---
 summary: 'ZIF significa Zero Insertion Force (Força de Inserção Zero). Os sockets ZIF são comummente utilizados em ECUs onde a EEPROM será removida e reinserida frequentemente.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [hardware, educação, ecu, tuning, rom, sensores, referência]
 complexity: intermediate
-tags:
-  - hardware
-  - educação
-  - ecu
-  - tuning
-  - rom
-  - sensores
-  - referência
 sources:
   - name: 'pgmfi.org wiki'
     title: ZIF

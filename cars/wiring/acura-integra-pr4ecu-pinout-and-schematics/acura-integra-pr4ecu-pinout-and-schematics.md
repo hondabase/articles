@@ -2,7 +2,6 @@
 summary: 'Pinout information and wiring reference for the OBD0 Acura Integra PR4 ECU (B18A1 engine).'
 tags: [ecu, pinout, wiring, honda-integra]
 applies_to:
-  obd: [0]
   models: [integra]
   chassis: [da]
 complexity: intermediate

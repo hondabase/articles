@@ -2,7 +2,6 @@
 summary: 'Step-by-step procedure to convert an OBD0 PR3 ECU from automatic to manual transmission by relocating the R68 resistor.'
 tags: [ecu, obd0, pr3, transmission, modification]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: beginner

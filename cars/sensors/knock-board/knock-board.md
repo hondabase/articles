@@ -2,7 +2,6 @@
 summary: 'Technical overview of the Honda OBD1 ECU knock sensor processing daughterboard, its limitations in high-performance engines, and software bypass options.'
 tags: [ecu, sensor, hardware, knock-sensor]
 applies_to:
-  obd: [1]
   models: [civic, del-sol, integra]
   chassis: [dc2, eg, eh]
 complexity: advanced

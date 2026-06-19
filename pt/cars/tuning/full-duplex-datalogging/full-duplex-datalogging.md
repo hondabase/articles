@@ -1,11 +1,7 @@
 ---
 summary: 'Explica a diferença entre comunicação série half-duplex e full-duplex em ECUs Honda OBD1 e por que razão a remoção do jumper J12 ativa o datalogging via PC.'
-applies_to:
-  obd: [1]
+tags: [datalogging, hardware]
 complexity: intermediate
-tags:
-  - datalogging
-  - hardware
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Full Duplex Datalogging'

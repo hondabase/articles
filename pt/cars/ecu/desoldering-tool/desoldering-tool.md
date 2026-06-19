@@ -1,11 +1,7 @@
 ---
 summary: 'Visão geral e comparação de ferramentas manuais de dessoldadura, incluindo bombas de vácuo, malhas e peras de dessoldar.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [hardware, education]
 complexity: beginner
-tags:
-  - hardware
-  - education
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Desoldering Tool'

@@ -1,13 +1,7 @@
 ---
 summary: 'Um guia introdutório sobre afinação de combustível e ignição em ECUs Honda. Aprenda a calibrar relações ar-combustível, avanço de ignição e a realizar registo de dados de estrada (road logging).'
-applies_to:
-  obd: [0, 1, 2]
+tags: [tuning, ecu, fueling, ignition]
 complexity: intermediate
-tags:
-  - tuning
-  - ecu
-  - fueling
-  - ignition
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Ecu Tuning'

@@ -1,18 +1,11 @@
 ---
-summary: Detailed configuration and reprogramming guide for the UberData custom ROM code on Acura OBD1 P72 ECUs, including RAM address mappings and modification offsets.
+summary: 'Detailed configuration and reprogramming guide for the UberData custom ROM code on Acura OBD1 P72 ECUs, including RAM address mappings and modification offsets.'
+tags: [tuning, rom, software, p72, uberdata, reprogramming]
 applies_to:
   brand: Acura
-  models: [Integra GS-R]
+  models: ['Integra GS-R']
   ecus: [P72]
-  obd: [1]
 complexity: advanced
-tags:
-  - tuning
-  - rom
-  - software
-  - p72
-  - uberdata
-  - reprogramming
 ---
 
 # Uber P72 ROM Map

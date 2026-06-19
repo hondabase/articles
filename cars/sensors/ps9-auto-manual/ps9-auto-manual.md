@@ -2,7 +2,6 @@
 summary: 'Convert an automatic transmission ECU to manual transmission operation by removing specific resistors and adding a jumper. Applies to PS9, PG7, PM6, and PM7 ECU variants.'
 tags: [ecu, conversion, transmission, hardware]
 applies_to:
-  obd: [0, 1]
   models: [civic, crx]
   chassis: [ef]
 complexity: beginner

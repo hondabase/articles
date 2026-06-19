@@ -1,12 +1,7 @@
 ---
 summary: 'Guia de seleção para chips de memória utilizados no chipping de ECUs Honda OBD0 e OBD1, abordando limitações de velocidade, compatibilidade e variações de pinout.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [ecu, chipping, hardware]
 complexity: intermediate
-tags:
-  - ecu
-  - chipping
-  - hardware
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Chips For EC Us'

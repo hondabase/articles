@@ -1,8 +1,7 @@
 ---
 summary: 'Technical reference for calculating fuel pulse width and duty cycle using 8-bit ROM table values in Honda OBD1 engine management systems.'
-tags: [ecu, tuning, rom, fuel, sensors]
+tags: [ecu, tuning, rom, fuel, sensors, obd1]
 applies_to:
-  obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eg-eh]
 complexity: beginner

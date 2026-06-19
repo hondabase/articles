@@ -2,7 +2,6 @@
 summary: 'Technical reference for the legacy Crome ROM editor JavaScript API used for developing scripts, ROM handlers, and plug-ins.'
 tags: [tuning, rom, software, scripting]
 applies_to:
-  obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eh]
 complexity: advanced

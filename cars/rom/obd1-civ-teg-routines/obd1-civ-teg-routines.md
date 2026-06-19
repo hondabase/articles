@@ -1,8 +1,7 @@
 ---
 summary: 'Technical reference for OBD1 Honda ECU routines, including documentation on I/O operations and specific A/C control logic for the P30 JDM 203 ROM.'
-tags: [ecu, reference, tuning, rom, sensors]
+tags: [ecu, reference, tuning, rom, sensors, obd1]
 applies_to:
-  obd: [1]
   models: [civic, del-sol, integra]
   chassis: [eg, eh]
 complexity: beginner

@@ -1,14 +1,7 @@
 ---
-summary: "O throttle body é o alojamento que contém a Throttle Plate, a Idle Air Control Valve e o MAP Sensor, regulando o fluxo de ar para o motor."
-applies_to:
-  obd: [0, 1, 2]
+summary: 'O throttle body é o alojamento que contém a Throttle Plate, a Idle Air Control Valve e o MAP Sensor, regulando o fluxo de ar para o motor.'
+tags: ['throttle body', engine, intake, sensors, reference]
 complexity: beginner
-tags:
-  - throttle body
-  - engine
-  - intake
-  - sensors
-  - reference
 ---
 
 # Throttle Body

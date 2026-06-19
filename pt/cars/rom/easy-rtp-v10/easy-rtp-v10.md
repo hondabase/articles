@@ -1,12 +1,7 @@
 ---
 summary: 'Guia de montagem arquivado e notas parciais de instalação de OBD0/OBD1 para a placa DIY Easy-RTP v1.0.'
-applies_to:
-  obd: [0, 1]
+tags: [hardware, rom, chipping]
 complexity: advanced
-tags:
-  - hardware
-  - rom
-  - chipping
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Easy Rtp V10'

@@ -2,7 +2,6 @@
 summary: 'Technical logic tables, address line mapping, and boolean gate reductions for building custom Real-Time Programming (RTP) ROM emulation hardware.'
 tags: [hardware, tuning]
 applies_to:
-  obd: [1]
   models: [integra]
   chassis: {}
 complexity: advanced

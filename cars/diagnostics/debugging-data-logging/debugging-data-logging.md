@@ -2,7 +2,6 @@
 summary: 'Troubleshooting guide for Honda OBD1 ECU datalogging, covering hardware continuity, ROM configuration, and serial communication settings.'
 tags: [datalogging, diagnostics, serial, ecu, obd1]
 applies_to:
-  obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eh]
 complexity: advanced

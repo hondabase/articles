@@ -2,7 +2,6 @@
 summary: 'Technical explanation of J12 jumper functionality on OBD1 Honda ECUs for datalogging and serial communication.'
 tags: [ecu, wiring, serial-communication, datalogging]
 applies_to:
-  obd: [1]
   models: [civic, integra]
   chassis: [dc2, eg, eg-eh]
 complexity: intermediate

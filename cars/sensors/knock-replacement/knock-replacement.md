@@ -1,8 +1,7 @@
 ---
-summary: "An overview of modern alternatives to the factory Honda knock detection system, focusing on advanced signal processing and sensing strategies."
+summary: 'An overview of modern alternatives to the factory Honda knock detection system, focusing on advanced signal processing and sensing strategies.'
 tags: [ecu, sensors, knock-detection, ignition]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: advanced

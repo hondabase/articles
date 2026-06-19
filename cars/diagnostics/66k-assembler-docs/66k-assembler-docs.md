@@ -1,8 +1,7 @@
 ---
-summary: "Technical documentation and architectural reference for the Oki 66K microcontroller series used in Honda ECU hardware."
+summary: 'Technical documentation and architectural reference for the Oki 66K microcontroller series used in Honda ECU hardware.'
 tags: [ecu, reference, tuning, rom, sensors, diagnostics, oki-66k]
 applies_to:
-  obd: [0, 1, 2]
   models: [civic, rsx]
   chassis: [all]
 complexity: advanced

@@ -1,16 +1,7 @@
-yaml
 ---
 summary: 'Bridge the A/C thermostat switch under the instrument panel using a 2-pin blue-taped connector located near the heating fan area.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [ecu, reference, sensors, wiring, conversion, ac-system]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
-  - wiring
-  - conversion
-  - ac-system
 ---
 
 # A/C Thermostat Switch Bypass

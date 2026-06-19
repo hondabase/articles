@@ -2,7 +2,6 @@
 summary: 'An introduction to Air-Fuel Ratio (AFR) in internal combustion engines, explaining stoichiometric targets, rich vs. lean conditions, and sensor scales.'
 tags: [fueling, tuning, sensor]
 applies_to:
-  obd: [0, 1, 2]
   models: [integra]
   chassis: {}
 complexity: beginner

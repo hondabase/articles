@@ -1,11 +1,7 @@
 ---
 summary: 'Visão geral técnica e guia de resolução de problemas para o programador de dispositivos legacy EPROMer5 via porta paralela, utilizado para chips 27C256 e AT29C256.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [hardware, referência]
 complexity: intermediate
-tags:
-  - hardware
-  - referência
 sources:
   - name: 'pgmfi.org wiki'
     title: Epromer5

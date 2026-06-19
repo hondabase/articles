@@ -1,12 +1,7 @@
 ---
 summary: 'Guia de hardware para chipping de ECUs Honda OBD2 através da substituição do processador OKI 66507 por um microcontrolador OTP 66P507 programado utilizando um adaptador PLCC84 personalizado.'
-applies_to:
-  obd: [2]
+tags: [ecu, chipping, hardware, obd2]
 complexity: advanced
-tags:
-  - ecu
-  - chipping
-  - hardware
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Chipping OBD2'

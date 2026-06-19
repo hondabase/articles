@@ -1,12 +1,7 @@
 ---
 summary: 'Guia de software para descarregar, instalar e aplicar o plugin Add Extra Features no editor de ROM OBD1 Crome para ativar o launch control e tabelas de boost.'
-applies_to:
-  obd: [1]
+tags: [tuning, rom, software]
 complexity: intermediate
-tags:
-  - tuning
-  - rom
-  - software
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Howto Add Extra Features In Crome'

@@ -1,8 +1,6 @@
 ---
 summary: 'Conselhos técnicos sobre a utilização e remoção do composto de travamento de roscas Loctite Vermelho em aplicações de componentes de motor Honda de elevado esforço.'
 tags: [tuning, rom, sensors, reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

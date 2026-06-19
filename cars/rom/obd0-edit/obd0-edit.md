@@ -1,8 +1,7 @@
 ---
 summary: 'Information on the community OBD0Edit forum, a resource for technical discussions and development regarding OBD0 Honda ECUs.'
-tags: [ecu, reference, tuning, rom]
+tags: [ecu, reference, tuning, rom, obd0]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: beginner

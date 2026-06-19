@@ -1,8 +1,6 @@
 ---
 summary: 'A registry of contributors and recent visitors to the Hondabase technical documentation project.'
 tags: [community, reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

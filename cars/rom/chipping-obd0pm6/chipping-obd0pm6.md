@@ -2,7 +2,6 @@
 summary: 'Step-by-step hardware guide to chipping the OBD0 PM6 ECU (1988–1991 Civic/CRX Si) to accept external EPROMs and custom tunes.'
 tags: [ecu, chipping, hardware]
 applies_to:
-  obd: [0]
   models: [civic, crx, del-sol, integra]
   chassis: [da, dc2, ef, eg, eg-eh, ek]
 complexity: advanced

@@ -1,8 +1,6 @@
 ---
 summary: 'Learn how ECU hardware configuration and software programming interact to determine automatic or manual transmission operation in Honda ECUs.'
 tags: [ecu, transmission, wiring, diagnostics, tuning]
-applies_to:
-  obd: [0, 1, 2]
 complexity: intermediate
 ---
 

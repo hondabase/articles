@@ -1,12 +1,7 @@
 ---
 summary: 'Guia de modificação de hardware para criar uma configuração de dual-ROM utilizando uma EPROM 27C512 e um interruptor para selecionar entre dois mapas de motor.'
-applies_to:
-  obd: [0, 1]
+tags: [ecu, hardware, tuning]
 complexity: advanced
-tags:
-  - ecu
-  - hardware
-  - tuning
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Dual Roms'

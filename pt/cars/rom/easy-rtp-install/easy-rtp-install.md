@@ -1,10 +1,9 @@
 ---
-summary: Procedimento preliminar arquivado de instalação para ligar o Easy-RTP v1.0 a ECUs OBD1.
+summary: 'Procedimento preliminar arquivado de instalação para ligar o Easy-RTP v1.0 a ECUs OBD1.'
+tags: [rtp, ecu, hardware, chipping]
 applies_to:
   ecus: [P28, P30]
-  obd: [1]
 complexity: advanced
-tags: [rtp, ecu, hardware, chipping]
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Easy Rtp Install'

@@ -1,14 +1,6 @@
-yaml
 ---
-summary: "The exhaust gas temperature (EGT) sensor measures exhaust gas temperatures to diagnose ignition timing accuracy and optimize engine tuning during ECU reprogramming."
-tags:
-  - egt
-  - exhaust-gas-temperature
-  - sensor
-  - tuning
-  - diagnostics
-applies_to:
-  obd: all
+summary: 'The exhaust gas temperature (EGT) sensor measures exhaust gas temperatures to diagnose ignition timing accuracy and optimize engine tuning during ECU reprogramming.'
+tags: [egt, exhaust-gas-temperature, sensor, tuning, diagnostics]
 complexity: intermediate
 ---
 

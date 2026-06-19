@@ -2,8 +2,7 @@
 summary: 'Technical overview of the Mugen XE5 ECU, a race-spec variant derived from the PM7 platform designed for the ZC engine.'
 tags: [ecu, mugen, zc, rom, tuning]
 applies_to:
-  obd: [0]
-  models: [88-91 Civic/CRX]
+  models: ['88-91 Civic/CRX']
   chassis: [EF]
 complexity: intermediate
 ---

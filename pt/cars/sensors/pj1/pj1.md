@@ -2,8 +2,7 @@
 summary: 'Technical reference for the PJ1 ECU, utilized in 1985–1987 EDM Integra 1.6i-16 and CRX MK1 1.6i-16 models.'
 tags: [ecu, hardware, reference, honda, integra, crx]
 applies_to:
-  obd: [0]
-  models: [Integra 1.6i-16, CRX MK1 1.6i-16]
+  models: ['Integra 1.6i-16', 'CRX MK1 1.6i-16']
 complexity: beginner
 ---
 

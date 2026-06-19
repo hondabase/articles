@@ -1,8 +1,7 @@
 ---
-summary: "A reference guide to real-time programmable hardware boards compatible with Honda ECU systems, including the Easy-RTP v1.0 design."
+summary: 'A reference guide to real-time programmable hardware boards compatible with Honda ECU systems, including the Easy-RTP v1.0 design.'
 tags: [ecu, rtp, tuning, hardware, rom]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner

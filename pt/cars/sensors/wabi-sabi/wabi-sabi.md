@@ -2,7 +2,6 @@
 summary: 'An overview of the Wabi-Sabi aesthetic philosophy and its foundational principles of impermanence, imperfection, and incompleteness.'
 tags: [philosophy, aesthetics, reference]
 applies_to:
-  obd: [0, 1, 2]
   models: [all]
 complexity: intermediate
 ---

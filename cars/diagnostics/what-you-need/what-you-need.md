@@ -2,7 +2,6 @@
 summary: 'A comprehensive guide to the tools and hardware required for Honda ECU chipping, including essential soldering equipment and memory chip specifications.'
 tags: [hardware, ecu, tuning, rom, diagnostics]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: intermediate

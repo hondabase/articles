@@ -2,7 +2,6 @@
 summary: 'An overview of different generations and families of Honda engine control units (OBD0, OBD1, and OBD2) and their compatibility.'
 tags: [ECU, reference]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, ef, eg, eg-eh, ek]
 complexity: beginner

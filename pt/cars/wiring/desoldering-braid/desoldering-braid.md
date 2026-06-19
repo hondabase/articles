@@ -1,16 +1,7 @@
-yaml
 ---
 summary: 'Desoldering braid is a fine stranded copper wire used to remove solder through capillary action, drawing molten solder into the braided mesh like a wick absorbs liquid.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [hardware, soldering, desoldering, tools, pcb-repair, reference]
 complexity: beginner
-tags:
-  - hardware
-  - soldering
-  - desoldering
-  - tools
-  - pcb-repair
-  - reference
 ---
 
 # Desoldering Braid

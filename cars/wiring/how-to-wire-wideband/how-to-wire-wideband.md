@@ -2,7 +2,6 @@
 summary: 'Installation and configuration guide for AEM wideband O2 sensors on OBD1 Honda ECUs.'
 tags: [tuning, wideband, sensors, wiring]
 applies_to:
-  obd: [1]
   models: [civic, integra]
   chassis: [dc2, eg, eg-eh]
 complexity: advanced

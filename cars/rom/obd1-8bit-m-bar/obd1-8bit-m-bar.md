@@ -2,7 +2,6 @@
 summary: 'Technical reference for OBD1 P72/P75 MAP-byte conversion formulas, calibration values, and voltage scaling.'
 tags: [tuning, sensor, maps, obd1, p72, p75]
 applies_to:
-  obd: [1]
   ecus: [P72, P75]
   models: [integra]
   chassis: [dc2]

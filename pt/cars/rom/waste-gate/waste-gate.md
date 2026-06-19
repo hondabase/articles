@@ -1,15 +1,7 @@
 ---
-summary: "Uma wastegate é um dispositivo que permite que os gases de escape contornem o turbocompressor, limitando os níveis de pressão de sobrealimentação."
-applies_to:
-  obd: [0, 1, 2]
+summary: 'Uma wastegate é um dispositivo que permite que os gases de escape contornem o turbocompressor, limitando os níveis de pressão de sobrealimentação.'
+tags: [tuning, turbo, wastegate, engine, boost, reference]
 complexity: beginner
-tags:
-  - tuning
-  - turbo
-  - wastegate
-  - engine
-  - boost
-  - reference
 ---
 
 # Wastegate

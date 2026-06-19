@@ -2,7 +2,6 @@
 summary: 'Hardware analysis and component specifications for the P5M 97+ Honda Prelude 2.2VTi (EDM) OBD2 ECU.'
 tags: [ecu, reference, sensors, p5m]
 applies_to:
-  obd: [2]
   models: [prelude]
   chassis: [bb6]
 complexity: intermediate

@@ -2,7 +2,6 @@
 summary: 'An overview of the OBD0 ECU serial communication protocol, including baud rate limitations and the implementation of Timer2 for standard datalogging.'
 tags: [ecu, datalogging, obd0, serial, tuning, intel8051]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: intermediate

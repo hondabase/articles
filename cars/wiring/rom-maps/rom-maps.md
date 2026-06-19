@@ -2,7 +2,6 @@
 summary: 'An index of memory addresses and ROM map definitions for various Honda OBD1 and OBD0 ECU families, facilitating custom tuning and firmware modification.'
 tags: [ecu, tuning, rom, reverse-engineering, reference]
 applies_to:
-  obd: [0, 1]
   models: [accord, civic, crx, del-sol, integra, prelude]
   chassis: [bb, da, dc2, ef, eg, eg-eh, ek]
 complexity: advanced

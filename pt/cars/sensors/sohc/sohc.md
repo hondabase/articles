@@ -2,7 +2,6 @@
 summary: 'An overview of Single Overhead Cam (SOHC) engine architecture, commonly found in Honda D-series engines, detailing its valve operation mechanism.'
 tags: [engine, reference, sohc, d-series]
 applies_to:
-  obd: [0, 1, 2]
   models: [d-series]
 complexity: beginner
 ---

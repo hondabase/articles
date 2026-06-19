@@ -2,7 +2,6 @@
 summary: 'Overview of OBD0 and OBD1 Honda ECU datalogging methods, including serial communication interfaces, historical software, and hardware requirements.'
 tags: [datalogging, serial, diagnostics, ecu]
 applies_to:
-  obd: [0, 1]
   models: [civic, del-sol]
   chassis: [eg, eh]
 complexity: intermediate

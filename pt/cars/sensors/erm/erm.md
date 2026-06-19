@@ -1,8 +1,6 @@
 ---
 summary: 'Informação sobre o sistema UberData Engine Management (ERM), uma solução de afinação legado para ECUs Honda OBD1.'
 tags: [sensores, referência]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

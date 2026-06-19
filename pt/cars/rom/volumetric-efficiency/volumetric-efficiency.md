@@ -1,15 +1,9 @@
 ---
 summary: 'A Eficiência Volumétrica (VE) é uma comparação do volume real da mistura ar/combustível admitida com o volume real do cilindro se este estivesse completamente cheio.'
+tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
-  obd: [0, 1, 2]
   brand: Honda
 complexity: intermediate
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
 ---
 
 # Eficiência Volumétrica

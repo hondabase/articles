@@ -1,17 +1,7 @@
 ---
 summary: 'Todos os leitores de MCU descritos aqui tiram partido de uma falha de design dos MCUs OKI (e a falha de design está presente em todos os MCUs que vimos até à data).'
-applies_to:
-  obd: [0, 1, 2]
+tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics]
 complexity: advanced
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - wiring
-  - conversion
-  - diagnostics
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Mcu Readers'

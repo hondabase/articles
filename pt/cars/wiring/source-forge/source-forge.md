@@ -1,17 +1,7 @@
 ---
-summary: "SourceForge é uma comunidade Open Source para tudo. Atualmente está a ser utilizada para o ASM662, desenvolvimento da ROM P30 de Andy Sloane, a codebase PM6 Future, a codebase 1 Wire VTEC e scripts do Crome ROMEditor."
-applies_to:
-  obd: [0, 1, 2]
+summary: 'SourceForge é uma comunidade Open Source para tudo. Atualmente está a ser utilizada para o ASM662, desenvolvimento da ROM P30 de Andy Sloane, a codebase PM6 Future, a codebase 1 Wire VTEC e scripts do Crome ROMEditor.'
+tags: [tuning, rom, sensors, reference, wiring, conversion, diagnostics, ecu]
 complexity: intermediate
-tags:
-  - tuning
-  - rom
-  - sensors
-  - reference
-  - wiring
-  - conversion
-  - diagnostics
-  - ecu
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Source Forge'

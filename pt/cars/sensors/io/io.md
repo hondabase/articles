@@ -1,8 +1,6 @@
 ---
 summary: 'Visão geral básica das portas de Entrada/Saída (I/O) nos microcontroladores das ECUs Honda e como fazem a interface com sensores e atuadores do motor.'
 tags: [sensors, reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

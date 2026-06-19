@@ -1,13 +1,7 @@
 ---
 summary: 'Fórmula de conversão de RPM para valor hexadecimal de 16 bits para ECUs Honda OBD0.'
-applies_to:
-  obd: [0]
+tags: [ecu, reference, sensors, diagnostics]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
-  - diagnostics
 sources:
   - name: 'pgmfi.org wiki'
     title: 'OBD016 Bit RPM'

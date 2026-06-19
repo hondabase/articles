@@ -1,8 +1,7 @@
 ---
 summary: 'Technical guide for dumping the internal ROM contents of an Oki 83C154 microcontroller, used in certain OBD0 ECUs.'
-tags: [ecu, rom-dumping, reverse-engineering, hardware]
+tags: [ecu, rom-dumping, reverse-engineering, hardware, obd0]
 applies_to:
-  obd: [0]
   models: [civic, crx]
   chassis: [ef]
 complexity: advanced

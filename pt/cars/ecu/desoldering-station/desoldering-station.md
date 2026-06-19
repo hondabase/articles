@@ -1,11 +1,7 @@
 ---
 summary: 'Guia técnico para o uso de estações de dessoldagem profissionais na remoção de chips DIP de múltiplos pinos de placas de ECU de dupla face sem danificar as pistas.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [hardware, education]
 complexity: intermediate
-tags:
-  - hardware
-  - education
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Estação de Dessoldagem'

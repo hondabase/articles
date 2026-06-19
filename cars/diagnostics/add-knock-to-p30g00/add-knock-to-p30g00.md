@@ -2,7 +2,6 @@
 summary: 'Step-by-step hardware guide for adding a knock sensor circuit to non-equipped Honda OBD1 ECUs using specific component modifications.'
 tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
-  obd: [1]
   models: [civic, del-sol, integra]
   chassis: [dc2, eg, eh]
 complexity: intermediate

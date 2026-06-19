@@ -1,13 +1,7 @@
 ---
 summary: 'Ligações de pinos e pistas entre o MCU, latch e o suporte de EPROM externa em ECUs Honda OBD1.'
-applies_to:
-  obd: [1]
+tags: [ECU, chipping, hardware, wiring]
 complexity: advanced
-tags:
-  - ECU
-  - chipping
-  - hardware
-  - wiring
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Ecu Chipping Wirelist'

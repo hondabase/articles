@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of how RPM (Revolutions Per Minute) is calculated in Honda engines using the Crankshaft Position (CKP) sensor.'
 tags: [sensors, reference, ckp, rpm]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

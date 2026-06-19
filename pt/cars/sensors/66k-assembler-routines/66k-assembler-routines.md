@@ -1,8 +1,6 @@
 ---
 summary: 'Uma coleção de rotinas em linguagem assembly Oki 66K e trechos de código para modificar o firmware das ECUs Honda OBD1 e OBD2.'
 tags: [ecu, reference, sensors]
-applies_to:
-  obd: [1]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

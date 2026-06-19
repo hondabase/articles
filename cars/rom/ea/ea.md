@@ -2,7 +2,6 @@
 summary: 'The EA (EA Prime) pin on the MCU determines whether the ECU executes code from internal ROM or an external ROM chip, essential for tuning and chip modification.'
 tags: [ecu, reference, tuning, rom, mcu]
 applies_to:
-  obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eg-eh]
 complexity: beginner

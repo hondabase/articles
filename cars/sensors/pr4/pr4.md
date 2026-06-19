@@ -2,7 +2,6 @@
 summary: 'Technical overview of the PR4 ECU, detailing the differences between the OBD0 and OBD1 variants used in Acura Integra applications.'
 tags: [ecu, pr4, obd0, obd1, integra]
 applies_to:
-  obd: [0, 1]
   models: [integra]
   chassis: [da, dc2]
 complexity: beginner

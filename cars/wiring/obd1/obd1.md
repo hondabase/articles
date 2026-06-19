@@ -2,7 +2,6 @@
 summary: 'Technical overview of OBD1 (1992–1995) Honda Engine Control Units, including popular ECU models and their applications.'
 tags: [ecu, tuning, obd1, reference]
 applies_to:
-  obd: [1]
   brand: Acura/Honda
   models: [accord, civic, crx, del-sol, integra, nsx, prelude]
   chassis: [bb, cb-cd, da, dc2, ef, eg, eg-eh, ek]

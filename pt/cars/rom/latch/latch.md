@@ -1,13 +1,7 @@
 ---
 summary: 'Fazer o "latch" de algo significa manter ou preservar o seu estado. Os latches, como o 74HC373, são portas lógicas que mantêm o estado das linhas de IO.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [tuning, rom, sensores, referência]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - sensores
-  - referência
 sources:
   - name: 'pgmfi.org wiki'
     title: Latch

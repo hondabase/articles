@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of Transistor-Transistor Logic (TTL) signal levels and its application in automotive ECU serial communication.'
 tags: [ecu, reference, sensors, ttl, serial]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

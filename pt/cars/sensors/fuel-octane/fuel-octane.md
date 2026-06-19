@@ -1,8 +1,6 @@
 ---
 summary: 'Compreender os índices de octanagem do combustível e o seu impacto na performance do motor Honda, resistência à detonação e otimização do ponto de ignição.'
 tags: [sensores, referência]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

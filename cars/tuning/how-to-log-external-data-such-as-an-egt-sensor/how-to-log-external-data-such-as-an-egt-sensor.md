@@ -3,7 +3,6 @@ summary: 'Technical guide for utilizing the undocumented D12 analog input on USD
 tags: [datalogging, sensor, adc, ecu, p30]
 applies_to:
   ecus: [P30]
-  obd: [1]
   models: [civic, del-sol]
   chassis: [eg, eh]
 complexity: advanced

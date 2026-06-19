@@ -2,7 +2,6 @@
 summary: 'An overview of the Automatic Transmission Lockup Solenoid function, ECU pinout, and common repurposing for OBD0 Honda vehicles.'
 tags: [ecu, transmission, sensors, obd0]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: beginner

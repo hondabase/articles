@@ -1,16 +1,7 @@
-yaml
 ---
 summary: 'Archived methods for socketing and chipping early OBD0 Honda and Acura ECUs (1988–1989) with internal ROM, including flywire and piggyback EPROM installation techniques.'
-applies_to:
-  obd: [0]
+tags: [ecu, chipping, hardware, eprom, obd0, socketing]
 complexity: advanced
-tags:
-  - ecu
-  - chipping
-  - hardware
-  - eprom
-  - obd0
-  - socketing
 ---
 
 # OBD0 ECU Chipping and ROM Modification (1988–1989)

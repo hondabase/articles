@@ -1,8 +1,7 @@
 ---
 summary: 'Technical guide for dumping the internal ROM contents of a DIP64 Oki 66207 microcontroller using a custom reader interface.'
-tags: [ecu, rom-dumping, reverse-engineering, hardware]
+tags: [ecu, rom-dumping, reverse-engineering, hardware, obd1]
 applies_to:
-  obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eg-eh]
 complexity: advanced

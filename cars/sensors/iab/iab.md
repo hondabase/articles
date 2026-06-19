@@ -2,7 +2,6 @@
 summary: 'An overview of the Intake Air Bypass (IAB) system, which optimizes engine performance by switching between long and short intake runners based on RPM.'
 tags: [sensors, intake, h22a, gsr, iab]
 applies_to:
-  obd: [0, 1, 2]
   models: [prelude]
   chassis: [bb]
 complexity: beginner

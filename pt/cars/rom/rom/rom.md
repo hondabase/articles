@@ -1,11 +1,7 @@
 ---
 summary: 'Informação de Memória Apenas de Leitura mais ou menos gravada em pedra'
-applies_to:
-  obd: [0, 1, 2]
+tags: [tuning, rom]
 complexity: beginner
-tags:
-  - tuning
-  - rom
 ---
 
 # ROM

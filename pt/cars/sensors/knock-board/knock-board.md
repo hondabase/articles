@@ -1,12 +1,7 @@
 ---
 summary: 'Visão geral técnica da placa do sensor de detonação (knock board) da ECU OBD1 Honda, limitações em motores de alta performance e desativação por software.'
-applies_to:
-  obd: [1]
+tags: [ecu, sensor, hardware]
 complexity: advanced
-tags:
-  - ecu
-  - sensor
-  - hardware
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Knock Board'

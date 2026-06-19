@@ -1,15 +1,6 @@
 ---
-summary: "Data logging software enables real-time monitoring of engine parameters by reading directly from the ECU via serial communication. Learn how datalogging patches are installed and used to capture engine telemetry for tuning analysis."
-tags:
-  - data logging
-  - ecu
-  - serial communication
-  - tuning
-  - rom
-  - obd1
-  - diagnostics
-applies_to:
-  obd: [0, 1, 2]
+summary: 'Data logging software enables real-time monitoring of engine parameters by reading directly from the ECU via serial communication. Learn how datalogging patches are installed and used to capture engine telemetry for tuning analysis.'
+tags: ['data logging', ecu, 'serial communication', tuning, rom, obd1, diagnostics]
 complexity: advanced
 ---
 

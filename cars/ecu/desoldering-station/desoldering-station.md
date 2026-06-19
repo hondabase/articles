@@ -2,7 +2,6 @@
 summary: 'Technical guide to using professional desoldering stations for removing multi-pin DIP chips from double-sided ECU boards without trace damage.'
 tags: [hardware, education, soldering, ecu]
 applies_to:
-  obd: [0, 1, 2]
   models: [integra]
   chassis: [all]
 complexity: intermediate

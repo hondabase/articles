@@ -1,17 +1,7 @@
-yaml
 ---
-summary: Understand wideband oxygen sensor technology, compare narrowband vs. wideband output, and explore affordable aftermarket controller options for engine tuning and data logging.
-applies_to:
-  obd: [0, 1, 2]
+summary: 'Understand wideband oxygen sensor technology, compare narrowband vs. wideband output, and explore affordable aftermarket controller options for engine tuning and data logging.'
+tags: [oxygen-sensor, wideband, afr, tuning, fueling, diagnostics, lsu4]
 complexity: intermediate
-tags:
-  - oxygen-sensor
-  - wideband
-  - afr
-  - tuning
-  - fueling
-  - diagnostics
-  - lsu4
 ---
 
 # Wideband Oxygen Sensors (Wideband O2)

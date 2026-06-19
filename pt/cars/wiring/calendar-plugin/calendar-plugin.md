@@ -1,15 +1,7 @@
 ---
-summary: "O Calendar Plugin pode ser utilizado para gerar um calendário mensal numa página de wiki. É útil para Wikis Pessoais."
-applies_to:
-  obd: [0, 1, 2]
+summary: 'O Calendar Plugin pode ser utilizado para gerar um calendário mensal numa página de wiki. É útil para Wikis Pessoais.'
+tags: [ecu, reference, sensors, wiring, conversion, diagnostics]
 complexity: intermediate
-tags:
-  - ecu
-  - reference
-  - sensors
-  - wiring
-  - conversion
-  - diagnostics
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Calendar Plugin'

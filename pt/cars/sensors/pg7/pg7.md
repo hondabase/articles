@@ -2,8 +2,7 @@
 summary: 'Technical overview of the PG7 ECU used in 1986–1989 Acura Integra models, highlighting the critical differences between vacuum-advance and electronic-advance variants.'
 tags: [ecu, integra, d16a1, reference]
 applies_to:
-  obd: [0]
-  models: [Acura Integra]
+  models: ['Acura Integra']
   chassis: [DA1]
 complexity: beginner
 ---

@@ -2,7 +2,6 @@
 summary: 'Learn how to manually calculate and correct 8-bit checksums for OBD0 and OBD1 Honda ECU ROM files to resolve checksum errors.'
 tags: [ecu, tuning, rom, diagnostics, checksum]
 applies_to:
-  obd: [0, 1]
   models: [civic, crx]
   chassis: [ef]
 complexity: intermediate

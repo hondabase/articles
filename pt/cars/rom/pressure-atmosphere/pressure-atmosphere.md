@@ -1,16 +1,7 @@
 ---
-summary: "The atmospheric pressure sensor (also called barometric pressure or PA sensor) measures a narrow range of pressure centered around atmospheric pressure and adjusts fuel mixture for altitude and weather changes."
-applies_to:
-  obd: [0, 1, 2]
+summary: 'The atmospheric pressure sensor (also called barometric pressure or PA sensor) measures a narrow range of pressure centered around atmospheric pressure and adjusts fuel mixture for altitude and weather changes.'
+tags: [ecu, reference, tuning, rom, sensors, atmospheric-pressure, pa-sensor]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - atmospheric-pressure
-  - pa-sensor
 ---
 
 # Atmospheric Pressure Sensor

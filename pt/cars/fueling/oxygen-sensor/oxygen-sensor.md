@@ -1,12 +1,7 @@
 ---
 summary: 'Como funciona o sensor de oxigénio de banda estreita (narrowband) de origem, resolução de problemas de CELs do sensor de O2 e conversão entre sensores de 1 fio e 4 fios.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [sensor, combustivel, diagnosticos]
 complexity: intermediate
-tags:
-  - sensor
-  - combustivel
-  - diagnosticos
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Oxygen Sensor'

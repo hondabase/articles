@@ -1,8 +1,6 @@
 ---
 summary: 'Technical overview of the USDM ECU Injector Test Circuit, which monitors fuel injector connectivity and triggers OBD Code 16.'
 tags: [ecu, diagnostics, sensors, fuel-system]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

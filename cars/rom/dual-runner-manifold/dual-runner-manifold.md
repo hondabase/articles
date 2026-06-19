@@ -2,7 +2,6 @@
 summary: 'Understand the operation and tuning principles of Honda dual-runner intake manifolds, including IAB (Intake Air Bypass) activation for optimized torque and power.'
 tags: [tuning, iab, intake, manifold, performance]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, integra, prelude]
   chassis: [bb, cb-cd, da, dc2]
 complexity: beginner

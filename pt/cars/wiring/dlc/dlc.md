@@ -1,12 +1,7 @@
 ---
 summary: 'Referência técnica e guia de localização para os Conectores de Ligação de Dados (DLC) Honda de 3 pinos e OBD2 de 16 pinos.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [diagnostics, wiring, serial]
 complexity: intermediate
-tags:
-  - diagnostics
-  - wiring
-  - serial
 sources:
   - name: 'pgmfi.org wiki'
     title: DLC

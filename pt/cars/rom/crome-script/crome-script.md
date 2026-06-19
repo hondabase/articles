@@ -1,12 +1,7 @@
 ---
 summary: 'Referência para a API JavaScript legada do editor de ROM Crome, utilizada por scripts, manipuladores de ROM (ROM handlers) e plug-ins.'
-applies_to:
-  obd: [1]
+tags: [tuning, rom, software]
 complexity: advanced
-tags:
-  - tuning
-  - rom
-  - software
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Crome Script'

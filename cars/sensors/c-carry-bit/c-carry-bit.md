@@ -1,8 +1,7 @@
 ---
 summary: 'An overview of the carry bit (C) functionality within 8051 and Oki 66k architectures, focusing on arithmetic overflow tracking and bit manipulation.'
-tags: [8051, oki-66k, architecture, assembly, programming]
+tags: ['8051', oki-66k, architecture, assembly, programming]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: advanced

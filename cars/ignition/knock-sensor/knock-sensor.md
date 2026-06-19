@@ -2,7 +2,6 @@
 summary: 'A piezo-electric sensor that monitors engine block vibrations to detect detonation and allow the ECU to adjust ignition timing.'
 tags: [knock, sensor, ignition, detonation, timing]
 applies_to:
-  obd: [1, 2]
   engines: [B-Series, H-Series]
   models: [civic, crx, del-sol, integra, prelude]
   chassis: [bb, da, dc2, ef, eg, eh, ek]

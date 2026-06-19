@@ -1,11 +1,7 @@
 ---
 summary: 'O sensor Manifold Absolute Pressure (MAP) mede o vácuo e a pressão de sobrealimentação (boost) do motor, funcionando como a principal entrada de carga para o sistema de combustível speed-density da Honda.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [sensor, fueling]
 complexity: beginner
-tags:
-  - sensor
-  - fueling
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Sensor MAP'

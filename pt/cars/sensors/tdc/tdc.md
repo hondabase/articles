@@ -2,7 +2,6 @@
 summary: 'Technical definition and explanation of Top Dead Center (TDC) in Honda internal combustion engines, covering its role in ignition timing and valve synchronization.'
 tags: [sensors, ignition, timing, engine-management]
 applies_to:
-  obd: [0, 1, 2]
   models: [all]
   chassis: [all]
 complexity: beginner

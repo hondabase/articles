@@ -1,15 +1,7 @@
 ---
 summary: 'Os Ícones de Link (Link Icons) são uma nova funcionalidade opcional da Php Wiki. Quando ativados, serão exibidos ícones à frente dos URLs para indicar o tipo de link.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 complexity: intermediate
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - diagnostics
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Link Icons'

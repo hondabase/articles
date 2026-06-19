@@ -1,12 +1,7 @@
 ---
 summary: 'Um guia abrangente sobre como ajustar os mapas de combustível e ignição na ROM da sua ECU Honda para passar nas inspeções de emissões e gases de escape do veículo.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [tuning, emissions, fueling]
 complexity: intermediate
-tags:
-  - tuning
-  - emissions
-  - fueling
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Tuning For Smog'

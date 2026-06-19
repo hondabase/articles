@@ -1,8 +1,7 @@
 ---
 summary: 'Technical guide for converting OBD1 Honda ECUs between automatic and manual configurations via resistor board modifications.'
-tags: [ecu, transmission, tuning, conversion, hardware]
+tags: [ecu, transmission, tuning, conversion, hardware, obd1]
 applies_to:
-  obd: [1]
   models: [civic, crx, del-sol, integra]
   chassis: [da, dc2, ef, eg, eg-eh]
 complexity: advanced

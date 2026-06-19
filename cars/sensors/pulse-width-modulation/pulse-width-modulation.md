@@ -2,7 +2,6 @@
 summary: 'An overview of Pulse Width Modulation (PWM) as a digital-to-analog conversion method for controlling automotive solenoids, stepper motors, and output devices.'
 tags: [sensors, reference, electronics, pwm]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner

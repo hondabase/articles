@@ -1,8 +1,7 @@
 ---
-summary: "Overview of the PM6_Future ECU code module, a collaborative firmware project for the Honda PM6 ECU."
+summary: 'Overview of the PM6_Future ECU code module, a collaborative firmware project for the Honda PM6 ECU.'
 tags: [tuning, rom, sensors, diagnostics, ecu, pm6]
 applies_to:
-  obd: [0, 1, 2]
   ecus: [PM6]
 complexity: beginner
 ---

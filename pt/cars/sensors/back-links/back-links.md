@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of the Back Links functionality used to identify and track cross-references between technical documentation pages.'
 tags: [reference, documentation, navigation]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

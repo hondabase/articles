@@ -2,7 +2,6 @@
 summary: 'Technical analysis of the diagnostic debug mode and ROM configuration byte switches in the OBD1 Honda P72 ECU.'
 tags: [ecu, diagnostics, rom, p72]
 applies_to:
-  obd: [1]
   models: [civic, del-sol, integra]
   chassis: [da, dc2, eg, eh]
 complexity: advanced

@@ -1,12 +1,7 @@
 ---
 summary: 'Guia técnico para injetores de combustível de alta impedância (saturados) nos motores Honda PGM-FI, explicando as suas propriedades elétricas, tipos de driver e compatibilidade.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [injectors, fueling, hardware]
 complexity: beginner
-tags:
-  - injectors
-  - fueling
-  - hardware
 sources:
   - name: 'pgmfi.org wiki'
     title: 'High Impedance Injectors'

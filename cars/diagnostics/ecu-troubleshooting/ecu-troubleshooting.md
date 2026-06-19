@@ -2,7 +2,6 @@
 summary: 'A comprehensive troubleshooting guide for diagnosing Honda OBD0 and OBD1 ECU issues, including solid CEL lights, diagnostic trouble codes, and power-up failures.'
 tags: [ecu, diagnostics, troubleshooting, obd0, obd1]
 applies_to:
-  obd: [0, 1]
   models: [accord, civic, crx, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, ef, eg, eg-eh]
 complexity: intermediate

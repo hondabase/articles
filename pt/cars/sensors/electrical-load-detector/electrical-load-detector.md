@@ -2,7 +2,6 @@
 summary: 'The Electrical Load Detector (ELD) monitors vehicle electrical demand to allow the ECU to adjust idle and alternator output for stable engine operation.'
 tags: [sensors, electrical, idle, alternator]
 applies_to:
-  obd: [0, 1, 2]
   models: [Honda]
 complexity: beginner
 ---

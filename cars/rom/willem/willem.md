@@ -2,7 +2,6 @@
 summary: 'Configuring and using Willem EPROM programmers for burning SST 27SF512 and 27SF256 ROM chips for Honda OBD0 and OBD1 ECUs.'
 tags: [chipping, hardware, rom, eeprom]
 applies_to:
-  obd: [0, 1]
   models: [accord, civic, integra, prelude]
   chassis: {}
 complexity: intermediate

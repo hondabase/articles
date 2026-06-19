@@ -1,12 +1,6 @@
 ---
-summary: "Technical writing principles emphasizing clarity, simplicity, and direct communication in automotive documentation."
-tags:
-  - documentation
-  - style-guide
-  - writing
-  - technical-writing
-applies_to:
-  obd: [0, 1, 2]
+summary: 'Technical writing principles emphasizing clarity, simplicity, and direct communication in automotive documentation.'
+tags: [documentation, style-guide, writing, technical-writing]
 complexity: beginner
 ---
 

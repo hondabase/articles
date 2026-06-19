@@ -1,12 +1,7 @@
 ---
 summary: 'FAQ arquivado sobre configuração e afinação para o antigo editor de ROM Honda OBD1 UberData.'
-applies_to:
-  obd: [1]
+tags: [tuning, rom, software]
 complexity: intermediate
-tags:
-  - tuning
-  - rom
-  - software
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Uber Data FAQ'

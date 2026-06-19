@@ -2,7 +2,6 @@
 summary: 'Overview of converting automatic Honda ECUs for manual transmission use through software or hardware modifications.'
 tags: [ecu, tuning, conversion, transmission]
 applies_to:
-  obd: [0, 1, 2]
   brand: Acura/Honda
   models: [civic, crx, del-sol, integra, prelude]
   chassis: [bb, da, dc2, ef, eg, eg-eh]

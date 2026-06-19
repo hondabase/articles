@@ -1,8 +1,6 @@
 ---
 summary: 'Understanding Absolute Pressure (MAP) measurements, including the relationship between atmospheric pressure, boost, and vacuum scales.'
 tags: [tuning, rom, sensors, diagnostics, ecu]
-applies_to:
-  obd: [0, 1, 2]
 complexity: intermediate
 ---
 

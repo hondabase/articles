@@ -1,8 +1,6 @@
 ---
 summary: 'A guide to Real-Time Programming (RTP) systems for Honda ECUs, enabling live calibration changes while the engine is running.'
 tags: [ecu, tuning, rom, rtp, diagnostics]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

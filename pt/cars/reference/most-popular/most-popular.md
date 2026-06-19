@@ -1,8 +1,6 @@
 ---
 summary: 'Artigos mais visualizados na base de conhecimentos Hondabase, proporcionando acesso fácil a tópicos populares de afinação e diagnóstico.'
 tags: [reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

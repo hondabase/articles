@@ -2,7 +2,6 @@
 summary: 'An overview of MCU clock speeds in Honda ECUs and their critical role in timing-dependent operations like serial communication.'
 tags: [ecu, mcu, timing, diagnostics]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner

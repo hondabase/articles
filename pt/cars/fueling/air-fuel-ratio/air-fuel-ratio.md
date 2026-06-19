@@ -1,12 +1,7 @@
 ---
 summary: 'Uma introdução à relação ar-combustível (AFR) em motores de combustão interna, explicando alvos estequiométricos, misturas ricas vs. pobres e escalas de sensores.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [combustível, tuning, sensor]
 complexity: beginner
-tags:
-  - combustível
-  - tuning
-  - sensor
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Relação Ar-Combustível'

@@ -1,16 +1,7 @@
 ---
 summary: 'alguns dos principais fornecedores de componentes eletrónicos: Digikey boa disponibilidade de stock, excelente catálogo, bom website.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [hardware, education, ecu, tuning, rom, sensors, reference]
 complexity: intermediate
-tags:
-  - hardware
-  - education
-  - ecu
-  - tuning
-  - rom
-  - sensors
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Electronic Part Supplier'

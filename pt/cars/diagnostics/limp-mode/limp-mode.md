@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of the Limp Mode (Limp Home Mode) in Honda ECUs, detailing its function, sensor reliance, and operational limitations.'
 tags: [ecu, diagnostics, sensors, limp-mode, obd0]
-applies_to:
-  obd: [0]
 complexity: beginner
 ---
 

@@ -1,9 +1,6 @@
-yaml
 ---
-summary: "Easily enable O2 sensor heater functionality on ECUs lacking the circuit, such as P05 models, by adding a single transistor component."
+summary: 'Easily enable O2 sensor heater functionality on ECUs lacking the circuit, such as P05 models, by adding a single transistor component.'
 tags: [ecu, o2-sensor, heater, wiring, transistor, conversion, obd-codes]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

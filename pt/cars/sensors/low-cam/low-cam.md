@@ -1,11 +1,7 @@
 ---
 summary: 'Num motor VTEC, a Cames Baixa (Low Cam) é utilizada em RPMs baixas. Geralmente, esta árvore de cames é otimizada para economia de combustível e um ralenti estável.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [sensors, reference]
 complexity: beginner
-tags:
-  - sensors
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Cames Baixa (Low Cam)'

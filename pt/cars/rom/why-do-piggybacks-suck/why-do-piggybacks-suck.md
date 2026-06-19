@@ -1,16 +1,6 @@
 ---
-summary: "Piggyback controllers manipulate sensor signals before reaching the ECU, making independent fuel and ignition tuning impossible. This fundamental limitation causes tuning conflicts, especially in boosted applications."
-tags:
-  - ecu
-  - piggyback
-  - tuning
-  - rom
-  - sensors
-  - map-sensor
-  - fuel-tuning
-  - ignition-timing
-applies_to:
-  obd: [0, 1, 2]
+summary: 'Piggyback controllers manipulate sensor signals before reaching the ECU, making independent fuel and ignition tuning impossible. This fundamental limitation causes tuning conflicts, especially in boosted applications.'
+tags: [ecu, piggyback, tuning, rom, sensors, map-sensor, fuel-tuning, ignition-timing]
 complexity: intermediate
 ---
 

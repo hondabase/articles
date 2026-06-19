@@ -1,12 +1,7 @@
 ---
 summary: 'Um guia educativo que explica a arquitetura de hardware, o mapeamento de memória, o expansor de I/O OKI 82C55 e o código assembly 66k das ECUs Honda OBD1.'
-applies_to:
-  obd: [1]
+tags: [ecu, hardware, education]
 complexity: advanced
-tags:
-  - ecu
-  - hardware
-  - education
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Doc ECU School'

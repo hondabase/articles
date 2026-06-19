@@ -4,7 +4,6 @@ tags: [ecu, reference, chipping, obd1]
 applies_to:
   brand: Acura
   ecus: [PR4]
-  obd: [1]
   models: [civic, integra]
   chassis: [da, dc2, eg]
 complexity: intermediate

@@ -1,12 +1,7 @@
 ---
 summary: 'Um guia introdutório sobre os conceitos de gestão eletrónica do motor para entusiastas da Honda, abrangendo os princípios básicos de ar, combustível, faísca e sensores.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [tuning, ecu, reference]
 complexity: beginner
-tags:
-  - tuning
-  - ecu
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Conceitos Básicos'

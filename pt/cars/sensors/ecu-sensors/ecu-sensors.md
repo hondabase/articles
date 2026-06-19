@@ -1,8 +1,6 @@
 ---
 summary: 'Guia técnico dos sensores de entrada utilizados pelas ECUs Honda para gerir os parâmetros de injeção de combustível e ignição.'
 tags: [ecu, sensores, diagnóstico, injeção]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

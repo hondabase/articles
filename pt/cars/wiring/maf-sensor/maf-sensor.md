@@ -1,8 +1,6 @@
 ---
 summary: 'Explicação técnica dos sensores de Fluxo de Massa de Ar (MAF) e por que a Honda utiliza principalmente sistemas de velocidade-densidade baseados em MAP.'
 tags: [tuning, rom, sensors, reference, wiring, conversion]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

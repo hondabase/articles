@@ -2,7 +2,6 @@
 summary: 'Hardware and software reference guide for the OBD0 and OBD1 PR3 DOHC VTEC ECU used in B16A-equipped Integra and Civic models.'
 tags: [ecu, vtec, reference, obd0, obd1]
 applies_to:
-  obd: [0, 1]
   models: [civic, crx, del-sol, integra]
   chassis: [da, dc2, ef, eg, eh, ek]
 complexity: intermediate

@@ -2,7 +2,6 @@
 summary: 'Technical reference for the OBD0 fuel calculation formula, including pulsewidth derivation and variable definitions.'
 tags: [ecu, fuel, obd0, tuning, reference]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: beginner

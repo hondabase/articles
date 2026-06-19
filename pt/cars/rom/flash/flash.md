@@ -1,13 +1,7 @@
 ---
 summary: 'A FLASH-ROM é muito parecida com a EEPROM, com a exceção de que é apagada / gravada em setores'
-applies_to:
-  obd: [0, 1, 2]
+tags: [tuning, rom, sensors, reference]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - sensors
-  - reference
 ---
 
 # FLASH

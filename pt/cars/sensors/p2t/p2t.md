@@ -1,8 +1,6 @@
 ---
 summary: 'Especificações técnicas e visão geral da aplicação para a ECU Honda Civic Si 99+.'
 tags: [ecu, reference, sensors]
-applies_to:
-  obd: [2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

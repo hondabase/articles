@@ -1,14 +1,6 @@
-yaml
 ---
-summary: "Crome is a ROM editor featuring JavaScript scripting support for extending tuning functionality across OBD systems."
-tags:
-  - tuning
-  - rom-editor
-  - javascript
-  - rom-scripting
-  - ecu-tuning
-applies_to:
-  obd: [0, 1, 2]
+summary: 'Crome is a ROM editor featuring JavaScript scripting support for extending tuning functionality across OBD systems.'
+tags: [tuning, rom-editor, javascript, rom-scripting, ecu-tuning]
 complexity: beginner
 ---
 

@@ -2,7 +2,6 @@
 summary: 'Technical reference for the P0A OBD1 ECU, found in 1994–1995 Honda Accord EX models (F22B engine).'
 tags: [ecu, reference, tuning, honda-accord]
 applies_to:
-  obd: [1]
   models: [accord]
   chassis: [cb-cd]
 complexity: advanced

@@ -2,7 +2,6 @@
 summary: 'Official Honda and Acura service manual resources provided by Helm Inc. for various chassis generations including EF, EG, DA, and DC.'
 tags: [manuals, reference, service, documentation]
 applies_to:
-  obd: [0, 1, 2]
   models: [Civic, CRX, Integra]
   chassis: [EF, EG, DA, DC]
 complexity: beginner

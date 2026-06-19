@@ -2,7 +2,6 @@
 summary: 'Learn how Honda OBD1 ECUs communicate with tuning laptops via serial TTL signals (CN2 header), including pinouts, settings, and wiring warnings.'
 tags: [ecu, datalogging, serial]
 applies_to:
-  obd: [1]
   models: [civic, del-sol]
   chassis: [eg, eg-eh]
 complexity: advanced

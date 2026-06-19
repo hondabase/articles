@@ -1,12 +1,7 @@
 ---
 summary: 'Um guia para calibração segura do avanço da ignição em ECUs Honda. Saiba como o avanço da ignição afeta a pressão no cilindro, o binário e a segurança do motor.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [tuning, ignition, maps]
 complexity: intermediate
-tags:
-  - tuning
-  - ignition
-  - maps
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Tuning Timing'

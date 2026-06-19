@@ -1,8 +1,6 @@
 ---
 summary: 'Introdução prática à reprogramação (chipping) de ECUs Honda: o que significa, as ferramentas essenciais necessárias e o processo de gravação de novos ficheiros bin.'
 tags: [hardware, educação, ecu, tuning, rom, sensores, referência, diagnóstico]
-applies_to:
-  obd: [0]
 complexity: intermediate
 sources:
   - name: 'pgmfi.org wiki'

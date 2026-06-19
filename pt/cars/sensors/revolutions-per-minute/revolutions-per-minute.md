@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of Revolutions Per Minute (RPM) as a critical engine parameter for Honda OBD engine management systems.'
 tags: [sensors, reference, engine-management]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

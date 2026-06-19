@@ -2,8 +2,7 @@
 summary: 'Technical reference for the Honda PT3 OBD1 ECU used in 1990-1993 USDM Accord models with the F22A1 SOHC engine.'
 tags: [ecu, obd1, accord, f22a1, hardware]
 applies_to:
-  obd: [1]
-  models: [Accord 1990-1993]
+  models: ['Accord 1990-1993']
   chassis: [CB7]
 complexity: intermediate
 ---

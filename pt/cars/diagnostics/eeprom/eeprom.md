@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of Electrically Erasable Programmable Read-Only Memory (EEPROM) and its role in automotive ECU tuning and data storage.'
 tags: [ecu, rom, tuning, diagnostics, memory]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

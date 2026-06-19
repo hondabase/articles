@@ -2,7 +2,6 @@
 summary: 'Guide to OBD1 ECU code compatibility, detailing VTEC requirements, sensor exclusions (O2/Knock), and regional (USDM/JDM/EDM) hardware differences.'
 tags: [ecu, tuning, obd1, compatibility, wiring]
 applies_to:
-  obd: [1]
   models: [civic, integra]
   chassis: [dc2, eg, eg-eh]
 complexity: advanced

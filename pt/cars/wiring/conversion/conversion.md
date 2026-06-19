@@ -1,14 +1,7 @@
 ---
-summary: Conversion involves modifying ECU wiring to install a different generation ECU (OBD1 or OBD2) in your vehicle.
-applies_to:
-  obd: [1, 2]
+summary: 'Conversion involves modifying ECU wiring to install a different generation ECU (OBD1 or OBD2) in your vehicle.'
+tags: [ecu, reference, sensors, wiring, conversion]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
-  - wiring
-  - conversion
 ---
 
 # ECU Conversion Guide

@@ -1,8 +1,7 @@
 ---
-summary: "Technical overview of OBD0 VTEC ECUs, specifically the PR3 and PW0 models used in 1989–1991 B16A1 applications."
+summary: 'Technical overview of OBD0 VTEC ECUs, specifically the PR3 and PW0 models used in 1989–1991 B16A1 applications.'
 tags: [ecu, obd0, vtec, pr3, pw0, b16a1]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [ef, da]
 complexity: beginner

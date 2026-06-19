@@ -2,7 +2,6 @@
 summary: 'A hardware/software interaction will determine whether a program in an ECU behaves as a manual or auto.'
 tags: [ecu, reference, sensors, diagnostics]
 applies_to:
-  obd: [0, 1, 2]
   models: [civic, crx, del-sol, integra]
   chassis: [dc2, ef, eg, eg-eh]
 complexity: intermediate

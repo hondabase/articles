@@ -2,7 +2,6 @@
 summary: 'Technical reference and location guide for the Honda 3-pin (OBD0/OBD1) and standardized 16-pin (OBD2) Data Link Connectors (DLC).'
 tags: [diagnostics, wiring, communication-interface]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, del-sol, integra, prelude]
 complexity: intermediate
 ---

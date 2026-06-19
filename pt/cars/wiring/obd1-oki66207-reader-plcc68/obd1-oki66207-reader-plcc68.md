@@ -1,8 +1,6 @@
 ---
 summary: 'Guia avançado para construir um leitor de hardware para extrair dados da ROM Interna de processadores PLCC68 Oki 66207 encontrados em ECUs Honda OBD1.'
-tags: [hardware, education, ecu, tuning, rom, sensors, reference, wiring, conversion]
-applies_to:
-  obd: [1]
+tags: [hardware, education, ecu, tuning, rom, sensors, reference, wiring, conversion, obd1]
 complexity: advanced
 sources:
   - name: 'pgmfi.org wiki'

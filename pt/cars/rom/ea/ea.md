@@ -1,14 +1,7 @@
 ---
 summary: 'EA (EA Prime) is an MCU pin that controls whether the MCU executes from internal ROM or an external ROM chip.'
-applies_to:
-  obd: [1]
+tags: [ecu, mcu, rom, tuning, obd1]
 complexity: beginner
-tags:
-  - ecu
-  - mcu
-  - rom
-  - tuning
-  - obd1
 ---
 
 # EA Pin (EA Prime) — MCU ROM Control

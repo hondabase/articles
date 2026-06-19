@@ -2,7 +2,6 @@
 summary: 'Learn about ECU code compatibility across Honda and Acura platforms, including cross-model sharing for OBD0 and OBD1 systems.'
 tags: [ecu, tuning, rom, diagnostics]
 applies_to:
-  obd: [0, 1]
   models: [Civic, Integra, Prelude, Accord]
 complexity: beginner
 ---

@@ -1,8 +1,6 @@
 ---
 summary: 'Guia de hardware passo a passo para adicionar um circuito de sensor de detonação a ECUs Honda P30 OBD1 não equipadas, utilizando modificações de componentes específicos.'
 tags: [ecu, reference, tuning, rom, sensors, diagnostics]
-applies_to:
-  obd: [0, 1, 2]
 complexity: intermediate
 sources:
   - name: 'pgmfi.org wiki'

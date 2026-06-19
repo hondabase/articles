@@ -2,7 +2,6 @@
 summary: 'Hardware modification guide for bypassing the automatic transmission lockup solenoid check (DTC 19) when running an automatic ECU on a manual transmission vehicle.'
 tags: [ecu, transmission, tuning, conversion, wiring]
 applies_to:
-  obd: [0]
   models: [civic, crx, del-sol, integra]
   chassis: [da, dc2, ef, eg, eg-eh, ek]
 complexity: advanced

@@ -1,16 +1,9 @@
 ---
 summary: 'A PE7 vinha nos carros Civic/CRX Si EDM/USDM de 85-87 (avanço de vácuo EW3/EW4).'
+tags: [hardware, educacao, tuning, rom, sensors, reference]
 applies_to:
-  obd: [0, 1, 2]
   brand: Honda
 complexity: beginner
-tags:
-  - hardware
-  - educacao
-  - tuning
-  - rom
-  - sensors
-  - reference
 ---
 
 # PE7

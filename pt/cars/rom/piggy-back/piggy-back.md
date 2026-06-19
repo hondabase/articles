@@ -1,15 +1,6 @@
-yaml
 ---
-summary: A piggyback controller is an aftermarket device that intercepts and modifies engine signals before they reach the ECU, commonly used for tuning on OBD0, OBD1, and OBD2 systems.
-tags:
-  - ecu
-  - piggyback
-  - tuning
-  - sensor
-  - rom
-  - reference
-applies_to:
-  obd: [0, 1, 2]
+summary: 'A piggyback controller is an aftermarket device that intercepts and modifies engine signals before they reach the ECU, commonly used for tuning on OBD0, OBD1, and OBD2 systems.'
+tags: [ecu, piggyback, tuning, sensor, rom, reference]
 complexity: beginner
 ---
 

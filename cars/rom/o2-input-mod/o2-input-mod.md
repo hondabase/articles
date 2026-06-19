@@ -2,7 +2,6 @@
 summary: 'Modify your Honda ECU to accept a 0-5V wideband O2 sensor input by bypassing the internal Op-Amp voltage limiting circuit.'
 tags: [ecu, tuning, sensors, wiring, o2]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: intermediate

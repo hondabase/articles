@@ -2,7 +2,6 @@
 summary: 'Technical specifications and pinout reference for the P0C OBD1 ECU used in 1992-1995 Honda Accord 2.2L models.'
 tags: [ecu, accord, obd1, pinout, f22b]
 applies_to:
-  obd: [1]
   models: [accord]
   chassis: [cb, cd]
 complexity: beginner

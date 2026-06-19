@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of electronic advance distributors, detailing how the ECU manages ignition timing control in Honda OBD0, OBD1, and OBD2 systems.'
 tags: [ecu, ignition, sensors, distributors]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

@@ -2,7 +2,6 @@
 summary: 'Learn how to enable O2 sensor heater circuitry on OBD1 ECUs like the P05 and P08 by adding the necessary transistor components.'
 tags: [ecu, sensors, wiring, conversion, diagnostics]
 applies_to:
-  obd: [1]
   models: [civic]
   chassis: [eg]
 complexity: beginner

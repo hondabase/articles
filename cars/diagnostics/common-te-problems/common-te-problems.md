@@ -2,7 +2,6 @@
 summary: 'Troubleshooting guide for common configuration errors, MAP sensor column rescaling issues, and VTEC bytes modifications in TurboEdit OBD0 tuning software.'
 tags: [tuning, rom, software, diagnostics, obd0]
 applies_to:
-  obd: [0]
   models: [civic, crx]
   chassis: [ef]
 complexity: intermediate

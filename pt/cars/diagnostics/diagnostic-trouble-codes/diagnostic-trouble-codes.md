@@ -2,7 +2,6 @@
 summary: 'Guia completo para obter e interpretar códigos de erro de diagnóstico (DTC). Saiba como diagnosticar códigos de erro OBD0, OBD1 e OBD2 em veículos Honda e Acura.'
 tags: [diagnósticos, obd, resolução-de-problemas, códigos-de-motor, códigos-tcu]
 applies_to:
-  obd: [0, 1, 2]
   models: [civic, crx, del-sol, integra, prelude, accord, s2000, nsx]
   chassis: [ef, eg, ek, da, dc2, bb, cb-cd, ap1, ap2, na1-na2]
 complexity: beginner

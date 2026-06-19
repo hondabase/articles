@@ -2,7 +2,6 @@
 summary: 'A technical overview of OBD1 ECU electrical compatibility, hardware architecture, and modification requirements for Honda and Acura vehicles.'
 tags: [ecu, obd1, tuning, rom, hardware, diagnostics]
 applies_to:
-  obd: [1]
   models: [civic, integra]
   chassis: [eg, eh]
 complexity: advanced

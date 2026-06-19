@@ -1,15 +1,9 @@
 ---
 summary: 'Algumas rotinas já foram comentadas para o seu prazer de visualização. O Doc ECUSchool explica um pouco de como o IO é executado analisando a ROM JDM P30 203.'
+tags: [ecu, reference, tuning, rom, sensors, obd1]
 applies_to:
-  obd: [1]
   brand: Acura/Honda
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
 sources:
   - name: 'pgmfi.org wiki'
     title: 'OBD1 Civ Teg Routines'

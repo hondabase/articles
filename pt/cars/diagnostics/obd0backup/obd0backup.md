@@ -1,8 +1,6 @@
 ---
 summary: 'Technical overview of the NEC BACK0004 backup processor found in OBD0 MPFI ECUs, responsible for managing Limp Mode operations.'
 tags: [ecu, diagnostics, obd0, backup-processor]
-applies_to:
-  obd: [0]
 complexity: beginner
 ---
 

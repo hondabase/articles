@@ -2,7 +2,6 @@
 summary: 'Technical overview and ROM reference for the Honda PE7 ECU found in 1985–1987 Civic and CRX Si models equipped with the EW3/EW4 engine.'
 tags: [hardware, tuning, rom, sensors, reference, pe7]
 applies_to:
-  obd: [0]
   models: [civic, crx]
   chassis: [ah, af]
 complexity: beginner

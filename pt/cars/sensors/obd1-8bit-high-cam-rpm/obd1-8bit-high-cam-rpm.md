@@ -1,12 +1,7 @@
 ---
 summary: "Esta fórmula é usada para converter valores nas escalas das tabelas de high cam para RPMs reais. Se ''x'' for um valor de RPM de escala high-cam de 8 bits, Hi Cam RPM(''x'') = 1875000''x'' / 53248 53248=D000h."
-applies_to:
-  obd: [1]
+tags: [ecu, reference, sensors, obd1]
 complexity: intermediate
-tags:
-  - ecu
-  - reference
-  - sensors
 sources:
   - name: 'pgmfi.org wiki'
     title: 'OBD1 8bit High Cam RPM'

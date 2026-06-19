@@ -2,7 +2,6 @@
 summary: 'Technical overview of the PP5 Rover/Honda ECU series, exploring its origins in the Rover-Honda partnership and compatibility.'
 tags: [ecu, reference, tuning, rom, hardware]
 applies_to:
-  obd: [0]
   models: [civic, crx]
   chassis: [ef]
 complexity: intermediate

@@ -2,7 +2,6 @@
 summary: 'A technical guide to Honda ECU code compatibility, detailing how ECUs within the same generation and hardware family share firmware and tuning data.'
 tags: [ecu, tuning, rom, diagnostics, firmware]
 applies_to:
-  obd: [0, 1]
   models: [accord, civic, integra, prelude]
   chassis: [all]
 complexity: beginner

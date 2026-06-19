@@ -2,7 +2,6 @@
 summary: 'Technical reference for the Honda PW1 ECU, commonly found in 1990s Honda Concerto models equipped with the D15B2 engine.'
 tags: [ecu, reference, d-series, pw1]
 applies_to:
-  obd: 0
   models: [Concerto]
   chassis: [D15B2]
 complexity: beginner

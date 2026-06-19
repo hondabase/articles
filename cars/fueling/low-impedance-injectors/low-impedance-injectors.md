@@ -2,7 +2,6 @@
 summary: 'Technical guide to low-impedance (peak-and-hold) fuel injectors, inline resistor boxes, and converting between injector types on Honda engines.'
 tags: [injectors, fueling, hardware]
 applies_to:
-  obd: [0, 1, 2]
   models: [civic, crx, del-sol, integra, prelude]
   chassis: [bb, da, dc2, ef, eg, eg-eh, ek]
 complexity: intermediate

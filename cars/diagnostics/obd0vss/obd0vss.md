@@ -2,7 +2,6 @@
 summary: 'Technical reference for the OBD0 Vehicle Speed Sensor (VSS) data, including RAM memory location, linearity, and conversion formulas.'
 tags: [ecu, reference, sensors, diagnostics, vss]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: beginner

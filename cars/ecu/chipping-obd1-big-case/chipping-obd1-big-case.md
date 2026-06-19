@@ -2,7 +2,6 @@
 summary: 'A comprehensive technical guide for socketing and chipping large-case Honda OBD1 ECUs, covering required components and installation procedures.'
 tags: [ecu, chipping, socketing, obd1]
 applies_to:
-  obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eg-eh]
 complexity: beginner

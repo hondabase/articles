@@ -1,11 +1,7 @@
 ---
 summary: 'Num motor VTEC, a High Cam (came de altas) é usada a RPMs mais elevadas. Esta árvore de cames é geralmente otimizada para potência e RPMs mais elevadas.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [sensores, referência]
 complexity: beginner
-tags:
-  - sensores
-  - referência
 sources:
   - name: 'pgmfi.org wiki'
     title: 'High Cam'

@@ -2,7 +2,6 @@
 summary: 'Technical guide for converting automatic Honda P08 OBD1 ECUs to manual transmission configurations by modifying internal resistor board values.'
 tags: [ecu, reference, sensors]
 applies_to:
-  obd: [1]
   brand: Honda
   models: [civic, crx]
   chassis: [eg]

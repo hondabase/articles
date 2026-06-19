@@ -2,7 +2,6 @@
 summary: 'Technical reference for the Honda Engine Coolant Temperature (ECT) sensor, including ECU lookup tables and temperature conversion data for OBD1 systems.'
 tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
-  obd: [1]
   models: [all]
 complexity: intermediate
 ---

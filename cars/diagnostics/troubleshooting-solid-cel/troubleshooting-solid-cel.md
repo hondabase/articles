@@ -2,7 +2,6 @@
 summary: 'Diagnose and resolve a solid Check Engine Light (CEL) on Honda OBD0 and OBD1 ECUs, typically caused by hardware failures or improper EPROM installation.'
 tags: [ecu, diagnostics, troubleshooting, obd1, obd0]
 applies_to:
-  obd: [0, 1]
   models: [civic, del-sol, integra]
   chassis: [dc2, eg, eh]
 complexity: intermediate

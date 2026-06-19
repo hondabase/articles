@@ -1,8 +1,6 @@
 ---
 summary: 'Um guia sobre a compatibilidade de código das ECUs Honda OBD0. Saiba quais as ECUs que podem partilhar código e como trocar binários entre unidades com sucesso.'
-tags: [ecu, reference, tuning, rom, sensors, diagnostics]
-applies_to:
-  obd: [0]
+tags: [ecu, reference, tuning, rom, sensors, diagnostics, obd0]
 complexity: advanced
 sources:
   - name: 'pgmfi.org wiki'

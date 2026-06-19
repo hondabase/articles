@@ -1,8 +1,6 @@
 ---
 summary: 'Um guia abrangente de resolução de problemas para diagnosticar e resolver problemas de ECUs Honda, incluindo luzes CEL sólidas, códigos de diagnóstico de problemas (DTC) e problemas de falta de arranque do motor em veículos OBD0 e OBD1.'
 tags: [ecu, diagnostics]
-applies_to:
-  obd: [0, 1]
 complexity: intermediate
 sources:
   - name: 'pgmfi.org wiki'

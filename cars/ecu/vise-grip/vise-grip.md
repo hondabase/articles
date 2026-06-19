@@ -2,7 +2,6 @@
 summary: 'An overview of the locking pliers (vise-grip) and their essential role in automotive hardware removal and modification on Honda platforms.'
 tags: [tools, hardware, maintenance]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner

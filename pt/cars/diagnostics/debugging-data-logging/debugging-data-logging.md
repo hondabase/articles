@@ -1,12 +1,7 @@
 ---
 summary: 'Resolução de problemas comuns de datalogging em ECUs Honda, incluindo quedas de ligação, interferência de ruído e configurações incorretas de controladores (drivers).'
-applies_to:
-  obd: [1]
+tags: [datalogging, diagnóstico, série]
 complexity: advanced
-tags:
-  - datalogging
-  - diagnóstico
-  - série
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Debugging Data Logging'

@@ -1,12 +1,7 @@
 ---
 summary: 'Guia de hardware passo a passo para alterar (chipping) a ECU PM6 OBD0 (Civic/CRX Si 1988–1991) para aceitar EPROMs externas e mapas personalizados.'
-applies_to:
-  obd: [0]
+tags: [ecu, chipping, hardware]
 complexity: advanced
-tags:
-  - ecu
-  - chipping
-  - hardware
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Chipping OBD0PM6'

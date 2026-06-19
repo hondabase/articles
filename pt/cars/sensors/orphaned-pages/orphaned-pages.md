@@ -1,11 +1,7 @@
 ---
-summary: "Páginas Órfãs são aquelas páginas que não têm nenhum link a apontar para elas. Info de Páginas Órfãs=hits,pagename,mtime?"
-applies_to:
-  obd: [0, 1, 2]
+summary: 'Páginas Órfãs são aquelas páginas que não têm nenhum link a apontar para elas. Info de Páginas Órfãs=hits,pagename,mtime?'
+tags: [sensors, reference]
 complexity: beginner
-tags:
-  - sensors
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Orphaned Pages'

@@ -2,7 +2,6 @@
 summary: 'The VTEC spool valve solenoid activates high-cam lobe profiles. How the ECU triggers VTEC, pressure switches, and troubleshooting VTEC engagement.'
 tags: [vtec, wiring, hardware]
 applies_to:
-  obd: [0, 1, 2]
   models: [integra]
   chassis: [da, dc2]
 complexity: intermediate

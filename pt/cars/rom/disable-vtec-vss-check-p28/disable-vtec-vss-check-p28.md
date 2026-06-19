@@ -2,7 +2,6 @@
 summary: 'Guia técnico para contornar a verificação do Sensor de Velocidade do Veículo (VSS) na rotina de VTEC para ECUs Honda P28 OBD1.'
 tags: [tuning, rom, sensors, reference]
 applies_to:
-  obd: [0, 1, 2]
   ecus: [P28]
   brand: Honda
 complexity: beginner

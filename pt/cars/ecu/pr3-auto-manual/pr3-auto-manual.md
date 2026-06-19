@@ -2,7 +2,6 @@
 summary: 'Guia técnico para converter uma ECU OBD0 PR3 de transmissão automática para manual através da realocação de componentes na placa.'
 tags: [ecu, obd0, pr3, conversao, manual]
 applies_to:
-  obd: [0]
   ecus: [PR3]
 complexity: beginner
 ---

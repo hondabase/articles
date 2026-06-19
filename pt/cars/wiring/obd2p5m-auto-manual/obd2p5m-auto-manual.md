@@ -1,14 +1,6 @@
 ---
-summary: Convert OBD2P5M ECU from automatic to manual transmission by moving a 0-ohm SMD resistor from RP13 to RP14 on the PCB.
-tags:
-  - ecu
-  - conversion
-  - tuning
-  - wiring
-  - transmission
-  - modification
-applies_to:
-  obd: [2]
+summary: 'Convert OBD2P5M ECU from automatic to manual transmission by moving a 0-ohm SMD resistor from RP13 to RP14 on the PCB.'
+tags: [ecu, conversion, tuning, wiring, transmission, modification]
 complexity: beginner
 ---
 

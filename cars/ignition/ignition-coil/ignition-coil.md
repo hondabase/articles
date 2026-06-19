@@ -2,7 +2,6 @@
 summary: 'Technical reference on Honda PGM-FI internal and external ignition coils, including testing procedures, specifications, and conversion instructions.'
 tags: [ignition, hardware, diagnostics, distributor]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, integra, prelude]
   chassis: {}
 complexity: intermediate

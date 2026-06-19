@@ -1,13 +1,7 @@
 ---
-summary: Atmospheric pressure is the gaseous pressure of air, approximately 14.7 psi, 1 bar, or 100 kPa at sea level. Pressure decreases with increasing altitude.
-applies_to:
-  obd: [0, 1, 2]
+summary: 'Atmospheric pressure is the gaseous pressure of air, approximately 14.7 psi, 1 bar, or 100 kPa at sea level. Pressure decreases with increasing altitude.'
+tags: [atmospheric-pressure, pressure-measurement, sensor-calibration, diagnostics]
 complexity: beginner
-tags:
-  - atmospheric-pressure
-  - pressure-measurement
-  - sensor-calibration
-  - diagnostics
 ---
 
 # Atmospheric Pressure

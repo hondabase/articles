@@ -2,7 +2,6 @@
 summary: 'Technical overview of the 1-wire VTEC ROM codebase, which utilizes the automatic transmission lockup solenoid to control VTEC engagement on OBD0 ECUs.'
 tags: [ecu, rom, tuning, vtec, obd0]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: intermediate

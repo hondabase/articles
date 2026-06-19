@@ -1,9 +1,7 @@
 ---
-summary: Notas de engenharia reversa sobre o barramento de memória da ECU OBD0, gamas de endereços de periféricos e lógica de seleção de chip (chip-select).
-applies_to:
-  obd: [0]
+summary: 'Notas de engenharia reversa sobre o barramento de memória da ECU OBD0, gamas de endereços de periféricos e lógica de seleção de chip (chip-select).'
+tags: [ecu, hardware, memory, reverse-engineering, obd0]
 complexity: advanced
-tags: [ecu, hardware, memory, reverse-engineering]
 sources:
   - name: 'pgmfi.org wiki'
     title: 'OBD0 Inter Chip Communication'

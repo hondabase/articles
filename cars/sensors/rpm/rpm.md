@@ -2,7 +2,6 @@
 summary: 'An overview of how the Engine Control Unit (ECU) calculates Revolutions Per Minute (RPM) using the Crankshaft Position (CKP) sensor signal.'
 tags: [sensors, ckp, rpm, diagnostics, ignition]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner

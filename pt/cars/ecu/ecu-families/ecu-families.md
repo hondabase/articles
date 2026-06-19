@@ -1,11 +1,7 @@
 ---
 summary: 'Uma visão geral de diferentes gerações e famílias de unidades de controlo do motor (ECU) da Honda (OBD0, OBD1 e OBD2) e a sua compatibilidade.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [ecu, referência]
 complexity: beginner
-tags:
-  - ecu
-  - referência
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Ecu Families'

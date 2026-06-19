@@ -2,7 +2,6 @@
 summary: 'Explains the difference between half-duplex and full-duplex serial communication on OBD1 Honda ECUs and why removing the J12 jumper enables PC datalogging.'
 tags: [datalogging, hardware]
 applies_to:
-  obd: [1]
   models: [civic, integra]
   chassis: {}
 complexity: intermediate

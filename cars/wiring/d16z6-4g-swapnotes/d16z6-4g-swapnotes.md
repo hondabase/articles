@@ -2,7 +2,6 @@
 summary: 'Swap guide for installing a D16Z6 engine into an OBD0 (1988–1991) Civic or CRX, covering engine mounts, pulleys, and necessary harness modifications.'
 tags: [swap, vtec, wiring, engine-modification, d-series]
 applies_to:
-  obd: [0, 1]
   models: [civic, crx, del-sol, prelude]
   chassis: [ef, eg, eg-eh, ek]
 complexity: advanced

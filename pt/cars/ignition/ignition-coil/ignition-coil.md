@@ -1,12 +1,7 @@
 ---
 summary: 'Referência técnica sobre as bobinas de ignição internas e externas da Honda PGM-FI, incluindo procedimentos de teste, especificações e conversão de configurações de bobina interna para externa.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [ignição, hardware, diagnóstico]
 complexity: intermediate
-tags:
-  - ignição
-  - hardware
-  - diagnóstico
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Bobina de Ignição'

@@ -1,14 +1,7 @@
 ---
 summary: 'OBD2A refere-se às ECUs OBD2 produzidas de 96 a 98.'
-applies_to:
-  obd: [2]
+tags: [ecu, reference, tuning, rom, sensors, obd2a]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
 sources:
   - name: 'pgmfi.org wiki'
     title: OBD2A

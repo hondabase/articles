@@ -2,7 +2,6 @@
 summary: 'Frequently asked questions about Crome, a popular ROM editing and tuning software for OBD1 Honda ECUs.'
 tags: [tuning, rom, software, obd1]
 applies_to:
-  obd: [1]
   models: [civic, del-sol]
   chassis: [ef, eg, eg-eh]
 complexity: intermediate

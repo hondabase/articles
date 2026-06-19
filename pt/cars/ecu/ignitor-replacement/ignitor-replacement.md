@@ -2,7 +2,6 @@
 summary: 'Learn how to replace the internal Honda distributor ignitor with a solid-state circuit to trigger aftermarket ignition systems like MSD or Crane.'
 tags: [ecu, ignition, wiring, distributor]
 applies_to:
-  obd: [0, 1, 2]
   models: [Honda]
 complexity: beginner
 ---

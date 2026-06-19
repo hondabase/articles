@@ -1,14 +1,7 @@
 ---
 summary: 'Um controlador de boost é um dispositivo que permite controlar os níveis de pressão (boost) gerados por um turbo.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [ecu, reference, tuning, rom, sensors]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
 ---
 
 # Controlador de Boost

@@ -1,17 +1,9 @@
-yaml
 ---
-summary: "The crankshaft position sensor (CKP) measures engine speed and crankshaft angle, providing essential timing reference signals to the ECU for fuel injection and ignition control."
-tags:
-  - crankshaft-position-sensor
-  - ckp-sensor
-  - engine-speed
-  - timing-reference
-  - ignition-timing
-  - fuel-injection
+summary: 'The crankshaft position sensor (CKP) measures engine speed and crankshaft angle, providing essential timing reference signals to the ECU for fuel injection and ignition control.'
+tags: [crankshaft-position-sensor, ckp-sensor, engine-speed, timing-reference, ignition-timing, fuel-injection]
 applies_to:
-  obd: []
-  models: []
-  chassis: []
+  models: {}
+  chassis: {}
 complexity: intermediate
 ---
 

@@ -1,12 +1,7 @@
 ---
 summary: 'A válvula solenoide do VTEC ativa os perfis dos cames de alta rotação. Como a ECU aciona o VTEC, os interruptores de pressão e a resolução de problemas de ativação do VTEC.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [vtec, wiring, hardware]
 complexity: intermediate
-tags:
-  - vtec
-  - wiring
-  - hardware
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Solenoide do VTEC'

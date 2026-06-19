@@ -1,12 +1,7 @@
 ---
 summary: 'Guia de conversão de cablagem e tabelas de tradução de pinagem para correr um Accord OBD2a automático utilizando uma ECU OBD1 automática de Integra e uma TCU separada.'
-applies_to:
-  obd: [1, 2]
+tags: [conversão, cablagem, hardware, obd2]
 complexity: advanced
-tags:
-  - conversão
-  - cablagem
-  - hardware
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Accord Auto OBD2-OBD1'

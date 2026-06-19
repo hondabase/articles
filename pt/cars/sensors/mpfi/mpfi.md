@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of Multi Port Fuel Injection (MPFI) systems, detailing the configuration of injectors per intake runner and their role in Honda engine management.'
 tags: [fuel-injection, mpfi, intake, sensors]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

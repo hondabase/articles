@@ -2,7 +2,6 @@
 summary: 'Technical overview of the OBD2K ECU standard used in 2001+ Honda K-series engine management systems.'
 tags: [ecu, reference, tuning, rom, sensors, obd2k]
 applies_to:
-  obd: [2]
   models: [accord, civic, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, dc2, dc5, ek, em-ep, na1-na2]
 complexity: beginner

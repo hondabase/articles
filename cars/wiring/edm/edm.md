@@ -2,7 +2,6 @@
 summary: 'Reference for EDM (European Domestic Market) Honda ECUs, detailing common hardware differences such as the lack of an injector test circuit.'
 tags: [ecu, reference, sensors, wiring, conversion, diagnostics]
 applies_to:
-  obd: [1]
   brand: Acura/Honda
   models: [civic, integra]
   chassis: {}

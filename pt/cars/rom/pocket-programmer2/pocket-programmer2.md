@@ -1,14 +1,7 @@
-yaml
 ---
-summary: "The Pocket Programmer 2 is a ROM burner that supports a wide variety of chips with decent Windows and DOS software, commonly bundled with Hondata ECU tuning solutions."
-tags:
-  - rom-burner
-  - ecu
-  - tuning
-  - mcu
-  - programming
+summary: 'The Pocket Programmer 2 is a ROM burner that supports a wide variety of chips with decent Windows and DOS software, commonly bundled with Hondata ECU tuning solutions.'
+tags: [rom-burner, ecu, tuning, mcu, programming]
 applies_to:
-  obd: [0, 1, 2]
   brand: Honda
 complexity: intermediate
 ---

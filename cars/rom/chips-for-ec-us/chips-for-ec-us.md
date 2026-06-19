@@ -2,7 +2,6 @@
 summary: 'A technical guide for selecting compatible 32 KB memory chips for Honda OBD0 and OBD1 ECU chipping, covering flash, EPROM, and EEPROM specifications.'
 tags: [ecu, chipping, hardware, memory]
 applies_to:
-  obd: [0, 1]
   models: [integra, civic, prelude]
   chassis: [da, dc2, ef, eg, eh]
 complexity: intermediate

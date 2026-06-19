@@ -1,13 +1,7 @@
 ---
 summary: 'Autor: evo (61.88.2.177) Data: 030403 22:15 Após muita reflexão, decidi partilhar a minha rotina de corte do Ar Condicionado.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [sensors, reference, diagnostics, ecu]
 complexity: beginner
-tags:
-  - sensors
-  - reference
-  - diagnostics
-  - ecu
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Rotina de Corte de AC'

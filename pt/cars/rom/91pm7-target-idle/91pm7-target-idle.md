@@ -1,14 +1,7 @@
 ---
 summary: 'Autor: HRED Data: 01/03/03 17:27 Pode alterar o ralenti alvo: procure pelo valor "09c4" que encontra, por exemplo, em PM7FOR6121502.'
-applies_to:
-  obd: [0]
+tags: [ecu, reference, tuning, rom, sensors]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
 sources:
   - name: 'pgmfi.org wiki'
     title: '91PM7 Target Idle'

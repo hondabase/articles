@@ -1,8 +1,6 @@
 ---
 summary: 'Visão geral do scripting em JavaScript para automatizar funcionalidades no Crome e noutros softwares de edição de ROM Honda.'
 tags: [tuning, rom, sensors, reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

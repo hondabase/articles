@@ -2,7 +2,6 @@
 summary: 'Technical reference for Honda PT6 and PK3 series ECUs, detailing MCU specifications and PROM configurations for OBD-era Prelude and Accord models.'
 tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
-  obd: [0, 1]
   models: [accord, prelude]
   chassis: [cb, cd, ba]
 complexity: beginner

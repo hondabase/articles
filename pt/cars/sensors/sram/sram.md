@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of Static RAM (SRAM) architecture, focusing on its high-speed data retention capabilities and lack of refresh cycles.'
 tags: [electronics, memory, sram, hardware]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

@@ -1,8 +1,7 @@
 ---
-summary: "Overview of modern alternatives for Honda ECU knock detection, including DSP-based spectral analysis and ion sensing strategies."
+summary: 'Overview of modern alternatives for Honda ECU knock detection, including DSP-based spectral analysis and ion sensing strategies.'
 tags: [ecu, sensors, knock, diagnostics, tuning]
 applies_to:
-  obd: [0, 1, 2]
   models: [all]
 complexity: intermediate
 ---

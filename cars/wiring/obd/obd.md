@@ -2,7 +2,6 @@
 summary: 'An overview of Honda OBD0, OBD1, and OBD2 diagnostic systems, highlighting key differences, connector layouts, and code retrieval methods.'
 tags: [obd, reference, wiring, diagnostics, honda-tuning]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, prelude]
   chassis: [dc2, ef, eg, eg-eh, ek]
 complexity: beginner

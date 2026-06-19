@@ -1,8 +1,6 @@
 ---
 summary: 'Visão geral técnica do sensor de Temperatura do Ar de Admissão (IAT) e o seu papel crítico nos cálculos de densidade do ar e correções de combustível para ECUs Honda.'
 tags: [sensors, reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

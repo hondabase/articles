@@ -1,8 +1,6 @@
 ---
 summary: 'Uma explicação detalhada da Válvula de Controlo de Ar Eletrónica (EACV), também conhecida como Válvula de Controlo de Ar de Relenti (IACV), e a sua função na manutenção do ralenti Honda.'
 tags: [sensors, reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

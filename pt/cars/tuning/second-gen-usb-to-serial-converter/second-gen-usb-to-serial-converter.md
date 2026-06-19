@@ -1,12 +1,7 @@
 ---
 summary: 'Como configurar e resolver problemas em conversores série USB para TTL (tais como chips FTDI ou CP2102) para um datalogging fiável da ECU.'
-applies_to:
-  obd: [1]
+tags: [datalogging, serial, hardware]
 complexity: advanced
-tags:
-  - datalogging
-  - serial
-  - hardware
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Second Gen Usb To Serial Converter'

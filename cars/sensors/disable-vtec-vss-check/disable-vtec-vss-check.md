@@ -2,7 +2,6 @@
 summary: 'Learn how to disable the VTEC Vehicle Speed Sensor (VSS) check in Honda OBD1 ECUs, enabling VTEC engagement without a working speed signal.'
 tags: [ecu, vtec, sensors, tuning]
 applies_to:
-  obd: [1]
   models: [civic, integra, del-sol]
   chassis: [ef, eg, dc2]
 complexity: beginner

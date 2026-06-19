@@ -2,8 +2,7 @@
 summary: 'Technical overview of the PS9 ECU used in 1990-1991 USDM Honda Civic EX models, featuring integrated automatic transmission control.'
 tags: [ecu, obd0, honda, ps9, transmission]
 applies_to:
-  obd: [0]
-  models: [Civic EX]
+  models: ['Civic EX']
   chassis: [EF]
 complexity: beginner
 ---

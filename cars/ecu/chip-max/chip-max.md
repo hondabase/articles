@@ -2,7 +2,6 @@
 summary: 'Technical overview and usage guide for the EETools ChipMax universal device programmer, focusing on EPROM and EEPROM support for Honda ECU tuning.'
 tags: [hardware, programming, eprom, eeprom, tuning]
 applies_to:
-  obd: [0, 1, 2]
   chassis: [ef, eg, ek, dc]
   models: [all]
 complexity: intermediate

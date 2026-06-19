@@ -1,8 +1,6 @@
 ---
 summary: 'A spark cut occurs when fuel delivery continues while ignition timing is suppressed, preventing combustion. This technique is commonly used in aftermarket engine management for rev limiting and exhaust effects.'
 tags: [ecu, ignition, tuning, diagnostics]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

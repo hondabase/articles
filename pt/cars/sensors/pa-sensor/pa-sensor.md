@@ -1,8 +1,6 @@
 ---
 summary: 'Guia técnico para o sensor de Pressão Atmosférica (PA) nas ECUs Honda, explicando o seu papel na compensação de altitude e ajustes de combustível.'
 tags: [sensors, reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

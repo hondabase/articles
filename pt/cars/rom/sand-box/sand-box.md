@@ -1,13 +1,7 @@
 ---
 summary: 'Uma área de testes para experimentação e desenvolvimento de ROMs personalizadas.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [tuning, rom, sensors, reference]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - sensors
-  - reference
 ---
 
 # Sand Box (Área de Testes)

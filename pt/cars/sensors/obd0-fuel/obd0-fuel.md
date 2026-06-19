@@ -1,8 +1,6 @@
 ---
 summary: 'Technical reference for calculating fuel pulse width in OBD0 Honda ECUs using the column multiplier and decimal address values.'
 tags: [ecu, fuel, tuning, obd0]
-applies_to:
-  obd: [0]
 complexity: beginner
 ---
 

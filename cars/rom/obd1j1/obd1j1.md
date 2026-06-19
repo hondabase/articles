@@ -2,7 +2,6 @@
 summary: 'The J1 jumper on OBD1 ECUs controls the EA pin state, determining whether the MCU executes code from the internal program or an external ROM chip.'
 tags: [ecu, tuning, rom, obd1, hardware]
 applies_to:
-  obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eg-eh]
 complexity: beginner

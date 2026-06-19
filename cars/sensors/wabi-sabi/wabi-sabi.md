@@ -2,7 +2,6 @@
 summary: 'An overview of the wabi-sabi aesthetic philosophy and its influence on Japanese design principles and traditional beauty.'
 tags: [philosophy, aesthetics, design]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord]
   chassis: [all]
 complexity: intermediate

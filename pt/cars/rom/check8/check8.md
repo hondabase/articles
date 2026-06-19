@@ -1,11 +1,7 @@
 ---
 summary: 'Uma utilidade de verificação de checksum de ROM de 8 bits da Keil.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [tuning, rom]
 complexity: beginner
-tags:
-  - tuning
-  - rom
 ---
 
 # Utilitário de Checksum check8

@@ -2,7 +2,6 @@
 summary: 'Technical overview of the P5P OBD2 ECU used in the JDM Honda Prelude Type-S, detailing its hardware specifications and application.'
 tags: [ecu, p5p, prelude, obd2, jdm]
 applies_to:
-  obd: [2]
   models: [prelude]
   chassis: [bb]
 complexity: beginner

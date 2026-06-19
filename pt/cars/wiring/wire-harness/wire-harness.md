@@ -1,18 +1,9 @@
-yaml
 ---
-summary: Compare ECU connector wiring and pinout schematics across Honda OBD0, OBD1, OBD2A, and OBD2B systems.
+summary: 'Compare ECU connector wiring and pinout schematics across Honda OBD0, OBD1, OBD2A, and OBD2B systems.'
+tags: [ecu, reference, tuning, rom, sensors, wiring, conversion]
 applies_to:
-  obd: [0, 1, 2]
   brand: Acura
 complexity: intermediate
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - wiring
-  - conversion
 ---
 
 # Wire Harness

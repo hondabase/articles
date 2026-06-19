@@ -1,17 +1,7 @@
 ---
 summary: 'Dave diz: Bem, emprestando uma ideia de Nico-HRED/Doc usada nos 66Ks, aqui está um programa que deverá ler o conteúdo de um MCU 83C154.'
-applies_to:
-  obd: [0]
+tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics, obd0]
 complexity: advanced
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - wiring
-  - conversion
-  - diagnostics
 sources:
   - name: 'pgmfi.org wiki'
     title: 'OBD0 Oki83C154 Reader'

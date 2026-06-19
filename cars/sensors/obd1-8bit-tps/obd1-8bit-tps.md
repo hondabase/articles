@@ -1,8 +1,7 @@
 ---
-summary: "Technical reference for calculating Throttle Position Sensor (TPS) percentage from raw 8-bit ECU data in OBD1 Honda systems."
+summary: 'Technical reference for calculating Throttle Position Sensor (TPS) percentage from raw 8-bit ECU data in OBD1 Honda systems.'
 tags: [ecu, sensors, tps, tuning, obd1]
 applies_to:
-  obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eh]
 complexity: beginner

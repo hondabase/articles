@@ -1,12 +1,7 @@
 ---
 summary: 'Fórmula de conversão de RPM para os valores de ativação do VTEC em OBD0 e OBD1.'
-applies_to:
-  obd: [0, 1]
+tags: [ecu, reference, sensors]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
 sources:
   - name: 'pgmfi.org wiki'
     title: OBD0VTEC

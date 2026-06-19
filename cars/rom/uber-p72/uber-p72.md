@@ -4,7 +4,6 @@ tags: [tuning, rom, software, p72, obd1]
 applies_to:
   brand: Acura
   ecus: [P72]
-  obd: [1]
   models: [integra]
   chassis: [dc2]
 complexity: advanced

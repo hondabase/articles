@@ -1,17 +1,7 @@
 ---
 summary: 'Esta é a conversão dos valores de RPM de 8 bits "low cam" utilizados para os pontos de transição de VTEC e nas tabelas low-cam.'
-applies_to:
-  obd: [1]
+tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics, obd1]
 complexity: intermediate
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - wiring
-  - conversion
-  - diagnostics
 sources:
   - name: 'pgmfi.org wiki'
     title: 'OBD1 8bit Low Cam RPM'

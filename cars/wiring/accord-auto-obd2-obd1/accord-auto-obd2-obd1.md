@@ -1,8 +1,7 @@
 ---
 summary: 'Wiring conversion guide and pinout translation tables for running an automatic OBD2a Honda Accord using an automatic OBD1 Integra ECU and separate TCU.'
-tags: [conversion, wiring, automatic-transmission, ecu-tuning]
+tags: [conversion, wiring, automatic-transmission, ecu-tuning, obd2]
 applies_to:
-  obd: [1, 2]
   models: [accord]
   chassis: [cb-cd]
 complexity: advanced

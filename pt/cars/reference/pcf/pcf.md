@@ -1,10 +1,7 @@
 ---
 summary: 'Part numbers de hardware e referências para a série de ECUs Honda PCF.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [referência]
 complexity: beginner
-tags:
-  - referência
 sources:
   - name: 'pgmfi.org wiki'
     title: PCF

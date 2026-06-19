@@ -1,8 +1,6 @@
 ---
 summary: 'Vacuum advance is a mechanical method for varying spark advance based on engine load, independent of ECU control.'
 tags: [ecu, ignition, tuning, sensors]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

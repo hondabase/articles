@@ -2,7 +2,6 @@
 summary: 'An overview of OBD0 Limp Mode, a fail-safe operating state triggered by major ECU malfunctions that limits engine performance to protect the drivetrain.'
 tags: [ecu, diagnostics, obd0, sensors, troubleshooting]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: beginner

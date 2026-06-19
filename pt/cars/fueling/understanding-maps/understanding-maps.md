@@ -1,13 +1,7 @@
 ---
 summary: 'Um guia introdutório que explica como as tabelas de combustível e de ignição (mapas) são estruturadas e interpretadas nas ROMs das ECUs Honda.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [tuning, rom, combustível, ignição]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - combustível
-  - ignição
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Compreender os Mapas'

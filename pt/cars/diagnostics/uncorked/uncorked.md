@@ -1,8 +1,6 @@
 ---
 summary: 'Learn how to remove the internal ECU MAP sensor division code to increase boost pressure resolution and enable reading up to 11psi.'
 tags: [ecu, tuning, rom, sensors, diagnostics]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

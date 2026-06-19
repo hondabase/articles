@@ -1,12 +1,7 @@
 ---
 summary: 'Guia de modificação de hardware para adicionar controlos secundários do Intake Air Bypass (IAB) a uma ECU OBD1 Honda P28 Civic.'
-applies_to:
-  obd: [1]
+tags: [ecu, hardware, iab]
 complexity: advanced
-tags:
-  - ecu
-  - hardware
-  - iab
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Add IAB To P28'

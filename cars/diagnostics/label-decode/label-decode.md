@@ -2,7 +2,6 @@
 summary: 'A comprehensive guide to decoding Honda OBD1 ECU part numbers to identify engine compatibility, market origin, and transmission type.'
 tags: [ecu, reference, tuning, diagnostics]
 applies_to:
-  obd: [1]
   models: [civic, crx, del-sol, integra]
   chassis: [ef, eg, eh, ek]
 complexity: intermediate

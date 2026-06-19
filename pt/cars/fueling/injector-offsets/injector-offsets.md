@@ -1,11 +1,7 @@
 ---
 summary: 'Uma base de dados abrangente de tabelas de compensação de bateria (tempo morto/latência) para injetores de combustível originais (OEM) e de pós-venda.'
+tags: [injectors, fuel-offsets, tuning, reference]
 complexity: intermediate
-tags:
-  - injectors
-  - fuel-offsets
-  - tuning
-  - reference
 ---
 
 # Base de Dados de Compensações de Injetores de Combustível

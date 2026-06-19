@@ -2,7 +2,6 @@
 summary: 'An overview of the VTEC High Cam profile, which is optimized for increased power and performance at higher engine RPMs.'
 tags: [sensors, vtec, camshaft, performance]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner

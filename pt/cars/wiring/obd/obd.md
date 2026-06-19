@@ -1,12 +1,7 @@
 ---
 summary: 'Uma visão geral das gerações de Diagnóstico de Bordo da Honda (OBD0, OBD1, OBD2a, OBD2b). Saiba as suas diferenças, layouts de conectores e compatibilidade.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [obd, reference, wiring]
 complexity: beginner
-tags:
-  - obd
-  - reference
-  - wiring
 sources:
   - name: 'pgmfi.org wiki'
     title: OBD

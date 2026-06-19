@@ -4,7 +4,6 @@ tags: [diagnostics, ecu]
 applies_to:
   brand: Honda
   ecus: [PM6]
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [ef]
 complexity: beginner

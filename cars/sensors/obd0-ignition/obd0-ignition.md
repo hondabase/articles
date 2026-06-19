@@ -2,7 +2,6 @@
 summary: 'Technical reference for the ignition timing conversion formula used in OBD0 Honda ECU ROM mapping.'
 tags: [ecu, tuning, ignition, obd0]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: beginner

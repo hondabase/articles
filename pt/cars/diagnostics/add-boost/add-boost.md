@@ -2,7 +2,6 @@
 summary: 'Learn how to use the Crome ROMEditor "Add Boost" script to expand ECU fuel and ignition tables for forced induction tuning.'
 tags: [ecu, tuning, rom, boost, map-sensor]
 applies_to:
-  obd: [1]
   models: [P06, P28, P30, P72]
 complexity: intermediate
 ---

@@ -1,13 +1,10 @@
 ---
 summary: 'Explica as diferenças de hardware entre as ECUs PM6 OBD0 USDM e Canadianas e como contornar o CEL do Código 20 do Electrical Load Detector (ELD) cortando o jumper BR1.'
+tags: [ecu, reference]
 applies_to:
   brand: Honda
   ecus: [PM6]
-  obd: [0]
 complexity: intermediate
-tags:
-  - ecu
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Diferença Us Can PM6'

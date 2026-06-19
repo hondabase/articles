@@ -4,7 +4,6 @@ tags: [ecu, obd0, pm6, diagnostics, wiring]
 applies_to:
   brand: Honda
   ecus: [PM6]
-  obd: [0]
   models: [civic, crx]
   chassis: [ef]
 complexity: intermediate

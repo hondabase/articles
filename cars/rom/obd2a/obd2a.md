@@ -1,8 +1,7 @@
 ---
 summary: 'OBD2A refers to the OBD2 ECUs made from 9698 Library.OBD2A moved from Library.OBD2AECU on 31 Mar 2004 18:21 by Home.blundar put it back :'
-tags: [ecu, reference, tuning, rom, sensors]
+tags: [ecu, reference, tuning, rom, sensors, obd2a]
 applies_to:
-  obd: [2]
   models: [accord, civic, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, dc2, dc5, ek, em-ep, na1-na2]
 complexity: beginner

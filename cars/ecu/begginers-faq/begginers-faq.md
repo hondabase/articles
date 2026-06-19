@@ -2,7 +2,6 @@
 summary: 'A foundational reference for identifying Honda ECU families, understanding compatibility, and navigating common ECU part numbers.'
 tags: [ecu, identification, reference, obd]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, prelude, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, ef, eg, eg-eh, ek]
 complexity: beginner

@@ -1,18 +1,11 @@
-yaml
 ---
-summary: Model MAP sensor output voltage to a usable pressure value using linear equations and calibration data for Honda ECUs.
-tags:
-  - map-sensor
-  - tuning
-  - rom
-  - sensors
-  - calibration
-  - reference
+summary: 'Model MAP sensor output voltage to a usable pressure value using linear equations and calibration data for Honda ECUs.'
+tags: [map-sensor, tuning, rom, sensors, calibration, reference]
 applies_to:
-  obd: [0, 1, 2]
   brand: Honda
 complexity: intermediate
 ---
+
 ```
 
 # MAP Sensor Voltage Equation

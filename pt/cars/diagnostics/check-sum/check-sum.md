@@ -2,7 +2,6 @@
 summary: 'An overview of 8-bit checksum verification in Honda OBD0 and OBD1 ECUs, including the manual calculation and correction process.'
 tags: [ecu, tuning, rom, diagnostics]
 applies_to:
-  obd: [0, 1]
   models: [all]
   chassis: [all]
 complexity: beginner

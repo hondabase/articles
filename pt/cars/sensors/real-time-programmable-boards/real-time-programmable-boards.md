@@ -1,8 +1,6 @@
 ---
-summary: "Overview of hardware boards enabling Real-Time Programming (RTP) for Honda ECUs, including the EasyRTP v1.0 design."
+summary: 'Overview of hardware boards enabling Real-Time Programming (RTP) for Honda ECUs, including the EasyRTP v1.0 design.'
 tags: [ecu, rtp, tuning, hardware]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

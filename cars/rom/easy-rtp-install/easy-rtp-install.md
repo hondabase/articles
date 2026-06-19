@@ -3,7 +3,6 @@ summary: 'Technical installation procedure for integrating the Easy-RTP v1.0 mod
 tags: [rtp, ecu, hardware, chipping, obd1]
 applies_to:
   ecus: [P28, P30]
-  obd: [1]
   models: [civic, del-sol]
   chassis: [eg, eh]
 complexity: advanced

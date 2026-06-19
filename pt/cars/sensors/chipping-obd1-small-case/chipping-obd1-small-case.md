@@ -1,8 +1,6 @@
 ---
 summary: 'Instruções passo a passo para a instalação de sockets e reprogramação de ECUs Honda OBD1 de caixa pequena, comummente encontradas em modelos JDM e alguns europeus.'
-tags: [ecu, reference, sensors]
-applies_to:
-  obd: [1]
+tags: [ecu, reference, sensors, obd1]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

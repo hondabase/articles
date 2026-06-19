@@ -1,20 +1,7 @@
-yaml
 ---
-summary: "NVSRAM (Non-Volatile SRAM) is byte-addressable, byte-writable fast RAM that retains its contents after power loss, available in several technology implementations including battery-backed SRAM, EEPROM/SRAM hybrids, FRAM, and MRAM."
-applies_to:
-  obd: [0, 1, 2]
+summary: 'NVSRAM (Non-Volatile SRAM) is byte-addressable, byte-writable fast RAM that retains its contents after power loss, available in several technology implementations including battery-backed SRAM, EEPROM/SRAM hybrids, FRAM, and MRAM.'
+tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, nvsram, sram, memory]
 complexity: intermediate
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - wiring
-  - conversion
-  - nvsram
-  - sram
-  - memory
 ---
 
 # NVSRAM (Non-Volatile Static RAM)

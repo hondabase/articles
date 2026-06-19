@@ -2,7 +2,6 @@
 summary: 'A guide to implementing Full Throttle Shift (FTS) in Honda OBD1 ECUs, allowing for faster gear changes by maintaining boost and RPM during shifts.'
 tags: [ecu, tuning, rom, sensors, diagnostics]
 applies_to:
-  obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eg-eh]
 complexity: intermediate

@@ -2,7 +2,6 @@
 summary: 'An overview of the Cylinder Position (CYP) sensor function, location, and its critical role in sequential ignition timing for Honda engines.'
 tags: [sensor, ignition, diagnostics, distributor, obd1]
 applies_to:
-  obd: [obd0, obd1]
   models: [crx, civic, integra]
   chassis: [ef, eg]
 complexity: intermediate

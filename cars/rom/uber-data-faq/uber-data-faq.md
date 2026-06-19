@@ -2,7 +2,6 @@
 summary: 'Archived setup and tuning FAQ for the legacy UberData OBD1 Honda ROM editor.'
 tags: [tuning, rom, software, obd1]
 applies_to:
-  obd: [1]
   models: [civic, integra]
   chassis: [da, dc2, eg]
 complexity: intermediate

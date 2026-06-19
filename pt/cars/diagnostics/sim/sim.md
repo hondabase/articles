@@ -1,12 +1,7 @@
 ---
 summary: 'Um guia de construção detalhado para um Simulador de Motor (ECU Stimulator) caseiro (DIY) utilizado para testar em bancada e diagnosticar ECUs Honda OBD0, OBD1 e OBD2.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [bench-testing, hardware, diagnostics]
 complexity: advanced
-tags:
-  - bench-testing
-  - hardware
-  - diagnostics
 sources:
   - name: 'pgmfi.org wiki'
     title: Sim

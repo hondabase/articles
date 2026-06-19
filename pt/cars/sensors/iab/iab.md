@@ -2,7 +2,6 @@
 summary: 'Technical overview of the Intake Air Bypass (IAB) system, explaining its function in optimizing engine torque and power through variable intake runner lengths.'
 tags: [sensors, intake, iab, performance]
 applies_to:
-  obd: [0, 1, 2]
   models: [B18C1, H22A]
 complexity: beginner
 ---

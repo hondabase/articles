@@ -1,12 +1,7 @@
 ---
 summary: 'Configuração e utilização de programadores de EPROM Willem (porta paralela/LPT) para gravar chips ROM SST 27SF512 e 27SF256 para ECUs Honda.'
-applies_to:
-  obd: [0, 1]
+tags: [chipping, hardware, rom]
 complexity: intermediate
-tags:
-  - chipping
-  - hardware
-  - rom
 sources:
   - name: 'pgmfi.org wiki'
     title: Willem

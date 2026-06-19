@@ -2,7 +2,6 @@
 summary: 'Volumetric Efficiency (VE) defines the ratio of air/fuel mixture drawn into the cylinder versus its theoretical maximum capacity, serving as the foundation for ECU fuel mapping.'
 tags: [ecu, tuning, rom, sensors, fueling]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: intermediate

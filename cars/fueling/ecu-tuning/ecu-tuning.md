@@ -2,7 +2,6 @@
 summary: 'An introductory guide to fuel and ignition tuning on Honda ECUs. Learn how to calibrate air-fuel ratios, timing advance, and perform road logging.'
 tags: [tuning, ecu, fueling, ignition]
 applies_to:
-  obd: [0, 1, 2]
   models: [integra]
   chassis: {}
 complexity: intermediate

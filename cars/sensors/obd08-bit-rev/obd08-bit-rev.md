@@ -2,7 +2,6 @@
 summary: 'Technical reference for calculating 8-bit rev limit and engine speed restart thresholds in OBD0 VTEC Honda ECUs.'
 tags: [ecu, tuning, obd0, vtec, formula]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: intermediate

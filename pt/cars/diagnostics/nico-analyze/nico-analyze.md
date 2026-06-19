@@ -2,7 +2,6 @@
 summary: 'Informação sobre a ferramenta de análise de ficheiros binários Nico, utilizada para comparar e analisar ROMs de ECUs Honda.'
 tags: [hardware, education, ecu, tuning, rom, sensors, reference, diagnostics]
 applies_to:
-  obd: [0, 1, 2]
   brand: Honda
 complexity: intermediate
 sources:

@@ -1,15 +1,7 @@
 ---
 summary: 'Uma ROM personalizada permite que a ECU ative o solenoide de óxido nitroso, substituindo o interruptor WOT tradicional.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [ecu, reference, tuning, rom, sensors, nitrous]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - nitrous
 ---
 
 # Controlo de Óxido Nitroso pela ECU

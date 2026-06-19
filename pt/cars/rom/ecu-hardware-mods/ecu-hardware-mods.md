@@ -1,12 +1,7 @@
 ---
 summary: 'Um índice de modificações de hardware para ECUs Honda OBD0 and OBD1, incluindo conversões para VTEC, adições de IAB, entradas de banda larga (wideband) e conversões de transmissão.'
-applies_to:
-  obd: [0, 1]
+tags: [ecu, hardware, chipping]
 complexity: advanced
-tags:
-  - ecu
-  - hardware
-  - chipping
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Modificações de Hardware da ECU'

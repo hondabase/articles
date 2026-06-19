@@ -1,8 +1,6 @@
 ---
-summary: Ghetto Dyne is a legacy ROM tuning tool; Turbo Edit provides equivalent functionality with active development and is the recommended alternative.
+summary: 'Ghetto Dyne is a legacy ROM tuning tool; Turbo Edit provides equivalent functionality with active development and is the recommended alternative.'
 tags: [tuning, rom, sensors, reference, ecu]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

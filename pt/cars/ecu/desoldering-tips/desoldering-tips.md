@@ -1,11 +1,7 @@
 ---
 summary: 'Dicas práticas, truques e melhores práticas para dessoldar componentes de placas de circuito impresso delicadas de ECUs.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [hardware, education]
 complexity: intermediate
-tags:
-  - hardware
-  - education
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Desoldering Tips'

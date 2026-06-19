@@ -1,8 +1,6 @@
 ---
-summary: "Configure and manage user preferences for the Hondabase interface, which are stored locally via browser cookies."
+summary: 'Configure and manage user preferences for the Hondabase interface, which are stored locally via browser cookies.'
 tags: [reference, configuration, settings]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

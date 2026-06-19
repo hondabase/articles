@@ -1,16 +1,7 @@
 ---
 summary: 'Em primeiro lugar, gostaria de agradecer novamente ao NicoHRED pela informação que publicou no fórum geral sobre a "66P507 Readout".'
-applies_to:
-  obd: [1]
+tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, obd1]
 complexity: advanced
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - wiring
-  - conversion
 sources:
   - name: 'pgmfi.org wiki'
     title: 'OBD1 Oki66207 Reader-DIP64'

@@ -1,8 +1,7 @@
 ---
-summary: "Technical reference for calculating 16-bit RPM values in OBD1 Honda ECUs, including the conversion formula and byte order specifications."
+summary: 'Technical reference for calculating 16-bit RPM values in OBD1 Honda ECUs, including the conversion formula and byte order specifications.'
 tags: [ecu, reference, sensors, obd1]
 applies_to:
-  obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eg-eh]
 complexity: beginner

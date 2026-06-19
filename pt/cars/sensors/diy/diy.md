@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of the DIY (Do It Yourself) philosophy for automotive electronics and ECU modification.'
 tags: [diy, reference, tuning, electronics]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

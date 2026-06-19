@@ -1,23 +1,9 @@
-yaml
 ---
-summary: OBD2 (On Board Diagnostics 2) is a US standard established in 1996 that specifies methods for accessing vehicle engine computers, emission controls, and related systems. Required on all North American vehicles since 1996.
+summary: 'OBD2 (On Board Diagnostics 2) is a US standard established in 1996 that specifies methods for accessing vehicle engine computers, emission controls, and related systems. Required on all North American vehicles since 1996.'
+tags: [obd2, diagnostics, ecu, hardware, wiring, emissions, reference, tuning, sensors, rom]
 applies_to:
-  obd: [2]
-  brand:
-    - Acura
-    - Honda
+  brand: [Acura, Honda]
 complexity: intermediate
-tags:
-  - obd2
-  - diagnostics
-  - ecu
-  - hardware
-  - wiring
-  - emissions
-  - reference
-  - tuning
-  - sensors
-  - rom
 ---
 
 # OBD2: On Board Diagnostics 2

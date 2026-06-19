@@ -1,8 +1,7 @@
 ---
 summary: 'A guide to OBD0 Honda ECU code compatibility. Learn which ECUs can share code and how to successfully interchange binaries between units.'
-tags: [ecu, reference, tuning, rom, sensors, diagnostics]
+tags: [ecu, reference, tuning, rom, sensors, diagnostics, obd0]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [da, dc2, ef]
 complexity: advanced

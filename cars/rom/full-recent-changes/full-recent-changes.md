@@ -1,8 +1,7 @@
 ---
-summary: "A comprehensive log of all recent modifications and updates across the Hondabase technical documentation library."
+summary: 'A comprehensive log of all recent modifications and updates across the Hondabase technical documentation library.'
 tags: [reference, documentation, updates]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner

@@ -2,7 +2,6 @@
 summary: 'Especificações técnicas e visão geral da aplicação para a ECU Honda Civic HX 96+.'
 tags: [ecu, reference, sensors]
 applies_to:
-  obd: [2]
   brand: Honda
 complexity: beginner
 sources:

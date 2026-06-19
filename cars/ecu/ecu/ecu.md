@@ -2,7 +2,6 @@
 summary: 'A guide to identifying Honda PGM-FI Engine Control Unit (ECU) variants, including manual versus automatic transmission and JDM versus USDM regional specifications.'
 tags: [ecu, pgm-fi, identification, obd1]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner

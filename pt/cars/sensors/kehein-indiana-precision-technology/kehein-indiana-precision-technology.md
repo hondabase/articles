@@ -2,7 +2,6 @@
 summary: 'Overview of Keihin Indiana Precision Technology (IPT) and their role in the manufacturing of Honda Engine Control Modules (ECM) and Powertrain Control Modules (PCM).'
 tags: [ecu, manufacturing, hardware, keihin]
 applies_to:
-  obd: [0, 1, 2]
   models: [all]
   chassis: [all]
 complexity: beginner

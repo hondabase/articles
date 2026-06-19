@@ -2,7 +2,6 @@
 summary: 'Análise da ECU Honda Accord EDM OBD1 PT5, abrangendo a sua arquitetura de PCB partilhada com outras unidades Accord.'
 tags: [ecu, reference, sensors]
 applies_to:
-  obd: [1]
   brand: Honda
 complexity: intermediate
 sources:

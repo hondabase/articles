@@ -1,11 +1,7 @@
 ---
 summary: 'Um guia para escolher e utilizar gravadores de EPROM/Flash ROM para programar chips de memória 27C256 e SST 27SF256 em ECUs Honda.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [hardware, reference]
 complexity: intermediate
-tags:
-  - hardware
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Rom Burner'

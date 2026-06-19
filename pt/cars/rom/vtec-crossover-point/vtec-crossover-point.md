@@ -1,14 +1,7 @@
 ---
-summary: "O VTEC Crossover Point é o RPM num motor VTEC onde o solenoide VTEC é ativado, alternando da Low Cam para a High Cam."
-applies_to:
-  obd: [0, 1, 2]
+summary: 'O VTEC Crossover Point é o RPM num motor VTEC onde o solenoide VTEC é ativado, alternando da Low Cam para a High Cam.'
+tags: [tuning, rom, vtec, engine, reference]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - vtec
-  - engine
-  - reference
 ---
 
 # VTEC Crossover Point

@@ -2,7 +2,6 @@
 summary: 'Technical overview of the Engine Coolant Temperature (ECT) sensor in Honda engines, including its role in fueling, ignition timing, and cold start enrichment.'
 tags: [sensors, reference, diagnostics]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner

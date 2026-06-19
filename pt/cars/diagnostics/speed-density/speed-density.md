@@ -1,16 +1,9 @@
 ---
 summary: 'O que é um sistema de gestão de motor baseado em Velocidade-Densidade (Speed Density)? Os sistemas Speed Density calculam a quantidade de ar que entra no motor utilizando sensores que monitorizam as condições de funcionamento do motor.'
+tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
-  obd: [0, 1, 2]
   brand: Honda
 complexity: advanced
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - diagnostics
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Speed Density'

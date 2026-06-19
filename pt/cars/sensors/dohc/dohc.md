@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of Dual Overhead Cam (DOHC) engine architecture, detailing the separation of intake and exhaust camshafts.'
 tags: [engine, mechanical, reference, dohc]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

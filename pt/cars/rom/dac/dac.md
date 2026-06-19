@@ -1,13 +1,7 @@
 ---
 summary: 'Conversor Digital para Analógico. O processo de pegar num valor digital e convertê-lo num sinal analógico de algum tipo.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [tuning, rom, sensors, reference]
 complexity: intermediate
-tags:
-  - tuning
-  - rom
-  - sensors
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: DAC

@@ -2,7 +2,6 @@
 summary: 'Future Active is a major electronic components distributor offering affordable 27SF256 EEPROM chips and Aries low-profile ZIF sockets.'
 tags: [parts, eeprom, zif, hardware]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner

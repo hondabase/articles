@@ -2,7 +2,6 @@
 summary: 'Learn how to disable the persistent Cruise Control or Upshift indicator light on OBD1 Honda ECUs by removing resistor R135.'
 tags: [ecu, diagnostics, wiring, modification]
 applies_to:
-  obd: [1]
   models: [Civic, Integra]
   chassis: [EG, DC]
 complexity: beginner

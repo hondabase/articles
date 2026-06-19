@@ -1,15 +1,7 @@
-yaml
 ---
-summary: Convert an OBD1P13 automatic transmission ECU to manual by moving the jumper from RP11 to RP12.
-tags:
-  - ecu
-  - jumper
-  - conversion
-  - obd1
-  - manual
-  - automatic
+summary: 'Convert an OBD1P13 automatic transmission ECU to manual by moving the jumper from RP11 to RP12.'
+tags: [ecu, jumper, conversion, obd1, manual, automatic]
 applies_to:
-  obd: [1]
   models: [P11, P12, P13, P14, P39]
 complexity: beginner
 ---

@@ -2,7 +2,6 @@
 summary: 'How to configure and troubleshoot USB-to-TTL serial converters (such as FTDI or CP2102 chips) for reliable ECU datalogging.'
 tags: [datalogging, serial, hardware]
 applies_to:
-  obd: [1]
   models: [integra]
   chassis: {}
 complexity: advanced

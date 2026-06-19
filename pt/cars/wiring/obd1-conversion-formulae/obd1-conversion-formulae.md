@@ -1,8 +1,6 @@
 ---
 summary: 'Uma lista abrangente de fórmulas matemáticas para converter valores hexadecimais brutos da ROM em unidades legíveis por humanos, como RPM, pressão e temperatura.'
-tags: [ecu, referência, tuning, rom, sensores, cablagem, conversão, diagnósticos]
-applies_to:
-  obd: [1]
+tags: [ecu, referência, tuning, rom, sensores, cablagem, conversão, diagnósticos, obd1]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

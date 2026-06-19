@@ -2,7 +2,6 @@
 summary: 'A comprehensive index of hardware modifications for Honda OBD0 and OBD1 ECUs, including VTEC conversions, IAB additions, wideband inputs, and transmission swaps.'
 tags: [ecu, hardware, chipping, vtec, obd0, obd1]
 applies_to:
-  obd: [0, 1]
   models: [civic, crx, del-sol, integra, prelude]
   chassis: [bb, da, dc2, ef, eg, eg-eh, ek]
 complexity: advanced

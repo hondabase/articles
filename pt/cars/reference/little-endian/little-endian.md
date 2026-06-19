@@ -1,10 +1,7 @@
 ---
 summary: 'Little Endian é o esquema de disposição de valores multibyte em memória utilizado por muitos processadores, incluindo os Intel x86 e os OKI 66k.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [referência]
 complexity: beginner
-tags:
-  - referência
 ---
 
 # Little Endian

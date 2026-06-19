@@ -1,15 +1,7 @@
-yaml
 ---
-summary: Win Hex is a hexadecimal editor for Windows that calculates checksums and provides essential ROM editing tools for automotive ECU tuning.
-applies_to:
-  obd: [0, 1, 2]
+summary: 'Win Hex is a hexadecimal editor for Windows that calculates checksums and provides essential ROM editing tools for automotive ECU tuning.'
+tags: [tuning, rom, hex-editor, checksum, tools]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - hex-editor
-  - checksum
-  - tools
 ---
 
 # Win Hex: Hexadecimal Editor for ECU ROM Editing

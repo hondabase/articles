@@ -2,7 +2,6 @@
 summary: 'A technical overview of OBD1 Honda ECU hardware architecture, including memory mapping, I/O expander functionality, and OKI 66k assembly logic.'
 tags: [ecu, hardware, assembly, obd1, reverse-engineering]
 applies_to:
-  obd: [1]
   chassis: [dc2, ef, eg, eg-eh]
   models: [civic, del-sol, integra]
 complexity: advanced

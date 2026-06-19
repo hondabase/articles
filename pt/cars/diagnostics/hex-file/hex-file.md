@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of the Intel HEX file format, a standard ASCII-based encoding used for storing machine code and data for ECU ROM and EPROM programming.'
 tags: [tuning, rom, eprom, ecu, diagnostics, reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

@@ -1,12 +1,7 @@
 ---
 summary: 'Guia de referência de hardware e software para a ECU PR3 DOHC VTEC OBD0 e OBD1 usada nos modelos Integra e Civic equipados com motores B16A.'
-applies_to:
-  obd: [0, 1]
+tags: [ecu, vtec, reference]
 complexity: intermediate
-tags:
-  - ecu
-  - vtec
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: PR3

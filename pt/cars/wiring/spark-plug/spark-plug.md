@@ -1,8 +1,6 @@
 ---
-summary: Spark plugs receive electrical energy from the ignition coil and discharge it into the compressed air-fuel mixture in the combustion chamber.
+summary: 'Spark plugs receive electrical energy from the ignition coil and discharge it into the compressed air-fuel mixture in the combustion chamber.'
 tags: [spark-plug, ignition, ecu, wiring, tuning, sensors]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

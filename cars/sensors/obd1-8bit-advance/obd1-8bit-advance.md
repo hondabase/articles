@@ -2,7 +2,6 @@
 summary: 'Technical reference for calculating ignition timing advance values in 8-bit OBD1 Honda ECUs using the standard conversion formula.'
 tags: [ecu, ignition, tuning, obd1]
 applies_to:
-  obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eg-eh]
 complexity: beginner

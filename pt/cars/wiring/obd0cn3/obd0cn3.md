@@ -1,15 +1,6 @@
 ---
-summary: "OBD0 ECUs feature a 5-pin serial port labeled CN3 with pinout and functionality similar to OBD1 CN2."
-tags:
-  - ecu
-  - obd
-  - wiring
-  - pinout
-  - serial-communication
-applies_to:
-  obd:
-    - 0
-    - 1
+summary: 'OBD0 ECUs feature a 5-pin serial port labeled CN3 with pinout and functionality similar to OBD1 CN2.'
+tags: [ecu, obd, wiring, pinout, serial-communication]
 complexity: beginner
 ---
 

@@ -1,8 +1,6 @@
 ---
 summary: 'Aviso técnico relativo à instalação de sensores de detonação em motores não equipados, citando as complexidades do diâmetro do cilindro e da calibração da placa de detonação.'
 tags: [ecu, reference, tuning, rom, sensors]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

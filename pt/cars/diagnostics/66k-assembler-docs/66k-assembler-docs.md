@@ -1,16 +1,9 @@
 ---
 summary: 'Aqui pode encontrar toda a documentação sobre a arquitetura Oki 66K que conseguimos encontrar. Se não estiver anexada a esta página, pode tentar procurar na localização antiga (que já não está online).'
+tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
-  obd: [0, 1, 2]
   brand: Honda
 complexity: advanced
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - diagnostics
 sources:
   - name: 'pgmfi.org wiki'
     title: '66k Assembler Docs'

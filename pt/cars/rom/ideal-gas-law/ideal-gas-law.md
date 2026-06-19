@@ -1,8 +1,6 @@
 ---
 summary: 'Aplicação da Lei dos Gases Ideais nos sistemas de gestão de motor Honda baseados em velocidade-densidade para calcular os requisitos de combustível com base na pressão e temperatura.'
 tags: [tuning, rom, sensors, reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: intermediate
 sources:
   - name: 'pgmfi.org wiki'

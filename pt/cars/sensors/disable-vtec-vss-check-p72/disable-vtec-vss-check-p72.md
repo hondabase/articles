@@ -1,12 +1,9 @@
 ---
 summary: 'Como desativar a verificação de VSS de 25mph para ativação do VTEC na P72: Autor: Speedz Data: 23-08-03 15:59 aqui é onde se encontra na p72 :) 11FD C5 22 09 : RB 22.'
+tags: [sensors, reference]
 applies_to:
-  obd: [0, 1, 2]
   ecus: [P72]
 complexity: beginner
-tags:
-  - sensors
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Disable Vtec VSS Check P72'

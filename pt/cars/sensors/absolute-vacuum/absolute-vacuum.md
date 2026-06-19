@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of absolute vacuum and its relationship to manifold absolute pressure (MAP) sensing in automotive engine management systems.'
 tags: [sensors, reference, physics]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

@@ -1,15 +1,7 @@
 ---
-summary: Instructions for wiring a Resistor Box to use Peak and Hold injectors with OBD systems.
-applies_to:
-  obd: [0, 1, 2]
+summary: 'Instructions for wiring a Resistor Box to use Peak and Hold injectors with OBD systems.'
+tags: [ecu, injectors, peak-and-hold, resistor-box, wiring, conversion]
 complexity: advanced
-tags:
-  - ecu
-  - injectors
-  - peak-and-hold
-  - resistor-box
-  - wiring
-  - conversion
 ---
 
 # Resistor Box Wiring for Peak and Hold Injectors

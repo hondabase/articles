@@ -1,12 +1,8 @@
 ---
 summary: 'Aprende como as ECUs Honda OBD1 comunicam com computadores portáteis de afinação através de sinais de série TTL (conector CN2), incluindo esquemas de pinagem, configurações e avisos de cablagem.'
 applies_to:
-  obd: [1]
   complexity: advanced
-  tags:
-    - ecu
-    - datalogging
-    - serial
+  tags: [ecu, datalogging, serial]
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Comunicação de Série'

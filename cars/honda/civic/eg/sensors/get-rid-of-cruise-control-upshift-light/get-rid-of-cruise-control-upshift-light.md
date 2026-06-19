@@ -2,7 +2,6 @@
 summary: 'Eliminate the persistent cruise control or upshift indicator light on modified OBD1 P05 ECUs by removing resistor R135.'
 tags: [ecu, p05, diagnostics, wiring]
 applies_to:
-  obd: [1]
   models: [civic]
   chassis: [eg]
 complexity: beginner

@@ -2,7 +2,6 @@
 summary: 'Technical overview of the P1J and P1K ECU units found in 1996–2000 UK Honda Civic D14 engines, including PCB identification and modification potential.'
 tags: [ecu, p1j, p1k, d14, obd1, tuning]
 applies_to:
-  obd: [1]
   models: [civic]
   chassis: [ek]
 complexity: intermediate

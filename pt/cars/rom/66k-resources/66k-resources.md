@@ -1,8 +1,6 @@
 ---
 summary: 'Lista abrangente de recursos para a família de processadores Oki 66K utilizados nas ECUs Honda OBD1 e OBD2, incluindo assemblers e manuais.'
 tags: [ecu, reference, tuning, rom, sensors]
-applies_to:
-  obd: [1, 2]
 complexity: advanced
 sources:
   - name: 'pgmfi.org wiki'

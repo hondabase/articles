@@ -1,8 +1,7 @@
 ---
-summary: "Technical guide for disabling the 25mph Vehicle Speed Sensor (VSS) requirement for VTEC engagement on the OBD1 P72 ECU."
+summary: 'Technical guide for disabling the 25mph Vehicle Speed Sensor (VSS) requirement for VTEC engagement on the OBD1 P72 ECU.'
 tags: [ecu, vtec, vss, tuning, p72]
 applies_to:
-  obd: [1]
   ecus: [P72]
   models: [integra]
   chassis: [dc2]

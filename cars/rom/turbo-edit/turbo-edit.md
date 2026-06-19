@@ -2,7 +2,6 @@
 summary: 'An introduction to TurboEdit, the open-source ROM editing and tuning software for OBD0 Honda ECUs (PM6/PM7 codebases).'
 tags: [tuning, rom, software, obd0]
 applies_to:
-  obd: [0]
   models: [civic, crx, del-sol, integra]
   chassis: [da, ef, eg, eh, ek]
 complexity: intermediate

@@ -2,7 +2,6 @@
 summary: 'A checksum is a fundamental error-checking mechanism used in Honda OBD0 and OBD1 ECUs to verify ROM integrity by summing data values.'
 tags: [hardware, ecu, tuning, rom, diagnostics]
 applies_to:
-  obd: [0, 1]
   models: [accord, civic, crx, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, ef, eg, eh]
 complexity: beginner

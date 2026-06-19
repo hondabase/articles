@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of ECU clock speed, its role in MCU timing, and its impact on serial communication and timer-based calculations.'
 tags: [ecu, mcu, timing, clock, reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

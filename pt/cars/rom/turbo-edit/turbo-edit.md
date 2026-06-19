@@ -1,12 +1,7 @@
 ---
 summary: 'Uma introdução ao TurboEdit, o software livre e de código aberto para edição de ROM e afinação (tuning) de ECUs Honda OBD0 (bases de código PM6/PM7).'
-applies_to:
-  obd: [0]
+tags: [tuning, rom, software]
 complexity: intermediate
-tags:
-  - tuning
-  - rom
-  - software
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Turbo Edit'

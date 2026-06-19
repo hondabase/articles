@@ -2,7 +2,6 @@
 summary: 'Learn how to modify the target idle RPM in OBD0 PM7 ECU ROMs by locating and adjusting the hex idle target string.'
 tags: [ecu, tuning, rom, idle, obd0]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: beginner

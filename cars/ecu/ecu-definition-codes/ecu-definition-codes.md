@@ -2,7 +2,6 @@
 summary: 'A reference table of Honda and Acura OBD0, OBD1, and OBD2 ECU part numbers, their markets, and corresponding code designations.'
 tags: [ECU, reference]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek]
 complexity: beginner

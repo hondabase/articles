@@ -2,7 +2,6 @@
 summary: 'Calculate VTEC engagement and disengagement thresholds for OBD0 and OBD1 Honda ECUs using the standard RPM conversion formula.'
 tags: [ecu, tuning, vtec, rom]
 applies_to:
-  obd: [0, 1]
   models: [accord, civic, crx, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, ef, eg, eg-eh]
 complexity: beginner

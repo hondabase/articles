@@ -1,12 +1,7 @@
 ---
 summary: 'Como diagnosticar uma luz de verificação do motor (CEL/MIL) constantemente acesa em ECUs Honda OBD0/OBD1, o que normalmente indica o modo de emergência (limp mode) ou uma ROM/ligação defeituosa.'
-applies_to:
-  obd: [0, 1]
+tags: [ecu, diagnosticos, resolucao-de-problemas]
 complexity: intermediate
-tags:
-  - ecu
-  - diagnosticos
-  - resolucao-de-problemas
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Troubleshooting Solid CEL'

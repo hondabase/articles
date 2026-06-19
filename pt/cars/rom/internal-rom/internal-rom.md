@@ -1,8 +1,6 @@
 ---
 summary: 'Explicação do armazenamento de memória ROM Interna nos microcontroladores (MCUs) das ECUs Honda e o seu papel na gestão do motor.'
 tags: [tuning, rom, sensores, referência]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

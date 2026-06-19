@@ -2,7 +2,6 @@
 summary: 'Guia técnico para converter ECUs Honda P08 OBD1 automáticas para configurações de transmissão manual, modificando os valores internos da placa de resistências.'
 tags: [ecu, reference, sensors]
 applies_to:
-  obd: [1]
   brand: Honda
 complexity: intermediate
 sources:

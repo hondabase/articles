@@ -1,8 +1,6 @@
 ---
 summary: 'Informação sobre como obter e utilizar manuais de serviço de fábrica (Helms) para uma cablagem e reparação mecânica precisa de veículos Honda.'
 tags: [sensors, reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

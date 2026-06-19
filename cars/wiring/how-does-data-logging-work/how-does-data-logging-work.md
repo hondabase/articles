@@ -2,7 +2,6 @@
 summary: 'Technical overview of how PC-based software communicates with Honda ECUs for real-time datalogging.'
 tags: [datalogging, tuning, ecu-communication]
 applies_to:
-  obd: [1]
   models: [civic, integra]
   chassis: [dc2, eg, eg-eh, ek]
 complexity: advanced

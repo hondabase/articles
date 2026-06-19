@@ -2,7 +2,6 @@
 summary: 'A technical reference for JDM (Japanese Domestic Market) OBD1 Honda ECUs, highlighting hardware differences and common factory limitations compared to USDM counterparts.'
 tags: [ecu, jdm, obd1, sensors, hardware]
 applies_to:
-  obd: [1]
   models: [civic, integra]
   chassis: [eg, dc]
 complexity: beginner

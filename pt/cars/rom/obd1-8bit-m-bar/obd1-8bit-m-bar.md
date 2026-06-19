@@ -1,13 +1,9 @@
 ---
 summary: 'Fórmulas do byte MAP OBD1 dos modelos P72/P75 arquivadas e valores de calibração para código ROM de fábrica (stock) e desbloqueado (uncorked).'
+tags: [tuning, sensor, maps, obd1]
 applies_to:
-  obd: [1]
   ecus: [P72, P75]
 complexity: advanced
-tags:
-  - tuning
-  - sensor
-  - maps
 sources:
   - name: 'pgmfi.org wiki'
     title: 'OBD1 8bit M Bar'

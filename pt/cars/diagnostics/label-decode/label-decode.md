@@ -2,7 +2,6 @@
 summary: 'Aprenda a interpretar as etiquetas de identificação nas ECUs Honda OBD1 para determinar a sua origem, compatibilidade com o motor e tipo de transmissão.'
 tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
-  obd: [1]
   brand: Acura/Honda
 complexity: intermediate
 sources:

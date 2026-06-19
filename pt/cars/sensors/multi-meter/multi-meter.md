@@ -1,8 +1,6 @@
 ---
 summary: 'A comprehensive guide to using a digital multimeter for automotive electrical diagnostics, covering voltage, current, and resistance measurements.'
 tags: [hardware, education, sensors, reference, diagnostics]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

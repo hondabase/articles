@@ -2,7 +2,6 @@
 summary: 'Referência para as ECUs Honda USDM (Mercado Doméstico dos Estados Unidos), conhecidas pelos seus conjuntos abrangentes de funcionalidades, incluindo ELD e controlo de detonação.'
 tags: [ecu, reference, sensors]
 applies_to:
-  obd: [1]
   brand: Acura/Honda
 complexity: intermediate
 sources:

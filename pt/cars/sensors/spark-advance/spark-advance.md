@@ -1,8 +1,6 @@
 ---
 summary: 'O Avanço de Ignição define o número de graus de rotação do virabrequim antes do PMS em que a faísca é disparada, sendo fundamental para a eficiência e proteção do motor.'
 tags: [tuning, ignition, sensors, reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

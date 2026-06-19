@@ -1,10 +1,7 @@
 ---
 summary: 'A ressonância de reverberação gerada pela detonação situa-se geralmente na gama entre 2 e 12 kHz.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [reference]
 complexity: beginner
-tags:
-  - reference
 ---
 
 # Frequência de Detonação

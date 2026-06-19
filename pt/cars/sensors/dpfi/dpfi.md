@@ -2,7 +2,6 @@
 summary: 'An overview of the Dual Point Fuel Injection (DPFI) system used in early Honda engines, detailing its operational principles and fuel delivery configuration.'
 tags: [fuel-injection, dpfi, sensors, intake]
 applies_to:
-  obd: [0, 1]
   models: [Civic, CRX]
 complexity: beginner
 ---

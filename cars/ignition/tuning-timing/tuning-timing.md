@@ -2,7 +2,6 @@
 summary: 'A technical guide to ignition timing calibration on Honda ECUs, covering combustion mechanics, MBT, and the relationship between cylinder pressure and engine safety.'
 tags: [tuning, ignition, maps, combustion, ecu]
 applies_to:
-  obd: [0, 1, 2]
   models: [civic, crx, del-sol, integra, prelude]
   chassis: [bb, da, dc2, ef, eg, eh, ek]
 complexity: intermediate

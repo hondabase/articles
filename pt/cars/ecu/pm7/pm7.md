@@ -1,13 +1,10 @@
 ---
 summary: 'Especificações de hardware, diferenças de layout de placa e binários de ROM originais para a ECU OBD0 DOHC ZC PM7.'
+tags: [ecu, reference]
 applies_to:
   brand: Honda
   engines: [D16A8, D16A9, D16Z5]
-  obd: [0]
 complexity: intermediate
-tags:
-  - ecu
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: PM7

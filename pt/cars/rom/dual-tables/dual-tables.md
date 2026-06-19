@@ -1,8 +1,6 @@
 ---
 summary: 'Explicação das estruturas de ROM com tabelas duplas em ECUs Honda, permitindo funcionalidades de afinação avançadas como mapas de combustível e ignição dependentes do VTEC.'
 tags: [ecu, reference, tuning, rom, sensors]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

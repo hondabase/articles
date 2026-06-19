@@ -2,7 +2,6 @@
 summary: 'Technical procedures for socketing and chipping 1988-1989 OBD0 Honda and Acura ECUs equipped with internal-ROM OKI M83C154 processors.'
 tags: [ecu, chipping, hardware, obd0]
 applies_to:
-  obd: [0]
   models: [civic, crx]
   chassis: [ef]
 complexity: advanced

@@ -1,11 +1,7 @@
 ---
 summary: 'Um guia prático para principiantes sobre técnicas de soldadura eletrónica, seleção de ferramentas, gestão térmica e segurança ao modificar placas de ECU Honda.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [hardware, education]
 complexity: beginner
-tags:
-  - hardware
-  - education
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Aprender a Soldar'

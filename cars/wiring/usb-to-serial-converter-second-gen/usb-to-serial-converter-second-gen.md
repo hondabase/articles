@@ -2,7 +2,6 @@
 summary: 'Technical guide to wiring, configuring, and loopback testing FTDI-based USB-to-TTL serial adapters for Honda ECU datalogging.'
 tags: [datalogging, hardware, wiring]
 applies_to:
-  obd: [0, 1]
   models: [accord, civic, crx, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, ef, eg, eg-eh]
 complexity: intermediate

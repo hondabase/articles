@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of Electronic Advance systems, where ignition timing is dynamically controlled by the ECU to replace traditional vacuum-based mechanical systems.'
 tags: [ecu, ignition, tuning, sensors]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

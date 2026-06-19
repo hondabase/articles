@@ -2,7 +2,6 @@
 summary: 'Index of scaling formulas for converting raw hex values in OBD1 ECU ROM maps into readable engineering units.'
 tags: [ecu, tuning, rom-scaling, obd1]
 applies_to:
-  obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eg-eh]
 complexity: beginner

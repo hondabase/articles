@@ -1,20 +1,9 @@
-yaml
 ---
-summary: "Convert automatic transmissions to 5-speed manual ECU configurations on Honda/Acura vehicles. Most automatic ECUs can be converted via software ROM modification or hardware changes with minimal additional components."
+summary: 'Convert automatic transmissions to 5-speed manual ECU configurations on Honda/Acura vehicles. Most automatic ECUs can be converted via software ROM modification or hardware changes with minimal additional components.'
+tags: [ecu, transmission, auto-to-manual, conversion, rom, tuning, wiring, hardware-modification, diagnostics]
 applies_to:
-  obd: [0, 1, 2]
   brand: Acura/Honda
 complexity: intermediate
-tags:
-  - ecu
-  - transmission
-  - auto-to-manual
-  - conversion
-  - rom
-  - tuning
-  - wiring
-  - hardware-modification
-  - diagnostics
 ---
 
 # Automatic to Manual ECU Conversion

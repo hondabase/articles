@@ -1,8 +1,6 @@
 ---
 summary: 'Guia para utilizar ou construir um simulador de motor para testar ECUs Honda OBD0 e OBD1 em bancada sem um veículo.'
 tags: [sensors, reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

@@ -1,8 +1,7 @@
 ---
-summary: "Technical reference for the PW1 ECU, commonly found in D-series Honda applications such as the 1993 Concerto."
+summary: 'Technical reference for the PW1 ECU, commonly found in D-series Honda applications such as the 1993 Concerto.'
 tags: [ecu, pw1, d-series, honda, reference]
 applies_to:
-  obd: [0, 1]
   models: [concerto, civic]
   chassis: [ef, eg]
 complexity: beginner

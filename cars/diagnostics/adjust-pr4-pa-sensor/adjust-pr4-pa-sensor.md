@@ -2,7 +2,6 @@
 summary: 'Technical guide for identifying and configuring internal versus external atmospheric pressure (PA) sensors on PR4 ECUs.'
 tags: [ecu, tuning, sensors, diagnostics, pr4]
 applies_to:
-  obd: [0, 1]
   models: [integra]
   chassis: [da, dc2]
 complexity: intermediate

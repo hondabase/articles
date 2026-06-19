@@ -2,7 +2,6 @@
 summary: 'Convert an OBD2 P5M ECU from automatic to manual transmission by relocating the 0-ohm SMD resistor.'
 tags: [ecu, conversion, obd2, p5m, transmission]
 applies_to:
-  obd: [2]
   models: [accord, civic, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, dc2, dc5, ek, em-ep, na1-na2]
 complexity: beginner

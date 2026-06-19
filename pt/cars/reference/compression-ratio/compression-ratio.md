@@ -1,10 +1,7 @@
 ---
 summary: 'A taxa de compressão refere-se a quanto a mistura ar-combustível é comprimida durante o tempo de compressão.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [reference]
 complexity: beginner
-tags:
-  - reference
 ---
 
 # Taxa de Compressão

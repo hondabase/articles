@@ -2,7 +2,6 @@
 summary: 'An overview of the Dual-Point Fuel Injection (DPFI) system, its operational limitations, and its role in early Honda engine management.'
 tags: [ecu, dpfi, fuel-injection, diagnostics]
 applies_to:
-  obd: [0, 1]
   models: [civic, crx]
   chassis: [ef]
 complexity: intermediate

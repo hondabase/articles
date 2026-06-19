@@ -2,8 +2,7 @@
 summary: 'Technical overview of the PM8 ECU found in 1988-1991 Honda CRX HF models, detailing its hardware architecture and relationship to PM6/PM7 units.'
 tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
-  obd: [0]
-  models: [CRX HF]
+  models: ['CRX HF']
   chassis: [EF]
 complexity: beginner
 ---

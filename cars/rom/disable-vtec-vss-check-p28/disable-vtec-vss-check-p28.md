@@ -2,7 +2,6 @@
 summary: 'Technical guide for disabling the Vehicle Speed Sensor (VSS) check in the VTEC engagement routine for Honda P28 OBD1 ECUs.'
 tags: [tuning, rom, sensors, vtec, p28]
 applies_to:
-  obd: [1]
   ecus: [P28]
   models: [accord, civic]
   chassis: [ef, eg]

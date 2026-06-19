@@ -1,8 +1,6 @@
 ---
 summary: 'Guia para a utilização adequada de compostos de travamento de roscas Loctite para fixar componentes de motor e hardware em projetos Honda.'
 tags: [tuning, rom, sensores, referência]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

@@ -1,12 +1,7 @@
 ---
 summary: 'Um índice de esquemas de pinagem (pinouts) de conectores de ECU, diagramas elétricos e guias de conversão de cablagens da Honda e Acura para as gerações OBD0, OBD1 e OBD2.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [ecu, pinagem, cablagem]
 complexity: intermediate
-tags:
-  - ecu
-  - pinagem
-  - cablagem
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Ecu Connections'

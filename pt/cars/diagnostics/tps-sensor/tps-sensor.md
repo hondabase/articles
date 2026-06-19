@@ -1,11 +1,7 @@
 ---
 summary: 'Como funciona o Sensor de Posição do Acelerador (TPS), como calibrar/ajustar e como diagnosticar problemas comuns do TPS.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [sensor, diagnostics]
 complexity: intermediate
-tags:
-  - sensor
-  - diagnostics
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Sensor TPS'

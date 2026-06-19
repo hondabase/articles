@@ -1,17 +1,7 @@
 ---
-summary: "The O2 sensor heater circuit differentiates 4-wire oxygen sensors from 1-wire sensors, maintaining optimal operating temperature for accurate readings."
-applies_to:
-  obd: [0, 1, 2]
+summary: 'The O2 sensor heater circuit differentiates 4-wire oxygen sensors from 1-wire sensors, maintaining optimal operating temperature for accurate readings.'
+tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - wiring
-  - conversion
-  - diagnostics
 ---
 
 # O2 Sensor Heater Circuit

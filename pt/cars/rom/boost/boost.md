@@ -1,13 +1,7 @@
 ---
 summary: '"Boost" (sobrealimentação) refere-se a quando a pressão dentro do coletor de admissão de um motor é maior do que a Pressão Atmosférica.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [tuning, rom, sensores, referência]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - sensores
-  - referência
 ---
 
 # Boost

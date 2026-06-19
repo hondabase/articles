@@ -1,8 +1,6 @@
 ---
 summary: 'Guia técnico para a utilização de luz UV para apagar chips EPROM com janelas transparentes para reprogramação.'
 tags: [tuning, rom]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

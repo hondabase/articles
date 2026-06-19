@@ -1,8 +1,6 @@
 ---
 summary: 'Technical overview of OBD0 stock ECU serial datalogging, including baud rate limitations and the implementation of Timer2 for PC communication.'
 tags: [ecu, datalogging, obd0, serial, tuning]
-applies_to:
-  obd: [0]
 complexity: intermediate
 ---
 

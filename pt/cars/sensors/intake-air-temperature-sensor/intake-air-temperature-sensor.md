@@ -1,9 +1,6 @@
 ---
 summary: 'O sensor de temperatura do ar de admissão (IAT) e o seu efeito na alimentação de combustível (fueling).'
-applies_to:
-  obd: [0, 1, 2]
-tags:
-  - sensor
+tags: [sensor]
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Intake Air Temperature Sensor'

@@ -2,7 +2,6 @@
 summary: 'A curated collection of technical resources covering electronic fuel injection (EFI) theory, ECU architecture, and engine management systems.'
 tags: [ecu, reference, sensors, diagnostics, tuning]
 applies_to:
-  obd: [0, 1, 2]
   models: [all]
 complexity: intermediate
 ---

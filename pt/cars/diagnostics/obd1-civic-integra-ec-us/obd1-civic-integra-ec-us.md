@@ -2,7 +2,6 @@
 summary: 'Technical overview of OBD1 Honda ECU compatibility, hardware architecture, and requirements for external ROM modification.'
 tags: [ecu, tuning, rom, obd1, diagnostics]
 applies_to:
-  obd: [1]
   models: [Civic, Integra]
 complexity: advanced
 ---

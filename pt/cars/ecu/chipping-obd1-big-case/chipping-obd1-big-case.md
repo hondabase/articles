@@ -1,8 +1,6 @@
 ---
 summary: 'Brevemente: Um guia detalhado para a instalação de sockets e reprogramação de ECUs Honda OBD1 de caixa grande, incluindo requisitos de componentes e passos do processo.'
-tags: [ecu, reference]
-applies_to:
-  obd: [1]
+tags: [ecu, reference, obd1]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

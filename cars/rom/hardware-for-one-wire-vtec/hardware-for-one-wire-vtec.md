@@ -3,7 +3,6 @@ summary: 'Hardware modification guide to adding 1-wire VTEC control to OBD0 Hond
 tags: [ecu, hardware, chipping, vtec]
 applies_to:
   brand: Honda
-  obd: [0]
   models: [civic, crx]
   chassis: [ef, eg]
 complexity: advanced

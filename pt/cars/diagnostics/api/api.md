@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of Application Programming Interfaces (APIs) used in ECU tuning software and diagnostic libraries.'
 tags: [tuning, rom, sensors, reference, diagnostics, ecu]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

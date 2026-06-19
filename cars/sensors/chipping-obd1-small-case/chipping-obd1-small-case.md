@@ -2,7 +2,6 @@
 summary: 'Step-by-step instructions for socketing and chipping small-case Honda OBD1 ECUs, commonly found in JDM and some European models.'
 tags: [ecu, chipping, obd1, tuning]
 applies_to:
-  obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eg-eh]
 complexity: beginner

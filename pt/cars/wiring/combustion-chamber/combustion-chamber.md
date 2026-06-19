@@ -1,15 +1,7 @@
-yaml
 ---
-summary: The combustion chamber is the area in the cylinder head where the spark plug ignites the air-fuel mixture. Its shape influences pre-ignition tendency and engine performance.
-applies_to:
-  obd: [0, 1, 2]
+summary: 'The combustion chamber is the area in the cylinder head where the spark plug ignites the air-fuel mixture. Its shape influences pre-ignition tendency and engine performance.'
+tags: [combustion-chamber, cylinder-head, ignition, engine-fundamentals, spark-plug]
 complexity: beginner
-tags:
-  - combustion-chamber
-  - cylinder-head
-  - ignition
-  - engine-fundamentals
-  - spark-plug
 ---
 
 # Combustion Chamber

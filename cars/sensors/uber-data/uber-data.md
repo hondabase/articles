@@ -2,7 +2,6 @@
 summary: 'Historical overview of the UberData tuning software, one of the original free platforms for Honda OBD1 ECU remapping.'
 tags: [tuning, software, obd1, ecu]
 applies_to:
-  obd: [1]
   models: [civic, integra, del-sol]
   chassis: [ef, eg, dc2]
 complexity: beginner

@@ -1,11 +1,7 @@
 ---
 summary: 'Como selecionar e usar um ferro de soldar para modificação de ECU, cobrindo potências, formatos de ponta e configurações de temperatura.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [hardware, educacao]
 complexity: beginner
-tags:
-  - hardware
-  - educacao
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Soldering Iron'

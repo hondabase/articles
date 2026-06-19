@@ -2,7 +2,6 @@
 summary: 'Technical overview and internal hardware documentation for the PL2 ECU used in Acura and Rover V6 (C25/C27) applications.'
 tags: [ecu, hardware, c25, c27, acura, rover]
 applies_to:
-  obd: [0]
   models: [legend]
   chassis: [ka]
 complexity: intermediate

@@ -2,7 +2,6 @@
 summary: 'Technical reference for OBD1 Honda Civic and Acura Integra ECU pinouts, sensor configurations, and diagnostic specifications.'
 tags: [ecu, wiring, obd1, sensors, honda, integra, civic]
 applies_to:
-  obd: [1]
   models: [civic, integra]
   chassis: [eg, dc2]
 complexity: beginner

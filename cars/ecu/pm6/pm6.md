@@ -2,7 +2,6 @@
 summary: 'Detailed hardware specifications, pinouts, and codebase support for the OBD0 PM6 Civic/CRX Si SOHC ECU.'
 tags: [ecu, obd0, pm6, tuning, d16a6]
 applies_to:
-  obd: [0]
   models: [civic, crx]
   chassis: [ef]
 complexity: intermediate

@@ -2,7 +2,6 @@
 summary: 'An overview of wideband oxygen sensor technology, controller options, and integration methods for ECU tuning.'
 tags: [sensor, fueling, diagnostics, tuning]
 applies_to:
-  obd: [0, 1, 2]
   models: [integra]
   chassis: {}
 complexity: intermediate

@@ -1,10 +1,9 @@
 ---
-summary: Um sensor piezoelétrico que permite à ECU ouvir a detonação e atrasar o ponto de ignição para proteger o motor.
+summary: 'Um sensor piezoelétrico que permite à ECU ouvir a detonação e atrasar o ponto de ignição para proteger o motor.'
+tags: [knock, sensor, ignition]
 applies_to:
-  obd: [1, 2]
   engines: [B-Series, H-Series]
 complexity: intermediate
-tags: [knock, sensor, ignition]
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Knock Sensor'

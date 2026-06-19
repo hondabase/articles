@@ -1,8 +1,6 @@
 ---
-summary: "The throttle plate is a mechanical valve within the throttle body that regulates airflow into the engine based on accelerator pedal position."
+summary: 'The throttle plate is a mechanical valve within the throttle body that regulates airflow into the engine based on accelerator pedal position.'
 tags: [sensors, reference, diagnostics, ecu, intake]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

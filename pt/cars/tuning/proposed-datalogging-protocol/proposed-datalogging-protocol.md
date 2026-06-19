@@ -1,12 +1,7 @@
 ---
 summary: 'Especificação técnica do protocolo customizado de datalogging e programação em tempo real (RTP) de alta velocidade, baseado em fluxo (stream), para ECUs Honda.'
-applies_to:
-  obd: [1]
+tags: [datalogging, serial, protocol]
 complexity: advanced
-tags:
-  - datalogging
-  - serial
-  - protocol
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Proposed Datalogging Protocol'

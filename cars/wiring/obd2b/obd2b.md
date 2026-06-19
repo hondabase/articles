@@ -1,8 +1,7 @@
 ---
 summary: 'Technical overview of the OBD2B ECU generation used in 1999–2000 Honda Civic models and its connector compatibility.'
-tags: [ecu, wiring, obd2]
+tags: [ecu, wiring, obd2, obd2b]
 applies_to:
-  obd: [2]
   models: [civic]
 complexity: beginner
 ---

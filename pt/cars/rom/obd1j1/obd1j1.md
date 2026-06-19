@@ -1,14 +1,7 @@
 ---
 summary: 'O jumper J1 nas ECUs OBD1 controla o estado de _EA. É utilizado para alterar se o MCU utiliza uma ROM externa ou o programa interno.'
-applies_to:
-  obd: [1]
+tags: [ecu, referência, afinação, rom, sensores]
 complexity: beginner
-tags:
-  - ecu
-  - referência
-  - afinação
-  - rom
-  - sensores
 ---
 
 # OBD1J1

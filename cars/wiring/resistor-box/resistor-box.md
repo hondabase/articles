@@ -2,7 +2,6 @@
 summary: 'Guide for wiring and installing a resistor box, required when running low-impedance Peak and Hold injectors on Honda ECUs.'
 tags: [fuel-injection, wiring, hardware-modification]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, prelude]
   chassis: [ef, eg, eg-eh, ek]
 complexity: intermediate

@@ -2,7 +2,6 @@
 summary: 'Comprehensive resource list for the Oki 66K processor family used in Honda OBD1 and OBD2 ECUs, including assemblers, disassemblers, and syntax definitions.'
 tags: [ecu, reference, tuning, rom, sensors, oki-66k]
 applies_to:
-  obd: [1, 2]
   models: [accord, civic, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, eg, eh, ek, em, ep, na1, na2]
 complexity: advanced

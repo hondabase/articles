@@ -2,7 +2,6 @@
 summary: 'Technical overview of the PR5 ECU, the JDM equivalent to the USDM D16A6 engine control unit found in 90-91 Integra ZXi models.'
 tags: [ecu, jdm, integra, d-series]
 applies_to:
-  obd: [0]
   models: [integra]
   chassis: [da]
 complexity: beginner

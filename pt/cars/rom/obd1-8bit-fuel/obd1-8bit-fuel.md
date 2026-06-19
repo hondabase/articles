@@ -1,8 +1,6 @@
 ---
 summary: 'Referência de fórmula técnica para interpretar valores de combustível de 8 bits em tabelas de editores de ROM para a gestão de motor Honda OBD1.'
-tags: [ecu, reference, tuning, rom, sensors]
-applies_to:
-  obd: [1]
+tags: [ecu, reference, tuning, rom, sensors, obd1]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

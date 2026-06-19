@@ -1,12 +1,7 @@
 ---
 summary: 'Uma folha de referência abrangente de mapeamento de memória da RAM interna, flags de bits e registadores XRAM para as ECUs Honda OBD0 PM6 e PM7.'
-applies_to:
-  obd: [0]
+tags: [rom, reference, obd0]
 complexity: advanced
-tags:
-  - rom
-  - reference
-  - obd0
 sources:
   - name: 'pgmfi.org wiki'
     title: 'OBD0PM6PM7RAM Locations'

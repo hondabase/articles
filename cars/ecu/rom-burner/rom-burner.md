@@ -2,7 +2,6 @@
 summary: 'A technical guide to selecting and using EPROM and Flash ROM burners for programming 27C256 and SST 27SF256 memory chips in Honda ECUs.'
 tags: [hardware, ecu, tuning, rom, programming]
 applies_to:
-  obd: [0, 1, 2]
   models: [integra, civic, prelude]
   chassis: [ef, eg, ek]
 complexity: intermediate

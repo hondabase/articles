@@ -1,20 +1,7 @@
-yaml
 ---
-summary: "OBD1 vehicles feature a factory diagnostic connector linked to the ECU serial port via a half-duplex connection; removing the J12 jumper enables full-duplex mode for improved data logging reliability."
-applies_to:
-  obd: [1]
+summary: 'OBD1 vehicles feature a factory diagnostic connector linked to the ECU serial port via a half-duplex connection; removing the J12 jumper enables full-duplex mode for improved data logging reliability.'
+tags: [hardware, education, ecu, tuning, rom, sensors, reference, wiring, conversion, diagnostics]
 complexity: intermediate
-tags:
-  - hardware
-  - education
-  - ecu
-  - tuning
-  - rom
-  - sensors
-  - reference
-  - wiring
-  - conversion
-  - diagnostics
 ---
 
 # OBD1 J12 Jumper: Half-Duplex to Full-Duplex Conversion

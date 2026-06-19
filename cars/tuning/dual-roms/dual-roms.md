@@ -2,7 +2,6 @@
 summary: 'Hardware modification guide to creating a dual-ROM setup using a 27C512 EPROM and a toggle switch to select between two engine tunes.'
 tags: [ecu, hardware, tuning]
 applies_to:
-  obd: [0, 1]
   models: [accord, civic, crx, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, ef, eg, eg-eh]
 complexity: advanced

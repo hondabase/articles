@@ -2,7 +2,6 @@
 summary: 'Official source for Honda and Acura factory service manuals covering EF, EG, DA, and DC chassis platforms.'
 tags: [manuals, reference, service, documentation]
 applies_to:
-  obd: [0, 1, 2]
   models: [civic, crx, integra]
   chassis: [ef, eg, da, dc]
 complexity: beginner

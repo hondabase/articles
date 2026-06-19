@@ -1,16 +1,9 @@
 ---
 summary: 'Existe uma família muito distinta de ECUs encontrada nos Honda OBD0 de aproximadamente 88-91. As principais características desta família: MCUs Oki80 C154 ou Oki83 C154 que são essencialmente Intel8051 com uma velocidade de relógio de 12Mhz.'
+tags: [ecu, referencia, tuning, rom, sensores, diagnosticos]
 applies_to:
-  obd: [0]
   brand: Acura/Honda
 complexity: advanced
-tags:
-  - ecu
-  - referencia
-  - tuning
-  - rom
-  - sensores
-  - diagnosticos
 sources:
   - name: 'pgmfi.org wiki'
     title: OBD0MPFI

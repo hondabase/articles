@@ -1,8 +1,6 @@
 ---
 summary: 'Referência técnica de componentes eletrônicos e números de peças históricos para manutenção, reparo e modificação de ECUs Honda OBD0 e OBD1.'
 tags: [ecu, hardware, reparo, componentes, eletrônica]
-applies_to:
-  obd: [0, 1]
 complexity: advanced
 ---
 

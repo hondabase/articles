@@ -1,13 +1,7 @@
 ---
 summary: 'Converta ECUs OBD1 Honda de Civic/Integra USDM e JDM entre as configurações automática e manual alterando os valores de resistências na placa.'
-applies_to:
-  obd: [1]
+tags: [ecu, obd1, hardware, conversion]
 complexity: advanced
-tags:
-  - ecu
-  - obd1
-  - hardware
-  - conversion
 sources:
   - name: 'pgmfi.org wiki'
     title: 'OBD1 Civic Integra Auto Manual'

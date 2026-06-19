@@ -2,7 +2,6 @@
 summary: 'Hardware modification guide to add Intake Air Bypass (IAB) secondary runner controls to an OBD1 Honda P28 Civic ECU.'
 tags: [ecu, hardware, iab, p28, p72]
 applies_to:
-  obd: [1]
   models: [civic, integra, nsx, prelude]
   chassis: [bb, da, dc2, eg, na1-na2]
 complexity: advanced

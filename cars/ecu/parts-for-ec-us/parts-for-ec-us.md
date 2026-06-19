@@ -2,7 +2,6 @@
 summary: 'Reference guide for historic supplier part numbers for electronic components used in the modification and repair of Honda OBD0 and OBD1 ECUs.'
 tags: [ecu, hardware, reference, components, repair]
 applies_to:
-  obd: [0, 1]
   models: [civic, del-sol]
   chassis: [eg, eh]
 complexity: advanced

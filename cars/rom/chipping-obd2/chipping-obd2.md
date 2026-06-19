@@ -2,7 +2,6 @@
 summary: 'Hardware guide for chipping OBD2 Honda ECUs by replacing the OKI 66507 processor with a programmed 66P507 OTP microcontroller using a custom PLCC84 adapter.'
 tags: [ecu, chipping, hardware, obd2, oki]
 applies_to:
-  obd: [2]
   models: [integra]
   chassis: [dc2]
 complexity: advanced

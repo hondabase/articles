@@ -1,8 +1,6 @@
 ---
 summary: 'Overview of Super Chips chiptuning services and their application across various automotive platforms.'
 tags: [chiptuning, ecu, performance, tuning]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

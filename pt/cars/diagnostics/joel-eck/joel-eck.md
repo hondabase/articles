@@ -1,8 +1,6 @@
 ---
 summary: 'Technical contributor profile for Joel Eck, specializing in Honda ECU tuning, ROM analysis, and sensor diagnostics.'
 tags: [tuning, rom, sensors, diagnostics, ecu]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

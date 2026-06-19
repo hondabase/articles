@@ -2,7 +2,6 @@
 summary: "VTEC is Honda's variable valve timing system that provides two independent cam profiles for optimized performance across the RPM range."
 tags: [vtec, sensors, camshaft, tuning, performance]
 applies_to:
-  obd: [0, 1, 2]
   models: [all]
 complexity: beginner
 ---

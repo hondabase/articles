@@ -1,16 +1,6 @@
-yaml
 ---
 summary: 'D51 is a modified disassembler supporting the A5 instruction specific to Oki 8XC154 MCUs used in Honda ECUs. Available for Windows and Linux with full source code.'
-tags:
-  - ecu
-  - disassembler
-  - rom
-  - mcu
-  - oki-8xc154
-  - tuning
-  - reference
-applies_to:
-  obd: [0, 1, 2]
+tags: [ecu, disassembler, rom, mcu, oki-8xc154, tuning, reference]
 complexity: advanced
 ---
 

@@ -1,12 +1,7 @@
 ---
 summary: 'Fórmula de conversão do avanço do ponto de ignição para ECUs Honda OBD1 de 8 bits.'
-applies_to:
-  obd: [1]
+tags: [ecu, referência, sensores, obd1]
 complexity: beginner
-tags:
-  - ecu
-  - referência
-  - sensores
 sources:
   - name: 'pgmfi.org wiki'
     title: 'OBD1 8bit Advance'

@@ -2,7 +2,6 @@
 summary: 'A comprehensive reference guide for OBD1 engine control units found in 1992–1995 Honda Civic and Acura Integra models.'
 tags: [ecu, obd1, honda, acura, diagnostics]
 applies_to:
-  obd: [1]
   models: [Civic, Integra]
 complexity: beginner
 ---

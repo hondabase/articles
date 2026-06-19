@@ -1,12 +1,7 @@
 ---
 summary: 'Análise técnica do modo de depuração de diagnóstico e interruptores de byte de configuração de ROM na ECU Honda P72 OBD1.'
-applies_to:
-  obd: [1]
+tags: [ecu, diagnósticos, rom]
 complexity: advanced
-tags:
-  - ecu
-  - diagnósticos
-  - rom
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Modo de Depuração (Debug) da P72'

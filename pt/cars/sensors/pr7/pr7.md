@@ -2,7 +2,6 @@
 summary: 'Visão geral do hardware e especificações técnicas para a ECU Honda NSX OBD1 PR7 91-94.'
 tags: [ecu, reference, sensors]
 applies_to:
-  obd: [1]
   brand: Acura
 complexity: beginner
 sources:

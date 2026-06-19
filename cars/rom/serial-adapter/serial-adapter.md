@@ -1,8 +1,7 @@
 ---
-summary: "Honda ECUs utilize 5V TTL signaling for serial communication. This guide outlines the necessary serial adapters required to interface with ECU hardware for data logging."
+summary: 'Honda ECUs utilize 5V TTL signaling for serial communication. This guide outlines the necessary serial adapters required to interface with ECU hardware for data logging.'
 tags: [ecu, tuning, serial, ttl, diagnostics]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: intermediate

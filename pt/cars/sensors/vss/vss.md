@@ -1,8 +1,6 @@
 ---
 summary: 'Guia técnico para o Sensor de Velocidade do Veículo (VSS) em veículos Honda, abrangendo tipos de sinal, resolução de problemas e o seu impacto no VTEC.'
 tags: [sensors, reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

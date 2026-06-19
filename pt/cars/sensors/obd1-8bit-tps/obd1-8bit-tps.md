@@ -1,8 +1,6 @@
 ---
-summary: "Technical reference for calculating 8-bit Throttle Position Sensor (TPS) values in OBD1 Honda ECUs, including the conversion formula and WOT voltage scaling."
+summary: 'Technical reference for calculating 8-bit Throttle Position Sensor (TPS) values in OBD1 Honda ECUs, including the conversion formula and WOT voltage scaling.'
 tags: [ecu, sensors, tuning, obd1]
-applies_to:
-  obd: [1]
 complexity: beginner
 ---
 

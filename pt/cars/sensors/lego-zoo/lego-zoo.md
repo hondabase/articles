@@ -1,8 +1,6 @@
 ---
 summary: 'Uma página histórica da comunidade dedicada aos primórdios da wiki PGMFI.org e aos colaboradores que ajudaram a construir a base de conhecimentos de afinação Honda.'
 tags: [sensores, referência]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

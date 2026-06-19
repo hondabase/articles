@@ -1,8 +1,6 @@
 ---
-summary: "A guide to sourcing SST 27SF256 EEPROM chips and Aries low-profile ZIF sockets through Future Active."
+summary: 'A guide to sourcing SST 27SF256 EEPROM chips and Aries low-profile ZIF sockets through Future Active.'
 tags: [ecu, tuning, hardware, rom]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

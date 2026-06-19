@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of Pulse Width Modulation (PWM) as a digital-to-analog conversion method for controlling solenoids, stepper motors, and output devices in ECU systems.'
 tags: [sensors, reference, pwm, electronics]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

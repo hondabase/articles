@@ -1,8 +1,6 @@
 ---
 summary: 'Informação sobre o projeto de Programação em Tempo Real (RTP), com o objetivo de permitir a afinação de ECUs em tempo real para plataformas Honda OBD1.'
 tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics]
-applies_to:
-  obd: [0, 1, 2]
 complexity: intermediate
 sources:
   - name: 'pgmfi.org wiki'

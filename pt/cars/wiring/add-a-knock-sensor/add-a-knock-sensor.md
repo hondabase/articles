@@ -1,12 +1,7 @@
 ---
 summary: 'Adicionar um sensor de detonação (knock sensor) a um motor que não vinha equipado com um de fábrica.'
-applies_to:
-  obd: [1]
+tags: [knock, sensor, wiring]
 complexity: intermediate
-tags:
-  - knock
-  - sensor
-  - wiring
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Add A Knock Sensor'

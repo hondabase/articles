@@ -1,8 +1,7 @@
 ---
 summary: 'Complete guide for converting 1988-1991 (OBD0) Honda wiring harnesses to run 1992-1995 (OBD1) ECUs, including engine harness modification and dash wiring conversion.'
-tags: [conversion, wiring, honda-tuning, obd0-to-obd1]
+tags: [conversion, wiring, honda-tuning, obd0-to-obd1, obd0]
 applies_to:
-  obd: [0, 1]
   models: [civic, crx, del-sol, integra]
   chassis: [da, dc2, ef, eg, eg-eh, ek]
 complexity: advanced

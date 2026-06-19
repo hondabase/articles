@@ -2,7 +2,6 @@
 summary: 'Technical reference for P13 JDM ECU memory mapping, including RAM locations and ROM-based rev limit calculations.'
 tags: [tuning, rom, sensors, reference, p13]
 applies_to:
-  obd: [1]
   models: [prelude]
   chassis: [bb]
 complexity: intermediate

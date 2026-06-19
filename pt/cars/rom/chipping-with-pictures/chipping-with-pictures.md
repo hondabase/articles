@@ -1,14 +1,7 @@
 ---
-summary: Visual guides for modifying (chipping) Honda OBD0 and OBD1 ECUs, including PM6, large case, small case, and 1988–1989 variants.
-applies_to:
-  obd: [0, 1]
+summary: 'Visual guides for modifying (chipping) Honda OBD0 and OBD1 ECUs, including PM6, large case, small case, and 1988–1989 variants.'
+tags: [ecu, reference, tuning, rom, sensors]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
 ---
 
 # ECU Chipping Visual Guides

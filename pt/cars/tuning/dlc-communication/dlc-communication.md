@@ -1,11 +1,7 @@
 ---
 summary: 'Especificações técnicas do protocolo de comunicação do Data Link Connector (DLC) Honda OBD1, níveis de tensão, limites de capacitância e protocolos de comunicação série.'
-applies_to:
-  obd: [1]
+tags: [datalogging, software]
 complexity: advanced
-tags:
-  - datalogging
-  - software
 sources:
   - name: 'pgmfi.org wiki'
     title: 'DLC Communication'

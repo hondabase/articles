@@ -4,7 +4,6 @@ tags: [ecu, reference, obd0, pr4]
 applies_to:
   brand: Acura
   ecus: [PR4]
-  obd: [0]
   models: [integra]
   chassis: [da]
 complexity: intermediate

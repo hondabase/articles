@@ -1,12 +1,7 @@
 ---
 summary: 'Fórmula de conversão do ponto de ignição para ECUs Honda OBD0.'
-applies_to:
-  obd: [0]
+tags: [ecu, referência, sensores, obd0]
 complexity: beginner
-tags:
-  - ecu
-  - referência
-  - sensores
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Ignição OBD0'

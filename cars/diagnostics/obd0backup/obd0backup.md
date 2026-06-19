@@ -2,7 +2,6 @@
 summary: 'The NEC BACK0004 processor serves as a secondary backup controller in OBD0 MPFI ECUs, managing engine operation during limp mode.'
 tags: [ecu, reference, sensors, diagnostics, obd0]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [da, ef]
 complexity: beginner

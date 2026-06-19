@@ -2,7 +2,6 @@
 summary: 'Technical overview of the UberData Engine Management (ERM) system, a legacy tuning solution for Honda OBD1 ECUs.'
 tags: [ecu, tuning, obd1, legacy]
 applies_to:
-  obd: [1]
   models: [civic, integra, prelude]
   chassis: [ef, eg, eg-eh, ek, da, dc2]
 complexity: intermediate

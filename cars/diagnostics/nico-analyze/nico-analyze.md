@@ -2,7 +2,6 @@
 summary: 'A technical guide on using Nico Analyze for ECU ROM map identification, including configuration of offsets, column settings, and precision scaling.'
 tags: [ecu, tuning, rom, diagnostics, software]
 applies_to:
-  obd: [0, 1, 2]
   models: [civic, crx, del-sol]
   chassis: [ef, eg, eh]
 complexity: intermediate

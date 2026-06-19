@@ -2,7 +2,6 @@
 summary: 'Technical specifications and application overview for the 1986-1987 Honda Prelude Si (B20A3) PJ7 ECU.'
 tags: [ecu, prelude, b20a3, pj7]
 applies_to:
-  obd: [0]
   models: [prelude]
   chassis: [ba]
 complexity: beginner

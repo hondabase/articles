@@ -2,7 +2,6 @@
 summary: 'Technical overview of the 96-00 UK Honda Civic P1K and P1J ECU hardware, including board identification and modification potential.'
 tags: [ecu, p1k, p1j, d14, obd1, tuning]
 applies_to:
-  obd: [1]
   models: [civic]
   chassis: [ek]
 complexity: intermediate

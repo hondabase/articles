@@ -2,7 +2,6 @@
 summary: 'Understanding how Honda ECU speed limiters function by monitoring the Vehicle Speed Sensor (VSS) and cutting fuel delivery at specific thresholds.'
 tags: [ecu, sensors, diagnostics, speed-limiter]
 applies_to:
-  obd: [0, 1, 2]
   models: [all]
 complexity: beginner
 ---

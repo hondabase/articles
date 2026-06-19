@@ -2,7 +2,6 @@
 summary: 'Overview of the Honda ECU backup processor, a redundant system designed to maintain basic engine operation during critical primary logic failures.'
 tags: [ecu, diagnostics, hardware, redundancy]
 applies_to:
-  obd: [0, 1, 2]
   models: all
 complexity: beginner
 ---

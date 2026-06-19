@@ -2,7 +2,6 @@
 summary: 'Technical overview of saturated (high impedance) fuel injectors, including electrical characteristics and compatibility with Honda OBD1 systems.'
 tags: [ecu, fueling, injectors, sensors]
 applies_to:
-  obd: [1]
   models: [accord, civic, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, eg, eh]
 complexity: beginner

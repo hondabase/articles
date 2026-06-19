@@ -2,7 +2,6 @@
 summary: 'Technical overview of the PK3 ECU used in 1990-1991 Honda Prelude models equipped with the B20A DOHC non-VTEC engine.'
 tags: [ecu, pk3, prelude, b20a, obd0]
 applies_to:
-  obd: [0]
   models: [Prelude]
   chassis: [BA]
 complexity: beginner

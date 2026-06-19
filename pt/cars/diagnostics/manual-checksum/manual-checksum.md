@@ -1,8 +1,6 @@
 ---
-summary: "Learn how to manually correct ECU checksum errors for OBD0 and OBD1 Honda ROMs by calculating and patching the 8-bit checksum value."
+summary: 'Learn how to manually correct ECU checksum errors for OBD0 and OBD1 Honda ROMs by calculating and patching the 8-bit checksum value.'
 tags: [ecu, tuning, rom, diagnostics]
-applies_to:
-  obd: [0, 1]
 complexity: intermediate
 ---
 

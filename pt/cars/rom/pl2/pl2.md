@@ -1,15 +1,9 @@
 ---
-summary: "Overview of the PL2 ECU, commonly found in Acura and Rover V6 engines (C25/C27) from 1988 onwards, including internal board scans."
+summary: 'Overview of the PL2 ECU, commonly found in Acura and Rover V6 engines (C25/C27) from 1988 onwards, including internal board scans.'
+tags: [hardware, ecu, tuning, rom, reference]
 applies_to:
-  obd: [0, 1, 2]
   brand: Acura/Honda
 complexity: intermediate
-tags:
-  - hardware
-  - ecu
-  - tuning
-  - rom
-  - reference
 ---
 
 # PL2 ECU Overview

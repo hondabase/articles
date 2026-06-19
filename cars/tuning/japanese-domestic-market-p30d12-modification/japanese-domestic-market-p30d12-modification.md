@@ -3,7 +3,6 @@ summary: 'Technical guide for modifying the JDM P30 OBD1 ECU to enable 0-5 V ana
 tags: [ecu, datalogging, hardware, adc, p30]
 applies_to:
   ecus: [P30]
-  obd: [1]
   models: [civic, del-sol]
   chassis: [eg, eh]
 complexity: advanced

@@ -1,8 +1,6 @@
 ---
 summary: 'Technical reference and cross-indexing for the EPROMer5 parallel port EPROM programmer used in ECU chip tuning.'
 tags: [hardware, eprom, tuning, diagnostics]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

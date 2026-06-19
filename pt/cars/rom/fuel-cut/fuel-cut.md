@@ -1,14 +1,7 @@
 ---
 summary: 'O corte de combustível (Fuel Cut) ocorre quando a alimentação de combustível para o motor é completamente cortada.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [ecu, reference, tuning, rom, sensors]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
 ---
 
 # Fuel Cut (Corte de Combustível)

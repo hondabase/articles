@@ -2,7 +2,6 @@
 summary: 'Technical analysis of the Honda 6260A ECU diagnostic routine, detailing the memory-mapped LED trigger logic and procedures for signal mapping.'
 tags: [ecu, diagnostics, firmware, 6260a]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: intermediate

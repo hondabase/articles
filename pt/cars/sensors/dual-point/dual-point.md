@@ -2,7 +2,6 @@
 summary: 'An overview of Honda Dual-Point Fuel Injection (DPFI) systems, their operational limitations, and the recommended transition to Multi-Point Fuel Injection (MPFI).'
 tags: [ecu, dpfi, fuel-injection, tuning, diagnostics]
 applies_to:
-  obd: [0, 1]
   models: [Civic, CRX]
 complexity: intermediate
 ---

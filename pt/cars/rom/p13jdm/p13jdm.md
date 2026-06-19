@@ -1,13 +1,7 @@
 ---
 summary: 'Localização RAM Bytes Descrição Notas : : : : Localização ROM Bytes Descrição Notas : : : : 2EC1 1 Limite de Rotação RPM Desejada/45.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [tuning, rom, sensores, referência]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - sensores
-  - referência
 sources:
   - name: 'pgmfi.org wiki'
     title: P13JDM

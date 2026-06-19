@@ -1,12 +1,7 @@
 ---
 summary: 'Instruções passo a passo para converter uma cablagem de chassis OBD0 para funcionar com uma ECU OBD1.'
-applies_to:
-  obd: [0, 1]
+tags: [conversão, cablagem, hardware, obd0]
 complexity: advanced
-tags:
-  - conversão
-  - cablagem
-  - hardware
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Kurts OBD0-OBD1'

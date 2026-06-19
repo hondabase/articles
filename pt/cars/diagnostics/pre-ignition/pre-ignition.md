@@ -1,14 +1,10 @@
 ---
 summary: 'Explica os mecanismos físicos, diferenças, causas e métodos de prevenção para a pré-ignição e detonação do motor (knock).'
-applies_to:
-  obd: [0, 1, 2]
+tags: [tuning, diagnostics]
 complexity: beginner
-tags:
-  - tuning
-  - diagnostics
 sources:
   - name: 'pgmfi.org wiki'
-    title: 'Pré-Ignição'
+    title: Pré-Ignição
     url: /pgmfi/wiki/library/pre-ignition
     license: 'CC BY-NC-SA 1.0'
     license_url: 'https://creativecommons.org/licenses/by-nc-sa/1.0/'

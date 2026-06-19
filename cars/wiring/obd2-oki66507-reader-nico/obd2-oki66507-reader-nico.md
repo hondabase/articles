@@ -1,8 +1,7 @@
 ---
 summary: 'Technical guide to building a hardware dumper for reading internal memory from Oki 66507 microcontrollers in Honda OBD2 ECUs.'
-tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics]
+tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics, obd2]
 applies_to:
-  obd: [2]
   models: [accord, civic, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, dc2, dc5, ek, em-ep, na1-na2]
 complexity: beginner

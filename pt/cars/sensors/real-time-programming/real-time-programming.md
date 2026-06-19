@@ -1,8 +1,6 @@
 ---
-summary: "Overview of Real-Time Programming (RTP) hardware for Honda ECU tuning, including the EasyRTP v1.0 interface and SRAM modification methods."
+summary: 'Overview of Real-Time Programming (RTP) hardware for Honda ECU tuning, including the EasyRTP v1.0 interface and SRAM modification methods.'
 tags: [ecu, tuning, rtp, hardware, rom]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

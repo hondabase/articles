@@ -1,13 +1,7 @@
 ---
 summary: 'Autor: George Data: 120302 22:36 O Sensor de Velocidade do Veículo (VSS), guardado na posição de RAM 06Ch, parece de facto ser linear (para minha surpresa!), mas apenas consegue ler até ~157 km/h.'
-applies_to:
-  obd: [0]
+tags: [ecu, referencia, sensores, diagnosticos]
 complexity: beginner
-tags:
-  - ecu
-  - referencia
-  - sensores
-  - diagnosticos
 sources:
   - name: 'pgmfi.org wiki'
     title: OBD0VSS

@@ -2,7 +2,6 @@
 summary: 'A technical reference for EPROM compatibility in OBD0 and OBD1 Honda ECUs, including common chip types and pin-compatibility requirements.'
 tags: [ecu, tuning, rom, eprom, hardware]
 applies_to:
-  obd: [0, 1]
   models: [accord, civic, crx, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, ef, eg, eh]
 complexity: beginner

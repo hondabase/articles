@@ -1,12 +1,7 @@
 ---
 summary: 'Esquema de cablagem, detalhes do pinout e análise de esquemas para a ECU OBD0 e OBD1 do Acura Integra PR4.'
-applies_to:
-  obd: [0, 1]
+tags: [ecu, pinout, schematic]
 complexity: intermediate
-tags:
-  - ecu
-  - pinout
-  - schematic
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Acura Integra PR4ECU Pinout And Schematics'

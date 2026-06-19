@@ -1,8 +1,6 @@
 ---
 summary: 'Real-Time Programmability (RTP) allows for live adjustments to ECU fuel and ignition maps while the engine is running.'
 tags: [ecu, tuning, rtp, programming]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

@@ -4,7 +4,6 @@ tags: [ecu, chipping, hardware, p30, obd1]
 applies_to:
   brand: Honda
   ecus: [P30]
-  obd: [1]
   models: [civic, del-sol]
   chassis: [eg, eh]
 complexity: advanced

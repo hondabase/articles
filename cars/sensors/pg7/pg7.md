@@ -2,7 +2,6 @@
 summary: 'Technical reference for the PG7 ECU, distinguishing between the 1986–1987 vacuum advance and 1988–1989 electronic advance variants for the D16A1 engine.'
 tags: [ecu, integra, d16a1, reference]
 applies_to:
-  obd: [0]
   models: [integra]
   chassis: [da]
 complexity: beginner

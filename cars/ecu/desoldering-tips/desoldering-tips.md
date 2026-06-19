@@ -2,7 +2,6 @@
 summary: 'Practical tips, tricks, and best practices for desoldering components from delicate ECU circuit boards.'
 tags: [hardware, education]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: intermediate

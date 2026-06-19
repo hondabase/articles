@@ -1,8 +1,6 @@
 ---
-summary: "Guidance on sourcing electronic components for ECU repair and modification, noting the limitations of general retail hobby stores."
+summary: 'Guidance on sourcing electronic components for ECU repair and modification, noting the limitations of general retail hobby stores.'
 tags: [electronics, sourcing, repair, components]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

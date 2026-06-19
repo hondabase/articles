@@ -1,8 +1,6 @@
 ---
 summary: 'Uma introdução ao design e construção de Placas de Circuito Impresso (PCB) no que diz respeito às unidades de controlo de motor Honda.'
 tags: [ecu, reference, sensors, wiring, conversion]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

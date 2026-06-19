@@ -1,8 +1,6 @@
 ---
 summary: 'A comprehensive guide to sourcing electronic components for ECU repair and modification through DigiKey.'
 tags: [electronics, sourcing, components, repair]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 ---
 

@@ -2,7 +2,6 @@
 summary: 'Technical overview of the PJ0 ECU used in 1986–1989 Honda Accord and Prelude models, covering hardware revisions and regional emissions variations.'
 tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
-  obd: [0]
   models: [accord, prelude]
   chassis: [a20a]
 complexity: intermediate

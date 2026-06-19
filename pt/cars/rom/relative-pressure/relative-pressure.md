@@ -1,16 +1,6 @@
-yaml
 ---
-summary: "Relative pressure describes gauge pressure measurements that exclude atmospheric pressure (~14.5 psi). Understanding the distinction between relative and absolute pressure is essential for tuning and sensor interpretation."
-tags:
-  - tuning
-  - rom
-  - sensors
-  - reference
-  - relative-pressure
-  - absolute-pressure
-  - map-sensor
-applies_to:
-  obd: [0, 1, 2]
+summary: 'Relative pressure describes gauge pressure measurements that exclude atmospheric pressure (~14.5 psi). Understanding the distinction between relative and absolute pressure is essential for tuning and sensor interpretation.'
+tags: [tuning, rom, sensors, reference, relative-pressure, absolute-pressure, map-sensor]
 complexity: intermediate
 ---
 

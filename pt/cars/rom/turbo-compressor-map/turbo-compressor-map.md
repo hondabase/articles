@@ -1,8 +1,6 @@
 ---
 summary: 'Guia para ler e interpretar mapas de compressores de turbocompressores para adequar os turbocompressores aos objetivos de performance do motor Honda.'
 tags: [tuning, rom, sensors, reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: intermediate
 sources:
   - name: 'pgmfi.org wiki'

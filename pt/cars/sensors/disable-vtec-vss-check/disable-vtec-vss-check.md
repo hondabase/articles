@@ -1,8 +1,6 @@
 ---
 summary: 'Saiba como desativar a verificação do Sensor de Velocidade do Veículo (VSS) de VTEC em ECUs Honda OBD1, permitindo a ativação do VTEC sem um sinal de velocidade funcional.'
 tags: [sensors, reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

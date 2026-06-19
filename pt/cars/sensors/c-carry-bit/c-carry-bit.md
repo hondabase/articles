@@ -1,8 +1,6 @@
 ---
 summary: 'An overview of the Carry (C) bit functionality within 8051 and Oki 66k architectures, focusing on arithmetic overflow and bit manipulation.'
-tags: [8051, oki66k, architecture, assembly, registers]
-applies_to:
-  obd: [0, 1, 2]
+tags: ['8051', oki66k, architecture, assembly, registers]
 complexity: advanced
 ---
 

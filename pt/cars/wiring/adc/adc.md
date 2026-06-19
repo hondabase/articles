@@ -1,18 +1,9 @@
-yaml
 ---
-summary: "An analog-to-digital converter (ADC) is an integrated circuit that converts analog signals into digital representations. Learn ADC fundamentals, bit resolution, reference voltage, and conversion mathematics."
+summary: 'An analog-to-digital converter (ADC) is an integrated circuit that converts analog signals into digital representations. Learn ADC fundamentals, bit resolution, reference voltage, and conversion mathematics.'
+tags: [adc, ecu, sensors, conversion, wiring, tuning, reference]
 applies_to:
-  obd: [0, 1, 2]
   brand: Acura
 complexity: intermediate
-tags:
-  - adc
-  - ecu
-  - sensors
-  - conversion
-  - wiring
-  - tuning
-  - reference
 ---
 
 # Analog-to-Digital Converter (ADC)

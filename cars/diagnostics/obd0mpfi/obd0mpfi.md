@@ -2,7 +2,6 @@
 summary: 'Technical overview of the OBD0 MPFI ECU family, featuring Oki 80C154/83C154 architecture and common hardware components found in 1988–1991 Honda vehicles.'
 tags: [ecu, obd0, tuning, rom, mcu, diagnostics]
 applies_to:
-  obd: [0]
   models: [accord, civic, crx, del-sol, integra, prelude]
   chassis: [da, dc2, ef, eg, eg-eh, ek]
 complexity: advanced

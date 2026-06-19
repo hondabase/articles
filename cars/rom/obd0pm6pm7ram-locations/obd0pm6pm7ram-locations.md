@@ -2,7 +2,6 @@
 summary: 'A comprehensive memory mapping reference sheet of internal RAM, bit flags, and XRAM registers for OBD0 PM6 and PM7 Honda ECUs.'
 tags: [rom, reference, obd0, tuning]
 applies_to:
-  obd: [0]
   models: [civic, crx, integra]
   chassis: [ef]
 complexity: advanced

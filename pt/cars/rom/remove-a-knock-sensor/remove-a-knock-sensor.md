@@ -1,17 +1,9 @@
 ---
 summary: 'Remover a deteção de detonação é simples: Voltar a soldar R118 e R119 em R142, 143. Em seguida, remover R101 (opcional).'
+tags: [hardware, education, ecu, tuning, rom, sensors, reference]
 applies_to:
-  obd: [0, 1, 2]
   brand: Honda
 complexity: intermediate
-tags:
-  - hardware
-  - education
-  - ecu
-  - tuning
-  - rom
-  - sensors
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Remove A Knock Sensor'

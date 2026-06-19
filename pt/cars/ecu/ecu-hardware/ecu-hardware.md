@@ -1,11 +1,7 @@
 ---
 summary: 'Por dentro de uma ECU Honda: as placas, chips e circuitos.'
-applies_to:
-  obd: [0, 1]
+tags: [ecu, hardware]
 complexity: advanced
-tags:
-  - ecu
-  - hardware
 sources:
   - name: 'pgmfi.org wiki'
     title: 'ECU Hardware'

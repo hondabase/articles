@@ -2,7 +2,6 @@
 summary: 'Guide for converting non-VTEC Honda ECUs to support VTEC operation, outlining necessary hardware modifications.'
 tags: [ecu, wiring, vtec, conversion]
 applies_to:
-  obd: [1]
   models: [civic, prelude]
   chassis: [bb, eg, ek]
 complexity: intermediate

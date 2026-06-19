@@ -1,13 +1,6 @@
 ---
-summary: "BAR is a unit of pressure equal to 14.7 psi, corresponding to atmospheric pressure at sea level. Essential for sensor readings and pressure conversions in automotive diagnostics."
-tags:
-  - pressure
-  - units
-  - conversion
-  - sensors
-  - reference
-applies_to:
-  obd: [0, 1, 2]
+summary: 'BAR is a unit of pressure equal to 14.7 psi, corresponding to atmospheric pressure at sea level. Essential for sensor readings and pressure conversions in automotive diagnostics.'
+tags: [pressure, units, conversion, sensors, reference]
 complexity: beginner
 ---
 

@@ -1,12 +1,7 @@
 ---
 summary: 'Como converter uma ECU PS9 automática para manual de 5 velocidades. Procedimento para ECUs USDM e JDM (ponte BR3).'
-applies_to:
-  obd: [0, 1, 2]
+tags: [ecu, reference, sensors]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - sensors
 ---
 
 # Conversão de PS9 Automática para Manual

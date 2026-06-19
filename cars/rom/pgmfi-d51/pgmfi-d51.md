@@ -2,7 +2,6 @@
 summary: 'Technical reference for the D51 disassembler, modified to support the A5 instruction set specific to Oki 8XC154 microcontrollers.'
 tags: [ecu, disassembly, mcu, oki, tuning]
 applies_to:
-  obd: [0, 1, 2]
   models: [civic, crx]
   chassis: [ef]
 complexity: advanced

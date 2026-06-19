@@ -1,8 +1,7 @@
 ---
-summary: "Technical analysis of the 1991 PM6 ECU target idle routine, including memory address locations and code structure comparisons with the PM7 ECU."
+summary: 'Technical analysis of the 1991 PM6 ECU target idle routine, including memory address locations and code structure comparisons with the PM7 ECU.'
 tags: [tuning, rom, sensors, diagnostics, ecu, pm6]
 applies_to:
-  obd: [0]
   models: [civic, crx]
   chassis: [ef]
 complexity: intermediate

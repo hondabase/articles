@@ -1,14 +1,7 @@
-yaml
 ---
-summary: Edit any page in the documentation by clicking the Edit Text link at the bottom. Learn how to contribute to technical content across OBD0, OBD1, and OBD2 systems.
-applies_to:
-  obd: [0, 1, 2]
+summary: 'Edit any page in the documentation by clicking the Edit Text link at the bottom. Learn how to contribute to technical content across OBD0, OBD1, and OBD2 systems.'
+tags: [editing, documentation, contribution, wiki]
 complexity: beginner
-tags:
-  - editing
-  - documentation
-  - contribution
-  - wiki
 ---
 
 # Edit Text

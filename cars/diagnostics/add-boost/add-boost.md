@@ -2,7 +2,6 @@
 summary: 'Learn how to utilize ROM editor scripts to expand stock ECU fuel and ignition tables for forced induction applications.'
 tags: [ecu, tuning, rom, boost, maps]
 applies_to:
-  obd: [1]
   models: [civic, del-sol, integra]
   chassis: [dc2, eg, eh]
 complexity: intermediate

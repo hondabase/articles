@@ -1,8 +1,6 @@
 ---
 summary: 'Guia técnico para construir um dumper de hardware para ler a memória interna de microcontroladores Oki 66507 em ECUs Honda OBD2.'
-tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics]
-applies_to:
-  obd: [2]
+tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics, obd2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

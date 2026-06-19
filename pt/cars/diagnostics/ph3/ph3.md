@@ -2,7 +2,6 @@
 summary: 'Technical overview of the Honda PH3 OBD0 ECU used in 1988-1989 Accord B20A engines, including hardware specifications and diagnostic features.'
 tags: [ecu, obd0, tuning, rom, diagnostics, b20a]
 applies_to:
-  obd: [0]
   models: [Accord]
   chassis: [CA]
 complexity: advanced

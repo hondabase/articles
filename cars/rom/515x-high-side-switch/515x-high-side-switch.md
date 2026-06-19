@@ -2,7 +2,6 @@
 summary: 'Honda uses a 5 pin high side switch in a lot of their OBD1 and OBD2 ECUs to control solenoids like auto trans and VTEC solenoids.'
 tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
-  obd: [1, 2]
   brand: Honda
   models: [prelude]
   chassis: [bb]

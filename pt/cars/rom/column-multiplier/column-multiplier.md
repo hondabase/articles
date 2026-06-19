@@ -1,13 +1,7 @@
 ---
 summary: 'O multiplicador de coluna é um número utilizado numa fórmula para calcular uma coluna do mapa de combustível. Este multiplicador encontra-se mesmo no fim do referido mapa de combustível.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [tuning, rom, sensors, reference]
 complexity: beginner
-tags:
-  - tuning
-  - rom
-  - sensors
-  - reference
 ---
 
 # Multiplicador de Coluna

@@ -2,7 +2,6 @@
 summary: 'Technical overview of the PS9 ECU, a 1990-1991 USDM Civic EX unit featuring integrated automatic transmission control circuitry.'
 tags: [ecu, obd0, honda, ps9, pm6]
 applies_to:
-  obd: [0]
   models: [civic]
   chassis: [ef]
 complexity: beginner

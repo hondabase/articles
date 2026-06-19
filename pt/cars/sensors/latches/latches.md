@@ -1,8 +1,6 @@
 ---
 summary: 'Explicação técnica dos latches de endereço (ex: 74HC373) utilizados nas ECUs Honda OBD1 para fazer a interface do MCU com a memória EPROM externa.'
 tags: [sensors, reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

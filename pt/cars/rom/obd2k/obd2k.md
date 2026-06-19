@@ -1,14 +1,7 @@
 ---
 summary: 'OBD2K é um termo utilizado para diferenciar as ECUs de 01+ que equipam os motores da série K das ECUs OBD2A e OBD2B.'
-applies_to:
-  obd: [2]
+tags: [ecu, reference, tuning, rom, sensors]
 complexity: beginner
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
 ---
 
 # OBD2K

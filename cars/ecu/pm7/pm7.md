@@ -2,7 +2,6 @@
 summary: 'Technical specifications, board layout documentation, and stock ROM binaries for the OBD0 DOHC ZC PM7 ECU.'
 tags: [ecu, obd0, pm7, tuning, zc]
 applies_to:
-  obd: [0]
   engines: [D16A8, D16A9, D16Z5]
   models: [civic, crx]
   chassis: [ef]

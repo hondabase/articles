@@ -1,12 +1,7 @@
 ---
 summary: 'Guia técnico para ligação, configuração e teste de loopback de adaptadores de série USB-para-TTL baseados em FTDI para datalogging de ECUs Honda.'
-applies_to:
-  obd: [0, 1]
+tags: [datalogging, hardware, cablagem]
 complexity: intermediate
-tags:
-  - datalogging
-  - hardware
-  - cablagem
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Usb To Serial Converter Second Gen'

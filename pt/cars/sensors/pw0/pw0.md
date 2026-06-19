@@ -1,12 +1,7 @@
 ---
 summary: 'Um guia de referência completo de hardware e software para a ECU OBD0 PW0 DOHC VTEC JDM e europeia, apresentando calibrações de endereços ROM e mapeamento.'
-applies_to:
-  obd: [0]
+tags: [ecu, vtec, reference]
 complexity: intermediate
-tags:
-  - ecu
-  - vtec
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: PW0

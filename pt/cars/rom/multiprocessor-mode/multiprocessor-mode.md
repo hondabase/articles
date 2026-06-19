@@ -1,14 +1,9 @@
 ---
 summary: 'COMUNICAÇÕES MULTIPROCESSADOR Em aplicações onde múltiplos controladores executam conjuntamente uma tarefa, o controlador mestre deve ser capaz de comunicar seletivamente com escravos individuais.'
+tags: [tuning, rom, sensors, reference]
 applies_to:
-  obd: [0, 1, 2]
   brand: Honda
 complexity: intermediate
-tags:
-  - tuning
-  - rom
-  - sensors
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Modo Multiprocessador'

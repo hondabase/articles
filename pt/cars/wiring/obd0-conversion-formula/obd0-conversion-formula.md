@@ -1,21 +1,7 @@
-yaml
 ---
-summary: OBD0 conversion formulas for RPM, vehicle speed, fuel, ignition timing, and VTEC parameters. The 16-bit OBD0 RPM formula is used for rev limiters, target idle, and most other 16-bit RPM values in the ROM.
-applies_to:
-  obd: [0]
+summary: 'OBD0 conversion formulas for RPM, vehicle speed, fuel, ignition timing, and VTEC parameters. The 16-bit OBD0 RPM formula is used for rev limiters, target idle, and most other 16-bit RPM values in the ROM.'
+tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics, obd0, rpm, vtec]
 complexity: intermediate
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - wiring
-  - conversion
-  - diagnostics
-  - obd0
-  - rpm
-  - vtec
 ---
 
 # OBD0 Conversion Formulas

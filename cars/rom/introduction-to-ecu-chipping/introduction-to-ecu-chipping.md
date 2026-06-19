@@ -4,7 +4,6 @@ tags: [ecu, chipping, tuning, obd0, obd1, soldering]
 applies_to:
   engines: [B-Series, D-Series]
   ecus: [P28, P30, PM6, PM7, PR4, PR3, PW0]
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra]
   chassis: [da, dc2, ef, eg, eh, ek]
 complexity: advanced

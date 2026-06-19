@@ -2,7 +2,6 @@
 summary: 'Technical overview of the PT5 EDM Honda Accord OBD1 ECU, detailing its shared PCB architecture and application for the F20A7 engine.'
 tags: [ecu, reference, accord, obd1]
 applies_to:
-  obd: [1]
   models: [accord]
   chassis: [cb]
 complexity: intermediate

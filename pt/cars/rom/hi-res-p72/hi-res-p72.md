@@ -1,14 +1,10 @@
 ---
 summary: 'Referência técnica e guia de offsets do mapa de memória para a modificação de ROM personalizada John Cui High-Resolution (Hi-Res) P72.'
+tags: [tuning, rom, software]
 applies_to:
   brand: Acura
   ecus: [P72]
-  obd: [1]
 complexity: advanced
-tags:
-  - tuning
-  - rom
-  - software
 ---
 
 # Especificações da ROM P72 de Alta Resolução (Hi-Res)

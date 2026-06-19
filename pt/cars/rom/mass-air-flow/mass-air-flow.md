@@ -1,18 +1,9 @@
-yaml
 ---
-summary: A mass air flow (MAF) system measures intake air directly using a MAF sensor to calculate precise fuel injector pulse width for target air-fuel ratio control.
+summary: 'A mass air flow (MAF) system measures intake air directly using a MAF sensor to calculate precise fuel injector pulse width for target air-fuel ratio control.'
+tags: [ecu, reference, tuning, rom, sensors, maf, fuel-control]
 applies_to:
-  obd: [0, 1, 2]
   brand: Honda
 complexity: intermediate
-tags:
-  - ecu
-  - reference
-  - tuning
-  - rom
-  - sensors
-  - maf
-  - fuel-control
 ---
 
 # Mass Air Flow (MAF) System

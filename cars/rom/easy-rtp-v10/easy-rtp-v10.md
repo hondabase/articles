@@ -2,7 +2,6 @@
 summary: 'Technical assembly guide and installation notes for the DIY Easy-RTP v1.0 EPROM emulator board for OBD0 and OBD1 Honda ECUs.'
 tags: [hardware, rom, chipping, rtp, tuning]
 applies_to:
-  obd: [0, 1]
   models: [accord, civic, crx, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, ef, eg, eh]
 complexity: advanced

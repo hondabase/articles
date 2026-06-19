@@ -2,7 +2,6 @@
 summary: 'Technical overview of the OBD0 ECU CN3 serial port, highlighting its functionality and pinout compatibility with OBD1 CN2.'
 tags: [ecu, wiring, serial-communication, diagnostics]
 applies_to:
-  obd: [0, 1]
   models: [accord, civic, crx, del-sol, integra, prelude]
   chassis: [bb, cb-cd, da, dc2, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: beginner

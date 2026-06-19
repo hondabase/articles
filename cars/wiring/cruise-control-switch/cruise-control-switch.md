@@ -2,7 +2,6 @@
 summary: 'Guide for repurposing a cruise control switch for Full Throttle Shift (FTS) functionality on EF chassis Honda vehicles.'
 tags: [wiring, tuning, fts, cruise-control]
 applies_to:
-  obd: [0, 1, 2]
   chassis: [ef]
 complexity: intermediate
 ---

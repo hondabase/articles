@@ -1,12 +1,7 @@
 ---
 summary: 'Perguntas frequentes sobre o Crome, um software popular de edição e afinação de ROMs para ECUs OBD1 da Honda.'
-applies_to:
-  obd: [1]
+tags: [tuning, rom, software]
 complexity: intermediate
-tags:
-  - tuning
-  - rom
-  - software
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Crome FAQ'

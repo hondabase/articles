@@ -1,11 +1,7 @@
 ---
 summary: 'Tabelas de lógica técnica, mapeamento de linhas de endereço e reduções de portas booleanas para construção de hardware personalizado de emulação de ROM em Tempo Real (RTP).'
-applies_to:
-  obd: [1]
+tags: [hardware, afinação]
 complexity: advanced
-tags:
-  - hardware
-  - afinação
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Rtp Truth Table'

@@ -2,7 +2,6 @@
 summary: 'Technical reference for the Honda PM5 ECU used in 1988–1991 Civic and CRX DX models, covering MCU variants and hardware identification.'
 tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
-  obd: [0]
   models: [civic, crx]
   chassis: [ef]
 complexity: advanced

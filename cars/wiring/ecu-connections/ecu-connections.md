@@ -2,7 +2,6 @@
 summary: 'Index of Honda and Acura ECU connector pinouts, wiring diagrams, and harness conversion guides across OBD0, OBD1, and OBD2 generations.'
 tags: [ecu, pinout, wiring, reference]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, integra]
   chassis: [da, dc2]
 complexity: intermediate

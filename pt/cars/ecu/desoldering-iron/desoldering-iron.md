@@ -1,11 +1,7 @@
 ---
 summary: 'Guia para utilizar e modificar ferros de dessoldar de pera económicos para chipping de ECU e remoção de solda em furos passantes (through-hole).'
-applies_to:
-  obd: [0, 1, 2]
+tags: [hardware, education]
 complexity: beginner
-tags:
-  - hardware
-  - education
 sources:
   - name: 'pgmfi.org wiki'
     title: 'Desoldering Iron'

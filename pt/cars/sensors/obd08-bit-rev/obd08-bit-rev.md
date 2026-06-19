@@ -1,12 +1,7 @@
 ---
 summary: 'Fórmula de limite de rotação de 8 bits e rotação de reinício do motor para ECUs Honda OBD0 VTEC.'
-applies_to:
-  obd: [0]
+tags: [ecu, referência, sensores]
 complexity: beginner
-tags:
-  - ecu
-  - referência
-  - sensores
 sources:
   - name: 'pgmfi.org wiki'
     title: 'OBD08 Bit Rev'

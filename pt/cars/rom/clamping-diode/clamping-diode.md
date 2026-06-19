@@ -1,14 +1,7 @@
 ---
-summary: A clamping diode prevents voltage spikes from inductive components (such as solenoids) from damaging control circuits. Standard 3-amp clamping diodes are sufficient for most automotive applications.
-applies_to:
-  obd: [0, 1, 2]
+summary: 'A clamping diode prevents voltage spikes from inductive components (such as solenoids) from damaging control circuits. Standard 3-amp clamping diodes are sufficient for most automotive applications.'
+tags: [clamping-diode, protection, inductive-loads, solenoid, circuit-protection]
 complexity: beginner
-tags:
-  - clamping-diode
-  - protection
-  - inductive-loads
-  - solenoid
-  - circuit-protection
 ---
 
 # Clamping Diode

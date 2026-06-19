@@ -2,7 +2,6 @@
 summary: 'An overview of how Honda ECUs implement rev limiters using fuel cut strategies to protect the engine from over-revving.'
 tags: [ecu, tuning, diagnostics, sensors]
 applies_to:
-  obd: [0, 1, 2]
   models: [all]
 complexity: beginner
 ---

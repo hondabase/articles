@@ -2,7 +2,6 @@
 summary: 'Comprehensive visual guides for chipping OBD0 and OBD1 Honda ECUs, including PM6, big-case, small-case, and 1988-1989 variants.'
 tags: [ecu, tuning, rom, hardware, modification]
 applies_to:
-  obd: [0, 1]
   models: [civic, crx, integra]
   chassis: [da, dc2, ef]
 complexity: beginner

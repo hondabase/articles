@@ -2,7 +2,6 @@
 summary: 'Overview of Hondata ECU tuning systems and their role in the development and reprogramming of factory Honda engine control units.'
 tags: [ecu, tuning, hardware, diagnostics]
 applies_to:
-  obd: [0, 1, 2]
   models: [all]
 complexity: beginner
 ---

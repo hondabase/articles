@@ -1,8 +1,7 @@
 ---
-summary: "Technical overview of the PR4 ECU, covering both OBD0 and OBD1 hardware variants used in Honda applications."
+summary: 'Technical overview of the PR4 ECU, covering both OBD0 and OBD1 hardware variants used in Honda applications.'
 tags: [ecu, pr4, obd0, obd1, honda]
 applies_to:
-  obd: [0, 1]
   ecus: [PR4]
 complexity: beginner
 ---

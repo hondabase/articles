@@ -2,7 +2,6 @@
 summary: 'Technical overview of the Automatic Transmission Lockup Solenoid, its function in torque converter management, and its common repurposing in OBD0 Honda ECUs.'
 tags: [ecu, transmission, sensors, obd0]
 applies_to:
-  obd: [0]
   models: [all]
   chassis: [all]
 complexity: beginner

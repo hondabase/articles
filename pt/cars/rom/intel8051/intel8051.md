@@ -1,15 +1,7 @@
 ---
 summary: 'Para tudo o que queira saber e um excelente tutorial, aceda a http://www.8052.com Qualquer montador (assembler) de 8051 funcionará bem para programação.'
-applies_to:
-  obd: [0, 1, 2]
+tags: [hardware, education, tuning, rom, sensors, reference]
 complexity: advanced
-tags:
-  - hardware
-  - education
-  - tuning
-  - rom
-  - sensors
-  - reference
 sources:
   - name: 'pgmfi.org wiki'
     title: Intel8051

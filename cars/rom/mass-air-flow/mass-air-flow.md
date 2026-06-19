@@ -2,7 +2,6 @@
 summary: 'A Mass Air Flow (MAF) engine management system utilizes a sensor in the intake tract to directly measure the mass of air entering the engine for precise fuel calculation.'
 tags: [ecu, tuning, sensors, airflow, fueling]
 applies_to:
-  obd: [0, 1, 2]
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: intermediate

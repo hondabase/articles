@@ -1,13 +1,7 @@
 ---
 summary: 'Notas detalhadas sobre a conversão (swap) de um motor OBD1 D16Z6 para um Civic ou CRX OBD0 de 4ª geração (1988-1991), com foco na parte mecânica, distribuidor e cablagem.'
-applies_to:
-  obd: [0, 1]
+tags: [swap, VTEC, cablagem, motor]
 complexity: advanced
-tags:
-  - swap
-  - VTEC
-  - cablagem
-  - motor
 sources:
   - name: 'pgmfi.org wiki'
     title: D16Z6-4G-swapnotes

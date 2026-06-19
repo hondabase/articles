@@ -1,14 +1,6 @@
-yaml
 ---
-summary: "An engine simulator device that mimics running engine signals for Honda ECU development and bench testing."
-tags:
-  - ecu
-  - engine-simulator
-  - bench-testing
-  - tuning
-  - sensors
-applies_to:
-  obd: [0, 1, 2]
+summary: 'An engine simulator device that mimics running engine signals for Honda ECU development and bench testing.'
+tags: [ecu, engine-simulator, bench-testing, tuning, sensors]
 complexity: intermediate
 ---
 

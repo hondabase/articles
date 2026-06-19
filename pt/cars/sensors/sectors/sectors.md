@@ -1,8 +1,6 @@
 ---
 summary: 'Compreender os setores de memória em chips EPROM e Flash utilizados para a afinação de ECUs Honda e armazenamento de dados.'
 tags: [sensors, reference]
-applies_to:
-  obd: [0, 1, 2]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'
