@@ -18,7 +18,7 @@ Em primeiro lugar, gostaria de agradecer novamente ao Nico-HRED pela informaçã
 - Se a sua [ECU](/cars/ecu/ecu) não for "chippada" (com socket), precisa de adicionar o `74HC373`, o socket da EPROM e a resistência de 1kOhm (`R54`).
 - Ligue um fio do pino 16 (A15) do `66207` ao pino 1 (A15) da EPROM.
 
-BUT DON'T PUT THE PIN 1 OF THE [EPROM](/cars/rom/eprom) IN THE SOCKET! JUST CONNECT THE WIRE TO IT. - Ligue um fio do pino 19 (P2.2) do `66207` ao pino 27 (-EA) do `66207`.
+BUT DON'T PUT THE PIN 1 OF THE [EPROM](/cars/ecu/eprom) IN THE SOCKET! JUST CONNECT THE WIRE TO IT. - Ligue um fio do pino 19 (P2.2) do `66207` ao pino 27 (-EA) do `66207`.
 - Remova o jumper `J1` e substitua-o por uma resistência de 1kOhm.
 - Insira a EPROM 27C512, gravada com o meu programa "ROMREADER".
 - Ligue o seu PC à [ECU](/cars/ecu/ecu) através de um conversor RS232<->TTL (consulte [Data Logging](/cars/diagnostics/data-logging) para mais informações).

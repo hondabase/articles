@@ -24,6 +24,6 @@ The following hardware implementations are used to enable RTP functionality on s
 
 ## Related Documentation
 
-*   [Easy-RTP v1.0 Specifications](/cars/rom/easy-rtp-v10)
-*   [Easy-RTP Installation Guide](/cars/rom/easy-rtp-install)
+*   [Easy-RTP v1.0 Specifications](/cars/tuning/easy-rtp-v10)
+*   [Easy-RTP Installation Guide](/cars/ecu/easy-rtp-install)
 *   [M5128 RAM Replacement Procedure](/cars/wiring/replace-m5128)

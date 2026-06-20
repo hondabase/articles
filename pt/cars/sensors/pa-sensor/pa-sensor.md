@@ -13,4 +13,4 @@ sources:
 
 # Pa Sensor
 
-Ver [Pressure Atmosphere](/cars/rom/pressure-atmosphere)
+Ver [Pressure Atmosphere](/cars/tuning/pressure-atmosphere)

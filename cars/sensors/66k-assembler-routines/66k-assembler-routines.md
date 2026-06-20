@@ -46,5 +46,5 @@ When integrating new routines into existing firmware, adhere to the following:
 > Use the `{{> 66k-instruction-set }}` partial for a quick reference of valid opcodes and cycle counts when optimizing your code.
 
 ## Related Documentation
-*   [OBD1 Civic/Integra Firmware Routines](/cars/rom/obd1-civ-teg-routines)
+*   [OBD1 Civic/Integra Firmware Routines](/cars/tuning/obd1-civ-teg-routines)
 *   [ECU Memory Mapping Reference](/cars/rom/memory-mapping)

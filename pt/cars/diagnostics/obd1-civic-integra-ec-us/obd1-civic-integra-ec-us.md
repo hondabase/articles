@@ -33,6 +33,6 @@ The **J12** jumper controls the ECU's serial interface. This jumper must be conf
 ECU hardware modifications allow for cross-compatibility between different ECU models within the OBD1 family. For detailed information on matching specific engine management code to ECU hardware, refer to the following resources:
 
 *   [OBD1 Code Compatibility](/cars/wiring/obd1-code-compatibility)
-*   [ECU Hardware Mods](/cars/rom/ecu-hardware-mods)
+*   [ECU Hardware Mods](/cars/sensors/ecu-hardware-mods)
 
 ::: widget error-codes :::

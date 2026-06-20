@@ -62,5 +62,5 @@ This document provides a reference for component specifications and historic sup
 | MAP Sensor | Boost applications | Motorola 2.5-bar | `MPX4250AP-ND` |
 
 ## Related
-- [Introduction to ECU Chipping](/cars/rom/introduction-to-ecu-chipping)
+- [Introduction to ECU Chipping](/cars/tuning/introduction-to-ecu-chipping)
 - [OBD1 ECU Chipping Wire List](/cars/wiring/ecu-chipping-wirelist)

@@ -85,4 +85,4 @@ The following traces were recorded to map the chip-select logic involving 74HC04
 ## Related Documentation
 *   [NEC uPD7004C ADC](/cars/sensors/upd7004c)
 *   [OKI 6260A I/O Controller](/cars/ecu/oki6260a)
-*   [OBD0 PM6/PM7 RAM Locations](/cars/rom/obd0pm6pm7ram-locations)
+*   [OBD0 PM6/PM7 RAM Locations](/cars/honda/civic/ef/tuning/obd0pm6pm7ram-locations)

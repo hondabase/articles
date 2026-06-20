@@ -20,7 +20,7 @@ sources:
 - remover a ponte (jumper) em RP18 (Não tenho a certeza do que estará aqui)
 - adicionar 4.7kOhm +/- 5% em RP18 SMD
 - adicionar 2.7kOhm +/- 5% em RP17 SMD
-- adicionar `IC15` & `IC16` [5050 S](/cars/rom/515x-high-side-switch) ou equiv.
+- adicionar `IC15` & `IC16` [5050 S](/cars/tuning/515x-high-side-switch) ou equiv.
 - adicionar condensadores em `C73`, c74, c75, c76 (valores??? 0.1 uf ? devem ser cerâmicos)
 - adicionar díodos em D13 e D12 (montagem em superfície [SMD] de 1A serve)
 - adicionar q29 q28

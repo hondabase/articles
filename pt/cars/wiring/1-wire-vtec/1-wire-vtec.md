@@ -23,7 +23,7 @@ To implement 1 Wire VTEC, you will need:
 - Flashed ROM with 1 Wire VTEC code
 
 > [!IMPORTANT]
-> Refer to the [hardware modifications guide](/cars/rom/hardware-for-one-wire-vtec) for detailed installation and wiring specifications.
+> Refer to the [hardware modifications guide](/cars/sensors/hardware-for-one-wire-vtec) for detailed installation and wiring specifications.
 
 ## System Operation
 
@@ -52,6 +52,6 @@ For involvement with the project, consult the official source repository for the
 ## See Also
 
 - [OBD0 MPFI Diagnostics](/cars/diagnostics/obd0mpfi)
-- [ROM Modifications](/cars/rom/rom)
+- [ROM Modifications](/cars/tuning/rom)
 - [ECU Hardware](/cars/ecu/ecu)
 - [Automatic Transmission Lockup Solenoid](/cars/sensors/automatic-transmission-lockup-solenoid)

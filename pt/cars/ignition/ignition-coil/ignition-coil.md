@@ -109,4 +109,4 @@ Dentro do distribuidor, deve encaminhar os fios que originalmente iam para a bob
 
 - [Sensor de posição da cambota](/cars/ignition/crankshaft-position-sensor)
 - [Sensor de posição do cilindro](/cars/sensors/cylinder-position-sensor)
-- [Introdução à reprogramação/chipping de ECU](/cars/rom/introduction-to-ecu-chipping)
+- [Introdução à reprogramação/chipping de ECU](/cars/tuning/introduction-to-ecu-chipping)

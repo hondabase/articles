@@ -37,6 +37,6 @@ This ECU variant is commonly found in:
 
 ## Related Resources
 
-- [OBD2A ECU Reference](/cars/wiring/obd2a)
+- [OBD2A ECU Reference](/cars/tuning/obd2a)
 - [ECU Fundamentals](/cars/ecu/ecu)
 - [OBD System Overview](/cars/wiring/obd)

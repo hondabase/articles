@@ -41,6 +41,6 @@ A PR4 e a PM8 [USDM](/cars/sensors/usdm) utilizam placas de circuito ligeirament
 
 * **Utilização invulgar de entradas:** Direção assistida (Power Steering) na PR4.
 
-* **[Oki83 C154](/cars/diagnostics/oki83c154) vs [Oki80 C154](/cars/diagnostics/oki80c154) e design de EPROM** - as [ECUs](/cars/ecu/ecu) de 88-89 quase sempre carecem de [EPROMs](/cars/rom/eprom).
+* **[Oki83 C154](/cars/diagnostics/oki83c154) vs [Oki80 C154](/cars/diagnostics/oki80c154) e design de EPROM** - as [ECUs](/cars/ecu/ecu) de 88-89 quase sempre carecem de [EPROMs](/cars/ecu/eprom).
 
 Em resumo, a maior parte do código das [ECUs](/cars/ecu/ecu) desta família correrá noutras [ECUs](/cars/ecu/ecu) da mesma família, mas poderão existir sistemas secundários (AC, ELD, Direção Assistida, para ser mais específico) que não funcionem bem quando a PR4 está envolvida. Resta saber exatamente o que deve ser feito com as [ECUs](/cars/ecu/ecu) PM8 [USDM](/cars/sensors/usdm).

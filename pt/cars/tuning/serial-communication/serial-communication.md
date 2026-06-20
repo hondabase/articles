@@ -78,4 +78,4 @@ Para ligar a porta `CN2` a um computador portátil moderno:
 5. Deixa a linha de 5V **desligada** para evitar loops de terra (ground loops), uma vez que o adaptador USB é alimentado pelo computador portátil.
 6. Instala os controladores `FTDI` ou Silicon Labs CP210x no teu computador portátil e seleciona a porta COM correspondente no teu programa de afinação.
 
-Para detalhes sobre como selecionar e resolver problemas com o hardware de ligação, consulta o [guia de hardware do conversor USB para série](/cars/tuning/second-gen-usb-to-serial-converter). Para plugins de software, consulta o [guia de configuração do Crome](/cars/rom/crome-faq).
+Para detalhes sobre como selecionar e resolver problemas com o hardware de ligação, consulta o [guia de hardware do conversor USB para série](/cars/tuning/second-gen-usb-to-serial-converter). Para plugins de software, consulta o [guia de configuração do Crome](/cars/tuning/crome-faq).

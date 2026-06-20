@@ -19,4 +19,4 @@ When selecting components for ECU work, prioritize suppliers that provide detail
 *   **Component Specifications:** Always verify that the component ratings (voltage, temperature range, and tolerance) meet or exceed the original factory specifications.
 *   **Avoid Generic Parts:** Avoid using generic or "mystery" components from retail hobby stores, as these often lack the necessary reliability for the high-vibration and temperature-fluctuating environment of an automotive engine bay.
 
-For a list of recommended vendors and procurement best practices, refer to the [Electronic Part Supplier](/pt/cars/rom/electronic-part-supplier) guide.
+For a list of recommended vendors and procurement best practices, refer to the [Electronic Part Supplier](/pt/cars/tuning/electronic-part-supplier) guide.

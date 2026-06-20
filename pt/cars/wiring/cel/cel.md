@@ -19,7 +19,7 @@ sources:
 
 Este indicador (geralmente no painel de instrumentos) acende-se para indicar que a [ECU](/cars/ecu/ecu) detetou algum problema. A [ECU](/cars/ecu/ecu) costuma indicar um código de erro piscando a [CEL](/cars/wiring/cel) de uma determinada forma.
 
-- Nos carros [OBD0](/cars/rom/obd0), existe um visor na própria [ECU](/cars/ecu/ecu) através do qual se pode ver um LED a piscar para leitura dos códigos.
+- Nos carros [OBD0](/cars/tuning/obd0), existe um visor na própria [ECU](/cars/ecu/ecu) através do qual se pode ver um LED a piscar para leitura dos códigos.
 
 - Nos carros [OBD1](/cars/wiring/obd1), existe uma ficha localizada sob o painel, junto ao espaço para os pés do passageiro, que deve ser ligada em curto-circuito (shunt). Isto fará com que a [CEL](/cars/wiring/cel) no painel pisque, indicando os códigos de erro registados.
 
@@ -32,8 +32,8 @@ Se a [CEL](/cars/wiring/cel) ficar acesa de forma fixa e não piscar (após faze
 - Uma [ECU](/cars/ecu/ecu) avariada (refere-se a qualquer outra falha de componente que não as listadas aqui)
 - Soldaduras com mau contacto / soldaduras frias
 - Erro de [Soma de Verificação (Checksum)](/cars/diagnostics/check-sum)
-- Programa corrompido guardado na [ROM](/cars/rom/rom)
-- Chip de [ROM](/cars/rom/rom) danificado
+- Programa corrompido guardado na [ROM](/cars/tuning/rom)
+- Chip de [ROM](/cars/tuning/rom) danificado
 - Chip `74HC373` danificado
 
 Consulte [Resolução de Problemas de CEL Fixa](/cars/diagnostics/troubleshooting-solid-cel)

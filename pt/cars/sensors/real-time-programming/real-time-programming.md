@@ -21,6 +21,6 @@ The following hardware solutions are used to facilitate real-time tuning:
 
 ## Related Resources
 
-*   [EasyRTP v1.0 Documentation](/cars/rom/easy-rtp-v10)
-*   [EasyRTP Installation Guide](/cars/rom/easy-rtp-install)
+*   [EasyRTP v1.0 Documentation](/cars/tuning/easy-rtp-v10)
+*   [EasyRTP Installation Guide](/cars/ecu/easy-rtp-install)
 *   [M5128 SRAM Replacement Procedure](/cars/wiring/replace-m5128)

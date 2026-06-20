@@ -29,7 +29,7 @@ European Domestic Market (EDM) refers to Honda vehicles produced specifically fo
 *   [Knock Sensor](/cars/ignition/knock-sensor)
 
 *   [Electrical Load Detector](/cars/sensors/electrical-load-detector)
-*   [Pressure Atmosphere](/cars/rom/pressure-atmosphere) sensors
+*   [Pressure Atmosphere](/cars/tuning/pressure-atmosphere) sensors
 
 They typically resemble [USDM](/cars/sensors/usdm) [ECU](/cars/ecu/ecu)s but with fewer populated components on the circuit board.
 

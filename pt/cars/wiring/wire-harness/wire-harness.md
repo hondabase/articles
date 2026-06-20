@@ -8,7 +8,7 @@ complexity: intermediate
 
 # Wire Harness
 
-A wire harness is the assembly of connectors and wires connected to an [ECU](/cars/ecu/ecu). The [OBD0](/cars/rom/obd0), [OBD1](/cars/wiring/obd1), and [OBD2](/cars/wiring/obd2) systems utilize different connectors and wiring schematics.
+A wire harness is the assembly of connectors and wires connected to an [ECU](/cars/ecu/ecu). The [OBD0](/cars/tuning/obd0), [OBD1](/cars/wiring/obd1), and [OBD2](/cars/wiring/obd2) systems utilize different connectors and wiring schematics.
 
 ## ECU Connector Pinouts
 

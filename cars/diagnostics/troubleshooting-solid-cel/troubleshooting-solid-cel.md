@@ -72,6 +72,6 @@ If you have installed noise-filtering decoupling capacitors (e.g., `C91` and `C9
 
 ## Related Resources
 
-*   [Introduction to ECU Chipping](/cars/rom/introduction-to-ecu-chipping)
+*   [Introduction to ECU Chipping](/cars/tuning/introduction-to-ecu-chipping)
 *   [ECU Troubleshooting](/cars/diagnostics/ecu-troubleshooting)
 *   ::: widget error-codes :::

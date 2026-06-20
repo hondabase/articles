@@ -104,4 +104,4 @@ Uma linha da fonte descreve o `74HC04 Pin 13` como sendo simultaneamente uma sa�
 
 - [NEC uPD7004C ADC](/cars/sensors/upd7004c)
 - [Controlador de I/O OKI 6260A](/cars/ecu/oki6260a)
-- [Localizações de RAM do OBD0 PM6/PM7](/cars/rom/obd0pm6pm7ram-locations)
+- [Localizações de RAM do OBD0 PM6/PM7](/cars/honda/civic/ef/tuning/obd0pm6pm7ram-locations)

@@ -59,5 +59,5 @@ Esta documentação fornece uma lista de componentes eletrônicos utilizados em 
 | Sensor MAP | Boost (2.5 bar) | Motorola `737390003` | `MPX4250AP-ND` |
 
 ## Relacionado
-- [Introdução ao chipping de ECU](/cars/rom/introduction-to-ecu-chipping)
+- [Introdução ao chipping de ECU](/cars/tuning/introduction-to-ecu-chipping)
 - [Lista de cablagem para chipping de ECU OBD1](/cars/wiring/ecu-chipping-wirelist)

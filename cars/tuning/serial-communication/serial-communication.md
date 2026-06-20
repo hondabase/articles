@@ -80,4 +80,4 @@ To connect the `CN2` port to a modern laptop:
 5. Leave the 5V line **disconnected** to prevent ground loops, as the USB adapter is powered by the laptop.
 6. Install the `FTDI` or Silicon Labs CP210x drivers on your laptop and select the corresponding COM port in your tuning program.
 
-For details on selecting and troubleshooting the connection hardware, see the [USB to serial converter hardware guide](/cars/tuning/second-gen-usb-to-serial-converter). For software plugins, refer to the [Crome setup guide](/cars/rom/crome-faq).
+For details on selecting and troubleshooting the connection hardware, see the [USB to serial converter hardware guide](/cars/tuning/second-gen-usb-to-serial-converter). For software plugins, refer to the [Crome setup guide](/cars/tuning/crome-faq).

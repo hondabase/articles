@@ -49,8 +49,8 @@ sources:
 ---
 
 Para ativar o VTEC sem nos importarmos com o sensor de velocidade, estamos interessados nas seguintes linhas:
-- 11CD: LCB A,6010 ; Aqui o conteúdo da [ROM](/cars/rom/rom) no endereço 6010 é lido para A (configuração em código / hardcoded).
-- 11D1: JNE 11D6 ; Se o conteúdo da [ROM](/cars/rom/rom) não for 00, salta para 11D6.
+- 11CD: LCB A,6010 ; Aqui o conteúdo da [ROM](/cars/tuning/rom) no endereço 6010 é lido para A (configuração em código / hardcoded).
+- 11D1: JNE 11D6 ; Se o conteúdo da [ROM](/cars/tuning/rom) não for 00, salta para 11D6.
 - 11D3: JBR off 28.0, 11E2 ; Se off 28.0=0, salta para 11E2 (o bit off 28.0 é definido numa rotina de verificação de [VSS](/cars/sensors/vss)).
 
 Agora podes decidir como queres modificar (patch) a tua ROM. Altera o endereço da ROM 6010 (ou o que encontrares na tua ROM) de 00 para FF, salta a verificação do [VSS](/cars/sensors/vss) (11CD: J 11D6), ou outra opção qualquer (ex: 11D3: NOP, NOP, NOP)... Espero que isto ajude. Doc

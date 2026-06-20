@@ -60,4 +60,4 @@ Na maioria dos motores OBD0 e OBD1, o conjunto do VTEC inclui um Interruptor de 
 * [Sensor de Velocidade do Veículo (VSS)](/cars/wiring/vehicle-speed-sensor)
 * [Códigos de Erro da ECU](/cars/diagnostics/diagnostic-trouble-codes)
 
-* [Introdução ao Chipping de ECU](/cars/rom/introduction-to-ecu-chipping)
+* [Introdução ao Chipping de ECU](/cars/tuning/introduction-to-ecu-chipping)

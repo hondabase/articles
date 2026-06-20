@@ -77,7 +77,7 @@ Se precisar de colocar um carro automático a funcionar com uma ECU originalment
 
 ## Relacionado
 
-* [Introdução à Instalação de Chips em ECUs (ECU Chipping)](/cars/rom/introduction-to-ecu-chipping)
+* [Introdução à Instalação de Chips em ECUs (ECU Chipping)](/cars/tuning/introduction-to-ecu-chipping)
 * [Hardware da ECU](/cars/ecu/ecu-hardware)
 
 * [Resolução de Problemas da ECU](/cars/diagnostics/ecu-troubleshooting)

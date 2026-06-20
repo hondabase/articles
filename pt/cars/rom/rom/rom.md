@@ -1,9 +1,0 @@
----
-summary: 'Informação de Memória Apenas de Leitura mais ou menos gravada em pedra'
-tags: [tuning, rom]
-complexity: beginner
----
-
-# ROM
-
-Memória Apenas de Leitura (Read Only Memory), com informação mais ou menos gravada em pedra.

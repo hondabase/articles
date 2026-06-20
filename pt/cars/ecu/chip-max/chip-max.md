@@ -21,7 +21,7 @@ O **ChipMax** (fabricado pela [EE Tools](http://www.eetools.com)) é um programa
 
 * **Suporte Universal de Dispositivos:** Possui um socket Zero Insertion Force (ZIF) de 40 pinos de alta qualidade. Suporta uma ampla gama de dispositivos, incluindo EPROMs, EEPROMs, memória Flash e microcontroladores.
 
-* **Tempos de Hardware Fiáveis:** Ao contrário dos gravadores genéricos de baixo custo (como o [Willem](/cars/rom/willem) ou designs DIY "Ghetto Burner"), o ChipMax possui controladores internos dedicados que gerem tensões de programação e ciclos de temporização precisos, evitando falhas de verificação e chips danificados.
+* **Tempos de Hardware Fiáveis:** Ao contrário dos gravadores genéricos de baixo custo (como o [Willem](/cars/ecu/willem) ou designs DIY "Ghetto Burner"), o ChipMax possui controladores internos dedicados que gerem tensões de programação e ciclos de temporização precisos, evitando falhas de verificação e chips danificados.
 
 * **Software e Suporte:** A EE Tools mantém atualizações de software regulares para suporte de dispositivos. Historicamente, o seu suporte técnico é conhecido por escrever perfis de dispositivos personalizados mediante solicitação.
 

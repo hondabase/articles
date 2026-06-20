@@ -13,4 +13,4 @@ sources:
 
 # IO
 
-Entrada / Saída (Input / Output) permite que um [MCU](/cars/rom/mcu) comunique com outros dispositivos
+Entrada / Saída (Input / Output) permite que um [MCU](/cars/ecu/mcu) comunique com outros dispositivos

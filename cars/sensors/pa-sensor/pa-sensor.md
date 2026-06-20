@@ -41,6 +41,6 @@ If the ECU detects a signal outside of the expected operating range, it will tri
 ## Related Components
 For further information on how atmospheric pressure data is processed within the ECU fuel maps, refer to the following documentation:
 
-*   [Pressure Atmosphere (PA) Mapping](/cars/rom/pressure-atmosphere)
+*   [Pressure Atmosphere (PA) Mapping](/cars/tuning/pressure-atmosphere)
 
 {{> resistor-color-codes }}

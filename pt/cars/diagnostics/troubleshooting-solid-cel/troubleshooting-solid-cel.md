@@ -85,7 +85,7 @@ Se adicionou condensadores de desacoplamento para filtragem de ruído (por exemp
 
 ## Relacionado
 
-* [Introdução ao Chipping de ECUs](/cars/rom/introduction-to-ecu-chipping)
+* [Introdução ao Chipping de ECUs](/cars/tuning/introduction-to-ecu-chipping)
 
 * [Resolução de Problemas em ECUs](/cars/diagnostics/ecu-troubleshooting)
 * [Códigos de Avaria da ECU](/cars/diagnostics/diagnostic-trouble-codes)

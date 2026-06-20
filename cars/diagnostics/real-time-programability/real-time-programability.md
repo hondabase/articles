@@ -9,7 +9,7 @@ complexity: beginner
 
 # Real-Time Programming (RTP) for Honda ECUs
 
-Real-time programming (RTP) is a tuning methodology where the standard [EPROM](/cars/rom/eprom) of the [ECU](/cars/ecu/ecu) is replaced with a custom hardware interface. This system enables the tuner to modify fuel, ignition, and sensor parameters while the engine is actively running.
+Real-time programming (RTP) is a tuning methodology where the standard [EPROM](/cars/ecu/eprom) of the [ECU](/cars/ecu/ecu) is replaced with a custom hardware interface. This system enables the tuner to modify fuel, ignition, and sensor parameters while the engine is actively running.
 
 ## Overview
 Unlike traditional EPROM burning, which requires the ECU to be powered down and the chip to be physically removed or erased between iterations, an RTP system utilizes a dual-port RAM or similar memory emulation device. This allows an external laptop to communicate with the ECU's memory map in real-time.

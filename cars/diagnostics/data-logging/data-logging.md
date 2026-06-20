@@ -49,7 +49,7 @@ On JDM P30 ECUs, the jumper configuration `J12 = J4` is used to facilitate commu
 
 *   [Serial Communication](/cars/tuning/serial-communication)
 *   [Data Link Connector](/cars/wiring/dlc)
-*   [TurboEdit](/cars/rom/turbo-edit)
+*   [TurboEdit](/cars/tuning/turbo-edit)
 *   [Second-generation USB-to-serial converter](/cars/tuning/second-gen-usb-to-serial-converter)
 *   [Troubleshooting ECU datalogging](/cars/diagnostics/debugging-data-logging)
 *   [Logging an external 0-5 V sensor through P30 D12](/cars/tuning/how-to-log-external-data-such-as-an-egt-sensor)

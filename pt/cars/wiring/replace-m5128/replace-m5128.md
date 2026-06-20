@@ -13,7 +13,7 @@ sources:
 
 # Substituir `M5128`
 
-Esta página explica como substituir o chip atual [5128 XRAM](/cars/rom/5128xram) 2K [SRAM](/cars/sensors/sram) por um `DS1220` [NVSRAM](/cars/wiring/nvsram) para uma futura solução [RTP](/cars/sensors/rtp).
+Esta página explica como substituir o chip atual [5128 XRAM](/cars/honda/civic/ef/tuning/5128xram) 2K [SRAM](/cars/sensors/sram) por um `DS1220` [NVSRAM](/cars/wiring/nvsram) para uma futura solução [RTP](/cars/sensors/rtp).
 
 - Breve Explicação
 - Lista de Peças:
@@ -35,15 +35,15 @@ O chip `M5128` é utilizado para armazenar e calcular valores enquanto o carro e
 
 ### Construção: 
 
-É bastante simples, mas requer alguma destreza. Primeiro, é necessário dessoldar o `M5128`. Depois, deve cortar as pistas dos pinos 19 e 22, uma vez que ambos ligam à massa (ground). Solde o suporte de CI de 24 pinos. Em seguida, solde um fio do pino 19 do `M5128` ao pino 23 do [MCU](/cars/rom/mcu) e solde também um fio do pino 22 do `M5128` ao pino 22 do [MCU](/cars/rom/mcu).
+É bastante simples, mas requer alguma destreza. Primeiro, é necessário dessoldar o `M5128`. Depois, deve cortar as pistas dos pinos 19 e 22, uma vez que ambos ligam à massa (ground). Solde o suporte de CI de 24 pinos. Em seguida, solde um fio do pino 19 do `M5128` ao pino 23 do [MCU](/cars/ecu/mcu) e solde também um fio do pino 22 do `M5128` ao pino 22 do [MCU](/cars/ecu/mcu).
 
 ### Passo a passo: 
 
 - Dessoldar o `M5128`
 - Cortar as pistas para a massa dos pinos 19 e 22
 - Soldar o suporte de CI de 24 pinos
-- Soldar um fio do pino 19 do `M5128` ao pino 23 do [MCU](/cars/rom/mcu)
-- Soldar um fio do pino 22 do `M5128` ao pino 22 do [MCU](/cars/rom/mcu)
+- Soldar um fio do pino 19 do `M5128` ao pino 23 do [MCU](/cars/ecu/mcu)
+- Soldar um fio do pino 22 do `M5128` ao pino 22 do [MCU](/cars/ecu/mcu)
 - Colocar o DS1220AB
 
 ###

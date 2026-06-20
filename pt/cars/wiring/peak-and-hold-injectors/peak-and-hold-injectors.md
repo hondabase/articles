@@ -32,6 +32,6 @@ To operate Peak and Hold injectors with a Honda ECU, you may need to install a *
 ## See Also
 
 - [Resistor Box Installation](/cars/wiring/resistor-box)
-- [OBD0 Systems](/cars/rom/obd0)
+- [OBD0 Systems](/cars/tuning/obd0)
 - [OBD1 Wiring](/cars/wiring/obd1)
 - [OBD2 Wiring](/cars/wiring/obd2)

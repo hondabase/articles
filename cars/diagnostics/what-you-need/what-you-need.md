@@ -28,7 +28,7 @@ To successfully modify an ECU, the following hardware is required:
 ## Technical Considerations
 
 > [!IMPORTANT]
-> **OBD0 MPFI** ECUs do not always feature a standard removable ROM. However, modification is still possible; refer to the [Chipping An 88-89 ECU](/cars/rom/chipping-an88-89ecu) guide for specific procedures regarding these units.
+> **OBD0 MPFI** ECUs do not always feature a standard removable ROM. However, modification is still possible; refer to the [Chipping An 88-89 ECU](/cars/honda/civic/ef/ecu/chipping-an88-89ecu) guide for specific procedures regarding these units.
 
 ## Learning Resources
 

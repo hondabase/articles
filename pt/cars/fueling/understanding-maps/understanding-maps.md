@@ -29,7 +29,7 @@ Assim que a posição do acelerador excede o limite de closed-loop, a ECU muda p
  - As ECUs OBD0 normalmente utilizam 15 colunas, medidas em polegadas de mercúrio (inHg).
  - As ECUs OBD1 utilizam 10 colunas, medidas em milibares (mBar).
 - **Linhas (Rotação do Motor):** As linhas representam a velocidade do motor em rotações por minuto (RPM).
-- **Células (Tempo de Injeção / Pulse-width):** Os valores dentro das células representam a duração base de injeção, normalmente calculada em milissegundos. O editor de tuning da ECU traduz os valores hexadecimais brutos de 8 bits em tempos de abertura legíveis utilizando uma fórmula multiplicadora específica (por exemplo, [OBD0 Fuel](/cars/sensors/obd0-fuel) ou [OBD1 8-bit Fuel](/cars/rom/obd1-8bit-fuel)).
+- **Células (Tempo de Injeção / Pulse-width):** Os valores dentro das células representam a duração base de injeção, normalmente calculada em milissegundos. O editor de tuning da ECU traduz os valores hexadecimais brutos de 8 bits em tempos de abertura legíveis utilizando uma fórmula multiplicadora específica (por exemplo, [OBD0 Fuel](/cars/sensors/obd0-fuel) ou [OBD1 8-bit Fuel](/cars/fueling/obd1-8bit-fuel)).
 
 ## Mapas de Ignição
 

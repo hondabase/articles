@@ -9,7 +9,7 @@ complexity: beginner
 
 # Throttle Plate Operation and Function
 
-The throttle plate is a butterfly-style valve located within the [Throttle Body](/cars/rom/throttle-body). It serves as the primary mechanical regulator for airflow entering the intake manifold.
+The throttle plate is a butterfly-style valve located within the [Throttle Body](/cars/tuning/throttle-body). It serves as the primary mechanical regulator for airflow entering the intake manifold.
 
 ## Functional Overview
 

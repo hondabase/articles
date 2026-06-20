@@ -665,7 +665,7 @@ Utilize os filtros de família de ECU e componentes, ou pesquise por um pino, si
 
 ## Relacionado
 
-- [Introdução à modificação de ECU (chipping)](/cars/rom/introduction-to-ecu-chipping)
-- [Modificando a ECU JDM P30](/cars/rom/chipping-jdmp30)
+- [Introdução à modificação de ECU (chipping)](/cars/tuning/introduction-to-ecu-chipping)
+- [Modificando a ECU JDM P30](/cars/ecu/chipping-jdmp30)
 - [Referência de hardware de ECU OBD1](/cars/ecu/ecu-hardware)
-- [Referência do latch 74HC373](/cars/rom/74hc373)
+- [Referência do latch 74HC373](/cars/ecu/74hc373)

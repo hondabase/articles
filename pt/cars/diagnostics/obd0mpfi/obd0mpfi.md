@@ -15,18 +15,18 @@ sources:
 
 # OBD0MPFI
 
-Existe uma família muito distinta de [ECU](/cars/ecu/ecu)s encontrada nos Honda [OBD0](/cars/rom/obd0) de aproximadamente 88-91. As principais características desta família:
+Existe uma família muito distinta de [ECU](/cars/ecu/ecu)s encontrada nos Honda [OBD0](/cars/tuning/obd0) de aproximadamente 88-91. As principais características desta família:
 
-- [MCU](/cars/rom/mcu)s [Oki80 C154](/cars/diagnostics/oki80c154) ou [Oki83 C154](/cars/diagnostics/oki83c154) que são essencialmente [Intel8051](/cars/rom/intel8051) com uma [velocidade de relógio](/cars/sensors/clock-speed) de 12Mhz.
-- Presença de [EPROM](/cars/rom/eprom) Oki 38256 nos modelos de 90-91
+- [MCU](/cars/ecu/mcu)s [Oki80 C154](/cars/diagnostics/oki80c154) ou [Oki83 C154](/cars/diagnostics/oki83c154) que são essencialmente [Intel8051](/cars/ecu/intel8051) com uma [velocidade de relógio](/cars/sensors/clock-speed) de 12Mhz.
+- Presença de [EPROM](/cars/ecu/eprom) Oki 38256 nos modelos de 90-91
 - Motores [MPFI](/cars/sensors/mpfi) com 4 injetores
 - Motores sem VTEC
 - Distribuidores com avanço eletrónico
 - Presença de chip controlador de [E/S (I/O)](/cars/sensors/io) [Oki6260 A](/cars/ecu/oki6260a)
 - Presença de chip [ADC](/cars/wiring/adc) NEC [UPD7004 C](/cars/sensors/upd7004c)
-- Presença de chip [SRAM](/cars/sensors/sram) [5128 XRAM](/cars/rom/5128xram) de 2K
+- Presença de chip [SRAM](/cars/sensors/sram) [5128 XRAM](/cars/honda/civic/ef/tuning/5128xram) de 2K
 
-Esta arquitetura também foi utilizada pela Rover no Reino Unido, aparentemente por um período consideravelmente mais longo do que os 4 anos em que esta arquitetura foi utilizada nos carros [USDM](/cars/sensors/usdm) e [JDM](/cars/sensors/jdm). Uma lista parcial de [ECU](/cars/ecu/ecu)s [OBD0](/cars/rom/obd0):
+Esta arquitetura também foi utilizada pela Rover no Reino Unido, aparentemente por um período consideravelmente mais longo do que os 4 anos em que esta arquitetura foi utilizada nos carros [USDM](/cars/sensors/usdm) e [JDM](/cars/sensors/jdm). Uma lista parcial de [ECU](/cars/ecu/ecu)s [OBD0](/cars/tuning/obd0):
 - PG7 (88-89 Integra D16A1 - **nota**: a versão de 86-87 desta [ECU](/cars/ecu/ecu) comandava o motor D16A1 com avanço por vácuo. Família diferente)
 - PM6 ([USDM](/cars/sensors/usdm) Civic/CRX Si - D16A6 [SOHC](/cars/sensors/sohc))
 - PM7 ([JDM](/cars/sensors/jdm)/EDM Civic/CRX Si - ZC [DOHC](/cars/sensors/dohc))
@@ -38,7 +38,7 @@ Esta arquitetura também foi utilizada pela Rover no Reino Unido, aparentemente 
 - PK2 ([JDM](/cars/sensors/jdm) Honda Prelude Motor B20A com avanço eletrónico)
 - PH3 ([JDM](/cars/sensors/jdm) 86-89 Honda Accord B20A)
 
-Fazer o [chipping de uma ECU de 88-89](/cars/rom/chipping-an88-89ecu) não é tão fácil como nos computadores de 90-91, porque apenas os computadores mais recentes possuem [ROM](/cars/rom/rom)s externas substituíveis. Compreender a [comunicação entre chips OBD0](/cars/ecu/obd0-inter-chip-communication) será fundamental para descobrir exatamente como funcionam as [ECU](/cars/ecu/ecu)s. Anexa abaixo está uma biblioteca Eagle (4.09) que contém os dispositivos [MCU](/cars/rom/mcu) (OKI 8xC154), [RAM](/cars/reference/ram) (`M5128`), [ADC](/cars/wiring/adc) (µPD7004) e CI contador de controlo do motor ([Oki6260 A](/cars/ecu/oki6260a)) para utilizar estes componentes no editor de layout Eagle.
+Fazer o [chipping de uma ECU de 88-89](/cars/honda/civic/ef/ecu/chipping-an88-89ecu) não é tão fácil como nos computadores de 90-91, porque apenas os computadores mais recentes possuem [ROM](/cars/tuning/rom)s externas substituíveis. Compreender a [comunicação entre chips OBD0](/cars/ecu/obd0-inter-chip-communication) será fundamental para descobrir exatamente como funcionam as [ECU](/cars/ecu/ecu)s. Anexa abaixo está uma biblioteca Eagle (4.09) que contém os dispositivos [MCU](/cars/ecu/mcu) (OKI 8xC154), [RAM](/cars/reference/ram) (`M5128`), [ADC](/cars/wiring/adc) (µPD7004) e CI contador de controlo do motor ([Oki6260 A](/cars/ecu/oki6260a)) para utilizar estes componentes no editor de layout Eagle.
 
 | **Anexo:** | **Modificar:** | **Tamanho:** | **Data:** | **Quem:** | **Comentário:** |
 | :--- | :--- | :--- | :--- | :--- | :--- |

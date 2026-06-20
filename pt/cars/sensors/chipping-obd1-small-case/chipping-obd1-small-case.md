@@ -13,4 +13,4 @@ sources:
 
 # Chipping OBD1 Small Case
 
-Para ler o artigo completo, vá a [Chipping JDMP30](/cars/rom/chipping-jdmp30) ![](p30mtat2.jpg)![](p30_ecu_underside.jpg)![](p30mtat1.jpg)Obrigado ao katman e ao infotechplus pelas fotos.
+Para ler o artigo completo, vá a [Chipping JDMP30](/cars/ecu/chipping-jdmp30) ![](p30mtat2.jpg)![](p30_ecu_underside.jpg)![](p30mtat1.jpg)Obrigado ao katman e ao infotechplus pelas fotos.

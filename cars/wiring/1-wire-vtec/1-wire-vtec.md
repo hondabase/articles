@@ -18,7 +18,7 @@ The **1-wire VTEC** codebase is a specialized ROM modification for OBD0 MPFI ECU
 This modification is designed for users operating OBD0 MPFI ECUs who wish to run VTEC-equipped engines. By utilizing the existing wiring and output intended for the automatic transmission lockup solenoid, it simplifies the wiring requirements for VTEC activation.
 
 ### Development and Implementation
-*   **Hardware:** The necessary hardware changes for this modification are detailed in the [Hardware For One Wire VTEC](/cars/rom/hardware-for-one-wire-vtec) guide.
+*   **Hardware:** The necessary hardware changes for this modification are detailed in the [Hardware For One Wire VTEC](/cars/sensors/hardware-for-one-wire-vtec) guide.
 *   **Source Code:** The project is open-source. Codebase contributions and development can be found via the [Source Forge](/cars/wiring/source-forge) project repository.
 
 ---

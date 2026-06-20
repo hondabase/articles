@@ -90,4 +90,4 @@ Se estiver a converter um chassis OBD0 (que possui uma caixa de resistências de
 
 - [Injetores de baixa impedância](/cars/fueling/low-impedance-injectors)
 - [Dimensionamento de injetores](/cars/fueling/injector-sizing)
-- [Introdução à alteração de ECUs (ECU chipping)](/cars/rom/introduction-to-ecu-chipping)
+- [Introdução à alteração de ECUs (ECU chipping)](/cars/tuning/introduction-to-ecu-chipping)

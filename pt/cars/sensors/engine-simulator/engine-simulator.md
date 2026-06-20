@@ -13,4 +13,4 @@ sources:
 
 # Simulador de Motor
 
-Ver [Engine Sim](/cars/rom/engine-sim)
+Ver [Engine Sim](/cars/diagnostics/engine-sim)

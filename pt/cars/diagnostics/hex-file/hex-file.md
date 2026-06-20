@@ -9,7 +9,7 @@ complexity: beginner
 An Intel HEX file is an ASCII text file used to store machine language code and constant data. Each line in an Intel HEX file represents a single hexadecimal record.
 
 ## File Structure
-The format is widely used in automotive tuning and diagnostics for transferring binary data to be written into [ROM](/cars/rom/rom) or [EPROM](/cars/rom/eprom) chips.
+The format is widely used in automotive tuning and diagnostics for transferring binary data to be written into [ROM](/cars/tuning/rom) or [EPROM](/cars/ecu/eprom) chips.
 
 > [!NOTE]
 > Most EPROM programmers and ECU emulators natively support the Intel HEX format for flashing or real-time emulation.

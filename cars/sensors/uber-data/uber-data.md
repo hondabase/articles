@@ -25,4 +25,4 @@ UberData allows users to modify fuel and ignition maps, adjust rev limiters, and
 ## Related Documentation
 For advanced configuration and extended ROM management, refer to the following resource:
 
-* [UberData ERM](/cars/rom/uber-data-erm)
+* [UberData ERM](/cars/tuning/uber-data-erm)

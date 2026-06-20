@@ -12,7 +12,7 @@ complexity: beginner
 Retail electronics hobbyist stores are generally no longer recommended for sourcing components required for ECU modification or repair. These outlets often carry limited inventory, lack the necessary technical specifications for automotive-grade components, and are not cost-effective for specialized hardware.
 
 > [!TIP]
-> For reliable, high-quality components, utilize professional electronic part suppliers. Refer to the [Electronic Part Supplier](/cars/rom/electronic-part-supplier) guide for a list of recommended distributors that offer verified automotive-grade parts.
+> For reliable, high-quality components, utilize professional electronic part suppliers. Refer to the [Electronic Part Supplier](/cars/tuning/electronic-part-supplier) guide for a list of recommended distributors that offer verified automotive-grade parts.
 
 ## Recommended Sourcing Practices
 

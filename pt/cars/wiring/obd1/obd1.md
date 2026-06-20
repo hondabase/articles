@@ -32,7 +32,7 @@ OBD1 is the designation for Honda and Acura engine management electronics from 1
 
 - **[PR3](/cars/sensors/pr3)** — 1992–1993 JDM Integra RSi/XSi (B16A)
 - **[PR4](/cars/sensors/pr4)** — 1992–1993 Integra RS/LS/GS (B18A)
-- **[P61](/cars/rom/p61)** — 1992–1993 Integra GSR
+- **[P61](/cars/sensors/p61)** — 1992–1993 Integra GSR
 - **[P71](/cars/sensors/p71)** — 1992–1995 Integra (SOHC VTEC D16A)
 - **[P72](/cars/sensors/p72)** — 1994–1995 Integra GSR
 - **[P74](/cars/sensors/p74)** — 1994–1995 Integra RS/LS/GS

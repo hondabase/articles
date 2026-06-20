@@ -63,4 +63,4 @@ On most OBD0 and OBD1 engines, the VTEC assembly includes a VTEC Oil Pressure Sw
 * [Vehicle Speed Sensor (VSS)](/cars/wiring/vehicle-speed-sensor)
 * [ECU Trouble Codes](/cars/diagnostics/diagnostic-trouble-codes)
 
-* [Introduction to ECU Chipping](/cars/rom/introduction-to-ecu-chipping)
+* [Introduction to ECU Chipping](/cars/tuning/introduction-to-ecu-chipping)

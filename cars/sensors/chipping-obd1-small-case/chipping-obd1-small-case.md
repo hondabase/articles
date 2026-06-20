@@ -21,7 +21,7 @@ Small-case OBD1 ECUs, commonly found in JDM and European market vehicles, requir
 *   1k ohm resistor (for J1 jumper)
 
 ## Procedure
-For detailed step-by-step instructions on the physical modification process, refer to the [Chipping JDMP30](/cars/rom/chipping-jdmp30) guide.
+For detailed step-by-step instructions on the physical modification process, refer to the [Chipping JDMP30](/cars/ecu/chipping-jdmp30) guide.
 
 ## Board Overview
 

@@ -89,4 +89,4 @@ Uma caixa de resistências original (OEM) da Honda (tipicamente encontrada monta
 
 - [Injetores de alta impedância](/pt/cars/fueling/high-impedance-injectors)
 - [Dimensionamento de injetores](/pt/cars/fueling/injector-sizing)
-- [Introdução ao chipping de ECU](/pt/cars/rom/introduction-to-ecu-chipping)
+- [Introdução ao chipping de ECU](/pt/cars/tuning/introduction-to-ecu-chipping)

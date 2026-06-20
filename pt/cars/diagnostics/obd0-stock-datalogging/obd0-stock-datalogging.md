@@ -13,7 +13,7 @@ The serial interrupt code in the factory ECU utilizes a simple request-response 
 The factory ECU serial port is initialized at a high baud rate, calculated as (CLK / 64). At a clock speed of 12MHz, this results in a baud rate of 187,500. This frequency is incompatible with standard PC serial ports.
 
 > [!IMPORTANT]
-> Refer to the [Intel 8051](/cars/rom/intel8051) documentation for detailed specifications regarding the serial port hardware and clock configuration.
+> Refer to the [Intel 8051](/cars/ecu/intel8051) documentation for detailed specifications regarding the serial port hardware and clock configuration.
 
 ## Implementing Datalogging
 
