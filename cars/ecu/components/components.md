@@ -161,18 +161,3 @@ is common across the boards (or the board has not been recorded).
 | `RP18` | Resistor | `(0 OHM)` |  |  |
 | `XTL1` |  | `10akss4b, 10 MHz / 7.90KSSOG, 7.90 Mhz` | Quartz Crystal Resonator. Specs need to be confirmed. |  |
 | `XTL2` |  | `500E, CSB (Control Station Board)?` |  |  |
-
-## Credits
-
-This reference was compiled from the work of:
-
-- [Blundar (*PGMFI.org*)](http://www.pgmfi.org)
-- [BoostedNW](http://www.boostednw.com)
-- [Ferenc Mikula (*HondaRulez*)](https://www.instagram.com/hondarulez)
-- [Apollo (*ApolloTuning*)](https://apollotuning.com/)
-- [Wouters Jonas](https://www.facebook.com/honda.ecu.repair.europe/)
-- [Members of the Honda Tuning Suite's Discord](http://discord.hondatuningsuite.com)
-- [Kevin Mh (*Miro Builds*)](https://www.mirobuilds.com/)
-- [Flávio Pereira (*Hondabase.com*)](https://www.hondabase.com/)
-
-Plus the contributors on the [project's GitHub repository](https://github.com/hondatabase/ecucomponents/graphs/contributors).
