@@ -17,12 +17,6 @@ component type, electrical specs, and repair notes, along with which ECU board(s
 It is intended as a bench reference for ECU repair, recapping, and reverse-engineering across the
 OBD0/OBD1 era of Honda/Acura engine management.
 
-> [!NOTE]
-> This list was originally maintained as a community project. To contribute a correction or a missing
-> part, open a pull request or issue on [GitHub](https://github.com/hondatabase/ecucomponents). The
-> source board photographs are archived in the files collection under
-> [ecu-components/componentlist](https://files.hondabase.com/browse/ecu-components/componentlist).
-
 ## Board legend
 
 Components are mapped to the ECU board revision(s) they appear on. A blank board column means the part
