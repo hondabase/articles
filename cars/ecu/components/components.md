@@ -173,6 +173,6 @@ This reference was compiled from the work of:
 - [Wouters Jonas](https://www.facebook.com/honda.ecu.repair.europe/)
 - [Members of the Honda Tuning Suite's Discord](http://discord.hondatuningsuite.com)
 - [Kevin Mh (*Miro Builds*)](https://www.mirobuilds.com/)
-- [Flávio Pereira (*Hondatabase.com*)](http://www.hondatabase.com/)
+- [Flávio Pereira (*Hondabase.com*)](https://www.hondabase.com/)
 
 Plus the contributors on the [project's GitHub repository](https://github.com/hondatabase/ecucomponents/graphs/contributors).
