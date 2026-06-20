@@ -2,7 +2,7 @@
 summary: 'Technical guide for identifying hardware differences between USDM and Canadian OBD0 PM6 ECUs and resolving Code 20 CEL by modifying the BR1 jumper.'
 tags: [ecu, obd0, pm6, diagnostics, wiring]
 applies_to:
-  brand: Honda
+  make: Honda
   ecus: [PM6]
   models: [civic, crx]
   chassis: [ef]

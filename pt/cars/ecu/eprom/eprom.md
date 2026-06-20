@@ -2,7 +2,7 @@
 summary: 'Understand which EPROM types are pin-compatible with common Honda OBD0 and OBD1 ECUs and their programming requirements.'
 tags: [ecu, eprom, rom, tuning, pinout, reference]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: beginner
 ---
 

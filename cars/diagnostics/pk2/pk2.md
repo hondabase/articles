@@ -2,7 +2,7 @@
 summary: 'Prelude OBD0 B20A ECU. Electronic Advance. External 27c256 ROM. oki 83c154 based pk2 ECU photo.: I posted the Options Closeup for the PK26640 manual B20A ECU.'
 tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
-  brand: Honda
+  make: Honda
   models: [civic, integra, prelude]
   chassis: [dc2, eg, ek]
 complexity: advanced

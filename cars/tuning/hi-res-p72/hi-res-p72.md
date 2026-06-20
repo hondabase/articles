@@ -2,7 +2,7 @@
 summary: 'Technical reference and memory map offset guide for the John Cui High-Resolution (Hi-Res) P72 custom ROM modification, enabling P28-compatible table scaling.'
 tags: [tuning, ecu, p72]
 applies_to:
-  brand: Acura
+  make: Acura
   ecus: [P72]
   models: [integra]
   chassis: [dc2]

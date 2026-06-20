@@ -2,7 +2,7 @@
 summary: 'Technical explanation of the diagnostic LED/CEL blink routine inside the 1991 OBD0 PM6 ECU codebase.'
 tags: [diagnostics, ecu]
 applies_to:
-  brand: Honda
+  make: Honda
   ecus: [PM6]
   models: [civic, crx, integra]
   chassis: [ef]

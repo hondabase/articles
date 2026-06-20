@@ -2,7 +2,7 @@
 summary: 'Um índice colaborativo de endereços de memória e mapas de ROM para ECUs Honda Civic e Integra OBD1, essencial para a engenharia reversa de firmware.'
 tags: [ecu, referência, tuning, rom, sensores, cablagem, conversão, diagnóstico]
 applies_to:
-  brand: Acura/Honda
+  make: [Acura, Honda]
 complexity: advanced
 sources:
   - name: 'pgmfi.org wiki'

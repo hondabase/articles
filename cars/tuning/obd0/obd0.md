@@ -2,7 +2,7 @@
 summary: 'OBD0 refers to the non-standardized engine control units used in Honda and Acura vehicles from 1988–1991, primarily featuring MPFI and electronic advance distributors.'
 tags: [ecu, reference, tuning, sensors, obd0]
 applies_to:
-  brand: Acura/Honda
+  make: [Acura, Honda]
   models: [accord, civic, crx, del-sol, integra, prelude]
   chassis: [da, dc2, ef, eg, eg-eh, ek]
 complexity: intermediate

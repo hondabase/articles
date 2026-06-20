@@ -2,7 +2,7 @@
 summary: 'Uma referência para as ECUs Honda JDM (Mercado Doméstico Japonês), destacando as diferenças de hardware, como a falta de sensores ELD e de detonação em comparação com os modelos USDM.'
 tags: [ecu, reference, sensors]
 applies_to:
-  brand: Acura/Honda
+  make: [Acura, Honda]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

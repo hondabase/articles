@@ -2,7 +2,7 @@
 summary: 'A comprehensive guide to diagnosing and repairing the IACV driver circuit on Honda OBD1 ECUs, specifically addressing burnt resistors R58, R59, and the Q21 transistor.'
 tags: [ecu, repair, diagnostics, idle, iacv]
 applies_to:
-  brand: Honda
+  make: Honda
   models: [civic, del-sol, integra]
   chassis: [dc2, eg, eh]
 complexity: advanced

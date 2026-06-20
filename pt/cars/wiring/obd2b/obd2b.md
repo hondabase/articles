@@ -2,7 +2,7 @@
 summary: 'OBD2B refers to 1999–2000 Honda Civic ECUs with a distinct pinout configuration compared to OBD2A variants.'
 tags: [ecu, obd2b, pinout, wiring, sensor, conversion]
 applies_to:
-  brand: Honda
+  make: Honda
   models: ['Civic 1999-2000']
 complexity: beginner
 ---

@@ -3,7 +3,7 @@ summary: 'Guia técnico para contornar a verificação do Sensor de Velocidade d
 tags: [tuning, sensors, reference]
 applies_to:
   ecus: [P28]
-  brand: Honda
+  make: Honda
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

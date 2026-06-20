@@ -2,7 +2,7 @@
 summary: 'Especificações técnicas e informações de pinagem para a ECU Honda Accord 2.2L OBD1 P0C 92-95.'
 tags: [ecu, reference, sensors]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

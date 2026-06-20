@@ -2,7 +2,7 @@
 summary: 'Um guia detalhado de diagnóstico e reparação para o circuito da Válvula de Controlo do Ralenti (IACV) em ECUs Honda OBD1, focando-se especificamente nos resistores R58, R59 e no transistor driver Q21.'
 tags: [ecu, repair, diagnostics, idle]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: advanced
 ---
 

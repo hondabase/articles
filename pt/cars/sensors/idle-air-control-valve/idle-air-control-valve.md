@@ -2,7 +2,7 @@
 summary: 'A válvula de controlo de ar do ralenti, ou IACV, regula o ralenti do carro com base na temperatura do líquido de arrefecimento.'
 tags: [ecu, reference, sensors]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

@@ -2,7 +2,7 @@
 summary: 'MCU = microcontrolador. Um pequeno CPU, por vezes com recursos integrados de RAM, ROM, EPROM, EEPROM, FLASH ou IO.'
 tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: beginner
 ---
 

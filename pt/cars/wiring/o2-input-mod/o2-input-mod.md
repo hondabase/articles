@@ -2,7 +2,7 @@
 summary: 'Consulte http://www.marklamond.co.uk/techhonda/pgmfi/o2input/o2input.htm para obter detalhes. Isto permite-lhe modificar a sua ECU para entrada de 0-5V.'
 tags: [ecu, referência, afinação, rom, sensores]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: intermediate
 ---
 

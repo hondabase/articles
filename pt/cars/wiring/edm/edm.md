@@ -2,7 +2,7 @@
 summary: 'Referência para as ECUs Honda EDM (Mercado Doméstico Europeu), detalhando as diferenças comuns de hardware, como a falta de um circuito de teste de injetores.'
 tags: [ecu, reference, sensors, wiring, conversion, diagnostics]
 applies_to:
-  brand: Acura/Honda
+  make: [Acura, Honda]
 complexity: intermediate
 sources:
   - name: 'pgmfi.org wiki'

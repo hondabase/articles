@@ -2,7 +2,7 @@
 summary: 'Overview of the OBD2 standardized diagnostic protocol (1996+), including its standardized DLC port and diagnostic reporting.'
 tags: [diagnostics, obd, emission-control, obd2]
 applies_to:
-  brand: Honda/Acura
+  make: [Honda, Acura]
   models: [accord, civic, del-sol, integra, prelude]
 complexity: beginner
 ---

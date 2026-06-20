@@ -2,7 +2,7 @@
 summary: 'Technical hardware overview and specifications for the PR7 OBD1 ECU used in 1991–1994 Acura NSX models.'
 tags: [ecu, nsx, obd1, hardware, reference]
 applies_to:
-  brand: Acura
+  make: Acura
   models: [nsx]
   chassis: [na1]
 complexity: beginner

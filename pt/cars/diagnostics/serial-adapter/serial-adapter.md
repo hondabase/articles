@@ -2,7 +2,7 @@
 summary: 'Todas as ECUs da Honda utilizam sinalização TTL de 5v para comunicação série. Para ligar a uma ECU, se o hardware utilizado para Data Logging não suportar esta sinalização, deve usar algum tipo de adaptador de série.'
 tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: intermediate
 ---
 

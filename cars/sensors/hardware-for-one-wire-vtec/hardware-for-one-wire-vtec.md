@@ -2,7 +2,7 @@
 summary: 'Hardware modification guide to adding 1-wire VTEC control to OBD0 Honda ECUs by populating unused automatic transmission solenoid circuits.'
 tags: [ecu, hardware, chipping, vtec]
 applies_to:
-  brand: Honda
+  make: Honda
   models: [civic, crx]
   chassis: [ef, eg]
 complexity: advanced

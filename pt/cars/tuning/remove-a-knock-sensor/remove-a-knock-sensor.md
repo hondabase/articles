@@ -2,7 +2,7 @@
 summary: 'Remover a deteção de detonação é simples: Voltar a soldar R118 e R119 em R142, 143. Em seguida, remover R101 (opcional).'
 tags: [hardware, education, ecu, tuning, sensors, reference]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: intermediate
 sources:
   - name: 'pgmfi.org wiki'

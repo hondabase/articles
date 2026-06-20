@@ -2,7 +2,7 @@
 summary: 'Um guia para implementar o Full Throttle Shift (FTS) em ECUs Honda OBD1, permitindo passagens de caixa mais rápidas ao manter a pressão de turbo e a rotação durante as mudanças.'
 tags: [ecu, referência, afinação, rom, sensores, diagnóstico]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: intermediate
 sources:
   - name: 'pgmfi.org wiki'

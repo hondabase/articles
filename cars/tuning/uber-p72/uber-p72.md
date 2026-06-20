@@ -2,7 +2,7 @@
 summary: 'Technical reference for RAM and ROM address offsets specific to the UberData custom ROM codebase for OBD1 P72 ECUs.'
 tags: [tuning, software, p72, obd1]
 applies_to:
-  brand: Acura
+  make: Acura
   ecus: [P72]
   models: [integra]
   chassis: [dc2]

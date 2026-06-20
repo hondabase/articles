@@ -2,7 +2,7 @@
 summary: 'Removing the knock detection is simple: Resolder R118 and R119 into R142, 143. Then, Remove R101 (optional).'
 tags: [hardware, education, ecu, tuning, sensors, reference]
 applies_to:
-  brand: Honda
+  make: Honda
   models: [prelude]
   chassis: [bb]
 complexity: intermediate

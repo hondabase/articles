@@ -2,7 +2,7 @@
 summary: 'A Honda utiliza um interruptor high side de 5 pinos em muitas das suas ECUs OBD1 e OBD2 para controlar solenoides, como os de transmissão automática e solenoides VTEC.'
 tags: [ecu, reference, tuning, sensors]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: intermediate
 ---
 

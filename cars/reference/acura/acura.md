@@ -2,7 +2,7 @@
 summary: 'Overview of the Acura brand history and its evolution within the Honda automotive ecosystem.'
 tags: [acura, history, honda, reference]
 applies_to:
-  brand: [Acura, Honda]
+  make: [Acura, Honda]
   models: [nsx, rsx, integra, legend, tsx, tl]
   chassis: {}
 complexity: beginner

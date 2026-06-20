@@ -2,7 +2,7 @@
 summary: 'Visão geral técnica da ECU Honda Civic EX P2P OBD2, abrangendo configurações de bin de origem, mapas de ponto de ignição e especificações de hardware.'
 tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

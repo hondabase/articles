@@ -2,7 +2,7 @@
 summary: 'Especificações técnicas e visão geral da aplicação para a ECU Honda Prelude Si (B20A3) 86-87.'
 tags: [reference]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

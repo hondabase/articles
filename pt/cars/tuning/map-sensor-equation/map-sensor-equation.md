@@ -2,7 +2,7 @@
 summary: 'Model MAP sensor output voltage to a usable pressure value using linear equations and calibration data for Honda ECUs.'
 tags: [map-sensor, tuning, sensors, calibration, reference]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: intermediate
 ---
 

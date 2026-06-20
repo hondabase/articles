@@ -2,7 +2,7 @@
 summary: 'Hardware layouts, component locations, and chipping instructions for the OBD1 Acura Integra PR4 ECU.'
 tags: [ecu, reference, chipping, obd1]
 applies_to:
-  brand: Acura
+  make: Acura
   ecus: [PR4]
   models: [civic, integra]
   chassis: [da, dc2, eg]

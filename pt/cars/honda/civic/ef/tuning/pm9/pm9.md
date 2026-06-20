@@ -2,7 +2,7 @@
 summary: 'The PM9 is essentially a variant of the PM5 ECU, with differences primarily related to transmission type (4-speed vs. 5-speed) and processor architecture across model years.'
 tags: [ecu, pm9, pm5, reference, tuning, sensors, processor]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: advanced
 ---
 

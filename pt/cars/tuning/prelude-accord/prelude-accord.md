@@ -2,7 +2,7 @@
 summary: 'Technical reference for Honda Prelude and Accord ECUs, including MCU specifications, PROM configurations, and component details for OBD0, OBD1, and OBD2 variants.'
 tags: [ecu, reference, tuning, mcu, prelude, accord]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: beginner
 ---
 

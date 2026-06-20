@@ -2,7 +2,7 @@
 summary: 'Guia de modificação de hardware para colocação de suporte (socketing), modificação (chipping) e conversão de ECUs OBD1 P30 JDM de caixa quadrada para transmissão manual.'
 tags: [ecu, chipping, hardware]
 applies_to:
-  brand: Honda
+  make: Honda
   ecus: [P30]
 complexity: advanced
 sources:

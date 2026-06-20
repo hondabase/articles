@@ -2,7 +2,7 @@
 summary: 'What is a Speed Density engine managment scheme? Speed Density systems calculate the amount of air entering a motor using sensors that monitor engine operating conditions.'
 tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
-  brand: Honda
+  make: Honda
   models: [accord, civic, crx, del-sol, integra, nsx, prelude, rsx, s2000]
   chassis: [ap1, ap2, bb, cb-cd, da, dc2, dc5, ef, eg, eg-eh, ek, em-ep, na1-na2]
 complexity: advanced

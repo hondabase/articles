@@ -2,7 +2,7 @@
 summary: 'The PJ0 ECU for 1986–1989 Accord/Prelude A20A engines exists in multiple regional variants with differing O₂ sensor and EGR control configurations.'
 tags: [ecu, reference, tuning, sensors, pj0, accord, prelude, a20a]
 applies_to:
-  brand: Honda
+  make: Honda
   models: [Accord, Prelude]
   engine: A20A
   years: [1986, 1987, 1988, 1989]

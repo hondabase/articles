@@ -2,7 +2,7 @@
 summary: 'As ECUs de Civic e Integra OBD1 partilham uma plataforma de hardware comum. Isto significa que pode (com pequenas modificações) correr essencialmente qualquer código em qualquer ECU da família.'
 tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics, obd1]
 applies_to:
-  brand: Acura/Honda
+  make: [Acura, Honda]
 complexity: advanced
 sources:
   - name: 'pgmfi.org wiki'

@@ -2,7 +2,7 @@
 summary: 'Visão geral da ECU Honda Civic D14 do Reino Unido de 96-00, abrangendo a sua compatibilidade e potencial de conversão para VTEC.'
 tags: [ecu, reference, tuning, rom, sensors]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: intermediate
 sources:
   - name: 'pgmfi.org wiki'

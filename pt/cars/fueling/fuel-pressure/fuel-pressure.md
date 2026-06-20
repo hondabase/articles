@@ -2,7 +2,7 @@
 summary: 'Static fuel pressure controls fuel delivery volume in Honda vehicles. Elevated fuel pressure can delay injector opening and compromise precision; OEM Honda specification is 38–42 psi.'
 tags: [tuning, fuel-pressure, fuel-delivery, injectors, diagnostics]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: beginner
 ---
 

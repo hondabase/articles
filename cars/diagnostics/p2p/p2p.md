@@ -2,7 +2,7 @@
 summary: 'Technical overview of the P2P OBD2 Honda Civic EX ECU, covering stock bin configurations, ignition timing maps, and hardware specifications.'
 tags: [ecu, reference, tuning, rom, sensors, diagnostics]
 applies_to:
-  brand: Honda
+  make: Honda
   models: [civic, del-sol]
   chassis: [eg, eg-eh, ek]
 complexity: beginner

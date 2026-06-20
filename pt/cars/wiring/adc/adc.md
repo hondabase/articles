@@ -2,7 +2,7 @@
 summary: 'An analog-to-digital converter (ADC) is an integrated circuit that converts analog signals into digital representations. Learn ADC fundamentals, bit resolution, reference voltage, and conversion mathematics.'
 tags: [adc, ecu, sensors, conversion, wiring, tuning, reference]
 applies_to:
-  brand: Acura
+  make: Acura
 complexity: intermediate
 ---
 

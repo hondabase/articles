@@ -2,7 +2,7 @@
 summary: 'Guia de pinagem e cablagem para a porta de datalogging série CN2 nas ECUs Honda OBD1, essencial para afinação e diagnóstico em tempo real.'
 tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: intermediate
 sources:
   - name: 'pgmfi.org wiki'

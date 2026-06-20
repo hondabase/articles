@@ -2,7 +2,7 @@
 summary: 'Hardware modification guide for socketing, chipping, and converting JDM square-case OBD1 P30 ECUs to manual transmission.'
 tags: [ecu, chipping, hardware, p30, obd1]
 applies_to:
-  brand: Honda
+  make: Honda
   ecus: [P30]
   models: [civic, del-sol]
   chassis: [eg, eh]

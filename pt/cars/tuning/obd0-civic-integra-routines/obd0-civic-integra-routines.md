@@ -2,7 +2,7 @@
 summary: 'O datalogging de origem OBD0 poderia potencialmente ser usado para algo, mas atualmente não existe nenhum hardware/software que o suporte.'
 tags: [ecu, reference, tuning, sensors, obd0]
 applies_to:
-  brand: Acura/Honda
+  make: [Acura, Honda]
 complexity: beginner
 ---
 

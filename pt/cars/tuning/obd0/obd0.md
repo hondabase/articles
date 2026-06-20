@@ -2,7 +2,7 @@
 summary: '"OBD0" não é um padrão oficial como o OBD2. É mais comummente utilizado para referir as ECUs MPFI fabricadas entre 88 e 91 com distribuidores de avanço eletrónico (Electronic Advance Distributors) encontradas nos automóveis OBD0 MPFI desta era.'
 tags: [ecu, referência, tuning, sensores, obd0]
 applies_to:
-  brand: Acura/Honda
+  make: [Acura, Honda]
 complexity: intermediate
 sources:
   - name: 'pgmfi.org wiki'

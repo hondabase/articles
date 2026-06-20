@@ -2,7 +2,7 @@
 summary: 'Visão geral da ECU Honda Prelude Type-S JDM OBD2 P5P, incluindo as suas características únicas de hardware e mapeamento de performance.'
 tags: [ecu, reference, sensors]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

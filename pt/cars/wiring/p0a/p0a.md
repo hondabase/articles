@@ -2,7 +2,7 @@
 summary: 'P0A 94-95 OBD1 Accord EX imagem anexada é uma 94 P0A-A51 PCB é IPT 02D010B01502 Os dados abaixo foram copiados da página da P13 como um marcador temporário.'
 tags: [ecu, reference, tuning, rom, sensors, wiring, conversion, diagnostics]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: advanced
 sources:
   - name: 'pgmfi.org wiki'

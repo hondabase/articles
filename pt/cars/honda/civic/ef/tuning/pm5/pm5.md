@@ -2,7 +2,7 @@
 summary: 'PM5 88-91 Civic modelo base/CRX DX (DPFI D15b). Existiam dois estilos distintos desta ECU. Um possui um MCU 83C154, o outro possui um MCU 66201.'
 tags: [ecu, reference, tuning, sensors]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: advanced
 sources:
   - name: 'pgmfi.org wiki'

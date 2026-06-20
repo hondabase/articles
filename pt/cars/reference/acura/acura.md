@@ -2,7 +2,7 @@
 summary: 'A Acura, uma divisão de luxo da Honda fundada em 1986, é conhecida pelos seus veículos de performance e luxo, incluindo modelos icónicos como o Legend, Integra e NSX.'
 tags: [reference, acura, honda, models]
 applies_to:
-  brand: Acura/Honda
+  make: [Acura, Honda]
 complexity: beginner
 ---
 

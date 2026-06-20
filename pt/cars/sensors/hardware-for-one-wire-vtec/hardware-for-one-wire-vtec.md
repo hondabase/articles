@@ -2,7 +2,7 @@
 summary: 'Guia de modificação de hardware para adicionar controlo VTEC de 1 fio a ECUs OBD0 Honda através do preenchimento de circuitos não utilizados de solenoides de transmissão automática.'
 tags: [ecu, hardware, chipping]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: advanced
 sources:
   - name: 'pgmfi.org wiki'

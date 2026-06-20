@@ -2,7 +2,7 @@
 summary: 'Algumas rotinas já foram comentadas para o seu prazer de visualização. O Doc ECUSchool explica um pouco de como o IO é executado analisando a ROM JDM P30 203.'
 tags: [ecu, reference, tuning, sensors, obd1]
 applies_to:
-  brand: Acura/Honda
+  make: [Acura, Honda]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

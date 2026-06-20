@@ -2,7 +2,7 @@
 summary: 'Luz de Teste do Motor (Check Engine Light). Este indicador (geralmente no painel) acende-se para indicar que a ECU detetou alguma anomalia.'
 tags: [hardware, education, ecu, tuning, rom, sensors, reference, wiring, conversion, diagnostics]
 applies_to:
-  brand: Honda
+  make: Honda
 complexity: intermediate
 sources:
   - name: 'pgmfi.org wiki'
