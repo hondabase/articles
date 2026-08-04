@@ -20,38 +20,12 @@ sources:
 
 # Honda OBD1 P28 ECU Internal Schematics
 
-Written breakdown of the Bomarc Services reverse-engineered board set **37820-P28-A51** (*Engine Control Computer for Honda/Acura*, 8 sheets, 2005). Useful for board repair, tracing nets, and understanding how stock P28 hardware is laid out.
+Written breakdown of the Bomarc reverse-engineered board set **37820-P28-A51** (*Engine Control Computer for Honda/Acura*, 8 sheets, 2005). Stock P28 is the SOHC VTEC D16Z6 box on 92-95 Civic EX/Si and Del Sol (plus EDM P28-G0x codes). Related OBD1 boards share a lot of this layout; optional circuits on the sheets may not be populated on every board. Match your revision (02D011F0-1500 / 02D01720-1500, auto vs manual).
+
+For RAM/ROM maps and board photos see the [P28 ECU reference](/cars/sensors/p28/p28). Harness side: [OBD1 wiring](/cars/wiring/obd1/obd1), [ECU connections](/cars/wiring/ecu-connections/ecu-connections).
 
 > [!WARNING]
-> This is a third-party reverse-engineered drawing, not a Honda factory schematic. Part numbers, pin counts, and resistor values come from a scan. Anything that was hard to read is marked unclear. Confirm critical nets on a real board before cutting traces.
-
----
-
-## What actually used a P28
-
-Factory P28 is a **SOHC VTEC D-series** ECU:
-
-| Application | Notes |
-| :--- | :--- |
-| 1992-1995 Civic EX/Si (USDM) | D16Z6 |
-| Del Sol VTEC | D16Z6 (EG-EH) |
-| EDM Civic / Del Sol P28-G0x | G01, G02, G51, etc. |
-
-**Not** factory P28:
-
-* **DC2 Integra** - P72 / P75 / PR4 family, not P28
-* **DA Integra** - PR4 and related, not P28
-* **CRX / EF** - OBD0 era for USDM CRX
-* **EK Civic** - OBD2; people sometimes swap an OBD1 P28 in, but it is not OEM fitment
-
-Why this still shows up beyond Civic/Del Sol:
-
-* Other OBD1 boards (P05, P06, P30, P72, PR4, ...) share the same connector family and a lot of the power/injector/MCU layout. This drawing is still the **P28-titled** Bomarc pack, not a full substitute for every OBD1 ECU.
-* Socketed P28 baseroms are common for tuning and engine swaps. That is aftermarket use, not factory.
-* Bomarc's title block says the set was drawn from 1994 Civic / Del Sol / Integra boards. That means they used related OBD1 hardware as references. It does **not** mean Integras shipped with P28s.
-* Optional circuits (knock, baro, A/T lock-up, EGR, engine mount) are drawn even when a given market board omits them. Match your revision (02D011F0-1500 / 02D01720-1500, auto vs manual).
-
-Related: [P28 ECU reference](/cars/sensors/p28/p28) | [OBD1 wiring](/cars/wiring/obd1/obd1) | [ECU connections](/cars/wiring/ecu-connections/ecu-connections)
+> Third-party reverse-engineered drawing, not a Honda factory schematic. Values come from a scan - unclear bits are called out. Confirm critical nets on a real board before cutting traces.
 
 ---
 
