@@ -4,7 +4,7 @@ tags: [ecu, wiring, schematics, pinout, obd1, p28, bomarc]
 applies_to:
   models: [civic, del-sol]
   chassis: [eg, eg-eh]
-  engines: [d16z6]
+  engines: [d16z6, d16z9]
   ecus: [p28]
 complexity: advanced
 sources:
@@ -20,7 +20,7 @@ sources:
 
 # Honda OBD1 P28 ECU Internal Schematics
 
-Written breakdown of the Bomarc reverse-engineered board set **37820-P28-A51** (*Engine Control Computer for Honda/Acura*, 8 sheets, 2005). Stock P28 is the SOHC VTEC D16Z6 box on 92-95 Civic EX/Si and Del Sol (plus EDM P28-G0x codes). Related OBD1 boards share a lot of this layout; optional circuits on the sheets may not be populated on every board. Match your revision (02D011F0-1500 / 02D01720-1500, auto vs manual).
+Written breakdown of the Bomarc reverse-engineered board set **37820-P28-A51** (*Engine Control Computer for Honda/Acura*, 8 sheets, 2005). Stock OBD1 P28 covered SOHC VTEC D-series cars across markets: 92-95 Civic EX/Si (USDM D16Z6), Del Sol VTEC (D16Z6), and EDM/other Civic and Del Sol codes (P28-G0x / P28-Q50 etc.) including D16Z9 applications. Related OBD1 boards share a lot of this layout; optional circuits on the sheets may not be populated on every board. Match your revision (02D011F0-1500 / 02D01720-1500, auto vs manual).
 
 For RAM/ROM maps and board photos see the [P28 ECU reference](/cars/sensors/p28/p28). Harness side: [OBD1 wiring](/cars/wiring/obd1/obd1), [ECU connections](/cars/wiring/ecu-connections/ecu-connections).
 
