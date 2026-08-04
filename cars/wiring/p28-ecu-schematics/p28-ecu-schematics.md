@@ -220,12 +220,12 @@ Power nets leave this sheet toward the logic pages.
 
 ### Passives worth noting
 
-* R21 100 ohm on Ign B+ into the protection network
+* R21 100 Ω on Ign B+ into the protection network
 * SR4418 plus D5 on the +12V branch (SR4418 looks like a series protection part; family not confirmed)
-* NF1 filter on Batt B+ with C19 (33/35) and R22 2200 ohm
+* NF1 filter on Batt B+ with C19 (33/35) and R22 2200 Ω
 * +5V into the U17 region; +4.3V near a zener/transistor stage (2SB1069-class marking is fuzzy)
 * Crystal on MCU-1: XTL1, CA1/CA7 10pF, crystal marked 10AK553C
-* U20 gates with R27 10k and C45 0.001 into the reset domain
+* U20 gates with R27 10 kΩ and C45 0.001 into the reset domain
 
 Sheet 1 is basically Ign B+, Batt B+, grounds, and the regulated rails for everything else. TA8903 pin map is only partly readable; treat pin numbers carefully.
 
@@ -267,7 +267,7 @@ Several M5 stages condition gear, VSS, A/C, SCS, VTEC pressure, alt FR, and brak
 
 ### Glue
 
-* Comparator/op-amp path near ID0 with R94 300k, C6 0.63/35, R89 10k
+* Comparator/op-amp path near ID0 with R94 300 kΩ, C6 0.63/35, R89 10 kΩ
 * Note on the sheet: *For glue chip rail see U10 on sheet 4, U22 on sheet 3*
 
 This sheet is digital/switch inputs, not the analog sensors. Exact hybrid channel-to-MCU pin map beyond the two labeled entries is hard to follow on the scan.
@@ -312,9 +312,9 @@ MCU marking on this sheet: **MSM66207-251**, MCU-1, board **02D01720-1500**.
 
 ### Discretes
 
-* P/S front-end: 2SA1175, DM4 S233, R101 22k, R29 22k, R102 4700
+* P/S front-end: 2SA1175, DM4 S233, R101 22 kΩ, R29 22 kΩ, R102 4700
 * Several S233 diode packs for protection
-* Op-amps around HEGO/TPS with R85 10k, R98 100k, etc.
+* Op-amps around HEGO/TPS with R85 10 kΩ, R98 100 kΩ, etc.
 
 Sensors are muxed through the 4051s into the 66207 ADC. Which mux channel maps to which sensor is only partly legible.
 
@@ -347,7 +347,7 @@ Comparators shape the three channels, then feed **PART OF U1** at pins P3, 41, 3
 | Ref | Type | Notes |
 | :--- | :--- | :--- |
 | U10 | 74HC14 | Schmitt inverters |
-| UY, UZ | uPC277 (as read) | Comparators/amps |
+| UY, UZ | µPC277 (as read) | Comparators/amps |
 
 Standard Honda three-sensor distributor interface. HIC-1 internals are not expanded on the drawing.
 
@@ -407,7 +407,7 @@ This is the main digital sheet.
 * Multiplexed address/data from MCU-1 through RM3 and latches
 * ID0-7 into U9 HC541, then RD
 * Control lines between MCU-1, ASIC U7, PPI U8, and MCU-2
-* NMI and RST with R25 220k, R27 1600 ohm, etc.
+* NMI and RST with R25 220 kΩ, R27 1600 Ω, etc.
 * Intersheet nets (8), (9), (2), (3), (5) continue to injector/output sheets
 
 This is the usual OBD1 story: MCU + ASIC + 82C55 + optional EPROM. MCU-2 part number is the weakest reading on the sheet (MSM66513 is best guess). "Demon 2" looks like a socketing/dev label, not a Honda production name.
@@ -440,7 +440,7 @@ Title block: **INJECTORS + 2 OUTPUTS**, sheet 7 of 8, dated 2/28/05. Board: 02D0
 
 | Output | Conn | Pin | Wire | Path |
 | :--- | :---: | :---: | :--- | :--- |
-| Main relay | A | 23 | G/Y | ST413A (1/4 QM3) |
+| Main relay | A | 23 | G/Y | ST413A (¼ QM3) |
 | A/C | A | 6 | B/R | ST413A |
 
 Pre-drivers use DTC144 / DTA143 packs, RM7, SX35 diodes, and intersheet M(6) into the ASIC.
@@ -462,7 +462,7 @@ Title block: **OUTPUTS**, sheet 8 of 8, dated 2/28/05. Board: 02D01720-1500 A8Y-
 | Lock-up sol. B | A | 5 | G/R | A/T |
 | Lock-up sol. A | A | 4 | Y | A/T |
 | VTEC solenoid | A | 25 | O/W | |
-| Cooling fans (1/2 HEGO I/B+ region) | A | 24 | Y/B | Fan-related path |
+| Cooling fans (½ HEGO I/B+ region) | A | 24 | Y/B | Fan-related path |
 | Evap purge | A | 17 | R/BK | |
 | Engine mount sol. (optional) | A | 22 | G/W | |
 | Interlock (A/T only) | D | 14 | W/B | |
@@ -478,7 +478,7 @@ Title block: **OUTPUTS**, sheet 8 of 8, dated 2/28/05. Board: 02D01720-1500 A8Y-
 | ST413A | Dual driver | Fan / purge area |
 | 2SD1780, 2SC2240, 2SC3225, 2SD1524 | Discretes | MIL, IAC, alt, purge |
 | 2SC2785 | Discrete | Mid-sheet driver |
-| RM8, RM10, RM11, RM13, RM7 | Resistor packs | 220 ohm x4, 10k x8, etc. |
+| RM8, RM10, RM11, RM13, RM7 | Resistor packs | 220 Ω x4, 10 kΩ x8, etc. |
 | DTA143 / DTC144 | Digital transistor packs | Pre-drivers from PPI and ASIC |
 
 Control comes from ASIC U7 on the left and PPI U8 port pins (PA6, PA5, PC0, PB6, PA2, PC1, PC6, PB5, PB4, PC4, and neighbors - several digits hard to read). Intersheet K(5) and (6) continue shared enables.
@@ -518,12 +518,12 @@ Batt B+ / Ign B+ / GND
 | :--- | :---: | :--- |
 | Power / reset | 1 | TA8903, 74HC00, MCU power pins |
 | Digital switches | 2 | Hybrid arrays into MCU-1 |
-| Analog sensors | 3 | 4051 x2, NJM2904, baro HIC, MCU ADC |
-| Crank/cam | 4 | HIC-1 NY1-C, 74HC14, uPC277 |
+| Analog sensors | 3 | 4051 ×2, NJM2904, baro HIC, MCU ADC |
+| Crank/cam | 4 | HIC-1 NY1-C, 74HC14, µPC277 |
 | Diagnostics / knock | 5 | Line driver, NJM2903/2904, PPI slice |
 | Digital core | 6 | MSM66207, ASIC, 82C55, HC541, EPROM |
-| Fuel / relay | 7 | ST460 x2, ST413A, ASIC |
-| Spark / VTEC / lamps | 8 | 5050 x4, discretes, PPI + ASIC |
+| Fuel / relay | 7 | ST460 ×2, ST413A, ASIC |
+| Spark / VTEC / lamps | 8 | 5050 ×4, discretes, PPI + ASIC |
 
 ---
 
