@@ -7,6 +7,15 @@ applies_to:
   engines: [d16z6]
   ecus: [p28]
 complexity: advanced
+sources:
+  - name: 'imtheman0313'
+    title: 'Honda Civic P28 ECU schematics (legible 8-sheet scan and pinout)'
+    url: 'https://github.com/imtheman0313/Honda-Civic-P28-ECU'
+    adapted: true
+  - name: 'Bomarc Services'
+    title: '37820-P28-A51 Engine Control Computer for Honda/Acura (2005 reverse-engineered schematics)'
+    url: 'https://github.com/imtheman0313/Honda-Civic-P28-ECU/blob/main/P28_ECU_Civic.pdf'
+    adapted: true
 ---
 
 # Honda OBD1 P28 ECU Internal Schematics
@@ -68,8 +77,9 @@ Related: [P28 ECU reference](/cars/sensors/p28/p28) | [OBD1 wiring](/cars/wiring
 
 ### Files
 
-* [P28_ECU_Civic.pdf](P28_ECU_Civic.pdf) - preferred 8-page landscape scan (one sheet per page)
-* The common 11-page portrait file (`P28 Schematics.pdf` / `bomarc-services-p28.pdf`) is the same 8 sheets, just split differently
+* [P28_ECU_Civic.pdf](P28_ECU_Civic.pdf) - preferred 8-page landscape scan (one sheet per page). Hosted by **[imtheman0313](https://github.com/imtheman0313)** in [Honda-Civic-P28-ECU](https://github.com/imtheman0313/Honda-Civic-P28-ECU); that is the legible scan used for the sheet images and transcription below.
+* [FinishedP28PinoutCORRECTED.png](FinishedP28PinoutCORRECTED.png) - corrected harness pinout graphic from the same repo
+* The common 11-page portrait file (`P28 Schematics.pdf` / `bomarc-services-p28.pdf`) is the same Bomarc 8 sheets, just a lower-res split scan
 
 ---
 
@@ -547,4 +557,8 @@ Batt B+ / Ign B+ / GND
 
 See also: [P28 ECU reference](/cars/sensors/p28/p28), [Add IAB to P28](/cars/sensors/add-iab-to-p28/add-iab-to-p28), [Disable VTEC VSS check](/cars/tuning/disable-vtec-vss-check-p28/disable-vtec-vss-check-p28), [Introduction to ECU chipping](/cars/tuning/introduction-to-ecu-chipping/introduction-to-ecu-chipping).
 
-*Transcribed from the public Bomarc 37820-P28-A51 8-sheet set (landscape scan) and the corrected pinout diagram from the same collection.*
+## Credits
+
+* **Legible scan, per-sheet images, and corrected pinout:** [imtheman0313](https://github.com/imtheman0313) - [Honda-Civic-P28-ECU](https://github.com/imtheman0313/Honda-Civic-P28-ECU) (`P28_ECU_Civic.pdf`, `P28ECU/Page1-8.jpg`, `FinishedP28PinoutCORRECTED.png`).
+* **Underlying reverse-engineered drawings:** Bomarc Services, 37820-P28-A51 (2005).
+* Written sheet notes on this page are a Hondabase transcription of that scan, with unclear bits called out.
