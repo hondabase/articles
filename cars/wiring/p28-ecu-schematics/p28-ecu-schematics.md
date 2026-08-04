@@ -2,9 +2,9 @@
 summary: 'Written transcription of the Bomarc 8-sheet internal PCB schematics for the multi-vehicle Honda OBD1 P28 ECU family (37820-P28-A51).'
 tags: [ecu, wiring, schematics, pinout, obd1, p28, bomarc, reverse-engineering]
 applies_to:
-  models: [civic, crx, del-sol, integra]
-  chassis: [da, dc2, ef, eg, eg-eh, ek]
-  engines: [d16z6, d16z7, d16z9]
+  models: [civic, del-sol]
+  chassis: [eg, eg-eh]
+  engines: [d16z6]
   ecus: [p28]
 complexity: advanced
 ---
@@ -20,16 +20,31 @@ This article is a **written decipherment** of the Bomarc Services reverse-engine
 
 ## Scope and multi-vehicle applicability
 
-The **P28** part family is factory-associated with SOHC VTEC D-series applications (notably **D16Z6** Civic EX/Si and Del Sol in several markets), but the **same OBD1 board architecture** is shared across many ECUs and is the de facto swap/tuning platform for:
+### Factory P28 use
 
-| Context | Examples |
+The **P28** ECU family was a **factory SOHC VTEC D-series** controller — not a universal “any Honda” OEM unit.
+
+| Market / application | Typical notes |
 | :--- | :--- |
-| **OEM P28 applications** | 1992–1995 Civic EX/Si (USDM), Del Sol VTEC, various EDM P28-G0x Civic/Del Sol codes |
-| **Closely related OBD1 boards** | P05, P06, P07, P08, P30, P72, PR4, P75, etc. (same connector family, similar power/injector/MCU topology; options differ) |
-| **Common swap hosts** | Integra (DA/DC), CRX/EF, EG/EK Civic non-VTEC and hybrids, B-series DOHC with socketed P28 baseroms |
-| **Drawing provenance (title block)** | *“Drawn from 1994 Honda Civic DelSol / Acura Integra”* — Bomarc treated Civic/Del Sol/Integra boards as the reference set |
+| **1992–1995 Civic EX/Si (USDM)** | D16Z6 SOHC VTEC — primary USDM P28 application |
+| **Del Sol VTEC (USDM / related)** | D16Z6 — chassis **EG-EH** family |
+| **EDM Civic / Del Sol P28-G0x** | European P28 codes (e.g. G01/G02/G51) on related Civic/Del Sol bodies |
 
-So this schematic is **not Civic-only**. Connector pinouts, optional A/T circuits, knock, baro, EGR, and lock-up solenoids appear on the drawing even when absent on a given market ECU. Always compare against your physical board revision (commonly **02D011F0-1500** / **02D01720-1500** families and auto vs manual layouts).
+**Not factory P28 platforms** (common confusion):
+
+* **DC2 Integra** — used OBD1/OBD2 Integra ECUs such as **P72** (GSR/Type R family), **P75** / **PR4** (non-VTEC LS/GS), etc. **Not P28.**
+* **DA Integra** — OBD0/OBD1 Integra codes (PR4, etc.), not P28 as OEM.
+* **CRX / EF** — OBD0-era USDM CRX; not a factory P28 application.
+* **EK Civic** — OBD2 generation; not factory P28 (though people swap OBD1 P28 hardware into later cars).
+
+### Why the schematic still “affects” multiple vehicles
+
+| Context | What that means |
+| :--- | :--- |
+| **Shared OBD1 board family** | P05/P06/P07/P08/P30/P72/PR4/P75 and others share connector style and similar power/injector/MCU topology; **options and ROM differ**. This drawing is the P28-titled Bomarc set, not a substitute for every OBD1 ECU’s full schematic. |
+| **Tuning baserom** | Socketed **P28** ROMs are widely used to run non-OEM engines (B-series, hybrids, etc.) in many chassis — that is a **swap/tuning** use of P28 hardware, not factory fitment. |
+| **Drawing provenance (title block)** | Bomarc: *“Drawn from 1994 Honda Civic DelSol / Acura Integra”* — they used related OBD1 boards as reverse-engineering references. That does **not** mean DC2 (or any Integra) shipped with a P28. |
+| **Optional circuits on the sheets** | A/T lock-up, knock, baro, EGR, engine mount, etc. appear even when a given market P28 omits them. Always match your board revision (**02D011F0-1500** / **02D01720-1500**, auto vs manual). |
 
 Related guides: [P28 ECU reference](/cars/sensors/p28/p28) · [OBD1 wiring](/cars/wiring/obd1/obd1) · [ECU connections](/cars/wiring/ecu-connections/ecu-connections)
 
@@ -149,7 +164,7 @@ Community-corrected multi-model pinout covering **P28 / P06-class** OBD1 harness
 | D22 | BKSW — brake switch | green / white | |
 
 > [!NOTE]
-> The overview pinout is a **multi-model mash-up**. Empty-slot notes on the diagram are intentional. Bomarc sheet pin numbers below are **ECU edge-connector pin numbers as drawn**, which generally align with the A/B/D scheme but should be cross-checked when colors disagree.
+> The overview pinout is a **multi-model OBD1 mash-up** (P28/P06-class harness notes, including Integra wire-color variants where the donor diagram listed them). Empty-slot notes are intentional. That does **not** imply Integra factory-fit P28 ECUs. Bomarc sheet pin numbers below are **ECU edge-connector pin numbers as drawn** and should be cross-checked when colors disagree.
 
 ---
 
