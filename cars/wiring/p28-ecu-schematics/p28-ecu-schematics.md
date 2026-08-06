@@ -11,10 +11,14 @@ sources:
   - name: 'imtheman0313'
     title: 'Honda Civic P28 ECU schematics (legible 8-sheet scan and pinout)'
     url: 'https://github.com/imtheman0313/Honda-Civic-P28-ECU'
+    license: 'MIT'
+    license_url: 'https://github.com/imtheman0313/Honda-Civic-P28-ECU/blob/main/LICENSE'
     adapted: true
   - name: 'Bomarc Services'
     title: '37820-P28-A51 Engine Control Computer for Honda/Acura (2005 reverse-engineered schematics)'
     url: 'https://github.com/imtheman0313/Honda-Civic-P28-ECU/blob/main/P28_ECU_Civic.pdf'
+    license: 'Public Domain'
+    license_url: 'https://github.com/imtheman0313/Honda-Civic-P28-ECU'
     adapted: true
 ---
 
