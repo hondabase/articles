@@ -57,9 +57,4 @@ On ITB-equipped E07A engines (Honda Beat), manifold pressure signal pulses viole
 ## 4. ITB Assembly & Custom ECU Adapter
 
 ![Honda Beat E07A MTREC ITB Throttle Body Assembly](topic_1276_Q7yVskU.png)
-*E07A 3-cylinder ITB throttle body and standalone ECU harness adapter.*
-
-### Throttle Linkage Mechanism
-
-![E07A ITB Throttle Linkage Animation](topic_1276_attachment_1786275769060.gif)
-*Honda Beat MTREC individual throttle body linkage movement.*
+*E07A 3-cylinder ITB throttle body and standalone ECU harness adapter (photo: reymiguel).*

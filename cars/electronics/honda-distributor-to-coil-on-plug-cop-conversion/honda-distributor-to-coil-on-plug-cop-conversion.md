@@ -49,7 +49,8 @@ Factory Honda distributor internal ignition coils and igniters (ICMs) are prone 
 2. Retain the internal VR sensors (CKP, TDC, CYP) and distributor shaft to serve purely as the engine position trigger.
 3. Route 4 individual 5V logic signal wires from your ECU's ignition outputs (`Ign 1`, `Ign 2`, `Ign 3`, `Ign 4`) to each corresponding cylinder's coil plug.
 
-> \[!IMPORTANT\] Configure ignition outputs for **5V Logic Level Output** (Active High / Falling Edge trigger depending on ECU hardware). Incorrect polarity will cause thermal overload of the coil internal igniter.
+> [!IMPORTANT]
+> Configure ignition outputs for **5V Logic Level Output** (Active High / Falling Edge trigger depending on ECU hardware). Incorrect polarity will cause thermal overload of the coil internal igniter.
 
 ---
 
@@ -65,18 +66,5 @@ Factory Honda distributor internal ignition coils and igniters (ICMs) are prone 
 
 ## 4. Hardware Installation & Coil Mounting
 
-![D-Series COP Conversion Coil Bracket & Wiring](topic_2980_AP1GczMfhm6t5ufVBGIfYU709LW1xbRG-lk9ij5mP1-YCqEW330EuLpKcwgDV85vGbm8TvMRjsOQi9UfgdxjmuDk3JdjZr6TD7jBuHkp2q8WZFUBKYZhAgVpZf2PDObCvjNQJV9I_1NHsW-hsm8OpfIMOXTnqg_w654-h869-s-no-gm.jpg)*D-series coil-on-plug conversion plate and Denso smart coil mounting setup.*
-
----
-
-## 4. Hardware Installation & Wiring Schematics
-
-![D-Series COP Conversion Plate & Coil Mounting](topic_2980_AP1GczMfhm6t5ufVBGIfYU709LW1xbRG-lk9ij5mP1-YCqEW330EuLpKcwgDV85vGbm8TvMRjsOQi9UfgdxjmuDk3JdjZr6TD7jBuHkp2q8WZFUBKYZhAgVpZf2PDObCvjNQJV9I_1NHsW-hsm8OpfIMOXTnqg_w654-h869-s-no-gm.jpg)*D-series coil-on-plug conversion plate and Denso smart coil mounting setup.*
-
-### Sequential Coil & VTEC Wiring Schematic
-
-![Coil-on-Plug & VTEC Wiring Schematic](topic_618_WvhBrz7.png)*Coil-on-plug 5V logic signal wiring and VTEC output trigger schematic.*
-
-### Harness Connector Detail
-
-![Factory VTEC & Ignition Plug](topic_618_attachment_1786275719661.jpg)*Factory harness plug reference for ignition signal tap.*
+![D-Series COP Conversion Coil Bracket & Wiring](topic_2980_AP1GczMfhm6t5ufVBGIfYU709LW1xbRG-lk9ij5mP1-YCqEW330EuLpKcwgDV85vGbm8TvMRjsOQi9UfgdxjmuDk3JdjZr6TD7jBuHkp2q8WZFUBKYZhAgVpZf2PDObCvjNQJV9I_1NHsW-hsm8OpfIMOXTnqg_w654-h869-s-no-gm.jpg)
+*D-series coil-on-plug conversion plate and Denso smart coil mounting setup (photo: rtmickelwait).*
