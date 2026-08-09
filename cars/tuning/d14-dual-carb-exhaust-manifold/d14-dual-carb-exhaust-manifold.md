@@ -46,11 +46,11 @@ For a mostly stock dual-carb 1.4, **4-2-1** is the usual recommendation.
 
 ## Product tiers (community experience)
 
-- **Budget eBay tubular 4-2-1:** functional; weld quality varies — dress runner internals if needed
-- **Megan-style 4-2-1:** similar layout to common budget units with better welds in many samples
-- **Name-brand 4-2-1 (e.g. 5Zigen-type):** better welds / layout; some units need reinforcement welds under vibration
+- **Budget eBay tubular 4-2-1:** functional; weld quality varies - **die-grind the inside of the runners** to smooth weld penetration when needed
+- **Megan-style 4-2-1:** same general runner layout as many budget units, usually cleaner welds
+- **Name-brand 4-2-1 (e.g. 5Zigen-type):** different runner layout; one dual-carb owner preferred it for **low-end** and noted the car also ran **quieter** than expected - some units need **reinforcement welds** where thin tubing cracks under vibration
 
-Always verify flange fitment for **D-series** dual-carb heads and collector diameter for the rest of the exhaust.
+Always verify flange fitment for **D-series** dual-carb heads and collector diameter for the rest of the exhaust. Stock cast manifolds are heavy and restrictive; even a cheap tubular unit is considered worthwhile on dual-carb D14s by owners who have run several brands.
 
 ## Fitting notes (4-2-1 on a 1.4 GL)
 
@@ -85,4 +85,5 @@ A freer exhaust leans the mixture if the carb was barely adequate before. After 
 4. Wideband + mixture/balance
 5. Optional mild timing advance
 
-> \[!CAUTION\] Heat-wrap can trap moisture against mild steel and accelerate corrosion. If wrapping, understand the trade-off and keep wrap clear of sensor bung threads.
+> [!CAUTION]
+> Heat-wrap can trap moisture against mild steel and accelerate corrosion. If wrapping, understand the trade-off and keep wrap clear of sensor bung threads.
