@@ -10,16 +10,16 @@ complexity: advanced
 sources:
   - title: 'rusEFI on a Honda Beat!'
     url: 'https://rusefi.com/forum/viewtopic.php?t=1276'
-    adapted: true
     author: reymiguel
+    adapted: true
   - title: 'Development of Honda Beat Adapter'
     url: 'https://rusefi.com/forum/viewtopic.php?t=2772'
-    adapted: true
     author: Loudis
+    adapted: true
   - title: 'Honda Acty 660 3cyl E07A carb to EFI'
     url: 'https://rusefi.com/forum/viewtopic.php?t=2280'
-    adapted: true
     author: MadGoatCustoms
+    adapted: true
 ---
 
 # Honda Beat & Acty (E07A 3-Cylinder) Carburetor to EFI Conversion
@@ -42,7 +42,8 @@ The 656cc 3-cylinder E07A engine powers iconic Honda Kei vehicles including the 
 
 On ITB-equipped E07A engines (Honda Beat), manifold pressure signal pulses violently at low RPM.
 
-> \[!TIP\] Use **Alpha-N (TPS vs RPM)** as the primary fuel matrix for ITB setups, with MAP sensor used purely for barometric pressure compensation. On single-throttle Acty trucks, standard Speed-Density (MAP vs RPM) functions perfectly.
+> [!TIP]
+> Use **Alpha-N (TPS vs RPM)** as the primary fuel matrix for ITB setups, with MAP sensor used purely for barometric pressure compensation. On single-throttle Acty trucks, standard Speed-Density (MAP vs RPM) functions perfectly.
 
 ---
 
@@ -55,14 +56,10 @@ On ITB-equipped E07A engines (Honda Beat), manifold pressure signal pulses viole
 
 ## 4. ITB Assembly & Custom ECU Adapter
 
-![Honda Beat E07A MTREC ITB Throttle Body Assembly](topic_1276_Q7yVskU.png)*E07A 3-cylinder ITB throttle body and standalone ECU harness adapter.*
-
----
-
-## 4. ITB Assembly & Custom ECU Adapter
-
-![Honda Beat E07A MTREC ITB Throttle Body Assembly](topic_1276_Q7yVskU.png)*E07A 3-cylinder ITB throttle body and standalone ECU harness adapter.*
+![Honda Beat E07A MTREC ITB Throttle Body Assembly](topic_1276_Q7yVskU.png)
+*E07A 3-cylinder ITB throttle body and standalone ECU harness adapter.*
 
 ### Throttle Linkage Mechanism
 
-![E07A ITB Throttle Linkage Animation](topic_1276_attachment_1786275769060.gif)*Honda Beat MTREC individual throttle body linkage movement.*
+![E07A ITB Throttle Linkage Animation](topic_1276_attachment_1786275769060.gif)
+*Honda Beat MTREC individual throttle body linkage movement.*

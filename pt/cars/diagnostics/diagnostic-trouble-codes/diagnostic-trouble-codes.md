@@ -9,9 +9,11 @@ sources:
   - name: 'pgmfi.org wiki'
     title: 'Honda Error Codes'
     url: /pgmfi/wiki/library/honda-error-codes
+    adapted: true
   - name: 'pgmfi.org wiki'
     title: 'Checking Error Codes'
     url: /pgmfi/wiki/library/checking-error-codes
+    adapted: true
 ---
 
 # Obtenção e Referência de Códigos de Erro de Diagnóstico (DTC)

@@ -11,15 +11,19 @@ sources:
   - title: 'Honda K24 ETB TPS issues'
     url: 'https://rusefi.com/forum/viewtopic.php?t=2011'
     author: Jtech2020
+    adapted: true
   - title: '2005 Honda Accord K24A3'
     url: 'https://rusefi.com/forum/viewtopic.php?t=1981'
     author: Jtech2020
+    adapted: true
   - title: '2004 Honda Civic Si K20'
     url: 'https://rusefi.com/forum/viewtopic.php?t=2436'
     author: AndreyB
+    adapted: true
   - title: '2003 Honda Element'
     url: 'https://rusefi.com/forum/viewtopic.php?t=1955'
     author: AndreyB
+    adapted: true
 ---
 
 # Honda K24 Swap in Civic / Accord & Electronic Throttle (ETB) Integration
