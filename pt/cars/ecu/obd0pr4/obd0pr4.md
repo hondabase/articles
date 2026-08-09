@@ -1,9 +1,8 @@
 ---
 summary: 'Visão geral técnica das variações de hardware, sensores barométricos e configurações de E/S exclusivas da ECU PR4 OBD0 do Acura Integra.'
-tags: [ecu, reference]
+tags: [ecu, reference, pr4]
 applies_to:
   make: Acura
-  ecus: [PR4]
 complexity: intermediate
 sources:
   - name: 'pgmfi.org wiki'

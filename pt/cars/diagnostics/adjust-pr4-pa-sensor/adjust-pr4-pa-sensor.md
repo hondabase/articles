@@ -1,8 +1,6 @@
 ---
 summary: 'Technical guide for identifying and configuring internal versus external Pressure Atmosphere (PA) sensors on PR4 ECUs.'
-tags: [ecu, tuning, rom, sensors, diagnostics]
-applies_to:
-  ecus: [PR4]
+tags: [ecu, tuning, rom, sensors, diagnostics, pr4]
 complexity: intermediate
 ---
 

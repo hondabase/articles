@@ -1,8 +1,6 @@
 ---
 summary: 'Archived P30 JDM D12 circuit modification to log a 0–5 V analog input through the ECU via an unused pin.'
-tags: [ecu, datalogging, hardware, adc, analog-input, p30-jdm]
-applies_to:
-  ecus: [P30]
+tags: [ecu, datalogging, hardware, adc, analog-input, p30-jdm, p30]
 complexity: advanced
 sources:
   - name: 'Japanese Domestic Market P30D12 Modification'

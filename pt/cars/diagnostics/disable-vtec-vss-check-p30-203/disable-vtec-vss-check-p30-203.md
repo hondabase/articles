@@ -1,8 +1,6 @@
 ---
 summary: 'Autor: doc 07-10-03 15:21 Fui eu? Ok, numa ROM 203 ou 209, podes alterar a posição 6010 (hex) de 00 para FF para contornar a verificação de VSS na rotina do VTEC.'
-tags: [tuning, rom, sensores, referência, diagnóstico, ecu]
-applies_to:
-  ecus: [P30]
+tags: [tuning, rom, sensores, referência, diagnóstico, ecu, p30]
 complexity: advanced
 sources:
   - name: 'pgmfi.org wiki'

@@ -3,7 +3,6 @@ summary: 'Technical reference and memory map offset guide for the John Cui High-
 tags: [tuning, ecu, p72]
 applies_to:
   make: Acura
-  ecus: [P72]
   models: [integra]
   chassis: [dc2]
 complexity: advanced

@@ -3,7 +3,6 @@ summary: 'Technical guide for identifying hardware differences between USDM and 
 tags: [ecu, obd0, pm6, diagnostics, wiring]
 applies_to:
   make: Honda
-  ecus: [PM6]
   models: [civic, crx]
   chassis: [ef]
 complexity: intermediate

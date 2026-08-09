@@ -4,7 +4,6 @@ tags: [tuning, software, p72, uberdata, reprogramming]
 applies_to:
   make: Acura
   models: ['Integra GS-R']
-  ecus: [P72]
 complexity: advanced
 ---
 

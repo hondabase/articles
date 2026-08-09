@@ -1,12 +1,11 @@
 ---
 title: 'HondaRulez COP/RCM Standalone Coil-On-Plug Driver: History, Pinouts, and Install'
 summary: 'A dedicated distributor-delete coil driver for OBD1/OBD2 Honda ECUs: pinouts and error codes for the COP Controller and RCM II boards.'
-tags: [cop, coil-on-plug, distributor-delete, obd1, obd2, standalone, wireless-tuning, mc9s12g]
+tags: [cop, coil-on-plug, distributor-delete, obd1, obd2, standalone, wireless-tuning, mc9s12g, obd1-p28, obd1-p30, obd2a-p72]
 applies_to:
   models: [civic, integra, crx, del-sol, prelude]
   chassis: [ef, eg, ek, da, dc2]
   engines: [d-series, b-series]
-  ecus: [obd1-p28, obd1-p30, obd2a-p72]
 complexity: advanced
 sources:
   - name: "ホンダRulez's Garage (Facebook)"

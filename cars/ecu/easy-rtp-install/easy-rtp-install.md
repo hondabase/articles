@@ -1,8 +1,7 @@
 ---
 summary: 'Technical installation procedure for integrating the Easy-RTP v1.0 module into OBD1 P28 and P30 ECUs.'
-tags: [rtp, ecu, hardware, chipping, obd1]
+tags: [rtp, ecu, hardware, chipping, obd1, p28, p30]
 applies_to:
-  ecus: [P28, P30]
   models: [civic, del-sol]
   chassis: [eg, eh]
 complexity: advanced

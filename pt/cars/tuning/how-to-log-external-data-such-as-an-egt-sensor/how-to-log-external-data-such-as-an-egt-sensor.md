@@ -2,7 +2,6 @@
 summary: 'Archived method for USDM P30 D12 analog input to datalog external 0-5 V sensors on OBD1 ECUs.'
 tags: [datalogging, sensor, adc, analog-input, p30, obd1]
 applies_to:
-  ecus: [P30]
   market: [USDM]
 complexity: advanced
 ---

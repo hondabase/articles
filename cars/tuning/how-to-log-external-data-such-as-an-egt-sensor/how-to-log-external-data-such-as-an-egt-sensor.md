@@ -2,7 +2,6 @@
 summary: 'Technical guide for utilizing the undocumented D12 analog input on USDM OBD1 P30 ECUs for 0-5 V external sensor logging.'
 tags: [datalogging, sensor, adc, ecu, p30]
 applies_to:
-  ecus: [P30]
   models: [civic, del-sol]
   chassis: [eg, eh]
 complexity: advanced

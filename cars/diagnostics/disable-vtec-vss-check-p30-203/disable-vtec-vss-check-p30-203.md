@@ -1,8 +1,7 @@
 ---
 summary: 'Technical guide on bypassing the Vehicle Speed Sensor (VSS) check within the VTEC routine for OBD1 P30 ROMs.'
-tags: [tuning, rom, sensors, diagnostics, ecu, vtec, vss]
+tags: [tuning, rom, sensors, diagnostics, ecu, vtec, vss, p30]
 applies_to:
-  ecus: [P30]
   models: [civic, del-sol]
   chassis: [ef, eg, eh]
 complexity: advanced

@@ -3,7 +3,6 @@ summary: 'Technical overview of the hardware variations, barometric sensors, and
 tags: [ecu, reference, obd0, pr4]
 applies_to:
   make: Acura
-  ecus: [PR4]
   models: [integra]
   chassis: [da]
 complexity: intermediate

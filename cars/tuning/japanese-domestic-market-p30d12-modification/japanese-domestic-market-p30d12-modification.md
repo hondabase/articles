@@ -2,7 +2,6 @@
 summary: 'Technical guide for modifying the JDM P30 OBD1 ECU to enable 0-5 V analog signal logging via the D12 input.'
 tags: [ecu, datalogging, hardware, adc, p30]
 applies_to:
-  ecus: [P30]
   models: [civic, del-sol]
   chassis: [eg, eh]
 complexity: advanced

@@ -1,12 +1,11 @@
 ---
 title: 'Honda OBD1 (1992-1995) Standalone ECU Wiring & Plug-and-Play Adapter Pinouts'
 summary: 'Pinout maps and hardware setup for OBD1 Civic/Integra (P28/P30/P72) factory harnesses: A/B/D connectors, VR sensor inputs, and standalone board assembly.'
-tags: [obd1, p28, p30, p72, pinout, pnp-adapter, standalone]
+tags: [obd1, p28, p30, p72, pinout, pnp-adapter, standalone, obd1-p28, obd1-p30, obd1-p72]
 applies_to:
   models: [civic, integra, accord, prelude]
   chassis: [eg, ek, dc2, cb7, bb]
   engines: [d-series, b-series, h-series]
-  ecus: [obd1-p28, obd1-p30, obd1-p72]
 complexity: intermediate
 sources:
   - title: 'Honda OBD1 PnP'

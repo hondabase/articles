@@ -1,9 +1,8 @@
 ---
 summary: 'A comprehensive guide to the hardware and software fundamentals of socketing and chipping OBD0 and OBD1 Honda ECUs.'
-tags: [ecu, chipping, tuning, obd0, obd1, soldering]
+tags: [ecu, chipping, tuning, obd0, obd1, soldering, p28, p30, pm6, pm7, pr4, pr3, pw0]
 applies_to:
   engines: [B-Series, D-Series]
-  ecus: [P28, P30, PM6, PM7, PR4, PR3, PW0]
   models: [accord, civic, crx, del-sol, integra]
   chassis: [da, dc2, ef, eg, eh, ek]
 complexity: advanced

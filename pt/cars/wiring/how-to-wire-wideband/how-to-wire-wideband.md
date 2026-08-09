@@ -1,10 +1,9 @@
 ---
 title: 'Guia de Instalação de Wideband para ECUs Honda OBD1'
 summary: 'Aprenda a instalar e configurar um sensor de O2 wideband AEM na sua ECU Honda OBD1 usando o Honda Tuning Suite (HTS) ou o Hondata SManager.'
-tags: [ecu, referência, afinação, sensores, cablagem, obd1]
+tags: [ecu, referência, afinação, sensores, cablagem, obd1, p28, p30, p72, p06, p75]
 applies_to:
   make: [honda, acura]
-  ecus: [P28, P30, P72, P06, P75]
 complexity: advanced
 ---
 

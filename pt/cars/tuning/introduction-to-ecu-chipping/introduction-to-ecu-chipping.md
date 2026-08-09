@@ -1,9 +1,8 @@
 ---
 summary: 'Uma introdução prática à instalação de sockets e chipping de ECUs Honda OBD0/OBD1.'
-tags: [ecu, chipping, afinação]
+tags: [ecu, chipping, afinação, p28, p30, pm6]
 applies_to:
   engines: [B-Series, D-Series]
-  ecus: [P28, P30, PM6]
 complexity: advanced
 sources:
   - name: 'pgmfi.org wiki'

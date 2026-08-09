@@ -5,13 +5,12 @@ applies_to:
   models: [civic, del-sol]
   chassis: [eg, eg-eh]
   engines: [d16z6, d16z9]
-  ecus: [p28]
 complexity: advanced
 sources:
-  - name: 'imtheman0313'
+  - name: imtheman0313
     title: 'Honda Civic P28 ECU schematics (legible 8-sheet scan and pinout)'
     url: 'https://github.com/imtheman0313/Honda-Civic-P28-ECU'
-    license: 'MIT'
+    license: MIT
     license_url: 'https://github.com/imtheman0313/Honda-Civic-P28-ECU/blob/main/LICENSE'
     adapted: true
   - name: 'Bomarc Services'

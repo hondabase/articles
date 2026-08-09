@@ -1,9 +1,8 @@
 ---
 summary: 'Especificações detalhadas de hardware, esquemas de pinagem e suporte de código personalizado para a ECU OBD0 PM6 de Civic/CRX Si SOHC.'
-tags: [ecu, reference]
+tags: [ecu, reference, pm6]
 applies_to:
   make: Honda
-  ecus: [PM6]
 complexity: intermediate
 sources:
   - name: 'pgmfi.org wiki'

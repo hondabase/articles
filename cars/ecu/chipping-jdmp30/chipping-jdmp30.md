@@ -3,7 +3,6 @@ summary: 'Hardware modification guide for socketing, chipping, and converting JD
 tags: [ecu, chipping, hardware, p30, obd1]
 applies_to:
   make: Honda
-  ecus: [P30]
   models: [civic, del-sol]
   chassis: [eg, eh]
 complexity: advanced

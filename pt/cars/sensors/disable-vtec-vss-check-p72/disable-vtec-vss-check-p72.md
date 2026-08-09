@@ -1,8 +1,6 @@
 ---
 summary: 'Como desativar a verificação de VSS de 25mph para ativação do VTEC na P72: Autor: Speedz Data: 23-08-03 15:59 aqui é onde se encontra na p72 :) 11FD C5 22 09 : RB 22.'
-tags: [sensors, reference]
-applies_to:
-  ecus: [P72]
+tags: [sensors, reference, p72]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'

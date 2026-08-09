@@ -1,9 +1,8 @@
 ---
 summary: 'Layouts de hardware, localizações de componentes e instruções de chipping para a ECU OBD1 Acura Integra PR4.'
-tags: [ecu, reference]
+tags: [ecu, reference, pr4]
 applies_to:
   make: Acura
-  ecus: [PR4]
 complexity: intermediate
 sources:
   - name: 'pgmfi.org wiki'

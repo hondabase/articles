@@ -3,7 +3,6 @@ summary: 'Technical reference for RAM and ROM address offsets specific to the Ub
 tags: [tuning, software, p72, obd1]
 applies_to:
   make: Acura
-  ecus: [P72]
   models: [integra]
   chassis: [dc2]
 complexity: advanced

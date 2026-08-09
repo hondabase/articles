@@ -1,9 +1,8 @@
 ---
 summary: 'Explicação técnica da rotina de piscar do LED de diagnóstico/CEL dentro do código-fonte da ECU PM6 OBD0 de 1991.'
-tags: [diagnosticos, ecu]
+tags: [diagnosticos, ecu, pm6]
 applies_to:
   make: Honda
-  ecus: [PM6]
 complexity: beginner
 sources:
   - name: 'pgmfi.org wiki'
